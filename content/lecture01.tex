@@ -1,0 +1,395 @@
+%% Lecture https://tutor-web.net/math/math612.0/lecture110
+\section{Numbers, arithmetic and basic algebra}
+%% Slide https://tutor-web.net/math/math612.0/lecture110/slide10
+# Natural Numbers
+The positive integers are called natural numbers.
+
+These numbers can be added, multiplied together and so forth.\\
+
+Notation: $\mathbb{N}=\{1,2,3,4,....\}$ \\
+
+Subtraction and division are not defined on these numbers.\\
+
+An arbitrary element of $\mathbb{N}$ is most commonly denoted by $i,\ j,\ n$,or $m$, but any symbol can be used. \\
+\end{minipage}
+}
+\subsubsection{Details}
+\begin{defn}
+The set of positive integers is usually denoted by $\mathbb{N}$, i.e.
+$\mathbb{N}=\{1,2,3,4,....\}$ and is called the set of \textbf{natural numbers}. In some cases the number zero is included as a natural number, but here we will use the symbol $\mathbb{N}_0$ to denote the integers 0, 1, 2 and up.
+\end{defn}
+
+Within this set of numbers it is possible to add and multiply numbers together. Arithmetic operations are denoted by $+$ for addition and $\cdot$ (or $\times$) for multiplication. A natural number can also be raised to the power of a natural number, e.g. $3^5=3\cdot 3\cdot 3\cdot 3\cdot 3$ 
+or in general $m^n=m\cdot m \cdot \ldots \cdot m$ ($n$ times).\\
+
+When stating general properties of the natural numbers one needs to use symbols to indicate that the property holds for an arbitrary number. It is not enough to just write the property for a few numbers. For example, to declare that one can interchange numbers in a sum, it is not enough to say $4+3=3+4$ but one must explicitly state "the addition operator has the property that any two natural numbers, $n,\ m\in \mathbb{N}$ satisfy $n+m=m+n$".\\
+
+
+An arbitrary element of $\mathbb{N}$ is most commonly denoted by $i,\ j,\ n$,or $m$, but any symbol, $a,\ b,\ c, \ldots$, can be used.\\
+
+Several rules of arithmetic apply (some by definition, others can be derived) such as
+\begin{eqnarray*}
+ab&=&ba\\
+a+b&=&b+a\\
+a+bc&=&a+(bc)\\
+a(b+c)&=&ab+ac\\
+(a+b)+c&=&a+(b+c)\\
+(ab)c&=&a(bc)
+\end{eqnarray*}
+
+Subtraction and division are not generally defined. In addition, we define one integer, $n$, to the power of another, $m$, to mean $n$ multiplied by itself $m$ times: $n^m=\underbrace{n\cdot n \cdot \ldots \cdot n}{m}$. 
+
+\begin{defn}
+The power is an \textbf{operator} just like addition and multiplication, and is defined to have higher priority than the other two.
+\end {defn}
+
+\subsubsection{Examples}
+\begin{xmpl} 
+If we have $x=4$ and $y= 2$ and want to evaluate $$x^y+y^x$$
+then we  replace the values of x and y in the expression, and evaluate it,
+taking care to observe the correct order of operations:
+$$4^2+2^4=16+16=32.$$
+\end{xmpl} 
+
+
+%% Slide https://tutor-web.net/math/math612.0/lecture110/slide20
+\subsection{Starting with R}
+\fbox{
+\begin{minipage}{0.97\textwidth}
+Download R from the R website: \href{http://www.r-project.org/}{http://www.r-project.org/}
+
+Look at on-line information on R, and take the tutor-web R tutorial: \href{http://tutor-web.net/stats/stats240.1}{http://tutor-web.net/stats/stats240.1}
+
+Simple R commands: 
+
+\begin{itemize}
+\item Assignment: $\texttt{x<-2}$
+\item Arithmetic: $\texttt{2*5+4}$
+\end{itemize}
+\end{minipage}
+}
+\subsubsection{Details}
+To assign values to a variable in R one can use "$\texttt{<-}$"\text{ }or "$\texttt{=}$"; however, these are {\bf NOT} equivalent. Using the equals sign is confusing and therefore not recommended.
+\subsubsection{Examples}
+\begin{xmpl} 
+Assigning values to a variable:
+\begin{lstlisting} 
+x<-2
+y<-3
+z<-x+y 
+\end{lstlisting} 
+\end{xmpl} 
+
+\begin{xmpl} 
+
+Viewing assigned values:\\
+Type the name,i.e. "z", to view the assigned value. 
+
+aaaa
+
+\begin{lstlisting} 
+z
+[1] 5
+\end{lstlisting}
+
+\end{xmpl} 
+
+
+
+%% Slide https://tutor-web.net/math/math612.0/lecture110/slide30
+\subsection{The Integers}
+\fbox{
+\begin{minipage}{0.97\textwidth}
+The set of positive and negative integers:
+
+$\mathbb{Z} = \{.., .., -2, -1, 0, 1, 2, ......\}$
+
+\end{minipage}
+}
+\subsubsection{Details}
+\begin{defn}
+The set of all integers is denoted by $\mathbb{Z}$, i.e.
+$$\mathbb{Z} = \{.., .., -2, -1, 0, 1, 2, ......\} .$$
+\end{defn}
+
+\begin{notes}
+Note that within this set it is possible to subtract as well as add and multiply. Within this set we cannot, however, in general, perform division.
+\end{notes}
+
+When preforming multiple mathematical operations within the same equation, i.e. $79 - 8\cdot 3$, there is a conventional order for which the operations must be performed.  
+
+\begin{defn}
+The conventional order of operations for equations with multiple mathematical operations is referred to as an \textbf{operator precedence}.
+\end {defn}
+
+
+\subsubsection{Examples}
+\begin{xmpl}
+To compute $79 - 8\cdot 3$ start by multiplying and then subtracting:\\
+$79 - 8\cdot 3 = 79-24 = 55$
+\end{xmpl} 
+\begin{xmpl} 
+To compute $15 - (24 + 36)$ we first note that the parentheses (brackets) imply a precedence; anything inside brackets should be evaluated first.
+
+Thus, we first add 36 to 24 and then we subtract that from 15.\\ 
+15 - (24+36) = 15 - 60 = - 45\\\
+
+Note that the answer is a negative number. 
+\end{xmpl} 
+\begin{xmpl} 
+Simple arithmetic in R is easily done at the command prompt.
+\begin{verbatim}
+79-8*3
+[1] 55
+15-(24+36)
+[1] -45
+\end{verbatim}
+\end{xmpl} 
+
+
+%% Slide https://tutor-web.net/math/math612.0/lecture110/slide40
+\subsection{Rational numbers}
+\fbox{
+\begin{minipage}{0.97\textwidth}
+{\bf Rational numbers} are fractions denoted p/q, where p and q are integers. We can simplify fractions if the numerator and denominator contain common terms.
+\end{minipage}
+}
+\subsubsection{Details}
+\begin{figure}[h]
+\hspace{0.5mm}
+\begin{minipage}{0.48\textwidth}
+\includegraphicsdata{data:application/postscript:base64,JSFQUy1BZG9iZS0zLjAKJSVEb2N1bWVudE5lZWRlZFJlc291cmNlczogZm9udCBIZWx2ZXRpY2EKJSUrIGZvbnQgSGVsdmV0aWNhLUJvbGQKJSUrIGZvbnQgSGVsdmV0aWNhLU9ibGlxdWUKJSUrIGZvbnQgSGVsdmV0aWNhLUJvbGRPYmxpcXVlCiUlKyBmb250IFN5bWJvbAolJURvY3VtZW50TWVkaWE6IHNwZWNpYWwgNzIwIDcyMCAwICgpICgpCiUlVGl0bGU6IFIgR3JhcGhpY3MgT3V0cHV0CiUlQ3JlYXRvcjogUiBTb2Z0d2FyZQolJVBhZ2VzOiAoYXRlbmQpCiUlQm91bmRpbmdCb3g6IDAgMCA3MjAgNzIwCiUlRW5kQ29tbWVudHMKJSVCZWdpblByb2xvZwovYnAgIHsgZ3Mgc1JHQiBncyB9IGRlZgolIGJlZ2luIC5wcy5wcm9sb2cKL2dzICB7IGdzYXZlIH0gYmluZCBkZWYKL2dyICB7IGdyZXN0b3JlIH0gYmluZCBkZWYKL2VwICB7IHNob3dwYWdlIGdyIGdyIH0gYmluZCBkZWYKL20gICB7IG1vdmV0byB9IGJpbmQgZGVmCi9sICB7IHJsaW5ldG8gfSBiaW5kIGRlZgovbnAgIHsgbmV3cGF0aCB9IGJpbmQgZGVmCi9jcCAgeyBjbG9zZXBhdGggfSBiaW5kIGRlZgovZiAgIHsgZmlsbCB9IGJpbmQgZGVmCi9vICAgeyBzdHJva2UgfSBiaW5kIGRlZgovYyAgIHsgbmV3cGF0aCAwIDM2MCBhcmMgfSBiaW5kIGRlZgovciAgIHsgNCAyIHJvbGwgbW92ZXRvIDEgY29weSAzIC0xIHJvbGwgZXhjaCAwIGV4Y2ggcmxpbmV0byAwIHJsaW5ldG8gLTEgbXVsIDAgZXhjaCBybGluZXRvIGNsb3NlcGF0aCB9IGJpbmQgZGVmCi9wMSAgeyBzdHJva2UgfSBiaW5kIGRlZgovcDIgIHsgZ3NhdmUgYmcgZmlsbCBncmVzdG9yZSBuZXdwYXRoIH0gYmluZCBkZWYKL3AzICB7IGdzYXZlIGJnIGZpbGwgZ3Jlc3RvcmUgc3Ryb2tlIH0gYmluZCBkZWYKL3A2ICB7IGdzYXZlIGJnIGVvZmlsbCBncmVzdG9yZSBuZXdwYXRoIH0gYmluZCBkZWYKL3A3ICB7IGdzYXZlIGJnIGVvZmlsbCBncmVzdG9yZSBzdHJva2UgfSBiaW5kIGRlZgovdCAgIHsgNSAtMiByb2xsIG1vdmV0byBnc2F2ZSByb3RhdGUKICAgICAgIDEgaW5kZXggc3RyaW5nd2lkdGggcG9wCiAgICAgICBtdWwgbmVnIDAgcm1vdmV0byBzaG93IGdyZXN0b3JlIH0gYmluZCBkZWYKL3RhICB7IDQgLTIgcm9sbCBtb3ZldG8gZ3NhdmUgcm90YXRlIHNob3cgfSBiaW5kIGRlZgovdGIgIHsgMiAtMSByb2xsIDAgcm1vdmV0byBzaG93IH0gYmluZCBkZWYKL2NsICB7IGdyZXN0b3JlIGdzYXZlIG5ld3BhdGggMyBpbmRleCAzIGluZGV4IG1vdmV0byAxIGluZGV4CiAgICAgICA0IC0xIHJvbGwgbGluZXRvICBleGNoIDEgaW5kZXggbGluZXRvIGxpbmV0bwogICAgICAgY2xvc2VwYXRoIGNsaXAgbmV3cGF0aCB9IGJpbmQgZGVmCi9yZ2IgeyBzZXRyZ2Jjb2xvciB9IGJpbmQgZGVmCi9zICAgeyBzY2FsZWZvbnQgc2V0Zm9udCB9IGJpbmQgZGVmCiUgZW5kICAgLnBzLnByb2xvZwovc1JHQiB7IFsgL0NJRUJhc2VkQUJDCiAgICAgICAgICA8PCAvRGVjb2RlTE1OCiAgICAgICAgICAgICAgIFsgeyBkdXAgMC4wMzkyOCBsZQogICAgICAgICAgICAgICAgICAgICAgICB7MTIuOTIzMjEgZGl2fQogICAgICAgICAgICAgICAgICAgICAgICB7MC4wNTUgYWRkIDEuMDU1IGRpdiAyLjQgZXhwIH0KICAgICAgICAgICAgICAgICAgICAgaWZlbHNlCiAgICAgICAgICAgICAgICAgfSBiaW5kIGR1cCBkdXAKICAgICAgICAgICAgICAgXQogICAgICAgICAgICAgL01hdHJpeExNTiBbMC40MTI0NTcgMC4yMTI2NzMgMC4wMTkzMzQKICAgICAgICAgICAgICAgICAgICAgICAgIDAuMzU3NTc2IDAuNzE1MTUyIDAuMTE5MTkyCiAgICAgICAgICAgICAgICAgICAgICAgICAwLjE4MDQzNyAwLjA3MjE3NSAwLjk1MDMwMV0KICAgICAgICAgICAgIC9XaGl0ZVBvaW50IFswLjk1MDUgMS4wIDEuMDg5MF0KICAgICAgICAgICA+PgogICAgICAgICBdIHNldGNvbG9yc3BhY2UgfSBiaW5kIGRlZgovc3JnYiB7IHNldGNvbG9yIH0gYmluZCBkZWYKJSVJbmNsdWRlUmVzb3VyY2U6IGZvbnQgSGVsdmV0aWNhCi9IZWx2ZXRpY2EgZmluZGZvbnQKZHVwIGxlbmd0aCBkaWN0IGJlZ2luCiAgezEgaW5kZXggL0ZJRCBuZSB7ZGVmfSB7cG9wIHBvcH0gaWZlbHNlfSBmb3JhbGwKICAvRW5jb2RpbmcgSVNPTGF0aW4xRW5jb2RpbmcgZGVmCiAgY3VycmVudGRpY3QKICBlbmQKL0ZvbnQxIGV4Y2ggZGVmaW5lZm9udCBwb3AKJSVJbmNsdWRlUmVzb3VyY2U6IGZvbnQgSGVsdmV0aWNhLUJvbGQKL0hlbHZldGljYS1Cb2xkIGZpbmRmb250CmR1cCBsZW5ndGggZGljdCBiZWdpbgogIHsxIGluZGV4IC9GSUQgbmUge2RlZn0ge3BvcCBwb3B9IGlmZWxzZX0gZm9yYWxsCiAgL0VuY29kaW5nIElTT0xhdGluMUVuY29kaW5nIGRlZgogIGN1cnJlbnRkaWN0CiAgZW5kCi9Gb250MiBleGNoIGRlZmluZWZvbnQgcG9wCiUlSW5jbHVkZVJlc291cmNlOiBmb250IEhlbHZldGljYS1PYmxpcXVlCi9IZWx2ZXRpY2EtT2JsaXF1ZSBmaW5kZm9udApkdXAgbGVuZ3RoIGRpY3QgYmVnaW4KICB7MSBpbmRleCAvRklEIG5lIHtkZWZ9IHtwb3AgcG9wfSBpZmVsc2V9IGZvcmFsbAogIC9FbmNvZGluZyBJU09MYXRpbjFFbmNvZGluZyBkZWYKICBjdXJyZW50ZGljdAogIGVuZAovRm9udDMgZXhjaCBkZWZpbmVmb250IHBvcAolJUluY2x1ZGVSZXNvdXJjZTogZm9udCBIZWx2ZXRpY2EtQm9sZE9ibGlxdWUKL0hlbHZldGljYS1Cb2xkT2JsaXF1ZSBmaW5kZm9udApkdXAgbGVuZ3RoIGRpY3QgYmVnaW4KICB7MSBpbmRleCAvRklEIG5lIHtkZWZ9IHtwb3AgcG9wfSBpZmVsc2V9IGZvcmFsbAogIC9FbmNvZGluZyBJU09MYXRpbjFFbmNvZGluZyBkZWYKICBjdXJyZW50ZGljdAogIGVuZAovRm9udDQgZXhjaCBkZWZpbmVmb250IHBvcAolJUluY2x1ZGVSZXNvdXJjZTogZm9udCBTeW1ib2wKL1N5bWJvbCBmaW5kZm9udApkdXAgbGVuZ3RoIGRpY3QgYmVnaW4KICB7MSBpbmRleCAvRklEIG5lIHtkZWZ9IHtwb3AgcG9wfSBpZmVsc2V9IGZvcmFsbAogIGN1cnJlbnRkaWN0CiAgZW5kCi9Gb250NSBleGNoIGRlZmluZWZvbnQgcG9wCiUlRW5kUHJvbG9nCiUlUGFnZTogMSAxCmJwCjAuMDAgMC4wMCA3MjAuMDAgNzIwLjAwIGNsCjAgMCAwIHNyZ2IKMC43NSBzZXRsaW5ld2lkdGgKW10gMCBzZXRkYXNoCjEgc2V0bGluZWNhcAoxIHNldGxpbmVqb2luCjEwLjAwIHNldG1pdGVybGltaXQKbnAKIDU5LjA0IDczLjQ0IG0KNjMwLjcyIDAgbAowIDU4Ny41MiBsCi02MzAuNzIgMCBsCmNwIHAxCjAuMDAgMC4wMCA3MjAuMDAgNzIwLjAwIGNsCjU5LjA0IDczLjQ0IDY4OS43NiA2NjAuOTYgY2wKMCAwIDAgc3JnYgoxLjUwIHNldGxpbmV3aWR0aApbXSAwIHNldGRhc2gKMSBzZXRsaW5lY2FwCjEgc2V0bGluZWpvaW4KMTAuMDAgc2V0bWl0ZXJsaW1pdApucAoxNzkuNzMgMzY3LjIwIG0KMzg5LjM0IDAgbApvCi9Gb250MSBmaW5kZm9udCAxOCBzCjE3OS43MyAzNDkuMjMgKDApIC41IDAgdAoyMTIuMTggMzQ5LjIzICgxLzYpIC41IDAgdAoyNzcuMDcgMzQ5LjIzICgxLzIpIC41IDAgdAozMjUuNzMgMzQ5LjIzICgzLzQpIC41IDAgdAozNzQuNDAgMzQ5LjIzICgxKSAuNSAwIHQKNTY5LjA3IDM0OS4yMyAoMikgLjUgMCB0CmVwCiUlVHJhaWxlcgolJVBhZ2VzOiAxCiUlRU9GCg==}
+
+\end{minipage}
+\end{figure}
+\begin{defn}
+{\bf Rational numbers} are fractions denoted $p/q$, where $p$ and $q$ are integers. The set of all rational numbers is usually denoted $\mathbb{Q}$.
+\end{defn}
+
+\begin{notes}
+Note that every integer is a rational number (obtained by taking $q=1$). 
+\end{notes}
+
+We can simplify fractions if the numerator and denominator contain common terms.\\
+
+When the rationals are ordered on to a line there are points missing, i.e. there are "gaps", for example there is no rational number $p/q$ such that $(p/q)^2=2$.
+
+\subsubsection{Examples}
+\begin{xmpl}
+$\frac{2}{6}$=$\frac{2}{2 \cdot 3}$=$\frac{1}{3}$ 
+
+\end{xmpl}
+
+The rational numbers can be put in order
+along a line as in the figure.
+
+\begin{xmpl} As an elaborate example of a fraction, consider the evaluation of the quantity 
+$$
+\frac{\frac{2}{3}+\frac{2}{5}}{\frac{1}{3}+\frac{1}{2}}
+$$
+\end{xmpl}
+\begin{xmpl}
+Evaluate 
+$$
+\frac{\frac{2}{3}+\frac{2}{5}}{\frac{1}{3}+\frac{1}{2}}
+$$
+
+Solution:
+We can either start by calculating the numerator
+
+$$\frac{2}{3}+\frac{2}{5}$$
+
+or the denominator
+
+$$\frac{1}{3}+\frac{1}{2}$$.
+
+Here we choose to start with the numerator. 
+The first step is to make the two fractions in the numerator have a common denominator. 
+
+We can either find the least common denominator or use the product of the two denominators. Here they are the same number, 15. 
+
+So the first step is:
+
+$$\frac{2}{3}\cdot \frac{5}{5}+\frac{2}{5}\cdot \frac{3}{3} = \frac{2\cdot 5}{3\cdot 5}+\frac{2\cdot 3}{5\cdot 3} = \frac{10}{15}+\frac{6}{15}$$.
+
+Now it is possible to add the two fractions, which is the second step:
+
+$$\frac{10+6}{15} = \frac{16}{15}$$
+
+
+Next, the same process has to be performed for the original denominator. 
+
+With the same method  (LCM - least common multiple) we get:
+
+$$\frac{1\cdot 2}{3\cdot 2}+\frac{1\cdot 3}{2\cdot 3} = \frac{2}{6}+\frac{3}{6} =\frac{5}{6} $$
+
+
+Then the total answer is:
+
+$$\frac{\frac{16}{15}}{\frac{5}{6}} {=} \frac{16}{15} \cdot \frac{6}{5} = \frac{96}{75}= \frac{96/3}{75/3}=\frac{32}{25}$$
+
+We can see that in the last step of the equation, the factor has been simplified. To do this we use factoring. 
+Here we obtain: 
+
+$$\frac{96}{75}$$ = $$\frac{3\cdot 32}{3\cdot 25}$$
+
+
+
+We can now remove "3", or the multiplier, as it is on both sides of the fraction. So we have: 
+
+
+$$\frac{32}{25}$$ = $$\frac{25}{25}+\frac{7}{25} 
+=1\frac{7}{25} $$
+
+In step 1 above we used Cross-Multiplication. 
+
+\begin{defn}
+{\bf Cross-Multiplication} is when we multiple the numerator by the reciprocal of the denominator. 
+\end{defn}
+So in this case we rewrite
+$$\frac{\frac{16}{15}}{\frac{5}{6}}$$ or $$\frac{16}{15} \div \frac{5}{6}$$ as $$\frac{16}{15} \cdot \frac{6}{5}$$
+
+As you can see all we are doing is turning $$\frac{5}{6}$$ upside down: and multiplying it with $$\frac{16}{15}$$
+
+This gives:
+
+$$\frac{96}{75}$$
+
+\end{xmpl}
+
+In some cases it is possible to draw a \textbf{square root} of a fraction $s=\frac{p}{q}$, i.e. find a number $r\in \mathbb{Q}$ such that $r^2=s$. The square root is denoted $\sqrt{r}$.
+
+\begin{xmpl}
+
+Consider the expression $$(\sqrt{\frac{1}{9}} \times 2^4) + (\frac{1}{5} \times \sqrt{25})$$.
+
+To evaluate this expression, first consider separately the two parts on each side of the plus symbol. 
+
+The first part is $$(\sqrt{\frac{1}{9}} \times 2^4)$$ and the second part is $$(\frac{1}{5} \times \sqrt{25})$$. 
+
+In addition, by definition of root, $$\sqrt{\frac{1}{9}} = \frac{1}{3}$$. 
+
+First part: $$(\sqrt{\frac{1}{9}} \times 2^4) = \frac{1}{3} \times 16 = \frac{16}{3}$$
+
+Second part: $$(\frac{1}{5} \times \sqrt{25}) = \frac{1}{5} \times 5 = 1$$
+
+Finally, add the first part and the second part: $$\frac{16}{3} + 1 = \frac{19}{3}$$
+\end{xmpl}
+
+\begin{xmpl}
+
+Consider the following fraction example, to be solved step by step: 
+
+$$\frac{\frac{4}{2}+(\frac{1}{4}\cdot\frac{5}{3})}{\frac{2}{6}\div\frac{1}{5}}$$
+
+First we need to be aware of operator precedence, sometimes called BODMAS (brackets, multiplication/division, then addition/subtraction). 
+
+$$(\frac{1}{4}\cdot\frac{5}{3}) = \frac{5}{12}$$
+
+After solving the bracket we can proceed with adding $$\frac{4}{2}$$ to $$\frac{5}{12}$$ as there is no other action left for the nominator of the main fraction. So:
+
+$$\frac{4}{2}+\frac{5}{12}$$
+
+When adding fractions together we first have to find a common denominator, in this case 12 would work as $$2\cdot6=12$$ So we multiply both the numerator and the denominator of that fraction by 6 and then add the two numerators of the fractions together, keeping the same denominator. 
+ 
+$$\frac{4}{2}+\frac{5}{12}=\frac{4\cdot6}{2\cdot6}+\frac{5}{12}=\frac{24}{12}+\frac{5}{12}=\frac{29}{12}$$
+
+Now we have the top half of the fraction solved. We then proceed with dividing the two fractions of the bottom half. When dividing fractions we use the so called cross multiplication technique. This arithmetic trick is derived from the fact that if you divide a fraction by its duplicate you get 1. If you multiple a fraction by its reciprocal (it's reverse) you also get 1. Like so:
+
+$$\frac{1}{2}\div\frac{1}{2}=1$$ and $$\frac{1}{2}\cdot\frac{2}{1}=1$$
+
+These functions always provide the same result and therefore we can turn the fraction we are dividing by upside down and multiply it to the other fraction as that is usually much easier.\\
+
+We can therefore rewrite $$\frac{2}{6}\div\frac{1}{5}$$ as $$\frac{2}{6}\cdot\frac{5}{1}=\frac{10}{6}$$
+
+We've now solved both halves of the original fraction and can therefore proceed to solve it, again with the cross multiplication technique as fractions are after all just divisions:
+
+$$\frac{29}{12}\div\frac{10}{6}=\frac{29}{12}\cdot\frac{6}{10}=\frac{174}{120}$$
+
+Now $$\frac{174}{120}$$ is a pretty bad looking fraction and we'd preferably like to simplify it.\\ 
+
+To do this we use factoring. 
+\begin{defn}
+{\bf Factoring} essentially means to break a number done into it's smallest factors or multipliable prime numbers. 
+\end{defn}
+
+In this case we get 
+$$\frac{2\cdot3\cdot29}{2\cdot3\cdot20}$$
+
+These are the smallest prime numbers that can multiply together into 174 and 120 respectively. \\
+
+A way of doing this in your head is by first dividing both numbers (174,120) by two. Which gives us: 
+
+$$\frac{2\cdot87}{2\cdot60}$$ and then dividing those numbers (87,60) by 3, since they can't be divided by 2. Dividing by 3 gives you $$\frac{3\cdot29}{3\cdot20}=\frac{29}{20}$$ which is a lot nicer than $$\frac{174}{120}$$
+
+The reasoning behind this factoring simplification is that we can remove multipliers if they are on both sides of a fraction. This is because the result of a fraction where the numerator and the denominator are the same is always 1. Like so: 
+
+$$\frac{1}{1}=1$$ or $$\frac{2}{2}=1$$ or $$\frac{3}{3}=1$$
+
+The final answer therefore is
+
+$$\frac{\frac{4}{2}+(\frac{1}{4}\cdot\frac{5}{3})}{\frac{2}{6}\div\frac{1}{5}}=\frac{29}{20}$$
+\end{xmpl}
+
+
+%% Slide https://tutor-web.net/math/math612.0/lecture110/slide50
+\subsection{The real line}
+\fbox{
+\begin{minipage}{0.58\textwidth}
+Some obvious numbers are not fractions.
+
+The set of numbers making up the real line is denoted by the symbol $\mathbb{R}$.
+\end{minipage}
+\hspace{0.5mm}
+\begin{minipage}{0.38\textwidth}
+\includegraphicsdata{data:application/postscript:base64,JSFQUy1BZG9iZS0zLjAKJSVEb2N1bWVudE5lZWRlZFJlc291cmNlczogZm9udCBIZWx2ZXRpY2EKJSUrIGZvbnQgSGVsdmV0aWNhLUJvbGQKJSUrIGZvbnQgSGVsdmV0aWNhLU9ibGlxdWUKJSUrIGZvbnQgSGVsdmV0aWNhLUJvbGRPYmxpcXVlCiUlKyBmb250IFN5bWJvbAolJURvY3VtZW50TWVkaWE6IHNwZWNpYWwgNzIwIDcyMCAwICgpICgpCiUlVGl0bGU6IFIgR3JhcGhpY3MgT3V0cHV0CiUlQ3JlYXRvcjogUiBTb2Z0d2FyZQolJVBhZ2VzOiAoYXRlbmQpCiUlQm91bmRpbmdCb3g6IDAgMCA3MjAgNzIwCiUlRW5kQ29tbWVudHMKJSVCZWdpblByb2xvZwovYnAgIHsgZ3Mgc1JHQiBncyB9IGRlZgolIGJlZ2luIC5wcy5wcm9sb2cKL2dzICB7IGdzYXZlIH0gYmluZCBkZWYKL2dyICB7IGdyZXN0b3JlIH0gYmluZCBkZWYKL2VwICB7IHNob3dwYWdlIGdyIGdyIH0gYmluZCBkZWYKL20gICB7IG1vdmV0byB9IGJpbmQgZGVmCi9sICB7IHJsaW5ldG8gfSBiaW5kIGRlZgovbnAgIHsgbmV3cGF0aCB9IGJpbmQgZGVmCi9jcCAgeyBjbG9zZXBhdGggfSBiaW5kIGRlZgovZiAgIHsgZmlsbCB9IGJpbmQgZGVmCi9vICAgeyBzdHJva2UgfSBiaW5kIGRlZgovYyAgIHsgbmV3cGF0aCAwIDM2MCBhcmMgfSBiaW5kIGRlZgovciAgIHsgNCAyIHJvbGwgbW92ZXRvIDEgY29weSAzIC0xIHJvbGwgZXhjaCAwIGV4Y2ggcmxpbmV0byAwIHJsaW5ldG8gLTEgbXVsIDAgZXhjaCBybGluZXRvIGNsb3NlcGF0aCB9IGJpbmQgZGVmCi9wMSAgeyBzdHJva2UgfSBiaW5kIGRlZgovcDIgIHsgZ3NhdmUgYmcgZmlsbCBncmVzdG9yZSBuZXdwYXRoIH0gYmluZCBkZWYKL3AzICB7IGdzYXZlIGJnIGZpbGwgZ3Jlc3RvcmUgc3Ryb2tlIH0gYmluZCBkZWYKL3A2ICB7IGdzYXZlIGJnIGVvZmlsbCBncmVzdG9yZSBuZXdwYXRoIH0gYmluZCBkZWYKL3A3ICB7IGdzYXZlIGJnIGVvZmlsbCBncmVzdG9yZSBzdHJva2UgfSBiaW5kIGRlZgovdCAgIHsgNSAtMiByb2xsIG1vdmV0byBnc2F2ZSByb3RhdGUKICAgICAgIDEgaW5kZXggc3RyaW5nd2lkdGggcG9wCiAgICAgICBtdWwgbmVnIDAgcm1vdmV0byBzaG93IGdyZXN0b3JlIH0gYmluZCBkZWYKL3RhICB7IDQgLTIgcm9sbCBtb3ZldG8gZ3NhdmUgcm90YXRlIHNob3cgfSBiaW5kIGRlZgovdGIgIHsgMiAtMSByb2xsIDAgcm1vdmV0byBzaG93IH0gYmluZCBkZWYKL2NsICB7IGdyZXN0b3JlIGdzYXZlIG5ld3BhdGggMyBpbmRleCAzIGluZGV4IG1vdmV0byAxIGluZGV4CiAgICAgICA0IC0xIHJvbGwgbGluZXRvICBleGNoIDEgaW5kZXggbGluZXRvIGxpbmV0bwogICAgICAgY2xvc2VwYXRoIGNsaXAgbmV3cGF0aCB9IGJpbmQgZGVmCi9yZ2IgeyBzZXRyZ2Jjb2xvciB9IGJpbmQgZGVmCi9zICAgeyBzY2FsZWZvbnQgc2V0Zm9udCB9IGJpbmQgZGVmCiUgZW5kICAgLnBzLnByb2xvZwovc1JHQiB7IFsgL0NJRUJhc2VkQUJDCiAgICAgICAgICA8PCAvRGVjb2RlTE1OCiAgICAgICAgICAgICAgIFsgeyBkdXAgMC4wMzkyOCBsZQogICAgICAgICAgICAgICAgICAgICAgICB7MTIuOTIzMjEgZGl2fQogICAgICAgICAgICAgICAgICAgICAgICB7MC4wNTUgYWRkIDEuMDU1IGRpdiAyLjQgZXhwIH0KICAgICAgICAgICAgICAgICAgICAgaWZlbHNlCiAgICAgICAgICAgICAgICAgfSBiaW5kIGR1cCBkdXAKICAgICAgICAgICAgICAgXQogICAgICAgICAgICAgL01hdHJpeExNTiBbMC40MTI0NTcgMC4yMTI2NzMgMC4wMTkzMzQKICAgICAgICAgICAgICAgICAgICAgICAgIDAuMzU3NTc2IDAuNzE1MTUyIDAuMTE5MTkyCiAgICAgICAgICAgICAgICAgICAgICAgICAwLjE4MDQzNyAwLjA3MjE3NSAwLjk1MDMwMV0KICAgICAgICAgICAgIC9XaGl0ZVBvaW50IFswLjk1MDUgMS4wIDEuMDg5MF0KICAgICAgICAgICA+PgogICAgICAgICBdIHNldGNvbG9yc3BhY2UgfSBiaW5kIGRlZgovc3JnYiB7IHNldGNvbG9yIH0gYmluZCBkZWYKJSVJbmNsdWRlUmVzb3VyY2U6IGZvbnQgSGVsdmV0aWNhCi9IZWx2ZXRpY2EgZmluZGZvbnQKZHVwIGxlbmd0aCBkaWN0IGJlZ2luCiAgezEgaW5kZXggL0ZJRCBuZSB7ZGVmfSB7cG9wIHBvcH0gaWZlbHNlfSBmb3JhbGwKICAvRW5jb2RpbmcgSVNPTGF0aW4xRW5jb2RpbmcgZGVmCiAgY3VycmVudGRpY3QKICBlbmQKL0ZvbnQxIGV4Y2ggZGVmaW5lZm9udCBwb3AKJSVJbmNsdWRlUmVzb3VyY2U6IGZvbnQgSGVsdmV0aWNhLUJvbGQKL0hlbHZldGljYS1Cb2xkIGZpbmRmb250CmR1cCBsZW5ndGggZGljdCBiZWdpbgogIHsxIGluZGV4IC9GSUQgbmUge2RlZn0ge3BvcCBwb3B9IGlmZWxzZX0gZm9yYWxsCiAgL0VuY29kaW5nIElTT0xhdGluMUVuY29kaW5nIGRlZgogIGN1cnJlbnRkaWN0CiAgZW5kCi9Gb250MiBleGNoIGRlZmluZWZvbnQgcG9wCiUlSW5jbHVkZVJlc291cmNlOiBmb250IEhlbHZldGljYS1PYmxpcXVlCi9IZWx2ZXRpY2EtT2JsaXF1ZSBmaW5kZm9udApkdXAgbGVuZ3RoIGRpY3QgYmVnaW4KICB7MSBpbmRleCAvRklEIG5lIHtkZWZ9IHtwb3AgcG9wfSBpZmVsc2V9IGZvcmFsbAogIC9FbmNvZGluZyBJU09MYXRpbjFFbmNvZGluZyBkZWYKICBjdXJyZW50ZGljdAogIGVuZAovRm9udDMgZXhjaCBkZWZpbmVmb250IHBvcAolJUluY2x1ZGVSZXNvdXJjZTogZm9udCBIZWx2ZXRpY2EtQm9sZE9ibGlxdWUKL0hlbHZldGljYS1Cb2xkT2JsaXF1ZSBmaW5kZm9udApkdXAgbGVuZ3RoIGRpY3QgYmVnaW4KICB7MSBpbmRleCAvRklEIG5lIHtkZWZ9IHtwb3AgcG9wfSBpZmVsc2V9IGZvcmFsbAogIC9FbmNvZGluZyBJU09MYXRpbjFFbmNvZGluZyBkZWYKICBjdXJyZW50ZGljdAogIGVuZAovRm9udDQgZXhjaCBkZWZpbmVmb250IHBvcAolJUluY2x1ZGVSZXNvdXJjZTogZm9udCBTeW1ib2wKL1N5bWJvbCBmaW5kZm9udApkdXAgbGVuZ3RoIGRpY3QgYmVnaW4KICB7MSBpbmRleCAvRklEIG5lIHtkZWZ9IHtwb3AgcG9wfSBpZmVsc2V9IGZvcmFsbAogIGN1cnJlbnRkaWN0CiAgZW5kCi9Gb250NSBleGNoIGRlZmluZWZvbnQgcG9wCiUlRW5kUHJvbG9nCiUlUGFnZTogMSAxCmJwCjAuMDAgMC4wMCA3MjAuMDAgNzIwLjAwIGNsCjU5LjA0IDczLjQ0IDY4OS43NiA2NjAuOTYgY2wKMCAwIDAgc3JnYgowLjc1IHNldGxpbmV3aWR0aApbXSAwIHNldGRhc2gKMSBzZXRsaW5lY2FwCjEgc2V0bGluZWpvaW4KMTAuMDAgc2V0bWl0ZXJsaW1pdApucAoxMDIuNDAgOTUuMjAgbQo1NDQuMDAgMCBsCjAgNTQ0LjAwIGwKLTU0NC4wMCAwIGwKMCAtNTQ0LjAwIGwKbwpucAoxMDIuNDAgOTUuMjAgbQo1NDQuMDAgNTQ0LjAwIGwKbwpucAozNDUuODkgMzY2Ljc5IG0KMi4zMyAxLjI2IGwKMi4zMiAtNi4zMiBsCjMuMTAgMTYuNDIgbAoxMi43MyAwIGwKbwovRm9udDEgZmluZGZvbnQgMTggcwozNTUuNTMgMzYxLjczICgyKSAwIDAgdAo5NS4yMCAzNjIuODkgKDEpIDEgMCB0CjM3NC40MCA3Ny4yMyAoMSkgLjUgMCB0CmVwCiUlVHJhaWxlcgolJVBhZ2VzOiAxCiUlRU9GCg==}
+\scriptsize The diagonal of a rectangle with unit side lengths of $\sqrt{2}$, Note that  $\sqrt{2}$ ia not a fraction.
+\end{minipage}
+}
+\subsubsection{Details}
+Some obvious numbers, which commonly occur, are not fractions. These are in between the rational numbers (fractions).  Filling in the missing points to obtain a continuum results in the set of "real numbers".\\
+
+Denoted by $\mathbb{R}$ the entire set of "real numbers"  which corresponds to "filling in"  the "missing pieces"  of the line. 
+
+\subsubsection{Examples}
+
+\begin{xmpl}
+If $C$ is the circumference of a circle and $D$ is the diameter and we define $\pi=\frac{C}{D}$ then $\pi$ is not a fraction.
+\end{xmpl}
+
+
+\begin{xmpl}
+One example of a non fraction is the number e (Euler's number) which can be defined by   
+
+$$e = \sum_{n=0}^{\infty }\frac{1}{n!}$$
+\end{xmpl}
+\begin{xmpl}
+
+If you have a right triangle with unit side length, what is the length of its hypotenuse and what class of numbers does it belong to?
+
+An isosceles triangle is defined as having adjacent and opposite sides of same length, connected by a 
+$90^{\circ}$ angle.
+Unit side length of these, refers to a side length of $$1$$.
+ 
+As we have a $90^{\circ}$ angle, we can use Pythagoras' theorem:
+
+$$a^2+b^2=c^2$$
+
+With
+$$a=adjacent$$
+$$b=opposite$$
+$$c=hypotenuse$$
+
+So with $$a,b=1$$:
+
+$$c^2=1^2+1^2$$
+$$c^2=1+1$$
+$$c^2=2$$
+
+We take the square root to get $$c$$
+
+$$c=\sqrt{2}$$
+
+Now that we answered the first part of the question, it needs to be defined, which class of number $$\sqrt{2}$$ belongs to. $$\sqrt{2}$$ is an irrational number, and belongs thereby to the set of real numbers $$\mathbb{R}$$ Real numbers can be imagined as points on an infinitely long line, which is also called the real line.
+\end{xmpl}
+
