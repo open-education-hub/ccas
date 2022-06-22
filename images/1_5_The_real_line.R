@@ -1,0 +1,6 @@
+plot(c(0,1),c(0,1), type="n",  xlab="", ylab="",asp=1,axes=F)
+lines(c(0,1,1,0,0),c(0,0,1,1,0))
+lines(c(0,1),c(0,1))
+text(0.5,0.5,expression(sqrt(2)),pos=2,cex=1.5)
+text(0,0.5,"1",pos=2,cex=1.5)
+text(0.5,0,"1",pos=1,cex=1.5)

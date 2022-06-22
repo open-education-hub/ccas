@@ -1,0 +1,8 @@
+x <- seq(0, 10, 0.2)
+y <- log(x)
+plot(x,y, type="l", axes=F, ylab="", xlab="")
+abline(h=0, v=0)
+text(7,1.6, expression(y == ln(x)))
+text(1.1,-0.08, expression(1), cex=1)
+text(-0.1,-0.08, expression(0), cex=1)
+text(9, -0.1, expression(x), cex=1.5)
