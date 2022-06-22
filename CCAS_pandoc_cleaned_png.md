@@ -422,7 +422,7 @@ The square root is denoted $\sqrt{r}$.
 > 
 > ![Fig. 2](images/1_5_The_real_line.png)
 > 
-> figuretext: The diagonal of a rectangle with unit side lengths of
+> Figure: The diagonal of a rectangle with unit side lengths of
 > $\sqrt{2}$, Note that $\sqrt{2}$ is not a fraction.
 
 ### Details
@@ -564,7 +564,7 @@ distance between the 2 points and graph the line connecting the points
 > 
 > ![Fig. 3](images/2_2_Simple_plots_in_R.png)
 > 
-> figuretext: Points on a plane, drawn with R.
+> Figure: Points on a plane, drawn with R.
 
 ### Examples
 
@@ -1610,7 +1610,7 @@ The simplest of these is the constant polynomial $p(x)=a$.
 > 
 > ![Fig. 6](images/6_2_The_quadratic.png)
 > 
-> figuretext: Parabolas: Quadratic functions.
+> Figure: Parabolas: Quadratic functions.
 
 ### Details
 
@@ -1634,7 +1634,7 @@ This is sometimes used to describe a response function.
 > 
 > ![Fig. 7](images/6_3_The_Cubic.png)
 > 
-> figuretext: $y=x^3-20x^2-30x-4$
+> Figure: $y=x^3-20x^2-30x-4$
 
 ## The Quartic
 
@@ -1643,7 +1643,7 @@ This is sometimes used to describe a response function.
 > 
 > ![Fig. 8](images/6_4_The_Quartic.png)
 > 
-> figuretext: The general shape. Here we used the following equation
+> Figure: The general shape. Here we used the following equation
 > $y=x^4-x^3-7x^2+x+6$
 
 ## Solving the linear equation
@@ -1883,9 +1883,8 @@ $\verb;table(x);$ returns counts of the frequency in each category.
 > 
 > ![Fig. 11](images/7_5_Scatter_plots_and_correlation.png)
 > 
-> figuretext: Figure: Scatter plot showing the length-weight relationship
-> of fish species \"X\". Data source : Marine Resource Institution -
-> Iceland.
+> Figure: Scatter plot showing the length-weight relationship of fish
+> species \"X\". Data source : Marine Resource Institution - Iceland.
 
 ### Details
 
@@ -2106,7 +2105,7 @@ USA.
 > 
 > ![Fig. 12](images/9_1_Exponential_growth_and_decline.png)
 > 
-> figuretext: Exponential growth curve
+> Figure: Exponential growth curve
 
 ### Details
 
@@ -2250,8 +2249,8 @@ $$f^{-1}(f(x))=x$$
 > 
 > ![Fig. 13](images/10_2_When_the_inverse_exists.png)
 > 
-> figuretext: The function $f(x)=x^2$ does not have an inverse since
-> f(x)=1 has two possible solutions -1 and 1.
+> Figure: The function $f(x)=x^2$ does not have an inverse since f(x)=1
+> has two possible solutions -1 and 1.
 
 ### Examples
 
@@ -2324,9 +2323,8 @@ $$x \cdot y = 10^a \cdot 10^b = 10^{a+b}$$ so that $$\log(xy) = a+b$$
 > 
 > ![Fig. 14](images/10_4_The_natural_logarithm.png)
 > 
-> figuretext: The curve depicts the fuction $y=\ln(x)$ and shows that $ln$
-> is the inverse of $exp$. Note that $\ln(1)=0$ and when $y=0$ then
-> $e^0=1$.
+> Figure: The curve depicts the fuction $y=\ln(x)$ and shows that $ln$ is
+> the inverse of $exp$. Note that $\ln(1)=0$ and when $y=0$ then $e^0=1$.
 
 ## Properties of logarithm(s)
 
@@ -2418,9 +2416,9 @@ USA.
 > 
 > ![Fig. 15](images/11_1_The_concept_of_continuity.png)
 > 
-> figuretext: The above figure is an example of linear growth. Thomas
-> Robert Malthus (1766-1834) warned about the dangers of uninhibited
-> population growth.
+> Figure: The above figure is an example of linear growth. Thomas Robert
+> Malthus (1766-1834) warned about the dangers of uninhibited population
+> growth.
 
 ### Details
 
@@ -2485,7 +2483,7 @@ output, $f(x_0)$.
 > 
 > ![Fig. 17](images/11_3_Notes_on_discontinuous_function.png)
 > 
-> figuretext: $f(x) = \frac{1}{x}$, where $x\neq 0$
+> Figure: $f(x) = \frac{1}{x}$, where $x\neq 0$
 
 ### Details
 
@@ -2521,7 +2519,7 @@ $$p(x)=a_0+a_1x+a_2x^2+\ldots +a_n x^n$$ is a continuous function.
 > 
 > ![Fig. 19](images/11_5_Simple_limits.png)
 > 
-> figuretext: $f(x) = x^x$, for $x>0$
+> Figure: $f(x) = x^x$, for $x>0$
 
 ### Details
 
@@ -2575,7 +2573,7 @@ If $c = f(x_0)$ then $f$ is **continuous** at $x_0$.
 > 
 > ![Fig. 20](images/11_6_More_on_limits.png)
 > 
-> figuretext: The function $f(x)= \frac{1}{1+e^{-x}}$.
+> Figure: The function $f(x)= \frac{1}{1+e^{-x}}$.
 
 ### Examples
 
@@ -3331,7 +3329,7 @@ USA.
 > 
 > ![Fig. 28](images/16_1_Area_under_a_curve.png)
 > 
-> figuretext: Example 1, 2 and 3
+> Figure: Example 1, 2 and 3
 
 ### Details
 
@@ -3845,7 +3843,7 @@ USA.
 > 
 > ![Fig. 30](images/18_1_The_Central_Limit_Theorem.png)
 > 
-> figuretext: The standard normal density
+> Figure: The standard normal density
 
 ### Details
 
@@ -4007,8 +4005,8 @@ $$\begin{aligned}
 > 
 > ![Fig. 31](images/18_3_Monte_Carlo_simulation.png)
 > 
-> figuretext: A simulated set of $t$-values based on data from an
-> exponential distribution.
+> Figure: A simulated set of $t$-values based on data from an exponential
+> distribution.
 
 ### Examples
 
@@ -4850,7 +4848,7 @@ USA.
 > 
 > ![Fig. 36](images/22_3_Ordinary_least_squares.png)
 > 
-> figuretext: Regression line through data pairs.
+> Figure: Regression line through data pairs.
 
 ### Details
 
@@ -4897,7 +4895,7 @@ variables and lower case letters to denote outcome or data.
 > 
 > ![Fig. 37](images/22_5_Estimators_and_estimates.png)
 > 
-> figuretext: Shows an example of the distribution of the estimator
+> Figure: Shows an example of the distribution of the estimator
 > $\hat{\beta}$
 
 ### Details
@@ -7625,8 +7623,7 @@ USA.
 > 
 > [IMAGE MISSING]
 > 
-> figuretext: Example taken from R of a fitted model using linear
-> regression.
+> Figure: Example taken from R of a fitted model using linear regression.
 
 ### Details
 

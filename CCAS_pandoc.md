@@ -455,7 +455,7 @@ $\mathbb{R}$.
 2
 :::
 
-figuretext: The diagonal of a rectangle with unit side lengths of
+Figure: The diagonal of a rectangle with unit side lengths of
 $\sqrt{2}$, Note that $\sqrt{2}$ is not a fraction.
 :::
 
@@ -609,7 +609,7 @@ Graphing functions in R
 3
 :::
 
-figuretext: Points on a plane, drawn with R.
+Figure: Points on a plane, drawn with R.
 :::
 
 ### Examples
@@ -1746,7 +1746,7 @@ The simplest quadratic is $p(x) = x^2$
 6
 :::
 
-figuretext: Parabolas: Quadratic functions.
+Figure: Parabolas: Quadratic functions.
 :::
 
 ### Details
@@ -1775,7 +1775,7 @@ $p(x)=ax^3 + bx^2 + cx + d$
 7
 :::
 
-figuretext: $y=x^3-20x^2-30x-4$
+Figure: $y=x^3-20x^2-30x-4$
 :::
 
 ## The Quartic
@@ -1788,7 +1788,7 @@ $p(x) = ax^4 + bx^3 + cx^2 + dx + e$
 8
 :::
 
-figuretext: The general shape. Here we used the following equation
+Figure: The general shape. Here we used the following equation
 $y=x^4-x^3-7x^2+x+6$
 :::
 
@@ -2055,9 +2055,8 @@ plot the data in a scatter plot.
 11
 :::
 
-figuretext: Figure: Scatter plot showing the length-weight relationship
-of fish species \"X\". Data source : Marine Resource Institution -
-Iceland.
+Figure: Scatter plot showing the length-weight relationship of fish
+species \"X\". Data source : Marine Resource Institution - Iceland.
 :::
 
 ### Details
@@ -2302,7 +2301,7 @@ $y(t)=Ae^{kt}$
 12
 :::
 
-figuretext: Exponential growth curve
+Figure: Exponential growth curve
 :::
 
 ### Details
@@ -2466,8 +2465,8 @@ be one-to-one, i.e. for each $x$, $f(x)$ must be unique.
 13
 :::
 
-figuretext: The function $f(x)=x^2$ does not have an inverse since
-f(x)=1 has two possible solutions -1 and 1.
+Figure: The function $f(x)=x^2$ does not have an inverse since f(x)=1
+has two possible solutions -1 and 1.
 :::
 
 ### Examples
@@ -2552,9 +2551,8 @@ Note that $ln$ is the inverse of $exp$.
 14
 :::
 
-figuretext: The curve depicts the fuction $y=\ln(x)$ and shows that $ln$
-is the inverse of $exp$. Note that $\ln(1)=0$ and when $y=0$ then
-$e^0=1$.
+Figure: The curve depicts the fuction $y=\ln(x)$ and shows that $ln$ is
+the inverse of $exp$. Note that $\ln(1)=0$ and when $y=0$ then $e^0=1$.
 :::
 
 ## Properties of logarithm(s)
@@ -2656,9 +2654,9 @@ $x_0$, the input, correspond to small changes in the output, $f(x_0)$.
 15
 :::
 
-figuretext: The above figure is an example of linear growth. Thomas
-Robert Malthus (1766-1834) warned about the dangers of uninhibited
-population growth.
+Figure: The above figure is an example of linear growth. Thomas Robert
+Malthus (1766-1834) warned about the dangers of uninhibited population
+growth.
 :::
 
 ### Details
@@ -2736,7 +2734,7 @@ or jumps.
 17
 :::
 
-figuretext: $f(x) = \frac{1}{x}$, where $x\neq 0$
+Figure: $f(x) = \frac{1}{x}$, where $x\neq 0$
 :::
 
 ### Details
@@ -2780,7 +2778,7 @@ used to define continuity, derivatives and integrals.
 19
 :::
 
-figuretext: $f(x) = x^x$, for $x>0$
+Figure: $f(x) = x^x$, for $x>0$
 :::
 
 ### Details
@@ -2841,7 +2839,7 @@ function.
 20
 :::
 
-figuretext: The function $f(x)= \frac{1}{1+e^{-x}}$.
+Figure: The function $f(x)= \frac{1}{1+e^{-x}}$.
 :::
 
 ### Examples
@@ -3690,7 +3688,7 @@ called the integral of the function.
 28
 :::
 
-figuretext: Example 1, 2 and 3
+Figure: Example 1, 2 and 3
 :::
 
 ### Details
@@ -4264,7 +4262,7 @@ Gaussian (normal) distribution as the sample size increases.
 30
 :::
 
-figuretext: The standard normal density
+Figure: The standard normal density
 :::
 
 ### Details
@@ -4439,8 +4437,8 @@ and evaluate the distribution of any quantity based on such data.
 31
 :::
 
-figuretext: A simulated set of $t$-values based on data from an
-exponential distribution.
+Figure: A simulated set of $t$-values based on data from an exponential
+distribution.
 :::
 
 ### Examples
@@ -5355,7 +5353,7 @@ with error.
 36
 :::
 
-figuretext: Regression line through data pairs.
+Figure: Regression line through data pairs.
 :::
 
 ### Details
@@ -5407,7 +5405,7 @@ the estimator which has some distribution.
 37
 :::
 
-figuretext: Shows an example of the distribution of the estimator
+Figure: Shows an example of the distribution of the estimator
 $\hat{\beta}$
 :::
 
@@ -8325,8 +8323,7 @@ is the estimated coefficient, and $x$ is the explanatory variable.
 40
 :::
 
-figuretext: Example taken from R of a fitted model using linear
-regression.
+Figure: Example taken from R of a fitted model using linear regression.
 :::
 
 ### Details

@@ -438,7 +438,7 @@ The square root is denoted $\sqrt{r}$.
 > text(0.5,0,"1",pos=1,cex=1.5)
 > ```
 > 
-> figuretext: The diagonal of a rectangle with unit side lengths of
+> Figure: The diagonal of a rectangle with unit side lengths of
 > $\sqrt{2}$, Note that $\sqrt{2}$ is not a fraction.
 
 ### Details
@@ -585,7 +585,7 @@ distance between the 2 points and graph the line connecting the points
 > text(3,1,"(3,1)",pos=4, cex=2)
 > ```
 > 
-> figuretext: Points on a plane, drawn with R.
+> Figure: Points on a plane, drawn with R.
 
 ### Examples
 
@@ -1648,7 +1648,7 @@ The simplest of these is the constant polynomial $p(x)=a$.
 > =-x^2+4x-4", col = "blue")
 > ```
 > 
-> figuretext: Parabolas: Quadratic functions.
+> Figure: Parabolas: Quadratic functions.
 
 ### Details
 
@@ -1687,7 +1687,7 @@ This is sometimes used to describe a response function.
 > grid()
 > ```
 > 
-> figuretext: $y=x^3-20x^2-30x-4$
+> Figure: $y=x^3-20x^2-30x-4$
 
 ## The Quartic
 
@@ -1699,7 +1699,7 @@ This is sometimes used to describe a response function.
 > abline(h=0, v=0)
 > ```
 > 
-> figuretext: The general shape. Here we used the following equation
+> Figure: The general shape. Here we used the following equation
 > $y=x^4-x^3-7x^2+x+6$
 
 ## Solving the linear equation
@@ -1950,9 +1950,8 @@ $\verb;table(x);$ returns counts of the frequency in each category.
 > plot(dat$le, dat$osl, xlab="Length (cm)", ylab="Weight (g)",pch=16, col="4" )
 > ```
 > 
-> figuretext: Figure: Scatter plot showing the length-weight relationship
-> of fish species \"X\". Data source : Marine Resource Institution -
-> Iceland.
+> Figure: Scatter plot showing the length-weight relationship of fish
+> species \"X\". Data source : Marine Resource Institution - Iceland.
 
 ### Details
 
@@ -2176,7 +2175,7 @@ USA.
 > curve (pert(200, 1.2, t=x), 0,10)
 > ```
 > 
-> figuretext: Exponential growth curve
+> Figure: Exponential growth curve
 
 ### Details
 
@@ -2331,8 +2330,8 @@ $$f^{-1}(f(x))=x$$
 > segments(-1,1,1,1, col="red", lty=4)
 > ```
 > 
-> figuretext: The function $f(x)=x^2$ does not have an inverse since
-> f(x)=1 has two possible solutions -1 and 1.
+> Figure: The function $f(x)=x^2$ does not have an inverse since f(x)=1
+> has two possible solutions -1 and 1.
 
 ### Examples
 
@@ -2414,9 +2413,8 @@ $$x \cdot y = 10^a \cdot 10^b = 10^{a+b}$$ so that $$\log(xy) = a+b$$
 > text(9, -0.1, expression(x), cex=1.5)
 > ```
 > 
-> figuretext: The curve depicts the fuction $y=\ln(x)$ and shows that $ln$
-> is the inverse of $exp$. Note that $\ln(1)=0$ and when $y=0$ then
-> $e^0=1$.
+> Figure: The curve depicts the fuction $y=\ln(x)$ and shows that $ln$ is
+> the inverse of $exp$. Note that $\ln(1)=0$ and when $y=0$ then $e^0=1$.
 
 ## Properties of logarithm(s)
 
@@ -2512,9 +2510,9 @@ USA.
 > plot(eq, type="l", main="Unlimited Growth", xlab="Time", ylab="Growth", frame= FALSE)
 > ```
 > 
-> figuretext: The above figure is an example of linear growth. Thomas
-> Robert Malthus (1766-1834) warned about the dangers of uninhibited
-> population growth.
+> Figure: The above figure is an example of linear growth. Thomas Robert
+> Malthus (1766-1834) warned about the dangers of uninhibited population
+> growth.
 
 ### Details
 
@@ -2598,7 +2596,7 @@ output, $f(x_0)$.
 > grid()
 > ```
 > 
-> figuretext: $f(x) = \frac{1}{x}$, where $x\neq 0$
+> Figure: $f(x) = \frac{1}{x}$, where $x\neq 0$
 
 ### Details
 
@@ -2646,7 +2644,7 @@ $$p(x)=a_0+a_1x+a_2x^2+\ldots +a_n x^n$$ is a continuous function.
 > plot(x,y,type='l', main="Example of Limit", xlab="X", ylab="Y")
 > ```
 > 
-> figuretext: $f(x) = x^x$, for $x>0$
+> Figure: $f(x) = x^x$, for $x>0$
 
 ### Details
 
@@ -2704,7 +2702,7 @@ If $c = f(x_0)$ then $f$ is **continuous** at $x_0$.
 > plot(x,y,type='l')
 > ```
 > 
-> figuretext: The function $f(x)= \frac{1}{1+e^{-x}}$.
+> Figure: The function $f(x)= \frac{1}{1+e^{-x}}$.
 
 ### Examples
 
@@ -3613,7 +3611,7 @@ USA.
 > lines(c(2,2),c(0,2),lty=2)
 > ```
 > 
-> figuretext: Example 1, 2 and 3
+> Figure: Example 1, 2 and 3
 
 ### Details
 
@@ -4144,7 +4142,7 @@ USA.
 > lines(x,rep(0,length(x)))
 > ```
 > 
-> figuretext: The standard normal density
+> Figure: The standard normal density
 
 ### Details
 
@@ -4320,8 +4318,8 @@ $$\begin{aligned}
 > truehist(tvec) 	#truehist gives a better histogram 
 > ```
 > 
-> figuretext: A simulated set of $t$-values based on data from an
-> exponential distribution.
+> Figure: A simulated set of $t$-values based on data from an exponential
+> distribution.
 
 ### Examples
 
@@ -5241,7 +5239,7 @@ USA.
 > abline(lm(y ~ x))
 > ```
 > 
-> figuretext: Regression line through data pairs.
+> Figure: Regression line through data pairs.
 
 ### Details
 
@@ -5303,7 +5301,7 @@ variables and lower case letters to denote outcome or data.
 > truehist(betahat)
 > ```
 > 
-> figuretext: Shows an example of the distribution of the estimator
+> Figure: Shows an example of the distribution of the estimator
 > $\hat{\beta}$
 
 ### Details
@@ -8049,8 +8047,7 @@ USA.
 > abline(z)
 > ```
 > 
-> figuretext: Example taken from R of a fitted model using linear
-> regression.
+> Figure: Example taken from R of a fitted model using linear regression.
 
 ### Details
 
