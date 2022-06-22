@@ -58,7 +58,7 @@ def replace_img(prefer_png=False):
                 code = file.read()
                 return "```{r}\n%s\n```" % code
         elif image.png:
-            return "[Fig. %d](images/%s)" % (num, image.png)
+            return "![Fig. %d](images/%s)" % (num, image.png)
         else:
             return "[IMAGE MISSING]"
     return do_replace

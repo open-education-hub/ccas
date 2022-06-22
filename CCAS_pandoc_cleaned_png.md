@@ -196,7 +196,7 @@ the operations must be performed.
 
 ### Details
 
-[Fig. 1](images/1_4_Rational_numbers.png)
+![Fig. 1](images/1_4_Rational_numbers.png)
 
 > **Definition**:  
 > **Rational numbers** are fractions denoted $p/q$, where $p$ and $q$ are
@@ -420,7 +420,7 @@ The square root is denoted $\sqrt{r}$.
 > The set of numbers making up the real line is denoted by the symbol
 > $\mathbb{R}$.
 > 
-> [Fig. 2](images/1_5_The_real_line.png)
+> ![Fig. 2](images/1_5_The_real_line.png)
 > 
 > figuretext: The diagonal of a rectangle with unit side lengths of
 > $\sqrt{2}$, Note that $\sqrt{2}$ is not a fraction.
@@ -562,7 +562,7 @@ distance between the 2 points and graph the line connecting the points
 > 
 > -   lines - adds lines to a plot
 > 
-> [Fig. 3](images/2_2_Simple_plots_in_R.png)
+> ![Fig. 3](images/2_2_Simple_plots_in_R.png)
 > 
 > figuretext: Points on a plane, drawn with R.
 
@@ -1478,7 +1478,7 @@ USA.
 > 
 > $y = 2+3\cdot x^4$
 > 
-> [Fig. 4](images/5_1_Functions_of_a_single_variable.png)
+> ![Fig. 4](images/5_1_Functions_of_a_single_variable.png)
 
 ### Details
 
@@ -1510,7 +1510,7 @@ common.
 
 > A function can be defined in R using the \"function\" command
 > 
-> [Fig. 5](images/5_2_Functions_in_R.png)
+> ![Fig. 5](images/5_2_Functions_in_R.png)
 
 ## Ranges and plots in R
 
@@ -1608,7 +1608,7 @@ The simplest of these is the constant polynomial $p(x)=a$.
 > 
 > The simplest quadratic is $p(x) = x^2$
 > 
-> [Fig. 6](images/6_2_The_quadratic.png)
+> ![Fig. 6](images/6_2_The_quadratic.png)
 > 
 > figuretext: Parabolas: Quadratic functions.
 
@@ -1632,7 +1632,7 @@ This is sometimes used to describe a response function.
 > 
 > $p(x)=ax^3 + bx^2 + cx + d$
 > 
-> [Fig. 7](images/6_3_The_Cubic.png)
+> ![Fig. 7](images/6_3_The_Cubic.png)
 > 
 > figuretext: $y=x^3-20x^2-30x-4$
 
@@ -1641,7 +1641,7 @@ This is sometimes used to describe a response function.
 > The general form of the quartic polynomial is
 > $p(x) = ax^4 + bx^3 + cx^2 + dx + e$
 > 
-> [Fig. 8](images/6_4_The_Quartic.png)
+> ![Fig. 8](images/6_4_The_Quartic.png)
 > 
 > figuretext: The general shape. Here we used the following equation
 > $y=x^4-x^3-7x^2+x+6$
@@ -1797,7 +1797,7 @@ of a column.
 > 
 > In R use the command: hist()
 > 
-> [Fig. 9](images/7_2_Histograms.png)
+> ![Fig. 9](images/7_2_Histograms.png)
 
 ### Examples
 
@@ -1823,7 +1823,7 @@ bars.
 > The bars in a bar chart usually correspond to frequencies in categories
 > and are therefore kept apart.
 > 
-> [Fig. 10](images/7_3_Bar_Charts.png)
+> ![Fig. 10](images/7_3_Bar_Charts.png)
 
 ### Details
 
@@ -1881,7 +1881,7 @@ $\verb;table(x);$ returns counts of the frequency in each category.
 > in seeing if a relationship exists between them. To do this, we first
 > plot the data in a scatter plot.
 > 
-> [Fig. 11](images/7_5_Scatter_plots_and_correlation.png)
+> ![Fig. 11](images/7_5_Scatter_plots_and_correlation.png)
 > 
 > figuretext: Figure: Scatter plot showing the length-weight relationship
 > of fish species \"X\". Data source : Marine Resource Institution -
@@ -2104,7 +2104,7 @@ USA.
 > 
 > $y(t)=Ae^{kt}$
 > 
-> [Fig. 12](images/9_1_Exponential_growth_and_decline.png)
+> ![Fig. 12](images/9_1_Exponential_growth_and_decline.png)
 > 
 > figuretext: Exponential growth curve
 
@@ -2248,7 +2248,7 @@ $$f^{-1}(f(x))=x$$
 > Inverses do not always exist. For an inverse of $f$ to exist, $f$ must
 > be one-to-one, i.e. for each $x$, $f(x)$ must be unique.
 > 
-> [Fig. 13](images/10_2_When_the_inverse_exists.png)
+> ![Fig. 13](images/10_2_When_the_inverse_exists.png)
 > 
 > figuretext: The function $f(x)=x^2$ does not have an inverse since
 > f(x)=1 has two possible solutions -1 and 1.
@@ -2322,7 +2322,7 @@ $$x \cdot y = 10^a \cdot 10^b = 10^{a+b}$$ so that $$\log(xy) = a+b$$
 > 
 > Note that $ln$ is the inverse of $exp$.
 > 
-> [Fig. 14](images/10_4_The_natural_logarithm.png)
+> ![Fig. 14](images/10_4_The_natural_logarithm.png)
 > 
 > figuretext: The curve depicts the fuction $y=\ln(x)$ and shows that $ln$
 > is the inverse of $exp$. Note that $\ln(1)=0$ and when $y=0$ then
@@ -2416,7 +2416,7 @@ USA.
 > A function is continuous if it has no jumps. Thus, small changes in each
 > $x_0$, the input, correspond to small changes in the output, $f(x_0)$.
 > 
-> [Fig. 15](images/11_1_The_concept_of_continuity.png)
+> ![Fig. 15](images/11_1_The_concept_of_continuity.png)
 > 
 > figuretext: The above figure is an example of linear growth. Thomas
 > Robert Malthus (1766-1834) warned about the dangers of uninhibited
@@ -2438,7 +2438,7 @@ output, $f(x_0)$.
 > The cumulative distribution function for a discrete random variable is
 > discontinuous.
 > 
-> [Fig. 16](images/11_2_Discrete_probabilities_and_cumulative_distribution_functions.png)
+> ![Fig. 16](images/11_2_Discrete_probabilities_and_cumulative_distribution_functions.png)
 
 ### Details
 
@@ -2483,7 +2483,7 @@ output, $f(x_0)$.
 > not vary continuously as the variable increases. In other words, breaks
 > or jumps.
 > 
-> [Fig. 17](images/11_3_Notes_on_discontinuous_function.png)
+> ![Fig. 17](images/11_3_Notes_on_discontinuous_function.png)
 > 
 > figuretext: $f(x) = \frac{1}{x}$, where $x\neq 0$
 
@@ -2504,7 +2504,7 @@ continuous at $x=0$ even if one tries to define $f(0)$ as some number.
 > All polynomials, $p(x)=a_0+a_1x+a_2x^2+\ldots +a_n x^n ,$ are
 > continuous.
 > 
-> [Fig. 18](images/11_4_Continuity_of_polynomials.png)
+> ![Fig. 18](images/11_4_Continuity_of_polynomials.png)
 
 ### Details
 
@@ -2519,7 +2519,7 @@ $$p(x)=a_0+a_1x+a_2x^2+\ldots +a_n x^n$$ is a continuous function.
 > \"approaches\" as the input or index approaches some value. Limits are
 > used to define continuity, derivatives and integrals.
 > 
-> [Fig. 19](images/11_5_Simple_limits.png)
+> ![Fig. 19](images/11_5_Simple_limits.png)
 > 
 > figuretext: $f(x) = x^x$, for $x>0$
 
@@ -2573,7 +2573,7 @@ If $c = f(x_0)$ then $f$ is **continuous** at $x_0$.
 > Limits impose a certain range of values that may be applied to the
 > function.
 > 
-> [Fig. 20](images/11_6_More_on_limits.png)
+> ![Fig. 20](images/11_6_More_on_limits.png)
 > 
 > figuretext: The function $f(x)= \frac{1}{1+e^{-x}}$.
 
@@ -2643,7 +2643,7 @@ If $c = f(x_0)$ then $f$ is **continuous** at $x_0$.
 > 
 > or from the left ($x \rightarrow x_{0-}$).
 > 
-> [Fig. 21](images/11_7_one-sided_limits.png)
+> ![Fig. 21](images/11_7_one-sided_limits.png)
 
 ### Details
 
@@ -2806,7 +2806,7 @@ USA.
 > The line on the graph is the set of points:
 > $$\left \{ (x,y):   x,y \in \mathbb{R}, y = a+bx\right \} .$$
 > 
-> [Fig. 22](images/13_1_The_slope_of_a_line.png)
+> ![Fig. 22](images/13_1_The_slope_of_a_line.png)
 
 ### Details
 
@@ -2822,7 +2822,7 @@ corresponding to a unit change in the $x$ coordinate.
 > and $x_1$, and look at the slope between $(x_0, f(x_0))$ and
 > $(x_1, f(x_1))$.
 > 
-> [Fig. 23](images/13_2_segment_slopes.png)
+> ![Fig. 23](images/13_2_segment_slopes.png)
 
 ### Details
 
@@ -2842,7 +2842,7 @@ $$\frac {f(x_0+h) - f(x_0)} {h} .$$
 > Consider the task of computing the slope of the function $y=x^2$ at a
 > given point.
 > 
-> [Fig. 24](images/13_3_The_slope_of.png)
+> ![Fig. 24](images/13_3_The_slope_of.png)
 
 ### Examples
 
@@ -2867,7 +2867,7 @@ general point* $x$ is given by $y' = 2x$.
 > one point. The slope of a tangent for the function $y=f(x)$ at the point
 > $(x_0,f(x_0))$ is $$\lim_{h\to0}\frac{f(x_0+h)-f(x_0)}{h}.$$
 > 
-> [Fig. 25](images/13_4_The_tangent_to_a_curve.png)
+> ![Fig. 25](images/13_4_The_tangent_to_a_curve.png)
 
 ### Details
 
@@ -2892,7 +2892,7 @@ when this limit exists.
 
 ## The slope of a general curve
 
-> [Fig. 26](images/13_5_The_slope_of_a_general_curve.png)
+> ![Fig. 26](images/13_5_The_slope_of_a_general_curve.png)
 
 ### Details
 
@@ -2941,7 +2941,7 @@ or $f'(x)$ for this limit.
 > If $f(x) = a + bx$ then $f(x + h) = a+ b(x + h) = a + bx + bh$ and thus
 > $$\lim_{h \to 0} \frac{f(x+h)-f(x)}{h} = \lim_{h \to 0} \frac{bh}{h}=b$$
 > 
-> [Fig. 27](images/14_2_The_derivative_of.png)
+> ![Fig. 27](images/14_2_The_derivative_of.png)
 
 ### Details
 
@@ -3329,7 +3329,7 @@ USA.
 > The area under a curve between x=a and x=b (for a positive function) is
 > called the integral of the function.
 > 
-> [Fig. 28](images/16_1_Area_under_a_curve.png)
+> ![Fig. 28](images/16_1_Area_under_a_curve.png)
 > 
 > figuretext: Example 1, 2 and 3
 
@@ -3403,7 +3403,7 @@ functions which take on negative values and is formally stated below.
 > The probability density function (p.d.f.) and the cumulative
 > distribution function (c.d.f.).
 > 
-> [Fig. 29](images/16_4_Density_functions.png)
+> ![Fig. 29](images/16_4_Density_functions.png)
 
 ### Details
 
@@ -3843,7 +3843,7 @@ USA.
 > finite variance, then the distribution of their mean tends towards a
 > Gaussian (normal) distribution as the sample size increases.
 > 
-> [Fig. 30](images/18_1_The_Central_Limit_Theorem.png)
+> ![Fig. 30](images/18_1_The_Central_Limit_Theorem.png)
 > 
 > figuretext: The standard normal density
 
@@ -4005,7 +4005,7 @@ $$\begin{aligned}
 > If we know an underlying process we can simulate data from the process
 > and evaluate the distribution of any quantity based on such data.
 > 
-> [Fig. 31](images/18_3_Monte_Carlo_simulation.png)
+> ![Fig. 31](images/18_3_Monte_Carlo_simulation.png)
 > 
 > figuretext: A simulated set of $t$-values based on data from an
 > exponential distribution.
@@ -4297,7 +4297,7 @@ USA.
 > A set of numbers $x_1, \ldots, x_n$ are called a random sample if they
 > can be viewed as an outcome of such random variables.
 > 
-> [Fig. 32](images/20_2_The_random_sample.png)
+> ![Fig. 32](images/20_2_The_random_sample.png)
 
 ### Details
 
@@ -4378,7 +4378,7 @@ P(Z=z) & = &\sum_{\{ (x,y): x+y=z\}} p(x,y)\end{aligned}$$
 > $Z=X+Y$, then we can find the density of $Z$ by calculating the
 > cumulative distribution function.
 > 
-> [Fig. 33](images/20_4_The_sum_of_two_continuous_random_variables.png)
+> ![Fig. 33](images/20_4_The_sum_of_two_continuous_random_variables.png)
 
 ### Details
 
@@ -4687,7 +4687,7 @@ is normal if $X_1 , \ldots , X_n$ are normal and independent.
 > 
 > $$Y \sim \chi^2$$
 > 
-> [Fig. 34](images/21_2_The_Chi-square_distribution.png)
+> ![Fig. 34](images/21_2_The_Chi-square_distribution.png)
 
 ### Details
 
@@ -4707,7 +4707,7 @@ is normal if $X_1 , \ldots , X_n$ are normal and independent.
 > 
 > $$Y_1 + Y_2 = \chi^2_{\nu_1+ \nu_2}$$
 > 
-> [Fig. 35](images/21_3_Sum_of_Chi_square_Distributions.png)
+> ![Fig. 35](images/21_3_Sum_of_Chi_square_Distributions.png)
 
 ### Details
 
@@ -4848,7 +4848,7 @@ USA.
 > pairs with $x_1, \ldots, x_n$ fixed numbers but where $y_i$ is measured
 > with error.
 > 
-> [Fig. 36](images/22_3_Ordinary_least_squares.png)
+> ![Fig. 36](images/22_3_Ordinary_least_squares.png)
 > 
 > figuretext: Regression line through data pairs.
 
@@ -4895,7 +4895,7 @@ variables and lower case letters to denote outcome or data.
 > 
 > the estimator which has some distribution.
 > 
-> [Fig. 37](images/22_5_Estimators_and_estimates.png)
+> ![Fig. 37](images/22_5_Estimators_and_estimates.png)
 > 
 > figuretext: Shows an example of the distribution of the estimator
 > $\hat{\beta}$
@@ -5265,7 +5265,7 @@ Do not use the phrase \"accept\".
 
 ## The power of tests for proportions
 
-> [Fig. 38](images/24_2_The_power_of_tests_for_proportions.png)
+> ![Fig. 38](images/24_2_The_power_of_tests_for_proportions.png)
 
 ### Examples
 
@@ -6083,7 +6083,7 @@ element $a_{ij}$ in row $j$ and column $i$.
 > $j^th$ column of B, and computing the sum of products of the paired
 > terms.
 > 
-> [Fig. 39](images/25_4_Matrix_multiplication.png)
+> ![Fig. 39](images/25_4_Matrix_multiplication.png)
 
 ### Details
 

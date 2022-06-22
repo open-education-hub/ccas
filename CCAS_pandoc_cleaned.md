@@ -6503,7 +6503,7 @@ element $a_{ij}$ in row $j$ and column $i$.
 > $j^th$ column of B, and computing the sum of products of the paired
 > terms.
 > 
-> [Fig. 39](images/25_4_Matrix_multiplication.png)
+> ![Fig. 39](images/25_4_Matrix_multiplication.png)
 
 ### Details
 
