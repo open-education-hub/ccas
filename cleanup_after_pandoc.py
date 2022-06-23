@@ -5,9 +5,11 @@ import os
 
 IMAGE_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'images')
 
+# Sort key for images, so that (11_1 doesn't sort before 2_1).
 def image_key(name):
     return tuple(int(num) for num in name.split('_', 2)[:2])
 
+# Simple class to bundle together files representing the same image.
 class Image(object):
     png = None
     R = None
@@ -21,6 +23,11 @@ class Image(object):
         if R:
             self.R = R
 
+# An index serving two purposes:
+# - easily ensure filenames get bundled together into Image objects appropriately
+#   (we want 1_1_blah.png and 1_1_blah.R to be bundled together)
+# - allow retrieving an image by index, which represents the order in which the
+#   images should appear in the file
 class ImageIndex(object):
     image_dict = None
     image_order = None
@@ -34,6 +41,8 @@ class ImageIndex(object):
 
     def add(self, filename):
         name, ext = os.path.splitext(filename)
+        # If the name is not in the index, create a new Image object for it;
+        # otherwise, add this file to the existing Image object for this name
         if name not in self.image_dict:
             self.image_dict[name] = Image()
             self._set_image_order()
@@ -47,6 +56,12 @@ image_index = ImageIndex()
 for filename in os.listdir(IMAGE_DIR):
     image_index.add(filename)
 
+# Higher-order function returning a replace function for images.
+# If prefer_png is True, then we will ignore .R versions of images and simply
+# insert references to the PNG images into the Markdown.
+# If prefer_png is False, we will insert the .R file as a ```{r}``` code block
+# if one is available, or otherwise a reference to the PNG.
+# (Hopefully later we will have a Markdown parser that understands the R blocks.)
 def replace_img(prefer_png=False):
     def do_replace(match):
         num = int(match.group(1))
@@ -72,12 +87,16 @@ def replace_all(text, dic):
             text = i.sub(j, text)
     return text
 
+# Headers we want to show at the top of on different kinds of blocks.
 block_headers = {
     'defn': "**Definition**:  ",
     'xmpl': "**Example**:  ",
     'notes': "**Note**:  "
 }
 
+# Process possibly-nested ::: (blockname) ::: blocks.
+# We want to quote-indent them with >, with correct nesting, and add headers
+# where defined in block_headers.
 def process_blocks(text):
     block_regex = re.compile(r':::(?: (\w+))?')
     block_stack = []
@@ -91,13 +110,19 @@ def process_blocks(text):
                 if match.group(1) in block_headers:
                     resultlines.append('> ' * len(block_stack) + block_headers[match.group(1)])
             else:
+                # Ending a block
                 block_stack.pop()
         else:
+            # Just insert the line with the correct level of blockquote nesting
             resultlines.append('> ' * len(block_stack) + line)
     return '\n'.join(resultlines)
 
 
 # Dictionaries with our find:replace values.
+# The script will output one file for each of the rep_sets, created by running
+# that set of replacements and then processing blocks.
+# (It needs that many output filenames as command line arguments!)
+# Right now, we want one output file with all PNG images and one with R blocks.
 image_regex = re.compile(r'::: picture\n(\d+)\n:::')
 rep_sets = [{
     image_regex: replace_img(False)

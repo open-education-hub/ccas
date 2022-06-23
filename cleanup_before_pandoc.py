@@ -2,10 +2,10 @@
 import re
 import sys
 
-### TODO: fbox, $$non-whitespace
+# This script modifies the raw CCAS.tex file to prepare it for conversion with Pandoc.
 
-# This script modifies the raw CCAS.tex file to prepare it for conversion with pandoc
-
+# We want to turn images into blocks Pandoc will leave identifiable for us on
+# an individual basis, so we can replace each with the appropriate image.
 img_counter = 0
 
 def replace_img(match):
@@ -22,6 +22,10 @@ def replace_all(text, dic):
             text = i.sub(j, text)
     return text
 
+# fboxes cause problems and get ignored including all their contents as it is;
+# we want to make them into \begin{fbox} ... \end{fbox} blocks that Pandoc
+# will retain. (It will turn them into ::: fbox ::: blocks, which we will process
+# in cleanup_after_pandoc.py.)
 def process_fboxes(text):
     block_regex = re.compile(r'\\fbox\{')
     endblock_regex = re.compile(r'\}')
@@ -34,6 +38,9 @@ def process_fboxes(text):
             block_stack.append("fbox")
             resultlines.append("\\begin{fbox}")
         elif len(block_stack) > 0 and endblock_regex.match(line):
+            # Ending the current block! Technically there's a chance of
+            # misalignment since we're not actually counting braces, but so
+            # long as it works for the actual content.
             block_stack.pop()
             resultlines.append("\\end{fbox}")
         else:
