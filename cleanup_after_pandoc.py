@@ -83,9 +83,9 @@ def replace_dollars(match):
     global dollar_counter
     dollar_counter += 1
     if dollar_counter % 2 == 1:
-        return '\n\n$$'
+        return '\n\n$$' + match.group(2)
     else:
-        return '$$\n\n'
+        return match.group(1) + '$$\n\n'
 
 # Replace method
 def replace_all(text, dic):
@@ -143,7 +143,7 @@ rep_sets = [{
     re.compile(r'\\\n\$\$'): '\n$$',
     # Cleaning up one particular example
     re.compile(r'\\####'): '####',
-    re.compile(r'\$\$'): replace_dollars
+    re.compile(r'(\n{0,2})\$\$(\n{0,2})'): replace_dollars
 },
 {
     image_regex: replace_img(True),
@@ -155,7 +155,7 @@ rep_sets = [{
     re.compile(r'\\\n\$\$'): '\n$$',
     # Cleaning up one particular example
     re.compile(r'\\####'): '####',
-    re.compile(r'\$\$'): replace_dollars
+    re.compile(r'(\n{0,2})\$\$(\n{0,2})'): replace_dollars
 }
 ]
 
