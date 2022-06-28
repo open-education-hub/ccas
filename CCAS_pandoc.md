@@ -53,7 +53,7 @@ These numbers can be added, multiplied together and so forth.\
 Notation: $\mathbb{N}=\{1,2,3,4,....\}$\
 Subtraction and division are not defined on these numbers.\
 An arbitrary element of $\mathbb{N}$ is most commonly denoted by
-$i,\ j,\ n$,or $m$, but any symbol can be used.\
+$i,\ j,\ n$, or $m$, but any symbol can be used.
 :::
 
 ### Details
@@ -638,7 +638,7 @@ In this example, we plot 3 points. The first two points are by including
 vectors with a length of 2 as the x and y arguments of the plot
 function. The third plot was added with the points function. The second
 and third points were labeled using the text function and a line was
-drawn between them using the lines function.\
+drawn between them using the lines function.
 
 ::: notes
 *Note 3*. Note that if you are unsure of what format the arguments of an
@@ -805,7 +805,7 @@ $$\begin{aligned}
 (a+b)^2 &=& (a+b)(a+b)\\
        &=&( a+b)a+(a+b)b\\
        &=& a^2+ba+ba+b^2\\
-       &=& a^2+2ab+b^2\\\end{aligned}$$
+       &=& a^2+2ab+b^2\end{aligned}$$
 
 ## Pascal's Triangle
 
@@ -814,22 +814,21 @@ Pascal's triangle is a geometric arrangement of the binomial
 coefficients in a triangle
 
 $$\begin{array}{ccccc}
-           & &1&&\\
-       & 1   & &    1&\\
-    1  &&     2  &&       1\\
+  & & 1 & &\\
+  & 1 & & 1&\\
+  1 & & 2 & & 1\\
   \vdots \quad \vdots && \vdots && \vdots \quad \vdots
 \end{array}$$
 :::
 
 ### Details
 
-  -------- -- --- --- --- --- --- --- ---
-    $n=0$:                 1          
-    $n=1$:            1        1      
-    $n=2$:        1        2       1  
-    $n=3$:     1      3        3       1
-                                      
-  -------- -- --- --- --- --- --- --- ---
+$$\begin{array}{ccccccccc}
+  n=0: & & & & &1& & & \\
+  n=1: & & & &1& &1& & \\
+  n=2: & & &1& &2& &1& \\
+  n=3: & &1& &3& &3& &1
+\end{array}$$
 
 To build Pascal's triangle, start with \"1\" at the top, and then
 continue placing numbers below it in a triangular pattern. Each number
@@ -1008,35 +1007,35 @@ Consider a biased coin which has probability $p$ of landing heads up. If
 we toss this coin 3 independent times the possible outcomes are:
 
 $$\begin{array}{c c c}
-\hline
-sequence & probability  & Number of heads\\
-\hline              
-HHH & p \cdot p \cdot p=p^3 & 3\\
-HHT & p^2(1-p) & 2\\
-HTH & p^2(1-p) & 2 \\
-HTT & p(1-p)^2 & 1\\
-THH & p^2(1-p) & 2\\
-THT & p(1-p)^2 & 1\\    
-TTH & p(1-p)^2 & 1\\
-TTT & (1-p)^3 & 0\\
-\hline
+  \hline
+  \text{sequence} & \text{probability}  & \text{Number of heads}\\
+  \hline                
+  \text{HHH} & p \cdot p \cdot p=p^3 & 3\\
+  \text{HHT} & p^2(1-p) & 2\\
+  \text{HTH} & p^2(1-p) & 2 \\
+  \text{HTT} & p(1-p)^2 & 1\\
+  \text{THH} & p^2(1-p) & 2\\
+  \text{THT} & p(1-p)^2 & 1\\   
+  \text{TTH} & p(1-p)^2 & 1\\
+  \text{TTT} & (1-p)^3 & 0\\
+  \hline
 \end{array}$$
 :::
 
 ::: xmpl
 It is also possible to aggregate these values into a table and describe
-only the number of heads obtained:\
-
-   heads   probability $p(x)$
-  ------- --------------------
-     0         $(1-p)^3$
-     1        $3p(1-p)^2$
-     2        $3p^2(1-p)$
-     3           $p^3$
-
-If we are only interested in the number of heads, then this table
-describes a **probability mass function** $p$, namely the probability
-$p(x)$ of every possible outcome $x$ of the experiment.
+only the number of heads obtained: $$\begin{array}{c c}
+  \hline
+  \text{Heads} & \text{Probability}\ p(x)\\
+  \hline                
+  0 & (1-p)^3\\
+  1 & 3p(1-p)^2\\
+  2 & 3p^2(1-p)\\
+  3 & p^3 \\
+  \hline
+\end{array}.$$ If we are only interested in the number of heads, then
+this table describes a **probability mass function** $p$, namely the
+probability $p(x)$ of every possible outcome $x$ of the experiment.
 :::
 
 ::: xmpl
@@ -1372,44 +1371,45 @@ If $X$ is the number of heads ($H$) before obtaining the first tail
 ($T$) when tossing an unbiased coin 4 independent times, then the
 possible basic outcomes are:
 
-  ----------- --------- ------------------
-                Toss    
-   In binary   1 2 3 4   \#$H$ before $T$
-     0000      H H H H          4
-     0001      H H H T          3
-     0010      H H T H          2
-     0011      H H T T          2
-     0100      H T H H          1
-     0101      H T H T          1
-     0110      H T T H          1
-     0111      H T T T          1
-     1000      T H H H          0
-     1001      T H H T          0
-     1010      T H T H          0
-     1011      T H T T          0
-     1100      T T H H          0
-     1101      T T H T          0
-     1110      T T T H          0
-     1111      T T T T          0
-  ----------- --------- ------------------
+$$\begin{array}{c c c}
+\hline
+         & \text{Toss}    &   \\
+\text{In binary} & 1\ 2\ 3\ 4 & \#\text{H before T}\\
+\hline              
+  0000 & \text{H H H T} & 3\\
+  0010 & \text{H H T H} & 2\\
+  0011 & \text{H H T T} & 2\\
+  0100 & \text{H T H H} & 1\\
+  0101 & \text{H T H T} & 1\\
+  0110 & \text{H T T H} & 1\\
+  0111 & \text{H T T T} & 1\\
+  1000 & \text{T H H H} & 0\\
+  1001 & \text{T H H T} & 0\\
+  1010 & \text{T H T H} & 0\\
+  1011 & \text{T H T T} & 0\\
+  1100 & \text{T T H H} & 0\\
+  1101 & \text{T T H T} & 0\\
+  1110 & \text{T T T H} & 0\\
+  1111 & \text{T T T T} & 0\\
+\hline
+\end{array}$$
 
-\
 Since the coin is unbiased, each of these has the same probability of
 occurring. We can now count sequences to find the number of
 possibilities of a particular number of heads, $H$, before a tail in 4
 coin tosses and thus obtain the corresponding probabilities as:\
-
-  --------------------------------- ----------------------------
-   Number of tosses before a heads                   Probability
-                 $x$                                      $p(x)$
-                  0                   $\frac{8}{16}=\frac{1}{2}$
-                  1                   $\frac{4}{16}=\frac{1}{4}$
-                  2                   $\frac{2}{16}=\frac{1}{8}$
-                  3                               $\frac{1}{16}$
-                  4                               $\frac{1}{16}$
-  --------------------------------- ----------------------------
-
-\
+$$\begin{array}{c r}
+\hline
+\text{Number of tosses before a heads} & \text{Probability}\\
+ & p(x)\\
+\hline
+0 & \frac{8}{16}=\frac{1}{2}\\
+1 & \frac{4}{16}=\frac{1}{4}\\
+2 & \frac{2}{16}=\frac{1}{8}\\
+3 & \frac{1}{16}\\
+4 & \frac{1}{16}\\
+\hline
+\end{array}$$
 :::
 
 ## The expected value or population mean
@@ -1644,12 +1644,6 @@ corresponding vector with the outcome.
 
 ### Examples
 
-    ERROR: Unknown script MIME type text/x-tex
-    Traceback (most recent call last):
-      File "/srv/sites/tutor-web-2/src/tutorweb.content/tutorweb/content/transforms/script_to_html.py", line 179, in convert
-        raise ValueError("Unknown script MIME type %s" % kwargs['mimetype'])
-    ValueError: Unknown script MIME type text/x-tex
-
 ::: xmpl
     f <- function(x) {return(x*12)}
     x <- seq (-5,5,0,1)
@@ -1668,12 +1662,6 @@ This plots Y against x.
 :::
 
 ### Examples
-
-    ERROR: Unknown script MIME type text/x-tex
-    Traceback (most recent call last):
-      File "/srv/sites/tutor-web-2/src/tutorweb.content/tutorweb/content/transforms/script_to_html.py", line 179, in convert
-        raise ValueError("Unknown script MIME type %s" % kwargs['mimetype'])
-    ValueError: Unknown script MIME type text/x-tex
 
 ::: xmpl
 The following R commands can be used to generate a plot for function; Y=
@@ -1834,8 +1822,8 @@ The general solution is given by the formula
 
 $$x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a},$$
 
-if $b^2 - 4ac \geq 0$. On the other hand, if $b^2-4ac\textless 0$, the
-quadratic equation has no real solution.
+if $b^2 - 4ac \geq 0$. On the other hand, if $b^2-4ac<0$, the quadratic
+equation has no real solution.
 
 ### Examples
 
@@ -2273,7 +2261,6 @@ A list is a collection of objects. Thus, data frames are lists.
     names(x)
     [1] "y" "z" "w"
     x["w"]
-    $w
     [1] "a" "b" "c"
     x$w
     [1] "a" "b" "c"
@@ -2378,7 +2365,7 @@ $g(f(x)) = {3} +{2} f(x)$\
 $g(f(x)) = {3} +{10x}^2$\
 $f(g(x)) = {5}{(g(x))}^2$\
 $f(g(x)) = {5}{({3}+{2x})}^2$\
-$f(g(x)) = {45}+{60x}+{20x}^2$\
+$f(g(x)) = {45}+{60x}+{20x}^2$
 :::
 
 ## Storing and using R code
@@ -2395,7 +2382,7 @@ Save the following file (test.r):
 
     x=4
     y=8
-    cat("x+y is", x+y, "\n")$
+    cat("x+y is", x+y, "\n")
 
 To read the file use:
 
@@ -2520,7 +2507,7 @@ $$x \cdot y = 10^a \cdot 10^b = 10^{a+b}$$ so that $$\log(xy) = a+b$$
 ::: xmpl
 $$\begin{aligned}
 log(100)&=& 2 \\
-log(1000)&=& 3 \\\end{aligned}$$
+log(1000)&=& 3\end{aligned}$$
 :::
 
 ::: xmpl
@@ -2576,7 +2563,7 @@ Next, note that
 $$\begin{aligned}
 \ln (x^2)&=& \ln (x \cdot x)\\
 &=& \ln x + \ln x\\
-&=& 2 \cdot ln x\\\end{aligned}$$
+&=& 2 \cdot ln x\end{aligned}$$
 
 and similarly $\ln (x^n) = n \cdot \ln x$ for any integer n.
 
@@ -2689,7 +2676,7 @@ If $X$ is a random variable with a discrete probability distribution and
 the probability mass function of $$p(x)=P[X=x]$$ then the **cumulative
 distribution function**, defined by $$F(X)=P[X\leq x]$$ is
 discontinuous, i.e. it jumps at points in which a positive probability
-occurs.\
+occurs.
 :::
 
 ::: notes
@@ -2893,7 +2880,7 @@ $$\frac{\sqrt{x + 4} - 2}{x} \cdot \frac{\sqrt{x + 4} + 2}{\sqrt{x + 4} + 2}$$
 This gives us
 $$\frac{(\sqrt{x + 4})^2 + 2(\sqrt{x+4}) - 2(\sqrt{x+4}) -4}{x(\sqrt{x + 4} + 2)}$$
 
-The numerator reduces to $x$, and the $x$s will cancel out leaving us
+The numerator reduces to $x$, and the $x$'s will cancel out leaving us
 with $$\frac{1}{\sqrt{x + 4} + 2}$$
 
 At this point we can direct substitute 0 for $x$, which will give us
@@ -3380,7 +3367,7 @@ f(x)&=&\frac{dx}{dx}e^x+x\frac{de^x}{dx}+\frac{dx^2}{dx}\ln x +x^2\frac{d \ln x}
 ::: fbox
 If $f$ and $g$ are functions and $h=f  \circ g$ so that\
 $h(x) = f(g(x))$ then\
-$h'(x) = \frac{dh(x)}{dx} = f'(g(x)) g'(x)$\
+$h'(x) = \frac{dh(x)}{dx} = f'(g(x)) g'(x)$
 :::
 
 ### Examples
@@ -3504,7 +3491,7 @@ This is the *l*ikelihood function.
 
 ::: defn
 Recall that the **probability mass function (p.m.f)** is a function
-giving the probability of outcomes of an experiment.\
+giving the probability of outcomes of an experiment.
 :::
 
 We typically denote the p.m.f. by $p$ so $p(x)$ gives the probability of
@@ -3792,7 +3779,7 @@ $$\int\limits^\infty_{-\infty} f(x)dx = 1$$
 
 \
 then $f$ is said to be a **probability density function (p.d.f.)** for
-$X$.\
+$X$.
 :::
 
 ::: defn
@@ -3806,17 +3793,21 @@ is the **cumulative distribution function (c.d.f.)**.
 ::: xmpl
 Consider a random variable $X$ from the uniform distribution, denoted by
 $X\sim U(0,1)$. This distribution has density
-$$f(x) = \left \{ \begin{array}{rl}
-1 &\mbox { if $0 \leq x \leq 1$} \\
-0 &\mbox {e.w.}
-\end{array} \right.$$
+
+$$f(x) = 
+\begin{cases}
+  1 &\text{if } 0 \leq x \leq 1\\
+  0 &\text{e.w.}
+\end{cases}.$$
 
 The cumulative distribution function is given by
-$$P[X\leq x] = \int\limits^{x}_{-\infty} f(t)dt = \left\{ \begin{array}{rl}
-0 &\mbox {if $x<0$}\\
-x &\mbox {if $0 \leq x \leq 1$} \\
-1
-\end{array} \right.$$
+
+$$P[X\leq x] = \int\limits^{x}_{-\infty} f(t)dt = 
+\begin{cases}
+  0 & \text{if } x<0\\
+  x & \text{if } 0 \leq x \leq 1\\
+  1 & \text{else}
+\end{cases}.$$
 :::
 
 ::: xmpl
@@ -3835,10 +3826,15 @@ c.d.f. of T is $F_T(t)=P[T\leq t]=1-P[T>t]=1-e^{-\lambda t}$ for $t>0$.\
 The p.d.f. of T is therefore
 $f_T(t)=F_T'(t)=\frac{d}{dt}F_T(t)=\frac{d}{dt}(1-e^{-\lambda t}=0-e^{- \lambda t}*(-\lambda)=\lambda e^{-\lambda t}$
 for $t \geq 0$ and $f_T(t)=0$ for $t=0$.\
-The resulting density $$f(t) = \left\{ \begin{array}{rcl}
-\lambda e^{-\lambda t} & \mbox{for}& t \geq0\\
-0& \mbox{for} & t<0
-\end{array}\right.$$ describes the exponential distribution.
+The resulting density
+
+$$f(t) =
+\begin{cases}
+  \lambda e^{-\lambda t} & \text{for}& t \geq0\\
+  0 & \text{for} & t<0
+\end{cases}.$$
+
+describes the exponential distribution.
 
 This distribution has the expected value
 $$E[T]=\int\limits^{\infty}_{-\infty} tf(t)dt=\int\limits^{\infty}_{0} t \lambda e^{-\lambda t}dt.$$
@@ -4174,15 +4170,14 @@ or a loop
 
 ::: fbox
 The \"if\" statement is used to conditionally execute statements.\
-The \"ifelse\" statement conditionally replaces elements of a
-structure.\
+The \"ifelse\" statement conditionally replaces elements of a structure.
 :::
 
 ### Examples
 
 ::: xmpl
 If we want to compute $x^x$ for $x$-values in the range 0 through 5, we
-can use\
+can use
 
     xlist<-seq(0,5,0.01)
     y<-NULL
@@ -4229,15 +4224,23 @@ from code using the pound symbol (#).
 ### Examples
 
 ::: xmpl
-\####################\
-####SETUP DATA####\
-\####################\
-dat\<-read.table(filename)\
-x\<-log(dat\$le) #log-transformation of length\
-y\<-log(dat\$wt) #log-transformation of weight\
-\######################\
-####THE ANALYSIS####\
-\######################\
+\####################
+
+####SETUP DATA####
+
+\####################
+
+dat\<-read.table(filename)
+
+x\<-log(dat\$le) #log-transformation of length
+
+y\<-log(dat\$wt) #log-transformation of weight
+
+\######################
+
+####THE ANALYSIS####
+
+\######################
 :::
 
 **Copyright** 2021, Gunnar Stefansson (editor) with contributions from
@@ -4352,7 +4355,7 @@ obtain:
 $$\begin{aligned}
 \binom{n}{x}p_n^x(1-p_n)^{n-x}& = &\frac{n!}{x!(n-x!)} \left ( \frac{\lambda}{n} \right )^x \left ( 1-\frac{\lambda}{n} \right )^{n-x}\\
 & = &\frac{n(n-1)(n-2)\cdots (n-x+1)}{x!} \frac{\frac{\lambda}{n}^x}{\left ( 1-\frac{\lambda}{n} \right ) ^x} \left ( 1-\frac{\lambda}{n} \right )^n\\
-& = &\frac{n(n-1)(n-2)\cdots (n-x+1)}{x!n^x} \frac{\lambda^x}{\left ( 1-\frac{\lambda}{n} \right ) ^x} \left ( 1-\frac{\lambda}{n} \right )^n\\\end{aligned}$$
+& = &\frac{n(n-1)(n-2)\cdots (n-x+1)}{x!n^x} \frac{\lambda^x}{\left ( 1-\frac{\lambda}{n} \right ) ^x} \left ( 1-\frac{\lambda}{n} \right )^n\end{aligned}$$
 
 ::: notes
 *Note 17*. Notice that $\frac{n(n-1)(n-2)\cdots (n-x+1)}{n^x}\to 1$ as
@@ -4559,7 +4562,7 @@ To obtain $P[a \leq X \leq b],$ we use $punif$ twice, e.g.
 To compute probabilities $X\sim n(\mu,\sigma^2)$ is usually transformed,
 since we know that $$Z:=\frac{X-\mu}{\sigma} \sim(0,1)$$ The
 probabilities can then be computed for either $X$ or $Z$ with the
-$pnorm$ function in R.\
+$pnorm$ function in R.
 :::
 
 ### Details
@@ -4598,7 +4601,7 @@ P[X\leq x] &= P[\frac{X-\mu}{\sigma} \leq \frac{x-\mu}{\sigma}]\\
 $pnorm$ with the computed value $z=\frac{x-\mu}{\sigma}$, or call
 $pnorm$ with $x$ and specify $\mu$ and $\sigma$.\
 \
-To compute $P[X\leq 48]$, either set $z=(48-42)/3=2$ and obtain\
+To compute $P[X\leq 48]$, either set $z=(48-42)/3=2$ and obtain
 
     pnorm(2)
     [1] 0.9772499
@@ -4713,30 +4716,6 @@ $$P[X \in {A}] = \sum_{(x_1,\ldots,x_n)\in A} p(x_1,\ldots, x_n).$$
 
 ### Examples
 
-::: xmpl
-An urn contains blue and red marbles, which are either light or heavy.
-Let $X$ denote the color and $Y$ the weight of a marble, chosen at
-random\
-
-  ----- ---- --- ----
-   X/Y   L    H   TT
-    B    5    6   11
-    R    7    2   9
-   TT    12   8   20
-  ----- ---- --- ----
-
-We have $P[X="'b"', Y ="l"'] = \frac{5}{20}$.\
-The joint p.m.f. is:\
-
-  ----- ----------------- ---------------- -----------------
-   X/Y          L                H                TT
-    B    $\frac{5}{20}$    $\frac{6}{20}$   $\frac{11}{20}$
-    R    $\frac{7}{20}$    $\frac{2}{20}$   $\frac{9}{20}$
-   TT    $\frac{12}{20}$   $\frac{8}{20}$          1
-                                           
-  ----- ----------------- ---------------- -----------------
-:::
-
 ## The random sample
 
 ::: fbox
@@ -4754,7 +4733,7 @@ can be viewed as an outcome of such random variables.
 
 Samples from populations can be obtained in a number of ways. However,
 to draw valid conclusions about populations, the samples need to
-obtained randomly.\
+obtained randomly.
 
 ::: defn
 In **random sampling**, each item or element of the population has an
@@ -4762,7 +4741,7 @@ equal and independent chance of being selected.
 :::
 
 A set of random variables; $X_1 \ldots X_n$ is a random sample if they
-are independent and identically distributed (i.i.d.).\
+are independent and identically distributed (i.i.d.).
 
 ::: defn
 If a set of numbers $x_1 \ldots x_n$ can be viewed as an outcome of
@@ -4778,10 +4757,11 @@ they have a joint density which is the product of the densities of $X_1$
 and $X_n$.\
 Given the data in the above figure and if $x_1 , x_2 \in \mathbb{R}$
 
-$$f(x_1, x_2) = f_1(x_1) f_2(x_2) = \left \{ \begin{array}{rl}
-1 &\mbox { if $0 \leq x_1, x_2 \leq 1$} \\
-0 &\mbox {elsewhere}
-\end{array} \right.$$
+$$f(x_1, x_2) = f_1(x_1) f_2(x_2) =
+\begin{cases}
+  1 & \text{if } 0 \leq x_1, x_2 \leq 1 \\
+  0 & \text{elsewhere}
+\end{cases}.$$
 :::
 
 ::: xmpl
@@ -4789,10 +4769,11 @@ Toss two dice independently, and let $X_1, X_2$ denote the two (future)
 outcomes.\
 Then
 
-$$P[X_1 = x_1, X_2 =  x_2]= \left \{ \begin{array}{rl}
-\frac{1}{36} &\mbox { if $1 \leq x_1, x_2 \leq 6$} \\
-0 &\mbox {elsewhere}
-\end{array} \right .$$
+$$P[X_1 = x_1, X_2 =  x_2]=
+ \begin{cases}
+  \frac{1}{36} & \text{if } 1 \leq x_1, x_2 \leq 6 \\
+  0 & \text{elsewhere}
+\end{cases}.$$
 
 is the joint p.m.f.
 :::
@@ -4802,7 +4783,7 @@ is the joint p.m.f.
 ### Details
 
 Suppose $X$ and $Y$ are discrete random values with a probability mass
-function p. Let $Z=X+Y$. Then
+function $p$. Let $Z=X+Y$. Then
 
 $$\begin{aligned}
 P(Z=z) & = &\sum_{\{ (x,y): x+y=z\}} p(x,y)\end{aligned}$$
@@ -4810,7 +4791,7 @@ P(Z=z) & = &\sum_{\{ (x,y): x+y=z\}} p(x,y)\end{aligned}$$
 ### Examples
 
 ::: xmpl
-$X,Y = outcomes$,
+$(X,Y) = \text{outcomes}$,
 
         [,1] [,2] [,3] [,4] [,5] [,6]
     [1,]    2    3    4    5    6    7
@@ -4852,17 +4833,22 @@ $$P[Z \leq z]=P[X+Y \leq z]=\int\int_{\{(x,y):x+y \leq z\}} f(x,y)dxdy.$$
 ::: xmpl
 If X and Y $\sim$ U(0,1), independent and $Z=X+Y$ then
 
-$P[Z \leq z]= \left\{ \begin{array}{rcl}
-0 & \mbox{for}& z \leq0\\
-\frac{z^2}{2}& \mbox{for} & 0<z<1\\
-1 & \mbox{for}& z>2\\
-1-\frac{(2-z)^2}{2}& \mbox{for}&1<z<2
-\end{array}\right.$\
-the density of z becomes $g(z)= \left\{ \begin{array}{rcl}
-z & \mbox{for}& 0 <z \leq 1\\
-2-z& \mbox{for} & 1< z \leq 2\\
-0 & \mbox{for}& elsewhere
-\end{array}\right.$
+$$P[Z \leq z]= 
+\begin{cases}
+  0 & \text{for} & z \leq 0\\
+  \frac{z^2}{2} & \text{for} & 0<z<1\\
+  1 & \text{for}& z>2\\
+  1-\frac{(2-z)^2}{2} & \text{for} & 1<z<2
+\end{cases}$$
+
+the density of $z$ becomes
+
+$$g(z)= 
+\begin{cases}
+  z & \text{for} & 0 <z \leq 1\\
+  2-z & \text{for} & 1< z \leq 2\\
+  0 & \text{for} & \text{elsewhere}
+\end{cases}.$$
 :::
 
 ::: xmpl
@@ -5045,10 +5031,10 @@ and $f(x)\geq 0$ for all $\underline{x}\in \mathbb{R}^n$
 then $f$ is the *joint density* of
 
 $\mathbf{X}= \left( \begin{array}{ccc}
-X_1 \\ 
-\vdots \\
-X_n
-\end{array}\right)$
+  X_1 \\ 
+  \vdots \\
+  X_n
+  \end{array}\right).$
 
 If we have the joint density of some multidimensional random variable
 $X=(X_1,\ldots,X_n)$ given in this manner, then we can find the
@@ -5842,7 +5828,6 @@ $\begin{matrix}
 
 $$z=\frac{7-9\cdot \frac{1}{2}}{\sqrt{9\cdot\frac{1}{2}\cdot \frac{1}{2}}}=\frac{7-4.5}{3\cdot\frac{1}{2}}=\frac{14-9}{3}=\frac{5}{3} < 1.96$$
 So we do not reject the null hypothesis!\
-\
 
 ::: notes
 *Note 22*. Note that we can rewrite the test statistics slightly
@@ -5878,7 +5863,7 @@ $\begin{matrix}
 7 & 6 & 5\\ 
 7 & 8 & 8\\ 
 5 & 6 & 4\\ 
-2 & 5 & 7 \\
+2 & 5 & 7
 \end{matrix}$
 
 This time our test is $H_0:p=\frac{2}{3}$ vs $H_a:p=\frac{2}{3}$. Note
@@ -5908,7 +5893,7 @@ $\begin{matrix}
 1 & 1 & 1\\
 1 & 3 & 1\\ 
 1 & 1 & 2\\ 
-0 & 2 & 0\\
+0 & 2 & 0
 \end{matrix}$
 
 With the same kind of calculations as above, we find that we reject the
@@ -5997,7 +5982,7 @@ On the other hand, one can also use a simple simulation approach. First,
 decide how many samples are to be simulated (Nsim). Then, generate all
 of these samples, arrange them in a matrix and compute the mean of each
 sample. The z-value of each of these Nsim tests are then computed and a
-check is made whether it exceeds the critical point (1) or not (0).\
+check is made whether it exceeds the critical point (1) or not (0).
 
     Nsim<-10000
     m<-matrix(rnorm(Nsim*n,mu,sigma),ncol=n)
@@ -6150,7 +6135,7 @@ power when we have a given number of samples.
 :::
 
 ::: xmpl
-How many samples do I need to get a power of .9?\
+How many samples do I need to get a power of .9?
 
     power.t.test(power = .95, delta=1.5,sd=2, type="one.sample", alternative = "one.sided")
 
@@ -6166,7 +6151,7 @@ How many samples do I need to get a power of .9?\
 
 We would thus need a sample size of n = 31.15 or $\approx 32$ samples to
 obtain a power of 0.9 for our analysis.\
- \
+ 
 :::
 
 ::: xmpl
@@ -6186,7 +6171,7 @@ With a sample size of n = 45, what will the power of my test be?\
 This is done the same way for two samples only by changing the
 alternative to \"two.sample\". For two sided power analysis, one only
 needs to change the alternative to \"two.sided\".\
- \
+ 
 :::
 
 ::: xmpl
@@ -6252,7 +6237,7 @@ alternative= either one sided or two sided\
 ### Examples
 
 ::: xmpl
-How many samples do I need in my research to obtain a power of 0.8?\
+How many samples do I need in my research to obtain a power of 0.8?
 
     power.t.test(delta=1.5,sd=2,sig.level=0.05,power=0.8,type=c("two.sample"),alternative=c("two.sided"))
 
@@ -6736,7 +6721,7 @@ $3x+y=2$\
 can be written in matrix formulation as\
 $$\begin{bmatrix}
 2 & 3  \\
-3 & 1  \\
+3 & 1 
 \end{bmatrix}
 \begin{bmatrix}
 x \\
@@ -6749,7 +6734,7 @@ y
 \end{bmatrix}$$
 
 i.e. $A\underline{x} = \underline{b}$ for an appropriate choice of of
-$A, \underline{x}$ and $\underline{b}$\
+$A, \underline{x}$ and $\underline{b}$
 :::
 
 ## The unit matrix
@@ -6760,15 +6745,16 @@ $$\mathbf{I}
 =
 \left[
 \begin{array}{cccc}
-1 & 0 & \ldots & 0 \\
-0 & 1 & 0  & \vdots \\
-\vdots & 0  & \ddots & 0 \\
-0 & \ldots & 0 & 1 \\
-\end{array} \right]$$\
+  1 & 0 & \ldots & 0 \\
+  0 & 1 & 0  & \vdots \\
+  \vdots & 0  & \dots & 0 \\
+  0 & \ldots & 0 & 1
+\end{array} \right]$$
+
 is the identity matrix. This is because if a matrix $\mathbf{A}$ is $n$
 x $n$ then $\mathbf{A} \mathbf{I} = \mathbf{A}$ and
 $\mathbf{I} \mathbf{A}  = 
-\mathbf{A}$\
+\mathbf{A}$
 :::
 
 ## The inverse of a matrix
@@ -6794,14 +6780,14 @@ If matrix $A$ is:
 
 $\begin{bmatrix}
 2 & 3  \\
-3 & 1  \\
+3 & 1 
 \end{bmatrix}$
 
 then $A ^{-1}$ is:
 
 $\begin{bmatrix}
 \frac{-1}{4} & \frac{3}{4}  \\
-\frac{3}{4} & \frac{1}{2}  \\
+\frac{3}{4} & \frac{1}{2} 
 \end{bmatrix}$
 :::
 
@@ -6834,7 +6820,7 @@ $a, b \in \mathbb{R}$.
 
 ::: xmpl
 If A= $\begin{bmatrix}
-1 & 2  \\
+1 & 2 
 \end{bmatrix}$ then $T_A(\underline{x}) = x + 2y$ where
 $\underline{x} = {x \choose y}\in \mathbb{R}^2$
 :::
@@ -6842,25 +6828,25 @@ $\underline{x} = {x \choose y}\in \mathbb{R}^2$
 ::: xmpl
 If A= $\begin{bmatrix}
 0 & 1  \\
-1 & 0  \\
+1 & 0 
 \end{bmatrix}$ then $T_A{x \choose y}$ = $\begin{bmatrix}
 y  \\
-x  \\
+x 
 \end{bmatrix}$
 :::
 
 ::: xmpl
 If A= $\begin{bmatrix}
 0 & 2 & 3\\
-1 & 0 & 1 \\
+1 & 0 & 1
 \end{bmatrix}$ then $T_A$ $\left(
 \begin{array}{ccc}
-   x \\
+  x \\
   y\\
   z\\
  \end{array} \right)$ = $\begin{bmatrix}
 2y + 3z\\
-x + z \\
+x + z
 \end{bmatrix}$
 :::
 
@@ -6872,7 +6858,7 @@ If $T{x \choose y }$ = $\left(
  \end{array} \right)$ then $T (\underline{x}) = A \underline{x}$ if we
 set A = $\begin{bmatrix}
 1 & 1 \\
-2 & -3 \\
+2 & -3
 \end{bmatrix}$
 :::
 
@@ -7058,9 +7044,9 @@ If $EY_i = \mu_i$ then we typically write
 
 $E(Y)=\left(
 \begin{array}{ccc}
-\mu_1 \\
-\vdots \\
-\mu_n
+  \mu_1 \\
+  \vdots \\
+  \mu_n
 \end{array} \right)=\mu$
 
 If $Cov(Y_i, Y_j) = \sigma{ij}$ and $V[Y_i]=\sigma_{ii} = \sigma_i^2$,
@@ -7083,33 +7069,26 @@ W
 
 then
 
-ET= $\begin{bmatrix}
+$ET=
+\begin{bmatrix}
 \Sigma a_i  \mu \\
 \Sigma b_i  \mu
 \end{bmatrix}$
 
-VT= $\boldsymbol{\Sigma}$ = $\sigma^2
+$VT=
+\boldsymbol{\Sigma}$ = $\sigma^2
 \begin{bmatrix}
 \Sigma a_i^2 & \Sigma a_i b_i \\
 \Sigma a_ib_i & \Sigma b_i^2
 \end{bmatrix}$
 :::
 
-::: xmpl
-If $\underline{Y}$ is a random vector with mean $\boldsymbol{\mu}$ and
-variance-covariance matrix $\boldsymbol{\Sigma}$, then
-
-$$E[a'Y] = a'\mu$$
-
-and
-
-$$V[a'Y] = a' \boldsymbol{\Sigma} a.$$
-:::
-
 ## Transforming random vectors
 
 ::: fbox
-Suppose $$\mathbf{Y}
+Suppose
+
+$$\mathbf{Y}
 =
 \left(
 \begin{array}{c}
@@ -7126,7 +7105,9 @@ matrix $$\boldsymbol{\Sigma} = \sigma^2 \mathbf{I}$$
 ### Details
 
 Note that if $Y_1, \ldots, Y_n$ are independent with common variance
-$\sigma^2$ then $$\boldsymbol{\Sigma}
+$\sigma^2$ then
+
+$$\boldsymbol{\Sigma}
 =
 \left[
 \begin{array}{ccccc}
@@ -7232,8 +7213,11 @@ $$k_1
       0 \\
       0 \\
     \end{array}
-   \right)$$\
-if and only if $$\left( 
+   \right)$$
+
+if and only if
+
+$$\left( 
   \begin{array}{cc}
      k_1 \\
      k_2 \\
@@ -7243,7 +7227,8 @@ if and only if $$\left(
       0 \\
       0 \\
     \end{array}
-   \right)$$\
+   \right)$$
+
 so the columns are linearly independent.
 :::
 
@@ -7317,7 +7302,7 @@ Recall that for a 2x2 matrix,
 $A=
 \begin{bmatrix}
 a & b  \\
-c & d  \\
+c & d 
 \end{bmatrix}$
 
 the inverse of $A$ is
@@ -7326,7 +7311,7 @@ $A^{-1}=
 \frac{1}{ad-bc}
 \begin{bmatrix}
 2 & 3  \\
-3 & 1  \\
+3 & 1 
 \end{bmatrix}$
 :::
 
@@ -7361,7 +7346,7 @@ elementary products.
 $A=
 \begin{bmatrix}
 a_{11} & a_{12}  \\
-a_{21} & a_{22}  \\
+a_{21} & a_{22} 
 \end{bmatrix}$
 
 then
@@ -7398,7 +7383,7 @@ $-a_{13} a_{22} a_{31}$ Three interchanges
 $A=
 \begin{bmatrix}
 1 & 1  \\
-1 & 0  \\
+1 & 0 
 \end{bmatrix}$
 
 $\vert A \vert = -1$
@@ -7409,7 +7394,7 @@ $A=
 \begin{bmatrix}
 1 & 0 & 0  \\
 0 & 2 & 0  \\
-0 & 0 & 3  \\
+0 & 0 & 3 
 \end{bmatrix}$
 
 $\vert A \vert = 1 \cdot 2 \cdot 3 = 6$
@@ -7420,7 +7405,7 @@ $A=
 \begin{bmatrix}
 1 & 0 & 0  \\
 0 & 2 & 0  \\
-0 & 3 & 0  \\
+0 & 3 & 0 
 \end{bmatrix}$
 
 $\vert A \vert = 0$
@@ -7431,7 +7416,7 @@ $A=
 \begin{bmatrix}
 1 & 0 & 0  \\
 0 & 0 & 2  \\
-0 & 3 & 0  \\
+0 & 3 & 0 
 \end{bmatrix}$
 
 $\vert A \vert = -6$
@@ -7441,7 +7426,7 @@ $\vert A \vert = -6$
 $A=
 \begin{bmatrix}
 2 & 1  \\
-2 & 1  \\
+2 & 1 
 \end{bmatrix}$
 
 $\vert A \vert = 0$
@@ -7452,7 +7437,7 @@ $A=
 \begin{bmatrix}
 1 & 0 & 1  \\
 0 & 1 & 1  \\
-1 & 1 & 2  \\
+1 & 1 & 2 
 \end{bmatrix}$
 
 $\vert A \vert = 0$
@@ -7461,7 +7446,7 @@ $\vert A \vert = 0$
 ## Ranks, inverses and determinants
 
 ::: fbox
-The following statements are true for an $n\times n$ matrix $A$:\
+The following statements are true for an $n\times n$ matrix $A$:
 
 -   $rank (A)= n$
 
@@ -7517,7 +7502,7 @@ Let $$f: \mathbb{R}^{2} \rightarrow \mathbb{R}^{2}$$ where:
 $$f(x_1,x_2) = \left(
 \begin{array}{c}
 x_1+x_2 \\
-x_1-x_2 \\
+x_1-x_2
 \end{array} \right)$$
 
 ::: notes
@@ -7534,7 +7519,7 @@ $$f(x)
 x_1+x_2 \\
 x_1-x_3 \\
 y-z \\
-x_1+x_2+x_3 \\
+x_1+x_2+x_3
 \end{array} \right)$$
 
 ::: notes
@@ -7543,7 +7528,7 @@ x_1+x_2+x_3 \\
 1 & 1 & 0\\
 1 & 0 & -1\\
 0 & 1 & -1\\
-1 & 1 & 1\\
+1 & 1 & 1
 \end{bmatrix}$$
 :::
 :::
@@ -7553,7 +7538,7 @@ These multi-dimensional functions do not have to be linear, for example
 the function $f:\mathbb{R}^2\to\mathbb{R}^2$ $$f(x) = \left(
 \begin{array}{c}
 x_1x_2 \\
-x_1^{2}+x_2^{2}\\
+x_1^{2}+x_2^{2}
 \end{array} \right),$$ is obviously not linear.
 :::
 
@@ -7617,7 +7602,9 @@ $\frac{\partial f_i}{\partial x_j}$.
 ### Examples
 
 ::: xmpl
-For the function $$f(x,y)=\begin{pmatrix}
+For the function
+
+$$f(x,y)=\begin{pmatrix}
   x^2 +y \\
   x y  \\
   x 
@@ -7687,12 +7674,12 @@ $$J=
 \left|\begin{bmatrix}
 \frac{\partial g_1}{\partial y_1} & \frac{\partial g_1}{\partial y_2} & \cdots &\frac{\partial g_1}{\partial y_n} \\
 \vdots & \vdots & \cdots & \vdots \\
-\frac{\partial g_n}{\partial y_1} & \frac{\partial g_n}{\partial y_2} & \cdots & \frac{\partial g_n}{\partial y_n}  \\
+\frac{\partial g_n}{\partial y_1} & \frac{\partial g_n}{\partial y_2} & \cdots & \frac{\partial g_n}{\partial y_n} 
 \end{bmatrix}\right| = 
 \left|\begin{bmatrix}
 \nabla g_1 \\
  \vdots \\
-\nabla g_n  \\
+\nabla g_n 
 \end{bmatrix}\right|$$
 :::
 
@@ -7712,12 +7699,12 @@ $$J=
 \left|\begin{bmatrix}
 \frac{\partial g_1}{\partial y_1} & \frac{\partial g_1}{\partial y_2} & \cdots &\frac{\partial g_1}{\partial y_n} \\
 \vdots & \vdots & \cdots & \vdots \\
-\frac{\partial g_n}{\partial y_1} & \frac{\partial g_n}{\partial y_2} & \cdots & \frac{\partial g_n}{\partial y_n}  \\
+\frac{\partial g_n}{\partial y_1} & \frac{\partial g_n}{\partial y_2} & \cdots & \frac{\partial g_n}{\partial y_n} 
 \end{bmatrix}\right| = 
 \left|\begin{bmatrix}
 \nabla g_1 \\
  \vdots \\
-\nabla g_n  \\
+\nabla g_n 
 \end{bmatrix}\right|$$
 
 Similar calculations as in 28.4 give us that if $X$ is a continuous
@@ -8015,17 +8002,18 @@ and $g$ have expected values.
 ::: xmpl
 Suppose $X,Y \in U (0,2)$ are i.i.d then,
 
-$$f_X (x) =  \left \{ \begin{array}{rl}
-\frac {1}{2} &\mbox { if $0 \leq x \leq 2$} \\
-0 &\mbox {otherwise}
-\end{array} \right.$$
+$$f_X (x) = 
+\begin{cases}
+  \frac{1}{2} & \text{if } 0 \leq x \leq 2 \\
+  0 &\text{otherwise}
+\end{cases}.$$
 
 and similarly for $f_Y$.\
-Next, note that,
-$$f(x,y) =  f_X (x) f_Y (y) = \left \{ \begin{array}{rl}
-\frac {1}{4} &\mbox { if $0 \leq x,y \leq 2 $} \\
-0 &\mbox {otherwise}
-\end{array} \right.$$
+Next, note that, $$f(x,y) =  f_X (x) f_Y (y) = 
+\begin{cases}
+  \frac{1}{4} &\text{if } 0 \leq x,y \leq 2\\
+  0 &\text{otherwise}
+\end{cases}.$$
 
 Also note that $f(x,y) \geq 0$ for all $(x,y) \in \mathbb{R}^2$ and
 
@@ -8482,26 +8470,38 @@ cov(y_{ij},y_{i'j'}) &=cov(\alpha_i+\epsilon_{ij}, \alpha_{i'}+ \epsilon_{i'j'})
 So,
 $$E[\epsilon_{ij}\alpha_{i'}]=E[\alpha_i\epsilon_{i'j'}] = E\alpha_iE\epsilon_{i'j'}=0 .$$
 
-Further, $$E[\epsilon_{ij}\epsilon{i'j'}] = \left\{ \begin{array}{rl}
-\sigma^2 &\mbox {if $i=i', j=j'$}\\
-0 &\mbox {otherwise} 
-\end{array} \right.$$ and
-$$E[\alpha_{i}\alpha{i'}] = \left\{ \begin{array}{rl}
-\sigma^2_A &\mbox {if $i=i'$}\\
-0 &\mbox {if $i \neq i'$} 
-\end{array} \right.$$ so
-$$Cov(y_{ij},y_{i'j'}) = \left\{ \begin{array}{rl}
-\sigma_A^2+\sigma^2 &\mbox {if $i=i', j=j'$}\\
-\sigma'_A &\mbox {if $i=i', j \neq j'$}\\
-0 &\mbox {otherwise}
-\end{array} \right.$$
+Further, $$E[\epsilon_{ij}\epsilon{i'j'}] =
+  \begin{cases}
+  \sigma^2 & \text{if } i=i', j=j'\\
+  0 &\text{otherwise} 
+\end{cases}$$
+
+and
+
+$$E[\alpha_{i}\alpha{i'}] =
+\begin{cases}
+\sigma^2_A &\text{if } i=i'\\
+0 &\text{if }i \neq i' 
+\end{cases}$$
+
+so
+
+$$Cov(y_{ij},y_{i'j'}) = 
+\begin{cases}
+  \sigma_A^2+\sigma^2 & \text{if } i=i', j=j'\\
+  \sigma'_A & \text{if } i=i', j \neq j'\\
+  0 & \text{otherwise}
+\end{cases}.$$
 
 It follows that the correlation between measurements $y_{ij}$ and
-$y_{ij'}$ (within the same group) are $$\begin{aligned}
-cor(y_{ij},y_{ij'} &= \frac{Cov(y_{ij},y_{ij'})}{\sqrt{v[y_{ij}]v[y_{ij'}]}}\\
-                   &= \frac{\sigma_A^2}{\sqrt{(\sigma_A^2 + \sigma^2)^2}}\end{aligned}$$
-$\Rightarrow Cor(y_{ij}, y_{ij'}) = \frac{\sigma_A^2}{\sigma_A^2 + \sigma^2}$\
-\
+$y_{ij'}$ (within the same group) are
+
+$$\begin{align*}
+Cor(y_{ij},y_{ij'}) &= \frac{Cov(y_{ij},y_{ij'})}{\sqrt{v[y_{ij}]v[y_{ij'}]}}\\
+                   &= \frac{\sigma_A^2}{\sqrt{(\sigma_A^2 + \sigma^2)^2}}\\
+                   &\Rightarrow Cor(y_{ij}, y_{ij'}) = \frac{\sigma_A^2}{\sigma_A^2 + \sigma^2}
+\end{align*}.$$
+
 This is the intra-class correlation.
 
 ## Linear mixed effects models (lmm)

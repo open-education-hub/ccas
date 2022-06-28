@@ -58,6 +58,8 @@ reps = {
     re.compile(r'\$\$\n\$\$'): '$$\n\n$$',
     # Add newlines to prevent breaking of KaTeX
     re.compile(r'(\$\$.+?\$\$) ?(.+?)'): '\\1\n\n\\2',
+    # Fixing some of the redundant backslashes
+    re.compile(r' ?\\\\\n\\((begin)|(end))'): '\n\\\\\\1',
     # Preventing image locations from being lost in conversion
     re.compile(r'\\includegraphicsdata\{.*\}'): replace_img,
     # Removing minipages as the text in them gets thrown away

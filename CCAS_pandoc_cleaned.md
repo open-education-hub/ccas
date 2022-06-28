@@ -52,11 +52,12 @@ research and innovation programme under grant agreement no. 727891.\
 > Notation: $\mathbb{N}=\{1,2,3,4,....\}$\
 > Subtraction and division are not defined on these numbers.\
 > An arbitrary element of $\mathbb{N}$ is most commonly denoted by
-> $i,\ j,\ n$,or $m$, but any symbol can be used.\
+> $i,\ j,\ n$, or $m$, but any symbol can be used.
 
 ### Details
 
 > **Definition**:  
+> 
 > The set of positive integers is usually denoted by $\mathbb{N}$, i.e.
 > $\mathbb{N}=\{1,2,3,4,....\}$ and is called the set of **natural
 > numbers**. In some cases the number zero is included as a natural
@@ -93,13 +94,16 @@ multiplied by itself $m$ times:
 $n^m=\underbrace{n\cdot n \cdot \ldots \cdot n}{m}$.
 
 > **Definition**:  
+> 
 > The power is an **operator** just like addition and multiplication, and
 > is defined to have higher priority than the other two.
 
 ### Examples
 
 > **Example**:  
-> If we have $x=4$ and $y= 2$ and want to evaluate $$x^y+y^x$$ then we
+> 
+> If we have $x=4$ and $y= 2$ and want to evaluate $$x^y+y^x$$
+> then we
 > replace the values of x and y in the expression, and evaluate it, taking
 > care to observe the correct order of operations: $$4^2+2^4=16+16=32.$$
 
@@ -125,6 +129,7 @@ equals sign is confusing and therefore not recommended.
 ### Examples
 
 > **Example**:  
+> 
 > Assigning values to a variable:
 > 
 >     x<-2
@@ -132,6 +137,7 @@ equals sign is confusing and therefore not recommended.
 >     z<-x+y 
 
 > **Example**:  
+> 
 > Viewing assigned values:\
 > Type the name,i.e. \"z\", to view the assigned value.
 > 
@@ -147,10 +153,12 @@ equals sign is confusing and therefore not recommended.
 ### Details
 
 > **Definition**:  
+> 
 > The set of all integers is denoted by $\mathbb{Z}$, i.e.
 > $$\mathbb{Z} = \{.., .., -2, -1, 0, 1, 2, ......\} .$$
 
 > **Note**:  
+> 
 > *Note 1*. Note that within this set it is possible to subtract as well
 > as add and multiply. Within this set we cannot, however, in general,
 > perform division.
@@ -160,16 +168,19 @@ equation, i.e. $79 - 8\cdot 3$, there is a conventional order for which
 the operations must be performed.
 
 > **Definition**:  
+> 
 > The conventional order of operations for equations with multiple
 > mathematical operations is referred to as an **operator precedence**.
 
 ### Examples
 
 > **Example**:  
+> 
 > To compute $79 - 8\cdot 3$ start by multiplying and then subtracting:\
 > $79 - 8\cdot 3 = 79-24 = 55$
 
 > **Example**:  
+> 
 > To compute $15 - (24 + 36)$ we first note that the parentheses
 > (brackets) imply a precedence; anything inside brackets should be
 > evaluated first.
@@ -181,6 +192,7 @@ the operations must be performed.
 > Note that the answer is a negative number.
 
 > **Example**:  
+> 
 > Simple arithmetic in R is easily done at the command prompt.
 > 
 >     79-8*3
@@ -208,11 +220,13 @@ text(2,0,"2",pos=1,cex=1.5)
 ```
 
 > **Definition**:  
+> 
 > **Rational numbers** are fractions denoted $p/q$, where $p$ and $q$ are
 > integers. The set of all rational numbers is usually denoted
 > $\mathbb{Q}$.
 
 > **Note**:  
+> 
 > *Note 2*. Note that every integer is a rational number (obtained by
 > taking $q=1$).
 
@@ -225,15 +239,18 @@ such that $(p/q)^2=2$.
 ### Examples
 
 > **Example**:  
+> 
 > $\frac{2}{6}$=$\frac{2}{2 \cdot 3}$=$\frac{1}{3}$
 
 The rational numbers can be put in order along a line as in the figure.
 
 > **Example**:  
+> 
 > As an elaborate example of a fraction, consider the evaluation of the
 > quantity $$\frac{\frac{2}{3}+\frac{2}{5}}{\frac{1}{3}+\frac{1}{2}}$$
 
 > **Example**:  
+> 
 > Evaluate $$\frac{\frac{2}{3}+\frac{2}{5}}{\frac{1}{3}+\frac{1}{2}}$$
 > 
 > Solution: We can either start by calculating the numerator
@@ -286,6 +303,7 @@ The rational numbers can be put in order along a line as in the figure.
 > In step 1 above we used Cross-Multiplication.
 > 
 > > **Definition**:  
+> > 
 > > **Cross-Multiplication** is when we multiple the numerator by the
 > > reciprocal of the denominator.
 > 
@@ -308,6 +326,7 @@ $s=\frac{p}{q}$, i.e. find a number $r\in \mathbb{Q}$ such that $r^2=s$.
 The square root is denoted $\sqrt{r}$.
 
 > **Example**:  
+> 
 > Consider the expression
 > $$(\sqrt{\frac{1}{9}} \times 2^4) + (\frac{1}{5} \times \sqrt{25}).$$
 > 
@@ -331,6 +350,7 @@ The square root is denoted $\sqrt{r}$.
 > $$\frac{16}{3} + 1 = \frac{19}{3}$$
 
 > **Example**:  
+> 
 > Consider the following fraction example, to be solved step by step:
 > 
 > $$\frac{\frac{4}{2}+(\frac{1}{4}\cdot\frac{5}{3})}{\frac{2}{6}\div\frac{1}{5}}$$
@@ -389,6 +409,7 @@ The square root is denoted $\sqrt{r}$.
 > To do this we use factoring.
 > 
 > > **Definition**:  
+> > 
 > > **Factoring** essentially means to break a number done into it's
 > > smallest factors or multipliable prime numbers.
 > 
@@ -452,16 +473,19 @@ corresponds to \"filling in\" the \"missing pieces\" of the line.
 ### Examples
 
 > **Example**:  
+> 
 > If $C$ is the circumference of a circle and $D$ is the diameter and we
 > define $\pi=\frac{C}{D}$ then $\pi$ is not a fraction.
 
 > **Example**:  
+> 
 > One example of a non fraction is the number e (Euler's number) which can
 > be defined by
 > 
 > $$e = \sum_{n=0}^{\infty }\frac{1}{n!}$$
 
 > **Example**:  
+> 
 > If you have a right triangle with unit side length, what is the length
 > of its hypotenuse and what class of numbers does it belong to?
 > 
@@ -524,18 +548,21 @@ USA.
 Pairs of numbers can be depicted as points on a plane.\
 
 > **Definition**:  
+> 
 > A **plane** is a perfectly flat surface with no thickness and no end, it
 > can extend forever in all directions. It has two-dimensions, length and
 > width. We need two values to find a point on the plane.
 
 Normally we talk about \"the plane\" as the collection of all pairs of
 numbers and denoted it by
-$$\mathbb{R}^2 = \{ (x,y) : x,y \in \mathbb{R} \},$$ giving coordinates
+$$\mathbb{R}^2 = \{ (x,y) : x,y \in \mathbb{R} \},$$
+giving coordinates
 to each point.
 
 ### Examples
 
 > **Example**:  
+> 
 > Plotting the point (2,4) in the x-y plane using R.
 > 
 >     plot(2,4,xlim=c(0,6),ylim=c(0,6),xlab="x",ylab="y",cex=2)
@@ -549,6 +576,7 @@ If you have 2 sets of coordinates on a plane you can calculate the
 distance between the 2 points and graph the line connecting the points
 
 > **Example**:  
+> 
 > What is the distance between the 2 points (3,9) and (5,1)?
 > 
 > We will use the Pythagorean theorem:
@@ -590,6 +618,7 @@ distance between the 2 points and graph the line connecting the points
 ### Examples
 
 > **Example**:  
+> 
 >     plot(2,3)
 > 
 > gives a single plot and
@@ -599,6 +628,7 @@ distance between the 2 points and graph the line connecting the points
 > gives a single plot but forces both axes to range from 0 to 5.
 
 > **Example**:  
+> 
 > The following R commands can be used to generate a plot with two points:
 > 
 >     plot(1,2,xlim=c(0,5),ylim=c(0,5),xlab="x",ylab="y")
@@ -607,13 +637,15 @@ distance between the 2 points and graph the line connecting the points
 >     text(3,1,"(3,1)",pos=4, cex=2)
 
 > **Example**:  
+> 
 > In this example, we plot 3 points. The first two points are by including
 > vectors with a length of 2 as the x and y arguments of the plot
 > function. The third plot was added with the points function. The second
 > and third points were labeled using the text function and a line was
-> drawn between them using the lines function.\
+> drawn between them using the lines function.
 > 
 > > **Note**:  
+> > 
 > > *Note 3*. Note that if you are unsure of what format the arguments of an
 > > R function needs to be, you can call a help file by typing \"?\" before
 > > the function name (e.g. \"?lines\")
@@ -637,6 +669,7 @@ columns in a table.
 ### Examples
 
 > **Example**:  
+> 
 > In R, if the command
 > 
 >     x <- c(4,5,3,7)
@@ -644,6 +677,7 @@ columns in a table.
 > is given, then $\verb1x1$ contains a vector of numbers.
 
 > **Example**:  
+> 
 > Create a function in R, give it a name \"Myfunction\" which takes the
 > sum of x,y.
 > 
@@ -674,9 +708,11 @@ column vector would be referred to as $x'$ and the row vector as $x^T$
 ### Examples
 
 > **Example**:  
+> 
 > If $x=(4,5,3,7)$ then $x_1=4$ and $x_4=7$
 
 > **Example**:  
+> 
 > How to remove all indices below a certain value in R
 > 
 >     x <- c(1,5,8,9,4,16,12,7,11)
@@ -687,6 +723,7 @@ column vector would be referred to as $x'$ and the row vector as $x^T$
 >     [1] 16 12 11
 
 > **Example**:  
+> 
 > Consider a function that takes to vectors
 > $$a \in \mathbb{R}^n, b \in \mathbb{N}^m$$
 > 
@@ -713,6 +750,7 @@ column vector would be referred to as $x'$ and the row vector as $x^T$
 ### Examples
 
 > **Example**:  
+> 
 > If $x=(4,5,3,7)$
 > 
 > then
@@ -762,7 +800,7 @@ $$\begin{aligned}
 (a+b)^2 &=& (a+b)(a+b)\\
        &=&( a+b)a+(a+b)b\\
        &=& a^2+ba+ba+b^2\\
-       &=& a^2+2ab+b^2\\\end{aligned}$$
+       &=& a^2+2ab+b^2\end{aligned}$$
 
 ## Pascal's Triangle
 
@@ -770,21 +808,20 @@ $$\begin{aligned}
 > coefficients in a triangle
 > 
 > $$\begin{array}{ccccc}
->            & &1&&\\
->        & 1   & &    1&\\
->     1  &&     2  &&       1\\
+>   & & 1 & &\\
+>   & 1 & & 1&\\
+>   1 & & 2 & & 1\\
 >   \vdots \quad \vdots && \vdots && \vdots \quad \vdots
 > \end{array}$$
 
 ### Details
 
-  -------- -- --- --- --- --- --- --- ---
-    $n=0$:                 1          
-    $n=1$:            1        1      
-    $n=2$:        1        2       1  
-    $n=3$:     1      3        3       1
-                                      
-  -------- -- --- --- --- --- --- --- ---
+$$\begin{array}{ccccccccc}
+  n=0: & & & & &1& & & \\
+  n=1: & & & &1& &1& & \\
+  n=2: & & &1& &2& &1& \\
+  n=3: & &1& &3& &3& &1
+\end{array}$$
 
 To build Pascal's triangle, start with \"1\" at the top, and then
 continue placing numbers below it in a triangular pattern. Each number
@@ -794,6 +831,7 @@ which are all \"1\").
 ### Examples
 
 > **Example**:  
+> 
 > The following function in R gives you the Pascal's triangle for $n= 0$
 > to $n=10$.
 > 
@@ -826,12 +864,14 @@ which are all \"1\").
 ### Details
 
 > **Definition**:  
+> 
 > We define the factorial of an integer n as
 > $$n!= n\cdot(n-1) \cdot(n-2)\cdots \ldots \cdot 3 \cdot 2 \cdot 1 .$$
 
 ### Examples
 
 > **Example**:  
+> 
 > Suppose you have 6 apples, $\{a, b, c, d, e, f\}$ and you want to put
 > each one into a different apple basket, $\{1,2,3,4,5,6\}$.\
 > For the first basket you can choose from 6 apples $\{a, b, c, d, e,
@@ -855,6 +895,7 @@ which are all \"1\").
 ### Details
 
 > **Definition**:  
+> 
 > A **combination** is an un-ordered collection of distinct elements
 
 Suppose we want to toss a coin $n$ times. In each toss we obtain head
@@ -873,6 +914,7 @@ For convenience we define $0!$ to be 1.
 ### Examples
 
 > **Example**:  
+> 
 > Consider tossing a coin four times.\
 > (a) How many times will this experiment result in exactly two tails?\
 > There are a total of 16 possible sequences of heads and tails from four
@@ -921,8 +963,11 @@ ways so the coefficient of $a^xb^{n-x}$ is $\binom{n}{x}$.
 ### Examples
 
 > **Example**:  
-> Since $$(a+b)^n  = \sum_{x=0}^n {n \choose x} a^xb^{n-x},$$ it follows
-> that $$2^n = (1+1)^n  = \sum_{x=0}^n {n \choose x}$$ i.e.
+> 
+> Since $$(a+b)^n  = \sum_{x=0}^n {n \choose x} a^xb^{n-x},$$
+> it follows
+> that $$2^n = (1+1)^n  = \sum_{x=0}^n {n \choose x}$$
+> i.e.
 > $$2^n = {n \choose 0} + {n \choose 1} + {n \choose 2}\ldots+ {n \choose n}$$
 
 **Copyright** 2021, Gunnar Stefansson (editor) with contributions from
@@ -947,40 +992,43 @@ $\binom{3}{x}p^x(1-p)^{3-x}$.
 ### Examples
 
 > **Example**:  
+> 
 > Consider a biased coin which has probability $p$ of landing heads up. If
 > we toss this coin 3 independent times the possible outcomes are:
 > 
 > $$\begin{array}{c c c}
-> \hline
-> sequence & probability  & Number of heads\\
-> \hline              
-> HHH & p \cdot p \cdot p=p^3 & 3\\
-> HHT & p^2(1-p) & 2\\
-> HTH & p^2(1-p) & 2 \\
-> HTT & p(1-p)^2 & 1\\
-> THH & p^2(1-p) & 2\\
-> THT & p(1-p)^2 & 1\\    
-> TTH & p(1-p)^2 & 1\\
-> TTT & (1-p)^3 & 0\\
-> \hline
+>   \hline
+>   \text{sequence} & \text{probability}  & \text{Number of heads}\\
+>   \hline                
+>   \text{HHH} & p \cdot p \cdot p=p^3 & 3\\
+>   \text{HHT} & p^2(1-p) & 2\\
+>   \text{HTH} & p^2(1-p) & 2 \\
+>   \text{HTT} & p(1-p)^2 & 1\\
+>   \text{THH} & p^2(1-p) & 2\\
+>   \text{THT} & p(1-p)^2 & 1\\   
+>   \text{TTH} & p(1-p)^2 & 1\\
+>   \text{TTT} & (1-p)^3 & 0\\
+>   \hline
 > \end{array}$$
 
 > **Example**:  
+> 
 > It is also possible to aggregate these values into a table and describe
-> only the number of heads obtained:\
-> 
->    heads   probability $p(x)$
->   ------- --------------------
->      0         $(1-p)^3$
->      1        $3p(1-p)^2$
->      2        $3p^2(1-p)$
->      3           $p^3$
-> 
-> If we are only interested in the number of heads, then this table
-> describes a **probability mass function** $p$, namely the probability
-> $p(x)$ of every possible outcome $x$ of the experiment.
+> only the number of heads obtained: $$\begin{array}{c c}
+>   \hline
+>   \text{Heads} & \text{Probability}\ p(x)\\
+>   \hline                
+>   0 & (1-p)^3\\
+>   1 & 3p(1-p)^2\\
+>   2 & 3p^2(1-p)\\
+>   3 & p^3 \\
+>   \hline
+> \end{array}.$$ If we are only interested in the number of heads, then
+> this table describes a **probability mass function** $p$, namely the
+> probability $p(x)$ of every possible outcome $x$ of the experiment.
 
 > **Example**:  
+> 
 > Given that a year is 365 days and each day has the same probability of
 > being someone's birthday. What's the probability of at least 2 people
 > sharing a birthday in a group of 25 people?\
@@ -1035,18 +1083,21 @@ $\binom{3}{x}p^x(1-p)^{3-x}$.
 ### Examples
 
 > **Example**:  
+> 
 > Let $X$ denote the number of heads in a coin tossing experiment. We can
 > then talk about the probabilities of certain events such as obtaining
 > two heads, i.e. $X=2$. We write this as
 > 
 > $$P[X=2]={n \choose 2}p^2(1-p)^{n-2}$$
 > 
-> In general: $$P[X=x] = {n \choose x}p^x (1-p)^{n-x}$$ where
+> In general: $$P[X=x] = {n \choose x}p^x (1-p)^{n-x}$$
+> where
 > $x = 0,1,.....,n$
 
 ### Handout
 
 > **Definition**:  
+> 
 > A **random variable**, $X$, is a function defined on a sample space,
 > with outcomes in the set of real numbers.
 
@@ -1054,15 +1105,18 @@ It is simpler to think of a random variable as a symbol used to denote
 the outcome of an experiment before it is conducted.
 
 > **Note**:  
+> 
 > *Note 4*. Note that it is **essential** to distinguish between upper
 > case and lower case letters when writing these probabilities - it makes
 > no sense to write $P[x=x]$.
 
 > **Note**:  
+> 
 > *Note 5*. Random variables are generally denoted by upper case letters
 > such as $X$, $Y$ and so on.
 
 > **Note**:  
+> 
 > *Note 6*. To see how a random variable is a function, it is useful to
 > consider the actual outcomes of two coin tosses. These outcomes can be
 > denoted $\{HH, HT, TH, TT\}$. Now consider a random variable $X$ which
@@ -1079,6 +1133,7 @@ the outcome of an experiment before it is conducted.
 ### Examples
 
 > **Example**:  
+> 
 > Suppose we are participating in a lottery. We pick a number from a
 > lottery bowl (a simple random sample). We can put the number aside, or
 > we can put it back into the bowl. If we put the number back in the bowl,
@@ -1086,10 +1141,12 @@ the outcome of an experiment before it is conducted.
 > selected only one time.
 > 
 > > **Definition**:  
+> > 
 > > When an element can be selected more than one time, we are sampling
 > > **with replacement**.
 > 
 > > **Definition**:  
+> > 
 > > When an element can be selected only one time, we are sampling **without
 > > replacement**.
 
@@ -1103,14 +1160,17 @@ the outcome of an experiment before it is conducted.
 ### Examples
 
 > **Example**:  
+> 
 > Suppose we toss a coin, with probability $p$ of landing on heads $n$
 > times obtaining a sequence of Hs (when it lands heads) and Ts (when it
-> lands tails). Any sequence, $$HTH...HTHHH$$ which has $x$ heads ($H$)
+> lands tails). Any sequence, $$HTH...HTHHH$$
+> which has $x$ heads ($H$)
 > and $n-x$ tails ($T$), has the probability $p^x(1-p)^{n-x}$. There are
 > exactly $\binom{n}{x}$ such sequences, so the total probability of
 > landing $x$ heads in $n$ tosses is $$\binom{n}{x}p^x(1-p)^{n-x}.$$
 
 > **Example**:  
+> 
 > Let the probability that a certain football club wins a match be equal
 > to 0.4.If the total number of matches played in the season is 30, what
 > is the probability that the football club wins the match 10% of the
@@ -1120,7 +1180,7 @@ the outcome of an experiment before it is conducted.
 > 10% of 30 times = 3 times\
 > We can now proceed to calculate the probability that they will win the
 > match given that their probability of a winning is 0.4 if they play 3
-> times in a season. This can be computed as follows:\
+> times in a season. This can be computed as follows:
 > $$\binom{30}{3} \times (0.4)^3 \times (1-0.4)^{30-3}$$
 > 
 > $$=0.000265$$
@@ -1135,6 +1195,7 @@ the outcome of an experiment before it is conducted.
 > This is equal to the manual calculation using the binomial theorem.
 
 > **Example**:  
+> 
 > Suppose a youngster puts his shirt on by himself every day for five
 > days. The probability that he puts it on the right way each time is
 > $p=0.2$. We let $X$ be a random variable that describes the number of
@@ -1220,6 +1281,7 @@ the outcome of an experiment before it is conducted.
 > which also gives 0.00672.
 
 > **Example**:  
+> 
 > In a certain degree program, the chance of passing an examination is
 > 20%. What is the chance of passing at most 2 exams if the student takes
 > five exams?\
@@ -1246,6 +1308,7 @@ the outcome of an experiment before it is conducted.
 >     pbinom(2,5,0.2)
 
 > **Example**:  
+> 
 > Consider the probability of someone jumping off a cliff is 0.35. Suppose
 > we randomly selected four individuals to participate in the cliff
 > jumping activity. What is the chance that exactly one of them will jump
@@ -1273,7 +1336,8 @@ the outcome of an experiment before it is conducted.
 ### Details
 
 A general discrete probability distribution is described by the possible
-outcomes $$x_1, x_2, \ldots$$ and associated probabilities, denoted by
+outcomes $$x_1, x_2, \ldots$$
+and associated probabilities, denoted by
 $p_1, p_2, \ldots$ or $p(x_1), p(x_2),\ldots$\
 If a random variable $X$ has this distribution, then we can write
 $$P[X=x_i] = p(x_i)= p_i$$
@@ -1287,48 +1351,50 @@ where it is understood that $p(x) = 0$ if $x$ is not one of these $x_i$.
 ### Examples
 
 > **Example**:  
+> 
 > If $X$ is the number of heads ($H$) before obtaining the first tail
 > ($T$) when tossing an unbiased coin 4 independent times, then the
 > possible basic outcomes are:
 > 
->   ----------- --------- ------------------
->                 Toss    
->    In binary   1 2 3 4   \#$H$ before $T$
->      0000      H H H H          4
->      0001      H H H T          3
->      0010      H H T H          2
->      0011      H H T T          2
->      0100      H T H H          1
->      0101      H T H T          1
->      0110      H T T H          1
->      0111      H T T T          1
->      1000      T H H H          0
->      1001      T H H T          0
->      1010      T H T H          0
->      1011      T H T T          0
->      1100      T T H H          0
->      1101      T T H T          0
->      1110      T T T H          0
->      1111      T T T T          0
->   ----------- --------- ------------------
+> $$\begin{array}{c c c}
+> \hline
+>          & \text{Toss}    &   \\
+> \text{In binary} & 1\ 2\ 3\ 4 & \#\text{H before T}\\
+> \hline              
+>   0000 & \text{H H H T} & 3\\
+>   0010 & \text{H H T H} & 2\\
+>   0011 & \text{H H T T} & 2\\
+>   0100 & \text{H T H H} & 1\\
+>   0101 & \text{H T H T} & 1\\
+>   0110 & \text{H T T H} & 1\\
+>   0111 & \text{H T T T} & 1\\
+>   1000 & \text{T H H H} & 0\\
+>   1001 & \text{T H H T} & 0\\
+>   1010 & \text{T H T H} & 0\\
+>   1011 & \text{T H T T} & 0\\
+>   1100 & \text{T T H H} & 0\\
+>   1101 & \text{T T H T} & 0\\
+>   1110 & \text{T T T H} & 0\\
+>   1111 & \text{T T T T} & 0\\
+> \hline
+> \end{array}$$
 > 
-> \
 > Since the coin is unbiased, each of these has the same probability of
 > occurring. We can now count sequences to find the number of
 > possibilities of a particular number of heads, $H$, before a tail in 4
-> coin tosses and thus obtain the corresponding probabilities as:\
-> 
->   --------------------------------- ----------------------------
->    Number of tosses before a heads                   Probability
->                  $x$                                      $p(x)$
->                   0                   $\frac{8}{16}=\frac{1}{2}$
->                   1                   $\frac{4}{16}=\frac{1}{4}$
->                   2                   $\frac{2}{16}=\frac{1}{8}$
->                   3                               $\frac{1}{16}$
->                   4                               $\frac{1}{16}$
->   --------------------------------- ----------------------------
-> 
-> \
+> coin tosses and thus obtain the corresponding probabilities as:
+> $$\begin{array}{c r}
+> \hline
+> \text{Number of tosses before a heads} & \text{Probability}\\
+>  & p(x)\\
+> \hline
+> 0 & \frac{8}{16}=\frac{1}{2}\\
+> 1 & \frac{4}{16}=\frac{1}{4}\\
+> 2 & \frac{2}{16}=\frac{1}{8}\\
+> 3 & \frac{1}{16}\\
+> 4 & \frac{1}{16}\\
+> \hline
+> \end{array}$$
 
 ## The expected value or population mean
 
@@ -1359,15 +1425,18 @@ $E[X]$.
 ### Examples
 
 > **Example**:  
+> 
 > If we toss a fair coin 10 independent times, we expect on average
 > $np=10\cdot\frac{1}{2}= 5$ heads.
 
 > **Example**:  
+> 
 > Toss a fair die and pay \$60 if a six comes up and nothing otherwise.
 > The expected outcome is
 > $$\frac{5}{6}\cdot\$0+\frac{1}{6}\cdot\$60= \$10.$$
 
 > **Example**:  
+> 
 > In Las Vegas, a particular sports bet has about a 30% chance of winning.
 > If the bet wins, the bettor will win 15 dollars. If the bet loses, the
 > bettor will lose 10 dollars. The expected return of placing one of these
@@ -1378,6 +1447,7 @@ $E[X]$.
 > $$\$15\cdot 0.3 - \$10\cdot 0.7 = -\$2.5$$
 
 > **Example**:  
+> 
 > Class starts at 8:00 and the last bus that will get you to class on time
 > leaves at 7:30. The teacher has a policy that if you are late to class 6
 > of the 30 classes, then she drops your final grade by 1/10 points. You
@@ -1464,6 +1534,7 @@ $E[X]$.
 ### Details
 
 > **Definition**:  
+> 
 > If $\mu$ is the expected value, then the **variance of a discrete
 > distribution** is defined as
 > $$\sigma ^2=(x_1 - \mu)^2 p_1 + (x_2 - \mu)^2 p_2 + \ldots .$$
@@ -1475,6 +1546,7 @@ $$\sigma^2 = V[X]=E\left [ \left ( X - \mu \right ) ^ 2\right ] .$$
 ### Examples
 
 > **Example**:  
+> 
 > In the case of the binomial distribution, it turns out that:
 > 
 > $$\sigma^2 = np(1 - p) .$$
@@ -1509,6 +1581,7 @@ Functions are commonly used in statistical applications, to describe
 relationships.
 
 > **Definition**:  
+> 
 > A **function** describes the relationship between variables. A variable
 > $y$ is described as a function of a variable $x$ by completely
 > specifying how $y$ can be computed for any given value of $x$.
@@ -1526,6 +1599,7 @@ common.
 ### Examples
 
 > **Example**:  
+> 
 > $f(x) = x^2$ or $y = x^2$ specifies that the computed value of $y$
 > should always be $x^2$, for any given value of $x$.
 
@@ -1550,13 +1624,8 @@ common.
 
 ### Examples
 
-    ERROR: Unknown script MIME type text/x-tex
-    Traceback (most recent call last):
-      File "/srv/sites/tutor-web-2/src/tutorweb.content/tutorweb/content/transforms/script_to_html.py", line 179, in convert
-        raise ValueError("Unknown script MIME type %s" % kwargs['mimetype'])
-    ValueError: Unknown script MIME type text/x-tex
-
 > **Example**:  
+> 
 >     f <- function(x) {return(x*12)}
 >     x <- seq (-5,5,0,1)
 >     y <- f(x)
@@ -1572,13 +1641,8 @@ common.
 
 ### Examples
 
-    ERROR: Unknown script MIME type text/x-tex
-    Traceback (most recent call last):
-      File "/srv/sites/tutor-web-2/src/tutorweb.content/tutorweb/content/transforms/script_to_html.py", line 179, in convert
-        raise ValueError("Unknown script MIME type %s" % kwargs['mimetype'])
-    ValueError: Unknown script MIME type text/x-tex
-
 > **Example**:  
+> 
 > The following R commands can be used to generate a plot for function; Y=
 > 2+3x
 > 
@@ -1597,6 +1661,7 @@ common.
 ### Examples
 
 > **Example**:  
+> 
 > $$\begin{aligned}
 > z &= 2x+3y+4\\
 > v &= t^2+3x\\
@@ -1624,6 +1689,7 @@ USA.
 ### Details
 
 > **Definition**:  
+> 
 > A **polynomial** describes a specific function consisting of linear
 > combinations of positive integer powers of the explanatory variable.
 
@@ -1658,6 +1724,7 @@ The simplest parabola is $p(x) = x^2$ (Fig. a) which is always
 non-negative $p(x)\geq 0$ and $p(x)=0$ only when $x=0$.
 
 > **Note**:  
+> 
 > *Note 7*. Note that $p(-x) = p(x)$ since $(-x)^2= x^2$.
 
 If the coefficient at the highest power is negative, then the parabola
@@ -1740,12 +1807,13 @@ The general solution is given by the formula
 
 $$x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a},$$
 
-if $b^2 - 4ac \geq 0$. On the other hand, if $b^2-4ac\textless 0$, the
-quadratic equation has no real solution.
+if $b^2 - 4ac \geq 0$. On the other hand, if $b^2-4ac<0$, the quadratic
+equation has no real solution.
 
 ### Examples
 
 > **Example**:  
+> 
 > Solve $x^2 - 3x + 2 = 0$
 > 
 > Putting this into the context of the formulation $ax^2+bx+c=0$, the
@@ -1764,6 +1832,7 @@ quadratic equation has no real solution.
 > x &=& 2 , 1 \end{aligned}$$
 
 > **Example**:  
+> 
 > Find the roots of the following polynomial
 > 
 > $$3x^{4} + 14x^{2} + 15$$
@@ -1830,6 +1899,7 @@ dat\$a where\"dat\" is the name of the data frame and \"a\" is the name
 of a column.
 
 > **Note**:  
+> 
 > *Note 8*. Note that for read.table(\"file address\"), \"file address\"
 > refers to the location of the file. Thus, it can be the URL or the
 > complete file directory depending on where the table is stored.
@@ -1837,6 +1907,7 @@ of a column.
 ### Examples
 
 > **Example**:  
+> 
 > Below are three examples using R code to enter data
 > 
 > 1.  x\<-c(4,3,6,7,8)
@@ -1864,6 +1935,7 @@ A histogram is a graphical display of tabulated frequencies, shown as
 bars.
 
 > **Example**:  
+> 
 > If we toss a fair die 100 times and record the number of sixes, then we
 > can view that as the outcome of a random variable $X$, which is binomial
 > with $n=100$ and $p=\frac{1}{6}$, i.e $X \sim b(n=100,p=\frac{1}{6})$\
@@ -1900,12 +1972,14 @@ data.
 The most familiar measure of central tendency is the arithmetic mean.
 
 > **Definition**:  
+> 
 > An **arithmetic mean** is the sum of the values divided by the number
 > values, typically expressed as:
 > 
 > $$\bar{y} = \frac{\sum_{i=1}^{n} y_i}{n}$$
 
 > **Definition**:  
+> 
 > The **sample variance** is a measure of the spread of a set of values
 > from the mean value:
 > 
@@ -1915,12 +1989,14 @@ The sample standard deviation is more commonly used as a measure of the
 spread of a set of values from the mean value.
 
 > **Definition**:  
+> 
 > The **standard deviation** is the square root of the variance and may be
 > expressed as:
 > 
 > $$s = \sqrt{\frac{1}{n-1}\displaystyle\sum_{i=1}^{n}(x_i - \bar{x} )^2}$$
 
 > **Definition**:  
+> 
 > The **standard error** is a method used to indicate the reliability of
 > the sample mean:
 > 
@@ -1974,6 +2050,7 @@ The following R commands can be used to generate a scatter plot for
 vectors x and y
 
 > **Example**:  
+> 
 >     plot(x,y) 
 
 **Copyright** 2021, Gunnar Stefansson (editor) with contributions from
@@ -1995,6 +2072,7 @@ USA.
 ### Examples
 
 > **Example**:  
+> 
 >     X<-c(41, 3, 73)
 >     names(X)<-c("One", "Two", "Three")
 > 
@@ -2025,16 +2103,19 @@ USA.
 ### Details
 
 > **Definition**:  
+> 
 > A **matrix** is a (two-dimensional) table of numbers, indexed by row and
 > column numbers.
 
 > **Note**:  
+> 
 > *Note 9*. Note that a matrix can also have row and column names so that
 > the matrix can be indexed by its names rather than numbers.
 
 ### Examples
 
 > **Example**:  
+> 
 > Consider a matrix with 2 rows and 3 columns. Consider extracting first
 > element (1,2), then all of line 2 and then columns 2-3 in an R session:
 > 
@@ -2090,6 +2171,7 @@ USA.
 ### Examples
 
 > **Example**:  
+> 
 >     z<-c(5,7,2,9,3,4,8)
 >     i<-c("m","f","m","m","f","m","f")
 > 
@@ -2123,6 +2205,7 @@ USA.
 ### Examples
 
 > **Example**:  
+> 
 >     i<-c("m","f","m","m","f","m","f")
 >     z<-c(5,7,2,9,3,4,8)
 > 
@@ -2142,13 +2225,13 @@ USA.
 ### Examples
 
 > **Example**:  
+> 
 >     x<-list(y=2,z=c(2,3),w=c("a","b","c"))
 >     x[["z"]]
 >     [1] 2 3
 >     names(x)
 >     [1] "y" "z" "w"
 >     x["w"]
->     $w
 >     [1] "a" "b" "c"
 >     x$w
 >     [1] "a" "b" "c"
@@ -2180,6 +2263,7 @@ USA.
 ### Details
 
 > **Definition**:  
+> 
 > **Exponential growth** is the rate of population increase across time
 > when a population is devoid of limiting factors (i.e. competition,
 > resources, etc.) and experiences a constant growth rate.
@@ -2194,6 +2278,7 @@ $k$= growth rate\
 $t$ =number of time intervals\
 
 > **Note**:  
+> 
 > *Note 10*. Note that exponential growth occurs when $k>0$ and
 > exponential decline occurs when $k<0$.
 
@@ -2214,7 +2299,8 @@ function at $x$.
 ## Properties of the exponential function
 
 > Recall that the methods of the basic arithmetic implies that:
-> $$e^{a+b} = e^a e^b$$ for any real numbers $a$ and $b$.
+> $$e^{a+b} = e^a e^b$$
+> for any real numbers $a$ and $b$.
 
 ## Functions of functions
 
@@ -2237,6 +2323,7 @@ ${h} = {g}\circ{f}$\
 ### Examples
 
 > **Example**:  
+> 
 > If\
 > $g(x)= {3}+ {2}x$ and\
 > $f(x) = {5}{x}^2$\
@@ -2245,7 +2332,7 @@ ${h} = {g}\circ{f}$\
 > $g(f(x)) = {3} +{10x}^2$\
 > $f(g(x)) = {5}{(g(x))}^2$\
 > $f(g(x)) = {5}{({3}+{2x})}^2$\
-> $f(g(x)) = {45}+{60x}+{20x}^2$\
+> $f(g(x)) = {45}+{60x}+{20x}^2$
 
 ## Storing and using R code
 
@@ -2255,11 +2342,12 @@ ${h} = {g}\circ{f}$\
 ### Examples
 
 > **Example**:  
+> 
 > Save the following file (test.r):
 > 
 >     x=4
 >     y=8
->     cat("x+y is", x+y, "\n")$
+>     cat("x+y is", x+y, "\n")
 > 
 > To read the file use:
 > 
@@ -2275,6 +2363,7 @@ ${h} = {g}\circ{f}$\
 ### Examples
 
 > **Example**:  
+> 
 >     f<-function(x) {
 >         return (exp(sum(x)))
 >         }
@@ -2308,6 +2397,7 @@ $$f^{-1}(f(x))=x$$
 ### Examples
 
 > **Example**:  
+> 
 > If $f(x) = x^2$ for $x<0$ then the function $g$, defined as
 > $g(y)=\sqrt{y}$ for $y>0$, is not the inverse of $f$ since
 > $g(f(x))=\sqrt{x^2}= |x|= -x$ for $x<0$.
@@ -2336,10 +2426,12 @@ $$f^{-1}(f(x))=x$$
 ### Examples
 
 > **Example**:  
+> 
 > $f(x)=x^2$ does not have an inverse since $f(x)=1$ has two possible
 > solutions -1 and 1.
 
 > **Note**:  
+> 
 > *Note 11*. Note that iff $f$ is a function, then the function $g$ is the
 > inverse function of $f$, if $g(f(x)) = x$ for all calculated values of
 > $x$ in $f(x)$.\
@@ -2347,6 +2439,7 @@ $$f^{-1}(f(x))=x$$
 > $f^{-1}(f(x)) = x$.
 
 > **Example**:  
+> 
 > What is the inverse function, $f^{-1}$, of $f$ if $f(x) = 5 + 4x$.\
 > The simplest approach is to write $y=f(x)$ and solve for $x$:
 > 
@@ -2372,21 +2465,25 @@ $$f^{-1}(f(x))=x$$
 ### Details
 
 If $\log (x) = a$ and $\log (y)=b$, then $x = 10^a$ and $y = 10^b$, and
-$$x \cdot y = 10^a \cdot 10^b = 10^{a+b}$$ so that $$\log(xy) = a+b$$
+$$x \cdot y = 10^a \cdot 10^b = 10^{a+b}$$
+so that $$\log(xy) = a+b$$
 
 ### Examples
 
 > **Example**:  
+> 
 > $$\begin{aligned}
 > log(100)&=& 2 \\
-> log(1000)&=& 3 \\\end{aligned}$$
+> log(1000)&=& 3\end{aligned}$$
 
 > **Example**:  
+> 
 > If $$\log(2) \approx 0.3$$
 > 
 > then $$10^y=2$$
 > 
 > > **Note**:  
+> > 
 > > *Note 12*. Note that $$2^{10}=1024 \approx 1000 = 10^3$$
 > > 
 > > therefore $$2 \approx 10^{3/10}$$
@@ -2435,7 +2532,7 @@ Next, note that
 $$\begin{aligned}
 \ln (x^2)&=& \ln (x \cdot x)\\
 &=& \ln x + \ln x\\
-&=& 2 \cdot ln x\\\end{aligned}$$
+&=& 2 \cdot ln x\end{aligned}$$
 
 and similarly $\ln (x^n) = n \cdot \ln x$ for any integer n.
 
@@ -2445,19 +2542,21 @@ Thus the multiplicative model (from above)
 
 $$y=a \cdot w^b \cdot x^c$$
 
-becomes $$y= (\ln a) + b \cdot \ln w + c \cdot \ln x$$ which is a linear
+becomes $$y= (\ln a) + b \cdot \ln w + c \cdot \ln x$$
+which is a linear
 model with parameters $(\ln a)$, $b$ and $c$.
 
 In addition, the log-transform is often variance-stabilizing.
 
 ## The exponential function and the logarithm
 
-> The exponential function and the logarithms are inverses of each other\
+> The exponential function and the logarithms are inverses of each other
 > $$x = e^y \Leftrightarrow y = \ln{x}$$
 
 ### Details
 
 > **Note**:  
+> 
 > *Note 13*. Note the properties:
 > 
 > $$\ln (x \cdot y) = \ln (x) + \ln (y)$$
@@ -2467,6 +2566,7 @@ In addition, the log-transform is often variance-stabilizing.
 ### Examples
 
 > **Example**:  
+> 
 > Solve the equation $$10e^{1/3x} + 3 = 24$$
 > 
 > for $x$.
@@ -2522,6 +2622,7 @@ changes in each $x_0$, the input, correspond to small changes in the
 output, $f(x_0)$.
 
 > **Note**:  
+> 
 > *Note 14*. Note that polynomials are continuous as are logarithms (for
 > positive numbers).
 
@@ -2545,13 +2646,17 @@ output, $f(x_0)$.
 ### Details
 
 > **Definition**:  
+> 
 > If $X$ is a random variable with a discrete probability distribution and
-> the probability mass function of $$p(x)=P[X=x]$$ then the **cumulative
-> distribution function**, defined by $$F(X)=P[X\leq x]$$ is
+> the probability mass function of $$p(x)=P[X=x]$$
+> then the **cumulative
+> distribution function**, defined by $$F(X)=P[X\leq x]$$
+> is
 > discontinuous, i.e. it jumps at points in which a positive probability
-> occurs.\
+> occurs.
 
 > **Note**:  
+> 
 > *Note 15*. When drawing discontinuous functions it is common practice to
 > use a filled circle at $(x,f(x))$ to clarify what the function value is
 > at a point $x$ of discontinuity.
@@ -2559,6 +2664,7 @@ output, $f(x_0)$.
 ### Examples
 
 > **Example**:  
+> 
 > If a coin is tossed 3 independent times and $X$ denotes the number of
 > heads, then $X$ can only take on the values 0, 1, 2 and 3. The
 > probability of landing exactly $x$ heads, $P(X=x)$, is
@@ -2576,6 +2682,7 @@ output, $f(x_0)$.
 > discontinuous.
 > 
 > > **Note**:  
+> > 
 > > *Note 16*. Notice on the above figure how the circles are filled in, the
 > > solid circles indicate where the function value is.
 
@@ -2630,7 +2737,8 @@ continuous at $x=0$ even if one tries to define $f(0)$ as some number.
 It is easy to show that simple polynomials such as $p(x)=x$,
 $p(x)=a+bx$, $p(x)=ax^2+bx+c$ are continuous functions.\
 It is generally true that a polynomial of the form
-$$p(x)=a_0+a_1x+a_2x^2+\ldots +a_n x^n$$ is a continuous function.
+$$p(x)=a_0+a_1x+a_2x^2+\ldots +a_n x^n$$
+is a continuous function.
 
 ## Simple Limits
 
@@ -2649,6 +2757,7 @@ $$p(x)=a_0+a_1x+a_2x^2+\ldots +a_n x^n$$ is a continuous function.
 ### Details
 
 > **Definition**:  
+> 
 > A **limit** describes the value that a function or sequence approaches
 > as the input or index approaches some value.
 
@@ -2664,6 +2773,7 @@ If $c = f(x_0)$ then $f$ is **continuous** at $x_0$.
 ### Examples
 
 > **Example**:  
+> 
 > A simple example of limits:
 > 
 > Evaluate the limit of $f(x) = \frac{x^{2}-16}{x-4}$ when
@@ -2682,6 +2792,7 @@ If $c = f(x_0)$ then $f$ is **continuous** at $x_0$.
 > and the result has the obvious limit of $4+4=8$ as $x\to 4$.
 
 > **Example**:  
+> 
 > Consider the function
 > 
 > $$g (x ) =  \frac{1}{x}$$
@@ -2707,17 +2818,20 @@ If $c = f(x_0)$ then $f$ is **continuous** at $x_0$.
 ### Examples
 
 > **Example**:  
+> 
 > The Beverton-Holt stock recruitment curve is given by:
 > $$R=\frac{\alpha S}{1+\frac{S}{K}}$$
 > 
 > where $\alpha, K >0$ are constants and S = biomass and R= recruitment.\
 > The behavior of this curve as S increases $S\rightarrow\infty$ is
-> $$\lim_{S\to\infty}\frac{\alpha S}{1+\frac{S}{K}} =\alpha K .$$ This is
+> $$\lim_{S\to\infty}\frac{\alpha S}{1+\frac{S}{K}} =\alpha K .$$
+> This is
 > seen by rewriting the formula as follows:
 > $$\lim_{S\to\infty}\frac{\alpha S}{1+\frac{S}{K}} =
 > \lim_{S\to\infty}\frac{\alpha }{\frac{1}{S}+\frac{1}{K}} =\alpha K .$$
 
 > **Example**:  
+> 
 > A popular model for proportions is: $$f(x) = \frac{1}{1+e^{-x}}$$
 > 
 > As x increases, $e^{-x}$ decreases which implies that the term
@@ -2725,7 +2839,8 @@ If $c = f(x_0)$ then $f$ is **continuous** at $x_0$.
 > which it follows that $f$ is an increasing function.
 > 
 > Notice that $f(0)=\frac{1}{2}$ and further,
-> $$\lim_{x\to\infty} f(x) = 1.$$ This is seen from considering the
+> $$\lim_{x\to\infty} f(x) = 1.$$
+> This is seen from considering the
 > components:\
 > Since $e^{-x} = \frac{1}{e^{x}}$ and the exponential function goes to
 > infinity as $x\to\infty$, $e^{-x}$ goes to $0$ and hence $f(x)$ goes to
@@ -2737,6 +2852,7 @@ If $c = f(x_0)$ then $f$ is **continuous** at $x_0$.
 > $e^{-x} \rightarrow \infty$.
 
 > **Example**:  
+> 
 > Evaluate the limit of $$f(x) = \frac{\sqrt{x + 4} - 2}{x}$$
 > 
 > as $$x \to 0$$
@@ -2753,7 +2869,7 @@ If $c = f(x_0)$ then $f$ is **continuous** at $x_0$.
 > This gives us
 > $$\frac{(\sqrt{x + 4})^2 + 2(\sqrt{x+4}) - 2(\sqrt{x+4}) -4}{x(\sqrt{x + 4} + 2)}$$
 > 
-> The numerator reduces to $x$, and the $x$s will cancel out leaving us
+> The numerator reduces to $x$, and the $x$'s will cancel out leaving us
 > with $$\frac{1}{\sqrt{x + 4} + 2}$$
 > 
 > At this point we can direct substitute 0 for $x$, which will give us
@@ -2787,7 +2903,8 @@ If $c = f(x_0)$ then $f$ is **continuous** at $x_0$.
 Sometimes a function is such that $f(x)$ tends to different numbers
 depending on whether $x \rightarrow x_0$ from the right
 ($x \rightarrow x_{0+}$) or from the left ($x \rightarrow x_{0-}$).\
-If $$\lim_{x \to x_{0+}} f(x)=f(x_0)$$ then we say that $f$ is
+If $$\lim_{x \to x_{0+}} f(x)=f(x_0)$$
+then we say that $f$ is
 continuous from the right at $x_0$.
 
 **Copyright** 2021, Gunnar Stefansson (editor) with contributions from
@@ -2814,13 +2931,16 @@ places.
 ### Examples
 
 > **Example**:  
+> 
 > $(\frac{1}{n})_{n\geq1}$ is the sequence
 > $1,\frac{1}{2}, \frac{1}{3}, \frac{1}{4}, \ldots$.
 
 > **Example**:  
+> 
 > $(n)_{n\geq1}$ is the sequence $1,2,3,4,5,\ldots$.
 
 > **Example**:  
+> 
 > $(2^nn)_{n\geq1}$ is the sequence $2,8, 24, 64,\ldots$.
 
 ## Convergent sequences
@@ -2844,10 +2964,12 @@ $(1 + \frac{x}{n})^n \rightarrow e^x$ as $n\rightarrow\infty$
 ### Examples
 
 > **Example**:  
+> 
 > The sequence $(\frac{1}{n})_{n\geq\infty}$ converges to $0$ as
 > $n\to\infty$
 
 > **Example**:  
+> 
 > If x is a number then,
 > 
 > $(1 + \frac{x}{n})^n \rightarrow e^x$ as $n\rightarrow\infty$
@@ -2870,17 +2992,23 @@ we write $$S=\sum_{n=1}^{\infty}a_n.$$
 ### Examples
 
 > **Example**:  
+> 
 > If $$a_k = x^k, k=0,1,.....$$
 > 
 > \
-> then $$s_n=\sum_{k=0}^{n}x^k=x^0+x^1+......+x^n$$ Note also that
-> $$xs_n=x(x^0+x^1+......+x^n)= x + x^2 + ..... + x^{n+1}$$ We have
+> then $$s_n=\sum_{k=0}^{n}x^k=x^0+x^1+......+x^n$$
+> Note also that
+> $$xs_n=x(x^0+x^1+......+x^n)= x + x^2 + ..... + x^{n+1}$$
+> We have
 > $$s_n = 1 + x + x^2 + .... + x^n$$
 > 
 > $$xs_n = x + x^2 + ..... +x^n + x^{n+1}$$
 > 
-> $$s_n – xs_n = 1 - x^{n+1}$$ i.e. $$s_n(1-x) = 1-x^{n+1}$$ and we have
-> $$s_n =\frac{1-x^{n+1}}{1-x}$$ if $x\neq1$. If $0<x<1$ then
+> $$s_n – xs_n = 1 - x^{n+1}$$
+> i.e. $$s_n(1-x) = 1-x^{n+1}$$
+> and we have
+> $$s_n =\frac{1-x^{n+1}}{1-x}$$
+> if $x\neq1$. If $0<x<1$ then
 > $x^{n+1}\to 0$ as $n\to\infty$ and we obtain $s_n\to\frac{1}{1-x}$ so
 > $\sum_{n=0}^{\infty}x^n=\frac{1}{1-x}$.
 
@@ -2938,7 +3066,8 @@ USA.
 ## The slope of a line
 
 > Linear functions produce straight-line graphs. In general, a straight
-> line follows the following equation: $$y = a + bx ,$$ where $a$ and $b$
+> line follows the following equation: $$y = a + bx ,$$
+> where $a$ and $b$
 > are fixed numbers.\
 > The line on the graph is the set of points:
 > $$\left \{ (x,y):   x,y \in \mathbb{R}, y = a+bx\right \} .$$
@@ -3092,6 +3221,7 @@ when this limit exists.
 ### Examples
 
 > **Example**:  
+> 
 > We wish to find tangent line for the function $f(x)=x^2$ at the point
 > $(1,1)$. First we need to find the slope of this tangent, it is given as
 > $$\lim_{h\to0}\frac{(1+h)^2-1^2}{h}=\lim_{h\to0}\frac{2h+h^2}{h}=\lim_{h\to0}(2+h)=2.$$
@@ -3155,6 +3285,7 @@ USA.
 ### Details
 
 > **Definition**:  
+> 
 > The derivative of the function f at the point x is defined as
 > $$\lim_{h \to 0} \frac{f(x+h) -f(x)}{h}$$
 > 
@@ -3198,18 +3329,22 @@ Thus, we obtain $f'(x)=nx^{n-1}$.
 
 ## The derivative of ln and exp
 
-> If $$f(x)  = e^x$$ then $$f'(x) = e^x$$
+> If $$f(x)  = e^x$$
+> then $$f'(x) = e^x$$
 > 
-> If $$g(x) = \ln(x)$$ then $$g'(x) = \frac{1}{x}$$
+> If $$g(x) = \ln(x)$$
+> then $$g'(x) = \frac{1}{x}$$
 
 ### Details
 
 The derivatives of the exponential function is the exponential function
 itself i.e.\
-if $$f(x)  = e^x$$ then $$f'(x) = e^x$$
+if $$f(x)  = e^x$$
+then $$f'(x) = e^x$$
 
 The derivatives of the natural logarithm, $\ln(x)$, is $\frac{1}{x}$,
-i.e. if $$g(x) = \ln(x)$$ then $$g'(x) = \frac{1}{x}$$
+i.e. if $$g(x) = \ln(x)$$
+then $$g'(x) = \frac{1}{x}$$
 
 ## The derivative of a sum and linear combination
 
@@ -3227,9 +3362,11 @@ $k'(x)=af'(x)+ bg'(x)$.
 ### Examples
 
 > **Example**:  
+> 
 > If $f(x) = 2+3x$ and $g(x)+x^3$\
 > then we know that\
-> $f'(x)=3$, $g(x)=3x^2$ and if we write $$h(x)=f(x)+g(x)=2+3x+x^3$$ then
+> $f'(x)=3$, $g(x)=3x^2$ and if we write $$h(x)=f(x)+g(x)=2+3x+x^3$$
+> then
 > $$h'(x)=3+3x^2$$
 
 ## The derivative of a polynomial
@@ -3250,6 +3387,7 @@ $p'(x)=a_1+2a_2x+3a_3x^2+4a_4x^3+...+na_n x^{(n-1)}$
 ### Examples
 
 > **Example**:  
+> 
 > If
 > 
 > $p(x)=2x^4+x^3$
@@ -3260,19 +3398,23 @@ $p'(x)=a_1+2a_2x+3a_3x^2+4a_4x^3+...+na_n x^{(n-1)}$
 
 ## The derivative of a product
 
-> If $$h(x)=f(x)\cdot g(x)$$ then
+> If $$h(x)=f(x)\cdot g(x)$$
+> then
 > $$h'(x)=f'(x)\cdot g(x)+f(x)\cdot g'(x)$$
 
 ### Details
 
 Consider two functions, $f$ and $g$ and their product, $h$:
-$$h(x)=f(x)\cdot g(x).$$ The derivative of the product is given by
+$$h(x)=f(x)\cdot g(x).$$
+The derivative of the product is given by
 $$h'(x)=f'(x)\cdot g(x)+f(x)\cdot g'(x).$$
 
 ### Examples
 
 > **Example**:  
-> Suppose the function $f$ is given by $$f(x)=xe^x+x^2\ln x .$$ Then the
+> 
+> Suppose the function $f$ is given by $$f(x)=xe^x+x^2\ln x .$$
+> Then the
 > derivative can be computed step by step as $$\begin{aligned}
 > f(x)&=&\frac{dx}{dx}e^x+x\frac{de^x}{dx}+\frac{dx^2}{dx}\ln x +x^2\frac{d \ln x}{dx}\\
 >     &=&1\cdot e^x +     x \cdot e^x     + 2x \cdot \ln x     + x^2 \cdot \frac{1}{x}\\
@@ -3282,11 +3424,12 @@ $$h'(x)=f'(x)\cdot g(x)+f(x)\cdot g'(x).$$
 
 > If $f$ and $g$ are functions and $h=f  \circ g$ so that\
 > $h(x) = f(g(x))$ then\
-> $h'(x) = \frac{dh(x)}{dx} = f'(g(x)) g'(x)$\
+> $h'(x) = \frac{dh(x)}{dx} = f'(g(x)) g'(x)$
 
 ### Examples
 
 > **Example**:  
+> 
 > For fixed $x$ consider:
 > 
 > $$\begin{aligned}
@@ -3301,7 +3444,8 @@ $$h'(x)=f'(x)\cdot g(x)+f(x)\cdot g'(x).$$
 >     \end{aligned}$$
 
 > **Example**:  
-> $f(b) = (y-bx)^2$ ($y,x$ fixed)\
+> 
+> $f(b) = (y-bx)^2$ ($y,x$ fixed)
 > $$\begin{aligned}
 >     f'(b)&=& 2 (y-bx) (-x)\\
 >          &=& -2x (y-bx)\\
@@ -3347,8 +3491,10 @@ has a saddle point at $x_0$
 ### Examples
 
 > **Example**:  
+> 
 > If $f$ is a function such that its derivative is given by
-> $$f'(x) = (x-1)(x-2)(x-3)(x-4),$$ then applying the above criteria for
+> $$f'(x) = (x-1)(x-2)(x-3)(x-4),$$
+> then applying the above criteria for
 > maxima and minima, we see that $f$ has maxima at $1$ and $3$ and $f$ has
 > minima at $2$ and $4$.
 
@@ -3395,8 +3541,9 @@ as happens with $f(x)=x^3$ at $x=0$.
 ### Details
 
 > **Definition**:  
+> 
 > Recall that the **probability mass function (p.m.f)** is a function
-> giving the probability of outcomes of an experiment.\
+> giving the probability of outcomes of an experiment.
 
 We typically denote the p.m.f. by $p$ so $p(x)$ gives the probability of
 a given outcome, $x$, of an experiment. The p.m.f. commonly depends on
@@ -3419,6 +3566,7 @@ experiment. We can now take the probability of this outcome as a
 function of the parameters.
 
 > **Definition**:  
+> 
 > $L_{\mathbf{x}}(\theta) = p_{\theta}(x_1),  \ldots p_{\theta}(x_n)$
 > 
 > This is the **likelihood function** and we often seek to maximize it to
@@ -3427,6 +3575,7 @@ function of the parameters.
 ### Examples
 
 > **Example**:  
+> 
 > Suppose we toss a biased coin $n$ independent times and obtain x heads,
 > we know the probability of obtaining x heads is,
 > 
@@ -3451,20 +3600,24 @@ missing example -- want to give a numeric example and plot $L$
 
 > If L is a likelihood function for a p.m.f. $p_{\theta}$, then the value
 > $\hat{\theta}$ which gives the maximum of L:
-> $$L (\hat{\theta}) = \max_\theta ({L}_\theta)$$ is the maximum
+> $$L (\hat{\theta}) = \max_\theta ({L}_\theta)$$
+> is the maximum
 > likelihood estimator (MLE) of $\theta$
 
 ### Details
 
 > **Definition**:  
+> 
 > If L is a likelihood function for a p.m.f. $p_{\theta}$, then the value
 > $\hat{\theta}$ which gives the maximum of L:
-> $$L (\hat{\theta}) = \max_\theta ({L}_\theta)$$ is the **maximum
+> $$L (\hat{\theta}) = \max_\theta ({L}_\theta)$$
+> is the **maximum
 > likelihood estimator** of $\theta$
 
 ### Examples
 
 > **Example**:  
+> 
 > If $x$ is the number of heads from $n$ independent tosses of a coin, the
 > likelihood function is:
 > 
@@ -3515,6 +3668,7 @@ minimizing $$\sum_{i=1}^{n}{(y_i - g_i (\theta))^2} .$$
 ### Examples
 
 > **Example**:  
+> 
 > One may predict numbers, $x_i$, as a mean, $\mu$, plus error. Consider
 > the simple model $x_i = \mu + \epsilon_i$, where $\mu$ is an unknown
 > parameter (constant) and $\epsilon_i$ is the error in measurement when
@@ -3526,6 +3680,7 @@ minimizing $$\sum_{i=1}^{n}{(y_i - g_i (\theta))^2} .$$
 > mean: $$\hat{ \mu} = \bar{x} .$$
 
 > **Example**:  
+> 
 > One also commonly predicts data $y_1 , \cdots ,y_n$ with values on a
 > straight line, i.e. with $\alpha + \beta x_i$, where $x_1, \ldots , x_n$
 > are fixed numbers.\
@@ -3536,6 +3691,7 @@ minimizing $$\sum_{i=1}^{n}{(y_i - g_i (\theta))^2} .$$
 > $$\min_{\alpha,\beta} \sum \left ( y_i - ( \alpha + \beta x_i) \right ) ^2$$
 
 > **Example**:  
+> 
 > As a general exercise in finding the extreme of a function, let's look
 > at the function $f(\theta)=\sum_{i=1}^n(x_i\theta -3)^2$ where $x_i$ are
 > some constants. We wish to find the $\theta$ that minimizes this sum. We
@@ -3616,6 +3772,7 @@ USA.
 ### Details
 
 > **Definition**:  
+> 
 > The area under a curve between x=a and x=b (for a positive function) is
 > called the **integral of the function** and is denoted:
 > $\int_{a}^{b} f(x)dx$ when it exists.
@@ -3633,16 +3790,20 @@ USA.
 ### Examples
 
 > **Example**:  
+> 
 > The antiderivative of $x$ to a power raises the power.
 > $\int x^n dx=\frac{1}{n+1}x^{n+1} +C$.
 
 > **Example**:  
+> 
 > $\int e^x dx=e^x+C$.
 
 > **Example**:  
+> 
 > $\int \frac{1}{x} dx=\ln(x)+C$.
 
 > **Example**:  
+> 
 > $\int 2xe^{x^2} dx=e^{x^2}+C$.
 
 ## The fundamental theorem of calculus
@@ -3658,6 +3819,7 @@ the values of its antiderivative at $a$ and $b$. This also holds for
 functions which take on negative values and is formally stated below.
 
 > **Definition**:  
+> 
 > **Fundamental theorem of calculus:** If $F$ is the antiderivative of the
 > continuous function $f$, i.e. $F'=f$ for $x\in[a,b]$, then
 > $\int_a^b f(x)dx=F(b)-F(a)$.
@@ -3667,14 +3829,17 @@ functions which take on negative values and is formally stated below.
 ### Examples
 
 > **Example**:  
+> 
 > The area under the graph of $x^n$ between $0$ and $3$ is
 > $\int_0^3 x^n dx = [\frac{1}{n+1}x^{n+1}]_0 ^3=\frac{1}{n+1}3^{n+1}-\frac{1}{n+1}0^{n+1}=\frac{3^{n+1}}{n+1}$
 
 > **Example**:  
+> 
 > The area under the graph of $e^x$ between $3$ and $4$ is
 > $\int_3^4 e^x dx =[e^x]_3 ^4= e^4-e^3$
 
 > **Example**:  
+> 
 > The area under the graph of $\frac{1}{x}$ between $1$ and $a$ is
 > $\int_1^a \frac{1}{x} dx =[\ln(x)]_1 ^a= \ln(a)-\ln(1)=\ln(a).$
 
@@ -3701,18 +3866,20 @@ functions which take on negative values and is formally stated below.
 ### Details
 
 > **Definition**:  
-> If $X$ is a random variable such that\
+> 
+> If $X$ is a random variable such that
 > $$P(a\leq X\leq b)=\int\limits^{b}_{a}f(x)dx,$$
 > 
 > \
-> for some function $f$ which satisfies $f(x)\geq0$ for all $x$ and\
+> for some function $f$ which satisfies $f(x)\geq0$ for all $x$ and
 > $$\int\limits^\infty_{-\infty} f(x)dx = 1$$
 > 
 > \
 > then $f$ is said to be a **probability density function (p.d.f.)** for
-> $X$.\
+> $X$.
 
 > **Definition**:  
+> 
 > The function $$F(x)= \int\limits^{x}_{-\infty} f(t)dt$$
 > 
 > is the **cumulative distribution function (c.d.f.)**.
@@ -3720,21 +3887,27 @@ functions which take on negative values and is formally stated below.
 ### Examples
 
 > **Example**:  
+> 
 > Consider a random variable $X$ from the uniform distribution, denoted by
 > $X\sim U(0,1)$. This distribution has density
-> $$f(x) = \left \{ \begin{array}{rl}
-> 1 &\mbox { if $0 \leq x \leq 1$} \\
-> 0 &\mbox {e.w.}
-> \end{array} \right.$$
+> 
+> $$f(x) = 
+> \begin{cases}
+>   1 &\text{if } 0 \leq x \leq 1\\
+>   0 &\text{e.w.}
+> \end{cases}.$$
 > 
 > The cumulative distribution function is given by
-> $$P[X\leq x] = \int\limits^{x}_{-\infty} f(t)dt = \left\{ \begin{array}{rl}
-> 0 &\mbox {if $x<0$}\\
-> x &\mbox {if $0 \leq x \leq 1$} \\
-> 1
-> \end{array} \right.$$
+> 
+> $$P[X\leq x] = \int\limits^{x}_{-\infty} f(t)dt = 
+> \begin{cases}
+>   0 & \text{if } x<0\\
+>   x & \text{if } 0 \leq x \leq 1\\
+>   1 & \text{else}
+> \end{cases}.$$
 
 > **Example**:  
+> 
 > Suppose $X \sim P(\lambda)$, where X may denote the number of events per
 > unit time. The p.m.f. of X is described by
 > $p(x)=P[X=x]=e^{-\lambda}\frac{\lambda^x}{x!}$ for $x=0,1,2,...$.
@@ -3750,10 +3923,15 @@ functions which take on negative values and is formally stated below.
 > The p.d.f. of T is therefore
 > $f_T(t)=F_T'(t)=\frac{d}{dt}F_T(t)=\frac{d}{dt}(1-e^{-\lambda t}=0-e^{- \lambda t}*(-\lambda)=\lambda e^{-\lambda t}$
 > for $t \geq 0$ and $f_T(t)=0$ for $t=0$.\
-> The resulting density $$f(t) = \left\{ \begin{array}{rcl}
-> \lambda e^{-\lambda t} & \mbox{for}& t \geq0\\
-> 0& \mbox{for} & t<0
-> \end{array}\right.$$ describes the exponential distribution.
+> The resulting density
+> 
+> $$f(t) =
+> \begin{cases}
+>   \lambda e^{-\lambda t} & \text{for}& t \geq0\\
+>   0 & \text{for} & t<0
+> \end{cases}.$$
+> 
+> describes the exponential distribution.
 > 
 > This distribution has the expected value
 > $$E[T]=\int\limits^{\infty}_{-\infty} tf(t)dt=\int\limits^{\infty}_{0} t \lambda e^{-\lambda t}dt.$$
@@ -3787,9 +3965,11 @@ $$\Phi(x)=\int\limits_{-\infty}^x\frac{1}{\sqrt{2\pi}}e^{-\frac{t^2}{2}}dt$$
 ### Examples
 
 > **Example**:  
+> 
 > dnorm() gives the value of the normal p.d.f.
 
 > **Example**:  
+> 
 > pnorm() gives the value of the normal c.d.f.
 
 ## Some rules of integration
@@ -3797,10 +3977,12 @@ $$\Phi(x)=\int\limits_{-\infty}^x\frac{1}{\sqrt{2\pi}}e^{-\frac{t^2}{2}}dt$$
 ### Examples
 
 > **Example**:  
+> 
 > Using integration by parts we obtain
 > $$\int \ln(x)x dx= \frac{1}{2}x^2\ln(x)-\int \frac{1}{2}x^2\cdot \frac{1}{x} dx = \frac{1}{2}x^2\ln(x)-\int \frac{1}{2}x dx=\frac{1}{2}x^2\ln(x)-\frac{1}{4}x^2.$$
 
 > **Example**:  
+> 
 > Consider $\int_1^2 2xe^{x^2} dx$. By setting $x=g(t)=\sqrt{t}$ we obtain
 > $$\int_1^2 2xe^{x^2} dx = \int_1^4 2\sqrt{t}e^{t}\frac{1}{2\sqrt{t}}dt=\int_1^4 e^t dt=e^4-e.$$
 
@@ -3808,8 +3990,9 @@ $$\Phi(x)=\int\limits_{-\infty}^x\frac{1}{\sqrt{2\pi}}e^{-\frac{t^2}{2}}dt$$
 
 The two most common \"tricks\" applied in integration are a) integration
 by parts and b) integration by substitution.\
-a) **Integration by parts**\
-$$(fg)'=f'g+fg'$$ by integrating both sides of the equation we obtain:
+a) **Integration by parts**
+$$(fg)'=f'g+fg'$$
+by integrating both sides of the equation we obtain:
 $$fg=\int f'g dx + \int fg' dx \Leftrightarrow \int fg' dx=fg-\int f'g dx$$
 
 \
@@ -3845,6 +4028,7 @@ grouped into separate parts.
 ### Examples
 
 > **Example**:  
+> 
 > Input
 > 
 >     dat<-read.table("http://notendur.hi.is/~gunnar/kennsla/alsm/data/set115.dat", header=T)
@@ -3870,6 +4054,7 @@ Typically a project has several such functions.
 ### Examples
 
 > **Example**:  
+> 
 > Suppose you want to plot the weight vs. length for several datasets in
 > 
 > $$\verb|http://hi.is/~gunnar/kennsla/alsm/data|$$
@@ -3917,6 +4102,7 @@ Furthermore, this ensures repeatability.
 ### Examples
 
 > **Example**:  
+> 
 > For a given project "input", "functions" "analysis" and "output" files
 > can be created as below.
 > 
@@ -3995,6 +4181,7 @@ packages and stored on dedicated servers such as github or CRAN.
 ### Examples
 
 > **Example**:  
+> 
 > Consider first the issue of maintaining the code itself. It is common
 > for R beginners to only work interactively within the command-line
 > interface. However, it is essential that the code be kept in one or more
@@ -4029,6 +4216,7 @@ used. The R code form is:
 ### Examples
 
 > **Example**:  
+> 
 > To add numbers we can use
 > 
 >     tot <- 100
@@ -4038,6 +4226,7 @@ used. The R code form is:
 >     cat ("the sum is ", tot, "\n")
 
 > **Example**:  
+> 
 > Define the plot function
 > 
 > 
@@ -4063,14 +4252,14 @@ used. The R code form is:
 ## The if and ifelse commands
 
 > The \"if\" statement is used to conditionally execute statements.\
-> The \"ifelse\" statement conditionally replaces elements of a
-> structure.\
+> The \"ifelse\" statement conditionally replaces elements of a structure.
 
 ### Examples
 
 > **Example**:  
+> 
 > If we want to compute $x^x$ for $x$-values in the range 0 through 5, we
-> can use\
+> can use
 > 
 >     xlist<-seq(0,5,0.01)
 >     y<-NULL
@@ -4083,14 +4272,17 @@ used. The R code form is:
 >     }
 
 > **Example**:  
+> 
 >     x<-seq(0,5,0.01)
 >     y<-ifelse(x==0,1,x^x)
 
 > **Example**:  
+> 
 >     dat<-read.table ("file")
 >     dat<-ifelse (dat==0,0.01,dat)
 
 > **Example**:  
+> 
 >     x<-ifelse (is.na(x),0,x)
 
 ## Indenting
@@ -4109,15 +4301,24 @@ fFunctions, for-loops, and if-statements should always be indented.
 ### Examples
 
 > **Example**:  
-> \####################\
-> ####SETUP DATA####\
-> \####################\
-> dat\<-read.table(filename)\
-> x\<-log(dat\$le) #log-transformation of length\
-> y\<-log(dat\$wt) #log-transformation of weight\
-> \######################\
-> ####THE ANALYSIS####\
-> \######################\
+> 
+> ####################
+> 
+> ####SETUP DATA####
+> 
+> ####################
+> 
+> dat\<-read.table(filename)
+> 
+> x\<-log(dat\$le) #log-transformation of length
+> 
+> y\<-log(dat\$wt) #log-transformation of weight
+> 
+> ######################
+> 
+> ####THE ANALYSIS####
+> 
+> ######################
 
 **Copyright** 2021, Gunnar Stefansson (editor) with contributions from
 very many students
@@ -4155,11 +4356,13 @@ USA.
 It follows that for a large enough sample size $n$, the distribution
 random variable $\bar{X}_n$ can be approximated by $n(\mu,\sigma^2/n)$.
 
-The standard normal distribution is given by the p.d.f.\
-$$\varphi(z) = \frac{1}{\sqrt{2\pi}} e^{\frac{-z^2}{2}}$$ for
+The standard normal distribution is given by the p.d.f.
+$$\varphi(z) = \frac{1}{\sqrt{2\pi}} e^{\frac{-z^2}{2}}$$
+for
 $z\in \mathbb{R}$.\
 The standard normal distribution has an expected value of zero,
-$$\mu = \int z\varphi (z)dz =0$$ and a variance of
+$$\mu = \int z\varphi (z)dz =0$$
+and a variance of
 $$\sigma^2 = \int ({z-\mu})^2 \varphi(z)dz=1$$
 
 If a random variable $Z$ has the standard normal (or Gaussian)
@@ -4178,12 +4381,14 @@ more and more like a Gaussian distribution (if the variance of the
 original random variables is finite).
 
 More precisely, the cumulative distribution function of
-$$\frac{\bar{X}_n - \mu}{\sigma/\sqrt{n}}$$ converges to $\Phi$, the
+$$\frac{\bar{X}_n - \mu}{\sigma/\sqrt{n}}$$
+converges to $\Phi$, the
 $n(0,1)$ cumulative distribution function.
 
 ### Examples
 
 > **Example**:  
+> 
 > If we collect measurements on waiting times, these are typically assumed
 > to come from an exponential distribution with density
 > 
@@ -4193,8 +4398,10 @@ $n(0,1)$ cumulative distribution function.
 > times will tend to have a normal distribution.
 
 > **Example**:  
+> 
 > We are often interested in computing
-> $$w=\frac{\bar{x}-\mu_0}{\frac{s}{\sqrt{n}}}$$ which comes from a
+> $$w=\frac{\bar{x}-\mu_0}{\frac{s}{\sqrt{n}}}$$
+> which comes from a
 > t-distribution (see below), if the $x_i$ are independent outcomes from a
 > normal distribution.
 > 
@@ -4225,9 +4432,10 @@ obtain:
 $$\begin{aligned}
 \binom{n}{x}p_n^x(1-p_n)^{n-x}& = &\frac{n!}{x!(n-x!)} \left ( \frac{\lambda}{n} \right )^x \left ( 1-\frac{\lambda}{n} \right )^{n-x}\\
 & = &\frac{n(n-1)(n-2)\cdots (n-x+1)}{x!} \frac{\frac{\lambda}{n}^x}{\left ( 1-\frac{\lambda}{n} \right ) ^x} \left ( 1-\frac{\lambda}{n} \right )^n\\
-& = &\frac{n(n-1)(n-2)\cdots (n-x+1)}{x!n^x} \frac{\lambda^x}{\left ( 1-\frac{\lambda}{n} \right ) ^x} \left ( 1-\frac{\lambda}{n} \right )^n\\\end{aligned}$$
+& = &\frac{n(n-1)(n-2)\cdots (n-x+1)}{x!n^x} \frac{\lambda^x}{\left ( 1-\frac{\lambda}{n} \right ) ^x} \left ( 1-\frac{\lambda}{n} \right )^n\end{aligned}$$
 
 > **Note**:  
+> 
 > *Note 17*. Notice that $\frac{n(n-1)(n-2)\cdots (n-x+1)}{n^x}\to 1$ as
 > $n\to\infty$. Also notice that $(1-\frac{\lambda}{n})^x\to 1$ as
 > $n\to\infty$. Also
@@ -4244,6 +4452,7 @@ $$\begin{aligned}
 ### Examples
 
 > **Example**:  
+> 
 > The mean of a binomial (n,p) variable is $\mu=n\cdot p$ and the variance
 > is $\sigma^2=np(1-p)$.\
 > The R command $dbinom(q,n,p)$ calculates the probability of $q$
@@ -4273,6 +4482,7 @@ $$\begin{aligned}
 >     [1] 0.03854994
 
 > **Example**:  
+> 
 > We are often interested in computing $w=\frac{\bar{x}-\mu}{s/\sqrt{n}}$
 > which has a t-distribution if the $x_i$ are independent outcomes from a
 > normal distribution. If $n$ is large and $\sigma^2$ is finite, this will
@@ -4324,6 +4534,7 @@ $$\begin{aligned}
 ### Examples
 
 > **Example**:  
+> 
 > Suppose our measurements come from an exponential distribution and we
 > want to compute
 > 
@@ -4377,13 +4588,16 @@ USA.
 ### Examples
 
 > **Example**:  
+> 
 > If $X \sim b(n,p)$ has binomial distribution, i.e.
-> $$P(X = x) = {n \choose x}p^x(1-p)^{n-x},$$ then cumulative
+> $$P(X = x) = {n \choose x}p^x(1-p)^{n-x},$$
+> then cumulative
 > probabilities can be computed with $pbinom$, e.g.
 > 
 >     pbinom(5,10,0.5) 
 > 
-> gives $$P[X \leq 5] = 0.623$$ where $$X \sim b(n=10,p= \frac{1}{2}).$$
+> gives $$P[X \leq 5] = 0.623$$
+> where $$X \sim b(n=10,p= \frac{1}{2}).$$
 > 
 > This can also be computed by hand. Here we have $n=10$, $p=1/2$ and the
 > probability $P[X \leq 5]$ is obtained by adding up the individual
@@ -4414,6 +4628,7 @@ USA.
 > or $\frac{10}{1024}$
 
 > **Example**:  
+> 
 > Suppose $X$ has a uniform distribution between $0$ and $1$, i.e.
 > $X \sim U(0,1)$. Then the $punif$ function will return probabilities of
 > the form $$P[X \leq x]= \int_{-\infty}^{x} f(t)dt= \int_{0}^{x} f(t)dt$$
@@ -4431,21 +4646,25 @@ USA.
 ## Computing normal probabilities in R
 
 > To compute probabilities $X\sim n(\mu,\sigma^2)$ is usually transformed,
-> since we know that $$Z:=\frac{X-\mu}{\sigma} \sim(0,1)$$ The
+> since we know that $$Z:=\frac{X-\mu}{\sigma} \sim(0,1)$$
+> The
 > probabilities can then be computed for either $X$ or $Z$ with the
-> $pnorm$ function in R.\
+> $pnorm$ function in R.
 
 ### Details
 
 Suppose $X$ has a normal distribution with mean $\mu$ and variance
-$$X\sim n(\mu,\sigma^2)$$ then to compute probabilities, $X$ is usually
-transformed, since we know that $$Z=\frac{X-\mu}{\sigma} \sim(0,1)$$ and
+$$X\sim n(\mu,\sigma^2)$$
+then to compute probabilities, $X$ is usually
+transformed, since we know that $$Z=\frac{X-\mu}{\sigma} \sim(0,1)$$
+and
 the probabilities can be computed for either $X$ or $Z$ with the $pnorm$
 function.
 
 ### Examples
 
 > **Example**:  
+> 
 > If $Z \sim n(0,1)$ then we can e.g. obtain $P[Z\leq1.96]$ with
 > 
 >     pnorm(1.96)
@@ -4463,6 +4682,7 @@ function.
 > The last one gives the area between -1.96 and 1.96.
 
 > **Example**:  
+> 
 > If $X \sim n(42,3^2)$ then we can compute probabilites either by
 > transforming $$\begin{aligned}
 > P[X\leq x] &= P[\frac{X-\mu}{\sigma} \leq \frac{x-\mu}{\sigma}]\\
@@ -4470,7 +4690,7 @@ function.
 > $pnorm$ with the computed value $z=\frac{x-\mu}{\sigma}$, or call
 > $pnorm$ with $x$ and specify $\mu$ and $\sigma$.\
 > \
-> To compute $P[X\leq 48]$, either set $z=(48-42)/3=2$ and obtain\
+> To compute $P[X\leq 48]$, either set $z=(48-42)/3=2$ and obtain
 > 
 >     pnorm(2)
 >     [1] 0.9772499
@@ -4553,6 +4773,7 @@ USA.
 ### Details
 
 > **Definition**:  
+> 
 > If $X_1, \ldots, X_n$ are discrete random variables with
 > $P[X_1 = x_1, X_2 = x_2,\ldots, X_n = x_n] = p(x_1,\ldots, x_n)$ where
 > $x_1 \ldots x_n$ are numbers, then the function $p$ is the joint
@@ -4560,46 +4781,26 @@ USA.
 > $X_1, \ldots, X_n$.
 
 > **Definition**:  
+> 
 > For continuous random variables $Y_1, \ldots, Y_n$, a function $f$ is
 > called the joint probability density function if,
 > 
 > $P [Y\in {A}] = \underbrace{\int\int\ldots\int}_{A} f(y_1,\ldots y_n)dy_1dy_2 \cdots dy_n$.
 
 > **Note**:  
+> 
 > *Note 18*. Note that if $X_1, \ldots, X_n$ are independent and
 > identically distributed, each with p.m.f. $p$, then
 > $p(x_1, x_2, \ldots, x_n) = q(x_1)q(x_2)\ldots q(x_n)$, i.e,
 > $P [X_1 = x_1,  X_2 = x_2,\ldots, X_n= x_n] = P [X_1 = x_1] P[X_2 = x_2]\ldots P[X_n= x_n]$.
 
 > **Note**:  
+> 
 > *Note 19*. Note also that if $A$ is a set of possible outcomes
 > $(A  \subseteq \mathbb{R}^n)$, then we have
 > $$P[X \in {A}] = \sum_{(x_1,\ldots,x_n)\in A} p(x_1,\ldots, x_n).$$
 
 ### Examples
-
-> **Example**:  
-> An urn contains blue and red marbles, which are either light or heavy.
-> Let $X$ denote the color and $Y$ the weight of a marble, chosen at
-> random\
-> 
->   ----- ---- --- ----
->    X/Y   L    H   TT
->     B    5    6   11
->     R    7    2   9
->    TT    12   8   20
->   ----- ---- --- ----
-> 
-> We have $P[X="'b"', Y ="l"'] = \frac{5}{20}$.\
-> The joint p.m.f. is:\
-> 
->   ----- ----------------- ---------------- -----------------
->    X/Y          L                H                TT
->     B    $\frac{5}{20}$    $\frac{6}{20}$   $\frac{11}{20}$
->     R    $\frac{7}{20}$    $\frac{2}{20}$   $\frac{9}{20}$
->    TT    $\frac{12}{20}$   $\frac{8}{20}$          1
->                                            
->   ----- ----------------- ---------------- -----------------
 
 ## The random sample
 
@@ -4625,42 +4826,48 @@ USA.
 
 Samples from populations can be obtained in a number of ways. However,
 to draw valid conclusions about populations, the samples need to
-obtained randomly.\
+obtained randomly.
 
 > **Definition**:  
+> 
 > In **random sampling**, each item or element of the population has an
 > equal and independent chance of being selected.
 
 A set of random variables; $X_1 \ldots X_n$ is a random sample if they
-are independent and identically distributed (i.i.d.).\
+are independent and identically distributed (i.i.d.).
 
 > **Definition**:  
+> 
 > If a set of numbers $x_1 \ldots x_n$ can be viewed as an outcome of
 > random variables, these are called a **random sample**.
 
 ### Examples
 
 > **Example**:  
+> 
 > If $X_1, \ldots, X_n  \sim U(0,1)$, i.i.d., i.e. $X_1$ and $X_n$ are
 > independent and each have a uniform distribution between 0 and 1. Then
 > they have a joint density which is the product of the densities of $X_1$
 > and $X_n$.\
 > Given the data in the above figure and if $x_1 , x_2 \in \mathbb{R}$
 > 
-> $$f(x_1, x_2) = f_1(x_1) f_2(x_2) = \left \{ \begin{array}{rl}
-> 1 &\mbox { if $0 \leq x_1, x_2 \leq 1$} \\
-> 0 &\mbox {elsewhere}
-> \end{array} \right.$$
+> $$f(x_1, x_2) = f_1(x_1) f_2(x_2) =
+> \begin{cases}
+>   1 & \text{if } 0 \leq x_1, x_2 \leq 1 \\
+>   0 & \text{elsewhere}
+> \end{cases}.$$
 
 > **Example**:  
+> 
 > Toss two dice independently, and let $X_1, X_2$ denote the two (future)
 > outcomes.\
 > Then
 > 
-> $$P[X_1 = x_1, X_2 =  x_2]= \left \{ \begin{array}{rl}
-> \frac{1}{36} &\mbox { if $1 \leq x_1, x_2 \leq 6$} \\
-> 0 &\mbox {elsewhere}
-> \end{array} \right .$$
+> $$P[X_1 = x_1, X_2 =  x_2]=
+>  \begin{cases}
+>   \frac{1}{36} & \text{if } 1 \leq x_1, x_2 \leq 6 \\
+>   0 & \text{elsewhere}
+> \end{cases}.$$
 > 
 > is the joint p.m.f.
 
@@ -4669,7 +4876,7 @@ are independent and identically distributed (i.i.d.).\
 ### Details
 
 Suppose $X$ and $Y$ are discrete random values with a probability mass
-function p. Let $Z=X+Y$. Then
+function $p$. Let $Z=X+Y$. Then
 
 $$\begin{aligned}
 P(Z=z) & = &\sum_{\{ (x,y): x+y=z\}} p(x,y)\end{aligned}$$
@@ -4677,7 +4884,8 @@ P(Z=z) & = &\sum_{\{ (x,y): x+y=z\}} p(x,y)\end{aligned}$$
 ### Examples
 
 > **Example**:  
-> $X,Y = outcomes$,
+> 
+> $(X,Y) = \text{outcomes}$,
 > 
 >         [,1] [,2] [,3] [,4] [,5] [,6]
 >     [1,]    2    3    4    5    6    7
@@ -4748,21 +4956,28 @@ $$P[Z \leq z]=P[X+Y \leq z]=\int\int_{\{(x,y):x+y \leq z\}} f(x,y)dxdy.$$
 ### Examples
 
 > **Example**:  
+> 
 > If X and Y $\sim$ U(0,1), independent and $Z=X+Y$ then
 > 
-> $P[Z \leq z]= \left\{ \begin{array}{rcl}
-> 0 & \mbox{for}& z \leq0\\
-> \frac{z^2}{2}& \mbox{for} & 0<z<1\\
-> 1 & \mbox{for}& z>2\\
-> 1-\frac{(2-z)^2}{2}& \mbox{for}&1<z<2
-> \end{array}\right.$\
-> the density of z becomes $g(z)= \left\{ \begin{array}{rcl}
-> z & \mbox{for}& 0 <z \leq 1\\
-> 2-z& \mbox{for} & 1< z \leq 2\\
-> 0 & \mbox{for}& elsewhere
-> \end{array}\right.$
+> $$P[Z \leq z]= 
+> \begin{cases}
+>   0 & \text{for} & z \leq 0\\
+>   \frac{z^2}{2} & \text{for} & 0<z<1\\
+>   1 & \text{for}& z>2\\
+>   1-\frac{(2-z)^2}{2} & \text{for} & 1<z<2
+> \end{cases}$$
+> 
+> the density of $z$ becomes
+> 
+> $$g(z)= 
+> \begin{cases}
+>   z & \text{for} & 0 <z \leq 1\\
+>   2-z & \text{for} & 1< z \leq 2\\
+>   0 & \text{for} & \text{elsewhere}
+> \end{cases}.$$
 
 > **Example**:  
+> 
 > To approximate the distribution of $Z=X+Y$ where $X,Y \sim U(0,1)$
 > i.i.d., we can use Monte Carlo simulation. So, generate 10.000 pairs,
 > set them up in a matrix and compute the sum.
@@ -4782,24 +4997,28 @@ $$E[X+Y] = E[X]+E[Y]$$
 i.e. the expected value of the sum is just the sum of the expected
 values. The same applies to a finite sum, and more generally
 
-$$E[\sum_{i=1}^{n} a_i X_i] = \sum_{i=1}^{n} a_i E[X_i]$$ when
+$$E[\sum_{i=1}^{n} a_i X_i] = \sum_{i=1}^{n} a_i E[X_i]$$
+when
 $X_i,...,X_n$ are random variables and $a_1,...,a_n$ are numbers (if the
 expectations exist).
 
 If the random variables are independent, then the variance also add
 
-$$V[X+Y] = V[X] + V[Y]$$ and
+$$V[X+Y] = V[X] + V[Y]$$
+and
 
 $$V[\sum_{i=1}^{n} a_i X_i] = \sum_{i=1}^{n} a_i^2 V[X_i]$$
 
 ### Examples
 
 > **Example**:  
+> 
 > $X,Y \sim U(0,1)$, i.i.d. then
 > 
 > $$E[X+Y]=E[X] + E[Y] = \int_0^1 x\cdot 1dx+\int_0^1 x\cdot 1dx = [\frac{1}{2}x^2]_0^1+[\frac{1}{2}x^2]_0^1=1.$$
 
 > **Example**:  
+> 
 > Let $X,Y\sim N(0,1)$. Then $E[X^2+Y^2] = 1+1=2$.
 
 ## Means and variances of linear combinations of measurements
@@ -4807,7 +5026,8 @@ $$V[\sum_{i=1}^{n} a_i X_i] = \sum_{i=1}^{n} a_i^2 V[X_i]$$
 > If $x_1,....,x_n$ and $y_1,....,y_n$ are numbers, and we set
 > $$z_i=x_i + y_i$$
 > 
-> $$w_i=ax_i$$ where a\>0, then
+> $$w_i=ax_i$$
+> where a\>0, then
 > $$\overline{z} = \frac{1}{n} \sum_{i=1}^{n} z_i= \overline{x} + \overline{y}$$
 > 
 > $$\overline{w}= a\overline{x}$$
@@ -4823,6 +5043,7 @@ $$V[\sum_{i=1}^{n} a_i X_i] = \sum_{i=1}^{n} a_i^2 V[X_i]$$
 ### Examples
 
 > **Example**:  
+> 
 > We set:
 > 
 >     a<-3
@@ -4867,8 +5088,9 @@ $$V[\sum_{i=1}^{n} a_i X_i] = \sum_{i=1}^{n} a_i^2 V[X_i]$$
 
 ## The joint density of independent normal random variables
 
-> If $Z_1, Z_2 \sim n(0,1)$ are independent then they each have density\
-> $$\phi(x)=\frac{1}{\sqrt{2\pi}}e^{-\frac{x^2}{2}},x\in\mathbb{R}$$ and
+> If $Z_1, Z_2 \sim n(0,1)$ are independent then they each have density
+> $$\phi(x)=\frac{1}{\sqrt{2\pi}}e^{-\frac{x^2}{2}},x\in\mathbb{R}$$
+> and
 > the joint density is the product $f(z_1,z_2)=\phi(z_1)\phi(z_2)$ or
 > $$f(z_1,z_2)=\frac{1}{(\sqrt{2\pi})^2} e^{\frac{-z_1^2}{2}-\frac{z_2^2}{2}} .$$
 
@@ -4879,10 +5101,10 @@ independent, then their densities are
 $$f_X (x)= \frac{1}{\sqrt{2\pi}\sigma_1} \; e^\frac{-(x-\mu_1)^2}{2\sigma_1^2}$$
 and
 $$f_Y(y) = \frac{1}{\sqrt{2\pi}\sigma_2} \; e^\frac{-(y-\mu_2)^2}{2\sigma_2^2}$$
-and the joint density becomes\
+and the joint density becomes
 $$\frac{1}{2\pi\sigma_1\sigma_2} \: e^{-\frac{(x-\mu_1)^2}{2\sigma_1^2}-\frac{(y-\mu_2)^2}{2\sigma_2^2}}$$
 
-Now, suppose $X_1,\ldots,X_n\sim n(\mu,\sigma^2)$ are i.i.d., then\
+Now, suppose $X_1,\ldots,X_n\sim n(\mu,\sigma^2)$ are i.i.d., then
 $$f(\underline{x})=\frac{1}{(2\pi)^\frac{n}{2}\sigma^n}\; e^{-\displaystyle\sum^{n}_{i=1} \frac{(x_i-\mu)^2}{a\sigma^2}}$$
 
 \
@@ -4893,6 +5115,7 @@ is the multivariate normal density in the case of i.i.d. variables.
 ### Examples
 
 > **Example**:  
+> 
 > Suppose X and Y have the joint density
 > 
 > $f(x,y) =
@@ -4907,7 +5130,8 @@ is the multivariate normal density in the case of i.i.d. variables.
 > 
 > Now, to find the density of $X$ we first find the c.d.f. of $X$, first
 > note that for $a<0$ we have $P[X\leq a]=0$ but if $a\geq 0$, we obtain
-> $$F_X(a)=P[X\leq a]=\int_{x_0}^a\int_{y=0}^x2dydx=[x^2]_0^a=a^2.$$ The
+> $$F_X(a)=P[X\leq a]=\int_{x_0}^a\int_{y=0}^x2dydx=[x^2]_0^a=a^2.$$
+> The
 > density of $X$ is therefore
 > 
 > $f_X(x) = \frac{dF(x)}{dx}
@@ -4931,10 +5155,10 @@ and $f(x)\geq 0$ for all $\underline{x}\in \mathbb{R}^n$
 then $f$ is the *joint density* of
 
 $\mathbf{X}= \left( \begin{array}{ccc}
-X_1 \\ 
-\vdots \\
-X_n
-\end{array}\right)$
+  X_1 \\ 
+  \vdots \\
+  X_n
+  \end{array}\right).$
 
 If we have the joint density of some multidimensional random variable
 $X=(X_1,\ldots,X_n)$ given in this manner, then we can find the
@@ -4974,6 +5198,7 @@ is normal if $X_1 , \ldots , X_n$ are normal and independent.
 ### Examples
 
 > **Example**:  
+> 
 > Simulating and plotting a single normal distribution. $Y \sim n(0,1)$
 > 
 > 
@@ -4992,6 +5217,7 @@ is normal if $X_1 , \ldots , X_n$ are normal and independent.
 >     title(ttl)
 
 > **Example**:  
+> 
 > Sum of two normal distributions.
 > 
 > $$Y_1 \sim n(2, 2^2)$$
@@ -5017,6 +5243,7 @@ is normal if $X_1 , \ldots , X_n$ are normal and independent.
 >     title(ttl)
 
 > **Example**:  
+> 
 > Sum of nine normal distributions, all with $\mu = 42$ and $\sigma^2=2^2$
 > 
 >     ymat<-matrix(rnorm(10000*9,42,2),ncol=9)
@@ -5061,6 +5288,7 @@ is normal if $X_1 , \ldots , X_n$ are normal and independent.
 ### Details
 
 > **Definition**:  
+> 
 > If $X_1, X_2, \ldots, X_n$ are i.i.d. $N(0,1)$ then the distribution of
 > 
 > $Y = X_1^2 + X_1^2 + \ldots + X_n^2$ has a **Chi square
@@ -5096,6 +5324,7 @@ is normal if $X_1 , \ldots , X_n$ are normal and independent.
 ### Details
 
 > **Note**:  
+> 
 > *Note 20*. Recall that if $$X_1, \ldots, X_n \sim n (\mu, \sigma^2)$$
 > 
 > are i.i.d., then
@@ -5125,6 +5354,7 @@ but we are often interested in
 $$\frac{1}{n-1}\sum_{i=1}^n (X_i-\bar{X})^2\sim \chi_{n-1}^2.$$
 
 > **Note**:  
+> 
 > *Note 21*. A degree of freedom is lost because of subtracting the
 > estimator of the mean as opposed to the true mean.
 
@@ -5147,13 +5377,16 @@ $\bar{x}$ = sample mean (a number)
 ### Details
 
 > **Definition**:  
+> 
 > If $U\sim n(0,1)$ and $W\sim\chi^{2}_{\nu}$ are independent, then the
-> random variable $$T:=\frac{U}{\sqrt{\frac{w}{\nu}}}$$ has a distribution
+> random variable $$T:=\frac{U}{\sqrt{\frac{w}{\nu}}}$$
+> has a distribution
 > which we call the **$t$-distribution** on $\nu$ degrees of freedom,
 > denoted $T \sim t_\nu$.
 
 It turns out that if $X_1, \ldots ,X_n \sim n(\mu,\sigma ^2)$ and we set
-$$\bar{X}=\frac{1}{n}\sum_{i=1}^n X_i$$ and $$S=
+$$\bar{X}=\frac{1}{n}\sum_{i=1}^n X_i$$
+and $$S=
 \sqrt{\frac{1}{1-n}\sum_{i=1}^n (X_i-X)^2}$$ then
 $$\frac{\bar{X}-\mu}{S/\sqrt{n}} \sim t_{n-1}.$$
 
@@ -5179,12 +5412,14 @@ USA.
 > 
 > In this case the resulting estimate is simply
 > 
-> $$\mu = \overline{x}$$ and can easily be derived by setting the
+> $$\mu = \overline{x}$$
+> and can easily be derived by setting the
 > derivative to zero.
 
 ### Examples
 
 > **Example**:  
+> 
 > Consider the numbers $x_1, \ldots, x_5$ to be
 > $$13,7,4,16 \textrm{ and } 9$$
 > 
@@ -5200,6 +5435,7 @@ USA.
 ### Examples
 
 > **Example**:  
+> 
 > If, $x_1,\ldots,x_n$ are assumed to be observations of independent
 > random variables with a normal distributions and mean of $\mu$ and
 > variance of $\sigma^2$, then the joint density is
@@ -5215,12 +5451,14 @@ USA.
 > $$L(\mu)=\frac{1}{(2\pi)^{n/2}\sigma^n}e^{-\frac{1}{2\sigma^2}\sum_{i=1}^n(x_i-\mu)^2}$$
 > 
 > Maximizing this is done by maximizing the log, i.e. finding the $\mu$
-> for which: $$\frac{d}{d\mu}\ln L(\mu)=0,$$ which again results in the
+> for which: $$\frac{d}{d\mu}\ln L(\mu)=0,$$
+> which again results in the
 > estimate $$\hat{\mu}=\overline{x}$$
 
 ### Detail
 
 > **Definition**:  
+> 
 > If $\left (Y_1, \ldots , Y_n\right )'$ is a random vector from a density
 > $f_{\theta}$ where $\theta$ is an unknown parameter, and $\mathbf{y}$ is
 > a vector of observations then we define the **likelihood function** to
@@ -5265,6 +5503,7 @@ variables and lower case letters to denote outcome or data.
 ### Examples
 
 > **Example**:  
+> 
 > Let the mean of a population be zero and the $\sigma=4$. Then draw three
 > samples from this population with size, n, either 4, 16 or 64. The
 > sample mean $\bar{X}$ will have a distribution with mean zero and
@@ -5348,6 +5587,7 @@ USA.
 ### Examples
 
 > **Example**:  
+> 
 > Suppose we want to evaluate whether a coin is biased. We can plan an
 > experiment for this. Suppose we toss the coin 5 times and count the
 > number of heads. We can test the following hypothesis simply.\
@@ -5369,6 +5609,7 @@ USA.
 > $\alpha = 0.05$
 
 > **Example**:  
+> 
 > Flip a coin to test
 > 
 > $H_0: P = \frac {1} {2}$ vs $H_a: P \neq \frac {1} {2}$\
@@ -5401,7 +5642,8 @@ USA.
 > $X_1 \ldots X_n \sim n(\mu, \sigma^2)$ and $\sigma^2$ is known. If $H_0$
 > is true, then
 > 
-> $$\bar {x} \sim n (\mu_0, \frac{\sigma^2}{n})$$ So,
+> $$\bar {x} \sim n (\mu_0, \frac{\sigma^2}{n})$$
+> So,
 > 
 > $$Z = \frac{\bar {x} - \mu_0}{\frac{\sigma} {\sqrt{n}}} \sim n (0,1)$$
 > 
@@ -5422,6 +5664,7 @@ USA.
 ### Examples
 
 > **Example**:  
+> 
 > Consider the following data set:47, 42, 41, 45, 46.
 > 
 > Suppose we want to test the following hypothesis
@@ -5474,6 +5717,7 @@ we \"Cannot reject the $H_0$\".
 ### Examples
 
 > **Example**:  
+> 
 > In R, you may generate values to calculate the $z$ value. The command
 > that is generally used is: `quantile`
 > 
@@ -5512,6 +5756,7 @@ $H_0$ can not be rejected.
 ### Examples
 
 > **Example**:  
+> 
 > Suppose the following data set (12,19,17,23,15,27) comes independently
 > from a normal distribution and we need to test $H_0:\mu=\mu_0$ vs
 > $H_a:\mu>\mu_0$. Here we have $n=6,\overline{x}=18.83, s=5.46, \mu_0=18$
@@ -5531,7 +5776,7 @@ $H_0$ can not be rejected.
 
 ### Details
 
-We know that if\
+We know that if
 $$X_1, ...., X_n \sim n(\mu_1,\sigma)$$
 
 $$Y_1, ...., Y_m \sim n(\mu_2,\sigma)$$
@@ -5539,8 +5784,10 @@ $$Y_1, ...., Y_m \sim n(\mu_2,\sigma)$$
 are all independent then
 $$\bar{X}-\bar{Y} \sim n(\mu_1-\mu_2,\frac{\sigma^2}{n}+\frac{\sigma^2}{m})$$
 Further,
-$$\sum_{i=1}^{n} \frac{(X_i-\bar{X})^2}{\sigma^2} \sim X_{n-1}^{2}$$ and
-$$\sum_{j=1}^{m} \frac{(Y_j-\bar{Y})^2}{\sigma^2} \sim X_{m-1}^{2}$$ so
+$$\sum_{i=1}^{n} \frac{(X_i-\bar{X})^2}{\sigma^2} \sim X_{n-1}^{2}$$
+and
+$$\sum_{j=1}^{m} \frac{(Y_j-\bar{Y})^2}{\sigma^2} \sim X_{m-1}^{2}$$
+so
 $$\frac {\sum_{i=1}^{n}(X_i-\bar{X})^2 + \sum_{j=1}^{m}(Y_j-\bar{Y})^2}{\sigma^2} \sim X_{n+m-2}^2$$
 and it follows that
 $$\frac {\bar{X}-\bar{Y}-(\mu_1-\mu_2)}{S\sqrt{(\frac{1}{n}+\frac{1}{m})}} \sim t_{n+m-2}$$
@@ -5549,7 +5796,8 @@ $$S=\sqrt{\frac{\sum_{i=1}^{n}(X_1-\bar{X})^2+\sum_{j=1}^{m}(Y_j-\bar{Y})^2}{n+m
 
 consider testing $H_0:\mu_1=\mu_2$ vs $H_1=mu_1>\mu_2$. Hence, if $H_0$
 is true then the observed value
-$$t=\frac{\bar{x}-\bar{y}}{S\sqrt{\frac{1}{n}+\frac{1}{m}}}$$ comes from
+$$t=\frac{\bar{x}-\bar{y}}{S\sqrt{\frac{1}{n}+\frac{1}{m}}}$$
+comes from
 a t-test with $n+m-2$ df and we reject $H_0$ if $\left|t\right|>t^*$.
 Here,
 $$S=\sqrt{\frac{\sum_{i}(x_i-\bar{x})^2+\sum_{j}(y_j-\bar{y})^2}{n+m-2}}$$
@@ -5570,7 +5818,8 @@ Another theorem (Slutzky) stakes that replacing $\sigma_1^2$ and
 $\sigma_2^2$ with $S_1^2$ and $S_2^2$ will result in the same (limiting)
 distribution.\
 It follows that for large samples we can test
-$$H_0: \mu_1=\mu_2 \qquad vs. \qquad H_a:\mu_1 > \mu_2$$ by computing
+$$H_0: \mu_1=\mu_2 \qquad vs. \qquad H_a:\mu_1 > \mu_2$$
+by computing
 $$z=\frac{\overline{x}-\overline{y}}{\sqrt{\frac{s_1^2}{n}+\frac{s_2^2}{m}}}$$
 and reject $H_0$ if $z>z_{1-\alpha}$.
 
@@ -5583,12 +5832,17 @@ and reject $H_0$ if $z>z_{1-\alpha}$.
 ### Examples
 
 > **Example**:  
-> Consider a dataset and the following hypotheses\
+> 
+> Consider a dataset and the following hypotheses
 > $$H_0:\mu=42$$
 > 
-> vs. $$H_a:\mu>42$$ and suppose we obtain\
-> $$z=2.3$$ We reject $H_0$ since $$2.3>1.645+z_{0.95}$$ The p-value is
-> $$P[Z>2.3]= 1-\Phi(2.3)$$ obtained in R using
+> vs. $$H_a:\mu>42$$
+> and suppose we obtain
+> $$z=2.3$$
+> We reject $H_0$ since $$2.3>1.645+z_{0.95}$$
+> The p-value is
+> $$P[Z>2.3]= 1-\Phi(2.3)$$
+> obtained in R using
 > 
 >     1-pnorm(2.3)
 >     [1] 0.01072411
@@ -5661,7 +5915,8 @@ USA.
 > $P_{\theta_0}[reject~H_0] \leq \alpha$ and $P_{\theta_a}[reject~H_0]$ as
 > large as possible.\
 > For a general $\theta$ we write
-> $$\beta(\theta) = P_{\theta} [reject~H_0]$$ for the power of the test
+> $$\beta(\theta) = P_{\theta} [reject~H_0]$$
+> for the power of the test
 
 ### Details
 
@@ -5688,6 +5943,7 @@ Do not use the phrase \"accept\".
 ### Examples
 
 > **Example**:  
+> 
 > Suppose 7 students are involved in an experiment which is comprised of 7
 > trails and each trial consists of rolling a dice 9 times.\
 > \
@@ -5707,8 +5963,10 @@ Do not use the phrase \"accept\".
 > CLT that $$\frac{X-np}{\sqrt{np(1-p)}} \sim\dot N(0,1)$$
 > 
 > write $p_0=\frac{1}{2}$ so if $H_0:p=p_0$ is true then
-> $$Z:=\frac{X-np_0}{\sqrt{np_0(1-p_0)}}\sim\dot N(0,1)$$ so we reject
-> $H_0$ if the observed value $$z=\frac{x-np_0}{\sqrt{np_0(1-p_0)}}$$ is
+> $$Z:=\frac{X-np_0}{\sqrt{np_0(1-p_0)}}\sim\dot N(0,1)$$
+> so we reject
+> $H_0$ if the observed value $$z=\frac{x-np_0}{\sqrt{np_0(1-p_0)}}$$
+> is
 > such that $\left | z\right | >z_{1-\frac{\alpha}{2}}$
 > 
 > Outcomes from 21 trials
@@ -5725,19 +5983,21 @@ Do not use the phrase \"accept\".
 > 
 > $$z=\frac{7-9\cdot \frac{1}{2}}{\sqrt{9\cdot\frac{1}{2}\cdot \frac{1}{2}}}=\frac{7-4.5}{3\cdot\frac{1}{2}}=\frac{14-9}{3}=\frac{5}{3} < 1.96$$
 > So we do not reject the null hypothesis!\
-> \
 > 
 > > **Note**:  
+> > 
 > > *Note 22*. Note that we can rewrite the test statistics slightly
 > > 
 > > $$z=\frac{x-\frac{n}{2}}{\sqrt{n\cdot\frac{1}{2}\cdot\frac{1}{2}}}=\frac{x-\frac{9}{2}}{3\cdot\frac{1}{2}}=\frac{2x-9}{3}$$
 > 
 > > **Note**:  
+> > 
 > > *Note 23*. Note that we reject if $\frac{2x-9}{3}>1.96$ i.e. if
 > > $2x>9+3\cdot1.96 \approx 9+6=15$\
 > > $x>7.5$ \[for x=8 or 9\] or $2x<9-3\cdot1.96, x<1.5$ \[for x=0 or 1\].
 
 > **Example**:  
+> 
 > Suppose 7 students are involved in an experiment which is comprised of 7
 > trails and each trial consists of rolling a dice 9 times.\
 > \
@@ -5758,7 +6018,7 @@ Do not use the phrase \"accept\".
 > 7 & 6 & 5\\ 
 > 7 & 8 & 8\\ 
 > 5 & 6 & 4\\ 
-> 2 & 5 & 7 \\
+> 2 & 5 & 7
 > \end{matrix}$
 > 
 > This time our test is $H_0:p=\frac{2}{3}$ vs $H_a:p=\frac{2}{3}$. Note
@@ -5767,6 +6027,7 @@ Do not use the phrase \"accept\".
 > We reject $H_0$ in 3 out of 21 trials.
 
 > **Example**:  
+> 
 > Suppose 7 students are involved in an experiment which is comprised of 7
 > trails and each trial consists of rolling a dice 9 times.\
 > \
@@ -5787,7 +6048,7 @@ Do not use the phrase \"accept\".
 > 1 & 1 & 1\\
 > 1 & 3 & 1\\ 
 > 1 & 1 & 2\\ 
-> 0 & 2 & 0\\
+> 0 & 2 & 0
 > \end{matrix}$
 > 
 > With the same kind of calculations as above, we find that we reject the
@@ -5849,6 +6110,7 @@ $$\beta(\mu) = 1 - \Phi \left ( \frac{\mu_0 - \mu }{\frac{\sigma} {\sqrt{n}}} + 
 ### Examples
 
 > **Example**:  
+> 
 > Suppose we know $\sigma=2$ and we will take a sample from
 > $n\left ( \mu, \sigma^2\right)$ intending to test the hypothesis $\mu=3$
 > at level $\alpha=0.05$. We want to know the power against a one-tailed
@@ -5873,7 +6135,7 @@ $$\beta(\mu) = 1 - \Phi \left ( \frac{\mu_0 - \mu }{\frac{\sigma} {\sqrt{n}}} + 
 > decide how many samples are to be simulated (Nsim). Then, generate all
 > of these samples, arrange them in a matrix and compute the mean of each
 > sample. The z-value of each of these Nsim tests are then computed and a
-> check is made whether it exceeds the critical point (1) or not (0).\
+> check is made whether it exceeds the critical point (1) or not (0).
 > 
 >     Nsim<-10000
 >     m<-matrix(rnorm(Nsim*n,mu,sigma),ncol=n)
@@ -5913,6 +6175,7 @@ $$1-\Phi(\frac{\mu_1-\mu_0}{\sigma/\sqrt{n}}+z_{1-\alpha})\geq \beta_1$$
 ### Examples
 
 > **Example**:  
+> 
 >     mu0<-10
 >     sigma<-2
 >     mu1<-11
@@ -6006,6 +6269,7 @@ $\delta = \frac{\mu_1-\mu_2}{\sigma/\sqrt{n}}$
 ### Examples
 
 > **Example**:  
+> 
 > For a one sided power analysis we wish to test the following
 > hypotheses:\
 > For a one sample test:\
@@ -6017,7 +6281,8 @@ $\delta = \frac{\mu_1-\mu_2}{\sigma/\sqrt{n}}$
 > power when we have a given number of samples.
 
 > **Example**:  
-> How many samples do I need to get a power of .9?\
+> 
+> How many samples do I need to get a power of .9?
 > 
 >     power.t.test(power = .95, delta=1.5,sd=2, type="one.sample", alternative = "one.sided")
 > 
@@ -6033,9 +6298,10 @@ $\delta = \frac{\mu_1-\mu_2}{\sigma/\sqrt{n}}$
 > 
 > We would thus need a sample size of n = 31.15 or $\approx 32$ samples to
 > obtain a power of 0.9 for our analysis.\
->  \
+>  
 
 > **Example**:  
+> 
 > With a sample size of n = 45, what will the power of my test be?\
 > 
 >     power.t.test(n=45,delta=1.5,sd=2,sig.level=0.05,type="one.sample",alternative="one.sided")
@@ -6052,9 +6318,10 @@ $\delta = \frac{\mu_1-\mu_2}{\sigma/\sqrt{n}}$
 > This is done the same way for two samples only by changing the
 > alternative to \"two.sample\". For two sided power analysis, one only
 > needs to change the alternative to \"two.sided\".\
->  \
+>  
 
 > **Example**:  
+> 
 > If one is interested in doing a power analysis for an ANOVA test, this
 > is done in a fairly similar way.\
 >  \
@@ -6114,7 +6381,8 @@ alternative= either one sided or two sided\
 ### Examples
 
 > **Example**:  
-> How many samples do I need in my research to obtain a power of 0.8?\
+> 
+> How many samples do I need in my research to obtain a power of 0.8?
 > 
 >     power.t.test(delta=1.5,sd=2,sig.level=0.05,power=0.8,type=c("two.sample"),alternative=c("two.sided"))
 > 
@@ -6151,7 +6419,8 @@ alternative= either one sided or two sided\
 
 Suppose data are gathered independently from two normal populations
 resulting in $$X_1, \ldots, X_n \sim n(\mu_1, \sigma^2)$$
-$$Y_1, \ldots, Y_m \sim n(\mu_2, \sigma^2)$$ where all data are
+$$Y_1, \ldots, Y_m \sim n(\mu_2, \sigma^2)$$
+where all data are
 independent then
 $$\overline{X}-\overline{Y} \sim n(\mu_1 - \mu_2, \frac{\sigma^2}{n}\ + \frac{\sigma^2}{m})$$
 The null hypothesis in question is $H_o: \mu_1 = \mu_2$ versus
@@ -6180,7 +6449,7 @@ This is the probability that a non-central $t$-variable exceeds $t^*$.\
 
 In this case the null hypothesis is defined as $H_o: \mu_1 = \mu_2$
 versus alternative $H_a: \mu_1 \neq \mu_2$.\
-The power of the test can be computed as follows:\
+The power of the test can be computed as follows:
 $$\begin{aligned}
 \beta_{(\mu_1\mu_2)}& = & P_{\mu_1\mu_2}\left[reject~H_o \right]\\
 & = & P_{\mu_1\mu_2}\left[\left|\frac{\overline{X}-\overline{Y}}{S\sqrt{\frac{1}{n}+\frac{1}{m}}}\right| > t^*_{1-\alpha,n+m-2} \right]\\
@@ -6198,6 +6467,7 @@ and $U$ is the SSE of the samples which is divided by the appropriate
 degrees of freedom to give a $\chi^2$ distribution.\
 
 > **Note**:  
+> 
 > *Note 24*. Note that the power of a test can be obtained using the
 > $power.t.test$ function in R.
 
@@ -6231,6 +6501,7 @@ $P_{\mu_1\mu_2} \left[\frac{Z + \Delta}{\sqrt{U/(n+m-2)}} < -t^*_{1-\alpha,n+m-2
 ### Handout
 
 > **Example**:  
+> 
 > If you want to compute a power analysis in analysis of covariance:
 > $$y_{ij}=\mu_i+\beta x_{ij}+\epsilon_{ij} , \ i=1, 2,\ j=1,\ldots J,$$
 > where $\epsilon_{ij}\sim n(0,\sigma^ 2)$ are i.i.d. then use
@@ -6239,6 +6510,7 @@ $P_{\mu_1\mu_2} \left[\frac{Z + \Delta}{\sqrt{U/(n+m-2)}} < -t^*_{1-\alpha,n+m-2
 > what exactly is known and what the assumptions are.
 > 
 > > **Note**:  
+> > 
 > > *Note 25*. Note that there are only two groups, with intercepts $\mu_1$
 > > and $\mu_2$. The \"power\" will refer to the power of a test for
 > > $\mu_1=\mu_2$, i.e. we want to test whether the group means are equal,
@@ -6404,6 +6676,7 @@ USA.
 ### Examples
 
 > **Example**:  
+> 
 > In R, a vector can be generated with:
 > 
 >     X<- 3:6
@@ -6420,6 +6693,7 @@ USA.
 >     [4,]    6
 > 
 > > **Note**:  
+> > 
 > > *Note 26*. We note that R distinguishes between vector and matrices.
 
 ## Elementary Operations
@@ -6434,6 +6708,7 @@ USA.
 ### Examples
 
 > **Example**:  
+> 
 >     A <- matrix(c(1,2,3,4), nr=2, nc=2)
 >     A
 >          [,1] [,2]
@@ -6470,6 +6745,7 @@ element $a_{ij}$ in row $j$ and column $i$.
 ### Examples
 
 > **Example**:  
+> 
 > Consider a vector in R
 > 
 >     x<-1:4
@@ -6490,6 +6766,7 @@ element $a_{ij}$ in row $j$ and column $i$.
 >      
 > 
 > > **Note**:  
+> > 
 > > *Note 27*. Note that the first solution gives a $1 \times n$ matrix and
 > > the second solution gives a $n \times 1$ matrix.
 
@@ -6514,6 +6791,7 @@ terms.
 ### Examples
 
 > **Example**:  
+> 
 > Matrices in R
 > 
 >     A<-matrix(c(1,3,5,2,4,6),3,2)
@@ -6538,9 +6816,11 @@ terms.
 ## More on matrix multiplication
 
 > Let $A$, $B$, and $C$ be $m\times n$, $n\times l$, and $l\times p$
-> matrices, respectively. Then we have $$(AB)C=A(BC).$$ In general, matrix
+> matrices, respectively. Then we have $$(AB)C=A(BC).$$
+> In general, matrix
 > multiplication is not commutative, that is $AB\neq BA$.\
-> We also have $$(AB)'=B'A'.$$ In particular, $(Av)'(Av)=v'A'Av$, when $v$
+> We also have $$(AB)'=B'A'.$$
+> In particular, $(Av)'(Av)=v'A'Av$, when $v$
 > is a $n\times1$ column vector.\
 > \
 > More obvious are the rules
@@ -6563,14 +6843,15 @@ General linear equations can be written in the form $Ax=b$.
 ### Examples
 
 > **Example**:  
+> 
 > The set of equations\
 > \
 > $2x+3y=4$\
 > $3x+y=2$\
-> can be written in matrix formulation as\
+> can be written in matrix formulation as
 > $$\begin{bmatrix}
 > 2 & 3  \\
-> 3 & 1  \\
+> 3 & 1 
 > \end{bmatrix}
 > \begin{bmatrix}
 > x \\
@@ -6583,24 +6864,25 @@ General linear equations can be written in the form $Ax=b$.
 > \end{bmatrix}$$
 > 
 > i.e. $A\underline{x} = \underline{b}$ for an appropriate choice of of
-> $A, \underline{x}$ and $\underline{b}$\
+> $A, \underline{x}$ and $\underline{b}$
 
 ## The unit matrix
 
-> The $n$ x $n$ matrix\
+> The $n$ x $n$ matrix
 > $$\mathbf{I}
 > =
 > \left[
 > \begin{array}{cccc}
-> 1 & 0 & \ldots & 0 \\
-> 0 & 1 & 0  & \vdots \\
-> \vdots & 0  & \ddots & 0 \\
-> 0 & \ldots & 0 & 1 \\
-> \end{array} \right]$$\
+>   1 & 0 & \ldots & 0 \\
+>   0 & 1 & 0  & \vdots \\
+>   \vdots & 0  & \dots & 0 \\
+>   0 & \ldots & 0 & 1
+> \end{array} \right]$$
+> 
 > is the identity matrix. This is because if a matrix $\mathbf{A}$ is $n$
 > x $n$ then $\mathbf{A} \mathbf{I} = \mathbf{A}$ and
 > $\mathbf{I} \mathbf{A}  = 
-> \mathbf{A}$\
+> \mathbf{A}$
 
 ## The inverse of a matrix
 
@@ -6619,18 +6901,19 @@ General linear equations can be written in the form $Ax=b$.
 ### Examples
 
 > **Example**:  
+> 
 > If matrix $A$ is:
 > 
 > $\begin{bmatrix}
 > 2 & 3  \\
-> 3 & 1  \\
+> 3 & 1 
 > \end{bmatrix}$
 > 
 > then $A ^{-1}$ is:
 > 
 > $\begin{bmatrix}
 > \frac{-1}{4} & \frac{3}{4}  \\
-> \frac{3}{4} & \frac{1}{2}  \\
+> \frac{3}{4} & \frac{1}{2} 
 > \end{bmatrix}$
 
 **Copyright** 2021, Gunnar Stefansson (editor) with contributions from
@@ -6659,35 +6942,39 @@ USA.
 ### Examples
 
 > **Example**:  
+> 
 > If A= $\begin{bmatrix}
-> 1 & 2  \\
+> 1 & 2 
 > \end{bmatrix}$ then $T_A(\underline{x}) = x + 2y$ where
 > $\underline{x} = {x \choose y}\in \mathbb{R}^2$
 
 > **Example**:  
+> 
 > If A= $\begin{bmatrix}
 > 0 & 1  \\
-> 1 & 0  \\
+> 1 & 0 
 > \end{bmatrix}$ then $T_A{x \choose y}$ = $\begin{bmatrix}
 > y  \\
-> x  \\
+> x 
 > \end{bmatrix}$
 
 > **Example**:  
+> 
 > If A= $\begin{bmatrix}
 > 0 & 2 & 3\\
-> 1 & 0 & 1 \\
+> 1 & 0 & 1
 > \end{bmatrix}$ then $T_A$ $\left(
 > \begin{array}{ccc}
->    x \\
+>   x \\
 >   y\\
 >   z\\
 >  \end{array} \right)$ = $\begin{bmatrix}
 > 2y + 3z\\
-> x + z \\
+> x + z
 > \end{bmatrix}$
 
 > **Example**:  
+> 
 > If $T{x \choose y }$ = $\left(
 >  \begin{array}{cc}
 >    x+y  \\
@@ -6695,7 +6982,7 @@ USA.
 >  \end{array} \right)$ then $T (\underline{x}) = A \underline{x}$ if we
 > set A = $\begin{bmatrix}
 > 1 & 1 \\
-> 2 & -3 \\
+> 2 & -3
 > \end{bmatrix}$
 
 ## Inner products and norms
@@ -6731,10 +7018,12 @@ y_n
 \end{pmatrix}$.
 
 > **Note**:  
+> 
 > *Note 28*. Note that we can also view $x$ and $y$ as $n \times 1$
 > matrices and we see that $x \cdot y = x^\prime y$.
 
 > **Definition**:  
+> 
 > The normal length of a vector is defined by
 > $\left \| x \right \|^2 = x \cdot x$. It may also be expressed as
 > $\left \| x \right \| = \sqrt{x_1^2 + x_2^2 + \cdots + x_n^2}$.
@@ -6747,6 +7036,7 @@ $(a+b)\cdot c=a\cdot c+ b\cdot c$ and $a\cdot b=b\cdot a$.
 Two vectors $x$ and $y$ are said to be orthogonal if $x \cdot y = 0$
 
 > **Example**:  
+> 
 > If $x= \begin{pmatrix}
 > 3\\
 > 4
@@ -6771,14 +7061,17 @@ Two vectors $x$ and $y$ are said to be orthogonal if $x \cdot y = 0$
 ### Details
 
 > **Definition**:  
+> 
 > Two vectors $x$ and $y$ are said to be **orthogonal** if $x\cdot y=0$
 > denoted $x \perp y$
 
 If $a,b \in \mathbb{R}^n$ then
-$$\left\|a+b\right\|^2=a\cdot a+2a\cdot b+b\cdot b$$ so
+$$\left\|a+b\right\|^2=a\cdot a+2a\cdot b+b\cdot b$$
+so
 $$\left\|a+b\right\|^2=\left\|a\right\|^2+\left\|b\right\|^2 + 2\underline{a}\underline{b}.$$
 
 > **Note**:  
+> 
 > *Note 29*. Note that if $a \perp b$ then
 > $\left\|a+b\right\|^2=\left\|a\right\|^2+ \left\|b\right\|^2$, which is
 > Pythagoras' theorem in $n$ dimensions.
@@ -6787,7 +7080,8 @@ $$\left\|a+b\right\|^2=\left\|a\right\|^2+\left\|b\right\|^2 + 2\underline{a}\un
 
 > Suppose $X_1,....,X_n$ are i.i.d. random variables and have mean
 > $\mu_1, ...., \mu_n$ and variance $\sigma^2$ then the expected value of
-> $Y$ of the linear combination is $$Y=\sum a_i X_i$$ and if
+> $Y$ of the linear combination is $$Y=\sum a_i X_i$$
+> and if
 > $a_1,....,a_n$ are real constants then the mean is:
 > 
 > $$\mu_Y = \sum a_i \mu_i$$
@@ -6799,6 +7093,7 @@ $$\left\|a+b\right\|^2=\left\|a\right\|^2+\left\|b\right\|^2 + 2\underline{a}\un
 ### Examples
 
 > **Example**:  
+> 
 > Consider two i.i.d. random variables, $Y_1,Y_2$ and a specific linear
 > combination of the two, $W=Y_1+3Y_2$.\
 > We first obtain $$E[W]=E[Y_1+3Y_2]=E[Y_1]+3E[Y_2]=2+3\cdot 2=2+6=8.$$
@@ -6824,8 +7119,10 @@ $$\left\|a+b\right\|^2=\left\|a\right\|^2+\left\|b\right\|^2 + 2\underline{a}\un
 
 ### Details
 
-The covarience between random variables $U$ and $W$ is defined by\
-$$Cov(U,W)= E[(U-\mu_u)(W-\mu_w)]$$ where $$\mu_u=E[U],\mu_w=E[W]$$ Now,
+The covarience between random variables $U$ and $W$ is defined by
+$$Cov(U,W)= E[(U-\mu_u)(W-\mu_w)]$$
+where $$\mu_u=E[U],\mu_w=E[W]$$
+Now,
 let $U=a'Y=\sum Y_ia_i$ and $W=b'Y=\sum Y_ib_i$, where $Y_1,\ldots,Y_n$
 are i.i.d. with mean $\mu$ and variance $\sigma^2$, then we get
 
@@ -6839,6 +7136,7 @@ $$Cov(U,W)=\sigma^2a\cdot b$$
 ### Examples
 
 > **Example**:  
+> 
 > If $Y_1$ and $Y_2$ are i.i.d., then
 > 
 > $$Cov(Y_1+Y_2, Y_1-Y_2)=Cov((1,1) \left( \begin{array}{ccc}Y_1  \\Y_2 \end{array} \right),  (1,-1) \left( \begin{array}{ccc}Y_1  \\Y_2 \end{array} \right) )$$
@@ -6859,13 +7157,14 @@ $$Cov(U,W)=\sigma^2a\cdot b$$
 ### Details
 
 > **Definition**:  
+> 
 > If $EY_i = \mu_i$ then we typically write
 > 
 > $E(Y)=\left(
 > \begin{array}{ccc}
-> \mu_1 \\
-> \vdots \\
-> \mu_n
+>   \mu_1 \\
+>   \vdots \\
+>   \mu_n
 > \end{array} \right)=\mu$
 > 
 > If $Cov(Y_i, Y_j) = \sigma{ij}$ and $V[Y_i]=\sigma_{ii} = \sigma_i^2$,
@@ -6877,6 +7176,7 @@ $$Cov(U,W)=\sigma^2a\cdot b$$
 ### Examples
 
 > **Example**:  
+> 
 > If $Y_i, \ldots , Y_n$ are i.i.d., $EY_i = \mu$, $VY_i = \sigma^2$,
 > $a,b\in\mathbb{R}^n$ and $U=a'Y$, $W=b'Y$,
 > 
@@ -6887,30 +7187,24 @@ $$Cov(U,W)=\sigma^2a\cdot b$$
 > 
 > then
 > 
-> ET= $\begin{bmatrix}
+> $ET=
+> \begin{bmatrix}
 > \Sigma a_i  \mu \\
 > \Sigma b_i  \mu
 > \end{bmatrix}$
 > 
-> VT= $\boldsymbol{\Sigma}$ = $\sigma^2
+> $VT=
+> \boldsymbol{\Sigma}$ = $\sigma^2
 > \begin{bmatrix}
 > \Sigma a_i^2 & \Sigma a_i b_i \\
 > \Sigma a_ib_i & \Sigma b_i^2
 > \end{bmatrix}$
 
-> **Example**:  
-> If $\underline{Y}$ is a random vector with mean $\boldsymbol{\mu}$ and
-> variance-covariance matrix $\boldsymbol{\Sigma}$, then
-> 
-> $$E[a'Y] = a'\mu$$
-> 
-> and
-> 
-> $$V[a'Y] = a' \boldsymbol{\Sigma} a.$$
-
 ## Transforming random vectors
 
-> Suppose $$\mathbf{Y}
+> Suppose
+> 
+> $$\mathbf{Y}
 > =
 > \left(
 > \begin{array}{c}
@@ -6926,7 +7220,9 @@ $$Cov(U,W)=\sigma^2a\cdot b$$
 ### Details
 
 Note that if $Y_1, \ldots, Y_n$ are independent with common variance
-$\sigma^2$ then $$\boldsymbol{\Sigma}
+$\sigma^2$ then
+
+$$\boldsymbol{\Sigma}
 =
 \left[
 \begin{array}{ccccc}
@@ -6959,7 +7255,7 @@ $$=
 \end{array} \right]
 = \sigma^2 \mathbf{I}$$
 
-If $A$ is an $m$ x $n$ matrix, then\
+If $A$ is an $m$ x $n$ matrix, then
 $$E[A\mathbf{Y}] = A \mathbf{\mu}$$
 
 and $$V[A\mathbf{Y}] = A \boldsymbol{\Sigma} A'$$
@@ -6996,12 +7292,14 @@ It can be shown that the rank of $A$ is the same as the rank of $A'$
 i.e. the maximum number of linearly independent rows of $A$.
 
 > **Note**:  
+> 
 > *Note 30*. Note that if rank $(A)= p$, then the columns are linearly
 > independent.
 
 ### Examples
 
 > **Example**:  
+> 
 > If $$A= 
 >   \left[ 
 >    \begin{array}{cc}
@@ -7029,8 +7327,11 @@ i.e. the maximum number of linearly independent rows of $A$.
 >       0 \\
 >       0 \\
 >     \end{array}
->    \right)$$\
-> if and only if $$\left( 
+>    \right)$$
+> 
+> if and only if
+> 
+> $$\left( 
 >   \begin{array}{cc}
 >      k_1 \\
 >      k_2 \\
@@ -7040,10 +7341,12 @@ i.e. the maximum number of linearly independent rows of $A$.
 >       0 \\
 >       0 \\
 >     \end{array}
->    \right)$$\
+>    \right)$$
+> 
 > so the columns are linearly independent.
 
 > **Example**:  
+> 
 > If $$A = 
 >   \left[ 
 >    \begin{array}{ccc}
@@ -7056,6 +7359,7 @@ i.e. the maximum number of linearly independent rows of $A$.
 > the rank of $A$ = 2.
 
 > **Example**:  
+> 
 > If $$A = 
 >   \left[ 
 >    \begin{array}{ccc}
@@ -7086,7 +7390,8 @@ i.e. the maximum number of linearly independent rows of $A$.
 >       0 \\
 >       0 \\
 >     \end{array}
->    \right) = 0$$ (and hence the rank can not be more than 2) but $$k_1
+>    \right) = 0$$ (and hence the rank can not be more than 2) but $$
+> k_1
 >   \left(
 >    \begin{array}{ccc}
 >      1 \\
@@ -7110,7 +7415,7 @@ i.e. the maximum number of linearly independent rows of $A$.
 > $A=
 > \begin{bmatrix}
 > a & b  \\
-> c & d  \\
+> c & d 
 > \end{bmatrix}$
 > 
 > the inverse of $A$ is
@@ -7119,15 +7424,17 @@ i.e. the maximum number of linearly independent rows of $A$.
 > \frac{1}{ad-bc}
 > \begin{bmatrix}
 > 2 & 3  \\
-> 3 & 1  \\
+> 3 & 1 
 > \end{bmatrix}$
 
 ### Details
 
 > **Definition**:  
+> 
 > The number $ad-bc$ is called the **determinant**of the 2x2 matrix $A$.
 
 > **Definition**:  
+> 
 > Now suppose $A$ is an $n x n$ matrix. An **elementary product** from the
 > matrix is a product of $n$ terms based on taking exactly one term from
 > each column of row $x$. Each such term can be written in the form
@@ -7137,6 +7444,7 @@ i.e. the maximum number of linearly independent rows of $A$.
 > $1,2,\ldots,n$ can be performed by repeatedly interchanging two numbers.
 
 > **Definition**:  
+> 
 > A **signed elementary product** is an elementary product with a positive
 > sign if the number of interchanges in the permutation is even but
 > negative otherwise.
@@ -7147,10 +7455,11 @@ elementary products.
 ### Examples
 
 > **Example**:  
+> 
 > $A=
 > \begin{bmatrix}
 > a_{11} & a_{12}  \\
-> a_{21} & a_{22}  \\
+> a_{21} & a_{22} 
 > \end{bmatrix}$
 > 
 > then
@@ -7158,6 +7467,7 @@ elementary products.
 > $\vert A \vert = a_{1\underline{1}} a_{2\underline{2}} - a_{1\underline{2}}a_{2\underline{1}}$.
 
 > **Example**:  
+> 
 > $A=
 > \begin{bmatrix}
 > a_{11} & a_{12} & a_{13}  \\
@@ -7182,66 +7492,72 @@ elementary products.
 > $-a_{13} a_{22} a_{31}$ Three interchanges
 
 > **Example**:  
+> 
 > $A=
 > \begin{bmatrix}
 > 1 & 1  \\
-> 1 & 0  \\
+> 1 & 0 
 > \end{bmatrix}$
 > 
 > $\vert A \vert = -1$
 
 > **Example**:  
+> 
 > $A=
 > \begin{bmatrix}
 > 1 & 0 & 0  \\
 > 0 & 2 & 0  \\
-> 0 & 0 & 3  \\
+> 0 & 0 & 3 
 > \end{bmatrix}$
 > 
 > $\vert A \vert = 1 \cdot 2 \cdot 3 = 6$
 
 > **Example**:  
+> 
 > $A=
 > \begin{bmatrix}
 > 1 & 0 & 0  \\
 > 0 & 2 & 0  \\
-> 0 & 3 & 0  \\
+> 0 & 3 & 0 
 > \end{bmatrix}$
 > 
 > $\vert A \vert = 0$
 
 > **Example**:  
+> 
 > $A=
 > \begin{bmatrix}
 > 1 & 0 & 0  \\
 > 0 & 0 & 2  \\
-> 0 & 3 & 0  \\
+> 0 & 3 & 0 
 > \end{bmatrix}$
 > 
 > $\vert A \vert = -6$
 
 > **Example**:  
+> 
 > $A=
 > \begin{bmatrix}
 > 2 & 1  \\
-> 2 & 1  \\
+> 2 & 1 
 > \end{bmatrix}$
 > 
 > $\vert A \vert = 0$
 
 > **Example**:  
+> 
 > $A=
 > \begin{bmatrix}
 > 1 & 0 & 1  \\
 > 0 & 1 & 1  \\
-> 1 & 1 & 2  \\
+> 1 & 1 & 2 
 > \end{bmatrix}$
 > 
 > $\vert A \vert = 0$
 
 ## Ranks, inverses and determinants
 
-> The following statements are true for an $n\times n$ matrix $A$:\
+> The following statements are true for an $n\times n$ matrix $A$:
 > 
 > -   $rank (A)= n$
 > 
@@ -7273,58 +7589,69 @@ USA.
 ## Vector functions of several variables
 
 > A vector-valued function of several variables is a function
-> $$f: \mathbb{R}^{m} \rightarrow \mathbb{R}^{n}$$ i.e. a function of $m$
+> $$f: \mathbb{R}^{m} \rightarrow \mathbb{R}^{n}$$
+> i.e. a function of $m$
 > dimensional vectors, which returns $n$ dimensional vectors.
 
 ### Examples
 
 > **Example**:  
+> 
 > A real valued function of many variables:
 > $f: \mathbb{R}^3\to\mathbb{R}$, $f(x_1,x_2,x_3)=2x_1+3x_2+4x_3$.
 > 
 > > **Note**:  
+> > 
 > > *Note 31*. Note that $f$ is linear and $f(x)=Ax$ where
 > > $x=\begin{pmatrix} x_1\\x_2\\x_3\end{pmatrix}$ and
 > > $A=\begin{bmatrix}2&3&4\end{bmatrix}$.
 
 > **Example**:  
-> Let $$f: \mathbb{R}^{2} \rightarrow \mathbb{R}^{2}$$ where:
+> 
+> Let $$f: \mathbb{R}^{2} \rightarrow \mathbb{R}^{2}$$
+> where:
 > $$f(x_1,x_2) = \left(
 > \begin{array}{c}
 > x_1+x_2 \\
-> x_1-x_2 \\
+> x_1-x_2
 > \end{array} \right)$$
 > 
 > > **Note**:  
+> > 
 > > *Note 32*. Note that $f(x)=Ax$, where
 > > $A=\begin{bmatrix}1&1\\1&-1\end{bmatrix}$.
 
 > **Example**:  
-> Let $$f: \mathbb{R}^{3} \rightarrow \mathbb{R}^{4}$$ be defined by
+> 
+> Let $$f: \mathbb{R}^{3} \rightarrow \mathbb{R}^{4}$$
+> be defined by
 > $$f(x)
 > = \left(
 > \begin{array}{c}
 > x_1+x_2 \\
 > x_1-x_3 \\
 > y-z \\
-> x_1+x_2+x_3 \\
+> x_1+x_2+x_3
 > \end{array} \right)$$
 > 
 > > **Note**:  
-> > *Note 33*. Note that: $$f(x) = Ax$$ where $$A =
+> > 
+> > *Note 33*. Note that: $$f(x) = Ax$$
+> > where $$A =
 > > \begin{bmatrix}
 > > 1 & 1 & 0\\
 > > 1 & 0 & -1\\
 > > 0 & 1 & -1\\
-> > 1 & 1 & 1\\
+> > 1 & 1 & 1
 > > \end{bmatrix}$$
 
 > **Example**:  
+> 
 > These multi-dimensional functions do not have to be linear, for example
 > the function $f:\mathbb{R}^2\to\mathbb{R}^2$ $$f(x) = \left(
 > \begin{array}{c}
 > x_1x_2 \\
-> x_1^{2}+x_2^{2}\\
+> x_1^{2}+x_2^{2}
 > \end{array} \right),$$ is obviously not linear.
 
 ## The gradient
@@ -7338,6 +7665,7 @@ USA.
 ### Details
 
 > **Definition**:  
+> 
 > Suppose the real valued function $f:\mathbb{R}^m \rightarrow \mathbb{R}$
 > is differentiable in each coordinate. Then the **gradient** of $f$,
 > denoted $\nabla f$ is given by
@@ -7351,9 +7679,11 @@ USA.
 ### Examples
 
 > **Example**:  
+> 
 > $$f(\underline{x})= x^2+y^2+2xy;\ \frac{\partial f}{\partial x}=2x+2y,  \frac{\partial f}{\partial y}=2y+2x, \nabla f =\begin{pmatrix}2x+2y, & 2y+2x\end{pmatrix}$$
 
 > **Example**:  
+> 
 > $$f(\underline{x})=x_1-x_2; \nabla f= \begin{pmatrix}1, & -1\end{pmatrix}$$
 
 ## The Jacobian
@@ -7380,7 +7710,10 @@ $\frac{\partial f_i}{\partial x_j}$.
 ### Examples
 
 > **Example**:  
-> For the function $$f(x,y)=\begin{pmatrix}
+> 
+> For the function
+> 
+> $$f(x,y)=\begin{pmatrix}
 >   x^2 +y \\
 >   x y  \\
 >   x 
@@ -7446,12 +7779,12 @@ $$P [Y \leq b] = P [g(Y) \leq g(b)] = P [X \leq g(b)] = \int_{- \infty} ^{g(b)}f
 > \left|\begin{bmatrix}
 > \frac{\partial g_1}{\partial y_1} & \frac{\partial g_1}{\partial y_2} & \cdots &\frac{\partial g_1}{\partial y_n} \\
 > \vdots & \vdots & \cdots & \vdots \\
-> \frac{\partial g_n}{\partial y_1} & \frac{\partial g_n}{\partial y_2} & \cdots & \frac{\partial g_n}{\partial y_n}  \\
+> \frac{\partial g_n}{\partial y_1} & \frac{\partial g_n}{\partial y_2} & \cdots & \frac{\partial g_n}{\partial y_n} 
 > \end{bmatrix}\right| = 
 > \left|\begin{bmatrix}
 > \nabla g_1 \\
 >  \vdots \\
-> \nabla g_n  \\
+> \nabla g_n 
 > \end{bmatrix}\right|$$
 
 ### Details
@@ -7470,12 +7803,12 @@ $$J=
 \left|\begin{bmatrix}
 \frac{\partial g_1}{\partial y_1} & \frac{\partial g_1}{\partial y_2} & \cdots &\frac{\partial g_1}{\partial y_n} \\
 \vdots & \vdots & \cdots & \vdots \\
-\frac{\partial g_n}{\partial y_1} & \frac{\partial g_n}{\partial y_2} & \cdots & \frac{\partial g_n}{\partial y_n}  \\
+\frac{\partial g_n}{\partial y_1} & \frac{\partial g_n}{\partial y_2} & \cdots & \frac{\partial g_n}{\partial y_n} 
 \end{bmatrix}\right| = 
 \left|\begin{bmatrix}
 \nabla g_1 \\
  \vdots \\
-\nabla g_n  \\
+\nabla g_n 
 \end{bmatrix}\right|$$
 
 Similar calculations as in 28.4 give us that if $X$ is a continuous
@@ -7490,6 +7823,7 @@ $$f_Y(\mathbf y)   = f (g(\mathbf y)) |J|$$
 ### Examples
 
 > **Example**:  
+> 
 > If $\mathbf{Y} = A \mathbf X$ where $A$ is an $n \times n$ matrix with
 > $det(A)\neq0$ and $X = (X_1, \ldots, X_n)^\prime$ are i.i.d. random
 > variables, then we have the following results:\
@@ -7632,7 +7966,8 @@ which gives the density for $AY$.
 
 > Suppose $Y \sim n(X \beta,\sigma^2 I)$. The ordinary least squares
 > estimator, when the $n \times p$ matrix is of full rank, $p$, where
-> $p\leq n$, is: $$\hat{\beta} = (X'X)^{-1}X'Y$$ The random variable which
+> $p\leq n$, is: $$\hat{\beta} = (X'X)^{-1}X'Y$$
+> The random variable which
 > describes the process giving the data and estimate is:
 > $$b = (X'X)^{-1}X'Y$$
 > 
@@ -7642,11 +7977,15 @@ which gives the density for $AY$.
 
 Suppose $Y \sim n(X \beta,\sigma^2I)$. The ordinary least squares
 estimator, when the $n \times p$ matrix is of full rank, $p$, is:
-$$\hat{\beta} = (X'X)^{-1}X'Y.$$ The equation below is the random
+$$\hat{\beta} = (X'X)^{-1}X'Y.$$
+The equation below is the random
 variable which describes the process giving the data and estimate:
-$$b = (X'X)^{-1}X'Y$$ If $B = (X'X)^{-1}X'$, then we know that
-$$BY \sim n(B X \beta, B(\sigma^{2}I)B')$$ Note that
-$$BX\beta = (X'X)^{-1}X'X\beta=\beta$$ and
+$$b = (X'X)^{-1}X'Y$$
+If $B = (X'X)^{-1}X'$, then we know that
+$$BY \sim n(B X \beta, B(\sigma^{2}I)B')$$
+Note that
+$$BX\beta = (X'X)^{-1}X'X\beta=\beta$$
+and
 $$B(\sigma^{2}I)B' = \sigma^{}(X'X)^{-1}X'[(X'X)^{-1}X']'$$
 
 $$= \sigma^{2}(X'X)^{-1}X'X(X'X)^{-1}$$
@@ -7656,6 +7995,7 @@ $$= \sigma^{2}(X'X)^{-1}$$
 It follows that $$\hat{\beta} \sim n(\beta,\sigma^{2}(X'X)^{-1})$$
 
 > **Note**:  
+> 
 > *Note 34*. The earlier results regarding the multivariate Gaussian
 > distribution also show that the vector of parameter estimates will be
 > Gaussian even if the original $Y$-variables are not independent.
@@ -7749,6 +8089,7 @@ $$= \int xf_X (x) dx \int yf_Y (y) dy$$
 $$= E [X] E [Y]$$
 
 > **Note**:  
+> 
 > *Note 35*. Note that if $X$ and $Y$ are independent then
 > $E [h (X)g (Y)] = E [h(X)] E[g(Y)]$ is true whenever the functions $h$
 > and $g$ have expected values.
@@ -7756,19 +8097,21 @@ $$= E [X] E [Y]$$
 ### Examples
 
 > **Example**:  
+> 
 > Suppose $X,Y \in U (0,2)$ are i.i.d then,
 > 
-> $$f_X (x) =  \left \{ \begin{array}{rl}
-> \frac {1}{2} &\mbox { if $0 \leq x \leq 2$} \\
-> 0 &\mbox {otherwise}
-> \end{array} \right.$$
+> $$f_X (x) = 
+> \begin{cases}
+>   \frac{1}{2} & \text{if } 0 \leq x \leq 2 \\
+>   0 &\text{otherwise}
+> \end{cases}.$$
 > 
 > and similarly for $f_Y$.\
-> Next, note that,
-> $$f(x,y) =  f_X (x) f_Y (y) = \left \{ \begin{array}{rl}
-> \frac {1}{4} &\mbox { if $0 \leq x,y \leq 2 $} \\
-> 0 &\mbox {otherwise}
-> \end{array} \right.$$
+> Next, note that, $$f(x,y) =  f_X (x) f_Y (y) = 
+> \begin{cases}
+>   \frac{1}{4} &\text{if } 0 \leq x,y \leq 2\\
+>   0 &\text{otherwise}
+> \end{cases}.$$
 > 
 > Also note that $f(x,y) \geq 0$ for all $(x,y) \in \mathbb{R}^2$ and
 > 
@@ -7805,6 +8148,7 @@ $$= E [X] E [Y]$$
 ### Examples
 
 > **Example**:  
+> 
 > If $X\sim b(n,p)$ then
 > $M(t)=\displaystyle\sum_{x=0}^{n} e^{tx}p(x) = \displaystyle\sum_{x=0}^{n} e^{tx} \binom{n}{x}p\cdot (1-p)^{n-x}$
 
@@ -7878,7 +8222,8 @@ Also, $\Gamma(\alpha + 1) = \alpha \Gamma(\alpha)$ for all $\alpha >0$.
 > 
 > Then, $$E[X] = \alpha\beta$$
 > 
-> $$M(t) = (1-\beta t)^{-\alpha}$$ $$V[X] = \alpha \beta^2$$
+> $$M(t) = (1-\beta t)^{-\alpha}$$
+> $$V[X] = \alpha \beta^2$$
 
 ### Details
 
@@ -8140,7 +8485,8 @@ $\epsilon_{ij}$ are independent and follow a normal distribution with
 mean zero and constant variance $\sigma^2$ often written as
 $\epsilon\sim N(0,\sigma^2)$.\
 The ANOVA model can also be written in the form:
-$$Y_{ij}=\mu+\alpha_i+\epsilon_{ij}$$ where $\mu$ is the overall mean of
+$$Y_{ij}=\mu+\alpha_i+\epsilon_{ij}$$
+where $\mu$ is the overall mean of
 all treatment groups and $\alpha_i$ is the deviation of mean of
 treatment group $i$ from the overall mean. The $\epsilon_{ij}$ follow a
 normal distribution as before.\
@@ -8150,8 +8496,10 @@ errors is zero, often written as $E[Y_{ij}]=\mu_i$.
 ### Examples
 
 > **Example**:  
+> 
 > In the rat diet experiment the model would be of the form:
-> $$y_{ij}=\mu_i+\epsilon_{ij}$$ where $y_{ij}$ is the weight gain for rat
+> $$y_{ij}=\mu_i+\epsilon_{ij}$$
+> where $y_{ij}$ is the weight gain for rat
 > $j$ in diet group $i$, $\mu_i$ would be the mean weight gain in diet
 > group $i$ and $\epsilon{ij}$ would be the deviation of rat $j$ from the
 > mean of its diet group.
@@ -8159,7 +8507,8 @@ errors is zero, often written as $E[Y_{ij}]=\mu_i$.
 ## Random effects in the one-way layout
 
 > The simplest random effects model is the one-way layout, commonly
-> written in the form $$y_{ij}=\mu + \alpha_i + \epsilon_{ij},$$ where
+> written in the form $$y_{ij}=\mu + \alpha_i + \epsilon_{ij},$$
+> where
 > $j =1,\ldots,J$ and $i =1,\ldots,I$.
 > 
 > Normally one also assumes $\epsilon_{ij}\sim n (0,\sigma_A^2)$,
@@ -8192,31 +8541,44 @@ cov(y_{ij},y_{i'j'}) &=cov(\alpha_i+\epsilon_{ij}, \alpha_{i'}+ \epsilon_{i'j'})
                      &=E[\alpha_i\alpha_{i'}] + E[\epsilon{ij}\alpha_{i'}]+ E[\alpha_i\epsilon_{i'j'}] + E[\epsilon_{ij}\epsilon_{i'j'}]\end{aligned}$$
 
 > **Note**:  
+> 
 > *Note 36*. Recall that $E[UW]=E[U]E[W]$ if $U,W$ are independent
 
 So,
 $$E[\epsilon_{ij}\alpha_{i'}]=E[\alpha_i\epsilon_{i'j'}] = E\alpha_iE\epsilon_{i'j'}=0 .$$
 
-Further, $$E[\epsilon_{ij}\epsilon{i'j'}] = \left\{ \begin{array}{rl}
-\sigma^2 &\mbox {if $i=i', j=j'$}\\
-0 &\mbox {otherwise} 
-\end{array} \right.$$ and
-$$E[\alpha_{i}\alpha{i'}] = \left\{ \begin{array}{rl}
-\sigma^2_A &\mbox {if $i=i'$}\\
-0 &\mbox {if $i \neq i'$} 
-\end{array} \right.$$ so
-$$Cov(y_{ij},y_{i'j'}) = \left\{ \begin{array}{rl}
-\sigma_A^2+\sigma^2 &\mbox {if $i=i', j=j'$}\\
-\sigma'_A &\mbox {if $i=i', j \neq j'$}\\
-0 &\mbox {otherwise}
-\end{array} \right.$$
+Further, $$E[\epsilon_{ij}\epsilon{i'j'}] =
+  \begin{cases}
+  \sigma^2 & \text{if } i=i', j=j'\\
+  0 &\text{otherwise} 
+\end{cases}$$
+
+and
+
+$$E[\alpha_{i}\alpha{i'}] =
+\begin{cases}
+\sigma^2_A &\text{if } i=i'\\
+0 &\text{if }i \neq i' 
+\end{cases}$$
+
+so
+
+$$Cov(y_{ij},y_{i'j'}) = 
+\begin{cases}
+  \sigma_A^2+\sigma^2 & \text{if } i=i', j=j'\\
+  \sigma'_A & \text{if } i=i', j \neq j'\\
+  0 & \text{otherwise}
+\end{cases}.$$
 
 It follows that the correlation between measurements $y_{ij}$ and
-$y_{ij'}$ (within the same group) are $$\begin{aligned}
-cor(y_{ij},y_{ij'} &= \frac{Cov(y_{ij},y_{ij'})}{\sqrt{v[y_{ij}]v[y_{ij'}]}}\\
-                   &= \frac{\sigma_A^2}{\sqrt{(\sigma_A^2 + \sigma^2)^2}}\end{aligned}$$
-$\Rightarrow Cor(y_{ij}, y_{ij'}) = \frac{\sigma_A^2}{\sigma_A^2 + \sigma^2}$\
-\
+$y_{ij'}$ (within the same group) are
+
+$$\begin{align*}
+Cor(y_{ij},y_{ij'}) &= \frac{Cov(y_{ij},y_{ij'})}{\sqrt{v[y_{ij}]v[y_{ij'}]}}\\
+                   &= \frac{\sigma_A^2}{\sqrt{(\sigma_A^2 + \sigma^2)^2}}\\
+                   &\Rightarrow Cor(y_{ij}, y_{ij'}) = \frac{\sigma_A^2}{\sigma_A^2 + \sigma^2}
+\end{align*}.$$
+
 This is the intra-class correlation.
 
 ## Linear mixed effects models (lmm)
@@ -8255,6 +8617,7 @@ contains the random effects.
 ### Examples
 
 > **Example**:  
+> 
 > 1.  $y_i = \beta_1 + \beta_2 x_i + \epsilon_i$ (SLR)
 > 
 > 2.  $y_{ij} = \mu + \alpha_i + \beta_i x_{ij} + \epsilon_{ij}$ only
@@ -8289,10 +8652,12 @@ In particular, if $W \sim n(\mu, \boldsymbol{\Sigma}($ then
 $AW \sim n(A\mu, A \boldsymbol{\Sigma} A')$.\
 Now consider the lmm with
 
-$$y = X \boldsymbol{\beta} + Zu + \boldsymbol{\epsilon}$$ where
+$$y = X \boldsymbol{\beta} + Zu + \boldsymbol{\epsilon}$$
+where
 $$u = (u_1 , \ldots , u_m)'$$
 
-$$\boldsymbol{\epsilon} = (\epsilon_1 , \ldots , \epsilon_m)'$$ and the
+$$\boldsymbol{\epsilon} = (\epsilon_1 , \ldots , \epsilon_m)'$$
+and the
 random variables $U_i \sim n(0, \sigma^2_A)$,
 $\epsilon_i \sim n(0, \sigma^2)$ are all independent so that
 $u \sim n(0, \sigma^2_A I)$ and

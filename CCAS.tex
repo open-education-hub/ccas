@@ -346,7 +346,7 @@ Notation: $\mathbb{N}=\{1,2,3,4,....\}$ \\
 
 Subtraction and division are not defined on these numbers.\\
 
-An arbitrary element of $\mathbb{N}$ is most commonly denoted by $i,\ j,\ n$,or $m$, but any symbol can be used. \\
+An arbitrary element of $\mathbb{N}$ is most commonly denoted by $i,\ j,\ n$, or $m$, but any symbol can be used. \\
 \end{minipage}
 }
 \subsubsection{Details}
@@ -1040,21 +1040,26 @@ Pascal's triangle is a geometric arrangement of the binomial coefficients in a t
 
 $$
 \begin{array}{ccccc}
-           & &1&&\\
-       & 1   & &    1&\\
-    1  &&     2  &&       1\\
+  & & 1 & &\\
+  & 1 & & 1&\\
+  1 & & 2 & & 1\\
   \vdots \quad \vdots && \vdots && \vdots \quad \vdots
 \end{array}
 $$
+
 \end{minipage}
 }
+
 \subsubsection{Details}
-\begin{tabular}{rccp{0.3cm}p{0.2cm}cccc}
-$n=0$: & & & & &1\\\noalign{\smallskip\smallskip}
-$n=1$: & & & &1& &1\\\noalign{\smallskip\smallskip}
-$n=2$: & & &1& &2& &1\\\noalign{\smallskip\smallskip}
-$n=3$: & &1& &3& &3& &1\\\noalign{\smallskip\smallskip}
-\end{tabular}
+
+$$
+\begin{array}{ccccccccc}
+  n=0: & & & & &1& & & \\
+  n=1: & & & &1& &1& & \\
+  n=2: & & &1& &2& &1& \\
+  n=3: & &1& &3& &3& &1\\
+\end{array}
+$$
 
 To build Pascal's triangle, start with "1" at the top, and then continue placing numbers below it in a triangular pattern. Each number is just the two numbers above it added together (except for the edges, which are all "1").
 
@@ -1229,37 +1234,36 @@ Consider a biased coin which has probability $p$ of landing heads up. If we toss
 
 $$
 \begin{array}{c c c}
-\hline
-sequence & probability	& Number of heads\\
-\hline				
-HHH & p \cdot p \cdot p=p^3 & 3\\
-HHT & p^2(1-p) & 2\\
-HTH & p^2(1-p) & 2 \\
-HTT & p(1-p)^2 & 1\\
-THH & p^2(1-p) & 2\\
-THT & p(1-p)^2 & 1\\	
-TTH & p(1-p)^2 & 1\\
-TTT & (1-p)^3 & 0\\
-\hline
+  \hline
+  \text{sequence} & \text{probability}	& \text{Number of heads}\\
+  \hline				
+  \text{HHH} & p \cdot p \cdot p=p^3 & 3\\
+  \text{HHT} & p^2(1-p) & 2\\
+  \text{HTH} & p^2(1-p) & 2 \\
+  \text{HTT} & p(1-p)^2 & 1\\
+  \text{THH} & p^2(1-p) & 2\\
+  \text{THT} & p(1-p)^2 & 1\\	
+  \text{TTH} & p(1-p)^2 & 1\\
+  \text{TTT} & (1-p)^3 & 0\\
+  \hline
 \end{array}
 $$
 \end{xmpl}
+
 \begin{xmpl}
-
-
-It is also possible to aggregate these values into a table and describe only the number of heads obtained:\\
-
-\begin{tabular}{c c}
-\hline
-heads & probability $p(x)$\\
-\hline				
-0 & $(1-p)^3$\\
-1 & $3p(1-p)^2$\\
-2 & $3p^2(1-p)$\\
-3 & $p^3$ \\
-\hline
-\end{tabular}
-
+It is also possible to aggregate these values into a table and describe only the number of heads obtained:
+$$
+\begin{array}{c c}
+  \hline
+  \text{Heads} & \text{Probability}\ p(x)\\
+  \hline				
+  0 & (1-p)^3\\
+  1 & 3p(1-p)^2\\
+  2 & 3p^2(1-p)\\
+  3 & p^3 \\
+  \hline
+\end{array}.
+$$
 If we are only interested in the number of heads, then
 this table describes a \textbf{probability mass function} $p$, namely the probability $p(x)$ of every possible outcome $x$
 of the experiment.
@@ -1585,45 +1589,49 @@ where it is understood that $p(x) = 0$ if $x$ is not one of these $x_i$.
 \begin{xmpl}
 If $X$ is the number of heads ($H$) before obtaining the first tail ($T$) when tossing an unbiased coin 4 independent times, then the possible basic outcomes are:
 
-\begin{tabular}{c c c}
+$$
+\begin{array}{c c c}
 \hline
-         & Toss    &   \\
-In binary& 1 2 3 4 & \#$H$ before $T$\\
+         & \text{Toss}    &   \\
+\text{In binary} & 1\ 2\ 3\ 4 & \#\text{H before T}\\
 \hline				
-0000 & H H H H & 4\\
-0001 & H H H T & 3\\
-0010 & H H T H & 2\\
-0011 & H H T T & 2\\
-0100 & H T H H & 1\\
-0101 & H T H T & 1\\
-0110 & H T T H & 1\\
-0111 & H T T T & 1\\
-1000 & T H H H & 0\\
-1001 & T H H T & 0\\
-1010 & T H T H & 0\\
-1011 & T H T T & 0\\
-1100 & T T H H & 0\\
-1101 & T T H T & 0\\
-1110 & T T T H & 0\\
-1111 & T T T T & 0\\
+  0000 & \text{H H H T} & 3\\
+  0010 & \text{H H T H} & 2\\
+  0011 & \text{H H T T} & 2\\
+  0100 & \text{H T H H} & 1\\
+  0101 & \text{H T H T} & 1\\
+  0110 & \text{H T T H} & 1\\
+  0111 & \text{H T T T} & 1\\
+  1000 & \text{T H H H} & 0\\
+  1001 & \text{T H H T} & 0\\
+  1010 & \text{T H T H} & 0\\
+  1011 & \text{T H T T} & 0\\
+  1100 & \text{T T H H} & 0\\
+  1101 & \text{T T H T} & 0\\
+  1110 & \text{T T T H} & 0\\
+  1111 & \text{T T T T} & 0\\
 \hline
-\end{tabular}\\
+\end{array}
+$$
 
 Since the coin is unbiased, each of these has the 
 same probability of occurring.  We can now count sequences to find the number of possibilities of a particular number of heads, $H$, before a tail in 4 coin tosses and thus obtain the corresponding probabilities as:\\
 
-\begin{tabular}{c r}
+$$
+\begin{array}{c r}
 \hline
-Number of tosses before a heads & Probability\\
-$x$ & $p(x)$\\
-\hline				
-0 & $\frac{8}{16}=\frac{1}{2}$\\
-1 & $\frac{4}{16}=\frac{1}{4}$\\
-2 & $\frac{2}{16}=\frac{1}{8}$\\
-3 & $\frac{1}{16}$\\
-4 & $\frac{1}{16}$\\
+\text{Number of tosses before a heads} & \text{Probability}\\
+ & p(x)\\
 \hline
-\end{tabular}\\
+0 & \frac{8}{16}=\frac{1}{2}\\
+1 & \frac{4}{16}=\frac{1}{4}\\
+2 & \frac{2}{16}=\frac{1}{8}\\
+3 & \frac{1}{16}\\
+4 & \frac{1}{16}\\
+\hline
+\end{array}
+$$
+
 \end{xmpl}
 
 %% Slide https://tutor-web.net/math/math612.0/lecture140/slide60
@@ -1840,18 +1848,6 @@ Functions in R can commonly accept a range of values and will return a correspon
 \end{minipage}
 }
 \subsubsection{Examples}
-\begin{figure}[h]
-\hspace{0.5mm}
-\begin{minipage}{0.48\textwidth}
-\begin{verbatim}ERROR: Unknown script MIME type text/x-tex
-Traceback (most recent call last):
-  File "/srv/sites/tutor-web-2/src/tutorweb.content/tutorweb/content/transforms/script_to_html.py", line 179, in convert
-    raise ValueError("Unknown script MIME type %s" % kwargs['mimetype'])
-ValueError: Unknown script MIME type text/x-tex
-\end{verbatim}
-
-\end{minipage}
-\end{figure}
 \begin{xmpl}
 \begin{lstlisting}
 f <- function(x) {return(x*12)}
@@ -1877,18 +1873,6 @@ the outcome Y is usually called the response variable and x is the explanatory v
 \end{minipage}
 }
 \subsubsection{Examples}
-\begin{figure}[h]
-\hspace{0.5mm}
-\begin{minipage}{0.48\textwidth}
-\begin{verbatim}ERROR: Unknown script MIME type text/x-tex
-Traceback (most recent call last):
-  File "/srv/sites/tutor-web-2/src/tutorweb.content/tutorweb/content/transforms/script_to_html.py", line 179, in convert
-    raise ValueError("Unknown script MIME type %s" % kwargs['mimetype'])
-ValueError: Unknown script MIME type text/x-tex
-\end{verbatim}
-
-\end{minipage}
-\end{figure}
 \begin{xmpl}
 The following R commands can be used to generate a plot for function; Y= 2+3x
 
@@ -2066,7 +2050,7 @@ The general solution is given by the formula
 
 $$ x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a},$$
 
-if  $b^2 - 4ac \geq 0$. On the other hand, if $b^2-4ac\textless 0$, the quadratic equation has no real solution.
+if  $b^2 - 4ac \geq 0$. On the other hand, if $b^2-4ac<0$, the quadratic equation has no real solution.
 
 \subsubsection{Examples}
 \begin{xmpl}
@@ -2515,7 +2499,6 @@ x[["z"]]
 names(x)
 [1] "y" "z" "w"
 x["w"]
-$w
 [1] "a" "b" "c"
 x$w
 [1] "a" "b" "c"
@@ -2652,7 +2635,7 @@ Save the following file (test.r):
 \begin{lstlisting}
 x=4
 y=8
-cat("x+y is", x+y, "\n")$
+cat("x+y is", x+y, "\n")
 \end{lstlisting}
 To read the file use: 
 \begin{lstlisting}
@@ -3132,7 +3115,7 @@ Since the square root is present we cannot just direct substitute the 0 as $x$. 
 
 $$\frac{\sqrt{x + 4} - 2}{x} \cdot \frac{\sqrt{x + 4} + 2}{\sqrt{x + 4} + 2}$$
 
-This gives us $$\frac{(\sqrt{x + 4})^2 + 2(\sqrt{x+4}) - 2(\sqrt{x+4}) -4}{x(\sqrt{x + 4} + 2)}$$ The numerator reduces to $x$, and the $x$s will cancel out leaving us with $$\frac{1}{\sqrt{x + 4} + 2}$$ At this point we can direct substitute 0 for $x$, which will give us $$\frac{1}{\sqrt{0 + 4} + 2}$$
+This gives us $$\frac{(\sqrt{x + 4})^2 + 2(\sqrt{x+4}) - 2(\sqrt{x+4}) -4}{x(\sqrt{x + 4} + 2)}$$ The numerator reduces to $x$, and the $x$'s will cancel out leaving us with $$\frac{1}{\sqrt{x + 4} + 2}$$ At this point we can direct substitute 0 for $x$, which will give us $$\frac{1}{\sqrt{0 + 4} + 2}$$
 
 Therefore, $$\lim_{x \to 0} \frac{\sqrt{x + 4} - 2}{x} = \frac{1}{4}$$
 \end{xmpl}
@@ -4033,22 +4016,28 @@ $$ F(x)= \int\limits^{x}_{-\infty} f(t)dt$$ is the {\bf cumulative distribution 
 \subsubsection{Examples}
 \begin{xmpl}
 Consider a random variable $X$ from the uniform distribution, denoted by $X\sim U(0,1)$.  This distribution has density
+
 $$
-f(x) = \left \{ \begin{array}{rl}
-1 &\mbox { if $0 \leq x \leq 1$} \\
-0 &\mbox {e.w.}
-\end{array} \right.
+f(x) = 
+\begin{cases}
+  1 &\text{if } 0 \leq x \leq 1\\
+  0 &\text{e.w.}
+\end{cases}.
 $$
 
 The cumulative distribution function is given by
+
 $$
-P[X\leq x] = \int\limits^{x}_{-\infty} f(t)dt = \left\{ \begin{array}{rl}
-0 &\mbox {if $x<0$}\\
-x &\mbox {if $0 \leq x \leq 1$} \\
-1
-\end{array} \right.
+P[X\leq x] = \int\limits^{x}_{-\infty} f(t)dt = 
+\begin{cases}
+  0 & \text{if } x<0\\
+  x & \text{if } 0 \leq x \leq 1\\
+  1 & \text{else}
+\end{cases}.
 $$
+
 \end{xmpl}
+
 \begin{xmpl}
 Suppose $X \sim P(\lambda)$, where X may denote the number of events per unit time. The p.m.f. of X is described by $p(x)=P[X=x]=e^{-\lambda}\frac{\lambda^x}{x!}$ for $x=0,1,2,...$. Consider now the waiting time, T, between events, or simply until the first event. Consider the event $T>t$ for some number t>0. If $X\sim p(\lambda)$ denotes the number of events per unit time, then let $X_t$ denote the number of events during the time period for 0 through t. Then it is natural to assume
 
@@ -4058,10 +4047,14 @@ It follows that the c.d.f. of T is $F_T(t)=P[T\leq t]=1-P[T>t]=1-e^{-\lambda t}$
 The p.d.f. of T is therefore $f_T(t)=F_T'(t)=\frac{d}{dt}F_T(t)=\frac{d}{dt}(1-e^{-\lambda t}=0-e^{- \lambda t}*(-\lambda)=\lambda e^{-\lambda t}$ for $t \geq 0$ and $f_T(t)=0$ for $t=0$. \\
 
 The resulting density 
-$$f(t) = \left\{ \begin{array}{rcl}
-\lambda e^{-\lambda t} & \mbox{for}& t \geq0\\
-0& \mbox{for} & t<0
-\end{array}\right.$$
+
+$$f(t) =
+\begin{cases}
+  \lambda e^{-\lambda t} & \text{for}& t \geq0\\
+  0 & \text{for} & t<0
+\end{cases}.
+$$
+
 describes the exponential distribution.
 
 This distribution has the expected value
@@ -4450,17 +4443,27 @@ All code should contain informative comments. Comments are separated out from co
 \subsubsection{Examples}
 \begin{xmpl}
 
-\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\\
-\#\#\#\#SETUP DATA\#\#\#\#\\
-\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\\
+\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#
 
-dat<-read.table(filename)\\
-x<-log(dat\$le)  \#log-transformation of length\\
-y<-log(dat\$wt)  \#log-transformation of weight\\
 
-\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\\
-\#\#\#\#THE ANALYSIS\#\#\#\#\\
-\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\\
+\#\#\#\#SETUP DATA\#\#\#\#
+
+
+\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#
+
+dat<-read.table(filename)
+
+x<-log(dat\$le)  \#log-transformation of length
+
+y<-log(dat\$wt)  \#log-transformation of weight
+
+\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#
+
+
+\#\#\#\#THE ANALYSIS\#\#\#\#
+
+
+\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#
 
 \end{xmpl}
 
@@ -4934,34 +4937,31 @@ $$P[X \in {A}] = \sum_{(x_1,\ldots,x_n)\in A} p(x_1,\ldots, x_n).$$
 
 An urn contains blue and red marbles, which are either light or heavy. Let $X$ denote the color and $Y$ the weight of a marble, chosen at random\\
 
-%\begin{table}[ht]%
-%\centering%
-\begin{tabular}{c c c c}
+$$
+\begin{array}{c c c c}
 \hline\hline
-X/Y	&	L	&	H	&	TT \\[0.5ex]
-B	&	5	&	6	&	11\\
-R	&	7	&	2	&	9\\
-TT	&	12	&	8	&	20\\[1ex]
+  X \setminus Y	&	\text{L}	&	\text{H}	&	\text{Total} \\
+  B	&	5	&	6	&	11\\
+  R	&	7	&	2	&	9\\
+  TT	&	12	&	8	&	20\\
 \hline
-\end{tabular}
-%\end{table}%
+\end{array}
+$$
 
 We have $P[X="'b"', Y ="l"'] = \frac{5}{20}$.\\
 
-The joint p.m.f. is: \\
+The joint p.m.f. is:
 
-%\begin{table}[ht]%
-%\centering%
-\begin{tabular}{c c c c}
+$$
+\begin{array}{c c c c}
 \hline\hline
-X/Y	&	L	&	H	&	TT \\[0.5ex]
-B	  & $\frac{5}{20}$	& $\frac{6}{20}$	& $\frac{11}{20}$\\
-R	  & $\frac{7}{20}$	& $\frac{2}{20}$	& $\frac{9}{20}$\\
-TT  & $\frac{12}{20}$	& $\frac{8}{20}$	&	1\\
-\\[1ex]
+X \setminus Y	&	\text{L}	&	\text{H}	&	\text{Total} \\
+\text{B}	  & \frac{5}{20}	& \frac{6}{20}	& \frac{11}{20}\\
+\text{R}	  & \frac{7}{20}	& \frac{2}{20}$	& \frac{9}{20}\\
+\text{Total}  & \frac{12}{20}	& \frac{8}{20}	&	1\\
 \hline
-\end{tabular}
-%\end{table}%
+\end{array}
+$$
 \end{xmpl}
 
 %% Slide https://tutor-web.net/math/math612.0/lecture310/slide20
@@ -4997,11 +4997,13 @@ If $X_1, \ldots, X_n  \sim U(0,1)$, i.i.d., i.e.  $X_1$ and $X_n$ are independen
 Given the data in the above figure and if  $x_1 , x_2 \in \mathbb{R}$
 
 $$
-f(x_1, x_2) = f_1(x_1) f_2(x_2) = \left \{ \begin{array}{rl}
-1 &\mbox { if $0 \leq x_1, x_2 \leq 1$} \\
-0 &\mbox {elsewhere}
-\end{array} \right.
+f(x_1, x_2) = f_1(x_1) f_2(x_2) =
+\begin{cases}
+  1 & \text{if } 0 \leq x_1, x_2 \leq 1 \\
+  0 & \text{elsewhere}
+\end{cases}.
 $$
+
 \end{xmpl}
 \begin{xmpl}
 
@@ -5011,10 +5013,11 @@ Then
 
 
 $$
- P[X_1 = x_1, X_2 =  x_2]= \left \{ \begin{array}{rl}
-\frac{1}{36} &\mbox { if $1 \leq x_1, x_2 \leq 6$} \\
-0 &\mbox {elsewhere}
-\end{array} \right .
+ P[X_1 = x_1, X_2 =  x_2]=
+ \begin{cases}
+  \frac{1}{36} & \text{if } 1 \leq x_1, x_2 \leq 6 \\
+  0 & \text{elsewhere}
+\end{cases}.
 $$
 
 is the joint p.m.f.
@@ -5024,7 +5027,7 @@ is the joint p.m.f.
 %% Slide https://tutor-web.net/math/math612.0/lecture310/slide30
 \subsection{The sum of discrete random variables}
 \subsubsection{Details}
-Suppose $X$ and $Y$ are discrete random values with a probability mass function p.  Let $Z=X+Y$. Then
+Suppose $X$ and $Y$ are discrete random values with a probability mass function $p$.  Let $Z=X+Y$. Then
 
 \begin{eqnarray*}
 P(Z=z) & = &\sum_{\{ (x,y): x+y=z\}} p(x,y)
@@ -5032,7 +5035,7 @@ P(Z=z) & = &\sum_{\{ (x,y): x+y=z\}} p(x,y)
 
 \subsubsection{Examples}
 \begin{xmpl}
-$X,Y = outcomes$,
+$(X,Y) = \text{outcomes}$,
 
 \begin{verbatim}
     [,1] [,2] [,3] [,4] [,5] [,6]
@@ -5084,20 +5087,28 @@ If X and Y are c.r.v. with joint p.d.f. $f$ and $Z=X+Y$, then we can find the de
 
 If X and Y $\sim$ U(0,1), independent and $Z=X+Y$ then 
  
-$P[Z \leq z]= \left\{ \begin{array}{rcl}
-0 & \mbox{for}& z \leq0\\
-\frac{z^2}{2}& \mbox{for} & 0<z<1\\
-1 & \mbox{for}& z>2\\
-1-\frac{(2-z)^2}{2}& \mbox{for}&1<z<2
-\end{array}\right.$
-\\
-the density of z becomes \newline
-$g(z)= \left\{ \begin{array}{rcl}
-z & \mbox{for}& 0 <z \leq 1\\
-2-z& \mbox{for} & 1< z \leq 2\\
-0 & \mbox{for}& elsewhere
-\end{array}\right.$
+$$
+P[Z \leq z]= 
+\begin{cases}
+  0 & \text{for} & z \leq 0\\
+  \frac{z^2}{2} & \text{for} & 0<z<1\\
+  1 & \text{for}& z>2\\
+  1-\frac{(2-z)^2}{2} & \text{for} & 1<z<2
+\end{cases}
+$$
+
+the density of $z$ becomes 
+
+$$
+g(z)= 
+\begin{cases}
+  z & \text{for} & 0 <z \leq 1\\
+  2-z & \text{for} & 1< z \leq 2\\
+  0 & \text{for} & \text{elsewhere}
+\end{cases}.
+$$
 \end{xmpl}
+
 \begin{xmpl}
 
 To approximate the distribution of $Z=X+Y$ where $X,Y \sim U(0,1)$ i.i.d., we can use Monte Carlo simulation. So, generate 10.000 pairs, set them up in a matrix and compute the sum. 
@@ -5281,10 +5292,10 @@ and $f(x)\geq 0$ for all $\underline{x}\in \mathbb{R}^n$
 then $f$ is the {\em joint density} of
 
 $\mathbf{X}= \left( \begin{array}{ccc}
-X_1 \\ 
-\vdots \\
-X_n
-\end{array}\right)$
+  X_1 \\ 
+  \vdots \\
+  X_n
+  \end{array}\right).$
 
 If we have the joint density of some multidimensional random variable $X=(X_1,\ldots,X_n)$ given in this manner, then we can find the individual density functions of the $X_i$'s by integrating the other variables.
 
@@ -6949,13 +6960,13 @@ The $n$ x $n$ matrix \\
 =
 \left[
 \begin{array}{cccc}
-1 & 0 & \ldots & 0 \\
-0 & 1 & 0  & \vdots \\
-\vdots & 0  & \ddots & 0 \\
-0 & \ldots & 0 & 1 \\
+  1 & 0 & \ldots & 0 \\
+  0 & 1 & 0  & \vdots \\
+  \vdots & 0  & \dots & 0 \\
+  0 & \ldots & 0 & 1 \\
 \end{array} \right]
 \end{equation*}
-\\
+
 is the identity matrix. This is because if a matrix $\mathbf{A}$ is $n$ x $n$ then $\mathbf{A} \mathbf{I} = \mathbf{A}$ and $\mathbf{I} \mathbf{A}  = 
 \mathbf{A}$\\
 \end{minipage}
@@ -7050,7 +7061,7 @@ $\begin{bmatrix}
 \end{bmatrix}$ then $T_A$
 $\left(
 \begin{array}{ccc}
-   x \\
+  x \\
   y\\
   z\\
  \end{array} \right)$ = 
@@ -7251,9 +7262,9 @@ If $EY_i = \mu_i$ then we typically write
 
 $E(Y)=\left(
 \begin{array}{ccc}
-\mu_1 \\
-\vdots \\
-\mu_n
+  \mu_1 \\
+  \vdots \\
+  \mu_n
 \end{array} \right)=\mu$
 
 If $Cov(Y_i, Y_j) = \sigma{ij}$ and $V[Y_i]=\sigma_{ii} = \sigma_i^2$, then we define the matrix $$\boldsymbol{\Sigma} = (\sigma_{ij})$$
@@ -7271,15 +7282,15 @@ W
 
 then
 
-ET=
-$\begin{bmatrix}
+$ET=
+\begin{bmatrix}
 \Sigma a_i  \mu \\
 \Sigma b_i  \mu
 \end{bmatrix}$
 
 
-VT=
-$\boldsymbol{\Sigma}$ 
+$VT=
+\boldsymbol{\Sigma}$ 
 = $\sigma^2
 \begin{bmatrix}
 \Sigma a_i^2 & \Sigma a_i b_i \\
@@ -7301,7 +7312,6 @@ and
 
 $$
 V[a'Y] = a' \boldsymbol{\Sigma} a.
-$$
 \end{xmpl}
 
 %% Slide https://tutor-web.net/math/math612.0/lecture420/slide80
@@ -7309,6 +7319,7 @@ $$
 \fbox{
 \begin{minipage}{0.97\textwidth}
 Suppose 
+
 \[\mathbf{Y}
 =
 \left(
@@ -7324,6 +7335,7 @@ $$ \boldsymbol{\Sigma} = \sigma^2 \mathbf{I} $$
 }
 \subsubsection{Details}
 Note that if $Y_1, \ldots, Y_n$ are independent with common variance $\sigma^2$ then
+
 \[
 \boldsymbol{\Sigma}
 =
@@ -7435,7 +7447,10 @@ the rank of  $A$ = 2, since
       0 \\
       0 \\
     \end{array}
-   \right) \] \\ if and only if  
+   \right) \]
+
+if and only if  
+
  \[ \left( 
   \begin{array}{cc}
      k_1 \\
@@ -7446,7 +7461,7 @@ the rank of  $A$ = 2, since
       0 \\
       0 \\
     \end{array}
-   \right) \] \\
+   \right) \]
 
 so the columns are linearly independent.
 \end{xmpl}
@@ -7838,7 +7853,9 @@ In this matrix, the element in the $i^th$ row and $j^th$ column is $\frac{\parti
 \subsubsection{Examples}
 \begin{xmpl}
 
-For the function $$f(x,y)=\begin{pmatrix}
+For the function 
+
+$$f(x,y)=\begin{pmatrix}
   x^2 +y \\
   x y  \\
   x 
@@ -8205,20 +8222,22 @@ Note that if $X$ and $Y$ are independent then $ E [h (X)g (Y)] = E [h(X)] E[g(Y)
 Suppose $X,Y \in U (0,2)$ are  i.i.d then,
 
 $$
-f_X (x) =  \left \{ \begin{array}{rl}
-\frac {1}{2} &\mbox { if $0 \leq x \leq 2$} \\
-0 &\mbox {otherwise}
-\end{array} \right.
+f_X (x) = 
+\begin{cases}
+  \frac{1}{2} & \text{if } 0 \leq x \leq 2 \\
+  0 &\text{otherwise}
+\end{cases}.
 $$
 
 and similarly for $f_Y$.\\
 
 Next, note that,
 $$
-f(x,y) =  f_X (x) f_Y (y) = \left \{ \begin{array}{rl}
-\frac {1}{4} &\mbox { if $0 \leq x,y \leq 2 $} \\
-0 &\mbox {otherwise}
-\end{array} \right.
+f(x,y) =  f_X (x) f_Y (y) = 
+\begin{cases}
+  \frac{1}{4} &\text{if } 0 \leq x,y \leq 2\\
+  0 &\text{otherwise}
+\end{cases}.
 $$
 
 Also note that $f(x,y) \geq 0$ for all $ (x,y) \in \mathbb{R}^2 $ and 
@@ -8661,29 +8680,41 @@ So,
 $$E[\epsilon_{ij}\alpha_{i'}]=E[\alpha_i\epsilon_{i'j'}] = E\alpha_iE\epsilon_{i'j'}=0 .$$
 
 Further,
-$$E[\epsilon_{ij}\epsilon{i'j'}] = \left\{ \begin{array}{rl}
-\sigma^2 &\mbox {if $i=i', j=j'$}\\
-0 &\mbox {otherwise} 
-\end{array} \right.$$
+$$E[\epsilon_{ij}\epsilon{i'j'}] =
+  \begin{cases}
+  \sigma^2 & \text{if } i=i', j=j'\\
+  0 &\text{otherwise} 
+\end{cases}$$
+
 and
-$$ E[\alpha_{i}\alpha{i'}] = \left\{ \begin{array}{rl}
-\sigma^2_A &\mbox {if $i=i'$}\\
-0 &\mbox {if $i \neq i'$} 
-\end{array} \right. $$
+
+$$ 
+E[\alpha_{i}\alpha{i'}] =
+\begin{cases}
+\sigma^2_A &\text{if } i=i'\\
+0 &\text{if }i \neq i' 
+\end{cases}
+$$
+
 so
-$$ Cov(y_{ij},y_{i'j'}) = \left\{ \begin{array}{rl}
-\sigma_A^2+\sigma^2 &\mbox {if $i=i', j=j'$}\\
-\sigma'_A &\mbox {if $i=i', j \neq j'$}\\
-0 &\mbox {otherwise}
-\end{array} \right. $$
+
+$$ Cov(y_{ij},y_{i'j'}) = 
+\begin{cases}
+  \sigma_A^2+\sigma^2 & \text{if } i=i', j=j'\\
+  \sigma'_A & \text{if } i=i', j \neq j'\\
+  0 & \text{otherwise}
+\end{cases}. $$
 
 It follows that the correlation between measurements $y_{ij}$ and $y_{ij'}$ (within the same group) are
+
+$$
 \begin{align*}
-cor(y_{ij},y_{ij'} &= \frac{Cov(y_{ij},y_{ij'})}{\sqrt{v[y_{ij}]v[y_{ij'}]}}\\
-                   &= \frac{\sigma_A^2}{\sqrt{(\sigma_A^2 + \sigma^2)^2}}
-\end{align*}
-$\Rightarrow Cor(y_{ij}, y_{ij'}) = \frac{\sigma_A^2}{\sigma_A^2 + \sigma^2}$\\
-\\
+Cor(y_{ij},y_{ij'}) &= \frac{Cov(y_{ij},y_{ij'})}{\sqrt{v[y_{ij}]v[y_{ij'}]}}\\
+                   &= \frac{\sigma_A^2}{\sqrt{(\sigma_A^2 + \sigma^2)^2}}\\
+                   &\Rightarrow Cor(y_{ij}, y_{ij'}) = \frac{\sigma_A^2}{\sigma_A^2 + \sigma^2}
+\end{align*}.
+$$
+
 This is the intra-class correlation.
 
 

@@ -109,6 +109,7 @@ def process_blocks(text):
                 block_stack.append(match.group(1))
                 if match.group(1) in block_headers:
                     resultlines.append('> ' * len(block_stack) + block_headers[match.group(1)])
+                    resultlines.append('> ' * len(block_stack))
             else:
                 # Ending a block
                 block_stack.pop()
@@ -125,11 +126,24 @@ def process_blocks(text):
 # Right now, we want one output file with all PNG images and one with R blocks.
 image_regex = re.compile(r'::: picture\n(\d+)\n:::')
 rep_sets = [{
-    image_regex: replace_img(False)
+    image_regex: replace_img(False),
+    # Add newlines to prevent breaking of KaTeX
+    re.compile(r'(\$\$.+?\$\$) ?(.+?)'): '\\1\n\\2',
+    # Remove redundant backslashes
+    re.compile(r'\\\n\$\$'): '\n$$',
+    # Cleaning up one particular example
+    re.compile(r'\\####'): '####',
 },
 {
-    image_regex: replace_img(True)
-}]
+    image_regex: replace_img(True),
+    # Add newlines to prevent breaking of KaTeX
+    re.compile(r'(\$\$.+?\$\$) ?(.+?)'): '\\1\n\\2',
+    # Remove redundant backslashes
+    re.compile(r'\\\n\$\$'): '\n$$',
+    # Cleaning up one particular example
+    re.compile(r'\\####'): '####',
+}
+]
 
 
 f = open(sys.argv[1], encoding='utf8')
