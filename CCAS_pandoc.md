@@ -82,7 +82,9 @@ satisfy $n+m=m+n$\".\
 An arbitrary element of $\mathbb{N}$ is most commonly denoted by
 $i,\ j,\ n$,or $m$, but any symbol, $a,\ b,\ c, \ldots$, can be used.\
 Several rules of arithmetic apply (some by definition, others can be
-derived) such as $$\begin{aligned}
+derived) such as
+
+$$\begin{aligned}
 ab&=&ba\\
 a+b&=&b+a\\
 a+bc&=&a+(bc)\\
@@ -3262,7 +3264,9 @@ If $f(x)=x^n$, then $f'(x)=nx^{n-1}$.
 ### Details
 
 Let $f(x)=x^n$, where $n$ is a positive integer. To calculate $f'$ we
-use the binomial theorem in the third step: $$\begin{aligned}
+use the binomial theorem in the third step:
+
+$$\begin{aligned}
 \frac{f(x+h)-f(x)}{h}&=\frac{(x+h)^n-x^n}{h}\\
 &=\frac{\sum_{q=0}^{n-1}\binom{n}{q}x^qh^{n-q}}{h}\\
 &=\sum_{q=0}^{n-1}\binom{n}{q}x^qh^{n-q-1}\to\binom{n}{n-1}x^{n-1}=nx^{n-1}\end{aligned}$$

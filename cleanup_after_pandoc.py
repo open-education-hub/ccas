@@ -138,8 +138,8 @@ rep_sets = [{
 {
     image_regex: replace_img(True),
     # Add newlines to prevent breaking of KaTeX or other LaTeX interpretors
-    re.compile(r'(.+?)\$\$'): '\\1\n$$',
-    re.compile(r'(\$\$.+?\$\$) ?(.+?)'): '\\1\n\\2',
+    re.compile(r'(.+?)\$\$'): '\\1\n\n$$',
+    re.compile(r'(\$\$.+?\$\$) ?(.+?)'): '\\1\n\n\\2',
     # Remove redundant backslashes
     re.compile(r'\\\n\$\$'): '\n$$',
     # Cleaning up one particular example
