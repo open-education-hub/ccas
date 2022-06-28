@@ -78,6 +78,15 @@ def replace_img(prefer_png=False):
             return "[IMAGE MISSING]"
     return do_replace
 
+dollar_counter = 0
+def replace_dollars(match):
+    global dollar_counter
+    dollar_counter += 1
+    if dollar_counter % 2 == 1:
+        return '\n\n$$'
+    else:
+        return '$$\n\n'
+
 # Replace method
 def replace_all(text, dic):
     for i, j in dic.items():
@@ -128,22 +137,25 @@ image_regex = re.compile(r'::: picture\n(\d+)\n:::')
 rep_sets = [{
     image_regex: replace_img(False),
     # Add newlines to prevent breaking of KaTeX or other LaTeX interpretors
-    re.compile(r'(.+?)\$\$'): '\\1\n$$',
-    re.compile(r'(\$\$.+?\$\$) ?(.+?)'): '\\1\n\\2',
-    # Remove redundant backslashes
-    re.compile(r'\\\n\$\$'): '\n$$',
-    # Cleaning up one particular example
-    re.compile(r'\\####'): '####',
-},
-{
-    image_regex: replace_img(True),
-    # Add newlines to prevent breaking of KaTeX or other LaTeX interpretors
     re.compile(r'(.+?)\$\$'): '\\1\n\n$$',
     re.compile(r'(\$\$.+?\$\$) ?(.+?)'): '\\1\n\n\\2',
     # Remove redundant backslashes
     re.compile(r'\\\n\$\$'): '\n$$',
     # Cleaning up one particular example
     re.compile(r'\\####'): '####',
+    re.compile(r'\$\$'): replace_dollars
+},
+{
+    image_regex: replace_img(True),
+    # Add newlines to prevent breaking of KaTeX or other LaTeX interpretors
+    #re.compile(r'(.+?)\$\$'): '\\1\n\n$$',
+    #re.compile(r'(\$\$.+?\$\$) ?(.+?)'): '\\1\n\n\\2',
+    #re.compile(r'\n\n\$\$'): '\n$$',
+    # Remove redundant backslashes
+    re.compile(r'\\\n\$\$'): '\n$$',
+    # Cleaning up one particular example
+    re.compile(r'\\####'): '####',
+    re.compile(r'\$\$'): replace_dollars
 }
 ]
 
