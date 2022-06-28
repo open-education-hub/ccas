@@ -81,6 +81,7 @@ An arbitrary element of $\mathbb{N}$ is most commonly denoted by
 $i,\ j,\ n$,or $m$, but any symbol, $a,\ b,\ c, \ldots$, can be used.\
 Several rules of arithmetic apply (some by definition, others can be
 derived) such as 
+
 $$\begin{aligned}
 ab&=&ba\\
 a+b&=&b+a\\
