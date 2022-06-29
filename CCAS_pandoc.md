@@ -884,10 +884,10 @@ $$n!= n\cdot(n-1) \cdot(n-2)\cdots \ldots \cdot 3 \cdot 2 \cdot 1 .$$
 ::: xmpl
 Suppose you have 6 apples, $\{a, b, c, d, e, f\}$ and you want to put
 each one into a different apple basket, $\{1,2,3,4,5,6\}$.\
-For the first basket you can choose from 6 apples $\{a, b, c, d, e,
-f\}$, and for the second basket you have then 5 apples to choose from
-and so it goes for the rest of the baskets, so for the last one you only
-have 1 apple to choose from.\
+For the first basket you can choose from 6 apples $\{a, b, c, d, e,f\}$,
+and for the second basket you have then 5 apples to choose from and so
+it goes for the rest of the baskets, so for the last one you only have 1
+apple to choose from.\
 The end result would then be:
 $6! = 6 \cdot 5 \cdot 4 \cdot 3 \cdot 2 \cdot 1 = 720$ possible
 allocations.\
