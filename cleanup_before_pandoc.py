@@ -57,7 +57,7 @@ reps = {
     # Fixing spacing issues pandoc creates with concurrent lines of centered math
     re.compile(r'\$\$\n\$\$'): '$$\n\n$$',
     # Add newlines to prevent breaking of KaTeX or other LaTeX interpretors
-    re.compile(r'(\$\$.+?\$\$) ?(.+?)'): '\\1\n\n\\2',
+    #re.compile(r'(\$\$.+?\$\$) ?(.+?)'): '\\1\n\n\\2',
     # Fixing some of the redundant backslashes
     re.compile(r' ?\\\\\n\\((begin)|(end))'): '\n\\\\\\1',
     # Preventing image locations from being lost in conversion

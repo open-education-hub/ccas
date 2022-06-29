@@ -289,16 +289,12 @@ $$\frac{\frac{16}{15}}{\frac{5}{6}} {=} \frac{16}{15} \cdot \frac{6}{5} = \frac{
 We can see that in the last step of the equation, the factor has been
 simplified. To do this we use factoring. Here we obtain:
 
-$$\frac{96}{75}$$
-
-= $$\frac{3\cdot 32}{3\cdot 25}$$
+$$\frac{96}{75}$$ = $$\frac{3\cdot 32}{3\cdot 25}$$
 
 We can now remove \"3\", or the multiplier, as it is on both sides of
 the fraction. So we have:
 
-$$\frac{32}{25}$$
-
-= $$\frac{25}{25}+\frac{7}{25} 
+$$\frac{32}{25}$$ = $$\frac{25}{25}+\frac{7}{25} 
 =1\frac{7}{25}$$
 
 In step 1 above we used Cross-Multiplication.
@@ -308,15 +304,12 @@ In step 1 above we used Cross-Multiplication.
 reciprocal of the denominator.
 :::
 
-So in this case we rewrite $$\frac{\frac{16}{15}}{\frac{5}{6}}$$
+So in this case we rewrite $$\frac{\frac{16}{15}}{\frac{5}{6}}$$ or
+$$\frac{16}{15} \div \frac{5}{6}$$ as
+$$\frac{16}{15} \cdot \frac{6}{5}$$
 
-or $$\frac{16}{15} \div \frac{5}{6}$$
-
-as $$\frac{16}{15} \cdot \frac{6}{5}$$
-
-As you can see all we are doing is turning $$\frac{5}{6}$$
-
-upside down: and multiplying it with $$\frac{16}{15}$$
+As you can see all we are doing is turning $$\frac{5}{6}$$ upside down:
+and multiplying it with $$\frac{16}{15}$$
 
 This gives:
 
@@ -334,9 +327,8 @@ $$(\sqrt{\frac{1}{9}} \times 2^4) + (\frac{1}{5} \times \sqrt{25}).$$
 To evaluate this expression, first consider separately the two parts on
 each side of the plus symbol.
 
-The first part is $$(\sqrt{\frac{1}{9}} \times 2^4)$$
-
-and the second part is $$(\frac{1}{5} \times \sqrt{25}).$$
+The first part is $$(\sqrt{\frac{1}{9}} \times 2^4)$$ and the second
+part is $$(\frac{1}{5} \times \sqrt{25}).$$
 
 In addition, by definition of root,
 $$\sqrt{\frac{1}{9}} = \frac{1}{3}.$$
@@ -361,21 +353,17 @@ BODMAS (brackets, multiplication/division, then addition/subtraction).
 
 $$(\frac{1}{4}\cdot\frac{5}{3}) = \frac{5}{12}$$
 
-After solving the bracket we can proceed with adding $$\frac{4}{2}$$
-
-to $$\frac{5}{12}$$
-
-as there is no other action left for the nominator of the main fraction.
-So:
+After solving the bracket we can proceed with adding $$\frac{4}{2}$$ to
+$$\frac{5}{12}$$ as there is no other action left for the nominator of
+the main fraction. So:
 
 $$\frac{4}{2}+\frac{5}{12}$$
 
 When adding fractions together we first have to find a common
-denominator, in this case 12 would work as $$2\cdot6=12$$
-
-So we multiply both the numerator and the denominator of that fraction
-by 6 and then add the two numerators of the fractions together, keeping
-the same denominator.
+denominator, in this case 12 would work as $$2\cdot6=12$$ So we multiply
+both the numerator and the denominator of that fraction by 6 and then
+add the two numerators of the fractions together, keeping the same
+denominator.
 
 $$\frac{4}{2}+\frac{5}{12}=\frac{4\cdot6}{2\cdot6}+\frac{5}{12}=\frac{24}{12}+\frac{5}{12}=\frac{29}{12}$$
 
@@ -386,16 +374,13 @@ trick is derived from the fact that if you divide a fraction by its
 duplicate you get 1. If you multiple a fraction by its reciprocal (it's
 reverse) you also get 1. Like so:
 
-$$\frac{1}{2}\div\frac{1}{2}=1$$
-
-and $$\frac{1}{2}\cdot\frac{2}{1}=1$$
+$$\frac{1}{2}\div\frac{1}{2}=1$$ and $$\frac{1}{2}\cdot\frac{2}{1}=1$$
 
 These functions always provide the same result and therefore we can turn
 the fraction we are dividing by upside down and multiply it to the other
 fraction as that is usually much easier.\
-We can therefore rewrite $$\frac{2}{6}\div\frac{1}{5}$$
-
-as $$\frac{2}{6}\cdot\frac{5}{1}=\frac{10}{6}$$
+We can therefore rewrite $$\frac{2}{6}\div\frac{1}{5}$$ as
+$$\frac{2}{6}\cdot\frac{5}{1}=\frac{10}{6}$$
 
 We've now solved both halves of the original fraction and can therefore
 proceed to solve it, again with the cross multiplication technique as
@@ -403,10 +388,8 @@ fractions are after all just divisions:
 
 $$\frac{29}{12}\div\frac{10}{6}=\frac{29}{12}\cdot\frac{6}{10}=\frac{174}{120}$$
 
-Now $$\frac{174}{120}$$
-
-is a pretty bad looking fraction and we'd preferably like to simplify
-it.\
+Now $$\frac{174}{120}$$ is a pretty bad looking fraction and we'd
+preferably like to simplify it.\
 To do this we use factoring.
 
 ::: defn
@@ -421,24 +404,17 @@ and 120 respectively.\
 A way of doing this in your head is by first dividing both numbers
 (174,120) by two. Which gives us:
 
-$$\frac{2\cdot87}{2\cdot60}$$
-
-and then dividing those numbers (87,60) by 3, since they can't be
-divided by 2. Dividing by 3 gives you
-$$\frac{3\cdot29}{3\cdot20}=\frac{29}{20}$$
-
-which is a lot nicer than $$\frac{174}{120}$$
+$$\frac{2\cdot87}{2\cdot60}$$ and then dividing those numbers (87,60) by
+3, since they can't be divided by 2. Dividing by 3 gives you
+$$\frac{3\cdot29}{3\cdot20}=\frac{29}{20}$$ which is a lot nicer than
+$$\frac{174}{120}$$
 
 The reasoning behind this factoring simplification is that we can remove
 multipliers if they are on both sides of a fraction. This is because the
 result of a fraction where the numerator and the denominator are the
 same is always 1. Like so:
 
-$$\frac{1}{1}=1$$
-
-or $$\frac{2}{2}=1$$
-
-or $$\frac{3}{3}=1$$
+$$\frac{1}{1}=1$$ or $$\frac{2}{2}=1$$ or $$\frac{3}{3}=1$$
 
 The final answer therefore is
 
@@ -514,15 +490,10 @@ We take the square root to get $$c$$
 $$c=\sqrt{2}$$
 
 Now that we answered the first part of the question, it needs to be
-defined, which class of number $$\sqrt{2}$$
-
-belongs to. $$\sqrt{2}$$
-
-is an irrational number, and belongs thereby to the set of real numbers
-$$\mathbb{R}$$
-
-Real numbers can be imagined as points on an infinitely long line, which
-is also called the real line.
+defined, which class of number $$\sqrt{2}$$ belongs to. $$\sqrt{2}$$ is
+an irrational number, and belongs thereby to the set of real numbers
+$$\mathbb{R}$$ Real numbers can be imagined as points on an infinitely
+long line, which is also called the real line.
 :::
 
 **Copyright** 2021, Gunnar Stefansson (editor) with contributions from
@@ -727,13 +698,9 @@ How to remove all indices below a certain value in R
 
 ::: xmpl
 Consider a function that takes to vectors
-$$a \in \mathbb{R}^n, b \in \mathbb{N}^m$$
-
-as arguments with $$n \ge m$$
-
-and $$1 \le b_1,...,b_m \le n.$$
-
-The function returns the sum $$\sum_{i = 1}^m {a_b}_i$$
+$$a \in \mathbb{R}^n, b \in \mathbb{N}^m$$ as arguments with $$n \ge m$$
+and $$1 \le b_1,...,b_m \le n.$$ The function returns the sum
+$$\sum_{i = 1}^m {a_b}_i$$
 
 Long version:\
 `f`N \<- function(a,b) \
@@ -1199,9 +1166,7 @@ match given that their probability of a winning is 0.4 if they play 3
 times in a season. This can be computed as follows:\
 $$\binom{30}{3} \times (0.4)^3 \times (1-0.4)^{30-3}$$
 
-$$=0.000265$$
-
-\
+$$=0.000265$$\
 This can be calculated in R using the code below:
 
     dbinom(3,30,0.4)
@@ -1247,14 +1212,11 @@ $$= 0.00672$$
 The probability that the youngster will put his shirt on the right way
 for at least four out of five is thus 0,7%.\
 This is possible to calculate in R in a several ways, either using the
-command dbinom or pbinom. The command dbinom calculates $$P(X = k)$$
-
-and the command pbinom calculates $$P(X \leq k)$$
-
-where $k$ is the number of successful trials. If $n$ is the number of
-trials and $p$ is the probability of a successful trials then the
-commands are used by writing: $dbinom$($k$,$n$,$p$) and
-pbinom($k$,$n$,$p$).\
+command dbinom or pbinom. The command dbinom calculates $$P(X = k)$$ and
+the command pbinom calculates $$P(X \leq k)$$ where $k$ is the number of
+successful trials. If $n$ is the number of trials and $p$ is the
+probability of a successful trials then the commands are used by
+writing: $dbinom$($k$,$n$,$p$) and pbinom($k$,$n$,$p$).\
 To calculate the probability that the youngster will put his shirt on
 the right way for at least four days of five we thus write the command:
 
@@ -1281,16 +1243,12 @@ or
 
 They give the answer 0.00672.\
 The fourth way of calculating this in R is to use pbinom. As said before
-pbinom calculates $$P(X \leq k)$$
-
-where $k$ is the number of successful trials. Here we want to calculate
-the probability that the youngster will put his shirt on the right way
-in 4 or 5 times (of 5 total) so the number of successful trials is 4 or
-greater. That means we want to calculate $$P(X \geq 4)$$
-
-which equals $$1 - P(X \leq 3).$$
-
-We thus put $k$ as 3 and the R command will be:
+pbinom calculates $$P(X \leq k)$$ where $k$ is the number of successful
+trials. Here we want to calculate the probability that the youngster
+will put his shirt on the right way in 4 or 5 times (of 5 total) so the
+number of successful trials is 4 or greater. That means we want to
+calculate $$P(X \geq 4)$$ which equals $$1 - P(X \leq 3).$$ We thus put
+$k$ as 3 and the R command will be:
 
     1 - pbinom(3,5,0.2)
 
@@ -1854,9 +1812,8 @@ Find the roots of the following polynomial
 $$3x^{4} + 14x^{2} + 15$$
 
 We can use the quadratic equation to solve for the roots of this
-polynomial if we substitute a variable for $$x^{2}$$
-
-Let's use the letter $$a$$
+polynomial if we substitute a variable for $$x^{2}$$ Let's use the
+letter $$a$$
 
 $$3a^{2} + 14a + 15$$
 
@@ -1868,18 +1825,13 @@ which simplifies to
 
 $$\frac{-(14) \pm \sqrt{196 - 180}}{6}$$
 
-which equals $$-1\frac{2}{3}$$
+which equals $$-1\frac{2}{3}$$ and $$-3.$$
 
-and $$-3.$$
+Then, since we substituted a for $$x^2$$ we need to take the square root
+of these values to get the roots of the polynomial.
 
-Then, since we substituted a for $$x^2$$
-
-we need to take the square root of these values to get the roots of the
-polynomial.
-
-So, $$x_{1,2} = \pm \sqrt{-1\frac{2}{3}}$$
-
-and $$x_{3,4} = \pm \sqrt{3}$$
+So, $$x_{1,2} = \pm \sqrt{-1\frac{2}{3}}$$ and
+$$x_{3,4} = \pm \sqrt{3}$$
 :::
 
 **Copyright** 2021, Gunnar Stefansson (editor) with contributions from
@@ -2426,9 +2378,7 @@ USA.
 
 ::: fbox
 If $f$ is a function, then the function $g$ is the inverse function of
-$f$ if $$g(f(x))=x$$
-
-for all $x$ in which $f(x)$ can be calculated
+$f$ if $$g(f(x))=x$$ for all $x$ in which $f(x)$ can be calculated
 :::
 
 ### Details
@@ -2477,13 +2427,8 @@ $f^{-1}(f(x)) = x$.
 What is the inverse function, $f^{-1}$, of $f$ if $f(x) = 5 + 4x$.\
 The simplest approach is to write $y=f(x)$ and solve for $x$:
 
-With $$f(x) = 5 + 4x$$
-
-we write $$y = 5 + 4x$$
-
-which we can now rewrite as $$y - 5 = 4x$$
-
-and this implies $$\frac{y-5}{4} = x$$
+With $$f(x) = 5 + 4x$$ we write $$y = 5 + 4x$$ which we can now rewrite
+as $$y - 5 = 4x$$ and this implies $$\frac{y-5}{4} = x$$
 
 And there we have it, very simple:
 
@@ -2494,9 +2439,8 @@ $$f^{-1}(f(x)) = \frac{y - 5}{4}$$
 
 ::: fbox
 When $x$ is a positive real number in $x=10^y$, $y$ is referred to as
-the base 10 logarithm of x and is written as: $$y=\log_{10}(x)$$
-
-or $$y=\log(x)$$
+the base 10 logarithm of x and is written as: $$y=\log_{10}(x)$$ or
+$$y=\log(x)$$
 :::
 
 ### Details
@@ -2513,16 +2457,11 @@ log(1000)&=& 3\end{aligned}$$
 :::
 
 ::: xmpl
-If $$\log(2) \approx 0.3$$
-
-then $$10^y=2$$
+If $$\log(2) \approx 0.3$$ then $$10^y=2$$
 
 ::: notes
-*Note 12*. Note that $$2^{10}=1024 \approx 1000 = 10^3$$
-
-therefore $$2 \approx 10^{3/10}$$
-
-so $$\log (2) \approx 0.3$$
+*Note 12*. Note that $$2^{10}=1024 \approx 1000 = 10^3$$ therefore
+$$2 \approx 10^{3/10}$$ so $$\log (2) \approx 0.3$$
 :::
 :::
 
@@ -2530,9 +2469,7 @@ so $$\log (2) \approx 0.3$$
 
 ::: fbox
 A logarithm with $e$ as a base is referred to as the natural logarithm
-and is denoted as $ln$ : $$y=ln(x)$$
-
-if $$x=e^y=exp(y)$$
+and is denoted as $ln$ : $$y=ln(x)$$ if $$x=e^y=exp(y)$$
 
 Note that $ln$ is the inverse of $exp$.
 
@@ -2573,10 +2510,9 @@ In general $\ln (x^c) = c \cdot \ln x$ for any real number c (for x\>0).
 
 Thus the multiplicative model (from above)
 
-$$y=a \cdot w^b \cdot x^c$$
-
-becomes $$y= (\ln a) + b \cdot \ln w + c \cdot \ln x$$ which is a linear
-model with parameters $(\ln a)$, $b$ and $c$.
+$$y=a \cdot w^b \cdot x^c$$ becomes
+$$y= (\ln a) + b \cdot \ln w + c \cdot \ln x$$ which is a linear model
+with parameters $(\ln a)$, $b$ and $c$.
 
 In addition, the log-transform is often variance-stabilizing.
 
@@ -2592,17 +2528,13 @@ $$x = e^y \Leftrightarrow y = \ln{x}$$
 ::: notes
 *Note 13*. Note the properties:
 
-$$\ln (x \cdot y) = \ln (x) + \ln (y)$$
-
-and $$e^a \cdot e^b = e^{a+b}$$
+$$\ln (x \cdot y) = \ln (x) + \ln (y)$$ and $$e^a \cdot e^b = e^{a+b}$$
 :::
 
 ### Examples
 
 ::: xmpl
-Solve the equation $$10e^{1/3x} + 3 = 24$$
-
-for $x$.
+Solve the equation $$10e^{1/3x} + 3 = 24$$ for $x$.
 
 First, get the 3 out of the way.
 
@@ -2617,9 +2549,7 @@ function of $e$ this would result in
 
 $$\frac{1}{3}x = \ln(2.1)$$
 
-This yields $$x = \ln(2.1) \cdot 3$$
-
-which is $$\approx 2.23$$
+This yields $$x = \ln(2.1) \cdot 3$$ which is $$\approx 2.23$$
 :::
 
 **Copyright** 2021, Gunnar Stefansson (editor) with contributions from
@@ -2866,9 +2796,8 @@ $e^{-x} \rightarrow \infty$.
 :::
 
 ::: xmpl
-Evaluate the limit of $$f(x) = \frac{\sqrt{x + 4} - 2}{x}$$
-
-as $$x \to 0$$
+Evaluate the limit of $$f(x) = \frac{\sqrt{x + 4} - 2}{x}$$ as
+$$x \to 0$$
 
 $$\lim_{x \to 0} \frac{\sqrt{x + 4} - 2}{x}$$
 
@@ -2881,12 +2810,9 @@ $$\frac{\sqrt{x + 4} - 2}{x} \cdot \frac{\sqrt{x + 4} + 2}{\sqrt{x + 4} + 2}$$
 
 This gives us
 $$\frac{(\sqrt{x + 4})^2 + 2(\sqrt{x+4}) - 2(\sqrt{x+4}) -4}{x(\sqrt{x + 4} + 2)}$$
-
 The numerator reduces to $x$, and the $x$'s will cancel out leaving us
-with $$\frac{1}{\sqrt{x + 4} + 2}$$
-
-At this point we can direct substitute 0 for $x$, which will give us
-$$\frac{1}{\sqrt{0 + 4} + 2}$$
+with $$\frac{1}{\sqrt{x + 4} + 2}$$ At this point we can direct
+substitute 0 for $x$, which will give us $$\frac{1}{\sqrt{0 + 4} + 2}$$
 
 Therefore, $$\lim_{x \to 0} \frac{\sqrt{x + 4} - 2}{x} = \frac{1}{4}$$
 :::
@@ -2997,17 +2923,13 @@ defined.\
 Consider a sequence of numbers, $(a_n)_{n\to\infty}$.
 
 Now define another sequence $(s_n)_{n\to\infty},$ where
-$$s_n=\sum_{k=1}^na_k.$$
-
-If $(s_n)_{n\to\infty}$ is convergent to $S=\lim_{n\to\infty}s_n,$ then
-we write $$S=\sum_{n=1}^{\infty}a_n.$$
+$$s_n=\sum_{k=1}^na_k.$$ If $(s_n)_{n\to\infty}$ is convergent to
+$S=\lim_{n\to\infty}s_n,$ then we write $$S=\sum_{n=1}^{\infty}a_n.$$
 
 ### Examples
 
 ::: xmpl
-If $$a_k = x^k, k=0,1,.....$$
-
-\
+If $$a_k = x^k, k=0,1,.....$$\
 then $$s_n=\sum_{k=0}^{n}x^k=x^0+x^1+......+x^n$$ Note also that
 $$xs_n=x(x^0+x^1+......+x^n)= x + x^2 + ..... + x^{n+1}$$ We have
 $$s_n = 1 + x + x^2 + .... + x^n$$
@@ -3036,9 +2958,7 @@ The exponential function can be written as a series (infinite sum):
 $$e^x=\sum_{n=0}^{\infty}\frac{x^n}{n!}.$$
 
 Knowing this we can see why the Poisson probabilities
-$$p(x)=e^{-\lambda}\frac{\lambda^x}{x!}$$
-
-add to one:
+$$p(x)=e^{-\lambda}\frac{\lambda^x}{x!}$$ add to one:
 $$\sum_{x=0}^{\infty}p(x)=\sum_{x=0}^{\infty}e^{-\lambda}\frac{\lambda^x}{x!}=e^{-\lambda}\sum_{x=0}^{\infty}\frac{\lambda^x}{x!}=e^{-\lambda}e^{\lambda}=1.$$
 
 ## Relation to expected values
@@ -3117,10 +3037,8 @@ $$\frac {y_1 - y_0} {x_1 - x_0} .$$
 
 Thus, the slope of a line segment passing throught the points
 $(x_0,f(x_0))$ and $(x_1,f(x_1))$, for some function, $f$, is
-$$\frac {f(x_1) - f(x_0)} {x_1 - x_0}$$
-
-If we let $x_1 = x_0 + h$ then the slope of the segment is
-$$\frac {f(x_0+h) - f(x_0)} {h} .$$
+$$\frac {f(x_1) - f(x_0)} {x_1 - x_0}$$ If we let $x_1 = x_0 + h$ then
+the slope of the segment is $$\frac {f(x_0+h) - f(x_0)} {h} .$$
 
 ## The slope of $y=x^2$
 
@@ -3137,9 +3055,7 @@ given point.
 
 Consider the function $y = f(x) = x^2$.\
 In order to find the slope at a given point $(x_0 )$, we look at
-$$y = \frac{f (x_0 +h) - f(x_0)} {h}$$
-
-for small values of $h$.\
+$$y = \frac{f (x_0 +h) - f(x_0)} {h}$$ for small values of $h$.\
 For this particular function, $f (x) = x^2$, and hence
 $$f (x_0 +h) = (x_0 +h) ^2  = x^2 + 2hx_0 + h^2 .$$
 
@@ -3166,12 +3082,9 @@ $(x_0,f(x_0))$ is $$\lim_{h\to0}\frac{f(x_0+h)-f(x_0)}{h}.$$
 
 To find the slope of the tangent to a curve at a point, we look at the
 slope of a line segment between the points $(x_0,f(x_0))$ and
-$(x_0+h,f(x_0+h))$, which is $$\frac{f(x_0+h)-f(x_0)}{h}$$
-
-and then we take $h$ to be closer and closer to $0$. Thus the slope is
-$$\lim_{h\to0}\frac{f(x_0+h)-f(x_0)}{h}$$
-
-when this limit exists.
+$(x_0+h,f(x_0+h))$, which is $$\frac{f(x_0+h)-f(x_0)}{h}$$ and then we
+take $h$ to be closer and closer to $0$. Thus the slope is
+$$\lim_{h\to0}\frac{f(x_0+h)-f(x_0)}{h}$$ when this limit exists.
 
 ### Examples
 
@@ -3179,7 +3092,6 @@ when this limit exists.
 We wish to find tangent line for the function $f(x)=x^2$ at the point
 $(1,1)$. First we need to find the slope of this tangent, it is given as
 $$\lim_{h\to0}\frac{(1+h)^2-1^2}{h}=\lim_{h\to0}\frac{2h+h^2}{h}=\lim_{h\to0}(2+h)=2.$$
-
 Then, since we know the tangent goes through the point $(1,1)$ the line
 is $y=2x-1$.
 :::
@@ -3220,18 +3132,14 @@ USA.
 
 ::: fbox
 The derivative of the function $f$ at the point $x$ is defined as
-$$\lim_{h \to 0} \frac{f(x+h) - f(x)}{h}$$
-
-if this limit exists.
+$$\lim_{h \to 0} \frac{f(x+h) - f(x)}{h}$$ if this limit exists.
 :::
 
 ### Details
 
 ::: defn
 The derivative of the function f at the point x is defined as
-$$\lim_{h \to 0} \frac{f(x+h) -f(x)}{h}$$
-
-if this limit exists.
+$$\lim_{h \to 0} \frac{f(x+h) -f(x)}{h}$$ if this limit exists.
 :::
 
 When we write $y = f(x)$, we commonly use the notation $\frac{dy}{dx}$
@@ -3252,7 +3160,6 @@ $$\lim_{h \to 0} \frac{f(x+h)-f(x)}{h} = \lim_{h \to 0} \frac{bh}{h}=b$$
 
 If $f(x) = a + bx$ then $f(x + h) = a+ b(x + h) = a + bx + bh$ and thus
 $$\lim_{h \to 0} \frac{f(x+h)-f(x)}{h} = \lim_{h \to 0} \frac{bh}{h}=b.$$
-
 Thus $f'(x)=b$.
 
 ## The derivative of $f(x)=x^n$
@@ -3598,13 +3505,9 @@ So,
 
 $$0 =  x-pn$$
 
-$$p = \frac{x}{n}$$
+$$p = \frac{x}{n}$$ is the extreme and so we can write
 
-is the extreme and so we can write
-
-$$\hat{p} = \frac{x}{n}$$
-
-for the MLE
+$$\hat{p} = \frac{x}{n}$$ for the MLE
 :::
 
 ## Least squares estimation
@@ -3775,21 +3678,16 @@ distribution function (c.d.f.).
 
 ::: defn
 If $X$ is a random variable such that\
-$$P(a\leq X\leq b)=\int\limits^{b}_{a}f(x)dx,$$
-
-\
+$$P(a\leq X\leq b)=\int\limits^{b}_{a}f(x)dx,$$\
 for some function $f$ which satisfies $f(x)\geq0$ for all $x$ and\
-$$\int\limits^\infty_{-\infty} f(x)dx = 1$$
-
-\
+$$\int\limits^\infty_{-\infty} f(x)dx = 1$$\
 then $f$ is said to be a **probability density function (p.d.f.)** for
 $X$.
 :::
 
 ::: defn
-The function $$F(x)= \int\limits^{x}_{-\infty} f(t)dt$$
-
-is the **cumulative distribution function (c.d.f.)**.
+The function $$F(x)= \int\limits^{x}_{-\infty} f(t)dt$$ is the
+**cumulative distribution function (c.d.f.)**.
 :::
 
 ### Examples
@@ -3902,9 +3800,7 @@ The two most common \"tricks\" applied in integration are a) integration
 by parts and b) integration by substitution.\
 a) **Integration by parts**\
 $$(fg)'=f'g+fg'$$ by integrating both sides of the equation we obtain:
-$$fg=\int f'g dx + \int fg' dx \Leftrightarrow \int fg' dx=fg-\int f'g dx$$
-
-\
+$$fg=\int f'g dx + \int fg' dx \Leftrightarrow \int fg' dx=fg-\int f'g dx$$\
 b) **Integration by substitution**\
 Consider the definite integral $\int_a^b f(x) dx$ and let $g$ be a
 one-to-one differential function for the interval $(c,d)$ to $(a,b)$.
@@ -4548,7 +4444,6 @@ or $\frac{10}{1024}$
 Suppose $X$ has a uniform distribution between $0$ and $1$, i.e.
 $X \sim U(0,1)$. Then the $punif$ function will return probabilities of
 the form $$P[X \leq x]= \int_{-\infty}^{x} f(t)dt= \int_{0}^{x} f(t)dt$$
-
 where $f(t)=1$ if $0 \leq t \leq 1$ and $f(t)=0$. For example:
 
     punif(0.75)
@@ -4904,9 +4799,7 @@ Let $X,Y\sim N(0,1)$. Then $E[X^2+Y^2] = 1+1=2$.
 
 ::: fbox
 If $x_1,....,x_n$ and $y_1,....,y_n$ are numbers, and we set
-$$z_i=x_i + y_i$$
-
-$$w_i=ax_i$$ where a\>0, then
+$$z_i=x_i + y_i$$ $$w_i=ax_i$$ where a\>0, then
 $$\overline{z} = \frac{1}{n} \sum_{i=1}^{n} z_i= \overline{x} + \overline{y}$$
 
 $$\overline{w}= a\overline{x}$$
@@ -4915,9 +4808,7 @@ $$s_w^2=\frac{1}{n-1}\sum_{i=1}^{n}(w_i-\overline{w})^2$$
 
 $$= \frac{1}{n-1}\sum_{i=1}^{n}(ax_i-a\overline{x})^2$$
 
-$$= a^2s_x^2$$
-
-and $$s_w=as_x$$
+$$= a^2s_x^2$$ and $$s_w=as_x$$
 :::
 
 ### Examples
@@ -4986,9 +4877,7 @@ and the joint density becomes\
 $$\frac{1}{2\pi\sigma_1\sigma_2} \: e^{-\frac{(x-\mu_1)^2}{2\sigma_1^2}-\frac{(y-\mu_2)^2}{2\sigma_2^2}}$$
 
 Now, suppose $X_1,\ldots,X_n\sim n(\mu,\sigma^2)$ are i.i.d., then\
-$$f(\underline{x})=\frac{1}{(2\pi)^\frac{n}{2}\sigma^n}\; e^{-\displaystyle\sum^{n}_{i=1} \frac{(x_i-\mu)^2}{a\sigma^2}}$$
-
-\
+$$f(\underline{x})=\frac{1}{(2\pi)^\frac{n}{2}\sigma^n}\; e^{-\displaystyle\sum^{n}_{i=1} \frac{(x_i-\mu)^2}{a\sigma^2}}$$\
 is the multivariate normal density in the case of i.i.d. variables.
 
 ## More general multivariate probability density functions
@@ -5073,9 +4962,8 @@ $\mu = E \left[ X_1 + X_2 \right] = \mu_1 + \mu_2$ and\
 $\sigma^2 = V \left[ X_1 + X_2 \right]$ with
 $\sigma^2 = \sigma_{1}^2 + \sigma_{2}^2$\
 if $X_1$ and $X_2$ are independent.\
-Similarly $$\sum_{i=1}^{n} X_i$$
-
-is normal if $X_1 , \ldots , X_n$ are normal and independent.
+Similarly $$\sum_{i=1}^{n} X_i$$ is normal if $X_1 , \ldots , X_n$ are
+normal and independent.
 
 ### Examples
 
@@ -5101,9 +4989,7 @@ Simulating and plotting a single normal distribution. $Y \sim n(0,1)$
 ::: xmpl
 Sum of two normal distributions.
 
-$$Y_1 \sim n(2, 2^2)$$
-
-and $$Y_2 \sim n(3, 3^2)$$
+$$Y_1 \sim n(2, 2^2)$$ and $$Y_2 \sim n(3, 3^2)$$
 
     y1<-rnorm(10000,2,2)    # n(2,2^2)
     y2<-rnorm(10000,3,3)    # n(3, 3^2)
@@ -5189,7 +5075,6 @@ $$Y_1 + Y_2 = \chi^2_{\nu_1+ \nu_2}$$
 
 ::: notes
 *Note 20*. Recall that if $$X_1, \ldots, X_n \sim n (\mu, \sigma^2)$$
-
 are i.i.d., then
 
 $$\sum_{i=1}^n \left ( \frac {\bar{X} - \mu} {\sigma}\right ) ^2= \sum_{i=1}^n \frac {\left ( \bar{X} - \mu\right ) ^2} {\sigma}\sim \chi^2$$
@@ -5201,7 +5086,6 @@ $$\sum_{i=1}^n \left ( \frac {\bar{X} - \mu} {\sigma}\right ) ^2= \sum_{i=1}^n \
 If $X_1,\cdots,X_n \sim n(\mu,\sigma^2)$ i.i.d, then
 
 $$\sum_{i=1}^n \left ( \frac{X_i-\mu}{\sigma} \right )^2 \sim \chi_{n}^2,$$
-
 but we are often interested in
 
 $$\frac{1}{n-1}\sum_{i=1}^n (X_i-\bar{X})^2\sim \chi_{n-1}^2.$$
@@ -5214,7 +5098,6 @@ $X_1,\cdots,X_n \sim n(\mu,\sigma^2)$ i.i.d. Such a collection of random
 variables have properties which can be used in a number of ways.
 
 $$\sum_{i=1}^n \left ( \frac{X_i-\mu}{\sigma} \right )^2 \sim \chi_{n}^2,$$
-
 but we are often interested in
 
 $$\frac{1}{n-1}\sum_{i=1}^n (X_i-\bar{X})^2\sim \chi_{n-1}^2.$$
@@ -5236,10 +5119,9 @@ $\bar{x}$ = sample mean (a number)
 
 ::: fbox
 If $U\sim n(0,1)$ and $W\sim\chi^{2}_{\nu}$ are independent, then the
-random variable $$T=\frac{U}{\sqrt{\frac{w}{\nu}}}$$
-
-has a distribution which we call the t-distribution on $\nu$ degrees of
-freedom denoted $T \sim t_{\nu}$.
+random variable $$T=\frac{U}{\sqrt{\frac{w}{\nu}}}$$ has a distribution
+which we call the t-distribution on $\nu$ degrees of freedom denoted
+$T \sim t_{\nu}$.
 :::
 
 ### Details
@@ -5491,9 +5373,7 @@ $H_0$: true median = 0 using a count of the number of positive values.
 ::: fbox
 Consider testing
 
-$$H_0: \mu = \mu_0$$
-
-vs
+$$H_0: \mu = \mu_0$$ vs
 
 $$H_a: \mu > \mu_0$$
 
@@ -5527,13 +5407,9 @@ Consider the following data set:47, 42, 41, 45, 46.
 
 Suppose we want to test the following hypothesis
 
-$$H_0 : \mu = 42$$
+$$H_0 : \mu = 42$$ vs
 
-vs
-
-$$H_a : \mu > 42$$
-
-$\sigma = 2$ is given
+$$H_a : \mu > 42$$ $\sigma = 2$ is given
 
 The mean of the given data set can be calculated as
 
@@ -5566,9 +5442,8 @@ Consider testing $H_0: \mu=\mu_0$ versus $H_a: \mu \ne \mu_0$ based on
 observation from
 $\overline{X_1},..., \overline{X} \sim n(\mu, \sigma^2)$ i.i.d. where
 $\sigma^2$ is known. If $H_0$ is true, then
-$$Z: = \frac{\overline{x}-\mu_0}{\sigma \sqrt{n}} \sim n(0,1)$$
-
-and $$P[|z| > z^\star] = \alpha$$
+$$Z: = \frac{\overline{x}-\mu_0}{\sigma \sqrt{n}} \sim n(0,1)$$ and
+$$P[|z| > z^\star] = \alpha$$
 
 with $$z^\star = z_{1}$$
 
@@ -5606,11 +5481,8 @@ $$\frac{\overline{X}-\mu}{S/\sqrt{n}}\sim t_{n-1}$$
 
 To test the hypothesis $H_0:\mu=\mu_{0}$ vs $H_1:\mu > \mu_{0}$ first
 note that if $H_0$ is true, then
-$$T= \frac{\overline{X}-\mu_{0}}{S/\sqrt{n}} \sim t_{n-1}$$
-
-so $$P[T>t*]=\alpha$$
-
-if $$t*=t_{n-1,1-\alpha}$$
+$$T= \frac{\overline{X}-\mu_{0}}{S/\sqrt{n}} \sim t_{n-1}$$ so
+$$P[T>t*]=\alpha$$ if $$t*=t_{n-1,1-\alpha}$$
 
 Hence, we reject $H_0$ if the data $x_1,...,x_n$ results in a a value of
 $t:=\frac{\overline{x}-\mu_0}{S/\sqrt{n}}$ such that t\>t\*, otherwise
@@ -5622,9 +5494,8 @@ $H_0$ can not be rejected.
 Suppose the following data set (12,19,17,23,15,27) comes independently
 from a normal distribution and we need to test $H_0:\mu=\mu_0$ vs
 $H_a:\mu>\mu_0$. Here we have $n=6,\overline{x}=18.83, s=5.46, \mu_0=18$
-so we obtain $$t=\frac{\overline{x}-\mu_0}{s/\sqrt{n}}= 0.37$$
-
-so $H_0$ cannot be rejected.\
+so we obtain $$t=\frac{\overline{x}-\mu_0}{s/\sqrt{n}}= 0.37$$ so $H_0$
+cannot be rejected.\
 In R, t\* is found using qt(n-1,0.95) but the entire hypothesis can be
 tested using
 
@@ -5644,9 +5515,7 @@ $x_1,....,x_n$ and $y_1,...y_m$
 We know that if\
 $$X_1, ...., X_n \sim n(\mu_1,\sigma)$$
 
-$$Y_1, ...., Y_m \sim n(\mu_2,\sigma)$$
-
-are all independent then
+$$Y_1, ...., Y_m \sim n(\mu_2,\sigma)$$ are all independent then
 $$\bar{X}-\bar{Y} \sim n(\mu_1-\mu_2,\frac{\sigma^2}{n}+\frac{\sigma^2}{m})$$
 Further,
 $$\sum_{i=1}^{n} \frac{(X_i-\bar{X})^2}{\sigma^2} \sim X_{n-1}^{2}$$ and
@@ -5698,9 +5567,7 @@ hypothesis.
 
 ::: xmpl
 Consider a dataset and the following hypotheses\
-$$H_0:\mu=42$$
-
-vs. $$H_a:\mu>42$$ and suppose we obtain\
+$$H_0:\mu=42$$ vs. $$H_a:\mu>42$$ and suppose we obtain\
 $$z=2.3$$ We reject $H_0$ since $$2.3>1.645+z_{0.95}$$ The p-value is
 $$P[Z>2.3]= 1-\Phi(2.3)$$ obtained in R using
 
@@ -6002,9 +5869,8 @@ check is made whether it exceeds the critical point (1) or not (0).
 ::: fbox
 Suppose we want to test $H_0:\mu=\mu_0$ vs $H_a:\mu>\mu_0$. We will
 reject $H_0$ if the observed value
-$$z=\frac{\overline{x}-\mu_0}{\sigma/\sqrt{n}}$$
-
-is such that $z>z_{1-\alpha}$.
+$$z=\frac{\overline{x}-\mu_0}{\sigma/\sqrt{n}}$$ is such that
+$z>z_{1-\alpha}$.
 :::
 
 ### Details
@@ -6012,18 +5878,15 @@ is such that $z>z_{1-\alpha}$.
 Suppose we want to test $H_0:\mu=\mu_0$ vs $H_a:\mu>\mu_0$. So based on
 $X_1,...,X_n\sim n(\mu,\sigma ^2)$ i.i.d. with $\sigma^2$ known we will
 reject $H_0$ if the observed value
-$$z=\frac{\overline{x}-\mu_0}{\sigma/\sqrt{n}}$$
-
-is such that $z>z_{1-\alpha}$. The power is given by:
+$$z=\frac{\overline{x}-\mu_0}{\sigma/\sqrt{n}}$$ is such that
+$z>z_{1-\alpha}$. The power is given by:
 $$\beta(\mu)=1-\Phi(\frac{\mu-\mu_0}{\sigma/\sqrt{n}}+z_{1-\alpha})$$
 
 and describes the probability of rejecting $H_0$ when $\mu$ is the
 correct value of the parameter. Suppose we want to reject $H_0$ with a
 prespecified probability $\beta_1$, when $\mu_1$ is the true value of
 $\mu$. For this, we need to select the sample size so that
-$$\beta(\mu_1) \geq \beta_1$$
-
-i.e. find n which satisfies
+$$\beta(\mu_1) \geq \beta_1$$ i.e. find n which satisfies
 $$1-\Phi(\frac{\mu_1-\mu_0}{\sigma/\sqrt{n}}+z_{1-\alpha})\geq \beta_1$$
 
 ### Examples
@@ -6094,9 +5957,8 @@ We know that
 $$T:= \frac{\overline{X} - \mu}{s/\sqrt{n}} \sim_{t_n-1}$$
 
 and we will reject $H_0$ if the computed value
-$$t:= \frac{\overline{x} - \mu_0}{s/\sqrt{n}}$$
-
-is such that $$t>t^{\star}=t_{n-1, 1-\alpha}.$$
+$$t:= \frac{\overline{x} - \mu_0}{s/\sqrt{n}}$$ is such that
+$$t>t^{\star}=t_{n-1, 1-\alpha}.$$
 
 The power of this test is:
 
@@ -6345,7 +6207,6 @@ $\beta_1$ when $\mu_1$ and $\mu_2$ are true values of $\mu$. For this,
 we need to select the sample size $n$ and $m$ so that
 $\beta_(\mu_1\mu_2) \geq \beta_1$ i.e. find $n$ and $m$ which satisfies
 $$P_{\mu_1\mu_2} \left[ \frac{Z + \Delta}{\sqrt{U/(n+m-2)}} > t^*_{1-\alpha,n+m-2} \right]$$
-
 for a two sample, one-sided t-test.\
 Similarly for a two sample, two-sided t-test we need to find $n$ and $m$
 that satisfies
@@ -7145,9 +7006,8 @@ $$=
 = \sigma^2 \mathbf{I}$$
 
 If $A$ is an $m$ x $n$ matrix, then\
-$$E[A\mathbf{Y}] = A \mathbf{\mu}$$
-
-and $$V[A\mathbf{Y}] = A \boldsymbol{\Sigma} A'$$
+$$E[A\mathbf{Y}] = A \mathbf{\mu}$$ and
+$$V[A\mathbf{Y}] = A \boldsymbol{\Sigma} A'$$
 
 **Copyright** 2021, Gunnar Stefansson (editor) with contributions from
 very many students
@@ -7980,14 +7840,11 @@ which expectations exist.
 
 If $X$ and $Y$ are random variables with a joint distribution function
 $f(x,y)$, then it is true that for $h:\mathbb{R}^2\to\mathbb{R}$ we have
-$$E[h(X,Y)]=\int\int h(x,y)f(x,y)dxdy$$
-
-for those $h$ such that the integral on the right exists.\
+$$E[h(X,Y)]=\int\int h(x,y)f(x,y)dxdy$$ for those $h$ such that the
+integral on the right exists.\
 Suppose $X$ and $Y$ are independent continuous r.v., then
 
-$$f(x,y) = f_X (x) f_Y (y)$$
-
-Thus, $$E[XY] = \int\int xy f (x,y) dxdy$$
+$$f(x,y) = f_X (x) f_Y (y)$$ Thus, $$E[XY] = \int\int xy f (x,y) dxdy$$
 
 $$= \int\int xy f_X (x) f_Y (y) dxdy$$
 
@@ -8140,9 +7997,8 @@ Suppose $X \sim G (\alpha, \beta)$ i.e. $X$ has density
 
 $$f(x) = \frac{x^{\alpha -1} e^{-x/\beta}} {\Gamma (\alpha) \beta^{\alpha}} , x > 0$$
 
-Then, $$E[X] = \alpha\beta$$
-
-$$M(t) = (1-\beta t)^{-\alpha}$$ $$V[X] = \alpha \beta^2$$
+Then, $$E[X] = \alpha\beta$$ $$M(t) = (1-\beta t)^{-\alpha}$$
+$$V[X] = \alpha \beta^2$$
 :::
 
 ### Details
@@ -8576,7 +8432,6 @@ $\mathbf{\hat{u}}$, this is normally done using BLUP.
 
 Recall that if $W$ is a random variable vector with $EW = \mu$ and
 $VW= \boldsymbol{\Sigma}$ then $$E[AW] = A\mathbf{\mu}$$
-
 $$V[AW]= A \boldsymbol{\Sigma} A'$$
 
 In particular, if $W \sim n(\mu, \boldsymbol{\Sigma}($ then
@@ -8585,7 +8440,6 @@ Now consider the lmm with
 
 $$y = X \boldsymbol{\beta} + Zu + \boldsymbol{\epsilon}$$ where
 $$u = (u_1 , \ldots , u_m)'$$
-
 $$\boldsymbol{\epsilon} = (\epsilon_1 , \ldots , \epsilon_m)'$$ and the
 random variables $U_i \sim n(0, \sigma^2_A)$,
 $\epsilon_i \sim n(0, \sigma^2)$ are all independent so that

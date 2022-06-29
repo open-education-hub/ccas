@@ -143,8 +143,8 @@ rep_sets = [{
     # Cleaning up one particular example
     re.compile(r'\\####'): '####',
     # Add newlines to prevent breaking of KaTeX or other LaTeX interpretors
-    re.compile(r'(\n{0,2})\$\$(\n{0,2})'): replace_dollars,
-    # Workaround for a LaTeX rendering bug
+    #re.compile(r'(\n{0,2})\$\$(\n{0,2})'): replace_dollars,
+    # Workaround for a LaTeX rendering bug (doesn't work correctly!)
     #re.compile(r'([^\$\\])\$([^\$])'): '\\1 $\\2',
 },
 {
@@ -154,8 +154,8 @@ rep_sets = [{
     # Cleaning up one particular example
     re.compile(r'\\####'): '####',
     # Add newlines to prevent breaking of KaTeX or other LaTeX interpretors
-    re.compile(r'(\n{0,2})\$\$(\n{0,2})'): replace_dollars,
-    # Workaround for a LaTeX rendering bug
+    #re.compile(r'(\n{0,2})\$\$(\n{0,2})'): replace_dollars,
+    # Workaround for a LaTeX rendering bug (doesn't work correctly!)
     #re.compile(r'([^\$\\])\$([^\$])'): '\\1 $\\2',
 }
 ]
