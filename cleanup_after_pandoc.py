@@ -136,16 +136,14 @@ def process_blocks(text):
 image_regex = re.compile(r'::: picture\n(\d+)\n:::')
 rep_sets = [{
     image_regex: replace_img(False),
-    re.compile(r'(.+?)\$\$'): '\\1\n\n$$',
-    re.compile(r'(\$\$.+?\$\$) ?(.+?)'): '\\1\n\n\\2',
     # Remove redundant backslashes
     re.compile(r'\\\n\$\$'): '\n$$',
     # Cleaning up one particular example
     re.compile(r'\\####'): '####',
     # Add newlines to prevent breaking of KaTeX or other LaTeX interpretors
     re.compile(r'(\n{0,2})\$\$(\n{0,2})'): replace_dollars,
-    # Workaround for a LaTeX rendering bug (doesn't work correctly!)
-    #re.compile(r'([^\$\\])\$([^\$])'): '\\1 $\\2',
+    # Workaround for a LaTeX rendering bug (Adds spaces that aren't swallowed by Pandoc
+    'BIL': ' ',
 },
 {
     image_regex: replace_img(True),
@@ -155,8 +153,8 @@ rep_sets = [{
     re.compile(r'\\####'): '####',
     # Add newlines to prevent breaking of KaTeX or other LaTeX interpretors
     re.compile(r'(\n{0,2})\$\$(\n{0,2})'): replace_dollars,
-    # Workaround for a LaTeX rendering bug (doesn't work correctly!)
-    #re.compile(r'([^\$\\])\$([^\$])'): '\\1 $\\2',
+    # Workaround for a LaTeX rendering bug (Adds spaces that aren't swallowed by Pandoc
+    'BIL': ' ',
 }
 ]
 

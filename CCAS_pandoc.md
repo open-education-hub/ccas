@@ -473,7 +473,7 @@ corresponds to \"filling in\" the \"missing pieces\" of the line.
 
 ::: xmpl
 If $C$ is the circumference of a circle and $D$ is the diameter and we
-define $\pi=\frac{C}{D}$ then $\pi$ is not a fraction.
+define BIL$\pi=\frac{C}{D}BIL$ then $\pi$ is not a fraction.
 :::
 
 ::: xmpl
@@ -686,7 +686,8 @@ sum of x,y.
     }
 
 If you input the vectors 1:3 and 4:7 into the function it will calculate
-the sum of $\verb|x<-(1+2+3)|$ and $\verb|y<-(4+5+6+7)|$ as follows
+the sum of BIL$\verb|x<-(1+2+3)|BIL$ and $\verb|y<-(4+5+6+7)|$ as
+follows
 
     > Myfunction(1:3,4:7)
     28
@@ -969,11 +970,12 @@ $(a+b)^n = a^n+ {n \choose 1}a^{n-1}b +  {n \choose 2}a^{n-2}b^ + \ldots +{n \ch
 
 $(a+b)^n  = \sum_{i=1}^n  {n \choose x}a^xb^{n-x}$
 
-This can be seen by looking at $(a+b)^ n$ as a product of n parentheses
-and multiply these by picking one item (a or b) from each. If we picked
-$a$ from x parentheses and $b$ from $(n-x)$, then the product is
-$a^x b^{n-x}$. We can choose the $x$ $a$'s in a total of $\binom{n}{x}$
-ways so the coefficient of $a^xb^{n-x}$ is $\binom{n}{x}$.
+This can be seen by looking at $(a+b)^n$ as a product of $n$ parentheses
+and multiply these by picking one item ($a$ or $b$) from each. If we
+picked $a$ from BIL$xBIL$ parentheses and BIL$bBIL$ from $(n-x)$, then
+the product is $a^x b^{n-x}$. We can choose the BIL$xBIL$ $a$'s in a
+total of $\binom{n}{x}$ ways so the coefficient of BIL$a^x b^{n-x}BIL$
+is $\binom{n}{x}$.
 
 ### Examples
 
@@ -3080,9 +3082,10 @@ USA.
 ::: fbox
 Linear functions produce straight-line graphs. In general, a straight
 line follows the following equation: $$y = a + bx ,$$ where $a$ and $b$
-are fixed numbers.\
+are fixed numbers.
+
 The line on the graph is the set of points:
-$$\left \{ (x,y):   x,y \in \mathbb{R}, y = a+bx\right \} .$$
+$$\left \\{ (x,y):   x,y \in \mathbb{R}, y = a+bx\right \\} .$$
 
 ::: picture
 22
@@ -5660,10 +5663,10 @@ $$S=\sqrt{\frac{\sum_{i=1}^{n}(X_1-\bar{X})^2+\sum_{j=1}^{m}(Y_j-\bar{Y})^2}{n+m
 consider testing $H_0:\mu_1=\mu_2$ vs $H_1=mu_1>\mu_2$. Hence, if $H_0$
 is true then the observed value
 $$t=\frac{\bar{x}-\bar{y}}{S\sqrt{\frac{1}{n}+\frac{1}{m}}}$$ comes from
-a t-test with $n+m-2$ df and we reject $H_0$ if $\left|t\right|>t^*$.
+a t-test with $n+m-2$ df and we reject $H_0$ if $\left|t\right|>t^\ast$.
 Here,
 $$S=\sqrt{\frac{\sum_{i}(x_i-\bar{x})^2+\sum_{j}(y_j-\bar{y})^2}{n+m-2}}$$
-and $t^*=t_{n+m-2,1-\alpha}$
+and $t^\ast=t_{n+m-2,1-\alpha}$
 
 ## Comparing means from large samples \<Ól.B.M.\>
 
@@ -6263,12 +6266,12 @@ analysis.
 ::: fbox
 The power of a two sample, one-sided t-test can be computed as follows:
 
-$$\beta_{(\mu_1\mu_2)} = P_{\mu_1\mu_2}\left[ \frac{Z + \Delta}{\sqrt{U/(n+m-2)}} > t^*_{1-\alpha,n+m-2} \right]$$
+$$\beta_{(\mu_1\mu_2)} = P_{\mu_1\mu_2}\left[ \frac{Z + \Delta}{\sqrt{U/(n+m-2)}} > t^\ast_{1-\alpha,n+m-2} \right]$$
 
 and the power of a two sample, two-sided t-test is give by:
 
-$$\beta_{(\mu_1\mu_2)} = P_{\mu_1\mu_2}\left[ \frac{Z + \Delta}{\sqrt{U/(n+m-2)}} > t^*_{1-\alpha,n+m-2} \right]\\ 
-+P_{\mu_1\mu_2}\left[ \frac{Z + \Delta}{\sqrt{U/(n+m-2)}} < -t^*_{1-\alpha,n+m-2} \right]$$
+$$\beta_{(\mu_1\mu_2)} = P_{\mu_1\mu_2}\left[ \frac{Z + \Delta}{\sqrt{U/(n+m-2)}} > t^\ast_{1-\alpha,n+m-2} \right]\\
++P_{\mu_1\mu_2}\left[ \frac{Z + \Delta}{\sqrt{U/(n+m-2)}} < -t^\ast_{1-\alpha,n+m-2} \right]$$
 
 where
 $\Delta = \frac{(\mu_1-\mu_2)}{\sigma\sqrt{\frac{1}{n}+\frac{1}{m}}}$
@@ -6289,22 +6292,23 @@ alternative $H_a: \mu_1 > \mu_2$. If $H_o$ is true then the observed
 value
 $$t = \frac{\overline{x}-\overline{y}}{s\sqrt{\frac{1}{n}+\frac{1}{m}}}$$
 comes from a t-distribution with $n+m-2$ degrees of freedom and we
-reject $H_o$ if $\left|t \right|> t^*_{1-\alpha,n+m-2}$\
+reject $H_o$ if $\left|t \right|> t^\ast_{1-\alpha,n+m-2}$\
 The power of the test can be computed as follows:
 
 $$\begin{aligned}
 \beta_{(\mu_1\mu_2)}& = & P_{\mu_1\mu_2}\left[reject~H_o \right]\\
-& = & P_{\mu_1\mu_2}\left[\frac{\overline{X}-\overline{Y}}{S\sqrt{\frac{1}{n}+\frac{1}{m}}} > t^*_{1-\alpha,n+m-2} \right]\\
-& = &  P_{\mu_1\mu_2}\left[\frac{\frac{\overline{X}-\overline{Y}-(\mu_1-\mu_2)}{\sigma\sqrt{\frac{1}{n}+\frac{1}{m}}}+ \frac{(\mu_1-\mu_2)}{\sigma\sqrt{\frac{1}{n}+\frac{1}{m}}}}{S/\sigma} > t^*_{1-\alpha,n+m-2}\right]\\
+& = & P_{\mu_1\mu_2}\left[\frac{\overline{X}-\overline{Y}}{S\sqrt{\frac{1}{n}+\frac{1}{m}}} > t^\ast_{1-\alpha,n+m-2} \right]\\
+& = &  P_{\mu_1\mu_2}\left[\frac{\frac{\overline{X}-\overline{Y}-(\mu_1-\mu_2)}{\sigma\sqrt{\frac{1}{n}+\frac{1}{m}}}+ \frac{(\mu_1-\mu_2)}{\sigma\sqrt{\frac{1}{n}+\frac{1}{m}}}}{S/\sigma} > t^\ast_{1-\alpha,n+m-2}\right]\\
 & = &  P_{\mu_1\mu_2}\left[\frac{Z +\frac{(\mu_1-\mu_2)}{\sigma\sqrt{\frac{1}{n}+\frac{1}{m}}}}
-{S/\sqrt{(n+m-2)}} > t^*_{1-\alpha,n+m-2} \right]\\
-& = &  P_{\mu_1\mu_2}\left[ \frac{Z + \Delta}{\sqrt{U/(n+m-2)}} > t^*_{1-\alpha,n+m-2} \right]\end{aligned}$$
+{S/\sqrt{(n+m-2)}} > t^\ast_{1-\alpha,n+m-2} \right]\\
+& = &  P_{\mu_1\mu_2}\left[ \frac{Z + \Delta}{\sqrt{U/(n+m-2)}} > t^\ast_{1-\alpha,n+m-2} \right]\end{aligned}$$
 
 where
 $\Delta = \frac{(\mu_1-\mu_2)}{\sigma\sqrt{\frac{1}{n}+\frac{1}{m}}}$
 and $U$ is the SSE of the samples which is divided by the appropriate
 degrees of freedom to give a $\chi^2$ distribution.\
-This is the probability that a non-central $t$-variable exceeds $t^*$.\
+This is the probability that a non-central $t$-variable exceeds
+$t^\ast$.\
 \
 *T*wo Sample, Two-sided t-Test:
 
@@ -6313,14 +6317,14 @@ versus alternative $H_a: \mu_1 \neq \mu_2$.\
 The power of the test can be computed as follows:\
 $$\begin{aligned}
 \beta_{(\mu_1\mu_2)}& = & P_{\mu_1\mu_2}\left[reject~H_o \right]\\
-& = & P_{\mu_1\mu_2}\left[\left|\frac{\overline{X}-\overline{Y}}{S\sqrt{\frac{1}{n}+\frac{1}{m}}}\right| > t^*_{1-\alpha,n+m-2} \right]\\
-& = & P_{\mu_1\mu_2}\left[\frac{\overline{X}-\overline{Y}}{S\sqrt{\frac{1}{n}+\frac{1}{m}}} > t^*_{1-\alpha,n+m-2} \right] \\
-&& +\: P_{\mu_1\mu_2} \left[\frac{\overline{X}-\overline{Y}}{S\sqrt{\frac{1}{n}+\frac{1}{m}}} <-t^*_{1-\alpha,n+m-2} \right] \\
-& = &  P_{\mu_1\mu_2}\left[\frac{\frac{\overline{X}-\overline{Y}-(\mu_1-\mu_2)}{\sigma\sqrt{\frac{1}{n}+\frac{1}{m}}}+\frac{(\mu_1-\mu_2)}{\sigma\sqrt{\frac{1}{n}+\frac{1}{m}}}}{S/\sqrt{(n+m-2)}} > t^*_{1-\alpha,n+m-2}\right] \\
-&& +\:   P_{\mu_1\mu_2}\left[\frac{\frac{\overline{X}-\overline{Y}-(\mu_1-\mu_2)}{\sigma\sqrt{\frac{1}{n}+\frac{1}{m}}}+\frac{(\mu_1-\mu_2)}{\sigma\sqrt{\frac{1}{n}+\frac{1}{m}}}}{S/\sqrt{(n+m-2)}} < -t^*_{1-\alpha,n+m-2}\right]
+& = & P_{\mu_1\mu_2}\left[\left|\frac{\overline{X}-\overline{Y}}{S\sqrt{\frac{1}{n}+\frac{1}{m}}}\right| > t^\ast_{1-\alpha,n+m-2} \right]\\
+& = & P_{\mu_1\mu_2}\left[\frac{\overline{X}-\overline{Y}}{S\sqrt{\frac{1}{n}+\frac{1}{m}}} > t^\ast_{1-\alpha,n+m-2} \right] \\
+&& +\: P_{\mu_1\mu_2} \left[\frac{\overline{X}-\overline{Y}}{S\sqrt{\frac{1}{n}+\frac{1}{m}}} <-t^\ast_{1-\alpha,n+m-2} \right] \\
+& = &  P_{\mu_1\mu_2}\left[\frac{\frac{\overline{X}-\overline{Y}-(\mu_1-\mu_2)}{\sigma\sqrt{\frac{1}{n}+\frac{1}{m}}}+\frac{(\mu_1-\mu_2)}{\sigma\sqrt{\frac{1}{n}+\frac{1}{m}}}}{S/\sqrt{(n+m-2)}} > t^\ast_{1-\alpha,n+m-2}\right] \\
+&& +\:   P_{\mu_1\mu_2}\left[\frac{\frac{\overline{X}-\overline{Y}-(\mu_1-\mu_2)}{\sigma\sqrt{\frac{1}{n}+\frac{1}{m}}}+\frac{(\mu_1-\mu_2)}{\sigma\sqrt{\frac{1}{n}+\frac{1}{m}}}}{S/\sqrt{(n+m-2)}} < -t^\ast_{1-\alpha,n+m-2}\right]
 \\
-& = &  P_{\mu_1\mu_2}\left[ \frac{Z + \Delta}{\sqrt{U/(n+m-2)}} > t^*_{1-\alpha,n+m-2} \right]\\
-&& +\: P_{\mu_1\mu_2}\left[ \frac{Z + \Delta}{\sqrt{U/(n+m-2)}} < -t^*_{1-\alpha,n+m-2} \right]\end{aligned}$$
+& = &  P_{\mu_1\mu_2}\left[ \frac{Z + \Delta}{\sqrt{U/(n+m-2)}} > t^\ast_{1-\alpha,n+m-2} \right]\\
+&& +\: P_{\mu_1\mu_2}\left[ \frac{Z + \Delta}{\sqrt{U/(n+m-2)}} < -t^\ast_{1-\alpha,n+m-2} \right]\end{aligned}$$
 
 where
 $\Delta = \frac{(\mu_1-\mu_2)}{\sigma\sqrt{\frac{1}{n}+\frac{1}{m}}}$
@@ -6344,14 +6348,14 @@ Suppose we want to reject the $H_o$ with a pre-specified probability
 $\beta_1$ when $\mu_1$ and $\mu_2$ are true values of $\mu$. For this,
 we need to select the sample size $n$ and $m$ so that
 $\beta_(\mu_1\mu_2) \geq \beta_1$ i.e. find $n$ and $m$ which satisfies
-$$P_{\mu_1\mu_2} \left[ \frac{Z + \Delta}{\sqrt{U/(n+m-2)}} > t^*_{1-\alpha,n+m-2} \right]$$
+$$P_{\mu_1\mu_2} \left[ \frac{Z + \Delta}{\sqrt{U/(n+m-2)}} > t^\ast_{1-\alpha,n+m-2} \right]$$
 
 for a two sample, one-sided t-test.\
 Similarly for a two sample, two-sided t-test we need to find $n$ and $m$
 that satisfies
 
-$P_{\mu_1\mu_2}\left[ \frac{Z + \Delta}{\sqrt{U/(n+m-2)}} > t^*_{1-\alpha,n+m-2} \right]$ +
-$P_{\mu_1\mu_2} \left[\frac{Z + \Delta}{\sqrt{U/(n+m-2)}} < -t^*_{1-\alpha,n+m-2} \right]$
+$P_{\mu_1\mu_2}\left[ \frac{Z + \Delta}{\sqrt{U/(n+m-2)}} > t^\ast_{1-\alpha,n+m-2} \right]$ +
+$P_{\mu_1\mu_2} \left[\frac{Z + \Delta}{\sqrt{U/(n+m-2)}} < -t^\ast_{1-\alpha,n+m-2} \right]$
 
 ## A case study in power
 
@@ -6730,8 +6734,7 @@ $$\begin{bmatrix}
 \begin{bmatrix}
 x \\
 y
-\end{bmatrix}
-=
+\end{bmatrix} =
 \begin{bmatrix}
 4 \\
 2
@@ -6745,8 +6748,7 @@ $A, \underline{x}$ and $\underline{b}$
 
 ::: fbox
 The $n$ x $n$ matrix\
-$$\mathbf{I}
-=
+$$\mathbf{I}=
 \left[
 \begin{array}{cccc}
   1 & 0 & \ldots & 0 \\
@@ -7092,8 +7094,7 @@ $VT=
 ::: fbox
 Suppose
 
-$$\mathbf{Y}
-=
+$$\mathbf{Y}=
 \left(
 \begin{array}{c}
 Y_1\\
@@ -7111,8 +7112,7 @@ matrix $$\boldsymbol{\Sigma} = \sigma^2 \mathbf{I}$$
 Note that if $Y_1, \ldots, Y_n$ are independent with common variance
 $\sigma^2$ then
 
-$$\boldsymbol{\Sigma}
-=
+$$\boldsymbol{\Sigma}=
 \left[
 \begin{array}{ccccc}
 \sigma_{1}^{2} & \sigma_{12} & \sigma_{13} & \ldots & \sigma_{1n} \\
@@ -7612,8 +7612,7 @@ $$f(x,y)=\begin{pmatrix}
   x^2 +y \\
   x y  \\
   x 
-\end{pmatrix}
-=
+\end{pmatrix}=
 \begin{pmatrix}
   f_1(x,y) \\
   f_2(x,y) \\
@@ -7626,8 +7625,7 @@ $$J= \begin{bmatrix}
       \nabla f_1 \\
       \nabla f_2 \\
       \nabla f_3 
-      \end{bmatrix}
-=
+      \end{bmatrix}=
 \begin{bmatrix}
       2x & 2y \\
       y & x \\
