@@ -3817,7 +3817,7 @@ $$
 > 
 > $$
 > 
->  if $x\neq1$. If $0<x<1$ then
+>  if $x\neq1$. If $0< x<1$ then
 > $x^{n+1}\to 0$ as $n\to\infty$ and we obtain $s_n\to\frac{1}{1-x}$ so
 > $\sum_{n=0}^{\infty}x^n=\frac{1}{1-x}$.
 
@@ -4445,17 +4445,17 @@ If $f$ is a function, then the sign of its derivative, $f'$, indicates
 whether $f$ is increasing ($f'>0$), decreasing ($f'<0$), or zero. $f'$
 can be zero at points where $f$ has a maximum, minimum, or a saddle
 point.\
-If $f'(x)>0$ for $x<x_0$, $f'(x_0)=0$ and $f'(x)<0$ for $x>x_0$ then $f$
-has a maximum at $x_0$
+If $f'(x)>0$ for $x< x_0$, $f'(x_0)=0$ and $f'(x)<0$ for $x>x_0$ then
+$f$ has a maximum at $x_0$
 
-If $f'(x)<0$ for $x<x_0$, $f'(x_0)=0$ and $f'(x)>0$ for $x>x_0$ then $f$
-has a minimum at $x_0$
+If $f'(x)<0$ for $x< x_0$, $f'(x_0)=0$ and $f'(x)>0$ for $x>x_0$ then
+$f$ has a minimum at $x_0$
 
-If $f'(x)>0$ for $x<x_0$, $f'(x_0)=0$ and $f'(x)>0$ for $x<x_0$ then $f$
-has a saddle point at $x_0$
+If $f'(x)>0$ for $x< x_0$, $f'(x_0)=0$ and $f'(x)>0$ for $x< x_0$ then
+$f$ has a saddle point at $x_0$
 
-If $f'(x)<0$ for $x<x_0$, $f'(x_0)=0$ and $f'(x)<0$ for $x<x_0$ then $f$
-has a saddle point at $x_0$
+If $f'(x)<0$ for $x< x_0$, $f'(x_0)=0$ and $f'(x)<0$ for $x< x_0$ then
+$f$ has a saddle point at $x_0$
 
 ### Examples
 
@@ -6188,9 +6188,9 @@ $$
 > $$P[Z \leq z]= 
 > \begin{cases}
 >   0 & \text{for} & z \leq 0\\
->   \frac{z^2}{2} & \text{for} & 0<z<1\\
+>   \frac{z^2}{2} & \text{for} & 0< z <1\\
 >   1 & \text{for}& z>2\\
->   1-\frac{(2-z)^2}{2} & \text{for} & 1<z<2
+>   1-\frac{(2-z)^2}{2} & \text{for} & 1< z <2
 > \end{cases}
 > 
 > $$
@@ -6199,8 +6199,8 @@ $$
 > 
 > $$g(z)= 
 > \begin{cases}
->   z & \text{for} & 0 <z \leq 1\\
->   2-z & \text{for} & 1< z \leq 2\\
+>   z & \text{for} & 0 < z \leq 1\\
+>   2-z & \text{for} & 1 < z \leq 2\\
 >   0 & \text{for} & \text{elsewhere}
 > \end{cases}.
 > 
