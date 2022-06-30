@@ -1378,7 +1378,7 @@ possible basic outcomes are:
 $$\begin{array}{c c c}
 \hline
          & \text{Toss}    &   \\
-\text{In binary} & 1\ 2\ 3\ 4 & \#\text{H before T}\\
+\text{In binary} & 1\ 2\ 3\ 4 & \\#\text{H before T}\\
 \hline              
   0000 & \text{H H H T} & 3\\
   0010 & \text{H H T H} & 2\\
