@@ -1749,7 +1749,7 @@ The simplest parabola is $p(x) = x^2$ (Fig. a) which is always
 non-negative $p(x)\geq 0$ and $p(x)=0$ only when $x=0$.
 
 ::: notes
-*Note 7*. Note that $p(-x) = p(x)$ since $(-x)^2= x^2$.
+*Note 7*. Note that BIL$p(-x) = p(x)BIL$ since $(-x)^2= x^2$.
 :::
 
 If the coefficient at the highest power is negative, then the parabola
@@ -1916,7 +1916,7 @@ name or refers to a file in the working directory.\
 The scan() command returns a vector, but the read.table() command
 returns a dataframe, which is a rectangular table of data whose columns
 have names. A column can be extracted from a data frame, e.g., with x\<-
-dat\$a where\"dat\" is the name of the data frame and \"a\" is the name
+dat\$a where \"dat\" is the name of the data frame and \"a\" is the name
 of a column.
 
 ::: notes
@@ -2061,7 +2061,7 @@ The equation for the Pearson correlation coefficient is:
 
 $$r_{x,y} = \frac{\sum_{i=1}^{n}(x_i - \bar{x})(y_i - \bar{y})}{\sum_{i=1}^{n}(x_i - \bar{x})^2\sum_{i=1}^{n}(y_i - \bar{y})^2},$$
 
-where $\bar{x}$ and $\bar{y}$ are the sample means of the x- and
+where BIL$\bar{x}BIL$ and $\bar{y}$ are the sample means of the x- and
 y-values.
 
 The correlation is always between -1 and 1.
@@ -2863,8 +2863,8 @@ infinity as $x\to\infty$, $e^{-x}$ goes to $0$ and hence $f(x)$ goes to
 Through a similar analysis one finds that
 $$\lim_{x\to-\infty} f(x)=0 ,$$
 
-since, as $x\rightarrow \infty$, first $-x\rightarrow \infty$ and second
-$e^{-x} \rightarrow \infty$.
+since, as BIL$x\rightarrow \inftyBIL$, first $-x\rightarrow \infty$ and
+second $e^{-x} \rightarrow \infty$.
 :::
 
 ::: xmpl
@@ -2875,9 +2875,9 @@ as $$x \to 0$$
 $$\lim_{x \to 0} \frac{\sqrt{x + 4} - 2}{x}$$
 
 Since the square root is present we cannot just direct substitute the 0
-as $x$. This will give us $\frac{0}{0}$, which is an indeterminate form.
-We must perform some algebra first. The way to get rid of the radical is
-to multiply the numerator by the conjugate.
+as BIL$xBIL$. This will give us $\frac{0}{0}$, which is an indeterminate
+form. We must perform some algebra first. The way to get rid of the
+radical is to multiply the numerator by the conjugate.
 
 $$\frac{\sqrt{x + 4} - 2}{x} \cdot \frac{\sqrt{x + 4} + 2}{\sqrt{x + 4} + 2}$$
 
@@ -2990,19 +2990,18 @@ $(1 + \frac{x}{n})^n \rightarrow e^x$ as $n\rightarrow\infty$
 ## Infinite sums (series)
 
 ::: fbox
-We are interested in, whether infinite sums of sequences can be
-defined.\
+We are interested in, whether infinite sums of sequences can be defined.
 :::
 
 ### Details
 
 Consider a sequence of numbers, $(a_n)_{n\to\infty}$.
 
-Now define another sequence $(s_n)_{n\to\infty},$ where
+Now define another sequence $(s_n)_BIL{n\to\infty},$ where
 $$s_n=\sum_{k=1}^na_k.$$
 
-If $(s_n)_{n\to\infty}$ is convergent to $S=\lim_{n\to\infty}s_n,$ then
-we write $$S=\sum_{n=1}^{\infty}a_n.$$
+If $(s_n)_BIL{n\to\infty}$ is convergent to $S=\lim_{n\to\infty}s_n,$
+then we write $$S=\sum_{n=1}^{\infty}a_n.$$
 
 ### Examples
 
@@ -3017,9 +3016,9 @@ $$s_n = 1 + x + x^2 + .... + x^n$$
 $$xs_n = x + x^2 + ..... +x^n + x^{n+1}$$
 
 $$s_n – xs_n = 1 - x^{n+1}$$ i.e. $$s_n(1-x) = 1-x^{n+1}$$ and we have
-$$s_n =\frac{1-x^{n+1}}{1-x}$$ if $x\neq1$. If $0< x<1$ then
-$x^{n+1}\to 0$ as $n\to\infty$ and we obtain $s_n\to\frac{1}{1-x}$ so
-$\sum_{n=0}^{\infty}x^n=\frac{1}{1-x}$.
+$$s_n =\frac{1-x^{n+1}}{1-x}$$ if $x\neq1$. If BIL$0< x<1BIL$ then
+BIL$x^{n+1}\to 0BIL$ as BIL$n\to\inftyBIL$ and we obtain
+$s_n\to\frac{1}{1-x}$ so $$\sum_{n=0}^{\infty}x^n=\frac{1}{1-x}.$$
 :::
 
 ## The exponential function and the Poisson distribution
@@ -3103,9 +3102,9 @@ corresponding to a unit change in the $x$ coordinate.
 Let's assume we have a more general function
 
 $y = f(x)$.\
-To find the slope of a line segment, consider 2 $x$-coordinates, $x_0$
-and $x_1$, and look at the slope between $(x_0, f(x_0))$ and
-$(x_1, f(x_1))$.
+To find the slope of a line segment, consider 2 $x$-coordinates,
+BIL$x_0BIL$ and BIL$x_1BIL$, and look at the slope between
+BIL$(x_0, f(x_0))BIL$ and $(x_1, f(x_1))$.
 
 ::: picture
 23
