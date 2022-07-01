@@ -250,7 +250,7 @@ such that $(p/q)^2=2$.
 
 > **Example**:  
 > 
-> $\frac{2}{6}$=$\frac{2}{2 \cdot 3}$=$\frac{1}{3}$
+> $\frac{2}{6}=\frac{2}{2 \cdot 3}=\frac{1}{3}$
 
 The rational numbers can be put in order along a line as in the figure.
 
@@ -1399,8 +1399,7 @@ the outcome of an experiment before it is conducted.
 > 
 > where $k$ is the number of successful trials. If $n$ is the number of
 > trials and $p$ is the probability of a successful trials then the
-> commands are used by writing: $dbinom$($k$,$n$,$p$) and
-> pbinom($k$,$n$,$p$).\
+> commands are used by writing: dbinom(k,n,p) and pbinom(k,n,p).\
 > To calculate the probability that the youngster will put his shirt on
 > the right way for at least four days of five we thus write the command:
 > 
@@ -5962,8 +5961,8 @@ $$S=
 $$\frac{\bar{X}-\mu}{S/\sqrt{n}} \sim t_{n-1}.$$
 
 This follows from $\bar{X}$ and $\sum_{i=1}^n(X_i-\bar{X})^2$ being
-independent and $\frac{\bar{X}-\mu}{\sigma/\sqrt{n}}\sim n(0,1)$, $\sum
-\frac{(X_i-\bar{X})^2}{\sigma^2}\sim \chi_{n-1}^2$.
+independent and $\frac{\bar{X}-\mu}{\sigma/\sqrt{n}}\sim n(0,1)$,
+$\sum \frac{(X_i-\bar{X})^2}{\sigma^2}\sim \chi_{n-1}^2$.
 
 **Copyright** 2021, Gunnar Stefansson (editor) with contributions from
 very many students
@@ -6388,7 +6387,7 @@ $H_0$ can not be rejected.
 > In R, t\* is found using qt(n-1,0.95) but the entire hypothesis can be
 > tested using
 > 
->     t.test(x,alternative="greater",mu=<$\mu_0$>)
+>     t.test(x,alternative="greater",mu=<18)
 
 ## Comparing means from normal populations
 
@@ -6516,10 +6515,9 @@ and reject $H_0$ if $z>z_{1-\alpha}$.
 
 ### Details
 
-Two sample means are statistically $\underline{significantly}$
-$\underline{different}$ if their null hypothesis ($\mu_1 = \mu_2$)can be
-$\underline{rejected}$. In this case, one can make the following
-statements:
+Two sample means are statistically $\underline{significantly different}$
+if the null hypothesis, $\mu_1 = \mu_2$, can be $\underline{rejected}$.
+In this case, one can make the following statements:
 
 -   The population means are different.
 
@@ -7580,7 +7578,7 @@ General linear equations can be written in the form $Ax=b$.
 
 ## The unit matrix
 
-> The $n$ x $n$ matrix
+> The $n\times n$ matrix
 > 
 > $$\mathbf{I}=
 > \left[
@@ -7591,10 +7589,9 @@ General linear equations can be written in the form $Ax=b$.
 >   0 & \ldots & 0 & 1
 > \end{array} \right]$$
 > 
-> is the identity matrix. This is because if a matrix $\mathbf{A}$ is $n$
-> x $n$ then $\mathbf{A} \mathbf{I} = \mathbf{A}$ and
-> $\mathbf{I} \mathbf{A}  = 
-> \mathbf{A}$
+> is the identity matrix.This is because if a matrix $\mathbf{A}$ is
+> $n\times n$ then $\mathbf{A} \mathbf{I} = \mathbf{A}$ and
+> $\mathbf{I} \mathbf{A}  = \mathbf{A}$
 
 ## The inverse of a matrix
 
@@ -7657,47 +7654,73 @@ USA.
 
 > **Example**:  
 > 
-> If A= $\begin{bmatrix}
+> If 
+> 
+> $$A=\begin{bmatrix}
 > 1 & 2 
-> \end{bmatrix}$ then $T_A(\underline{x}) = x + 2y$ where
+> \end{bmatrix}$$
+> 
+>  then $T_A(\underline{x}) = x + 2y$ where
 > $\underline{x} = {x \choose y}\in \mathbb{R}^2$
 
 > **Example**:  
 > 
-> If A= $\begin{bmatrix}
+> If 
+> 
+> $$A=\begin{bmatrix}
 > 0 & 1  \\
-> 1 & 0 
-> \end{bmatrix}$ then $T_A{x \choose y}$ = $\begin{bmatrix}
+> 1 & 0
+> \end{bmatrix}$$
+> 
+>  then 
+> 
+> $$T_A{x \choose y} = \begin{bmatrix}
 > y  \\
-> x 
-> \end{bmatrix}$
+> x
+> \end{bmatrix}.$$
+> 
 
 > **Example**:  
 > 
-> If A= $\begin{bmatrix}
+> If 
+> 
+> $$A= \begin{bmatrix}
 > 0 & 2 & 3\\
 > 1 & 0 & 1
-> \end{bmatrix}$ then $T_A$ $\left(
+> \end{bmatrix}$$
+> 
+>  then 
+> 
+> $$T_A\left(
 > \begin{array}{ccc}
 >   x \\
 >   y\\
->   z\\
->  \end{array} \right)$ = $\begin{bmatrix}
+>   z
+>  \end{array} \right) = 
+> \begin{bmatrix}
 > 2y + 3z\\
 > x + z
-> \end{bmatrix}$
+> \end{bmatrix}.$$
+> 
 
 > **Example**:  
 > 
-> If $T{x \choose y }$ = $\left(
+> If 
+> 
+> $$T{x \choose y } = \left(
 >  \begin{array}{cc}
 >    x+y  \\
->   2x-3y\\
->  \end{array} \right)$ then $T (\underline{x}) = A \underline{x}$ if we
-> set A = $\begin{bmatrix}
+>   2x-3y
+>  \end{array} \right)$$
+> 
+>  then $T (\underline{x}) = A \underline{x}$ if we
+> set 
+> 
+> $$A = \begin{bmatrix}
 > 1 & 1 \\
 > 2 & -3
-> \end{bmatrix}$
+> \end{bmatrix}.$$
+> 
 
 ## Inner products and norms
 
@@ -9565,11 +9588,11 @@ contains the random effects.
 > 2.  $y_{ij} = \mu + \alpha_i + \beta_i x_{ij} + \epsilon_{ij}$ only
 >     fixed effects (ANCOVA)
 > 
-> 3.  $y_{ijk} = \mu + \alpha_i + b_j + \epsilon{ijk}$ where $\alpha_i$
->     are fixed but $b_j$ are random.
+> 3.  $y_{ijk} = \mu + \alpha_i + b_j + \epsilon{ijk}$ where Æ_iÆ are
+>     fixed but Æb_jÆ are random.
 > 
-> 4.  $y_{ijk} = \mu  + \alpha_i + b_j x_{ij} + \epsilon_{ijk}$ where
->     $\alpha_i$ are fixed but $b_j$ are random slopes.
+> 4.  $y_{ijk} = \mu  + \alpha_i + b_j x_{ij} + \epsilon_{ijk}$ where Æ_iÆ
+>     are fixed but Æb_jÆ are random slopes.
 
 ## Maximum likelihood estimation in lmm
 

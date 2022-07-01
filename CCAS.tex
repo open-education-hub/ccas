@@ -511,8 +511,7 @@ When the rationals are ordered on to a line there are points missing, i.e. there
 
 \subsubsection{Examples}
 \begin{xmpl}
-$\frac{2}{6}$=$\frac{2}{2 \cdot 3}$=$\frac{1}{3}$ 
-
+$\frac{2}{6}=\frac{2}{2 \cdot 3}=\frac{1}{3}$
 \end{xmpl}
 
 The rational numbers can be put in order
@@ -1464,7 +1463,7 @@ $$= 0.00672$$
 
 The probability that the youngster will put his shirt on the right way for at least four out of five is thus 0,7\%.\\
 
-This is possible to calculate in R in a several ways, either using the command dbinom or pbinom. The command dbinom calculates $$P(X = k)$$ and the command pbinom calculates $$P(X \leq k)$$ where $k$ is the number of successful trials. If $n$ is the number of trials and $p$ is the probability of a successful trials then the commands are used by writing: $dbinom$($k$,$n$,$p$) and pbinom($k$,$n$,$p$).\\
+This is possible to calculate in R in a several ways, either using the command dbinom or pbinom. The command dbinom calculates $$P(X = k)$$ and the command pbinom calculates $$P(X \leq k)$$ where $k$ is the number of successful trials. If $n$ is the number of trials and $p$ is the probability of a successful trials then the commands are used by writing: dbinom(k,n,p) and pbinom(k,n,p).\\
 
 To calculate the probability that the youngster will put his shirt on the right way for at least four days of five we thus write the command:
 
@@ -5513,8 +5512,8 @@ $$
 $$
 
 This follows from $\bar{X}$ and $\sum_{i=1}^n(X_i-\bar{X})^2$ being
-independent and $\frac{\bar{X}-\mu}{\sigma/\sqrt{n}}\sim n(0,1)$, $\sum
-\frac{(X_i-\bar{X})^2}{\sigma^2}\sim \chi_{n-1}^2$.
+independent and $\frac{\bar{X}-\mu}{\sigma/\sqrt{n}}\sim n(0,1)$,
+$\sum \frac{(X_i-\bar{X})^2}{\sigma^2}\sim \chi_{n-1}^2$.
 
 
 {\bf Copyright}
@@ -5863,7 +5862,7 @@ $$t=\frac{\overline{x}-\mu_0}{s/\sqrt{n}}= 0.37$$ so $H_0$ cannot be rejected.\\
 
 In R, t* is found using qt(n-1,0.95) but the entire hypothesis can be tested using
 \begin{lstlisting}
-t.test(x,alternative="greater",mu=<$\mu_0$>)
+t.test(x,alternative="greater",mu=<18)
 \end{lstlisting}
 \end{xmpl}
 
@@ -5952,7 +5951,10 @@ P &= P[|Z|>2.3]\\
 %% Slide https://tutor-web.net/math/math612.0/lecture340/slide80
 \subsection{The concept of significance}
 \subsubsection{Details}
-Two sample means are statistically $\underline{significantly}$ $\underline{different}$ if their null hypothesis ($\mu_1 = \mu_2$)can be $\underline{rejected}$. In this case, one can make the following statements:
+Two sample means are statistically 
+$\underline{significantly different}$ 
+if the null hypothesis, $\mu_1 = \mu_2$, can be $\underline{rejected}$.
+In this case, one can make the following statements:
 \begin{itemize}
 \item
 The population means are different.
@@ -6946,7 +6948,7 @@ i.e. $A\underline{x} = \underline{b}$ for an appropriate choice of of $A, \under
 \subsection{The unit matrix}
 \fbox{
 \begin{minipage}{0.97\textwidth}
-The $n$ x $n$ matrix \\
+The $n\times n$ matrix \\
 
 \begin{equation*}
 \mathbf{I}=
@@ -6959,8 +6961,10 @@ The $n$ x $n$ matrix \\
 \end{array} \right]
 \end{equation*}
 
-is the identity matrix. This is because if a matrix $\mathbf{A}$ is $n$ x $n$ then $\mathbf{A} \mathbf{I} = \mathbf{A}$ and $\mathbf{I} \mathbf{A}  = 
-\mathbf{A}$\\
+is the identity matrix.This is because if a matrix 
+$\mathbf{A}$ is $n\times n$ then 
+$\mathbf{A} \mathbf{I} = \mathbf{A}$ and 
+$\mathbf{I} \mathbf{A}  = \mathbf{A}$
 \end{minipage}
 }
 
@@ -7026,55 +7030,60 @@ $$ T_A (a\underline{x} + b\underline{y}) = aT_A(\underline{x}) + bT_A(\underline
 \subsubsection{Examples}
 \begin{xmpl}
 
- If A=
-$\begin{bmatrix}
+If 
+$$A=\begin{bmatrix}
 1 & 2  \\
-\end{bmatrix}$ then $T_A(\underline{x}) = x + 2y$ where $ \underline{x} = {x \choose y}\in \mathbb{R}^2$
+\end{bmatrix}$$
+then $T_A(\underline{x}) = x + 2y$
+where $\underline{x} = {x \choose y}\in \mathbb{R}^2$
 \end{xmpl}
 
 
 \begin{xmpl}
-If A=
-$\begin{bmatrix}
+If
+$$A=\begin{bmatrix}
 0 & 1  \\
-1 & 0  \\
-\end{bmatrix}$ then $ T_A{x \choose y}$ =  
-$\begin{bmatrix}
+1 & 0
+\end{bmatrix}$$
+then 
+$$T_A{x \choose y} = \begin{bmatrix}
 y  \\
-x  \\
-\end{bmatrix}$
+x
+\end{bmatrix}.$$
 \end{xmpl}
 \begin{xmpl}
 
- If A=
-$\begin{bmatrix}
+If
+$$A= \begin{bmatrix}
 0 & 2 & 3\\
-1 & 0 & 1 \\
-\end{bmatrix}$ then $T_A$
-$\left(
+1 & 0 & 1
+\end{bmatrix}$$
+then 
+$$T_A\left(
 \begin{array}{ccc}
   x \\
   y\\
-  z\\
- \end{array} \right)$ = 
-$\begin{bmatrix}
+  z
+ \end{array} \right) = 
+\begin{bmatrix}
 2y + 3z\\
 x + z \\
-\end{bmatrix}$
+\end{bmatrix}.$$
 \end{xmpl}
 \begin{xmpl}
 
-If $T{x \choose y }$ = 
-$\left(
+If 
+$$T{x \choose y } = \left(
  \begin{array}{cc}
    x+y  \\
-  2x-3y\\
- \end{array} \right)$ then $T (\underline{x}) = A \underline{x}$ if  we set A = 
-$\begin{bmatrix}
+  2x-3y
+ \end{array} \right)$$
+then $T (\underline{x}) = A \underline{x}$ if  we set 
+$$A = \begin{bmatrix}
 1 & 1 \\
 2 & -3 \\
-\end{bmatrix}$
- \end{xmpl}
+\end{bmatrix}.$$
+\end{xmpl}
 
 %% Slide https://tutor-web.net/math/math612.0/lecture420/slide20
 \subsection{Inner products and norms}
@@ -8762,8 +8771,12 @@ In general, we write the mixed effects models in matrix form with $\underline{y}
 \begin{enumerate}
 \item $y_i = \beta_1 + \beta_2 x_i + \epsilon_i$ (SLR)
 \item $y_{ij} = \mu + \alpha_i + \beta_i x_{ij} + \epsilon_{ij}$ only fixed effects (ANCOVA)
-\item $y_{ijk} = \mu + \alpha_i + b_j + \epsilon{ijk}$ where $\alpha_i$ are fixed but $b_j$ are random.
-\item $y_{ijk} = \mu  + \alpha_i + b_j x_{ij} + \epsilon_{ijk}$ where $\alpha_i$ are fixed but $b_j$ are random slopes.
+\item $y_{ijk} = \mu + \alpha_i + b_j + \epsilon{ijk}$
+where Æ\alpha_iÆ are fixed
+but Æb_jÆ are random.
+\item $y_{ijk} = \mu  + \alpha_i + b_j x_{ij} + \epsilon_{ijk}$
+where Æ\alpha_iÆ are fixed
+but Æb_jÆ are random slopes.
 \end{enumerate}
 \end{xmpl}
 
