@@ -142,8 +142,8 @@ rep_sets = [{
     re.compile(r'\\####'): '####',
     # Add newlines to prevent breaking of KaTeX or other LaTeX interpretors
     re.compile(r'(\n{0,2})\$\$(\n{0,2})'): replace_dollars,
-    # Adds spaces to try to fix a LaTeX rendering bug
-    re.compile(r'([^\$\\])\$([^\$])'): '\\1 $\\2',
+    # Adds spaces to try to fix a LaTeX rendering bug (BREAKS MORE THAN IT FIXES CURRENTLY)
+    #re.compile(r'([^\$\\])\$([^\$])'): '\\1 $\\2',
     # Workaround for a LaTeX rendering bug (Adds spaces that aren't swallowed by Pandoc
     'BIL': ' ',
     'NIL': '',
@@ -157,8 +157,8 @@ rep_sets = [{
     re.compile(r'\\####'): '####',
     # Add newlines to prevent breaking of KaTeX or other LaTeX interpretors
     re.compile(r'(\n{0,2})\$\$(\n{0,2})'): replace_dollars,
-    # Adds spaces to try to fix a LaTeX rendering bug
-    re.compile(r'([^\$\\])\$([^\$])'): '\\1 $\\2',
+    # Adds spaces to try to fix a LaTeX rendering bug (BREAKS MORE THAN IT FIXES CURRENTLY)
+    re.compile(r'([^\$\\])\$([^\$]+?)\$([^\$])'): '\\1$\\2 $\\3',
     # Workaround for a LaTeX rendering bug (Adds e.g. spaces that aren't swallowed by Pandoc)
     'BIL': ' ',
     'NIL': '',
