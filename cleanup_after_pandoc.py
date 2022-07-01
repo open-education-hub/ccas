@@ -158,7 +158,7 @@ rep_sets = [{
     # Add newlines to prevent breaking of KaTeX or other LaTeX interpretors
     re.compile(r'(\n{0,2})\$\$(\n{0,2})'): replace_dollars,
     # Adds spaces to try to fix a LaTeX rendering bug (BREAKS MORE THAN IT FIXES CURRENTLY)
-    re.compile(r'([^\$\\])\$([^\$]+?)\$([^\$])'): '\\1 $\\2 $\n\\3',
+    re.compile(r'([^\$\\])\$([^\$\n]+?)\$([^\$])'): '\\1 $\\2 $\n\\3',
     # Workaround for a LaTeX rendering bug (Adds e.g. spaces that aren't swallowed by Pandoc)
     'BIL': ' ',
     'NIL': '',

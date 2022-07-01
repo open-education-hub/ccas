@@ -1167,12 +1167,12 @@ picked  $a $
 , then
 the product is  $a^x b^{n-x} $
 . We can choose the   $x  $
- $a $'s in a
-total of  $
-\binom{n}{x} $ ways so the coefficient of   $
-a^x b^{n-x}  $
-is  $
-\binom{n}{x}$.
+ $a$'s in a
+total of  $\binom{n}{x} $
+ ways so the coefficient of   $a^x b^{n-x}  $
+
+is  $\binom{n}{x} $
+.
 
 ### Examples
 
@@ -2681,7 +2681,7 @@ USA.
 >     [1] "y" "z" "w"
 >     x["w"]
 >     [1] "a" "b" "c"
->     x $w
+>     x$w
 >     [1] "a" "b" "c"
 
 **Copyright** 2021, Gunnar Stefansson (editor) with contributions from
@@ -2699,8 +2699,8 @@ USA.
 
 > Exponential growth is typically expressed as:
 > 
->  $
-> y(t)=Ae^{kt} $
+>  $y(t)=Ae^{kt} $
+> 
 > 
 > ![Fig. 12](images/9_1_Exponential_growth_and_decline.png)
 > 
@@ -2716,12 +2716,12 @@ USA.
 
 Exponential growth is typically expressed as:
 
- $
-y(t)=Ae^{kt} $
+ $y(t)=Ae^{kt} $
+
 
 where\
- $
-A$ (sometimes denoted  $P $
+ $A $
+ (sometimes denoted  $P $
 )=initial population size\
  $k $
 = growth rate\
@@ -6629,9 +6629,8 @@ This follows from  $\bar{X} $
  and  $\sum_{i=1}^n(X_i-\bar{X})^2 $
  being
 independent and  $\frac{\bar{X}-\mu}{\sigma/\sqrt{n}}\sim n(0,1) $
-,  $\sum
-\frac{(X_i-\bar{X})^2}{\sigma^2}\sim \chi_{n-1}^2 $
-.
+, $\sum
+\frac{(X_i-\bar{X})^2}{\sigma^2}\sim \chi_{n-1}^2$.
 
 **Copyright** 2021, Gunnar Stefansson (editor) with contributions from
 very many students
@@ -7288,21 +7287,21 @@ and reject  $H_0 $
 Two sample means are statistically  $\underline{significantly} $
 
 $\underline{different} $ if their null hypothesis ( $
-\mu_1 = \mu_2 $)can be
- $
-\underline{rejected} $. In this case, one can make the following
+\mu_1 = \mu_2$)can be
+ $\underline{rejected} $
+. In this case, one can make the following
 statements:
 
 -   The population means are different.
 
 -   The sample means are significantly different.
 
--    $
-\mu_1 \ne \mu_2 $
+-    $\mu_1 \ne \mu_2 $
 
--    $
-\bar{x} $ is significantly different from  $
-\bar{y} $.
+
+-    $\bar{x} $
+ is significantly different from  $\bar{y} $
+.
 
 But one does not say:
 
@@ -7310,8 +7309,8 @@ But one does not say:
 
 -   The population means are different with probability 0.95.
 
-Similarly, if the hypothesis  $
-H_0: \mu_1 = \mu_2 $ can not be rejected,
+Similarly, if the hypothesis  $H_0: \mu_1 = \mu_2 $
+ can not be rejected,
 we can say:
 
 -   There is no significant difference between the sample means.
@@ -7343,27 +7342,27 @@ USA.
 
 > Suppose we have a method to test a null hypothesis against an
 > alternative hypothesis. The test would be \"controlled\" at some level
->  $
-> \alpha $, i.e.  $
-> P[reject\ H_0] \leq \alpha $ whenever  $
-> H_0 $ is true.\
-> On the other hand, when  $
-> H_0 $ is false one wants  $
-> P[reject \  H_0] $ to
+>  $\alpha $
+> , i.e.  $P[reject\ H_0] \leq \alpha $
+>  whenever  $H_0 $
+>  is true.\
+> On the other hand, when  $H_0 $
+>  is false one wants  $P[reject \  H_0] $
+>  to
 > be as high as possible.\
-> If the parameter to be tested is  $
-> \theta $ and  $
-> \theta_0 $ is a value
-> within  $
-> H_0 $ and  $
-> \theta_a $ is in  $
-> H_a $ then we want
->  $
-> P_{\theta_0}[reject\ H_0] \leq \alpha $ and  $
-> P_{\theta_a}[reject\ H_0] $
+> If the parameter to be tested is  $\theta $
+>  and  $\theta_0 $
+>  is a value
+> within  $H_0 $
+>  and  $\theta_a $
+>  is in  $H_a $
+>  then we want
+>  $P_{\theta_0}[reject\ H_0] \leq \alpha $
+>  and  $P_{\theta_a}[reject\ H_0] $
+> 
 > as large as possible.\
-> For a general  $
-> \theta$ we write
+> For a general  $\theta $
+>  we write
 > 
 > $$\beta(\theta) = P_{\theta} [reject\ H_0]$$
 > 
@@ -8234,7 +8233,7 @@ that satisfies
 >       x<-onerow[(n+1):(2*n)]                 # get the x-data from the row
 >       grps<-factor(c(rep(1,J),rep(2,J)))     # define the groups
 >       sm<-summary(lm(y~x+grps))              # fit the ancova model
->       pval<-sm $coefficients[3,4] # extract exactly the right thing from the summary command-the P-value for H0:mu1=mu2
+>       pval<-sm$coefficients[3,4] # extract exactly the right thing from the summary command-the P-value for H0:mu1=mu2
 >       return(pval)
 >     }
 > 
@@ -8264,8 +8263,8 @@ that satisfies
 > 
 >     The simulated ancova power is  0.775175 
 > 
-> It is seen that when the  $
-> x$-values are not included in any way (in
+> It is seen that when the  $x $
+> -values are not included in any way (in
 > particular,  $\beta=0 $
 > ), the power is 80.5%. However, this is not the
 > correct model in the present situation. Using the above value of  $\beta $
@@ -8575,9 +8574,8 @@ General linear equations can be written in the form  $Ax=b $
 > x  $n $
 >  then  $\mathbf{A} \mathbf{I} = \mathbf{A} $
 >  and
->  $\mathbf{I} \mathbf{A}  = 
-> \mathbf{A} $
-> 
+> $\mathbf{I} \mathbf{A}  = 
+> \mathbf{A}$
 
 ## The inverse of a matrix
 
@@ -8655,35 +8653,33 @@ USA.
 
 > **Example**:  
 > 
-> If A=  $\begin{bmatrix}
+> If A= $\begin{bmatrix}
 > 1 & 2 
-> \end{bmatrix} $
->  then  $T_A(\underline{x}) = x + 2y $
->  where
+> \end{bmatrix} $ then  $
+> T_A(\underline{x}) = x + 2y$ where
 >  $\underline{x} = {x \choose y}\in \mathbb{R}^2 $
 > 
 
 > **Example**:  
 > 
-> If A=  $\begin{bmatrix}
+> If A= $\begin{bmatrix}
 > 0 & 1  \\
 > 1 & 0 
-> \end{bmatrix} $
->  then  $T_A{x \choose y} $
->  =  $\begin{bmatrix}
+> \end{bmatrix} $ then  $
+> T_A{x \choose y} $ =  $
+> \begin{bmatrix}
 > y  \\
 > x 
-> \end{bmatrix} $
-> 
+> \end{bmatrix}$
 
 > **Example**:  
 > 
-> If A=  $\begin{bmatrix}
+> If A= $\begin{bmatrix}
 > 0 & 2 & 3\\
 > 1 & 0 & 1
-> \end{bmatrix} $
->  then  $T_A $
->  $\left(
+> \end{bmatrix} $ then  $
+> T_A $  $
+> \left(
 > \begin{array}{ccc}
 >   x \\
 >   y\\
@@ -8692,28 +8688,26 @@ USA.
 > \begin{bmatrix}
 > 2y + 3z\\
 > x + z
-> \end{bmatrix} $
+> \end{bmatrix}$
 
 > **Example**:  
 > 
-> If  $
-> T{x \choose y } $ =  $
-> \left(
+> If  $T{x \choose y } $
+>  = $\left(
 >  \begin{array}{cc}
 >    x+y  \\
 >   2x-3y\\
 >  \end{array} \right) $ then  $
-> T (\underline{x}) = A \underline{x} $ if we
-> set A =  $
-> \begin{bmatrix}
+> T (\underline{x}) = A \underline{x}$ if we
+> set A = $\begin{bmatrix}
 > 1 & 1 \\
 > 2 & -3
-> \end{bmatrix} $
+> \end{bmatrix}$
 
 ## Inner products and norms
 
-> Assuming  $
-> x$ and  $y $
+> Assuming  $x $
+>  and  $y $
 >  are vectors, then we define their inner product by
 > 
 > $$x \cdot y = x_1y_1 + x_2y_2 + \cdots + x_ny_n$$
