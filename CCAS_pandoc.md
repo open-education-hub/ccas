@@ -5822,15 +5822,15 @@ such that $\left | z\right | >z_{1-\frac{\alpha}{2}}$
 
 Outcomes from 21 trials
 
-$\begin{matrix}
-7   & 4 & 4\\
+$$\begin{matrix}
+7 & 4 & 4\\
 3 & 4 & 6\\
 5 & 3 & 4\\
 5 & 5 & 3\\
 6 & 4 & 5\\
 4 & 3 & 5\\
 3 & 6 & 7
-\end{matrix}$
+\end{matrix}$$
 
 $$z=\frac{7-9\cdot \frac{1}{2}}{\sqrt{9\cdot\frac{1}{2}\cdot \frac{1}{2}}}=\frac{7-4.5}{3\cdot\frac{1}{2}}=\frac{14-9}{3}=\frac{5}{3} < 1.96$$
 So we do not reject the null hypothesis!\
@@ -5857,12 +5857,12 @@ student records 0 for a 1 or 2 and a 1 for a 3,4,5,or 6.\
 \
 Data and outcomes:
 
-x = number of successes in n trials =$\sum_{i=1}^n$ Thus, x = number of
-'b's\
+x = number of successes in n trials =$\Sigma_{i=1}^n$ Thus, x = number
+of 'b's\
 \
 Solution: Outcomes from 21 experiments
 
-$\begin{matrix}
+$$\begin{matrix}
 5 & 4 & 3\\
 8 & 5 & 7\\
 5 & 7 & 3\\ 
@@ -5870,7 +5870,7 @@ $\begin{matrix}
 7 & 8 & 8\\ 
 5 & 6 & 4\\ 
 2 & 5 & 7
-\end{matrix}$
+\end{matrix}$$
 
 This time our test is $H_0:p=\frac{2}{3}$ vs $H_a:p=\frac{2}{3}$. Note
 that we reject $H_0$ if $\frac{6x-4n}{9}>1,96$ \[for x=9\] or if
@@ -5892,7 +5892,7 @@ x = number of successes in n trials =$\sum_{i=1}^n$ Thus, x = number of
 \
 Solution: Outcomes from 21 experiments
 
-$\begin{matrix}
+$$\begin{matrix}
 0 & 1 & 2\\
 1 & 2 & 1\\
 1 & 4 & 2\\ 
@@ -5900,7 +5900,7 @@ $\begin{matrix}
 1 & 3 & 1\\ 
 1 & 1 & 2\\ 
 0 & 2 & 0
-\end{matrix}$
+\end{matrix}$$
 
 With the same kind of calculations as above, we find that we reject the
 null hypothesis $H_0:p=\frac{1}{6}$ in 14 out of 21 trials.
@@ -6779,17 +6779,17 @@ $x = A^{-1} b$.
 ::: xmpl
 If matrix $A$ is:
 
-$\begin{bmatrix}
+$$\begin{bmatrix}
 2 & 3  \\
 3 & 1 
-\end{bmatrix}$
+\end{bmatrix}$$
 
 then $A ^{-1}$ is:
 
-$\begin{bmatrix}
-\frac{-1}{4} & \frac{3}{4}  \\
-\frac{3}{4} & \frac{1}{2} 
-\end{bmatrix}$
+$$\begin{bmatrix}
+\frac{-1}{7} & \frac{3}{7} \\
+\frac{3}{7} & \frac{-2}{7}
+\end{bmatrix}$$
 :::
 
 **Copyright** 2021, Gunnar Stefansson (editor) with contributions from
@@ -6870,15 +6870,15 @@ Assuming $x$ and $y$ are vectors, then we define their inner product by
 
 $$x \cdot y = x_1y_1 + x_2y_2 + \cdots + x_ny_n$$
 
-where $x =\begin{pmatrix}
+where $$x =\begin{pmatrix}
 x_1\\
 \vdots\\
 x_n
-\end{pmatrix}$ and $y= \begin{pmatrix}
+\end{pmatrix}$$ and $$y= \begin{pmatrix}
 y_1\\
 \vdots\\
 y_n
-\end{pmatrix}$
+\end{pmatrix}.$$
 :::
 
 ### Details
@@ -6887,15 +6887,15 @@ If $x$, $y$ $\in \mathbb{R}^n$ are arbitrary (column) vectors, then we
 define their inner product by
 $$x \cdot y = x_1y_1 + x_2y_2 + \cdots + x_ny_n$$
 
-where $x= \begin{pmatrix}
+where $$x= \begin{pmatrix}
 x_1\\
 \vdots\\
 x_n
-\end{pmatrix}$ and $y =\begin{pmatrix}
+\end{pmatrix}$$ and $$y =\begin{pmatrix}
 y_1\\
 \vdots\\
 y_n
-\end{pmatrix}$.
+\end{pmatrix}.$$
 
 ::: notes
 *Note 28*. Note that we can also view $x$ and $y$ as $n \times 1$
@@ -6916,13 +6916,15 @@ $(a+b)\cdot c=a\cdot c+ b\cdot c$ and $a\cdot b=b\cdot a$.
 Two vectors $x$ and $y$ are said to be orthogonal if $x \cdot y = 0$
 
 ::: xmpl
-If $x= \begin{pmatrix}
+If $$x= \begin{pmatrix}
 3\\
 4
-\end{pmatrix}$ and $y= \begin{pmatrix}
+\end{pmatrix}$$ and $$y= \begin{pmatrix}
 2\\
 1
-\end{pmatrix}$, then $$x \cdot y = 3 \cdot 2 + 4 \cdot 1 = 10,$$
+\end{pmatrix},$$ then
+
+$$x \cdot y = 3 \cdot 2 + 4 \cdot 1 = 10,$$
 
 and
 
@@ -6993,12 +6995,12 @@ $$V[W]=V[Y_1+3Y_2]=V[Y_1]+3^2V[Y_2]=1^2+3^2= 1(4) + 9(4)= 40$$
 
 ::: fbox
 Suppose $Y_1,\ldots,Y_n$ are i.i.d., each with mean $\mu$ and variance
-$\sigma^2$ and $a,b\in \mathbb{R}^n$. Writing $Y= \left(
+$\sigma^2$ and $a,b\in \mathbb{R}^n$. Writing $$Y= \left(
  \begin{array}{ccc}
    Y_1  \\
    \vdots\\
    Y_n 
- \end{array} \right)$, consider the linear combination $a'Y$ and $b'Y$.
+ \end{array} \right),$$ consider the linear combination $a'Y$ and $b'Y$.
 :::
 
 ### Details
@@ -7043,12 +7045,12 @@ random variables.
 ::: defn
 If $EY_i = \mu_i$ then we typically write
 
-$E(Y)=\left(
+$$E(Y)=\left(
 \begin{array}{ccc}
   \mu_1 \\
   \vdots \\
   \mu_n
-\end{array} \right)=\mu$
+\end{array} \right)=\mu$$
 
 If $Cov(Y_i, Y_j) = \sigma{ij}$ and $V[Y_i]=\sigma_{ii} = \sigma_i^2$,
 then we define the matrix $$\boldsymbol{\Sigma} = (\sigma_{ij})$$
@@ -7058,31 +7060,6 @@ $V[Y] = \boldsymbol{\Sigma}$ or $Cov[Y] = \boldsymbol{\Sigma}$.
 :::
 
 ### Examples
-
-::: xmpl
-If $Y_i, \ldots , Y_n$ are i.i.d., $EY_i = \mu$, $VY_i = \sigma^2$,
-$a,b\in\mathbb{R}^n$ and $U=a'Y$, $W=b'Y$,
-
-and T= $\begin{bmatrix}
-U \\
-W
-\end{bmatrix}$
-
-then
-
-$ET=
-\begin{bmatrix}
-\Sigma a_i  \mu \\
-\Sigma b_i  \mu
-\end{bmatrix}$
-
-$VT=
-\boldsymbol{\Sigma}$ = $\sigma^2
-\begin{bmatrix}
-\Sigma a_i^2 & \Sigma a_i b_i \\
-\Sigma a_ib_i & \Sigma b_i^2
-\end{bmatrix}$
-:::
 
 ## Transforming random vectors
 
@@ -7298,20 +7275,20 @@ if and only if $k_1=k_2=0$ (and hence the rank must be at least 2).
 ::: fbox
 Recall that for a 2x2 matrix,
 
-$A=
+$$A=
 \begin{bmatrix}
 a & b  \\
 c & d 
-\end{bmatrix}$
+\end{bmatrix}$$
 
 the inverse of $A$ is
 
-$A^{-1}=
+$$A^{-1}=
 \frac{1}{ad-bc}
 \begin{bmatrix}
 2 & 3  \\
 3 & 1 
-\end{bmatrix}$
+\end{bmatrix}$$
 :::
 
 ### Details
@@ -7342,11 +7319,11 @@ elementary products.
 ### Examples
 
 ::: xmpl
-$A=
+$$A=
 \begin{bmatrix}
 a_{11} & a_{12}  \\
 a_{21} & a_{22} 
-\end{bmatrix}$
+\end{bmatrix}$$
 
 then
 
@@ -7354,12 +7331,14 @@ $\vert A \vert = a_{1\underline{1}} a_{2\underline{2}} - a_{1\underline{2}}a_{2\
 :::
 
 ::: xmpl
-$A=
+If $$A=
 \begin{bmatrix}
 a_{11} & a_{12} & a_{13}  \\
 a_{21} & a_{22} & a_{23} \\
 a_{31} & a_{32} & a_{33}
-\end{bmatrix}$
+\end{bmatrix},$$
+
+Then
 
 $\vert A \vert$
 
@@ -7379,65 +7358,65 @@ $-a_{13} a_{22} a_{31}$ Three interchanges
 :::
 
 ::: xmpl
-$A=
+$$A=
 \begin{bmatrix}
 1 & 1  \\
 1 & 0 
-\end{bmatrix}$
+\end{bmatrix}$$
 
 $\vert A \vert = -1$
 :::
 
 ::: xmpl
-$A=
+$$A=
 \begin{bmatrix}
 1 & 0 & 0  \\
 0 & 2 & 0  \\
 0 & 0 & 3 
-\end{bmatrix}$
+\end{bmatrix}$$
 
 $\vert A \vert = 1 \cdot 2 \cdot 3 = 6$
 :::
 
 ::: xmpl
-$A=
+$$A=
 \begin{bmatrix}
 1 & 0 & 0  \\
 0 & 2 & 0  \\
 0 & 3 & 0 
-\end{bmatrix}$
+\end{bmatrix}$$
 
 $\vert A \vert = 0$
 :::
 
 ::: xmpl
-$A=
+$$A=
 \begin{bmatrix}
 1 & 0 & 0  \\
 0 & 0 & 2  \\
 0 & 3 & 0 
-\end{bmatrix}$
+\end{bmatrix}$$
 
 $\vert A \vert = -6$
 :::
 
 ::: xmpl
-$A=
+$$A=
 \begin{bmatrix}
 2 & 1  \\
 2 & 1 
-\end{bmatrix}$
+\end{bmatrix}$$
 
 $\vert A \vert = 0$
 :::
 
 ::: xmpl
-$A=
+$$A=
 \begin{bmatrix}
 1 & 0 & 1  \\
 0 & 1 & 1  \\
 1 & 1 & 2 
-\end{bmatrix}$
+\end{bmatrix}$$
 
 $\vert A \vert = 0$
 :::
@@ -7544,9 +7523,9 @@ x_1^{2}+x_2^{2}
 ## The gradient
 
 ::: fbox
-Suppose the real valued function $f:
-\mathbb{R}^m \rightarrow \mathbb{R}$ is differentiable in each
-coordinate. Then the gradient of $f$, denoted $\nabla f$ is given by
+Suppose the real valued function $f:\mathbb{R}^m \rightarrow \mathbb{R}$
+is differentiable in each coordinate. Then the gradient of $f$, denoted
+$\nabla f$ is given by
 
 $$\nabla f(x)=\begin{pmatrix}\frac{\partial f}{\partial x_1},&\dots &,\frac{\partial f}{\partial x_1}\end{pmatrix}.$$
 :::
@@ -7773,15 +7752,17 @@ if $A$ has an inverse.
 
 ### Details
 
-Consider i.i.d. random variables, $Z_1, \ldots ,Z_n \sim (0,1)$, written
-$\underline{Z}=\left( \begin{array}{ccc}
-   Z_1 \\
-  \vdots\\
-  Z_n\\
- \end{array} \right)$ and let
+Consider i.i.d. random variables, $Z_1, \ldots ,Z_n \sim (0,1)$,
+$$\underline{Z}=
+\left( \begin{array}{ccc}
+ Z_1 \\
+ \vdots\\
+ Z_n
+\end{array} \right)$$ and let
 $\underline{Y}=A \underline{Z} + \underline{\mu}$ where $A$ is an
-invertible $n x n$ matrix and $\underline{\mu} \in \mathbb{R}^n$ is a
-vector, so $Z= A^{-1}(Y-\underline{\mu})$.\
+invertible $n \times n$ matrix and $\underline{\mu} \in \mathbb{R}^n$ is
+a vector, so $Z= A^{-1}(Y-\underline{\mu})$.
+
 Then the p.d.f. of $Y$ is given by
 $$f_{\underline{Y}}(\underline{y})= f_{\underline{Z}}(A^{-1}(\underline{y}- \underline{\mu})) \vert det(A^{-1}) \vert$$
 
