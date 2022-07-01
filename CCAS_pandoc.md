@@ -3016,9 +3016,9 @@ $$s_n = 1 + x + x^2 + .... + x^n$$
 $$xs_n = x + x^2 + ..... +x^n + x^{n+1}$$
 
 $$s_n – xs_n = 1 - x^{n+1}$$ i.e. $$s_n(1-x) = 1-x^{n+1}$$ and we have
-$$s_n =\frac{1-x^{n+1}}{1-x}$$ if $x\neq1$. If BIL$0< x<1BIL$ then
-BIL$x^{n+1}\to 0BIL$ as BIL$n\to\inftyBIL$ and we obtain
-$s_n\to\frac{1}{1-x}$ so $$\sum_{n=0}^{\infty}x^n=\frac{1}{1-x}.$$
+$$s_n =\frac{1-x^{n+1}}{1-x}$$ if BIL$x\neq1$. If BIL$0< x<1BIL$ then
+$x^{n+1}\to 0$ as BIL$n\to\inftyBIL$ and we obtain $s_n\to\frac{1}{1-x}$
+so $$\sum_{n=0}^{\infty}x^n=\frac{1}{1-x}.$$
 :::
 
 ## The exponential function and the Poisson distribution
@@ -3103,8 +3103,8 @@ Let's assume we have a more general function
 
 $y = f(x)$.\
 To find the slope of a line segment, consider 2 $x$-coordinates,
-BIL$x_0BIL$ and BIL$x_1BIL$, and look at the slope between
-BIL$(x_0, f(x_0))BIL$ and $(x_1, f(x_1))$.
+NIL$x_0NIL$ and BIL$x_1BIL$, and look at the slope between
+NIL$(x_0, f(x_0))NIL$ and $(x_1, f(x_1))$.
 
 ::: picture
 23
@@ -3113,7 +3113,7 @@ BIL$(x_0, f(x_0))BIL$ and $(x_1, f(x_1))$.
 
 ### Details
 
-Consider two points, $(x_0,y_0)$ and $(x_1,y_1)$. The slope of the
+Consider two points, Ö$(x_0,y_0)Ö$ and $(x_1,y_1)$. The slope of the
 straight line that goes through these points is
 $$\frac {y_1 - y_0} {x_1 - x_0} .$$
 
@@ -3236,7 +3236,7 @@ $$\lim_{h \to 0} \frac{f(x+h) -f(x)}{h}$$
 if this limit exists.
 :::
 
-When we write $y = f(x)$, we commonly use the notation $\frac{dy}{dx}$
+When we write Ö$y = f(x)Ö$, we commonly use the notation $\frac{dy}{dx}$
 or $f'(x)$ for this limit.
 
 ## The derivative of $f(x)=a+bx$
@@ -3819,7 +3819,7 @@ $$P[X\leq x] = \int\limits^{x}_{-\infty} f(t)dt =
 ::: xmpl
 Suppose $X \sim P(\lambda)$, where X may denote the number of events per
 unit time. The p.m.f. of X is described by
-$p(x)=P[X=x]=e^{-\lambda}\frac{\lambda^x}{x!}$ for $x=0,1,2,...$.
+$p(x)=P[X=x]=e^{-\lambda}\frac{\lambda^x}{x!}$ for $x=0,1,2,...$Ö.
 Consider now the waiting time, T, between events, or simply until the
 first event. Consider the event $T>t$ for some number t\>0. If
 $X\sim p(\lambda)$ denotes the number of events per unit time, then let
@@ -4390,7 +4390,7 @@ $pbinom(q,n,p)$ calculates the probability of obtaining $q$ or fewer
 successes in $n$ trials.
 
 The normal approximation of this distribution can be calculated with
-$pnorm(q,mu,sigma)$ which becomes $pnorm(q,n*p,sqrt(n*p(1-p))$. Three
+$pnorm(q,mu,sigma)$ which becomes $pnorm(q,np,sqrt(np(1-p))$. Three
 numerical examples (note that pbinom and pnorm give similar values for
 large n):
 
@@ -5000,11 +5000,11 @@ is the multivariate normal density in the case of i.i.d. variables.
 ::: xmpl
 Suppose X and Y have the joint density
 
-$f(x,y) =
+$$f(x,y) =
 \begin{cases}
 2 & \text{   } 0\leq y \leq x \leq 1\\
 0 & \text{   otherwise}
-\end{cases}$
+\end{cases}$$
 
 First notice that
 $\int_{\mathbb{R}}\int_{\mathbb{R}}f(x,y)dxdy=\int_{x=0}^1\int_{y=0}^x2dydx=\int_0^12xdx=1$,
@@ -5015,11 +5015,11 @@ note that for $a<0$ we have $P[X\leq a]=0$ but if $a\geq 0$, we obtain
 $$F_X(a)=P[X\leq a]=\int_{x_0}^a\int_{y=0}^x2dydx=[x^2]_0^a=a^2.$$ The
 density of $X$ is therefore
 
-$f_X(x) = \frac{dF(x)}{dx}
+$$f_X(x) = \frac{dF(x)}{dx}
 \begin{cases}
 2x & \text{   } 0\leq x \leq 1\\
 0 & \text{   otherwise}
-\end{cases}.$
+\end{cases}.$$
 :::
 
 ### Handout
@@ -5036,11 +5036,11 @@ and $f(x)\geq 0$ for all $\underline{x}\in \mathbb{R}^n$
 
 then $f$ is the *joint density* of
 
-$\mathbf{X}= \left( \begin{array}{ccc}
+$$\mathbf{X}= \left( \begin{array}{ccc}
   X_1 \\ 
   \vdots \\
   X_n
-  \end{array}\right).$
+  \end{array}\right).$$
 
 If we have the joint density of some multidimensional random variable
 $X=(X_1,\ldots,X_n)$ given in this manner, then we can find the
@@ -5771,15 +5771,15 @@ USA.
 ::: fbox
 Suppose we have a method to test a null hypothesis against an
 alternative hypothesis. The test would be \"controlled\" at some level
-$\alpha$, i.e. $P[reject~H_0] \leq \alpha$ whenever $H_0$ is true.\
-On the other hand, when $H_0$ is false one wants $P[reject ~ H_0]$ to be
-as high as possible.\
+$\alpha$, i.e. $P[reject\ H_0] \leq \alpha$ whenever $H_0$ is true.\
+On the other hand, when $H_0$ is false one wants $P[reject \  H_0]$ to
+be as high as possible.\
 If the parameter to be tested is $\theta$ and $\theta_0$ is a value
 within $H_0$ and $\theta_a$ is in $H_a$ then we want
-$P_{\theta_0}[reject~H_0] \leq \alpha$ and $P_{\theta_a}[reject~H_0]$ as
-large as possible.\
+$P_{\theta_0}[reject\ H_0] \leq \alpha$ and $P_{\theta_a}[reject\ H_0]$
+as large as possible.\
 For a general $\theta$ we write
-$$\beta(\theta) = P_{\theta} [reject~H_0]$$ for the power of the test
+$$\beta(\theta) = P_{\theta} [reject\ H_0]$$ for the power of the test
 :::
 
 ### Details
@@ -6156,8 +6156,7 @@ How many samples do I need to get a power of .9?
         
 
 We would thus need a sample size of n = 31.15 or $\approx 32$ samples to
-obtain a power of 0.9 for our analysis.\
- 
+obtain a power of 0.9 for our analysis.
 :::
 
 ::: xmpl
@@ -6176,15 +6175,12 @@ With a sample size of n = 45, what will the power of my test be?\
 
 This is done the same way for two samples only by changing the
 alternative to \"two.sample\". For two sided power analysis, one only
-needs to change the alternative to \"two.sided\".\
- 
+needs to change the alternative to \"two.sided\".
 :::
 
 ::: xmpl
 If one is interested in doing a power analysis for an ANOVA test, this
-is done in a fairly similar way.\
- \
-With a given sample size of n=20:
+is done in a fairly similar way. With a given sample size of n=20:
 
     power.anova.test(groups=4, n=20, between.var=1, within.var=3)
 
@@ -6295,7 +6291,7 @@ reject $H_o$ if $\left|t \right|> t^\ast_{1-\alpha,n+m-2}$\
 The power of the test can be computed as follows:
 
 $$\begin{aligned}
-\beta_{(\mu_1\mu_2)}& = & P_{\mu_1\mu_2}\left[reject~H_o \right]\\
+\beta_{(\mu_1\mu_2)}& = & P_{\mu_1\mu_2}\left[reject\ H_o \right]\\
 & = & P_{\mu_1\mu_2}\left[\frac{\overline{X}-\overline{Y}}{S\sqrt{\frac{1}{n}+\frac{1}{m}}} > t^\ast_{1-\alpha,n+m-2} \right]\\
 & = &  P_{\mu_1\mu_2}\left[\frac{\frac{\overline{X}-\overline{Y}-(\mu_1-\mu_2)}{\sigma\sqrt{\frac{1}{n}+\frac{1}{m}}}+ \frac{(\mu_1-\mu_2)}{\sigma\sqrt{\frac{1}{n}+\frac{1}{m}}}}{S/\sigma} > t^\ast_{1-\alpha,n+m-2}\right]\\
 & = &  P_{\mu_1\mu_2}\left[\frac{Z +\frac{(\mu_1-\mu_2)}{\sigma\sqrt{\frac{1}{n}+\frac{1}{m}}}}
@@ -6315,7 +6311,7 @@ In this case the null hypothesis is defined as $H_o: \mu_1 = \mu_2$
 versus alternative $H_a: \mu_1 \neq \mu_2$.\
 The power of the test can be computed as follows:\
 $$\begin{aligned}
-\beta_{(\mu_1\mu_2)}& = & P_{\mu_1\mu_2}\left[reject~H_o \right]\\
+\beta_{(\mu_1\mu_2)}& = & P_{\mu_1\mu_2}\left[reject\ H_o \right]\\
 & = & P_{\mu_1\mu_2}\left[\left|\frac{\overline{X}-\overline{Y}}{S\sqrt{\frac{1}{n}+\frac{1}{m}}}\right| > t^\ast_{1-\alpha,n+m-2} \right]\\
 & = & P_{\mu_1\mu_2}\left[\frac{\overline{X}-\overline{Y}}{S\sqrt{\frac{1}{n}+\frac{1}{m}}} > t^\ast_{1-\alpha,n+m-2} \right] \\
 && +\: P_{\mu_1\mu_2} \left[\frac{\overline{X}-\overline{Y}}{S\sqrt{\frac{1}{n}+\frac{1}{m}}} <-t^\ast_{1-\alpha,n+m-2} \right] \\

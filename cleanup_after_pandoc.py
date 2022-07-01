@@ -153,8 +153,10 @@ rep_sets = [{
     re.compile(r'\\####'): '####',
     # Add newlines to prevent breaking of KaTeX or other LaTeX interpretors
     re.compile(r'(\n{0,2})\$\$(\n{0,2})'): replace_dollars,
-    # Workaround for a LaTeX rendering bug (Adds spaces that aren't swallowed by Pandoc
+    # Workaround for a LaTeX rendering bug (Adds e.g. spaces that aren't swallowed by Pandoc)
     'BIL': ' ',
+    'NIL': '',
+    'Ö': ' ',
 }
 ]
 
