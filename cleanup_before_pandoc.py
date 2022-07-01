@@ -65,7 +65,10 @@ reps = {
     # Removing minipages as the text in them gets thrown away
     #re.compile(r'\\begin\{minipage\}\{.*\}'): '',
     #r'\end{minipage}': '',
-    r'\scriptsize': 'Figure: '
+    r'\scriptsize': 'Figure: ',
+    'BIL': ' ',
+    'NIL': '',
+    'Ö': ' ',
 }
 
 f = open(sys.argv[1], encoding='utf8')

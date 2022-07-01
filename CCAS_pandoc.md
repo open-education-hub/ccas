@@ -473,7 +473,7 @@ corresponds to \"filling in\" the \"missing pieces\" of the line.
 
 ::: xmpl
 If $C$ is the circumference of a circle and $D$ is the diameter and we
-define BIL$\pi=\frac{C}{D}BIL$ then $\pi$ is not a fraction.
+define $\pi=\frac{C}{D}$ then $\pi$ is not a fraction.
 :::
 
 ::: xmpl
@@ -686,8 +686,7 @@ sum of x,y.
     }
 
 If you input the vectors 1:3 and 4:7 into the function it will calculate
-the sum of BIL$\verb|x<-(1+2+3)|BIL$ and $\verb|y<-(4+5+6+7)|$ as
-follows
+the sum of $\verb|x<-(1+2+3)|$ and $\verb|y<-(4+5+6+7)|$ as follows
 
     > Myfunction(1:3,4:7)
     28
@@ -972,10 +971,10 @@ $(a+b)^n  = \sum_{i=1}^n  {n \choose x}a^xb^{n-x}$
 
 This can be seen by looking at $(a+b)^n$ as a product of $n$ parentheses
 and multiply these by picking one item ($a$ or $b$) from each. If we
-picked $a$ from BIL$xBIL$ parentheses and BIL$bBIL$ from $(n-x)$, then
-the product is $a^x b^{n-x}$. We can choose the BIL$xBIL$ $a$'s in a
-total of $\binom{n}{x}$ ways so the coefficient of BIL$a^x b^{n-x}BIL$
-is $\binom{n}{x}$.
+picked $a$ from $x$ parentheses and $b$ from $(n-x)$, then the product
+is $a^x b^{n-x}$. We can choose the $x$ $a$'s in a total of
+$\binom{n}{x}$ ways so the coefficient of $a^x b^{n-x}$ is
+$\binom{n}{x}$.
 
 ### Examples
 
@@ -1749,7 +1748,7 @@ The simplest parabola is $p(x) = x^2$ (Fig. a) which is always
 non-negative $p(x)\geq 0$ and $p(x)=0$ only when $x=0$.
 
 ::: notes
-*Note 7*. Note that BIL$p(-x) = p(x)BIL$ since $(-x)^2= x^2$.
+*Note 7*. Note that $p(-x) = p(x)$ since $(-x)^2= x^2$.
 :::
 
 If the coefficient at the highest power is negative, then the parabola
@@ -2061,7 +2060,7 @@ The equation for the Pearson correlation coefficient is:
 
 $$r_{x,y} = \frac{\sum_{i=1}^{n}(x_i - \bar{x})(y_i - \bar{y})}{\sum_{i=1}^{n}(x_i - \bar{x})^2\sum_{i=1}^{n}(y_i - \bar{y})^2},$$
 
-where BIL$\bar{x}BIL$ and $\bar{y}$ are the sample means of the x- and
+where $\bar{x}$ and $\bar{y}$ are the sample means of the x- and
 y-values.
 
 The correlation is always between -1 and 1.
@@ -2863,8 +2862,8 @@ infinity as $x\to\infty$, $e^{-x}$ goes to $0$ and hence $f(x)$ goes to
 Through a similar analysis one finds that
 $$\lim_{x\to-\infty} f(x)=0 ,$$
 
-since, as BIL$x\rightarrow \inftyBIL$, first $-x\rightarrow \infty$ and
-second $e^{-x} \rightarrow \infty$.
+since, as $x\rightarrow \infty$, first $-x\rightarrow \infty$ and second
+$e^{-x} \rightarrow \infty$.
 :::
 
 ::: xmpl
@@ -2875,9 +2874,9 @@ as $$x \to 0$$
 $$\lim_{x \to 0} \frac{\sqrt{x + 4} - 2}{x}$$
 
 Since the square root is present we cannot just direct substitute the 0
-as BIL$xBIL$. This will give us $\frac{0}{0}$, which is an indeterminate
-form. We must perform some algebra first. The way to get rid of the
-radical is to multiply the numerator by the conjugate.
+as $x$. This will give us $\frac{0}{0}$, which is an indeterminate form.
+We must perform some algebra first. The way to get rid of the radical is
+to multiply the numerator by the conjugate.
 
 $$\frac{\sqrt{x + 4} - 2}{x} \cdot \frac{\sqrt{x + 4} + 2}{\sqrt{x + 4} + 2}$$
 
@@ -2997,11 +2996,11 @@ We are interested in, whether infinite sums of sequences can be defined.
 
 Consider a sequence of numbers, $(a_n)_{n\to\infty}$.
 
-Now define another sequence $(s_n)_BIL{n\to\infty},$ where
+Now define another sequence $(s_n)_ {n\to\infty},$ where
 $$s_n=\sum_{k=1}^na_k.$$
 
-If $(s_n)_BIL{n\to\infty}$ is convergent to $S=\lim_{n\to\infty}s_n,$
-then we write $$S=\sum_{n=1}^{\infty}a_n.$$
+If $(s_n)_ {n\to\infty}$ is convergent to $S=\lim_{n\to\infty}s_n,$ then
+we write $$S=\sum_{n=1}^{\infty}a_n.$$
 
 ### Examples
 
@@ -3016,9 +3015,9 @@ $$s_n = 1 + x + x^2 + .... + x^n$$
 $$xs_n = x + x^2 + ..... +x^n + x^{n+1}$$
 
 $$s_n – xs_n = 1 - x^{n+1}$$ i.e. $$s_n(1-x) = 1-x^{n+1}$$ and we have
-$$s_n =\frac{1-x^{n+1}}{1-x}$$ if BIL$x\neq1$. If BIL$0< x<1BIL$ then
-$x^{n+1}\to 0$ as BIL$n\to\inftyBIL$ and we obtain $s_n\to\frac{1}{1-x}$
-so $$\sum_{n=0}^{\infty}x^n=\frac{1}{1-x}.$$
+$$s_n =\frac{1-x^{n+1}}{1-x}$$ if $x\neq1$. If $0< x<1$ then
+$x^{n+1}\to 0$ as $n\to\infty$ and we obtain $s_n\to\frac{1}{1-x}$ so
+$$\sum_{n=0}^{\infty}x^n=\frac{1}{1-x}.$$
 :::
 
 ## The exponential function and the Poisson distribution
@@ -3102,9 +3101,9 @@ corresponding to a unit change in the $x$ coordinate.
 Let's assume we have a more general function
 
 $y = f(x)$.\
-To find the slope of a line segment, consider 2 $x$-coordinates,
-NIL$x_0NIL$ and BIL$x_1BIL$, and look at the slope between
-NIL$(x_0, f(x_0))NIL$ and $(x_1, f(x_1))$.
+To find the slope of a line segment, consider 2 $x$-coordinates, $x_0$
+and $x_1$, and look at the slope between $(x_0, f(x_0))$ and
+$(x_1, f(x_1))$.
 
 ::: picture
 23
@@ -3113,7 +3112,7 @@ NIL$(x_0, f(x_0))NIL$ and $(x_1, f(x_1))$.
 
 ### Details
 
-Consider two points, Ö$(x_0,y_0)Ö$ and $(x_1,y_1)$. The slope of the
+Consider two points, $(x_0,y_0)$ and $(x_1,y_1)$. The slope of the
 straight line that goes through these points is
 $$\frac {y_1 - y_0} {x_1 - x_0} .$$
 
@@ -3236,7 +3235,7 @@ $$\lim_{h \to 0} \frac{f(x+h) -f(x)}{h}$$
 if this limit exists.
 :::
 
-When we write Ö$y = f(x)Ö$, we commonly use the notation $\frac{dy}{dx}$
+When we write $y = f(x)$, we commonly use the notation $\frac{dy}{dx}$
 or $f'(x)$ for this limit.
 
 ## The derivative of $f(x)=a+bx$
@@ -3819,7 +3818,7 @@ $$P[X\leq x] = \int\limits^{x}_{-\infty} f(t)dt =
 ::: xmpl
 Suppose $X \sim P(\lambda)$, where X may denote the number of events per
 unit time. The p.m.f. of X is described by
-$p(x)=P[X=x]=e^{-\lambda}\frac{\lambda^x}{x!}$ for $x=0,1,2,...$Ö.
+$p(x)=P[X=x]=e^{-\lambda}\frac{\lambda^x}{x!}$ for $x=0,1,2,...$ .
 Consider now the waiting time, T, between events, or simply until the
 first event. Consider the event $T>t$ for some number t\>0. If
 $X\sim p(\lambda)$ denotes the number of events per unit time, then let

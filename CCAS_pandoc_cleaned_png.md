@@ -579,7 +579,7 @@ corresponds to \"filling in\" the \"missing pieces\" of the line.
 > If  $C $
 >  is the circumference of a circle and  $D $
 >  is the diameter and we
-> define   $\pi=\frac{C}{D}  $
+> define  $\pi=\frac{C}{D} $
 >  then  $\pi $
 >  is not a fraction.
 
@@ -830,10 +830,9 @@ columns in a table.
 >     }
 > 
 > If you input the vectors 1:3 and 4:7 into the function it will calculate
-> the sum of   $\verb|x<-(1+2+3)|  $
+> the sum of  $\verb|x<-(1+2+3)| $
 >  and  $\verb|y<-(4+5+6+7)| $
->  as
-> follows
+>  as follows
 > 
 >     > Myfunction(1:3,4:7)
 >     28
@@ -1161,17 +1160,17 @@ and multiply these by picking one item ( $a $
  or  $b $
 ) from each. If we
 picked  $a $
- from   $x  $
- parentheses and   $b  $
+ from  $x $
+ parentheses and  $b $
  from  $(n-x) $
-, then
-the product is  $a^x b^{n-x} $
-. We can choose the   $x  $
- $a$'s in a
-total of  $\binom{n}{x} $
- ways so the coefficient of   $a^x b^{n-x}  $
-
-is  $\binom{n}{x} $
+, then the product
+is  $a^x b^{n-x} $
+. We can choose the  $x $
+ $a$'s in a total of
+ $\binom{n}{x} $
+ ways so the coefficient of  $a^x b^{n-x} $
+ is
+ $\binom{n}{x} $
 .
 
 ### Examples
@@ -2123,7 +2122,7 @@ non-negative  $p(x)\geq 0 $
 
 > **Note**:  
 > 
-> *Note 7*. Note that   $p(-x) = p(x)  $
+> *Note 7*. Note that  $p(-x) = p(x) $
 >  since  $(-x)^2= x^2 $
 > .
 
@@ -2483,7 +2482,7 @@ The equation for the Pearson correlation coefficient is:
 
 $$r_{x,y} = \frac{\sum_{i=1}^{n}(x_i - \bar{x})(y_i - \bar{y})}{\sum_{i=1}^{n}(x_i - \bar{x})^2\sum_{i=1}^{n}(y_i - \bar{y})^2},$$
 
-where   $\bar{x}  $
+where  $\bar{x} $
  and  $\bar{y} $
  are the sample means of the x- and
 y-values.
@@ -3489,10 +3488,10 @@ If  $c = f(x_0) $
 > 
 > $$\lim_{x\to-\infty} f(x)=0 ,$$
 > 
-> since, as   $x\rightarrow \infty  $
+> since, as  $x\rightarrow \infty $
 > , first  $-x\rightarrow \infty $
->  and
-> second  $e^{-x} \rightarrow \infty $
+>  and second
+>  $e^{-x} \rightarrow \infty $
 > .
 
 > **Example**:  
@@ -3510,11 +3509,11 @@ If  $c = f(x_0) $
 > $$\lim_{x \to 0} \frac{\sqrt{x + 4} - 2}{x}$$
 > 
 > Since the square root is present we cannot just direct substitute the 0
-> as   $x  $
+> as  $x $
 > . This will give us  $\frac{0}{0} $
-> , which is an indeterminate
-> form. We must perform some algebra first. The way to get rid of the
-> radical is to multiply the numerator by the conjugate.
+> , which is an indeterminate form.
+> We must perform some algebra first. The way to get rid of the radical is
+> to multiply the numerator by the conjugate.
 > 
 > $$\frac{\sqrt{x + 4} - 2}{x} \cdot \frac{\sqrt{x + 4} + 2}{\sqrt{x + 4} + 2}$$
 > 
@@ -3686,8 +3685,8 @@ $$s_n=\sum_{k=1}^na_k.$$
 
 If  $(s_n)_ {n\to\infty} $
  is convergent to  $S=\lim_{n\to\infty}s_n, $
-
-then we write 
+ then
+we write 
 
 $$S=\sum_{n=1}^{\infty}a_n.$$
 
@@ -3728,14 +3727,13 @@ $$S=\sum_{n=1}^{\infty}a_n.$$
 > 
 > $$s_n =\frac{1-x^{n+1}}{1-x}$$
 > 
->  if   $x\neq1 $
-> . If   $0< x<1  $
+>  if  $x\neq1 $
+> . If  $0< x<1 $
 >  then
 >  $x^{n+1}\to 0 $
->  as   $n\to\infty  $
+>  as  $n\to\infty $
 >  and we obtain  $s_n\to\frac{1}{1-x} $
-> 
-> so 
+>  so
 > 
 > $$\sum_{n=0}^{\infty}x^n=\frac{1}{1-x}.$$
 > 
@@ -3830,19 +3828,19 @@ corresponding to a unit change in the  $x $
 >  $y = f(x) $
 > .\
 > To find the slope of a line segment, consider 2  $x $
-> -coordinates,
->  $x_0 $
->  and   $x_1  $
-> , and look at the slope between
->  $(x_0, f(x_0)) $
->  and  $(x_1, f(x_1)) $
+> -coordinates,  $x_0 $
+> 
+> and  $x_1 $
+> , and look at the slope between  $(x_0, f(x_0)) $
+>  and
+>  $(x_1, f(x_1)) $
 > .
 > 
 > ![Fig. 23](images/13_2_segment_slopes.png)
 
 ### Details
 
-Consider two points,   $(x_0,y_0)  $
+Consider two points,  $(x_0,y_0) $
  and  $(x_1,y_1) $
 . The slope of the
 straight line that goes through these points is
@@ -3999,7 +3997,7 @@ USA.
 > 
 > if this limit exists.
 
-When we write   $y = f(x)  $
+When we write  $y = f(x) $
 , we commonly use the notation  $\frac{dy}{dx} $
 
 or  $f'(x) $
