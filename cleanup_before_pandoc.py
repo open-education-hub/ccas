@@ -62,13 +62,8 @@ reps = {
     re.compile(r' ?\\\\\n\\((begin)|(end))'): '\n\\\\\\1',
     # Preventing image locations from being lost in conversion
     re.compile(r'\\includegraphicsdata\{.*\}'): replace_img,
-    # Removing minipages as the text in them gets thrown away
-    #re.compile(r'\\begin\{minipage\}\{.*\}'): '',
-    #r'\end{minipage}': '',
+    # Caption text
     r'\scriptsize': 'Figure: ',
-    'BIL': ' ',
-    'NIL': '',
-    'Ö': ' ',
 }
 
 f = open(sys.argv[1], encoding='utf8')

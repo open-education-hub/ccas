@@ -2995,10 +2995,10 @@ We are interested in, whether infinite sums of sequences can be defined.
 
 Consider a sequence of numbers, $(a_n)_{n\to\infty}$.
 
-Now define another sequence $(s_n)_ {n\to\infty},$ where
+Now define another sequence $(s_n)_{n\to\infty},$ where
 $$s_n=\sum_{k=1}^na_k.$$
 
-If $(s_n)_ {n\to\infty}$ is convergent to $S=\lim_{n\to\infty}s_n,$ then
+If $(s_n)_{n\to\infty}$ is convergent to $S=\lim_{n\to\infty}s_n,$ then
 we write $$S=\sum_{n=1}^{\infty}a_n.$$
 
 ### Examples
@@ -3817,7 +3817,7 @@ $$P[X\leq x] = \int\limits^{x}_{-\infty} f(t)dt =
 ::: xmpl
 Suppose $X \sim P(\lambda)$, where X may denote the number of events per
 unit time. The p.m.f. of X is described by
-$p(x)=P[X=x]=e^{-\lambda}\frac{\lambda^x}{x!}$ for $x=0,1,2,...$ .
+$p(x)=P[X=x]=e^{-\lambda}\frac{\lambda^x}{x!}$ for $x=0,1,2,...$.
 Consider now the waiting time, T, between events, or simply until the
 first event. Consider the event $T>t$ for some number t\>0. If
 $X\sim p(\lambda)$ denotes the number of events per unit time, then let
@@ -3979,7 +3979,7 @@ A function can then be set up with the file number as an argument:
       cat("The URL B", fname,"\n")
       dat<-read.table(fname,header=T)
       ttl<-paste("Data from file number", fnum)
-      plot(dat$le,dat$osl,main=ttl)
+      plot(datÆle,datÆosl,main=ttl)
       }
 
 Now call this with
@@ -4020,21 +4020,21 @@ Furthermore, this ensures repeatability.
 For a given project "input", "functions" "analysis" and "output" files
 can be created as below.
 
-[input.r]{.underline}
+input.r:
 
     dat<-read.table("http://notendur.hi.is/~gunnar/kennsla/alsm/data/set115.dat", header=T)
 
-[functions.r]{.underline}
+functions.r:
 
     plotwtle<-function(fnum){
      fname<-paste("http://notendur.hi.is/~gunnar/kennsla/alsm/data/set",fnum,".dat",sep="")
       cat("The URL is",fname,"\n")
       dat<-read.table(fname,header=T)
       ttl<-paste("My data set was",fnum)
-      plot(dat$le,dat$osl,main=ttl,xlab="Length(cm)",ylab="Live weight (g)")
+      plot(datÆle,datÆosl,main=ttl,xlab="Length(cm)",ylab="Live weight (g)")
     }
 
-[output.r]{.underline}
+output.r:
 
     source("functions.r")
     for(i in 101:150){
@@ -4234,11 +4234,11 @@ from code using the pound symbol (#).
 
 \####################
 
-dat\<-read.table(filename)
+    dat<-read.table(filename)
 
-x\<-log(dat\$le) #log-transformation of length
+    x<-log(dat\$le)  \#log-transformation of length
 
-y\<-log(dat\$wt) #log-transformation of weight
+    y<-log(dat\$wt)  \#log-transformation of weight
 
 \######################
 
