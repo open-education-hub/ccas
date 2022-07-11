@@ -670,7 +670,7 @@ USA.
 
 ### Details
 
-Pairs of numbers can be depicted as points on a plane.\
+Pairs of numbers can be depicted as points on a plane.
 
 > **Definition**:  
 > 
@@ -871,29 +871,32 @@ column vector would be referred to as  $x' $
 
 > **Example**:  
 > 
-> Consider a function that takes to vectors
+> Consider a function that takes two vectors
 > 
 > $$a \in \mathbb{R}^n, b \in \mathbb{N}^m$$
 > 
 > as arguments with 
 > 
-> $$n \ge m$$
+> $$n \geq m$$
 > 
 > and 
 > 
-> $$1 \le b_1,...,b_m \le n.$$
+> $$1 \leq b_1,...,b_m \leq n.$$
 > 
 > The function returns the sum 
 > 
 > $$\sum_{i = 1}^m {a_b}_i$$
 > 
-> Long version:\
-> `f`N \<- function(a,b) \
-> result \<- sum(a\[b\])\
-> return(result)\
+> Long version:
 > 
-> Short version:\
-> `|`fN \<- function(a,b) sum(a\[b\])\|
+>     fN <- function(a,b) {
+>         result <- sum(a[b])
+>         return(result)
+>     }
+> 
+> Short version:
+> 
+>     fN <- function(a,b) sum(a[b])
 
 ## Summation
 
@@ -2324,7 +2327,7 @@ name or refers to a file in the working directory.\
 The scan() command returns a vector, but the read.table() command
 returns a dataframe, which is a rectangular table of data whose columns
 have names. A column can be extracted from a data frame, e.g., with x\<-
-dat\$a where \"dat\" is the name of the data frame and \"a\" is the name
+dat$a where \"dat" is the name of the data frame and \"a\" is the name
 of a column.
 
 > **Note**:  
@@ -2343,7 +2346,7 @@ of a column.
 > 
 > 2.  x\<-scan(\"lecture 70.txt\")
 > 
-> 3.  x\<-read.table(\"http://notendur.hi.is/ gunnar/kennsla/alsm/data/set115.dat\",
+> 3.  x\<-read.table(\"http://notendur.hi.is/~gunnar/kennsla/alsm/data/set115.dat",
 >     header=T)
 
 ## Histograms
@@ -2449,8 +2452,9 @@ We may also want to use several other related operations in R: 
  $\verb;median(x); $
 , the median value in vector x\
  $\verb;range(x); $
-, which list the range:  $\verb;max(x)-\verb;min(x); $
-\
+, which lists the range:
+ $\verb;max(x);-\verb;min(x); $
+.\
 If the variable  $\verb;x; $
  contains discrete categories,
  $\verb;table(x); $
@@ -2720,7 +2724,7 @@ where\
  $k $
 = growth rate\
  $t $
- =number of time intervals\
+ =number of time intervals
 
 > **Note**:  
 > 
@@ -2780,43 +2784,34 @@ numbers. Where  $x $
  exist
 then we can compute  $g(f(x)) $
  for any  $x $
-.\
-If\
- $f(x) = {x}^2 $
- and\
- $g(y)= {e}^y $
- then\
- $g(f(x))= {e}^{f(x)} = {e}^{x^2} $
-\
-If we call the resulting function  ${h} $
-;\
- $h(x) = g(f(x)) $
-\
-Then  ${h} $
- is commonly written as\
- ${h} = {g}\circ{f} $
-\
-\
+.
+
+If  $f(x) = {x}^2 $
+ and  $g(y)= {e}^y $
+, then
+
+$$g(f(x))= {e}^{f(x)} = {e}^{x^2}.$$
+
+If we call the resulting function  $h $
+, then  $h(x) = g(f(x)) $
+. Another
+common notation for this is 
+
+$$h = g\circ f.$$
 
 ### Examples
 
 > **Example**:  
 > 
-> If\
->  $g(x)= {3}+ {2}x $
->  and\
->  $f(x) = {5}{x}^2 $
-> \
-> Then\
->  $g(f(x)) = {3} +{2} f(x) $
-> \
->  $g(f(x)) = {3} +{10x}^2 $
-> \
->  $f(g(x)) = {5}{(g(x))}^2 $
-> \
->  $f(g(x)) = {5}{({3}+{2x})}^2 $
-> \
->  $f(g(x)) = {45}+{60x}+{20x}^2 $
+> If  $g(x)= {3}+ {2}x $
+>  and  $f(x) = {5}{x}^2 $
+> , then
+> 
+> $$g(f(x)) = {3} +{2} f(x) = {3} +{10x}^2,$$
+> 
+>  and
+> 
+> $$f(g(x)) = {5}{(g(x))}^2 = {5}{({3}+{2x})}^2 = {45}+{60x}+{20x}^2.$$
 > 
 
 ## Storing and using R code
@@ -5258,7 +5253,7 @@ used. The R code form is:
 
 ## Indenting
 
-> Code should be properly indented!\
+> Code should be properly indented!
 
 ### Details
 
@@ -5278,8 +5273,8 @@ fFunctions, for-loops, and if-statements should always be indented.
 >     ####################
 > 
 >     dat<-read.table(filename)
->     x<-log(dat$le)  \#log-transformation of length
->     y<-log(dat$wt)  \#log-transformation of weight
+>     x<-log(dat$le)  #log-transformation of length
+>     y<-log(dat$wt)  #log-transformation of weight
 > 
 >     ######################
 >     #####THE ANALYSIS#####
@@ -5521,8 +5516,7 @@ $$\begin{aligned}
 >     #This is the value which gives the cumulative probability of p=0.7 for a n~(0,1)
 >     qt(0.7,2)
 >     [1] 0.6172134
->     #The value, which gives the cumulative probability of p=0.7 with n=2 for the  $T $
->  distribution.
+>     #The value, which gives the cumulative probability of p=0.7 with n=2 for the t distribution.
 >     qt(0.7,5)
 >     [1] 0.5594296
 >     qt(0.7,10)
@@ -7888,7 +7882,7 @@ above line is a random variable so this make no sense at all)**
 > **Example**:  
 > 
 > With a sample size of  $n = 45 $
-> , what will the power of my test be?\
+> , what will the power of my test be?
 > 
 >     power.t.test(n=45,delta=1.5,sd=2,sig.level=0.05,type="one.sample",alternative="one.sided")
 > 
@@ -7965,7 +7959,7 @@ sig.level=significance level\
 power= normally 0.8, 0.9 or 0.95\
 type= two sample, one sample or paired (the type selected depends on the
 research)\
-alternative= either one sided or two sided\
+alternative= either one sided or two sided
 
 ### Examples
 
@@ -8007,7 +8001,7 @@ alternative= either one sided or two sided\
 >  $\Delta = \frac{(\mu_1-\mu_2)}{\sigma\sqrt{\frac{1}{n}+\frac{1}{m}}} $
 > 
 > and  $U $
->  is the SSE.\
+>  is the SSE.
 
 ### Details
 
@@ -8059,14 +8053,15 @@ where
 and  $U $
  is the SSE of the samples which is divided by the appropriate
 degrees of freedom to give a  $\chi^2 $
- distribution.\
+ distribution.
+
 This is the probability that a non-central  $t $
 -variable exceeds
  $t^\ast $
-.\
-\
-*T*wo Sample, Two-sided  $t $
--test:
+.
+
+*Two Sample, Two-sided  $t $
+-test*:
 
 In this case the null hypothesis is defined as  $H_o: \mu_1 = \mu_2 $
 
@@ -8099,8 +8094,7 @@ degrees of freedom to give a  $\chi^2 $
 >  $power.t.test $
 >  function in R.
 
-## Sample sizes for two-sample one and two-sided  $t $
--tests
+## Sample sizes for two-sample one and two-sided $t$-tests
 
 > The sample size should always satisfy the desired power.
 
@@ -8132,10 +8126,8 @@ Similarly for a two sample, two-sided  $t $
  $m $
  that satisfies
 
- $P_{\mu_1\mu_2}\left[ \frac{Z + \Delta}{\sqrt{U/(n+m-2)}} > t^\ast_{1-\alpha,n+m-2} \right] $
- +
- $P_{\mu_1\mu_2} \left[\frac{Z + \Delta}{\sqrt{U/(n+m-2)}} < -t^\ast_{1-\alpha,n+m-2} \right] $
-
+$$P_{\mu_1\mu_2}\left[ \frac{Z + \Delta}{\sqrt{U/(n+m-2)}} > t^\ast_{1-\alpha,n+m-2} \right] +
+P_{\mu_1\mu_2} \left[\frac{Z + \Delta}{\sqrt{U/(n+m-2)}} < -t^\ast_{1-\alpha,n+m-2} \right]$$
 
 ## A case study in power
 
@@ -8226,8 +8218,7 @@ Similarly for a two sample, two-sided  $t $
 > the ancova power computations anyway.
 > 
 >     #
->     # Next do the power computations just for a regular two-sided, two-sample  $t $
-> -test
+>     # Next do the power computations just for a regular two-sided, two-sample t-test
 >     # and use simulation
 >     #
 >     Y1<-matrix(rnorm(J*Nsim,mu0,sigma),ncol=J) # Simulate Nsim samples of size J, ea N(mu1,sigma^2)
@@ -8247,8 +8238,7 @@ Similarly for a two sample, two-sided  $t $
 > approach) by checking whether these give the same thing:
 > 
 >     #
->     # Then compute the exact power for the  $t $
-> -test
+>     # Then compute the exact power for the t-test
 >     #
 >     pow2<-power.t.test(delta=delta,sd=sigma,sig.level=alpha,n=J ,type=c("two.sample"),alternative=c("two.sided"))
 >     cat("The exact power:\n")
@@ -8284,8 +8274,7 @@ Similarly for a two sample, two-sided  $t $
 >       x<-onerow[(n+1):(2*n)]                 # get the x-data from the row
 >       grps<-factor(c(rep(1,J),rep(2,J)))     # define the groups
 >       sm<-summary(lm(y~x+grps))              # fit the ancova model
->       pval<-sm $coefficients[3,4] # extract exactly the right thing from the summary command-the  $
-> p$-value for H0:mu1=mu2
+>       pval<-sm$coefficients[3,4] # extract exactly the right thing from the summary command-the p-value for H0:mu1=mu2
 >       return(pval)
 >     }
 > 
@@ -8311,8 +8300,7 @@ Similarly for a two sample, two-sided  $t $
 >               power = 0.8049123
 >         alternative = two.sided
 > 
->      NOTE:  $n $
->  is number in *each* group 
+>      NOTE: n is number in *each* group 
 > 
 >     The simulated ancova power is  0.775175 
 > 
@@ -9630,10 +9618,15 @@ USA.
 > > *Note 31*. Note that  $f $
 > >  is linear and  $f(x)=Ax $
 > >  where
-> >  $x=\begin{pmatrix} x_1\\ x_2 \\x_3\end{pmatrix} $
-> >  and
-> >  $A=\begin{bmatrix}2&3&4\end{bmatrix} $
-> > .
+> > 
+> > $$x=\begin{pmatrix} x_1\\
+> > x_2\\
+> > x_3\end{pmatrix}$$
+> > 
+> >  and 
+> > 
+> > $$A=\begin{bmatrix}2&3&4\end{bmatrix}.$$
+> > 
 
 > **Example**:  
 > 
@@ -9652,10 +9645,13 @@ USA.
 > > **Note**:  
 > > 
 > > *Note 32*. Note that  $f(x)=Ax $
-> > , where $A=\begin{bmatrix}
-> >   1&1\\ 
-> >   1&-1
-> > \end{bmatrix}$.
+> > , where 
+> > 
+> > $$A=\begin{bmatrix}
+> > 1&1\\
+> > 1&-1
+> > \end{bmatrix}.$$
+> > 
 
 > **Example**:  
 > 
@@ -10855,13 +10851,12 @@ categories:
 
     Residual standard error: 15.38 on 48 degrees of freedom
     Multiple R-squared: 0.6511,     Adjusted R-squared: 0.6438 
-    F-statistic: 89.57 on 1 and 48 DF,   $p $
--value: 1.490e-12 
+    F-statistic: 89.57 on 1 and 48 DF,  p-value: 1.490e-12 
 
-Notice that there are four different sets of output (`C`all, Residuals,
-Coefficients, and `R`esults) for both the constant  $\alpha $
- and the
-estimated coefficient  $\hat{\beta} $
+Notice that there are four different sets of output
+(`Call, Residuals, Coefficients`, and `Results`) for both the constant
+ $\alpha $
+ and the estimated coefficient  $\hat{\beta} $
  speed variable.\
 The estimated coefficients describe the change in the dependent variable
 when there is a single unit increase in the explanatory variable given

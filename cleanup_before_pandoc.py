@@ -64,6 +64,8 @@ reps = {
     re.compile(r'\\includegraphicsdata\{.*\}'): replace_img,
     # Caption text
     r'\scriptsize': 'Figure: ',
+    # URL fixes
+    '~gunnar': 'TILDEgunnar',
 }
 
 f = open(sys.argv[1], encoding='utf8')

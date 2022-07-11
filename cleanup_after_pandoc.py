@@ -153,8 +153,12 @@ rep_sets = [{
     re.compile(r'(\n{0,2})\$\$(\n{0,2})'): replace_dollars,
     # Adds spaces to try to fix a LaTeX rendering bug (Sometimes need to fix collateral damage)
     re.compile(r'([^\$\\])\$([^\$\n]+?)\$([^\$])'): '\\1 $\\2 $\n\\3',
+    # Collateral damage
     'where Æ': 'where Æ\\alpha',
     'Æ': '$',
+    # URL related fixes
+    'TILDEgunnar': '~gunnar',
+    'dat\\': 'dat',
 }
 ]
 

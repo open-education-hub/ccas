@@ -541,7 +541,7 @@ The plane is normally denoted by $\mathbb{R}^2$.
 
 ### Details
 
-Pairs of numbers can be depicted as points on a plane.\
+Pairs of numbers can be depicted as points on a plane.
 
 ::: defn
 A **plane** is a perfectly flat surface with no thickness and no end, it
@@ -721,22 +721,25 @@ How to remove all indices below a certain value in R
 :::
 
 ::: xmpl
-Consider a function that takes to vectors
+Consider a function that takes two vectors
 $$a \in \mathbb{R}^n, b \in \mathbb{N}^m$$
 
-as arguments with $$n \ge m$$
+as arguments with $$n \geq m$$
 
-and $$1 \le b_1,...,b_m \le n.$$
+and $$1 \leq b_1,...,b_m \leq n.$$
 
 The function returns the sum $$\sum_{i = 1}^m {a_b}_i$$
 
-Long version:\
-`f`N \<- function(a,b) \
-result \<- sum(a\[b\])\
-return(result)\
+Long version:
 
-Short version:\
-`|`fN \<- function(a,b) sum(a\[b\])\|
+    fN <- function(a,b) {
+        result <- sum(a[b])
+        return(result)
+    }
+
+Short version:
+
+    fN <- function(a,b) sum(a[b])
 :::
 
 ## Summation
@@ -1923,7 +1926,7 @@ Below are three examples using R code to enter data
 
 2.  x\<-scan(\"lecture 70.txt\")
 
-3.  x\<-read.table(\"http://notendur.hi.is/ gunnar/kennsla/alsm/data/set115.dat\",
+3.  x\<-read.table(\"http://notendur.hi.is/TILDEgunnar/kennsla/alsm/data/set115.dat\",
     header=T)
 :::
 
@@ -2021,7 +2024,8 @@ $\verb;var(x);$ returns the variance, $s^2$\
 We may also want to use several other related operations in R: 
 
 $\verb;median(x);$, the median value in vector x\
-$\verb;range(x);$, which list the range: $\verb;max(x)-\verb;min(x);$\
+$\verb;range(x);$, which lists the range:
+$\verb;max(x);-\verb;min(x);$.\
 If the variable $\verb;x;$ contains discrete categories,
 $\verb;table(x);$ returns counts of the frequency in each category.
 
@@ -2299,7 +2303,7 @@ $y(t)=Ae^{kt}$
 where\
 $A$ (sometimes denoted $P$)=initial population size\
 $k$= growth rate\
-$t$ =number of time intervals\
+$t$ =number of time intervals
 
 ::: notes
 *Note 10*. Note that exponential growth occurs when $k>0$ and
@@ -2336,29 +2340,20 @@ $$e^{a+b} = e^a e^b$$ for any real numbers $a$ and $b$.
 Consider two functions, $f$ and $g$, each defined for some set of real
 numbers. Where $x$ can be solved in function $f$ using $Y = f(x)$ when
 $g(Y)$ exists for all such resulting $Y$. If $Y = f(x)$ and $g(Y)$ exist
-then we can compute $g(f(x))$ for any $x$.\
-If\
-$f(x) = {x}^2$ and\
-$g(y)= {e}^y$ then\
-$g(f(x))= {e}^{f(x)} = {e}^{x^2}$\
-If we call the resulting function ${h}$;\
-$h(x) = g(f(x))$\
-Then ${h}$ is commonly written as\
-${h} = {g}\circ{f}$\
-\
+then we can compute $g(f(x))$ for any $x$.
+
+If $f(x) = {x}^2$ and $g(y)= {e}^y$, then
+$$g(f(x))= {e}^{f(x)} = {e}^{x^2}.$$
+
+If we call the resulting function $h$, then $h(x) = g(f(x))$. Another
+common notation for this is $$h = g\circ f.$$
 
 ### Examples
 
 ::: xmpl
-If\
-$g(x)= {3}+ {2}x$ and\
-$f(x) = {5}{x}^2$\
-Then\
-$g(f(x)) = {3} +{2} f(x)$\
-$g(f(x)) = {3} +{10x}^2$\
-$f(g(x)) = {5}{(g(x))}^2$\
-$f(g(x)) = {5}{({3}+{2x})}^2$\
-$f(g(x)) = {45}+{60x}+{20x}^2$
+If $g(x)= {3}+ {2}x$ and $f(x) = {5}{x}^2$, then
+$$g(f(x)) = {3} +{2} f(x) = {3} +{10x}^2,$$ and
+$$f(g(x)) = {5}{(g(x))}^2 = {5}{({3}+{2x})}^2 = {45}+{60x}+{20x}^2.$$
 :::
 
 ## Storing and using R code
@@ -3932,7 +3927,7 @@ grouped into separate parts.
 ::: xmpl
 Input
 
-    dat<-read.table("http://notendur.hi.is/~gunnar/kennsla/alsm/data/set115.dat", header=T)
+    dat<-read.table("http://notendur.hi.is/TILDEgunnar/kennsla/alsm/data/set115.dat", header=T)
     cols<- c("le", "osl")
 
 Analysis
@@ -3960,13 +3955,13 @@ Typically a project has several such functions.
 ::: xmpl
 Suppose you want to plot the weight vs. length for several datasets in
 
-$$\verb|http://hi.is/~gunnar/kennsla/alsm/data|$$
+$$\verb|http://hi.is/TILDEgunnar/kennsla/alsm/data|$$
 
 A function can then be set up with the file number as an argument:
 
      plotwtle<-function (fnum){
      fname<-paste(
-     "http://hi.is/~gunnar/kennsla/alsm/data/set",fnum,".dat",sep="")
+     "http://hi.is/TILDEgunnar/kennsla/alsm/data/set",fnum,".dat",sep="")
       cat("The URL B", fname,"\n")
       dat<-read.table(fname,header=T)
       ttl<-paste("Data from file number", fnum)
@@ -4013,12 +4008,12 @@ can be created as below.
 
 input.r:
 
-    dat<-read.table("http://notendur.hi.is/~gunnar/kennsla/alsm/data/set115.dat", header=T)
+    dat<-read.table("http://notendur.hi.is/TILDEgunnar/kennsla/alsm/data/set115.dat", header=T)
 
 functions.r:
 
     plotwtle<-function(fnum){
-     fname<-paste("http://notendur.hi.is/~gunnar/kennsla/alsm/data/set",fnum,".dat",sep="")
+     fname<-paste("http://notendur.hi.is/TILDEgunnar/kennsla/alsm/data/set",fnum,".dat",sep="")
       cat("The URL is",fname,"\n")
       dat<-read.table(fname,header=T)
       ttl<-paste("My data set was",fnum)
@@ -4202,7 +4197,7 @@ can use
 ## Indenting
 
 ::: fbox
-Code should be properly indented!\
+Code should be properly indented!
 :::
 
 ### Details
@@ -4224,8 +4219,8 @@ from code using the pound symbol (#).
     ####################
 
     dat<-read.table(filename)
-    x<-log(dat$le)  \#log-transformation of length
-    y<-log(dat$wt)  \#log-transformation of weight
+    x<-log(dat$le)  #log-transformation of length
+    y<-log(dat$wt)  #log-transformation of weight
 
     ######################
     #####THE ANALYSIS#####
@@ -4406,7 +4401,7 @@ approaches the normal distribution.
     #This is the value which gives the cumulative probability of p=0.7 for a n~(0,1)
     qt(0.7,2)
     [1] 0.6172134
-    #The value, which gives the cumulative probability of p=0.7 with n=2 for the $T$ distribution.
+    #The value, which gives the cumulative probability of p=0.7 with n=2 for the t distribution.
     qt(0.7,5)
     [1] 0.5594296
     qt(0.7,10)
@@ -6148,7 +6143,7 @@ obtain a power of 0.9 for our analysis.
 :::
 
 ::: xmpl
-With a sample size of $n = 45$, what will the power of my test be?\
+With a sample size of $n = 45$, what will the power of my test be?
 
     power.t.test(n=45,delta=1.5,sd=2,sig.level=0.05,type="one.sample",alternative="one.sided")
 
@@ -6222,7 +6217,7 @@ sig.level=significance level\
 power= normally 0.8, 0.9 or 0.95\
 type= two sample, one sample or paired (the type selected depends on the
 research)\
-alternative= either one sided or two sided\
+alternative= either one sided or two sided
 
 ### Examples
 
@@ -6259,7 +6254,7 @@ $$\beta_{(\mu_1\mu_2)} = P_{\mu_1\mu_2}\left[ \frac{Z + \Delta}{\sqrt{U/(n+m-2)}
 
 where
 $\Delta = \frac{(\mu_1-\mu_2)}{\sigma\sqrt{\frac{1}{n}+\frac{1}{m}}}$
-and $U$ is the SSE.\
+and $U$ is the SSE.
 :::
 
 ### Details
@@ -6290,11 +6285,12 @@ $$\begin{aligned}
 where
 $\Delta = \frac{(\mu_1-\mu_2)}{\sigma\sqrt{\frac{1}{n}+\frac{1}{m}}}$
 and $U$ is the SSE of the samples which is divided by the appropriate
-degrees of freedom to give a $\chi^2$ distribution.\
+degrees of freedom to give a $\chi^2$ distribution.
+
 This is the probability that a non-central $t$-variable exceeds
-$t^\ast$.\
-\
-*T*wo Sample, Two-sided $t$-test:
+$t^\ast$.
+
+*Two Sample, Two-sided $t$-test*:
 
 In this case the null hypothesis is defined as $H_o: \mu_1 = \mu_2$
 versus alternative $H_1: \mu_1 \neq \mu_2$.\
@@ -6320,7 +6316,7 @@ degrees of freedom to give a $\chi^2$ distribution.\
 $power.t.test$ function in R.
 :::
 
-## Sample sizes for two-sample one and two-sided $t$-tests
+## Sample sizes for two-sample one and two-sided ÆtÆ-tests
 
 ::: fbox
 The sample size should always satisfy the desired power.
@@ -6339,8 +6335,8 @@ for a two sample, one-sided $t$-test.\
 Similarly for a two sample, two-sided $t$-test we need to find $n$ and
 $m$ that satisfies
 
-$P_{\mu_1\mu_2}\left[ \frac{Z + \Delta}{\sqrt{U/(n+m-2)}} > t^\ast_{1-\alpha,n+m-2} \right]$ +
-$P_{\mu_1\mu_2} \left[\frac{Z + \Delta}{\sqrt{U/(n+m-2)}} < -t^\ast_{1-\alpha,n+m-2} \right]$
+$$P_{\mu_1\mu_2}\left[ \frac{Z + \Delta}{\sqrt{U/(n+m-2)}} > t^\ast_{1-\alpha,n+m-2} \right] +
+P_{\mu_1\mu_2} \left[\frac{Z + \Delta}{\sqrt{U/(n+m-2)}} < -t^\ast_{1-\alpha,n+m-2} \right]$$
 
 ## A case study in power
 
@@ -6413,7 +6409,7 @@ two-sample, two-tailed $t$-test. This should be reasonably similar to
 the ancova power computations anyway.
 
     #
-    # Next do the power computations just for a regular two-sided, two-sample $t$-test
+    # Next do the power computations just for a regular two-sided, two-sample t-test
     # and use simulation
     #
     Y1<-matrix(rnorm(J*Nsim,mu0,sigma),ncol=J) # Simulate Nsim samples of size J, ea N(mu1,sigma^2)
@@ -6433,7 +6429,7 @@ same computations and it is worth while to verify the code (and
 approach) by checking whether these give the same thing:
 
     #
-    # Then compute the exact power for the $t$-test
+    # Then compute the exact power for the t-test
     #
     pow2<-power.t.test(delta=delta,sd=sigma,sig.level=alpha,n=J ,type=c("two.sample"),alternative=c("two.sided"))
     cat("The exact power:\n")
@@ -6467,7 +6463,7 @@ single line as an argument, it will subsequently be possible to use the
       x<-onerow[(n+1):(2*n)]                 # get the x-data from the row
       grps<-factor(c(rep(1,J),rep(2,J)))     # define the groups
       sm<-summary(lm(y~x+grps))              # fit the ancova model
-      pval<-sm$coefficients[3,4] # extract exactly the right thing from the summary command-the $p$-value for H0:mu1=mu2
+      pval<-sm$coefficients[3,4] # extract exactly the right thing from the summary command-the p-value for H0:mu1=mu2
       return(pval)
     }
 
@@ -6493,7 +6489,7 @@ When run, this script returns:
               power = 0.8049123
         alternative = two.sided
 
-     NOTE: $n$ is number in *each* group 
+     NOTE: n is number in *each* group 
 
     The simulated ancova power is  0.775175 
 
@@ -7475,8 +7471,9 @@ $f: \mathbb{R}^3\to\mathbb{R}$, $f(x_1,x_2,x_3)=2x_1+3x_2+4x_3$.
 
 ::: notes
 *Note 31*. Note that $f$ is linear and $f(x)=Ax$ where
-$x=\begin{pmatrix} x_1\\ x_2 \\x_3\end{pmatrix}$ and
-$A=\begin{bmatrix}2&3&4\end{bmatrix}$.
+$$x=\begin{pmatrix} x_1\\
+x_2\\
+x_3\end{pmatrix}$$ and $$A=\begin{bmatrix}2&3&4\end{bmatrix}.$$
 :::
 :::
 
@@ -7489,10 +7486,10 @@ x_1-x_2
 \end{array} \right)$$
 
 ::: notes
-*Note 32*. Note that $f(x)=Ax$, where $A=\begin{bmatrix}
-  1&1\\ 
-  1&-1
-\end{bmatrix}$.
+*Note 32*. Note that $f(x)=Ax$, where $$A=\begin{bmatrix}
+1&1\\
+1&-1
+\end{bmatrix}.$$
 :::
 :::
 
@@ -8333,11 +8330,11 @@ categories:
 
     Residual standard error: 15.38 on 48 degrees of freedom
     Multiple R-squared: 0.6511,     Adjusted R-squared: 0.6438 
-    F-statistic: 89.57 on 1 and 48 DF,  $p$-value: 1.490e-12 
+    F-statistic: 89.57 on 1 and 48 DF,  p-value: 1.490e-12 
 
-Notice that there are four different sets of output (`C`all, Residuals,
-Coefficients, and `R`esults) for both the constant $\alpha$ and the
-estimated coefficient $\hat{\beta}$ speed variable.\
+Notice that there are four different sets of output
+(`Call, Residuals, Coefficients`, and `Results`) for both the constant
+$\alpha$ and the estimated coefficient $\hat{\beta}$ speed variable.\
 The estimated coefficients describe the change in the dependent variable
 when there is a single unit increase in the explanatory variable given
 that everything else is held constant.\
