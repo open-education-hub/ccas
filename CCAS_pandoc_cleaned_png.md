@@ -8005,7 +8005,7 @@ alternative= either one sided or two sided
 
 ### Details
 
-*Two Sample, one-sided $t$-test*:
+*Two Sample, one-sided* $t$*-test*:
 
 Suppose data are gathered independently from two normal populations
 resulting in 
@@ -8059,12 +8059,13 @@ This is the probability that a non-central  $t $
  $t^\ast $
 .
 
-*Two Sample, Two-sided $t$-test*:
+*Two Sample, Two-sided* $t$*-test*:
 
 In this case the null hypothesis is defined as  $H_o: \mu_1 = \mu_2 $
 
 versus alternative  $H_1: \mu_1 \neq \mu_2 $
-.\
+.
+
 The power of the test can be computed as follows:
 
 $$\begin{aligned}

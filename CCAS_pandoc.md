@@ -6259,7 +6259,7 @@ and $U$ is the SSE.
 
 ### Details
 
-*Two Sample, one-sided ÆtÆ-test*:
+*Two Sample, one-sided* ÆtÆ*-test*:
 
 Suppose data are gathered independently from two normal populations
 resulting in $$X_1, \ldots, X_n \sim N(\mu_1, \sigma^2)$$
@@ -6290,11 +6290,13 @@ degrees of freedom to give a $\chi^2$ distribution.
 This is the probability that a non-central $t$-variable exceeds
 $t^\ast$.
 
-*Two Sample, Two-sided ÆtÆ-test*:
+*Two Sample, Two-sided* ÆtÆ*-test*:
 
 In this case the null hypothesis is defined as $H_o: \mu_1 = \mu_2$
-versus alternative $H_1: \mu_1 \neq \mu_2$.\
-The power of the test can be computed as follows:\
+versus alternative $H_1: \mu_1 \neq \mu_2$.
+
+The power of the test can be computed as follows:
+
 $$\begin{aligned}
 \beta_{(\mu_1\mu_2)}& = & P_{\mu_1\mu_2}\left[\text{reject } H_o \right]\\
 & = & P_{\mu_1\mu_2}\left[\left|\frac{\overline{X}-\overline{Y}}{S\sqrt{\frac{1}{n}+\frac{1}{m}}}\right| > t^\ast_{1-\alpha,n+m-2} \right]\\
