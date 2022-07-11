@@ -138,33 +138,23 @@ rep_sets = [{
     image_regex: replace_img(False),
     # Remove redundant backslashes
     re.compile(r'\\\n\$\$'): '\n$$',
-    # Cleaning up one particular example
-    re.compile(r'\\####'): '####',
-    # Add newlines to prevent breaking of KaTeX or other LaTeX interpretors
-    re.compile(r'(\n{0,2})\$\$(\n{0,2})'): replace_dollars,
-    # Adds spaces to try to fix a LaTeX rendering bug (BREAKS MORE THAN IT FIXES CURRENTLY)
-    #re.compile(r'([^\$\\])\$([^\$])'): '\\1 $\\2',
-    # Workaround for a LaTeX rendering bug (Adds spaces that aren't swallowed by Pandoc
-    'BIL': ' ',
-    'NIL': '',
-    'Ö': ' ',
-},
-{
-    image_regex: replace_img(True),
-    # Remove redundant backslashes
-    re.compile(r'\\\n\$\$'): '\n$$',
-    # Cleaning up one particular example
-    re.compile(r'\\####'): '####',
     # Add newlines to prevent breaking of KaTeX or other LaTeX interpretors
     re.compile(r'(\n{0,2})\$\$(\n{0,2})'): replace_dollars,
     # Adds spaces to try to fix a LaTeX rendering bug (Sometimes need to fix collateral damage)
     re.compile(r'([^\$\\])\$([^\$\n]+?)\$([^\$])'): '\\1 $\\2 $\n\\3',
     'where Æ': 'where Æ\\alpha',
     'Æ': '$',
-    # Workaround for a LaTeX rendering bug (Adds e.g. spaces that aren't swallowed by Pandoc)
-    'BIL': ' ',
-    'NIL': '',
-    'Ö': ' ',
+},
+{
+    image_regex: replace_img(True),
+    # Remove redundant backslashes
+    re.compile(r'\\\n\$\$'): '\n$$',
+    # Add newlines to prevent breaking of KaTeX or other LaTeX interpretors
+    re.compile(r'(\n{0,2})\$\$(\n{0,2})'): replace_dollars,
+    # Adds spaces to try to fix a LaTeX rendering bug (Sometimes need to fix collateral damage)
+    re.compile(r'([^\$\\])\$([^\$\n]+?)\$([^\$])'): '\\1 $\\2 $\n\\3',
+    'where Æ': 'where Æ\\alpha',
+    'Æ': '$',
 }
 ]
 

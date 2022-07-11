@@ -154,14 +154,14 @@ Type the name,i.e. \"z\", to view the assigned value.
 ::: fbox
 The set of positive and negative integers:
 
-$\mathbb{Z} = \{.., .., -2, -1, 0, 1, 2, ......\}$
+$\mathbb{Z} = \{\dots, -2, -1, 0, 1, 2, \dots \}.$
 :::
 
 ### Details
 
 ::: defn
 The set of all integers is denoted by $\mathbb{Z}$, i.e.
-$$\mathbb{Z} = \{.., .., -2, -1, 0, 1, 2, ......\} .$$
+$$\mathbb{Z} = \{\dots, -2, -1, 0, 1, 2, \dots \}.$$
 :::
 
 ::: notes
@@ -192,7 +192,7 @@ To compute $15 - (24 + 36)$ we first note that the parentheses
 evaluated first.
 
 Thus, we first add 36 to 24 and then we subtract that from 15.\
-15 - (24+36) = 15 - 60 = - 45\
+$15 - (24+36) = 15 - 60 = - 45$\
  
 
 Note that the answer is a negative number.
@@ -241,7 +241,7 @@ such that $(p/q)^2=2$.
 ### Examples
 
 ::: xmpl
-$\frac{2}{6}=\frac{2}{2 \cdot 3}=\frac{1}{3}$
+$$\frac{2}{6}=\frac{2}{2 \cdot 3}=\frac{1}{3}$$
 :::
 
 The rational numbers can be put in order along a line as in the figure.
@@ -329,12 +329,12 @@ The square root is denoted $\sqrt{r}$.
 
 ::: xmpl
 Consider the expression
-$$(\sqrt{\frac{1}{9}} \times 2^4) + (\frac{1}{5} \times \sqrt{25}).$$
+$$\left(\sqrt{\frac{1}{9}} \times 2^4\right) + (\frac{1}{5} \times \sqrt{25}).$$
 
 To evaluate this expression, first consider separately the two parts on
 each side of the plus symbol.
 
-The first part is $$(\sqrt{\frac{1}{9}} \times 2^4)$$
+The first part is $$\left(\sqrt{\frac{1}{9}} \times 2^4\right)$$
 
 and the second part is $$(\frac{1}{5} \times \sqrt{25}).$$
 
@@ -342,7 +342,7 @@ In addition, by definition of root,
 $$\sqrt{\frac{1}{9}} = \frac{1}{3}.$$
 
 First part:
-$$(\sqrt{\frac{1}{9}} \times 2^4) = \frac{1}{3} \times 16 = \frac{16}{3}$$
+$$\left(\sqrt{\frac{1}{9}} \times 2^4\right) = \frac{1}{3} \times 16 = \frac{16}{3}$$
 
 Second part:
 $$(\frac{1}{5} \times \sqrt{25}) = \frac{1}{5} \times 5 = 1$$
@@ -489,17 +489,17 @@ of its hypotenuse and what class of numbers does it belong to?
 
 An isosceles triangle is defined as having adjacent and opposite sides
 of same length, connected by a $90^{\circ}$ angle. Unit side length of
-these, refers to a side length of $$1.$$
+these, refers to a side length of $1$.
 
 As we have a $90^{\circ}$ angle, we can use Pythagoras' theorem:
 
 $$a^2+b^2=c^2$$
 
-With $$a=adjacent$$
+With $$a=\text{adjacent}$$
 
-$$b=opposite$$
+$$b=\text{opposite}$$
 
-$$c=hypotenuse$$
+$$c=\text{hypotenuse}$$
 
 So with $$a,b=1:$$
 
@@ -509,20 +509,15 @@ $$c^2=1+1$$
 
 $$c^2=2$$
 
-We take the square root to get $$c$$
+We take the square root to get $c$:
 
-$$c=\sqrt{2}$$
+$$c=\sqrt{2}.$$
 
 Now that we answered the first part of the question, it needs to be
-defined, which class of number $$\sqrt{2}$$
-
-belongs to. $$\sqrt{2}$$
-
-is an irrational number, and belongs thereby to the set of real numbers
-$$\mathbb{R}$$
-
-Real numbers can be imagined as points on an infinitely long line, which
-is also called the real line.
+defined, which class of number $\sqrt{2}$ belongs to. $\sqrt{2}$ is an
+irrational number, and belongs thereby to the set of real numbers
+$\mathbb{R}$ Real numbers can be imagined as points on an infinitely
+long line, which is also called the real line.
 :::
 
 **Copyright** 2021, Gunnar Stefansson (editor) with contributions from
@@ -790,7 +785,7 @@ USA.
 ## Some Squares
 
 ::: fbox
-If a and b are real numbers, then
+If $a$ and $b$ are real numbers, then
 
 $$(a+b)^2=a^2+2ab+b^2$$
 :::
@@ -962,8 +957,8 @@ $$(a+b)^n  = \sum_{x=0}^n {n \choose x} a^xb^{n-x}$$
 
 ### Details
 
-If a and b are real numbers and n is an integer then the expression
-$(a+b)^n$ can be expanded as:
+If $a$ and $b$ are real numbers and $n$ is an integer then the
+expression $(a+b)^n$ can be expanded as:
 
 $(a+b)^n = a^n+ {n \choose 1}a^{n-1}b +  {n \choose 2}a^{n-2}b^ + \ldots +{n \choose n-1}ab^{n-1}+b^n$
 
@@ -1329,16 +1324,16 @@ Consider the probability of someone jumping off a cliff is 0.35. Suppose
 we randomly selected four individuals to participate in the cliff
 jumping activity. What is the chance that exactly one of them will jump
 off the cliff?\
-Consider a scenario where one person jumps:\
-P (A =jump , B = refuse, C = refuse, D = refuse)
+Consider a scenario where person $A$ jumps but $B$, $C$ and $D$ refuse:\
+$P (A = \text{jump} , B = \text{refuse}, C = \text{refuse}, D = \text{refuse})$
 
-= P (A =jump) P (B = refuse) P (C = refuse) P (D = refuse)
+$= P (A =\text{jump}) \cdot P (B = \text{refuse}) \cdot P (C = \text{refuse}) \cdot P (D = \text{refuse})$
 
-$= (0.35)(0.65)(0.65)(0.65) = (0.35)^1 (0.65)^3 = 0.096$\
-But there are three other scenarios( B, C, or D) in which one only
-person decides to jump. In each of these cases, the probability is again
-0.096. These four scenarios exhaust all the possible ways that exactly
-one of the four people jumps:
+$= (0.35) \cdot (0.65) \cdot (0.65) \cdot (0.65) = (0.35)^1 \cdot  (0.65)^3 = 0.096$\
+But there are three other scenarios (where persons $B$, $C$, or $D$ are
+the only person to jump). In each of these cases, the probability is
+again 0.096. These four scenarios exhaust all the possible ways that
+exactly one of the four people jumps:
 
 $4 \cdot (0.35)^1 (0.65)^3 = 0.38.$\
 In the R console we can use the command: $\verb|dbinom(1,4,0.35)|$ which
@@ -1450,9 +1445,8 @@ $np=10\cdot\frac{1}{2}= 5$ heads.
 :::
 
 ::: xmpl
-Toss a fair die and pay \$60 if a six comes up and nothing otherwise.
-The expected outcome is
-$$\frac{5}{6}\cdot\$0+\frac{1}{6}\cdot\$60= \$10.$$
+Toss a fair die and pay $60$ if a six comes up and nothing otherwise.
+The expected outcome is $$\frac{5}{6}\cdot 0+\frac{1}{6}\cdot 60=  10.$$
 :::
 
 ::: xmpl
@@ -1463,7 +1457,7 @@ bets is -2.50 dollars.
 
 Detailed calculation:
 
-$$\$15\cdot 0.3 - \$10\cdot 0.7 = -\$2.5$$
+$$15\cdot 0.3 - 10 \cdot 0.7 = - 2.5$$
 :::
 
 ::: xmpl
@@ -1499,7 +1493,7 @@ Answers:
 A1 - Let's call X our random variable, which we want to be the number of
 times we make it to class on-time. With the alarm set to 7:15 we expect
 to make it to class on-time:
-$$E[X]=30\times(1-\frac{1}{4})=22\frac{1}{2}$$
+$$E[X]=30\times(1-\frac{1}{4})=\frac{45}{2}=22.5$$
 
 You're grade would most likely be dropped.\
 A2 - First we need to see how many classes we go to before we reach the
@@ -1514,12 +1508,12 @@ $$E[X] = n = \frac{20}{1} = 20$$
 So, the night before our 21st class, you get worried and change
 alarm-clock strategies. If you set it at 7:15 for the rest of the course
 (10 classes), you will be on time:
-$$E[X] = 15 + 10 \times (1 - \frac{1}{8}) = 23 \frac {3}{4}$$
+$$E[X] = 15 + 10 \times (1 - \frac{1}{8}) = \frac {95}{4} = 23.75$$
 
 You're grade would most likely be dropped.\
 A3: If you instead start setting the alarm clock for 7:00 for the rest
 of the course, you will be on time:
-$$E[X] = 15 + 10 \times (1 - \frac{1}{100}) = 24 \frac{1}{9}$$
+$$E[X] = 15 + 10 \times (1 - \frac{1}{100}) =\frac{217}{9} \approx 24.11$$
 
 You're grade would most likely NOT be dropped.\
 Part B: **This seems to contain errors** In Part A, we calculated the
@@ -1563,7 +1557,7 @@ $$\sigma ^2=(x_1 - \mu)^2 p_1 + (x_2 - \mu)^2 p_2 + \ldots .$$
 
 If a random variable $X$ has associated probabilities, $p_i=P[X=x_i]$,
 then one can equivalently write
-$$\sigma^2 = V[X]=E\left [ \left ( X - \mu \right ) ^ 2\right ] .$$
+$$\sigma^2 = Var[X]=E\left [ \left ( X - \mu \right ) ^ 2\right ] .$$
 
 ### Examples
 
@@ -1688,7 +1682,7 @@ The following R commands can be used to generate a plot for function; Y=
 $$\begin{aligned}
 z &= 2x+3y+4\\
 v &= t^2+3x\\
-w &= t^2+3b*x\end{aligned}$$
+w &= t^2+3b \cdot x\end{aligned}$$
 :::
 
 **Copyright** 2021, Gunnar Stefansson (editor) with contributions from
@@ -1843,9 +1837,9 @@ $$\begin{aligned}
 x &=& \frac{-(-3) \pm \sqrt{(-3)^2 - 4(1)(2)}}{2(1)}\\
 x &=& \frac{3 \pm \sqrt{9 - 8}}{2}\\
 x &=& \frac{3 \pm \sqrt{1}}{2}\\
-x &=& \frac{3 + 1}{2} , \frac{3 - 1}{2}\\
-x &=& \frac{4}{2} , \frac{2}{2}\\
-x &=& 2 , 1 \end{aligned}$$
+x &=& \frac{3 + 1}{2} \text{ or } \frac{3 - 1}{2}\\
+x &=& \frac{4}{2} \text{ or } \frac{2}{2}\\
+x &=& 2 \text{ or } 1 \end{aligned}$$
 :::
 
 ::: xmpl
@@ -1868,16 +1862,13 @@ which simplifies to
 
 $$\frac{-(14) \pm \sqrt{196 - 180}}{6}$$
 
-which equals $$-1\frac{2}{3}$$
+which equals $-\frac{5}{3}$ (using the $+$ sign) and $-3$ (using the $-$
+sign).
 
-and $$-3.$$
+Then, since we substituted a for $x^2$ we need to take the square root
+of these values to get the roots of the polynomial.
 
-Then, since we substituted a for $$x^2$$
-
-we need to take the square root of these values to get the roots of the
-polynomial.
-
-So, $$x_{1,2} = \pm \sqrt{-1\frac{2}{3}}$$
+So, $$x_{1,2} = \pm \sqrt{-\frac{5}{3}}$$
 
 and $$x_{3,4} = \pm \sqrt{3}$$
 :::
@@ -1957,7 +1948,7 @@ bars.
 ::: xmpl
 If we toss a fair die 100 times and record the number of sixes, then we
 can view that as the outcome of a random variable $X$, which is binomial
-with $n=100$ and $p=\frac{1}{6}$, i.e $X \sim b(n=100,p=\frac{1}{6})$\
+with $n=100$ and $p=\frac{1}{6}$, i.e $X \sim Bin(n=100,p=\frac{1}{6})$\
 Now this can be done e.g. 1000 times to obtain numbers,
 $x_1,...,x_{1000}$. Within R this can be simulated using
 
@@ -2998,7 +2989,7 @@ Consider a sequence of numbers, $(a_n)_{n\to\infty}$.
 Now define another sequence $(s_n)_{n\to\infty},$ where
 $$s_n=\sum_{k=1}^na_k.$$
 
-If $(s_n)_{n\to\infty}$ is convergent to $S=\lim_{n\to\infty}s_n,$ then
+If $(s_n)_ {n\to\infty}$ is convergent to $S=\lim_{n\to\infty}s_n,$ then
 we write $$S=\sum_{n=1}^{\infty}a_n.$$
 
 ### Examples
@@ -3649,7 +3640,7 @@ $$\min_{\alpha,\beta} \sum \left ( y_i - ( \alpha + \beta x_i) \right ) ^2$$
 
 ::: xmpl
 As a general exercise in finding the extreme of a function, let's look
-at the function $f(\theta)=\sum_{i=1}^n(x_i\theta -3)^2$ where $x_i$ are
+at the function $f(\theta)=\sum_{i=1}^N(x_i\theta -3)^2$ where $x_i$ are
 some constants. We wish to find the $\theta$ that minimizes this sum. We
 simply differentiate $\theta$ to obtain
 $f'(\theta)=\sum_{i=1}^n2(x_i\theta -3)x_1=2\sum_{i=1}^n x^2_i\theta -2\sum_{i=1}^n3x_i$.
@@ -3796,7 +3787,7 @@ is the **cumulative distribution function (c.d.f.)**.
 
 ::: xmpl
 Consider a random variable $X$ from the uniform distribution, denoted by
-$X\sim U(0,1)$. This distribution has density
+$X\sim Unf(0,1)$. This distribution has density
 
 $$f(x) = 
 \begin{cases}
@@ -4228,23 +4219,17 @@ from code using the pound symbol (#).
 ### Examples
 
 ::: xmpl
-\####################
-
-####SETUP DATA####
-
-\####################
+    ####################
+    #####SETUP DATA#####
+    ####################
 
     dat<-read.table(filename)
+    x<-log(dat$le)  \#log-transformation of length
+    y<-log(dat$wt)  \#log-transformation of weight
 
-    x<-log(dat\$le)  \#log-transformation of length
-
-    y<-log(dat\$wt)  \#log-transformation of weight
-
-\######################
-
-####THE ANALYSIS####
-
-\######################
+    ######################
+    #####THE ANALYSIS#####
+    ######################
 :::
 
 **Copyright** 2021, Gunnar Stefansson (editor) with contributions from
@@ -4283,7 +4268,7 @@ distribution.
 :::
 
 It follows that for a large enough sample size $n$, the distribution
-random variable $\bar{X}_n$ can be approximated by $n(\mu,\sigma^2/n)$.
+random variable $\bar{X}_n$ can be approximated by $N(\mu,\sigma^2/n)$.
 
 The standard normal distribution is given by the p.d.f.\
 $$\varphi(z) = \frac{1}{\sqrt{2\pi}} e^{\frac{-z^2}{2}}$$ for
@@ -4293,7 +4278,7 @@ $$\mu = \int z\varphi (z)dz =0$$ and a variance of
 $$\sigma^2 = \int ({z-\mu})^2 \varphi(z)dz=1$$
 
 If a random variable $Z$ has the standard normal (or Gaussian)
-distribution, we write $Z\sim n(0,1)$.
+distribution, we write $Z\sim N(0,1)$.
 
 If we define a new random variable, $Y$, by writing $Y=\sigma Z + \mu$,
 then $Y$ has an expected value of $\mu$, a variance of $\sigma^2$ and a
@@ -4309,7 +4294,7 @@ original random variables is finite).
 
 More precisely, the cumulative distribution function of
 $$\frac{\bar{X}_n - \mu}{\sigma/\sqrt{n}}$$ converges to $\Phi$, the
-$n(0,1)$ cumulative distribution function.
+$N(0,1)$ cumulative distribution function.
 
 ### Examples
 
@@ -4325,8 +4310,8 @@ times will tend to have a normal distribution.
 
 ::: xmpl
 We are often interested in computing
-$$w=\frac{\bar{x}-\mu_0}{\frac{s}{\sqrt{n}}}$$ which comes from a
-t-distribution (see below), if the $x_i$ are independent outcomes from a
+$$w=\frac{\bar{x}-\mu_0}{\frac{s}{\sqrt{n}}}$$ which comes from a $T$
+distribution (see below), if the $x_i$ are independent outcomes from a
 normal distribution.
 
 However, if $n$ is large and $\sigma^2$ is finite then $w$ values will
@@ -4358,11 +4343,11 @@ obtain:
 
 $$\begin{aligned}
 \binom{n}{x}p_n^x(1-p_n)^{n-x}& = &\frac{n!}{x!(n-x!)} \left ( \frac{\lambda}{n} \right )^x \left ( 1-\frac{\lambda}{n} \right )^{n-x}\\
-& = &\frac{n(n-1)(n-2)\cdots (n-x+1)}{x!} \frac{\frac{\lambda}{n}^x}{\left ( 1-\frac{\lambda}{n} \right ) ^x} \left ( 1-\frac{\lambda}{n} \right )^n\\
-& = &\frac{n(n-1)(n-2)\cdots (n-x+1)}{x!n^x} \frac{\lambda^x}{\left ( 1-\frac{\lambda}{n} \right ) ^x} \left ( 1-\frac{\lambda}{n} \right )^n\end{aligned}$$
+& = &\frac{N(n-1)(n-2)\cdots (n-x+1)}{x!} \frac{\frac{\lambda}{n}^x}{\left ( 1-\frac{\lambda}{n} \right ) ^x} \left ( 1-\frac{\lambda}{n} \right )^n\\
+& = &\frac{N(n-1)(n-2)\cdots (n-x+1)}{x!n^x} \frac{\lambda^x}{\left ( 1-\frac{\lambda}{n} \right ) ^x} \left ( 1-\frac{\lambda}{n} \right )^n\end{aligned}$$
 
 ::: notes
-*Note 17*. Notice that $\frac{n(n-1)(n-2)\cdots (n-x+1)}{n^x}\to 1$ as
+*Note 17*. Notice that $\frac{N(n-1)(n-2)\cdots (n-x+1)}{n^x}\to 1$ as
 $n\to\infty$. Also notice that $(1-\frac{\lambda}{n})^x\to 1$ as
 $n\to\infty$. Also
 
@@ -4410,10 +4395,10 @@ large n):
 
 ::: xmpl
 We are often interested in computing $w=\frac{\bar{x}-\mu}{s/\sqrt{n}}$
-which has a t-distribution if the $x_i$ are independent outcomes from a
-normal distribution. If $n$ is large and $\sigma^2$ is finite, this will
-look as if it comes from a normal distribution.\
-The numerical examples below demonstrate how the t-distribution
+which has a $T$ distribution if the $x_i$ are independent outcomes from
+a normal distribution. If $n$ is large and $\sigma^2$ is finite, this
+will look as if it comes from a normal distribution.\
+The numerical examples below demonstrate how the $T$ distribution
 approaches the normal distribution.
 
     qnorm(0.7)
@@ -4421,7 +4406,7 @@ approaches the normal distribution.
     #This is the value which gives the cumulative probability of p=0.7 for a n~(0,1)
     qt(0.7,2)
     [1] 0.6172134
-    #The value, which gives the cumulative probability of p=0.7 with n=2 for the t-distribution.
+    #The value, which gives the cumulative probability of p=0.7 with n=2 for the $T$ distribution.
     qt(0.7,5)
     [1] 0.5594296
     qt(0.7,10)
@@ -4507,13 +4492,13 @@ $$F(x)=P[X \leq x]$$
 ### Examples
 
 ::: xmpl
-If $X \sim b(n,p)$ has binomial distribution, i.e.
+If $X \sim Bin(n,p)$ has binomial distribution, i.e.
 $$P(X = x) = {n \choose x}p^x(1-p)^{n-x},$$ then cumulative
 probabilities can be computed with $pbinom$, e.g.
 
     pbinom(5,10,0.5) 
 
-gives $$P[X \leq 5] = 0.623$$ where $$X \sim b(n=10,p= \frac{1}{2}).$$
+gives $$P[X \leq 5] = 0.623$$ where $$X \sim Bin(n=10,p= \frac{1}{2}).$$
 
 This can also be computed by hand. Here we have $n=10$, $p=1/2$ and the
 probability $P[X \leq 5]$ is obtained by adding up the individual
@@ -4523,7 +4508,7 @@ $$P[X \leq 5]  = \sum_{x=0}^5 {10\choose x} \frac{1}{2}^x\frac{1}{2}^{10-x}.$$
 This becomes
 $$P[X \leq 5]  = {10\choose 0} \frac{1}{2}^0\frac{1}{2}^{10-0} +{10\choose 1} \frac{1}{2}^1\frac{1}{2}^{10-1}+{10\choose 1} \frac{1}{2}^2\frac{1}{2}^{10-2}+{10\choose 3} \frac{1}{2}^3\frac{1}{2}^{10-3}+{10\choose 4} \frac{1}{2}^4\frac{1}{2}^{10-4}+{10\choose 5} \frac{1}{2}^5\frac{1}{2}^{10-5}$$
 or
-$$P[X \leq 5]  = {10\choose 0} \frac{1}{2}^{10} +{10\choose 1} \frac{1}{2}^{10}+{10\choose 1} \frac{1}{2}^{10}+{10\choose 3} \frac{1}{2}^{10}+{10\choose 4} \frac{1}{2}^{10}+{10\choose 5} \frac{1}{2}^{10}=\frac{1}{2}^{10}\left[1+10+45+...\right ].$$
+$$P[X \leq 5]  = {10\choose 0} \frac{1}{2}^{10} +{10\choose 1} \frac{1}{2}^{10}+{10\choose 1} \frac{1}{2}^{10}+{10\choose 3} \frac{1}{2}^{10}+{10\choose 4} \frac{1}{2}^{10}+{10\choose 5} \frac{1}{2}^{10}=\frac{1}{2}^{10} \left(1+10+45+...\right).$$
 
 Furthermore,
 
@@ -4546,8 +4531,9 @@ or $\frac{10}{1024}$
 
 ::: xmpl
 Suppose $X$ has a uniform distribution between $0$ and $1$, i.e.
-$X \sim U(0,1)$. Then the $punif$ function will return probabilities of
-the form $$P[X \leq x]= \int_{-\infty}^{x} f(t)dt= \int_{0}^{x} f(t)dt$$
+$X \sim Unf(0,1)$. Then the $punif$ function will return probabilities
+of the form
+$$P[X \leq x]= \int_{-\infty}^{x} f(t)dt= \int_{0}^{x} f(t)dt$$
 
 where $f(t)=1$ if $0 \leq t \leq 1$ and $f(t)=0$. For example:
 
@@ -4563,7 +4549,7 @@ To obtain $P[a \leq X \leq b],$ we use $punif$ twice, e.g.
 ## Computing normal probabilities in R
 
 ::: fbox
-To compute probabilities $X\sim n(\mu,\sigma^2)$ is usually transformed,
+To compute probabilities $X\sim N(\mu,\sigma^2)$ is usually transformed,
 since we know that $$Z:=\frac{X-\mu}{\sigma} \sim(0,1)$$ The
 probabilities can then be computed for either $X$ or $Z$ with the
 $pnorm$ function in R.
@@ -4572,7 +4558,7 @@ $pnorm$ function in R.
 ### Details
 
 Suppose $X$ has a normal distribution with mean $\mu$ and variance
-$$X\sim n(\mu,\sigma^2)$$ then to compute probabilities, $X$ is usually
+$$X\sim N(\mu,\sigma^2)$$ then to compute probabilities, $X$ is usually
 transformed, since we know that $$Z=\frac{X-\mu}{\sigma} \sim(0,1)$$ and
 the probabilities can be computed for either $X$ or $Z$ with the $pnorm$
 function.
@@ -4580,7 +4566,7 @@ function.
 ### Examples
 
 ::: xmpl
-If $Z \sim n(0,1)$ then we can e.g. obtain $P[Z\leq1.96]$ with
+If $Z \sim N(0,1)$ then we can e.g. obtain $P[Z\leq1.96]$ with
 
     pnorm(1.96)
     [1] 0.9750021
@@ -4598,7 +4584,7 @@ The last one gives the area between -1.96 and 1.96.
 :::
 
 ::: xmpl
-If $X \sim n(42,3^2)$ then we can compute probabilites either by
+If $X \sim N(42,3^2)$ then we can compute probabilites either by
 transforming $$\begin{aligned}
 P[X\leq x] &= P[\frac{X-\mu}{\sigma} \leq \frac{x-\mu}{\sigma}]\\
            &= P[Z \leq \frac{x-\mu}{\sigma}]\end{aligned}$$ and calling
@@ -4622,7 +4608,7 @@ or specify $\mu$ and $\sigma$
 
 If we have a random sample $x_1, \ldots , x_n$ from a normal
 distribution, then we consider them to be outcomes of independent random
-variables $X_1, \ldots , X_n$ where $X_i \sim n(\mu, \sigma^2)$.
+variables $X_1, \ldots , X_n$ where $X_i \sim N(\mu, \sigma^2)$.
 Typically, $\mu$ and $\sigma^2$ are unknown but assume for now that
 $\sigma^2$ is known.\
 Consider the hypothesis:\
@@ -4639,11 +4625,11 @@ $$\overline{X} = \frac{1}{n} \sum^n_{i=1}X_i$$
 
 and
 
-$$X \sim n(\mu, \frac{ \sigma^2}{n})$$
+$$X \sim N(\mu, \frac{ \sigma^2}{n})$$
 
-so the standard deviation of X is $\frac{\sigma}{\sqrt{n}}$, so the
+so the standard deviation of $X$ is $\frac{\sigma}{\sqrt{n}}$, so the
 appropriate error measure for $\overline{x}$ is
-$frac{\sigma}{\sqrt{n}}$, when $\sigma$ is unknown.\
+$\frac{\sigma}{\sqrt{n}}$, when $\sigma$ is unknown.\
 If $H_0$ is true, then
 
 $$z:= \frac{\overline{x}-\mu_0}{\sigma / \sqrt{n}}$$
@@ -4653,12 +4639,12 @@ of
 
 $$Z= \frac{\overline{X}-\mu_0}{\sigma / \sqrt{n}}$$
 
-where $Z \sim n(0,1)$ when $H_0$ is correct. It follows that e.g.
+where $Z \sim N(0,1)$ when $H_0$ is correct. It follows that e.g.
 $P[\vert Z \vert > 1.96] = 0.05$ and if we observe
 $\vert Z \vert > 1.96$ then we reject the null hypothesis.\
-Note that the value z\* = 1.96 is a quantile of the normal distribution
-and we can obtain other quantiles with the $pnorm$ function, e.g.
-$pnorm(0.975)$ gives 1.96.
+Note that the value $z^\ast = 1.96$ is a quantile of the normal
+distribution and we can obtain other quantiles with the $pnorm$
+function, e.g. $pnorm(0.975)$ gives 1.96.
 
 **Copyright** 2021, Gunnar Stefansson (editor) with contributions from
 very many students
@@ -4755,7 +4741,7 @@ random variables, these are called a **random sample**.
 ### Examples
 
 ::: xmpl
-If $X_1, \ldots, X_n  \sim U(0,1)$, i.i.d., i.e. $X_1$ and $X_n$ are
+If $X_1, \ldots, X_n  \sim Unf(0,1)$, i.i.d., i.e. $X_1$ and $X_n$ are
 independent and each have a uniform distribution between 0 and 1. Then
 they have a joint density which is the product of the densities of $X_1$
 and $X_n$.\
@@ -4816,7 +4802,7 @@ Also $$P[X+Y = 4] = \frac{3}{36} = \frac{1}{12}$$
 ## The sum of two continuous random variables
 
 ::: fbox
-If X and Y are continuous random variables with joint p.d.f. $f$ and
+If $X$ and $Y$ are continuous random variables with joint p.d.f. $f$ and
 $Z=X+Y$, then we can find the density of $Z$ by calculating the
 cumulative distribution function.
 
@@ -4827,7 +4813,7 @@ cumulative distribution function.
 
 ### Details
 
-If X and Y are c.r.v. with joint p.d.f. $f$ and $Z=X+Y$, then we can
+If $X$ and $Y$ are c.r.v. with joint p.d.f. $f$ and $Z=X+Y$, then we can
 find the density of $Z$ by first finding the cumulative distribution
 function
 $$P[Z \leq z]=P[X+Y \leq z]=\int\int_{\{(x,y):x+y \leq z\}} f(x,y)dxdy.$$
@@ -4835,7 +4821,7 @@ $$P[Z \leq z]=P[X+Y \leq z]=\int\int_{\{(x,y):x+y \leq z\}} f(x,y)dxdy.$$
 ### Examples
 
 ::: xmpl
-If X and Y $\sim$ U(0,1), independent and $Z=X+Y$ then
+If $X,Y \sim Unf(0,1)$, independent and $Z=X+Y$ then
 
 $$P[Z \leq z]= 
 \begin{cases}
@@ -4856,7 +4842,7 @@ $$g(z)=
 :::
 
 ::: xmpl
-To approximate the distribution of $Z=X+Y$ where $X,Y \sim U(0,1)$
+To approximate the distribution of $Z=X+Y$ where $X,Y \sim Unf(0,1)$
 i.i.d., we can use Monte Carlo simulation. So, generate 10.000 pairs,
 set them up in a matrix and compute the sum.
 :::
@@ -4884,14 +4870,14 @@ expectations exist).
 
 If the random variables are independent, then the variance also add
 
-$$V[X+Y] = V[X] + V[Y]$$ and
+$$Var[X+Y] = Var[X] + Var[Y]$$ and
 
-$$V[\sum_{i=1}^{n} a_i X_i] = \sum_{i=1}^{n} a_i^2 V[X_i]$$
+$$Var\left[\sum_{i=1}^{n} a_i X_i\right] = \sum_{i=1}^{n} a_i^2 Var[X_i]$$
 
 ### Examples
 
 ::: xmpl
-$X,Y \sim U(0,1)$, i.i.d. then
+$X,Y \sim Unf(0,1)$, i.i.d. then
 
 $$E[X+Y]=E[X] + E[Y] = \int_0^1 x\cdot 1dx+\int_0^1 x\cdot 1dx = [\frac{1}{2}x^2]_0^1+[\frac{1}{2}x^2]_0^1=1.$$
 :::
@@ -4906,7 +4892,7 @@ Let $X,Y\sim N(0,1)$. Then $E[X^2+Y^2] = 1+1=2$.
 If $x_1,....,x_n$ and $y_1,....,y_n$ are numbers, and we set
 $$z_i=x_i + y_i$$
 
-$$w_i=ax_i$$ where a\>0, then
+$$w_i=ax_i$$ where $a>0$, then
 $$\overline{z} = \frac{1}{n} \sum_{i=1}^{n} z_i= \overline{x} + \overline{y}$$
 
 $$\overline{w}= a\overline{x}$$
@@ -4969,7 +4955,7 @@ and $s_w$ equals:
 ## The joint density of independent normal random variables
 
 ::: fbox
-If $Z_1, Z_2 \sim n(0,1)$ are independent then they each have density\
+If $Z_1, Z_2 \sim N(0,1)$ are independent then they each have density\
 $$\phi(x)=\frac{1}{\sqrt{2\pi}}e^{-\frac{x^2}{2}},x\in\mathbb{R}$$ and
 the joint density is the product $f(z_1,z_2)=\phi(z_1)\phi(z_2)$ or
 $$f(z_1,z_2)=\frac{1}{(\sqrt{2\pi})^2} e^{\frac{-z_1^2}{2}-\frac{z_2^2}{2}} .$$
@@ -4977,15 +4963,15 @@ $$f(z_1,z_2)=\frac{1}{(\sqrt{2\pi})^2} e^{\frac{-z_1^2}{2}-\frac{z_2^2}{2}} .$$
 
 ### Details
 
-If $X\sim n (\mu_1,\sigma_1^2)$ and $Y\sim n(\mu_2, \sigma_2^2)$ are
+If $X\sim n (\mu_1,\sigma_1^2)$ and $Y\sim N(\mu_2, \sigma_2^2)$ are
 independent, then their densities are
-$$f_X (x)= \frac{1}{\sqrt{2\pi}\sigma_1} \; e^\frac{-(x-\mu_1)^2}{2\sigma_1^2}$$
+$$f_X (x)= \frac{1}{\sqrt{2\pi}\sigma_1} e^\frac{-(x-\mu_1)^2}{2\sigma_1^2}$$
 and
-$$f_Y(y) = \frac{1}{\sqrt{2\pi}\sigma_2} \; e^\frac{-(y-\mu_2)^2}{2\sigma_2^2}$$
+$$f_Y(y) = \frac{1}{\sqrt{2\pi}\sigma_2} e^\frac{-(y-\mu_2)^2}{2\sigma_2^2}$$
 and the joint density becomes\
-$$\frac{1}{2\pi\sigma_1\sigma_2} \: e^{-\frac{(x-\mu_1)^2}{2\sigma_1^2}-\frac{(y-\mu_2)^2}{2\sigma_2^2}}$$
+$$\frac{1}{2\pi\sigma_1\sigma_2} e^{-\frac{(x-\mu_1)^2}{2\sigma_1^2}-\frac{(y-\mu_2)^2}{2\sigma_2^2}}$$
 
-Now, suppose $X_1,\ldots,X_n\sim n(\mu,\sigma^2)$ are i.i.d., then\
+Now, suppose $X_1,\ldots,X_n\sim N(\mu,\sigma^2)$ are i.i.d., then\
 $$f(\underline{x})=\frac{1}{(2\pi)^\frac{n}{2}\sigma^n}\; e^{-\displaystyle\sum^{n}_{i=1} \frac{(x_i-\mu)^2}{a\sigma^2}}$$
 
 \
@@ -4996,7 +4982,7 @@ is the multivariate normal density in the case of i.i.d. variables.
 ### Examples
 
 ::: xmpl
-Suppose X and Y have the joint density
+Suppose $X$ and $Y$ have the joint density
 
 $$f(x,y) =
 \begin{cases}
@@ -5067,10 +5053,10 @@ normally distributed.
 
 The sum of independent normally distributed random variables is also
 normally distributed. More specifically, if
-$X_1 \sim n(\mu_1, \sigma_{1}^2)$ and $X_2 \sim n(\mu_2, \sigma_{2}^2)$
-are independent then $X_1 + X_2 \sim n(\mu, \sigma^2)$ since
+$X_1 \sim N(\mu_1, \sigma_{1}^2)$ and $X_2 \sim N(\mu_2, \sigma_{2}^2)$
+are independent then $X_1 + X_2 \sim N(\mu, \sigma^2)$ since
 $\mu = E \left[ X_1 + X_2 \right] = \mu_1 + \mu_2$ and\
-$\sigma^2 = V \left[ X_1 + X_2 \right]$ with
+$\sigma^2 = Var \left[ X_1 + X_2 \right]$ with
 $\sigma^2 = \sigma_{1}^2 + \sigma_{2}^2$\
 if $X_1$ and $X_2$ are independent.\
 Similarly $$\sum_{i=1}^{n} X_i$$
@@ -5080,19 +5066,19 @@ is normal if $X_1 , \ldots , X_n$ are normal and independent.
 ### Examples
 
 ::: xmpl
-Simulating and plotting a single normal distribution. $Y \sim n(0,1)$
+Simulating and plotting a single normal distribution. $Y \sim N(0,1)$
 
 
     library(MASS)           # for truehist
     par(mfcol=c(2,2))       
-    y<-rnorm(1000)          # generating 1000 n(0,1)
+    y<-rnorm(1000)          # generating 1000 N(0,1)
     mn<-mean(y)
     vr<-var(y)
     truehist(y,ymax=0.5)    # plot the histogram
     xvec<-seq(-4,4,0.01)    # generate the x-axis
-    yvec<-dnorm(xvec)       # theoretical n(0,1) density
+    yvec<-dnorm(xvec)       # theoretical N(0,1) density
     lines(xvec,yvec,lwd=2,col="red")
-    ttl<-paste("Simulation and theory n(0,1)\n",
+    ttl<-paste("Simulation and theory N(0,1)\n",
                "mean=",round(mn,2),
                "and variance=",round(vr,2))
     title(ttl)
@@ -5101,12 +5087,12 @@ Simulating and plotting a single normal distribution. $Y \sim n(0,1)$
 ::: xmpl
 Sum of two normal distributions.
 
-$$Y_1 \sim n(2, 2^2)$$
+$$Y_1 \sim N(2, 2^2)$$
 
-and $$Y_2 \sim n(3, 3^2)$$
+and $$Y_2 \sim N(3, 3^2)$$
 
-    y1<-rnorm(10000,2,2)    # n(2,2^2)
-    y2<-rnorm(10000,3,3)    # n(3, 3^2)
+    y1<-rnorm(10000,2,2)    # N(2,2^2)
+    y2<-rnorm(10000,3,3)    # N(3, 3^2)
     y<-y1+y2
     truehist(y)
     xvec<-seq(-10,20,0.01)
@@ -5116,9 +5102,9 @@ and $$Y_2 \sim n(3, 3^2)$$
     cat("The mean is",mn,"\n")
     cat("The variance is ",vr,"\n")
     cat("The standard deviation is",sd(y),"\n")
-    yvec<-dnorm(xvec,mean=5,sd=sqrt(13)) # n() density
+    yvec<-dnorm(xvec,mean=5,sd=sqrt(13)) # N() density
     lines(xvec,yvec,lwd=2,col="red")
-    ttl<-paste("The sum of n(2,2^2) and n(3,3^2)\n",
+    ttl<-paste("The sum of N(2,2^2) and N(3,3^2)\n",
                "mean=",round(mn,2),
                "and variance=",round(vr,2))
     title(ttl)
@@ -5138,19 +5124,19 @@ Sum of nine normal distributions, all with $\mu = 42$ and $\sigma^2=2^2$
     cat("The standard deviation is",sd(y),"\n")
     # plot the theoretical curve
     xvec<-seq(39,45,0.01)
-    yvec<-dnorm(xvec,mean=5,sd=sqrt(13)) # n() density
+    yvec<-dnorm(xvec,mean=5,sd=sqrt(13)) # N() density
     lines(xvec,yvec,lwd=2,col="red")
-    ttl<-paste("The sum of nine n(42^2) \n",
+    ttl<-paste("The sum of nine N(42^2) \n",
                "mean=",round(mn,2),
                "and variance=",round(vr,2))
     title(ttl)
 :::
 
-## The Chi-square distribution
+## The chi-square distribution
 
 ::: fbox
 If $X \sim n$ (0,1),then $Y = X^2$ has a distribution which is called
-the Chi - square distribution ($\chi^2$) on one degree of freedom. This
+the chi-square distribution ($\chi^2$) on one degree of freedom. This
 can be written as:
 
 $$Y \sim \chi^2$$
@@ -5165,18 +5151,16 @@ $$Y \sim \chi^2$$
 ::: defn
 If $X_1, X_2, \ldots, X_n$ are i.i.d. $N(0,1)$ then the distribution of
 
-$Y = X_1^2 + X_1^2 + \ldots + X_n^2$ has a **Chi square
+$Y = X_1^2 + X_1^2 + \ldots + X_n^2$ has a **square
 ($\chi^2$)distribution**.
 :::
 
-## Sum of Chi square Distributions
+## Sum of chi-square Distributions
 
 ::: fbox
 Let $Y_1$ and $Y_2$ be independent variables. If $Y_1 = \chi^2_{\nu_1}$
-and $Y_2 = \chi^2_{\nu_2}$,
-
-then the sum of these two variables also follows a chi-squared
-($\chi^2$)distribution
+and $Y_2 = \chi^2_{\nu_2}$, then the sum of these two variables also
+follows a chi-squared ($\chi^2$)distribution
 
 $$Y_1 + Y_2 = \chi^2_{\nu_1+ \nu_2}$$
 
@@ -5198,7 +5182,7 @@ $$\sum_{i=1}^n \left ( \frac {\bar{X} - \mu} {\sigma}\right ) ^2= \sum_{i=1}^n \
 ## Sum of squared deviation
 
 ::: fbox
-If $X_1,\cdots,X_n \sim n(\mu,\sigma^2)$ i.i.d, then
+If $X_1,\cdots,X_n \sim N(\mu,\sigma^2)$ i.i.d, then
 
 $$\sum_{i=1}^n \left ( \frac{X_i-\mu}{\sigma} \right )^2 \sim \chi_{n}^2,$$
 
@@ -5210,7 +5194,7 @@ $$\frac{1}{n-1}\sum_{i=1}^n (X_i-\bar{X})^2\sim \chi_{n-1}^2.$$
 ### Details
 
 Consider a random sample of Gaussian random variables, i.e.
-$X_1,\cdots,X_n \sim n(\mu,\sigma^2)$ i.i.d. Such a collection of random
+$X_1,\cdots,X_n \sim N(\mu,\sigma^2)$ i.i.d. Such a collection of random
 variables have properties which can be used in a number of ways.
 
 $$\sum_{i=1}^n \left ( \frac{X_i-\mu}{\sigma} \right )^2 \sim \chi_{n}^2,$$
@@ -5226,38 +5210,38 @@ estimator of the mean as opposed to the true mean.
 
 The correct notation is:
 
-$\mu$ = population mean
+$\mu$ := population mean
 
-$\bar{X}$ = sample mean (a random variable)
+$\bar{X}$ := sample mean (a random variable)
 
-$\bar{x}$ = sample mean (a number)
+$\bar{x}$ := sample mean (a number)
 
-## The t-distribution
+## The $T$ distribution
 
 ::: fbox
-If $U\sim n(0,1)$ and $W\sim\chi^{2}_{\nu}$ are independent, then the
+If $U\sim N(0,1)$ and $W\sim\chi^{2}_{\nu}$ are independent, then the
 random variable $$T=\frac{U}{\sqrt{\frac{w}{\nu}}}$$
 
-has a distribution which we call the t-distribution on $\nu$ degrees of
-freedom denoted $T \sim t_{\nu}$.
+has a distribution which we call the $T$ distribution on $\nu$ degrees
+of freedom denoted $T \sim t_{\nu}$.
 :::
 
 ### Details
 
 ::: defn
-If $U\sim n(0,1)$ and $W\sim\chi^{2}_{\nu}$ are independent, then the
+If $U\sim N(0,1)$ and $W\sim\chi^{2}_{\nu}$ are independent, then the
 random variable $$T:=\frac{U}{\sqrt{\frac{w}{\nu}}}$$ has a distribution
-which we call the **$t$-distribution** on $\nu$ degrees of freedom,
+which we call the **$T$ distribution** on $\nu$ degrees of freedom,
 denoted $T \sim t_\nu$.
 :::
 
-It turns out that if $X_1, \ldots ,X_n \sim n(\mu,\sigma ^2)$ and we set
+It turns out that if $X_1, \ldots ,X_n \sim N(\mu,\sigma ^2)$ and we set
 $$\bar{X}=\frac{1}{n}\sum_{i=1}^n X_i$$ and $$S=
 \sqrt{\frac{1}{1-n}\sum_{i=1}^n (X_i-X)^2}$$ then
 $$\frac{\bar{X}-\mu}{S/\sqrt{n}} \sim t_{n-1}.$$
 
-This follows from $\bar{X}$ and $\sum_{i=1}^n(X_i-\bar{X})^2$ being
-independent and $\frac{\bar{X}-\mu}{\sigma/\sqrt{n}}\sim n(0,1)$,
+This follows from $\bar{X}$ and $\sum_{i=1}^N(X_i-\bar{X})^2$ being
+independent and $\frac{\bar{X}-\mu}{\sigma/\sqrt{n}}\sim N(0,1)$,
 $\sum \frac{(X_i-\bar{X})^2}{\sigma^2}\sim \chi_{n-1}^2$.
 
 **Copyright** 2021, Gunnar Stefansson (editor) with contributions from
@@ -5313,10 +5297,10 @@ $$= \frac{1}{\sqrt{2\pi}\sigma}e^{-\frac{(x_1-\mu)^2}{2\sigma^2}} \cdot \ldots\c
 
 $$=\Pi_{i=1}^n \frac{1}{\sqrt{2\pi}\sigma}e^{-\frac{(x_i-\mu)^2}{2\sigma^2}}$$
 
-$$=\frac{1}{(2\pi)^{n/2}\sigma^n}e^{-\frac{1}{2\sigma^2}\sum_{i=1}^n(x_i-\mu)^2}$$
+$$=\frac{1}{(2\pi)^{n/2}\sigma^n}e^{-\frac{1}{2\sigma^2}\sum_{i=1}^N(x_i-\mu)^2}$$
 
 and if we assume $\sigma^2$ is known then the likelihood function is
-$$L(\mu)=\frac{1}{(2\pi)^{n/2}\sigma^n}e^{-\frac{1}{2\sigma^2}\sum_{i=1}^n(x_i-\mu)^2}$$
+$$L(\mu)=\frac{1}{(2\pi)^{n/2}\sigma^n}e^{-\frac{1}{2\sigma^2}\sum_{i=1}^N(x_i-\mu)^2}$$
 
 Maximizing this is done by maximizing the log, i.e. finding the $\mu$
 for which: $$\frac{d}{d\mu}\ln L(\mu)=0,$$ which again results in the
@@ -5373,7 +5357,8 @@ variables and lower case letters to denote outcome or data.
 Let the mean of a population be zero and the $\sigma=4$. Then draw three
 samples from this population with size, n, either 4, 16 or 64. The
 sample mean $\bar{X}$ will have a distribution with mean zero and
-standard deviation of $\frac{\sigma}{\sqrt{n}}$ where n= 4, 16 or 64.
+standard deviation of $\frac{\sigma}{\sqrt{n}}$ where $n= 4$, $16$ or
+$64$.
 :::
 
 ## Estimators and estimates
@@ -5434,12 +5419,12 @@ USA.
 
 ::: fbox
 The principle is to formulate a hypothesis and an alternative
-hypothesis, $H_0$ and $H_a$ respectively, and then select a statistic
+hypothesis, $H_0$ and $H_1$ respectively, and then select a statistic
 with a given distribution when $H_0$ is true and select a rejection
 region which has a specified probability $(\alpha)$ when $H_0$ is true.
 
-The rejection region is chosen to reflect $H_a$, i.e to ensure a high
-probability of rejection when $H_a$ is true.
+The rejection region is chosen to reflect $H_1$, i.e to ensure a high
+probability of rejection when $H_1$ is true.
 :::
 
 ### Examples
@@ -5450,7 +5435,7 @@ experiment for this. Suppose we toss the coin 5 times and count the
 number of heads. We can test the following hypothesis simply.\
 $H_0: p = \frac {1} {2}$ where $H_0$ is the null hypothesis
 
-$H_a ; p > \frac {1} {2}$ where $H_a$ is an alternative hypothesis
+$H_1 ; p > \frac {1} {2}$ where $H_1$ is an alternative hypothesis
 
 and $p$ is probability of having a head.\
 We reject $H_0$ if we get all heads. (Assuming the only interest is in a
@@ -5469,7 +5454,7 @@ $\alpha = 0.05$
 ::: xmpl
 Flip a coin to test
 
-$H_0: P = \frac {1} {2}$ vs $H_a: P \neq \frac {1} {2}$\
+$H_0: P = \frac {1} {2}$ vs $H_1: P \neq \frac {1} {2}$\
 Reject, if no heads or all heads are obtained in 6 trials, where the
 error rate is
 
@@ -5495,10 +5480,10 @@ $$H_0: \mu = \mu_0$$
 
 vs
 
-$$H_a: \mu > \mu_0$$
+$$H_1: \mu > \mu_0$$
 
 Where data $x_1 \ldots x_n$ are collected as independent observations of
-$X_1 \ldots X_n \sim n(\mu, \sigma^2)$ and $\sigma^2$ is known. If $H_0$
+$X_1 \ldots X_n \sim N(\mu, \sigma^2)$ and $\sigma^2$ is known. If $H_0$
 is true, then
 
 $$\bar {x} \sim n (\mu_0, \frac{\sigma^2}{n})$$ So,
@@ -5507,15 +5492,15 @@ $$Z = \frac{\bar {x} - \mu_0}{\frac{\sigma} {\sqrt{n}}} \sim n (0,1)$$
 
 It follows that,
 
-$$P[Z>z*] = \alpha$$
+$$P[Z>z^\ast] = \alpha$$
 
 Where
 
-$$z* = z_{1-\alpha}$$
+$$z^\ast = z_{1-\alpha}$$
 
 So if the data $x_1 \ldots x_n$ are such that,
 
-$$z = \frac{\bar {x} - \mu_0}{\frac{\sigma} {\sqrt{n}}}  > z*$$
+$$z = \frac{\bar {x} - \mu_0}{\frac{\sigma} {\sqrt{n}}}  > z^\ast$$
 
 Then $H_0$ is rejected.
 :::
@@ -5531,7 +5516,7 @@ $$H_0 : \mu = 42$$
 
 vs
 
-$$H_a : \mu > 42$$
+$$H_1 : \mu > 42$$
 
 $\sigma = 2$ is given
 
@@ -5541,15 +5526,17 @@ $$\bar {x} = 44.2$$
 
 we can calculate $z$ by using following equation
 
-$$z = \frac{\bar {x} - \mu}{\frac{\sigma} {\sqrt{n}}} = \frac{44.2 - 42}{\frac{2} {\sqrt{5}}}$$
+$$\begin{aligned}
+  z&= \frac{\bar {x} - \mu}{\frac{\sigma} {\sqrt{n}}}\\
+  &= \frac{44.2 - 42}{\frac{2} {\sqrt{5}}}\\
+  &= \frac{2.2}{0.8944}\\
+  &= 2.459\end{aligned}$$
 
-$$z = \frac{2.2}{0.8944} = 2.459$$
-
-$$z* = 1.645$$
+$$z^\ast = 1.645$$
 
 Here
 
-$z> z*$
+$z> z^\ast$
 
 So $H_0$ is rejected with $\alpha = 0.05$
 :::
@@ -5557,22 +5544,22 @@ So $H_0$ is rejected with $\alpha = 0.05$
 ## The two-sided z test for a normal mean
 
 ::: fbox
-$$z: =\frac{\overline{x}-\mu_0}{s\sqrt{n}} \sim n(0,1)$$
+$$z: =\frac{\overline{x}-\mu_0}{s\sqrt{n}} \sim N(0,1)$$
 :::
 
 ### Details
 
-Consider testing $H_0: \mu=\mu_0$ versus $H_a: \mu \ne \mu_0$ based on
+Consider testing $H_0: \mu=\mu_0$ versus $H_1: \mu \ne \mu_0$ based on
 observation from
-$\overline{X_1},..., \overline{X} \sim n(\mu, \sigma^2)$ i.i.d. where
+$\overline{X_1},..., \overline{X} \sim N(\mu, \sigma^2)$ i.i.d. where
 $\sigma^2$ is known. If $H_0$ is true, then
-$$Z: = \frac{\overline{x}-\mu_0}{\sigma \sqrt{n}} \sim n(0,1)$$
+$$Z: = \frac{\overline{x}-\mu_0}{\sigma \sqrt{n}} \sim N(0,1)$$
 
-and $$P[|z| > z^\star] = \alpha$$
+and $$P[|z| > z^\ast] = \alpha$$
 
-with $$z^\star = z_{1}$$
+with $$z^\ast = z_{1}$$
 
-We reject $H_0$ if $|z| > z^\star$. If $|z| > z^\star$ is not true, then
+We reject $H_0$ if $|z| > z^\ast$. If $|z| > z^\ast$ is not true, then
 we \"Cannot reject the $H_0$\".
 
 ### Examples
@@ -5592,7 +5579,7 @@ So, the $z$ value for a two-sided normal mean is
 $\left |-1.99 \right |$.
 :::
 
-## The one-sided t-test for a single normal mean
+## The one-sided $t$-test for a single normal mean
 
 ::: fbox
 Recall that if $X_1,...,X_n \sim N(\mu,\sigma^2)$ i.i.d. then
@@ -5613,7 +5600,7 @@ so $$P[T>t*]=\alpha$$
 if $$t*=t_{n-1,1-\alpha}$$
 
 Hence, we reject $H_0$ if the data $x_1,...,x_n$ results in a a value of
-$t:=\frac{\overline{x}-\mu_0}{S/\sqrt{n}}$ such that t\>t\*, otherwise
+$t:=\frac{\overline{x}-\mu_0}{S/\sqrt{n}}$ such that $t>t*$, otherwise
 $H_0$ can not be rejected.
 
 ### Examples
@@ -5621,12 +5608,12 @@ $H_0$ can not be rejected.
 ::: xmpl
 Suppose the following data set (12,19,17,23,15,27) comes independently
 from a normal distribution and we need to test $H_0:\mu=\mu_0$ vs
-$H_a:\mu>\mu_0$. Here we have $n=6,\overline{x}=18.83, s=5.46, \mu_0=18$
+$H_1:\mu>\mu_0$. Here we have $n=6,\overline{x}=18.83, s=5.46, \mu_0=18$
 so we obtain $$t=\frac{\overline{x}-\mu_0}{s/\sqrt{n}}= 0.37$$
 
 so $H_0$ cannot be rejected.\
-In R, t\* is found using qt(n-1,0.95) but the entire hypothesis can be
-tested using
+In R, $t*$ is found using `qt(n-1,0.95)` but the entire hypothesis can
+be tested using
 
     t.test(x,alternative="greater",mu=<18)
 :::
@@ -5642,36 +5629,36 @@ $x_1,....,x_n$ and $y_1,...y_m$
 ### Details
 
 We know that if\
-$$X_1, ...., X_n \sim n(\mu_1,\sigma)$$
+$$X_1, ...., X_n \sim N(\mu_1,\sigma)$$
 
-$$Y_1, ...., Y_m \sim n(\mu_2,\sigma)$$
+$$Y_1, ...., Y_m \sim N(\mu_2,\sigma)$$
 
 are all independent then
-$$\bar{X}-\bar{Y} \sim n(\mu_1-\mu_2,\frac{\sigma^2}{n}+\frac{\sigma^2}{m})$$
+$$\bar{X}-\bar{Y} \sim N(\mu_1-\mu_2,\frac{\sigma^2}{n}+\frac{\sigma^2}{m})$$
 Further,
 $$\sum_{i=1}^{n} \frac{(X_i-\bar{X})^2}{\sigma^2} \sim X_{n-1}^{2}$$ and
 $$\sum_{j=1}^{m} \frac{(Y_j-\bar{Y})^2}{\sigma^2} \sim X_{m-1}^{2}$$ so
-$$\frac {\sum_{i=1}^{n}(X_i-\bar{X})^2 + \sum_{j=1}^{m}(Y_j-\bar{Y})^2}{\sigma^2} \sim X_{n+m-2}^2$$
+$$\frac {\Sigma_{i=1}^{n}(X_i-\bar{X})^2 + \Sigma_{j=1}^{m}(Y_j-\bar{Y})^2}{\sigma^2} \sim X_{n+m-2}^2$$
 and it follows that
 $$\frac {\bar{X}-\bar{Y}-(\mu_1-\mu_2)}{S\sqrt{(\frac{1}{n}+\frac{1}{m})}} \sim t_{n+m-2}$$
 where
-$$S=\sqrt{\frac{\sum_{i=1}^{n}(X_1-\bar{X})^2+\sum_{j=1}^{m}(Y_j-\bar{Y})^2}{n+m-2}}$$
+$$S=\sqrt{\frac{\Sigma_{i=1}^{n}(X_1-\bar{X})^2+\Sigma_{j=1}^{m}(Y_j-\bar{Y})^2}{n+m-2}}$$
 
-consider testing $H_0:\mu_1=\mu_2$ vs $H_1=mu_1>\mu_2$. Hence, if $H_0$
+consider testing $H_0:\mu_1=\mu_2$ vs $H_1=\mu_1>\mu_2$. Hence, if $H_0$
 is true then the observed value
 $$t=\frac{\bar{x}-\bar{y}}{S\sqrt{\frac{1}{n}+\frac{1}{m}}}$$ comes from
-a t-test with $n+m-2$ df and we reject $H_0$ if $\left|t\right|>t^\ast$.
-Here,
+a $t$-test with $n+m-2$ df and we reject $H_0$ if
+$\left|t\right|>t^\ast$. Here,
 $$S=\sqrt{\frac{\sum_{i}(x_i-\bar{x})^2+\sum_{j}(y_j-\bar{y})^2}{n+m-2}}$$
 and $t^\ast=t_{n+m-2,1-\alpha}$
 
-## Comparing means from large samples \<Ól.B.M.\>
+## Comparing means from large samples
 
 ::: fbox
 If $X_1,....X_n$ and $Y_1,.....Y_m$, are all independent (with finite
 variance) with expected values of $\mu_1$ and $\mu_2$ respectively, and
 variances of $\sigma_1^2$,and $\sigma_2^2$ respectively, then
-$$\frac{\overline{X}-\overline{Y}-(\mu_1-\mu_2)}{\sqrt{\frac{\sigma_1^2}{n}+\frac{\sigma_2^2}{m}}} \dot{\sim}n(0,1)$$
+$$\frac{\overline{X}-\overline{Y}-(\mu_1-\mu_2)}{\sqrt{\frac{\sigma_1^2}{n}+\frac{\sigma_2^2}{m}}} \sim N(0,1)$$
 if the sample sizes are large enough.\
 This is the central limit theorem.
 :::
@@ -5682,14 +5669,14 @@ Another theorem (Slutzky) stakes that replacing $\sigma_1^2$ and
 $\sigma_2^2$ with $S_1^2$ and $S_2^2$ will result in the same (limiting)
 distribution.\
 It follows that for large samples we can test
-$$H_0: \mu_1=\mu_2 \qquad vs. \qquad H_a:\mu_1 > \mu_2$$ by computing
+$$H_0: \mu_1=\mu_2 \qquad vs. \qquad H_1:\mu_1 > \mu_2$$ by computing
 $$z=\frac{\overline{x}-\overline{y}}{\sqrt{\frac{s_1^2}{n}+\frac{s_2^2}{m}}}$$
 and reject $H_0$ if $z>z_{1-\alpha}$.
 
-## The P-value
+## The $p$-value
 
 ::: fbox
-The p-value of a test is an evaluation of the probability of obtaining
+The $p$-value of a test is an evaluation of the probability of obtaining
 results which are as extreme as those observed in the context of the
 hypothesis.
 :::
@@ -5700,8 +5687,8 @@ hypothesis.
 Consider a dataset and the following hypotheses\
 $$H_0:\mu=42$$
 
-vs. $$H_a:\mu>42$$ and suppose we obtain\
-$$z=2.3$$ We reject $H_0$ since $$2.3>1.645+z_{0.95}$$ The p-value is
+vs. $$H_1:\mu>42$$ and suppose we obtain\
+$$z=2.3$$ We reject $H_0$ since $$2.3>1.645+z_{0.95}$$ The $p$-value is
 $$P[Z>2.3]= 1-\Phi(2.3)$$ obtained in R using
 
     1-pnorm(2.3)
@@ -5717,9 +5704,9 @@ P &= P[|Z|>2.3]\\
 
 ### Details
 
-Two sample means are statistically $\underline{significantly different}$
-if the null hypothesis, $\mu_1 = \mu_2$, can be $\underline{rejected}$.
-In this case, one can make the following statements:
+Two sample means are **statistically significantly different** if the
+null hypothesis, $\mu_1 = \mu_2$, can be **rejected**. In this case, one
+can make the following statements:
 
 -   The population means are different.
 
@@ -5768,15 +5755,17 @@ USA.
 ::: fbox
 Suppose we have a method to test a null hypothesis against an
 alternative hypothesis. The test would be \"controlled\" at some level
-$\alpha$, i.e. $P[reject\ H_0] \leq \alpha$ whenever $H_0$ is true.\
-On the other hand, when $H_0$ is false one wants $P[reject \  H_0]$ to
-be as high as possible.\
+$\alpha$, i.e. $P[\text{reject } H_0] \leq \alpha$ whenever $H_0$ is
+true.\
+On the other hand, when $H_0$ is false one wants
+$P[\text{reject }  H_0]$ to be as high as possible.\
 If the parameter to be tested is $\theta$ and $\theta_0$ is a value
-within $H_0$ and $\theta_a$ is in $H_a$ then we want
-$P_{\theta_0}[reject\ H_0] \leq \alpha$ and $P_{\theta_a}[reject\ H_0]$
-as large as possible.\
+within $H_0$ and $\theta_a$ is in $H_1$ then we want
+$P_{\theta_0}[\text{reject } H_0] \leq \alpha$ and
+$P_{\theta_a}[\text{reject } H_0]$ as large as possible.\
 For a general $\theta$ we write
-$$\beta(\theta) = P_{\theta} [reject\ H_0]$$ for the power of the test
+$$\beta(\theta) = P_{\theta} [\text{reject } H_0]$$ for the power of the
+test
 :::
 
 ### Details
@@ -5797,25 +5786,26 @@ Do not use the phrase \"accept\".
 Suppose 7 students are involved in an experiment which is comprised of 7
 trails and each trial consists of rolling a dice 9 times.\
 \
-Experiment 1: A student records a 0 if they toss an even number (2,4,6),
-and records a 1 if they toss an odd number (1,3,5). After tossing the
-dice 9 times and recording a 0 or 1 the student tabulates the number of
-1s. This process is repeated 6 more times.\
+**Experiment 1**: A student records a 0 if they toss an even number
+(2,4,6) (failure), and records a 1 if they toss an odd number (1,3,5)
+(success). After tossing the dice 9 times and recording a 0 or 1 the
+student tabulates the number of 1s. This process is repeated 6 more
+times.\
 \
-Data and outcomes: x = number of successes in n trials =$\sum_{i=1}^n$.
-Thus, x = number of odd numbers\
+Data and outcomes: x = number of successes in $n$ trials
+=$\Sigma_{i=1}^n$. Thus, x = number of odd numbers\
 \
-Question:Test whether $p=P[odd number]=\frac{1}{2}$ that is
+Question:Test whether $p=P[\text{odd number}]=\frac{1}{2}$ that is
 
-$H_0: p=\frac{1}{2}$ vs. $H_a: p\neq \frac{1}{2}$\
+$H_0: p=\frac{1}{2}$ vs. $H_1: p\neq \frac{1}{2}$\
 \
-Solution: Now, x is an outcome of $X \sim Bin(n,p)$. We know from the
-CLT that $$\frac{X-np}{\sqrt{np(1-p)}} \sim\dot N(0,1)$$
+Solution: Now, $x$ is an outcome of $X \sim Bin(n,p)$. We know from the
+CLT that $$\frac{X-np}{\sqrt{np(1-p)}} \sim N(0,1)$$
 
 write $p_0=\frac{1}{2}$ so if $H_0:p=p_0$ is true then
-$$Z:=\frac{X-np_0}{\sqrt{np_0(1-p_0)}}\sim\dot N(0,1)$$ so we reject
-$H_0$ if the observed value $$z=\frac{x-np_0}{\sqrt{np_0(1-p_0)}}$$ is
-such that $\left | z\right | >z_{1-\frac{\alpha}{2}}$
+$$Z:=\frac{X-np_0}{\sqrt{np_0(1-p_0)}}\sim N(0,1)$$ so we reject $H_0$
+if the observed value $$z=\frac{x-np_0}{\sqrt{np_0(1-p_0)}}$$ is such
+that $\left | z\right | >z_{1-\frac{\alpha}{2}}$
 
 Outcomes from 21 trials
 
@@ -5830,7 +5820,7 @@ $$\begin{matrix}
 \end{matrix}$$
 
 $$z=\frac{7-9\cdot \frac{1}{2}}{\sqrt{9\cdot\frac{1}{2}\cdot \frac{1}{2}}}=\frac{7-4.5}{3\cdot\frac{1}{2}}=\frac{14-9}{3}=\frac{5}{3} < 1.96$$
-So we do not reject the null hypothesis!\
+So we do not reject the null hypothesis!
 
 ::: notes
 *Note 22*. Note that we can rewrite the test statistics slightly
@@ -5841,21 +5831,23 @@ $$z=\frac{x-\frac{n}{2}}{\sqrt{n\cdot\frac{1}{2}\cdot\frac{1}{2}}}=\frac{x-\frac
 ::: notes
 *Note 23*. Note that we reject if $\frac{2x-9}{3}>1.96$ i.e. if
 $2x>9+3\cdot1.96 \approx 9+6=15$\
-$x>7.5$ \[for x=8 or 9\] or $2x<9-3\cdot1.96, x<1.5$ \[for x=0 or 1\].
+$x>7.5$ \[$for x=8$ or $x=9$\] or $2x<9-3 \cdot 1.96$, $x<1.5$ \[for
+$x=0$ or $x=1$\].
 :::
 :::
 
 ::: xmpl
 Suppose 7 students are involved in an experiment which is comprised of 7
-trails and each trial consists of rolling a dice 9 times.\
+trails and each trial consists of rolling a die 9 times.\
 \
-Experiment 2: The procedure is the same as in experiment 1, but now the
-student records 0 for a 1 or 2 and a 1 for a 3,4,5,or 6.\
+**Experiment 2**: The procedure is the same as in experiment 1, but now
+the student records 0 for a 1 or 2 (failure) and a 1 for a 3,4,5,or 6
+(success).\
 \
 Data and outcomes:
 
-x = number of successes in n trials =$\Sigma_{i=1}^n$ Thus, x = number
-of 'b's\
+$x$ = number of successes in $n$ trials $=\Sigma_{i=1}^n$ Thus, $x =$
+number of 1's\
 \
 Solution: Outcomes from 21 experiments
 
@@ -5869,7 +5861,7 @@ $$\begin{matrix}
 2 & 5 & 7
 \end{matrix}$$
 
-This time our test is $H_0:p=\frac{2}{3}$ vs $H_a:p=\frac{2}{3}$. Note
+This time our test is $H_0:p=\frac{2}{3}$ vs $H_1:p=\frac{2}{3}$. Note
 that we reject $H_0$ if $\frac{6x-4n}{9}>1,96$ \[for x=9\] or if
 $\frac{6x-4n}{9}<-1,96$ \[for x=0,1,2,3\].\
 We reject $H_0$ in 3 out of 21 trials.
@@ -5879,13 +5871,13 @@ We reject $H_0$ in 3 out of 21 trials.
 Suppose 7 students are involved in an experiment which is comprised of 7
 trails and each trial consists of rolling a dice 9 times.\
 \
-Experiment 3: Same as experiment 1 except 0 is recorded for 1,2,3,4,5
-and a 1 is recorded for 6.\
+**Experiment 3**: Same as experiment 1 except 0 is recorded for
+1,2,3,4,5 (failure) and a 1 is recorded for 6 (success).\
 \
 Data and outcomes:
 
-x = number of successes in n trials =$\sum_{i=1}^n$ Thus, x = number of
-'1's\
+$x =$ number of successes in $n$ trials =$\Sigma_{i=1}^n$ Thus, $x =$
+number of 1's\
 \
 Solution: Outcomes from 21 experiments
 
@@ -5906,8 +5898,8 @@ null hypothesis $H_0:p=\frac{1}{6}$ in 14 out of 21 trials.
 ## The Power of the one sided z test for the mean
 
 ::: fbox
-The one sided z-test for the mean $(\mu)$ is based on a random sample
-where $X_1 \ldots X_n \sim n(\mu, \sigma^2)$ are independent and
+The one sided $z$-test for the mean $(\mu)$ is based on a random sample
+where $X_1 \ldots X_n \sim N(\mu, \sigma^2)$ are independent and
 $\sigma^2$ is known.\
 The power of the test for an arbitrary $\mu$ can be computed as:
 
@@ -5917,18 +5909,17 @@ $$\beta(\mu) = 1 - \Phi \left ( \frac{\mu_0 - \mu }{\frac{\sigma} {\sqrt{n}}} + 
 ### Details
 
 The one sided z-test for the mean $(\mu)$ is based on a random sample
-where $X_1 \ldots X_n \sim n(\mu, \sigma^2)$ are independent and
-$\sigma^2$ is known.\
-If the hypotheses are:
+where $X_1 \ldots X_n \sim N(\mu, \sigma^2)$ are independent and
+$\sigma^2$ is known. If the hypotheses are:
 
 $H_0 : \mu = \mu_0$ vs
 
-$H_a : \mu > \mu_0$\
+$H_1 : \mu > \mu_0$\
 Then we know that, if $H_0$ is true
 
 $$Z = \frac{\bar {X} - \mu_0}{\frac{\sigma} {\sqrt{n}}} \sim n (0,1)$$
 
-Given data $x_1, \ldots x_n$, the z-value is
+Given data $x_1, \ldots x_n$, the $z$-value is
 
 $$z = \frac{\bar {x} - \mu_0}{\frac{\sigma} {\sqrt{n}}}$$
 
@@ -5936,7 +5927,7 @@ We reject $H_0$ if $z > z_{1-\alpha}$
 
 The level of this test is
 
-$$P_{\mu_0} [Reject H_0]= P_{\mu_0}[\frac{\bar {X} - \mu_0}{\frac{\sigma} {\sqrt{n}}} > z_{1- \alpha}]$$
+$$P_{\mu_0} [\text{Reject } H_0]= P_{\mu_0}[\frac{\bar {X} - \mu_0}{\frac{\sigma} {\sqrt{n}}} > z_{1- \alpha}]$$
 
 $$= P[z > z_{1- \alpha}] = {\alpha}$$
 
@@ -5944,7 +5935,7 @@ since $Z \sim n (0,1)$ when $\mu_0$ is the true value.\
 \
 The power of the test for an arbitrary $\mu$ can be computed as follows.
 
-$$\beta(\mu) = P_{\mu} [reject H_0]$$
+$$\beta(\mu) = P_{\mu} [\text{Reject } H_0]$$
 
 $$= P_{\mu}[\frac{\bar {X} - \mu_0}{\frac{\sigma} {\sqrt{n}}} > z_{1- \alpha}]$$
 
@@ -5984,8 +5975,8 @@ Sticking the formula into R gives
 On the other hand, one can also use a simple simulation approach. First,
 decide how many samples are to be simulated (Nsim). Then, generate all
 of these samples, arrange them in a matrix and compute the mean of each
-sample. The z-value of each of these Nsim tests are then computed and a
-check is made whether it exceeds the critical point (1) or not (0).
+sample. The $z$-value of each of these Nsim tests are then computed and
+a check is made whether it exceeds the critical point (1) or not (0).
 
     Nsim<-10000
     m<-matrix(rnorm(Nsim*n,mu,sigma),ncol=n)
@@ -5999,7 +5990,7 @@ check is made whether it exceeds the critical point (1) or not (0).
 ## Power and sample size for the one-sided z-test for a single normal mean
 
 ::: fbox
-Suppose we want to test $H_0:\mu=\mu_0$ vs $H_a:\mu>\mu_0$. We will
+Suppose we want to test $H_0:\mu=\mu_0$ vs $H_1:\mu>\mu_0$. We will
 reject $H_0$ if the observed value
 $$z=\frac{\overline{x}-\mu_0}{\sigma/\sqrt{n}}$$
 
@@ -6008,8 +5999,8 @@ is such that $z>z_{1-\alpha}$.
 
 ### Details
 
-Suppose we want to test $H_0:\mu=\mu_0$ vs $H_a:\mu>\mu_0$. So based on
-$X_1,...,X_n\sim n(\mu,\sigma ^2)$ i.i.d. with $\sigma^2$ known we will
+Suppose we want to test $H_0:\mu=\mu_0$ vs $H_1:\mu>\mu_0$. So based on
+$X_1,...,X_n\sim N(\mu,\sigma ^2)$ i.i.d. with $\sigma^2$ known we will
 reject $H_0$ if the observed value
 $$z=\frac{\overline{x}-\mu_0}{\sigma/\sqrt{n}}$$
 
@@ -6022,7 +6013,7 @@ prespecified probability $\beta_1$, when $\mu_1$ is the true value of
 $\mu$. For this, we need to select the sample size so that
 $$\beta(\mu_1) \geq \beta_1$$
 
-i.e. find n which satisfies
+i.e. find $n$ which satisfies
 $$1-\Phi(\frac{\mu_1-\mu_0}{\sigma/\sqrt{n}}+z_{1-\alpha})\geq \beta_1$$
 
 ### Examples
@@ -6050,13 +6041,13 @@ $$1-\Phi(\frac{\mu_1-\mu_0}{\sigma/\sqrt{n}}+z_{1-\alpha})\geq \beta_1$$
 ## The non central t - distribution
 
 ::: fbox
-Recall that if $Z \sim n(0, 1)$ and $U \sim {\chi^2}_v$ are independent
+Recall that if $Z \sim N(0, 1)$ and $U \sim {\chi^2}_v$ are independent
 then
 
 $$\frac{Z}{\sqrt{\frac{U}{v}}}\sim t_v$$
 
 and it follows for a random sample
-$X_1 \ldots X_n \sim n(\mu, \sigma^2)$ independent; that
+$X_1 \ldots X_n \sim N(\mu, \sigma^2)$ independent; that
 
 $$\frac{\bar {X} - \mu}{\frac{s} {\sqrt{n}}} = \frac{\frac{\bar {X} - \mu}{\frac{\sigma} {\sqrt{n}}}}{\sqrt{\frac{\sum ({X_i} -\bar {X})^2} { \frac {{\sigma}^2} {n-1}}}} \sim t_{n-1}$$
 :::
@@ -6064,10 +6055,10 @@ $$\frac{\bar {X} - \mu}{\frac{s} {\sqrt{n}}} = \frac{\frac{\bar {X} - \mu}{\frac
 ### Details
 
 On the other hand, if $W \sim n (\Delta,1)$ and $U \sim {\chi}^2_v$ are
-independent, then $\frac{W}{\sqrt{\frac{U}{v}}}$ has a non central
-t-distribution with $v$ degrees of freedom and non centrality parameter
+independent, then $\frac{W}{\sqrt{\frac{U}{v}}}$ has a non central $T$
+distribution with $v$ degrees of freedom and non centrality parameter
 $\Delta$. This distribution arises, if
-$X_1 \ldots X_n \sim n(\mu, \sigma^2)$ independent and we want to
+$X_1 \ldots X_n \sim N(\mu, \sigma^2)$ independent and we want to
 consider the distribution of:
 
 $$\frac{\bar {X} - \mu}{\frac{S} {\sqrt{n}}} = \frac{\frac{\bar {X} - \mu}{\frac{\sigma} {\sqrt{n}}} + \frac{\mu - \mu_0 }{\frac{\sigma} {\sqrt{n}}}} {\frac{S}{\sqrt{n}}} = \frac {Z + \frac{\mu - \mu_0 }{\frac{\sigma} {\sqrt{n}}}}{\sqrt{\frac{U}{v}}}$$
@@ -6080,40 +6071,40 @@ $$\Delta = \frac{\mu - \mu_0 }{\frac{\sigma} {\sqrt{n}}}$$
 with $n-1$ df. Here $v = n-1 df$ since $Z \sim n (0,1)$ and
 $U \sim {\chi}^2_{n-1}$ in this equation
 
-## The power of t-test for a normal mean (warning: errors)
+## The power of $t$-test for a normal mean (warning: errors)
 
 ### Details
 
 **WARNING: This is all wrong and needs to be rewritten**
 
 Consider $X_1,\ldots,X_n \sim n (\mu, \sigma^2)$ i.i.d. where $\sigma^2$
-is unknown and we want to test $H_0:\mu = \mu_0$ vs. $H_a: \mu > \mu_0$.
+is unknown and we want to test $H_0:\mu = \mu_0$ vs. $H_1: \mu > \mu_0$.
 We know that
 
-$$T:= \frac{\overline{X} - \mu}{s/\sqrt{n}} \sim_{t_n-1}$$
+$$T:= \frac{\overline{X} - \mu}{s/\sqrt{n}} \sim t_{n-1}$$
 
 and we will reject $H_0$ if the computed value
 $$t:= \frac{\overline{x} - \mu_0}{s/\sqrt{n}}$$
 
-is such that $$t>t^{\star}=t_{n-1, 1-\alpha}.$$
+is such that $$t>t^{\ast}=t_{n-1, 1-\alpha}.$$
 
 The power of this test is:
 
 $$\begin{aligned}
-B(\mu) = P_{\mu}[reject\ H_0] &= P_{\mu} \lbrack \frac{\overline{x} - \mu_0}{s/\sqrt{n}} > t^\star \rbrack\\
-&=P_{\mu} \lbrack \overline{x} - \mu_0 > t^\star\cdot s/\sqrt{n} \rbrack\\
-&=P_{\mu} \lbrack \frac{\overline{x} - \mu}{s/\sqrt{n}} > t^\star+\frac{\mu_0-\mu}{s/\sqrt{n}} \rbrack.\end{aligned}$$
+B(\mu) = P_{\mu}[\text{reject } H_0] &= P_{\mu} \lbrack \frac{\overline{x} - \mu_0}{s/\sqrt{n}} > t^\ast \rbrack\\
+&=P_{\mu} \lbrack \overline{x} - \mu_0 > t^\ast\cdot s/\sqrt{n} \rbrack\\
+&=P_{\mu} \lbrack \frac{\overline{x} - \mu}{s/\sqrt{n}} > t^\ast+\frac{\mu_0-\mu}{s/\sqrt{n}} \rbrack.\end{aligned}$$
 
 Which is the probability that a $t_{n-1,1-\alpha}$-variable exceed
-$t^{\star}+\frac{\mu_0-\mu}{s/\sqrt{n}}$.
+$t^{\ast}+\frac{\mu_0-\mu}{s/\sqrt{n}}$.
 
 **WARNING: This is all wrong and needs to be rewritten (the s in the
 above line is a random variable so this make no sense at all)**
 
-## Power and sample size for the one sided t-test for a mean
+## Power and sample size for the one sided $t$-test for a mean
 
 ::: fbox
-Suppose we want to calculate the power of a one sided t-test for a
+Suppose we want to calculate the power of a one sided $t$-test for a
 single mean (one sample), this can easily be done in R with the
 `power.t.test` command.
 :::
@@ -6129,9 +6120,9 @@ $\delta = \frac{\mu_1-\mu_2}{\sigma/\sqrt{n}}$
 For a one sided power analysis we wish to test the following
 hypotheses:\
 For a one sample test:\
-$H_0: \mu = \mu_0$ vs. $H_a: \mu > \mu_0$\
+$H_0: \mu = \mu_0$ vs. $H_1: \mu > \mu_0$\
 For a two sample test:\
-$H_0: \mu_1 = \mu_2$ vs. $H_a: \mu_1 > \mu_2$\
+$H_0: \mu_1 = \mu_2$ vs. $H_1: \mu_1 > \mu_2$\
 In R, the `power.t.test` command is useful to calculate how many samples
 one needs to obtain a certain power of a test, but also to calculate the
 power when we have a given number of samples.
@@ -6152,12 +6143,12 @@ How many samples do I need to get a power of .9?
         alternative = one.sided
         
 
-We would thus need a sample size of n = 31.15 or $\approx 32$ samples to
+We would thus need a sample size of $n = 31.15 or \approx 32$ samples to
 obtain a power of 0.9 for our analysis.
 :::
 
 ::: xmpl
-With a sample size of n = 45, what will the power of my test be?\
+With a sample size of $n = 45$, what will the power of my test be?\
 
     power.t.test(n=45,delta=1.5,sd=2,sig.level=0.05,type="one.sample",alternative="one.sided")
 
@@ -6177,7 +6168,7 @@ needs to change the alternative to \"two.sided\".
 
 ::: xmpl
 If one is interested in doing a power analysis for an ANOVA test, this
-is done in a fairly similar way. With a given sample size of n=20:
+is done in a fairly similar way. With a given sample size of $n=20$:
 
     power.anova.test(groups=4, n=20, between.var=1, within.var=3)
 
@@ -6205,19 +6196,19 @@ Balanced one-way analysis of variance power calculation
               power = 0.9
 :::
 
-## The power of the 2-sided t-test
+## The power of the 2-sided $t$-test
 
 ::: fbox
-A power analysis on a two-sided t-test can be done in R using the
+A power analysis on a two-sided $t$-test can be done in R using the
 $power.t.test$ command.
 :::
 
 ### Details
 
 For a one sample test:\
-$H_0: \mu=\mu_0$ vs. $H_a:\mu\neq\mu_0$\
+$H_0: \mu=\mu_0$ vs. $H_1:\mu\neq\mu_0$\
 \
-The $power.t.test$ command is useful to provide information for
+The `power.t.test` command is useful to provide information for
 determining the minimum sample size one needs to obtain a certain power
 of a test:
 
@@ -6249,18 +6240,19 @@ How many samples do I need in my research to obtain a power of 0.8?
               power = 0.8
         alternative = two.sided
 
-So, one needs 29 samples (n=29) to obtain a power level of 0.8 for this
-analysis.
+So, one needs 29 samples ($n=29$) to obtain a power level of 0.8 for
+this analysis.
 :::
 
-## The power of the 2-sample one and two-sided t-tests
+## The power of the 2-sample one and two-sided $t$-tests
 
 ::: fbox
-The power of a two sample, one-sided t-test can be computed as follows:
+The power of a two sample, one-sided $t$-test can be computed as
+follows:
 
 $$\beta_{(\mu_1\mu_2)} = P_{\mu_1\mu_2}\left[ \frac{Z + \Delta}{\sqrt{U/(n+m-2)}} > t^\ast_{1-\alpha,n+m-2} \right]$$
 
-and the power of a two sample, two-sided t-test is give by:
+and the power of a two sample, two-sided $t$-test is give by:
 
 $$\beta_{(\mu_1\mu_2)} = P_{\mu_1\mu_2}\left[ \frac{Z + \Delta}{\sqrt{U/(n+m-2)}} > t^\ast_{1-\alpha,n+m-2} \right]\\
 +P_{\mu_1\mu_2}\left[ \frac{Z + \Delta}{\sqrt{U/(n+m-2)}} < -t^\ast_{1-\alpha,n+m-2} \right]$$
@@ -6272,23 +6264,23 @@ and $U$ is the SSE.\
 
 ### Details
 
-*T*wo Sample, One-sided t-Test:
+*T*wo Sample, one-sided $t$-test:
 
 Suppose data are gathered independently from two normal populations
-resulting in $$X_1, \ldots, X_n \sim n(\mu_1, \sigma^2)$$
-$$Y_1, \ldots, Y_m \sim n(\mu_2, \sigma^2)$$ where all data are
+resulting in $$X_1, \ldots, X_n \sim N(\mu_1, \sigma^2)$$
+$$Y_1, \ldots, Y_m \sim N(\mu_2, \sigma^2)$$ where all data are
 independent then
-$$\overline{X}-\overline{Y} \sim n(\mu_1 - \mu_2, \frac{\sigma^2}{n}\ + \frac{\sigma^2}{m})$$
+$$\overline{X}-\overline{Y} \sim N(\mu_1 - \mu_2, \frac{\sigma^2}{n}\ + \frac{\sigma^2}{m})$$
 The null hypothesis in question is $H_o: \mu_1 = \mu_2$ versus
-alternative $H_a: \mu_1 > \mu_2$. If $H_o$ is true then the observed
+alternative $H_1: \mu_1 > \mu_2$. If $H_o$ is true then the observed
 value
 $$t = \frac{\overline{x}-\overline{y}}{s\sqrt{\frac{1}{n}+\frac{1}{m}}}$$
-comes from a t-distribution with $n+m-2$ degrees of freedom and we
+comes from a $T$ distribution with $n+m-2$ degrees of freedom and we
 reject $H_o$ if $\left|t \right|> t^\ast_{1-\alpha,n+m-2}$\
 The power of the test can be computed as follows:
 
 $$\begin{aligned}
-\beta_{(\mu_1\mu_2)}& = & P_{\mu_1\mu_2}\left[reject\ H_o \right]\\
+\beta_{(\mu_1\mu_2)}& = & P_{\mu_1\mu_2}\left[\text{reject } H_o \right]\\
 & = & P_{\mu_1\mu_2}\left[\frac{\overline{X}-\overline{Y}}{S\sqrt{\frac{1}{n}+\frac{1}{m}}} > t^\ast_{1-\alpha,n+m-2} \right]\\
 & = &  P_{\mu_1\mu_2}\left[\frac{\frac{\overline{X}-\overline{Y}-(\mu_1-\mu_2)}{\sigma\sqrt{\frac{1}{n}+\frac{1}{m}}}+ \frac{(\mu_1-\mu_2)}{\sigma\sqrt{\frac{1}{n}+\frac{1}{m}}}}{S/\sigma} > t^\ast_{1-\alpha,n+m-2}\right]\\
 & = &  P_{\mu_1\mu_2}\left[\frac{Z +\frac{(\mu_1-\mu_2)}{\sigma\sqrt{\frac{1}{n}+\frac{1}{m}}}}
@@ -6302,21 +6294,21 @@ degrees of freedom to give a $\chi^2$ distribution.\
 This is the probability that a non-central $t$-variable exceeds
 $t^\ast$.\
 \
-*T*wo Sample, Two-sided t-Test:
+*T*wo Sample, Two-sided $t$-test:
 
 In this case the null hypothesis is defined as $H_o: \mu_1 = \mu_2$
-versus alternative $H_a: \mu_1 \neq \mu_2$.\
+versus alternative $H_1: \mu_1 \neq \mu_2$.\
 The power of the test can be computed as follows:\
 $$\begin{aligned}
-\beta_{(\mu_1\mu_2)}& = & P_{\mu_1\mu_2}\left[reject\ H_o \right]\\
+\beta_{(\mu_1\mu_2)}& = & P_{\mu_1\mu_2}\left[\text{reject } H_o \right]\\
 & = & P_{\mu_1\mu_2}\left[\left|\frac{\overline{X}-\overline{Y}}{S\sqrt{\frac{1}{n}+\frac{1}{m}}}\right| > t^\ast_{1-\alpha,n+m-2} \right]\\
 & = & P_{\mu_1\mu_2}\left[\frac{\overline{X}-\overline{Y}}{S\sqrt{\frac{1}{n}+\frac{1}{m}}} > t^\ast_{1-\alpha,n+m-2} \right] \\
-&& +\: P_{\mu_1\mu_2} \left[\frac{\overline{X}-\overline{Y}}{S\sqrt{\frac{1}{n}+\frac{1}{m}}} <-t^\ast_{1-\alpha,n+m-2} \right] \\
+&& +  P_{\mu_1\mu_2} \left[\frac{\overline{X}-\overline{Y}}{S\sqrt{\frac{1}{n}+\frac{1}{m}}} <-t^\ast_{1-\alpha,n+m-2} \right] \\
 & = &  P_{\mu_1\mu_2}\left[\frac{\frac{\overline{X}-\overline{Y}-(\mu_1-\mu_2)}{\sigma\sqrt{\frac{1}{n}+\frac{1}{m}}}+\frac{(\mu_1-\mu_2)}{\sigma\sqrt{\frac{1}{n}+\frac{1}{m}}}}{S/\sqrt{(n+m-2)}} > t^\ast_{1-\alpha,n+m-2}\right] \\
-&& +\:   P_{\mu_1\mu_2}\left[\frac{\frac{\overline{X}-\overline{Y}-(\mu_1-\mu_2)}{\sigma\sqrt{\frac{1}{n}+\frac{1}{m}}}+\frac{(\mu_1-\mu_2)}{\sigma\sqrt{\frac{1}{n}+\frac{1}{m}}}}{S/\sqrt{(n+m-2)}} < -t^\ast_{1-\alpha,n+m-2}\right]
+&& +   P_{\mu_1\mu_2}\left[\frac{\frac{\overline{X}-\overline{Y}-(\mu_1-\mu_2)}{\sigma\sqrt{\frac{1}{n}+\frac{1}{m}}}+\frac{(\mu_1-\mu_2)}{\sigma\sqrt{\frac{1}{n}+\frac{1}{m}}}}{S/\sqrt{(n+m-2)}} < -t^\ast_{1-\alpha,n+m-2}\right]
 \\
 & = &  P_{\mu_1\mu_2}\left[ \frac{Z + \Delta}{\sqrt{U/(n+m-2)}} > t^\ast_{1-\alpha,n+m-2} \right]\\
-&& +\: P_{\mu_1\mu_2}\left[ \frac{Z + \Delta}{\sqrt{U/(n+m-2)}} < -t^\ast_{1-\alpha,n+m-2} \right]\end{aligned}$$
+&& + P_{\mu_1\mu_2}\left[ \frac{Z + \Delta}{\sqrt{U/(n+m-2)}} < -t^\ast_{1-\alpha,n+m-2} \right]\end{aligned}$$
 
 where
 $\Delta = \frac{(\mu_1-\mu_2)}{\sigma\sqrt{\frac{1}{n}+\frac{1}{m}}}$
@@ -6328,7 +6320,7 @@ degrees of freedom to give a $\chi^2$ distribution.\
 $power.t.test$ function in R.
 :::
 
-## Sample sizes for two-sample one and two-sided t-tests
+## Sample sizes for two-sample one and two-sided $t$-tests
 
 ::: fbox
 The sample size should always satisfy the desired power.
@@ -6339,12 +6331,13 @@ The sample size should always satisfy the desired power.
 Suppose we want to reject the $H_o$ with a pre-specified probability
 $\beta_1$ when $\mu_1$ and $\mu_2$ are true values of $\mu$. For this,
 we need to select the sample size $n$ and $m$ so that
-$\beta_(\mu_1\mu_2) \geq \beta_1$ i.e. find $n$ and $m$ which satisfies
+$\beta_{(\mu_1\mu_2)} \geq \beta_1$ i.e. find $n$ and $m$ which
+satisfies
 $$P_{\mu_1\mu_2} \left[ \frac{Z + \Delta}{\sqrt{U/(n+m-2)}} > t^\ast_{1-\alpha,n+m-2} \right]$$
 
-for a two sample, one-sided t-test.\
-Similarly for a two sample, two-sided t-test we need to find $n$ and $m$
-that satisfies
+for a two sample, one-sided $t$-test.\
+Similarly for a two sample, two-sided $t$-test we need to find $n$ and
+$m$ that satisfies
 
 $P_{\mu_1\mu_2}\left[ \frac{Z + \Delta}{\sqrt{U/(n+m-2)}} > t^\ast_{1-\alpha,n+m-2} \right]$ +
 $P_{\mu_1\mu_2} \left[\frac{Z + \Delta}{\sqrt{U/(n+m-2)}} < -t^\ast_{1-\alpha,n+m-2} \right]$
@@ -6354,7 +6347,7 @@ $P_{\mu_1\mu_2} \left[\frac{Z + \Delta}{\sqrt{U/(n+m-2)}} < -t^\ast_{1-\alpha,n+
 ::: fbox
 Want to compute power in analysis of covariance:
 $$y_{ij}=\mu_i+\beta x_{ij}+\epsilon_{ij} , \ i=1, 2,\ j=1,\ldots J,$$
-where $\epsilon_{ij}\sim n(0,\sigma^ 2)$ are i.i.d.?\
+where $\epsilon_{ij}\sim N(0,\sigma^ 2)$ are i.i.d.?\
 This can be done by simulation and can easily be expanded to other
 cases.
 :::
@@ -6364,7 +6357,7 @@ cases.
 ::: xmpl
 If you want to compute a power analysis in analysis of covariance:
 $$y_{ij}=\mu_i+\beta x_{ij}+\epsilon_{ij} , \ i=1, 2,\ j=1,\ldots J,$$
-where $\epsilon_{ij}\sim n(0,\sigma^ 2)$ are i.i.d. then use
+where $\epsilon_{ij}\sim N(0,\sigma^ 2)$ are i.i.d. then use
 simulation.\
 To do this one needs to first define the task in more detail, along with
 what exactly is known and what the assumptions are.
@@ -6416,15 +6409,15 @@ separately.
 
 Rather than head straight for the ancova, start with a simpler case,
 namely ignoring the covariate ($x$) and merely doing a regular
-two-sample, two-tailed t-test. This should be reasonably similar to the
-ancova power computations anyway.
+two-sample, two-tailed $t$-test. This should be reasonably similar to
+the ancova power computations anyway.
 
     #
-    # Next do the power computations just for a regular two-sided, two-sample t-test
+    # Next do the power computations just for a regular two-sided, two-sample $t$-test
     # and use simulation
     #
-    Y1<-matrix(rnorm(J*Nsim,mu0,sigma),ncol=J) # Simulate Nsim samples of size J, ea n(mu1,sigma^2)
-    Y2<-matrix(rnorm(J*Nsim,mu1,sigma),ncol=J) # Simulate Nsim samples of size J, ea n(mu2,sigma^2)
+    Y1<-matrix(rnorm(J*Nsim,mu0,sigma),ncol=J) # Simulate Nsim samples of size J, ea N(mu1,sigma^2)
+    Y2<-matrix(rnorm(J*Nsim,mu1,sigma),ncol=J) # Simulate Nsim samples of size J, ea N(mu2,sigma^2)
     y1mn<-apply(Y1,1,mean)                      # compute all the simulated y1-means
     y2mn<-apply(Y2,1,mean)                      # compute all the simulated y2-means
     sy1<-apply(Y1,1,sd)                         # compute all the simulated y1-std.devs
@@ -6440,7 +6433,7 @@ same computations and it is worth while to verify the code (and
 approach) by checking whether these give the same thing:
 
     #
-    # Then compute the exact power for the t-test
+    # Then compute the exact power for the $t$-test
     #
     pow2<-power.t.test(delta=delta,sd=sigma,sig.level=alpha,n=J ,type=c("two.sample"),alternative=c("two.sided"))
     cat("The exact power:\n")
@@ -6462,19 +6455,19 @@ of participants in an experiment).
     fulldat<-cbind(Y1,Y2,x1,x2) # a row now contains all y1, then all y2, then all x1, then all x2; Nsim rows
 
 Rather than try to write code to do an ancova, it is natural to use the
-R function lm to do this. The "trick" below is to extract the P-value
+R function lm to do this. The "trick" below is to extract the $p$-value
 from the summary command. By defining a "wrapper" function which takes a
 single line as an argument, it will subsequently be possible to use the
 "apply" function to extract the P-values using a one-line R command.
 
-    ancova.pval<-function(onerow){ # extract the ancova p-value for diff in means
+    ancova.pval<-function(onerow){ # extract the ancova $p$-value for diff in means
       J<-length(onerow)/4
       n<-2*J
       y<-onerow[1:n]                         # get the y-data from the row
       x<-onerow[(n+1):(2*n)]                 # get the x-data from the row
       grps<-factor(c(rep(1,J),rep(2,J)))     # define the groups
       sm<-summary(lm(y~x+grps))              # fit the ancova model
-      pval<-sm$coefficients[3,4] # extract exactly the right thing from the summary command-the P-value for H0:mu1=mu2
+      pval<-sm$coefficients[3,4] # extract exactly the right thing from the summary command-the $p$-value for H0:mu1=mu2
       return(pval)
     }
 
@@ -6500,7 +6493,7 @@ When run, this script returns:
               power = 0.8049123
         alternative = two.sided
 
-     NOTE: n is number in *each* group 
+     NOTE: $n$ is number in *each* group 
 
     The simulated ancova power is  0.775175 
 
@@ -6526,13 +6519,13 @@ USA.
 
 ::: fbox
 Recall that the set of real numbers is $\mathbb{R}$ and that a vector ,
-$v \in \mathbb{R}^n$ is just an n-tuple of numbers.\
-Similarly, an $n x m$ matrix is just a table of numbers, with n rows and
-m columns and we can write
+$v \in \mathbb{R}^n$ is just an $n$-tuple of numbers.\
+Similarly, an $n \times m$ matrix is just a table of numbers, with $n$
+rows and $m$ columns and we can write
 
 $$A_{mn} \in \mathbb{R}^{mn}$$
 
-Note that a vector is normally considered equivalent to a $n\times1$
+Note that a vector is normally considered equivalent to a $n\times 1$
 matrix i.e. we view these as column vectors.
 :::
 
@@ -6555,7 +6548,7 @@ A matrix can be generated in R as follows,
     [4,]    6
 
 ::: notes
-*Note 26*. We note that R distinguishes between vector and matrices.
+*Note 26*. We note that R distinguishes between vectors and matrices.
 :::
 :::
 
@@ -6565,7 +6558,7 @@ A matrix can be generated in R as follows,
 We can define multiplication of a real number $k$ and a vector
 $v=(v_1,\ldots,v_n)$ by $k\cdot v=(kv_1,\ldots,kv_n)$. The sum of two
 vectors in $\mathbb{R}^n$, $v=(v_1,\ldots,v_n)$ and $u=(u_1,\ldots,u_n)$
-as the vector $v+u=(v_1+u_1,\ldots,v_n+u_n)$. We can define
+is defined as the vector $v+u=(v_1+u_1,\ldots,v_n+u_n)$. We can define
 multiplication of a number and a matrix and the sum of two matrices (of
 the same sizes) similarly.
 :::
@@ -6595,7 +6588,7 @@ the same sizes) similarly.
 
 ::: fbox
 In R, matrices may be constructed using the \"matrix\" function and the
-transpose of $A$, $A^\prime$, may be obtained in R by using the \"t\"
+transpose of $A$, $A^\prime$, may be obtained in R by using the `t`
 function:
 
 `A<-matrix(1:6, nrow=3)`
@@ -6640,11 +6633,11 @@ the second solution gives a $n \times 1$ matrix.
 ## Matrix multiplication
 
 ::: fbox
-Matrices A and B can be multiplied together if A is an $n \times p$
-matrix and B is an $p\times m$ matrix. The general element $c_ij$ of
-$n\times m$; $C=AB$ is found by pairing the $i^th$ row of C with the
-$j^th$ column of B, and computing the sum of products of the paired
-terms.
+Matrices $A$ and $B$ can be multiplied together if $A$ is an
+$n \times p$ matrix and $B$ is an $p\times m$ matrix. The general
+element $c_ij$ of $n\times m$; $C=AB$ is found by pairing the $i^{th}$
+row of $C$ with the $j^{th}$ column of $B$, and computing the sum of
+products of the paired terms.
 
 ::: picture
 39
@@ -6653,11 +6646,11 @@ terms.
 
 ### Details
 
-Matrices A and B can be multiplied together if A is a $n\times p$ matrix
-and B is a $p\times m$ matrix. Given the general element $c_{ij}$ of
-$n x m$ matrix, $C=AB$ is found by pairing the $i^th$ row of C with the
-$j^th$ column of B, and computing the sum of products of the paired
-terms.
+Matrices $A$ and $B$ can be multiplied together if $A$ is a $n\times p$
+matrix and $B$ is a $p\times m$ matrix. Given the general element
+$c_{ij}$ of $n \times m$ matrix, $C=AB$ is found by pairing the $i^{th}$
+row of $C$ with the $j^{th}$ column of $B$, and computing the sum of
+products of the paired terms.
 
 ### Examples
 
@@ -6697,9 +6690,9 @@ More obvious are the rules
 
 1.  $A+(B+C)=(A+B)+C$
 
-2.  k(A+B)=kA+kB
+2.  $k(A+B)=kA+kB$
 
-3.  A(B+C)=AB+AC,
+3.  $A(B+C)=AB+AC$,
 
 where $k\in\mathbb{R}$ and when the dimensions of the matrices fit.
 :::
@@ -6740,7 +6733,7 @@ $A, \underline{x}$ and $\underline{b}$
 
 ::: fbox
 The $n\times n$ matrix\
-$$\mathbf{I}=
+$$I=
 \left[
 \begin{array}{cccc}
   1 & 0 & \ldots & 0 \\
@@ -6749,9 +6742,8 @@ $$\mathbf{I}=
   0 & \ldots & 0 & 1
 \end{array} \right]$$
 
-is the identity matrix.This is because if a matrix $\mathbf{A}$ is
-$n\times n$ then $\mathbf{A} \mathbf{I} = \mathbf{A}$ and
-$\mathbf{I} \mathbf{A}  = \mathbf{A}$
+is the identity matrix.This is because if a matrix $A$ is $n\times n$
+then $A I = A$ and $I A  = A$
 :::
 
 ## The inverse of a matrix
@@ -6974,18 +6966,19 @@ $$\sigma^2 = \sum a^2_i \sigma^2_i$$
 ### Examples
 
 ::: xmpl
-Consider two i.i.d. random variables, $Y_1,Y_2$ and a specific linear
+Consider two i.i.d. random variables, $Y_1,Y_2$ such that
+$E[Y_1]=E[Y_2]=2$ and $Var[Y_1]=Var[Y_2]=4$, and a specific linear
 combination of the two, $W=Y_1+3Y_2$.\
 We first obtain $$E[W]=E[Y_1+3Y_2]=E[Y_1]+3E[Y_2]=2+3\cdot 2=2+6=8.$$
 
 Similarly, we can first use independence to obtain
-$$V[W]=V[Y_1+3Y_2]=V[Y_1]+V[3Y_2]$$
+$$Var[W]=Var[Y_1+3Y_2]=Var[Y_1]+Var[3Y_2]$$
 
-and then (recall that $V[aY]=a^2V[Y]$)
-$$V[Y_1]+V[3Y_2]=V[Y_1]+3^2V[Y_2]=1^2+3^2= 1(4) + 9(4)= 40$$
+and then (recall that $Var[aY]=a^2Var[Y]$)
+$$Var[Y_1]+Var[3Y_2]=Var[Y_1]+3^2Var[Y_2]=1^2 \cdot 4+3^2\cdot 4= 1 \cdot 4 + 9 \cdot 4= 40$$
 
 Normally, we just write this up in a simple sequence
-$$V[W]=V[Y_1+3Y_2]=V[Y_1]+3^2V[Y_2]=1^2+3^2= 1(4) + 9(4)= 40$$
+$$Var[W]=Var[Y_1+3Y_2]=Var[Y_1]+3^2Var[Y_2]=1^2 \cdot 4+3^2\cdot 4 = 1 \cdot 4 + 9 \cdot 4= 40$$
 :::
 
 ## Covariance between linear combinations of i.i.d random variables
@@ -7007,7 +7000,7 @@ $$Cov(U,W)= E[(U-\mu_u)(W-\mu_w)]$$ where $$\mu_u=E[U],\mu_w=E[W]$$ Now,
 let $U=a'Y=\sum Y_ia_i$ and $W=b'Y=\sum Y_ib_i$, where $Y_1,\ldots,Y_n$
 are i.i.d. with mean $\mu$ and variance $\sigma^2$, then we get
 
-$$Cov(U,W)= E[(\underline{a}'Y-\Sigma a_\mu)(\underline{b}'Y-\Sigma b\mu)]$$
+$$Cov(U,W)= E[(a'Y-\Sigma a_\mu)(b'Y-\Sigma b\mu)]$$
 
 $$= E[(\Sigma a_iY_i -\Sigma a_i\mu)(\Sigma b_jY_j -\Sigma b_j\mu )]$$
 
@@ -7019,11 +7012,24 @@ $$Cov(U,W)=\sigma^2a\cdot b$$
 ::: xmpl
 If $Y_1$ and $Y_2$ are i.i.d., then
 
-$$Cov(Y_1+Y_2, Y_1-Y_2)=Cov((1,1) \left( \begin{array}{ccc}Y_1  \\Y_2 \end{array} \right),  (1,-1) \left( \begin{array}{ccc}Y_1  \\Y_2 \end{array} \right) )$$
+$$Cov(Y_1+Y_2, Y_1-Y_2)=Cov\left( (1,1)
+\begin{pmatrix}Y_1\\
+Y_2
+\end{pmatrix}
+,  (1,-1) 
+\begin{pmatrix}
+Y_1\\
+Y_2
+\end{pmatrix}
+\right)$$
 
-$$=(1,1) \left( \begin{array}{ccc} 1  \\-1 \end{array} \right)\sigma^2$$
+$$=(1,1)
+\begin{pmatrix}
+1\\
+-1
+\end{pmatrix}\sigma^2$$
 
-$$=0$$
+$$=0.$$
 
 and in general,
 $Cov(\underline{a}'\underline{Y}, \underline{b}'\underline{Y})=0$ if
@@ -7040,20 +7046,20 @@ random variables.
 ### Details
 
 ::: defn
-If $EY_i = \mu_i$ then we typically write
+If $E[Y_i] = \mu_i$ then we typically write
 
-$$E(Y)=\left(
+$$E[Y]=\left(
 \begin{array}{ccc}
   \mu_1 \\
   \vdots \\
   \mu_n
 \end{array} \right)=\mu$$
 
-If $Cov(Y_i, Y_j) = \sigma{ij}$ and $V[Y_i]=\sigma_{ii} = \sigma_i^2$,
+If $Cov(Y_i, Y_j) = \sigma{ij}$ and $Var[Y_i]=\sigma_{ii} = \sigma_i^2$,
 then we define the matrix $$\boldsymbol{\Sigma} = (\sigma_{ij})$$
 containing the variances and covariances. We call this matrix the
 **covariance matrix** of $Y$, typically denoted
-$V[Y] = \boldsymbol{\Sigma}$ or $Cov[Y] = \boldsymbol{\Sigma}$.
+$Var[Y] = \boldsymbol{\Sigma}$ or $CoVar[Y] = \boldsymbol{\Sigma}$.
 :::
 
 ### Examples
@@ -7071,9 +7077,9 @@ Y_1\\
 Y_n
 \end{array} \right)$$
 
-is a random vector with $E \mathbf{Y} = \mu$ and
-$V \mathbf{Y} = \boldsymbol{\Sigma}$ where the variance-covariance
-matrix $$\boldsymbol{\Sigma} = \sigma^2 \mathbf{I}$$
+is a random vector with $E[\mathbf{Y}] = \mu$ and
+$Var[\mathbf{Y}] = \boldsymbol{\Sigma}$ where the variance-covariance
+matrix $$\boldsymbol{\Sigma} = \sigma^2 I$$
 :::
 
 ### Details
@@ -7111,12 +7117,12 @@ $$=
 \vdots & 0 & \ddots & \ddots & 0 \\
 0 & \ldots & \ldots & 0 & 1 \\ 
 \end{array} \right]
-= \sigma^2 \mathbf{I}$$
+= \sigma^2 I$$
 
-If $A$ is an $m$ x $n$ matrix, then\
+If $A$ is an $m \times n$ matrix, then\
 $$E[A\mathbf{Y}] = A \mathbf{\mu}$$
 
-and $$V[A\mathbf{Y}] = A \boldsymbol{\Sigma} A'$$
+and $$Var[A\mathbf{Y}] = A \boldsymbol{\Sigma} A'$$
 
 **Copyright** 2021, Gunnar Stefansson (editor) with contributions from
 very many students
@@ -7132,28 +7138,28 @@ USA.
 ## The rank of a matrix
 
 ::: fbox
-The rank of an $n x p$ matrix, $A$, is the largest number of columns of
-$A$, which are not linearly dependent (i.e. the number of linearly
-independent columns).
+The rank of an $n \times p$ matrix $A$, denoted by $\text{rank}(A)$, is
+the largest number of columns of $A$, which are not linearly dependent
+(i.e. the number of linearly independent columns).
 :::
 
 ### Details
 
-Vectors $a_1, a_2, \ldots, a_n$ are said to be linearly dependent if the
-constant $k_1 , \ldots, k_n$ exists and are not all zero, such that
-$$k_1\mathbf{a}_1 + k_2 \mathbf{a}_2 + \ldots + k_n\mathbf{a}_n = 0$$
+Vectors $a_1, a_2, \ldots, a_n$ are said to be linearly dependent if
+there exist constants $k_1 , \ldots, k_n$ that are not all zero, such
+that $$k_1 a_1 + k_2 a_2 + \ldots + k_n a_n = 0.$$
 
 Note that if such constants exist, then we can write one of the $a$'s as
 a linear combination of the rest, e.g. if $k_1 \neq 0$ then
 
 $$a_1=\mathbf{c_1} =  -\frac{k_2}{k_1} a_2 - \ldots - \frac{k_2}{k_1} a_n$$
 
-It can be shown that the rank of $A$ is the same as the rank of $A'$
+It can be shown that the rank of $A$, is the same as the rank of $A'$
 i.e. the maximum number of linearly independent rows of $A$.
 
 ::: notes
-*Note 30*. Note that if rank $(A)= p$, then the columns are linearly
-independent.
+*Note 30*. Note that if $\text{rank}(A) = p$, then the columns are
+linearly independent.
 :::
 
 ### Examples
@@ -7167,7 +7173,7 @@ If $$A=
    \end{array}
   \right]$$
 
-the rank of $A$ = 2, since
+then $\text{rank}(A)$ = 2, since
 
 $$k_1
   \left(
@@ -7215,7 +7221,7 @@ If $$A =
    \end{array}
   \right]$$
 
-the rank of $A$ = 2.
+then $\text{rank}(A)$ = 2.
 :::
 
 ::: xmpl
@@ -7228,7 +7234,7 @@ If $$A =
    \end{array}
   \right]$$
 
-the rank of $A$ = 2, since $$1
+then $\text{rank}(A)$ = 2. since $$1
   \left(
    \begin{array}{ccc}
      1 \\
@@ -7270,7 +7276,7 @@ if and only if $k_1=k_2=0$ (and hence the rank must be at least 2).
 ## The determinant
 
 ::: fbox
-Recall that for a 2x2 matrix,
+Recall that for a $2 \times 2$ matrix,
 
 $$A=
 \begin{bmatrix}
@@ -7291,13 +7297,15 @@ $$A^{-1}=
 ### Details
 
 ::: defn
-The number $ad-bc$ is called the **determinant**of the 2x2 matrix $A$.
+The number $ad-bc$ is called the **determinant** of the $2 \times 2$
+matrix $A$.
 :::
 
 ::: defn
-Now suppose $A$ is an $n x n$ matrix. An **elementary product** from the
-matrix is a product of $n$ terms based on taking exactly one term from
-each column of row $x$. Each such term can be written in the form
+Now suppose $A$ is an $n \times n$ matrix. An **elementary product**
+from the matrix is a product of $n$ terms based on taking exactly one
+term from each column of row $x$. Each such term can be written in the
+form
 $a_{1j_1} \cdot a_{2j_2} \cdot a_{3j_3} \cdot \ldots \cdot a_{nj_n}$
 where $j_1, \ldots , j_n$ is a permutation of the integers
 $1,2, \ldots , n$. Each permutation $\sigma$ of the integers
@@ -7310,8 +7318,8 @@ sign if the number of interchanges in the permutation is even but
 negative otherwise.
 :::
 
-The determinant of A, det(A) or $\vert A \vert$ is the sum of all signed
-elementary products.
+The determinant of $A$, $\det(A)$ or $\vert A \vert$ is the sum of all
+signed elementary products.
 
 ### Examples
 
@@ -7423,9 +7431,9 @@ $\vert A \vert = 0$
 ::: fbox
 The following statements are true for an $n\times n$ matrix $A$:
 
--   $rank (A)= n$
+-   $\text{rank} (A)= n$
 
--   $det(A)\neq 0$
+-   $\det(A)\neq 0$
 
 -   $A$ has an inverse
 :::
@@ -7434,9 +7442,9 @@ The following statements are true for an $n\times n$ matrix $A$:
 
 Suppose $A$ is an $n\times n$ matrix. Then the following are truths:
 
--   $rank (A)= n$
+-   $\text{rank} (A)= n$
 
--   $det(A)\neq 0$
+-   $\det(A)\neq 0$
 
 -   $A$ has an inverse
 
@@ -7467,7 +7475,7 @@ $f: \mathbb{R}^3\to\mathbb{R}$, $f(x_1,x_2,x_3)=2x_1+3x_2+4x_3$.
 
 ::: notes
 *Note 31*. Note that $f$ is linear and $f(x)=Ax$ where
-$x=\begin{pmatrix} x_1\\x_2\\x_3\end{pmatrix}$ and
+$x=\begin{pmatrix} x_1\\ x_2 \\x_3\end{pmatrix}$ and
 $A=\begin{bmatrix}2&3&4\end{bmatrix}$.
 :::
 :::
@@ -7481,8 +7489,10 @@ x_1-x_2
 \end{array} \right)$$
 
 ::: notes
-*Note 32*. Note that $f(x)=Ax$, where
-$A=\begin{bmatrix}1&1\\1&-1\end{bmatrix}$.
+*Note 32*. Note that $f(x)=Ax$, where $A=\begin{bmatrix}
+  1&1\\ 
+  1&-1
+\end{bmatrix}$.
 :::
 :::
 
@@ -7534,7 +7544,8 @@ Suppose the real valued function $f:\mathbb{R}^m \rightarrow \mathbb{R}$
 is differentiable in each coordinate. Then the **gradient** of $f$,
 denoted $\nabla f$ is given by
 
-$$\nabla f(x)=\begin{pmatrix}\frac{\partial f}{\partial x_1},&\dots &,\frac{\partial f}{\partial x_1}\end{pmatrix},$$
+$$\nabla f(x)=
+\begin{pmatrix} \frac{\partial f}{\partial x_1},&\dots &,\frac{\partial f}{\partial x_1}\end{pmatrix},$$
 
 where each partial derivative $\frac{\partial f}{\partial x_i}$ is
 computed by differentiating f with respect to that variable, regarding
@@ -7558,8 +7569,10 @@ Now consider a function $f:\mathbb{R}^m\to\mathbb{R}^n$. Write $f_i$ for
 the $i^{th}$ coordinate of $f$, so we can write
 $f(x)=(f_1(x),f_2(x),\ldots,f_n(x))$, where $x\in\mathbb{R}^m$. If each
 coordinate function $f_i$ is differentiable in each variable we can form
-the *Jacobian matrix* of $f$:
-$$\begin{pmatrix}\nabla f_1\\ \vdots \\ \nabla f_n\end{pmatrix}.$$
+the *Jacobian matrix* of $f$: $$\begin{pmatrix}\nabla f_1\\ 
+  \vdots\\ 
+  \nabla f_n
+\end{pmatrix}.$$
 :::
 
 ### Details
@@ -7568,10 +7581,12 @@ Now consider a function $f:\mathbb{R}^m\to\mathbb{R}^n$. Write $f_i$ for
 the $i^{th}$ coordinate of $f$, so we can write
 $f(x)=(f_1(x),f_2(x),\ldots,f_n(x))$, where $x\in\mathbb{R}^m$. If each
 coordinate function $f_i$ is differentiable in each variable we can form
-the *Jacobian matrix* of $f$:
-$$\begin{pmatrix}\nabla f_1\\ \vdots \\ \nabla f_n\end{pmatrix}.$$
+the *Jacobian matrix* of $f$: $$\begin{pmatrix}\nabla f_1\\ 
+  \vdots\\ 
+  \nabla f_n
+\end{pmatrix}.$$
 
-In this matrix, the element in the $i^th$ row and $j^th$ column is
+In this matrix, the element in the $i^{th}$ row and $j^{th}$ column is
 $\frac{\partial f_i}{\partial x_j}$.
 
 ### Examples
@@ -7640,7 +7655,7 @@ subset,
 
 $$\int_{g(U)} f(\mathbf {x})d\mathbf {x}  = \int_{U}({g}(\mathbf {y}))|J|d\mathbf {y}$$
 
-where $J$ is the Jacobian matrix and \|J\| is the absolute value of it's
+where $J$ is the Jacobian matrix and $|J|$ is the absolute value of it's
 determinant.
 
 $$J=
@@ -7683,9 +7698,9 @@ $$J=
 Similar calculations as in 28.4 give us that if $X$ is a continuous
 multivariate random variable, $X = (X_1, \ldots, X_n)^\prime$ with
 density $f$ and $\mathbf{Y}  = \mathbf{h} (\mathbf{X})$, where
-$\mathbf{h}$ is 1-1 with inverse $\mathbf g= \mathbf{h}^{-1}$. So,
-$\mathbf{X} = g(\mathbf{Y})$, then the density of $\mathbf{Y}$ is given
-by;
+$\mathbf{h}$ is one-to-one with inverse $\mathbf g= \mathbf{h}^{-1}$.
+So, $\mathbf{X} = g(\mathbf{Y})$, then the density of $\mathbf{Y}$ is
+given by;
 
 $$f_Y(\mathbf y)   = f (g(\mathbf y)) |J|$$
 
@@ -7693,7 +7708,7 @@ $$f_Y(\mathbf y)   = f (g(\mathbf y)) |J|$$
 
 ::: xmpl
 If $\mathbf{Y} = A \mathbf X$ where $A$ is an $n \times n$ matrix with
-$det(A)\neq0$ and $X = (X_1, \ldots, X_n)^\prime$ are i.i.d. random
+$\det(A)\neq0$ and $X = (X_1, \ldots, X_n)^\prime$ are i.i.d. random
 variables, then we have the following results:\
 \
 The joint density of $X_1 \cdots X_n$ is the product of the individual
@@ -7734,7 +7749,7 @@ USA.
 ::: fbox
 Recall that if $X$ is a vector of continuous random variables with a
 joint probability density function and if $Y=h(X)$ such that $h$ is a
-1-1 function and continuously differentiable with inverse $g$ so
+one-to-one function and continuously differentiable with inverse $g$ so
 $X= g(Y)$, then the density of $Y$ is given by $$f_Y(y)=f(g(y))|J|$$
 :::
 
@@ -7749,7 +7764,7 @@ if $A$ has an inverse.
 
 ### Details
 
-Consider i.i.d. random variables, $Z_1, \ldots ,Z_n \sim (0,1)$,
+Consider i.i.d. random variables, $Z_1, \ldots ,Z_n \sim N(0,1)$,
 $$\underline{Z}=
 \left( \begin{array}{ccc}
  Z_1 \\
@@ -7761,7 +7776,7 @@ invertible $n \times n$ matrix and $\underline{\mu} \in \mathbb{R}^n$ is
 a vector, so $Z= A^{-1}(Y-\underline{\mu})$.
 
 Then the p.d.f. of $Y$ is given by
-$$f_{\underline{Y}}(\underline{y})= f_{\underline{Z}}(A^{-1}(\underline{y}- \underline{\mu})) \vert det(A^{-1}) \vert$$
+$$f_{\underline{Y}}(\underline{y})= f_{\underline{Z}}(A^{-1}(\underline{y}- \underline{\mu})) \vert \det(A^{-1}) \vert$$
 
 But the joint p.d.f. of $\underline{Z}$ is the product of the p.d.f.'s
 of $Z_1, \ldots , Z_n$, so
@@ -7774,7 +7789,7 @@ and hence
 
 $$f_{\underline{Z}}(\underline{z}) = \prod_{i=1}^n \frac{1}{\sqrt{2 \pi}} e^{\frac{-z^2}{2}}$$
 
-$$= (\frac{1}{\sqrt{2 \pi}})^n e^{-\frac{1}{2} \sum_{i=1}^n z_i^2}$$
+$$= \left(\frac{1}{\sqrt{2 \pi}}\right)^n e^{-\frac{1}{2} \Sigma_{i=1}^n z_i^2}$$
 
 $$=\frac{1}{(2 \pi)^\frac{n}{2}} e^{-\frac{1}{2} \underline{z}'\underline{z}}$$
 
@@ -7784,13 +7799,14 @@ $$\sum_{i=1}^n z_i^2 = \Vert \underline{z} \Vert ^2 = \underline{z} \cdot \under
 
 The joint p.d.f. of $\underline{Y}$ is therefore
 
-$$f_{\underline{Y}}(\underline{y}) = f_{\underline{Z}}(A^{-1}(\underline{y} - \underline{\mu})) \vert det(A^{-1}) \vert$$
+$$f_{\underline{Y}}(\underline{y}) = f_{\underline{Z}}(A^{-1}(\underline{y} - \underline{\mu})) \vert \det(A^{-1}) \vert$$
 
-$$=\frac{1}{(2 \pi)^{\frac{n}{2}}} e^{-\frac{1}{2}(A^{-1}(\underline{y}-\underline{\mu}))'(A^{-1}(\underline{y}-\underline{\mu}))}\frac{1}{\vert det(A)\vert}$$
+$$=\frac{1}{(2 \pi)^{\frac{n}{2}}} e^{-\frac{1}{2}(A^{-1}(\underline{y}-\underline{\mu}))'(A^{-1}(\underline{y}-\underline{\mu}))}\frac{1}{\vert \det(A)\vert}$$
 
-We can write $det(AA')=det(A)^2$ so
-$\vert det(A)\vert = \sqrt{det(AA')}$ and if we write $\Sigma=AA'$, then
-$$\vert det(A) \vert = \vert \boldsymbol{\Sigma} \vert ^\frac{1}{2}$$
+We can write $\det(AA')=det(A)^2$ so
+$\vert \det(A)\vert = \sqrt{det(AA')}$ and if we write $\Sigma=AA'$,
+then
+$$\vert \det(A) \vert = \vert \boldsymbol{\Sigma} \vert ^\frac{1}{2}$$
 
 Also, note that
 $$(A^{-1}(\underline{y}-\underline{\mu}))'(A^{-1}(\underline{y}-\underline{\mu})) = (\underline{y} - \underline{\mu})'(A^{-1})' A^{-1}(\underline{y} - \underline{\mu}) = (\underline{y} - \underline{\mu})' \boldsymbol{\Sigma}^{-1}(\underline{y}-\underline{\mu})$$
@@ -7803,9 +7819,9 @@ This is the density of the multivariate normal distribution.
 
 Note that $$E[\underline{Y}] = \mu$$
 
-$$V[\underline{Y}] = V[A\underline{Z}] = AV[\underline{Z}]A' = AIA' = \boldsymbol{\Sigma}$$
+$$Var[\underline{Y}] = Var[A\underline{Z}] = AVar[\underline{Z}]A' = AIA' = \boldsymbol{\Sigma}$$
 
-Notation: $\underline{Y}\sim n(\underline{\mu}, \boldsymbol{\Sigma})$
+Notation: $\underline{Y}\sim N(\underline{\mu}, \boldsymbol{\Sigma})$
 
 ## Univariate normal transforms
 
@@ -7817,7 +7833,7 @@ is a special case of the multivariate version.
 
 ### Details
 
-Further, if $Z\sim n(0,1)$, then clearly $X=aZ+\mu \sim n(\mu,\sigma^2)$
+Further, if $Z\sim N(0,1)$, then clearly $X=aZ+\mu \sim N(\mu,\sigma^2)$
 where $\sigma^2=a^2$
 
 ## Transforms to lower dimensions
@@ -7825,14 +7841,14 @@ where $\sigma^2=a^2$
 ::: fbox
 If $Y\sim n \left ( \boldsymbol{\mu},\boldsymbol{\Sigma} \right )$ is a
 random vector of length $n$ and $A$ is an $m\times n$ matrix of rank
-$m\leq n$, then $AY \sim n(A\mu,A\Sigma A')$.
+$m\leq n$, then $AY \sim N(A\mu,A\Sigma A')$.
 :::
 
 ### Details
 
 If $Y\sim n \left ( \boldsymbol{\mu},\boldsymbol{\Sigma} \right )$ is a
 random vector of length $n$ and $A$ is an $m\times n$ matrix of rank
-$m\leq n$, then $AY \sim n(A\mu,A\Sigma A')$.\
+$m\leq n$, then $AY \sim N(A\mu,A\Sigma A')$.\
 To prove this, set up an $(n-m)\times n$ matrix, $B$, so that the
 $n\times n$ matrix, $C$, formed from combining the rows of $A$ and $B$
 is of full rank $n$. Then it is easy to derive the density of $CY$ which
@@ -7842,23 +7858,23 @@ which gives the density for $AY$.
 ## The OLS estimator
 
 ::: fbox
-Suppose $Y \sim n(X \beta,\sigma^2 I)$. The ordinary least squares
+Suppose $Y \sim N(X \beta,\sigma^2 I)$. The ordinary least squares
 estimator, when the $n \times p$ matrix is of full rank, $p$, where
 $p\leq n$, is: $$\hat{\beta} = (X'X)^{-1}X'Y$$ The random variable which
 describes the process giving the data and estimate is:
 $$b = (X'X)^{-1}X'Y$$
 
-It follows that $$\hat{\beta} \sim n(\beta,\sigma^{2}(X'X)^{-1})$$
+It follows that $$\hat{\beta} \sim N(\beta,\sigma^{2}(X'X)^{-1})$$
 :::
 
 ### Details
 
-Suppose $Y \sim n(X \beta,\sigma^2I)$. The ordinary least squares
+Suppose $Y \sim N(X \beta,\sigma^2I)$. The ordinary least squares
 estimator, when the $n \times p$ matrix is of full rank, $p$, is:
 $$\hat{\beta} = (X'X)^{-1}X'Y.$$ The equation below is the random
 variable which describes the process giving the data and estimate:
 $$b = (X'X)^{-1}X'Y$$ If $B = (X'X)^{-1}X'$, then we know that
-$$BY \sim n(B X \beta, B(\sigma^{2}I)B')$$ Note that
+$$BY \sim N(B X \beta, B(\sigma^{2}I)B')$$ Note that
 $$BX\beta = (X'X)^{-1}X'X\beta=\beta$$ and
 $$B(\sigma^{2}I)B' = \sigma^{}(X'X)^{-1}X'[(X'X)^{-1}X']'$$
 
@@ -7866,7 +7882,7 @@ $$= \sigma^{2}(X'X)^{-1}X'X(X'X)^{-1}$$
 
 $$= \sigma^{2}(X'X)^{-1}$$
 
-It follows that $$\hat{\beta} \sim n(\beta,\sigma^{2}(X'X)^{-1})$$
+It follows that $$\hat{\beta} \sim N(\beta,\sigma^{2}(X'X)^{-1})$$
 
 ::: notes
 *Note 34*. The earlier results regarding the multivariate Gaussian
@@ -7896,7 +7912,7 @@ Since the conditional probability of $A$ given $B$ is defined by:
 
 $$P [A|B] = \frac {P [A \cap B]} {P[B]}$$
 
-We see that A and B are independent if and only if
+We see that $A$ and $B$ are independent if and only if
 
 $$P[A|B] = P[A](when  P [B] > 0 )$$
 
@@ -7997,17 +8013,17 @@ $$\int\int  f(x,y)dxdy = \int_{0}^{2}\int_{0}^{2} \frac {1}{4} dxdy =  \frac {1}
 It follows that,
 $$E [X Y] = \int_{-\infty}^{\infty}\int_{-\infty}^{\infty} xy f(x,y) dxdy$$
 
-$$= \int_{y=0}^{2}\int_{x=0}^{2} xy. \frac {1}{4}dxdy$$
+$$= \int_{y=0}^{2}\int_{x=0}^{2} xy \frac {1}{4}dxdy$$
 
 $$= \int_{y=0}^{2} (\int_{x=0}^{2} xy \frac {1}{4} dx) dy$$
 
-$$= \int_{y=0}^{2} [\frac {1}{4}y. \frac {1}{2}x^2]_{x=0}^ {2} dy$$
+$$= \int_{y=0}^{2} [\frac {1}{4}y \frac {1}{2}x^2]_{x=0}^ {2} dy$$
 
-$$= \int_{y=0}^{2} \frac {1}{4}y (\frac {1}{2}.2^2 - \frac {1}{2}.0) dy$$
+$$= \int_{y=0}^{2} \frac {1}{4}y (\frac {1}{2} 2^2 - \frac {1}{2}.0) dy$$
 
 $$\int_{0}^{2} \frac {2}{4}y dy = \int_{0}^{2} \frac {1}{2}y dy = \frac {1}{2}\cdot \frac {1}{2} y^2 | _{0}^2 = \frac {1}{4}\cdot 2^2 = 1$$
 
-But $$E [X] = E[Y] = \int_{y=0}^{2} x. \frac {1}{2} dx = 1$$
+But $$E [X] = E[Y] = \int_{y=0}^{2} x \frac {1}{2} dx = 1$$
 
 So $$E[XY] = E [X] E[Y]$$
 :::
@@ -8024,13 +8040,13 @@ functions $g$ and $h$ in which expected values exist.
 
 ::: fbox
 If $X$ is a random variable we define the moment generating function
-when $t$ exists as: $M(t):=E(e^{tX})$.
+when $t$ exists as: $M(t):=E[e^{tX}]$.
 :::
 
 ### Examples
 
 ::: xmpl
-If $X\sim b(n,p)$ then
+If $X\sim Bin(n,p)$ then
 $M(t)=\displaystyle\sum_{x=0}^{n} e^{tx}p(x) = \displaystyle\sum_{x=0}^{n} e^{tx} \binom{n}{x}p\cdot (1-p)^{n-x}$
 :::
 
@@ -8113,7 +8129,7 @@ $$f(x) = \frac{x^{\alpha -1} e^{-x/\beta}} {\Gamma (\alpha) \beta^{\alpha}} , x 
 
 Then, $$E[X] = \alpha\beta$$
 
-$$M(t) = (1-\beta t)^{-\alpha}$$ $$V[X] = \alpha \beta^2$$
+$$M(t) = (1-\beta t)^{-\alpha}$$ $$Var[X] = \alpha \beta^2$$
 :::
 
 ### Details
@@ -8127,7 +8143,7 @@ E[X] & = & \int_{-\infty}^{\infty} xf(x)dx \\
  & = & \frac{\alpha\Gamma(\alpha)\beta^{\alpha+1}}{\Gamma(\alpha)\beta^{\alpha}} \end{aligned}$$
 
 so $E[X] = \alpha\beta$.\
-Next, the m.g.f.is given by
+Next, the m.g.f. is given by
 
 $$\begin{aligned}
 E[e^{tX}] & = & \int_{0}^{\infty} e^{tx}  
@@ -8167,7 +8183,7 @@ E[X^2] & = & M''(0) \\
 Hence,
 
 $$\begin{aligned}
-V[X] & = & E[X]^2 - E[X]^2\\
+Var[X] & = & E[X]^2 - E[X]^2\\
 & = & \alpha^2 \beta^2 + \alpha \beta^2 - (\alpha\beta)^2 \\
 & = & \alpha \beta^2\end{aligned}$$
 
@@ -8202,10 +8218,10 @@ $$f(x) = \frac {x^ {\frac{v}{2}- 1} e^\frac{-x}{2}} {\Gamma (\frac{v}{2}) Z^ \fr
 
 This is the density of a chi - squared random variable with $v$ degrees
 of freedom.\
-This is easy to see by starting with $Z \sim n(0,1)$ and defining
+This is easy to see by starting with $Z \sim N(0,1)$ and defining
 $W = Z^2$ so that the c.d.f. is:
 
-$$H _(w) = P [W \leq w] = P [ Z^2 \leq w]$$
+$$H _{(w)} = P [W \leq w] = P [ Z^2 \leq w]$$
 
 $$= P [ - \sqrt{w}\leq Z \leq \sqrt{w}]$$
 
@@ -8223,7 +8239,7 @@ $$= 0 - 2\phi ^\prime (\sqrt{w}) \frac{1} {2} w ^ {\frac{1} {2} -1}$$
 
 but
 
-$$\phi (x) = \int_{-\alpha}^{x} \frac{e \frac{-t^2}{2}} {2\Pi} dt ; \phi ^\prime (x) = \frac {d}{dx}\int_{\alpha}^{x}\frac{e \frac{-t^2}{2}} {2\Pi} dt = \frac{e \frac{-x^2}{2}} {2\Pi}$$
+$$\phi (x) = \int_{-\alpha}^{x} \frac{e \frac{-t^2}{2}} {2\Pi} dt  \phi ^\prime (x) = \frac {d}{dx}\int_{\alpha}^{x}\frac{e \frac{-t^2}{2}} {2\Pi} dt = \frac{e \frac{-x^2}{2}} {2\Pi}$$
 
 So
 
@@ -8232,8 +8248,8 @@ $$h[w] =  -2 \frac{e \frac{-w}{2}} {2\Pi}. \frac {1} {2} . w^{\frac {1}{2} -1}$$
 $$h[w] = \frac{w^ {\frac{-1}{2}-1} e \frac{-w}{2}} {2\Pi}, w > 0$$
 
 We see that we must have $h=f$ with $v = 1$. We have also shown
-$\Gamma (\frac {1}{2}) 2 ^\frac {1}{2} = \sqrt{2\Pi}$, i.e
-$\Gamma (\frac {1}{2}) = \sqrt{\Pi}$. Hence we have shown the $\chi^2$
+$\Gamma (\frac {1}{2}) 2 ^\frac {1}{2} = \sqrt{2\pi}$, i.e
+$\Gamma (\frac {1}{2}) = \sqrt{\pi}$. Hence we have shown the $\chi^2$
 distribution on 1 df to be $G (\alpha = \frac {v}{2}, \beta = 2)$ when v
 = 1.
 
@@ -8243,7 +8259,7 @@ distribution on 1 df to be $G (\alpha = \frac {v}{2}, \beta = 2)$ when v
 In the general case if $X_1 \ldots X_n \sim G (\alpha, \beta)$ are
 i.i.d. then $X_1 + X_2 + \ldots X_n \sim G (n\alpha, \beta)$.\
 In particular, if $X_1, X_2 , \ldots, X_v \sim \chi^2$ i.i.d. then
-$\sum_{i=1}^v X_i \sim \chi^2_{v}$.
+$\Sigma_{i=1}^v X_i \sim \chi^2_{v}$.
 :::
 
 ### Details
@@ -8317,7 +8333,7 @@ categories:
 
     Residual standard error: 15.38 on 48 degrees of freedom
     Multiple R-squared: 0.6511,     Adjusted R-squared: 0.6438 
-    F-statistic: 89.57 on 1 and 48 DF,  p-value: 1.490e-12 
+    F-statistic: 89.57 on 1 and 48 DF,  $p$-value: 1.490e-12 
 
 Notice that there are four different sets of output (`C`all, Residuals,
 Coefficients, and `R`esults) for both the constant $\alpha$ and the
@@ -8331,10 +8347,10 @@ which there is a set level of confidence that the true population mean
 will be within the given range. For example, if the CI is set at 95%
 percent then the probability of observing a value outside the given CI
 range is less than 0.05.\
-The p-value is represented as a percentage. Specifically, the p-value
-indicates the percentage of time, given that your null hypothesis is
-true, that you would find an outcome at least as extreme as the observed
-value. If your calculated p-value is 0.02 then 2
+The $p$-value is represented as a percentage. Specifically, the
+$p$-value indicates the percentage of time, given that your null
+hypothesis is true, that you would find an outcome at least as extreme
+as the observed value. If your calculated $p$-value is 0.02 then 2
 
 In the overall model assessment the R-squared is the explained variance
 over the total variance. Generally, a higher $R^2$ is better but data
@@ -8397,7 +8413,7 @@ errors is zero, often written as $E[Y_{ij}]=\mu_i$.
 In the rat diet experiment the model would be of the form:
 $$y_{ij}=\mu_i+\epsilon_{ij}$$ where $y_{ij}$ is the weight gain for rat
 $j$ in diet group $i$, $\mu_i$ would be the mean weight gain in diet
-group $i$ and $\epsilon{ij}$ would be the deviation of rat $j$ from the
+group $i$ and $\epsilon_{ij}$ would be the deviation of rat $j$ from the
 mean of its diet group.
 :::
 
@@ -8434,7 +8450,7 @@ covariance between two general $y_{ij}$ and $y_{i'j'}$, where the
 indices may or may not be the same:
 
 $$\begin{aligned}
-cov(y_{ij},y_{i'j'}) &=cov(\alpha_i+\epsilon_{ij}, \alpha_{i'}+ \epsilon_{i'j'})\\
+Cov(y_{ij},y_{i'j'}) &=Cov(\alpha_i+\epsilon_{ij}, \alpha_{i'}+ \epsilon_{i'j'})\\
                      &=E[(\alpha_i+\epsilon_{ij})(\alpha_{i'}+\epsilon_{i'j'})]\\
                      &=E[\alpha_i\alpha_{i'}] + E[\epsilon{ij}\alpha_{i'}]+ E[\alpha_i\epsilon_{i'j'}] + E[\epsilon_{ij}\epsilon_{i'j'}]\end{aligned}$$
 
@@ -8472,7 +8488,7 @@ It follows that the correlation between measurements $y_{ij}$ and
 $y_{ij'}$ (within the same group) are
 
 $$\begin{align*}
-Cor(y_{ij},y_{ij'}) &= \frac{Cov(y_{ij},y_{ij'})}{\sqrt{v[y_{ij}]v[y_{ij'}]}}\\
+Cor(y_{ij},y_{ij'}) &= \frac{Cov(y_{ij},y_{ij'})}{\sqrt{Var[y_{ij}]Var[y_{ij'}]}}\\
                    &= \frac{\sigma_A^2}{\sqrt{(\sigma_A^2 + \sigma^2)^2}}\\
                    &\Rightarrow Cor(y_{ij}, y_{ij'}) = \frac{\sigma_A^2}{\sigma_A^2 + \sigma^2}
 \end{align*}.$$
@@ -8488,9 +8504,9 @@ $$y_{ij} = \mu + \alpha_i + \beta_j + \epsilon_{ij}$$
 
 where $\mu, \alpha_1, \alpha_2, \ldots, \alpha_i$ are unknown constants,
 
-$\beta_j \sim n(0,\sigma^2_\beta)$
+$\beta_j \sim N(0,\sigma^2_\beta)$
 
-$\epsilon_{ij} \sim n(0,\sigma^2)$
+$\epsilon_{ij} \sim N(0,\sigma^2)$
 
 ($\beta_j$ and $\epsilon_{ij}$ independent).
 :::
@@ -8522,7 +8538,7 @@ contains the random effects.
 2.  $y_{ij} = \mu + \alpha_i + \beta_i x_{ij} + \epsilon_{ij}$ only
     fixed effects (ANCOVA)
 
-3.  $y_{ijk} = \mu + \alpha_i + b_j + \epsilon{ijk}$ where Æ_iÆ are
+3.  $y_{ijk} = \mu + \alpha_i + b_j + \epsilon_{ijk}$ where Æ_iÆ are
     fixed but Æb_jÆ are random.
 
 4.  $y_{ijk} = \mu  + \alpha_i + b_j x_{ij} + \epsilon_{ijk}$ where Æ_iÆ
@@ -8548,27 +8564,27 @@ $\mathbf{\hat{u}}$, this is normally done using BLUP.
 Recall that if $W$ is a random variable vector with $EW = \mu$ and
 $VW= \boldsymbol{\Sigma}$ then $$E[AW] = A\mathbf{\mu}$$
 
-$$V[AW]= A \boldsymbol{\Sigma} A'$$
+$$Var[AW]= A \boldsymbol{\Sigma} A'$$
 
-In particular, if $W \sim n(\mu, \boldsymbol{\Sigma}($ then
-$AW \sim n(A\mu, A \boldsymbol{\Sigma} A')$.\
+In particular, if $W \sim N(\mu, \boldsymbol{\Sigma})$ then
+$AW \sim N(A\mu, A \boldsymbol{\Sigma} A')$.\
 Now consider the lmm with
 
 $$y = X \boldsymbol{\beta} + Zu + \boldsymbol{\epsilon}$$ where
 $$u = (u_1 , \ldots , u_m)'$$
 
 $$\boldsymbol{\epsilon} = (\epsilon_1 , \ldots , \epsilon_m)'$$ and the
-random variables $U_i \sim n(0, \sigma^2_A)$,
-$\epsilon_i \sim n(0, \sigma^2)$ are all independent so that
-$u \sim n(0, \sigma^2_A I)$ and
-$\boldsymbol{\epsilon} \sim n(\mathbf{0}, \sigma^2 I)$.
+random variables $U_i \sim N(0, \sigma^2_A)$,
+$\epsilon_i \sim N(0, \sigma^2)$ are all independent so that
+$u \sim N(0, \sigma^2_A I)$ and
+$\boldsymbol{\epsilon} \sim N(\mathbf{0}, \sigma^2 I)$.
 
 Then $Ey = X\boldsymbol{\beta}$ and $$\begin{aligned}
 Vy& = & \boldsymbol{\Sigma}_y \\
-& = & V[Zu+V[\boldsymbol{\epsilon}] \\
+& = & Var[Zu+Var[\boldsymbol{\epsilon}] \\
 & = & Z(\sigma^2_A I) Z' + \sigma^2 I\\
 & = & \sigma^2_A Z Z' + \sigma^2 I\end{aligned}$$ and hence
-$y \sim n(X\boldsymbol{\beta},\sigma^2_A Z Z' + \sigma^2 I )$.\
+$y \sim N(X\boldsymbol{\beta},\sigma^2_A Z Z' + \sigma^2 I )$.\
 Therefore the likelihood function for the unknown parameters
 $L(\boldsymbol{\beta},\sigma^2_A, \sigma^2)$ is
 $$= \frac{1}{(2\pi)^{n/2} \left| \boldsymbol{\Sigma}_y \right| ^{n/2}} e^{-1/2 (\mathbf{y}-X\boldsymbol{\beta})' \boldsymbol{\Sigma}^{-1}_y (y}-X\boldsymbol{\beta})$$
