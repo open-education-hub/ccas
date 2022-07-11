@@ -8685,8 +8685,7 @@ P_{\mu_1\mu_2} \left[\frac{Z + \Delta}{\sqrt{U/(n+m-2)}} < -t^\ast_{1-\alpha,n+m
 > single line as an argument, it will subsequently be possible to use the
 > "apply" function to extract the P-values using a one-line R command.
 > 
->     ancova.pval<-function(onerow){ # extract the ancova  $p $
-> -value for diff in means
+>     ancova.pval<-function(onerow){ # extract the ancova p-value for diff in means
 >       J<-length(onerow)/4
 >       n<-2*J
 >       y<-onerow[1:n]                         # get the y-data from the row

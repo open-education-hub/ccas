@@ -6658,7 +6658,7 @@ fulldat<-cbind(Y1,Y2,x1,x2) # a row now contains all y1, then all y2, then all x
 Rather than try to write code to do an ancova, it is natural to use the R function lm to do this.  The ``trick'' below is to extract the $p$-value from the summary command.  By defining a ``wrapper'' function which takes a single line as an argument, it will subsequently be possible to use the ``apply'' function to extract the P-values using a one-line R command.
 
 \begin{lstlisting}
-ancova.pval<-function(onerow){ # extract the ancova $p$-value for diff in means
+ancova.pval<-function(onerow){ # extract the ancova p-value for diff in means
   J<-length(onerow)/4
   n<-2*J
   y<-onerow[1:n]                         # get the y-data from the row
