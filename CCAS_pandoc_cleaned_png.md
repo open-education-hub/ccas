@@ -8005,8 +8005,7 @@ alternative= either one sided or two sided
 
 ### Details
 
-*T*wo Sample, one-sided  $t $
--test:
+*Two Sample, one-sided $t$-test*:
 
 Suppose data are gathered independently from two normal populations
 resulting in 
@@ -8060,8 +8059,7 @@ This is the probability that a non-central  $t $
  $t^\ast $
 .
 
-*Two Sample, Two-sided  $t $
--test*:
+*Two Sample, Two-sided $t$-test*:
 
 In this case the null hypothesis is defined as  $H_o: \mu_1 = \mu_2 $
 
@@ -8086,7 +8084,7 @@ where
 and  $U $
  is the SSE of the samples which is divided by the appropriate
 degrees of freedom to give a  $\chi^2 $
- distribution.\
+ distribution.
 
 > **Note**:  
 > 
