@@ -1,0 +1,8 @@
+plot(0,0,type='n',xlim=c(-0.5,2.5),ylim=c(-0.5,0.5),xlab="",ylab="",xaxt="n",yaxt="n")
+lines(c(0,2),c(0,0),lwd=2)
+text(0,0,"0",pos=1,cex=1.5)
+text(1/6,0,"1/6",pos=1,cex=1.5)
+text(1/2,0,"1/2",pos=1,cex=1.5)
+text(3/4,0,"3/4",pos=1,cex=1.5)
+text(1,0,"1",pos=1,cex=1.5)
+text(2,0,"2",pos=1,cex=1.5)

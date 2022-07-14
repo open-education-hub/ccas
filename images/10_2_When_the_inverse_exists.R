@@ -1,0 +1,10 @@
+curve(x^2,-2,2, axes=F)
+abline(h=0, v=0)
+text(1.5, 3.5, expression(f(x) == x^2), cex=1.5)
+text(-1, -0.06, expression(-1), cex=1)
+text(1, -0.06, expression(1), cex=1)
+#text(0, -0.06, expression(0), cex=1)
+
+segments(-1, 0, -1, 1, col="red", lty=4)
+segments(1, 0, 1, 1, col="red", lty=4)
+segments(-1,1,1,1, col="red", lty=4)
