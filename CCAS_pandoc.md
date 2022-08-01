@@ -50,7 +50,7 @@ research and innovation programme under grant agreement no. 727891.\
 ::: fbox
 The positive integers are called natural numbers.\
 These numbers can be added, multiplied together and so forth.\
-Notation: $\mathbb{N}=\{1,2,3,4,....\}$\
+Notation: $\mathbb{N}=\{1,2,3,4,\dots \}$\
 Subtraction and division are not defined on these numbers.\
 An arbitrary element of $\mathbb{N}$ is most commonly denoted by
 $i,\ j,\ n$, or $m$, but any symbol can be used.
@@ -60,7 +60,7 @@ $i,\ j,\ n$, or $m$, but any symbol can be used.
 
 ::: defn
 The set of positive integers is usually denoted by $\mathbb{N}$, i.e.
-$\mathbb{N}=\{1,2,3,4,....\}$ and is called the set of **natural
+$\mathbb{N}=\{1,2,3,4,\dots \}$ and is called the set of **natural
 numbers**. In some cases the number zero is included as a natural
 number, but here we will use the symbol $\mathbb{N}_0$ to denote the
 integers 0, 1, 2 and up.
@@ -95,7 +95,7 @@ a(b+c)&=&ab+ac\\
 Subtraction and division are not generally defined. In addition, we
 define one integer, $n$, to the power of another, $m$, to mean $n$
 multiplied by itself $m$ times:
-$n^m=\underbrace{n\cdot n \cdot \ldots \cdot n}{m}$.
+$n^m=\underbrace{n\cdot n \cdot \ldots \cdot n}^{m}$.
 
 ::: defn
 The power is an **operator** just like addition and multiplication, and
@@ -154,14 +154,14 @@ Type the name,i.e. \"z\", to view the assigned value.
 ::: fbox
 The set of positive and negative integers:
 
-$\mathbb{Z} = \{\dots, -2, -1, 0, 1, 2, \dots \}.$
+$\mathbb{Z} := \{\dots, -2, -1, 0, 1, 2, \dots \}.$
 :::
 
 ### Details
 
 ::: defn
 The set of all integers is denoted by $\mathbb{Z}$, i.e.
-$$\mathbb{Z} = \{\dots, -2, -1, 0, 1, 2, \dots \}.$$
+$$\mathbb{Z} := \{\dots, -2, -1, 0, 1, 2, \dots \}.$$
 :::
 
 ::: notes
@@ -191,7 +191,7 @@ To compute $15 - (24 + 36)$ we first note that the parentheses
 (brackets) imply a precedence; anything inside brackets should be
 evaluated first.
 
-Thus, we first add 36 to 24 and then we subtract that from 15.\
+Thus, we first add $36$ to $24$ and then we subtract that from $15$.\
 $15 - (24+36) = 15 - 60 = - 45$\
  
 
@@ -210,9 +210,9 @@ Simple arithmetic in R is easily done at the command prompt.
 ## Rational numbers
 
 ::: fbox
-**Rational numbers** are fractions denoted p/q, where p and q are
-integers. We can simplify fractions if the numerator and denominator
-contain common terms.
+**Rational numbers** are fractions denoted $\frac{p}{q}$, where $p$ and
+$q$ are integers. We can simplify fractions if the numerator and
+denominator contain common terms.
 :::
 
 ### Details
@@ -266,7 +266,7 @@ Here we choose to start with the numerator. The first step is to make
 the two fractions in the numerator have a common denominator.
 
 We can either find the least common denominator or use the product of
-the two denominators. Here they are the same number, 15.
+the two denominators. Here they are the same number, $15$.
 
 So the first step is:
 
@@ -293,13 +293,13 @@ $$\frac{96}{75}$$
 
 = $$\frac{3\cdot 32}{3\cdot 25}$$
 
-We can now remove \"3\", or the multiplier, as it is on both sides of
-the fraction. So we have:
+We can now remove $3$, or the multiplier, as it is on both sides of the
+fraction. So we have:
 
 $$\frac{32}{25}$$
 
 = $$\frac{25}{25}+\frac{7}{25} 
-=1\frac{7}{25}$$
+=\frac{32}{25}$$
 
 In step 1 above we used Cross-Multiplication.
 
@@ -329,23 +329,22 @@ The square root is denoted $\sqrt{r}$.
 
 ::: xmpl
 Consider the expression
-$$\left(\sqrt{\frac{1}{9}} \times 2^4\right) + (\frac{1}{5} \times \sqrt{25}).$$
+$$\left(\sqrt{\frac{1}{9}} \cdot 2^4\right) + (\frac{1}{5} \cdot \sqrt{25}).$$
 
 To evaluate this expression, first consider separately the two parts on
 each side of the plus symbol.
 
-The first part is $$\left(\sqrt{\frac{1}{9}} \times 2^4\right)$$
+The first part is $$\left(\sqrt{\frac{1}{9}} \cdot 2^4\right)$$
 
-and the second part is $$(\frac{1}{5} \times \sqrt{25}).$$
+and the second part is $$(\frac{1}{5} \cdot \sqrt{25}).$$
 
 In addition, by definition of root,
 $$\sqrt{\frac{1}{9}} = \frac{1}{3}.$$
 
 First part:
-$$\left(\sqrt{\frac{1}{9}} \times 2^4\right) = \frac{1}{3} \times 16 = \frac{16}{3}$$
+$$\left(\sqrt{\frac{1}{9}} \cdot 2^4\right) = \frac{1}{3} \cdot 16 = \frac{16}{3}$$
 
-Second part:
-$$(\frac{1}{5} \times \sqrt{25}) = \frac{1}{5} \times 5 = 1$$
+Second part: $$(\frac{1}{5} \cdot \sqrt{25}) = \frac{1}{5} \cdot 5 = 1$$
 
 Finally, add the first part and the second part:
 $$\frac{16}{3} + 1 = \frac{19}{3}$$
@@ -371,11 +370,11 @@ So:
 $$\frac{4}{2}+\frac{5}{12}$$
 
 When adding fractions together we first have to find a common
-denominator, in this case 12 would work as $$2\cdot6=12$$
+denominator, in this case $12$ would work as $$2\cdot6=12$$
 
 So we multiply both the numerator and the denominator of that fraction
-by 6 and then add the two numerators of the fractions together, keeping
-the same denominator.
+by $6$ and then add the two numerators of the fractions together,
+keeping the same denominator.
 
 $$\frac{4}{2}+\frac{5}{12}=\frac{4\cdot6}{2\cdot6}+\frac{5}{12}=\frac{24}{12}+\frac{5}{12}=\frac{29}{12}$$
 
@@ -383,8 +382,8 @@ Now we have the top half of the fraction solved. We then proceed with
 dividing the two fractions of the bottom half. When dividing fractions
 we use the so called cross multiplication technique. This arithmetic
 trick is derived from the fact that if you divide a fraction by its
-duplicate you get 1. If you multiple a fraction by its reciprocal (it's
-reverse) you also get 1. Like so:
+duplicate you get $1$. If you multiple a fraction by its reciprocal
+(it's reverse) you also get $1$. Like so:
 
 $$\frac{1}{2}\div\frac{1}{2}=1$$
 
@@ -416,15 +415,15 @@ smallest factors or multipliable prime numbers.
 
 In this case we get $$\frac{2\cdot3\cdot29}{2\cdot3\cdot20}$$
 
-These are the smallest prime numbers that can multiply together into 174
-and 120 respectively.\
+These are the smallest prime numbers that can multiply together into
+$174$ and $120$ respectively.\
 A way of doing this in your head is by first dividing both numbers
-(174,120) by two. Which gives us:
+($174$ ans $120$) by $2$. Which gives us:
 
 $$\frac{2\cdot87}{2\cdot60}$$
 
-and then dividing those numbers (87,60) by 3, since they can't be
-divided by 2. Dividing by 3 gives you
+and then dividing those numbers ($87$ and $60$) by $3$, since they can't
+be divided by $2$. Dividing by 3 gives you
 $$\frac{3\cdot29}{3\cdot20}=\frac{29}{20}$$
 
 which is a lot nicer than $$\frac{174}{120}$$
@@ -432,7 +431,7 @@ which is a lot nicer than $$\frac{174}{120}$$
 The reasoning behind this factoring simplification is that we can remove
 multipliers if they are on both sides of a fraction. This is because the
 result of a fraction where the numerator and the denominator are the
-same is always 1. Like so:
+same is always $1$. Like so:
 
 $$\frac{1}{1}=1$$
 
@@ -464,10 +463,11 @@ $\sqrt{2}$, Note that $\sqrt{2}$ is not a fraction.
 ### Details
 
 Some obvious numbers, which commonly occur, are not fractions. These are
-in between the rational numbers (fractions). Filling in the missing
-points to obtain a continuum results in the set of \"real numbers\".\
-Denoted by $\mathbb{R}$ the entire set of \"real numbers\" which
-corresponds to \"filling in\" the \"missing pieces\" of the line.
+in between the rational numbers (fractions) on the number line. Filling
+in the missing points to obtain a continuum results in the set of *real
+numbers*.\
+Denoted by $\mathbb{R}$ the entire set of real numbers which corresponds
+to filling in the missing pieces of the number line, so to speak.
 
 ### Examples
 
@@ -516,7 +516,7 @@ $$c=\sqrt{2}.$$
 Now that we answered the first part of the question, it needs to be
 defined, which class of number $\sqrt{2}$ belongs to. $\sqrt{2}$ is an
 irrational number, and belongs thereby to the set of real numbers
-$\mathbb{R}$ Real numbers can be imagined as points on an infinitely
+$\mathbb{R}$. Real numbers can be imagined as points on an infinitely
 long line, which is also called the real line.
 :::
 
@@ -541,7 +541,7 @@ The plane is normally denoted by $\mathbb{R}^2$.
 
 ### Details
 
-Pairs of numbers can be depicted as points on a plane.
+Pairs of numbers can be depicted as points on a plane.\
 
 ::: defn
 A **plane** is a perfectly flat surface with no thickness and no end, it
@@ -549,15 +549,17 @@ can extend forever in all directions. It has two-dimensions, length and
 width. We need two values to find a point on the plane.
 :::
 
-Normally we talk about \"the plane\" as the collection of all pairs of
-numbers and denoted it by
+Normally we talk about \"the plane\" (or \"the $xy$-plane\") as the
+collection of all pairs of numbers and denoted it by
 $$\mathbb{R}^2 = \{ (x,y) : x,y \in \mathbb{R} \},$$ giving coordinates
-to each point.
+to each point. The plane is also sometimes called *The Cartesian
+coordinate system*, named after its inventor, the French polymath René
+Descartes.
 
 ### Examples
 
 ::: xmpl
-Plotting the point (2,4) in the x-y plane using R.
+Plotting the point $(2,4)$ in the $xy$-plane using R.
 
     plot(2,4,xlim=c(0,6),ylim=c(0,6),xlab="x",ylab="y",cex=2)
     text(2,4,"(2,4)",pos=4,cex=2)
@@ -567,11 +569,12 @@ Additional points can be added using the $\texttt points$ function:
     points(3,5, cex = 0.5)      ## a point at (3,5)
 :::
 
-If you have 2 sets of coordinates on a plane you can calculate the
-distance between the 2 points and graph the line connecting the points
+If you have two sets of coordinates on a plane you can calculate the
+distance between the two points and graph the line connecting the points
 
 ::: xmpl
-What is the distance between the 2 points (3,9) and (5,1)?
+What is the distance between the two points $(3,9)$ and $(5,1)$? What is
+the distance between the 2 points (3,9) and (5,1)?
 
 We will use the Pythagorean theorem:
 
@@ -579,14 +582,14 @@ $$d = \sqrt{(x_{2}-x_{1})^{2}+(y_{2}-y_{1})^{2}}$$
 
 We insert our values into the formula: $$d=\sqrt{(5-3)^{2}+(1-9)^{2}}$$
 
-When we combine inside the parenthesis we get:
+When we combine inside the parentheses we get:
 $$d=\sqrt{(2)^{2}+(-8)^{2}}$$
 
 Squaring both terms: $$d=\sqrt{4+64}$$
 
 Then we take the square root: $$d=\sqrt{68}$$
 
-The result: $$d=8.2462$$
+The result: $$d \approx 8.2462$$
 :::
 
 ## Simple plots in R
@@ -618,7 +621,7 @@ gives a single plot and
 
     plot(2,3, xlim=c(0,5), ylim=c(0,5))
 
-gives a single plot but forces both axes to range from 0 to 5.
+gives a single plot but forces both axes to range from $0$ to $5$.
 :::
 
 ::: xmpl
@@ -631,9 +634,12 @@ The following R commands can be used to generate a plot with two points:
 :::
 
 ::: xmpl
-In this example, we plot 3 points. The first two points are by including
-vectors with a length of 2 as the x and y arguments of the plot
-function. The third plot was added with the points function. The second
+\*\* FIX THIS \*\*
+
+In this example, we plot three points. The first two arguments of the
+plot function. The third plot was added with the points are by including
+vectors with a length of $2$ as the $x$ and $y$ arguments of the plot
+function. The third point was added with the points function. The second
 and third points were labeled using the text function and a line was
 drawn between them using the lines function.
 
@@ -674,7 +680,7 @@ is given, then $\verb1x1$ contains a vector of numbers.
 
 ::: xmpl
 Create a function in R, give it a name \"Myfunction\" which takes the
-sum of x,y.
+sum of $\verb1x1$ and $\verb1y1$.
 
     Myfunction<- function(x,y) {
      sum(x,y)
@@ -690,13 +696,13 @@ the sum of $\verb|x<-(1+2+3)|$ and $\verb|y<-(4+5+6+7)|$ as follows
 ## Indices for a data vector
 
 ::: fbox
-If data are in a vector $x$, then we use [indices]{.underline} to refer
-to individual elements.
+If data are in a vector $x$, then we use **indices** to refer to
+individual elements.
 :::
 
 ### Details
 
-If $i$ is an integer then $x_i$ denotes the $i$'th element of $x$.\
+If $i$ is an integer then $x_i$ denotes the $i^{th}$ element of $x$.\
 Note that although we do not distinguish (much) between row- and column
 vectors, usually a vector is thought of as a column. If we need to
 specify the type of vector, row or column, then for vector $x$, the
@@ -721,12 +727,12 @@ How to remove all indices below a certain value in R
 :::
 
 ::: xmpl
-Consider a function that takes two vectors
+Consider a function that takes to vectors
 $$a \in \mathbb{R}^n, b \in \mathbb{N}^m$$
 
-as arguments with $$n \geq m$$
+as arguments with $$n \ge m$$
 
-and $$1 \leq b_1,...,b_m \leq n.$$
+and $$1 \le b_1,\dots ,b_m \le n.$$
 
 The function returns the sum $$\sum_{i = 1}^m {a_b}_i$$
 
@@ -795,7 +801,7 @@ $$(a+b)^2=a^2+2ab+b^2$$
 
 ### Details
 
-If a, b are real numbers, then:
+If $a$ and $b$ are real numbers, then:
 
 $(a+b)^2=a^2+2ab+b^2$
 
@@ -867,7 +873,8 @@ different portions of the triangle.
 
 ::: fbox
 We define the factorial of an integer n as\
-$n!= n\cdot(n-1) \cdot(n-2)\cdot \ldots \cdot 3 \cdot 2 \cdot 1$
+$n!= n\cdot(n-1) \cdot(n-2)\cdot \ldots \cdot 3 \cdot 2 \cdot 1$ For
+convenience we define $0!$ to be 1.
 :::
 
 ### Details
@@ -880,8 +887,8 @@ $$n!= n\cdot(n-1) \cdot(n-2)\cdots \ldots \cdot 3 \cdot 2 \cdot 1 .$$
 ### Examples
 
 ::: xmpl
-Suppose you have 6 apples, $\{a, b, c, d, e, f\}$ and you want to put
-each one into a different apple basket, $\{1,2,3,4,5,6\}$.\
+Suppose you have six apples; $\{a, b, c, d, e, f\}$ and you want to put
+each one into a different apple basket; $\{1,2,3,4,5,6\}$.\
 For the first basket you can choose from 6 apples $\{a, b, c, d, e,f\}$,
 and for the second basket you have then 5 apples to choose from and so
 it goes for the rest of the baskets, so for the last one you only have 1
@@ -910,7 +917,7 @@ A **combination** is an un-ordered collection of distinct elements
 :::
 
 Suppose we want to toss a coin $n$ times. In each toss we obtain head
-(H) or tail (T) resulting in a sequence of H,T,T,H, \... T.\
+(H) or tail (T) resulting in a sequence of H,T,T,H, ..., T.\
 How many of these possible sequences contain exactly $x$ tails? There
 are $n$ positions in the sequence, we can choose $x$ of these in
 $\binom{n}{x}$ ways and put our \"Ts\" in those positions. If the
@@ -919,8 +926,6 @@ with exactly $x$ tails has probability $p^x(1-p)^{n-x}$ so the total
 probability of landing exactly $x$ tails in $n$ independent tosses is
 
 $${n \choose x}= \frac{{n!}}{{x!\left( {n - x} \right)!}} .$$
-
-For convenience we define $0!$ to be 1.
 
 ### Examples
 
@@ -965,7 +970,7 @@ expression $(a+b)^n$ can be expanded as:
 
 $(a+b)^n = a^n+ {n \choose 1}a^{n-1}b +  {n \choose 2}a^{n-2}b^ + \ldots +{n \choose n-1}ab^{n-1}+b^n$
 
-$(a+b)^n  = \sum_{i=1}^n  {n \choose x}a^xb^{n-x}$
+$(a+b)^n  = \Sigma_{i=1}^n  {n \choose x}a^xb^{n-x}$
 
 This can be seen by looking at $(a+b)^n$ as a product of $n$ parentheses
 and multiply these by picking one item ($a$ or $b$) from each. If we
@@ -1005,7 +1010,7 @@ $\binom{3}{x}p^x(1-p)^{3-x}$.
 
 ::: xmpl
 Consider a biased coin which has probability $p$ of landing heads up. If
-we toss this coin 3 independent times the possible outcomes are:
+we toss this coin three independent times the possible outcomes are:
 
 $$\begin{array}{c c c}
   \hline
@@ -1069,14 +1074,17 @@ And we can do this on and on for all the 25 people we are interested in.
 But that may also become a bit tedious. So we use factorials instead. So
 instead of doing
 
-$$\frac{365\cdot364\cdot363...\cdot341}{365^{25}}$$
+$$\frac{365\cdot364\cdot363\dots \cdot341}{365^{25}}$$
 
 we do
 
 $$\frac{\frac{365!}{340!}}{365^{25}}=0.4313$$
 
-Essentially the division of factorials here removes all the values \<
-341, leaving 340, 339, 338 \... 1
+Essentially the division of factorials here removes all the values that
+are less than $341$, making the two expressions completely equal.
+Rewriting the expression like this is only done to simplify the task of
+typing it up for the computer to calculate, since most calculators don't
+understand \"$\dots$\".
 
 Now remember this is the probability that no one shares a birthday. So
 when we subtract this from 1 we get
@@ -1086,6 +1094,11 @@ $$1-0.4313=0.5687$$
 or roughly 57% odds of at least 2 people in a group of 25 sharing the
 same birthday.
 :::
+
+This example is commonly known as the **birthday paradox**, since it
+seems to many people to be counter-intuitive that the probability of at
+least two people out of 25 sharing a birthday is higher than 50% when
+there are 365 birthdays to choose from.
 
 ## Random variables
 
@@ -1104,7 +1117,7 @@ two heads, i.e. $X=2$. We write this as
 $$P[X=2]={n \choose 2}p^2(1-p)^{n-2}$$
 
 In general: $$P[X=x] = {n \choose x}p^x (1-p)^{n-x}$$ where
-$x = 0,1,.....,n$
+$x = 0,1,\dots ,n$
 :::
 
 ### Handout
@@ -1178,10 +1191,10 @@ $${n \choose x}p^x (1-p)^{n-x}$$
 
 ::: xmpl
 Suppose we toss a coin, with probability $p$ of landing on heads $n$
-times obtaining a sequence of Hs (when it lands heads) and Ts (when it
-lands tails). Any sequence, $$HTH...HTHHH$$ which has $x$ heads ($H$)
-and $n-x$ tails ($T$), has the probability $p^x(1-p)^{n-x}$. There are
-exactly $\binom{n}{x}$ such sequences, so the total probability of
+times obtaining a sequence of Hs (when it lands heads) and T's (when it
+lands tails). Any sequence, $$HTH \dots HTHHH$$ which has $x$ heads
+($H$) and $n-x$ tails ($T$), has the probability $p^x(1-p)^{n-x}$. There
+are exactly $\binom{n}{x}$ such sequences, so the total probability of
 landing $x$ heads in $n$ tosses is $$\binom{n}{x}p^x(1-p)^{n-x}.$$
 :::
 
@@ -1196,7 +1209,7 @@ multiplying the percentage of wins by the number of matches played.\
 We can now proceed to calculate the probability that they will win the
 match given that their probability of a winning is 0.4 if they play 3
 times in a season. This can be computed as follows:\
-$$\binom{30}{3} \times (0.4)^3 \times (1-0.4)^{30-3}$$
+$$\binom{30}{3} \cdot (0.4)^3 \cdot (1-0.4)^{30-3}$$
 
 $$=0.000265$$
 
@@ -1219,46 +1232,42 @@ either put the shirt on the wrong or the right way so $X$ follows the
 binomial distribution with the parameters $p=0.2$ (the probability of a
 successful trial) and $n=5$ (number of trials). We can now calculate for
 example the probability that the youngster will put it on the right way
-for at least 4 days.\
-Putting the shirt on the right way for at least 4 days means that the
+for at least four days.\
+Putting the shirt on the right way for at least four days means that the
 youngster will either put it on the right way for either four or five
 days (at least four or more days of five days total). We thus have to
 calculate the probability that the youngster will put his shirt on the
-right way for 4 and 5 days separately and then we add it together. We
-can write this process as follows:
+right way for four and five days separately and then we add it together.
+We can write this process as follows:
 
-$$P(X\geq4) = P(X=4) + P(X=5)$$
-
-$$= \binom{5}{4}\times0.2^4\times(1-0.2)^{5-4} + \binom{5}{5}\times0.2^5\times(1-0.2)^{5-5}$$
-
-$$= 5\times0.2^4\times0.8^1 + 1\times0.2^5\times0.8^0$$
-
-$$= 5\times0.2^4\times0.8 + 0.2^5\times1$$
-
-$$= 5\times0.8 \times0.2^4 + 0.2^5$$
-
-$$= 4\times0.2^4 + 0.2^5$$
-
-$$= 4\times0.0016 + 0.00032$$
-
-$$= 0.00672$$
+$$\begin{aligned}
+  P(X\geq4) &= P(X=4) + P(X=5)\\
+  &= \binom{5}{4}\cdot0.2^4\cdot(1-0.2)^{5-4} + \binom{5}{5}\cdot0.2^5\cdot(1-0.2)^{5-5}\\
+  &= 5\cdot0.2^4\cdot0.8^1 + 1\cdot0.2^5\cdot0.8^0\\
+  &= 5\cdot0.2^4\cdot0.8 + 0.2^5\cdot1\\
+  & =5\cdot0.8 \cdot0.2^4 + 0.2^5\\
+  &= 4\cdot0.2^4 + 0.2^5\\
+  &= 4\cdot0.0016 + 0.00032\\
+  &=  0.00672\end{aligned}$$
 
 The probability that the youngster will put his shirt on the right way
-for at least four out of five is thus 0,7%.\
+for at least four out of five is thus approximately 0,7%.\
 This is possible to calculate in R in a several ways, either using the
-command dbinom or pbinom. The command dbinom calculates $$P(X = k)$$
+command $\verb|dbinom|$ or $\verb|dbinom|$. The command $\verb|dbinom|$
+calculates $$P(X = k)$$
 
-and the command pbinom calculates $$P(X \leq k)$$
+and the command $\verb|pbinom|$ calculates $$P(X \leq k)$$
 
 where $k$ is the number of successful trials. If $n$ is the number of
 trials and $p$ is the probability of a successful trials then the
-commands are used by writing: dbinom(k,n,p) and pbinom(k,n,p).\
+commands are used by writing: $\verb|dbinom(k,n,p)|$ and
+$\verb|pbinom(k,n,p)|$.\
 To calculate the probability that the youngster will put his shirt on
 the right way for at least four days of five we thus write the command:
 
     dbinom(4,5,0.2) + dbinom(5,5,0.2)
 
-which gives 0.00672.\
+which gives $0.00672$.\
 This is the same as writing:
 
     dbinom(c(4,5),5,0.2)
@@ -1267,8 +1276,8 @@ or
 
     dbinom(4:5,5,0.2)
 
-which give two separate numbers: 0.00640 and 0.00032 which can be added
-together to get 0.00672.\
+which give two separate numbers: $0.00640$ and $0.00032$ which can be
+added together to get $0.00672$.\
 There is also a command to add them together for us:
 
     sum(dbinom(c(4,5),5,0.2))
@@ -1277,9 +1286,9 @@ or
 
     sum(dbinom(4:5,5,0.2))
 
-They give the answer 0.00672.\
-The fourth way of calculating this in R is to use pbinom. As said before
-pbinom calculates $$P(X \leq k)$$
+They give the answer $0.00672$.\
+The fourth way of calculating this in R is to use $\verb|pbinom|$. As
+said before $\verb|pbinom|$ calculates $$P(X \leq k)$$
 
 where $k$ is the number of successful trials. Here we want to calculate
 the probability that the youngster will put his shirt on the right way
@@ -1297,14 +1306,21 @@ which also gives 0.00672.
 
 ::: xmpl
 In a certain degree program, the chance of passing an examination is
-20%. What is the chance of passing at most 2 exams if the student takes
-five exams?\
+20%. What is the chance of passing at most two exams if the student
+takes five exams?\
 Solution:\
-In this problem, we compute the chance of a student passing, 0, 1 or 2
-exams. This is given by,
+In this problem, we compute the chance of a student passing, $0$, $1$ or
+$2$ exams. This is given by, In this problem, we compute the chance of a
+student passing, 0, 1 or 2 exams. This is given by,
+$$P(X=0 \text{ or }1 \text{ or }2)={5\choose 0}0.2^0 0.8^5 +{5\choose 1}0.2^1 0.8^4 +{5\choose 2}0.2^2 0.8^3$$
+
 $$p(X=0 \text{ or }1 \text{ or }2)={5\choose 0}0.2^0 0.8^5 +{5\choose 1}0.2^1 0.8^4 +{5\choose 2}0.2^2 0.8^3$$
 
+$$=1\cdot 0.2^0 0.8^5 +5\cdot  0.2^1 0.8^4 +10\cdot 0.2^2 0.8^3$$
+
 $$=1\times0.2^0 0.8^5 +5\times 0.2^1 0.8^4 +10\times0.2^2 0.8^3$$
+
+$$=0.32768+0.4096+0.2048$$
 
 $$=0.32768+0.4096+0.2048$$
 
@@ -1328,19 +1344,23 @@ we randomly selected four individuals to participate in the cliff
 jumping activity. What is the chance that exactly one of them will jump
 off the cliff?\
 Consider a scenario where person $A$ jumps but $B$, $C$ and $D$ refuse:\
-$P (A = \text{jump} , B = \text{refuse}, C = \text{refuse}, D = \text{refuse})$
+$$\begin{aligned}
+  &=P (A = \text{jump} , B = \text{refuse}, C = \text{refuse}, D = \text{refuse})\\     
+  &= P (A =\text{jump}) \cdot P (B = \text{refuse}) \cdot P (C = \text{refuse}) \cdot P (D = \text{refuse})\\       
+  &= (0.35) \cdot (0.65) \cdot (0.65) \cdot (0.65)\\    
+  &= 0.35 \cdot  (0.65)^3 = 0.096       \end{aligned}$$
 
-$= P (A =\text{jump}) \cdot P (B = \text{refuse}) \cdot P (C = \text{refuse}) \cdot P (D = \text{refuse})$
-
-$= (0.35) \cdot (0.65) \cdot (0.65) \cdot (0.65) = (0.35)^1 \cdot  (0.65)^3 = 0.096$\
 But there are three other scenarios (where persons $B$, $C$, or $D$ are
 the only person to jump). In each of these cases, the probability is
 again 0.096. These four scenarios exhaust all the possible ways that
 exactly one of the four people jumps:
 
-$4 \cdot (0.35)^1 (0.65)^3 = 0.38.$\
+$$\begin{aligned}
+  &= 4 \cdot 0.35 \cdot (0.65)^3\\      
+  &= 0.38\\     \end{aligned}$$
+
 In the R console we can use the command: $\verb|dbinom(1,4,0.35)|$ which
-gives the answer as 0.384475.
+gives the answer as $0.384475$.
 :::
 
 ## General discrete probability distributions
@@ -1367,14 +1387,16 @@ where it is understood that $p(x) = 0$ if $x$ is not one of these $x_i$.
 ### Examples
 
 ::: xmpl
-If $X$ is the number of heads ($H$) before obtaining the first tail
-($T$) when tossing an unbiased coin 4 independent times, then the
-possible basic outcomes are:
+If $X$ is the number of heads ($\text{H}$) before obtaining the first
+tail ($\text{T}$) when tossing an unbiased coin 4 independent times,
+then the possible basic outcomes are: If $X$ is the number of heads
+($H$) before obtaining the first tail ($T$) when tossing an unbiased
+coin 4 independent times, then the possible basic outcomes are:
 
 $$\begin{array}{c c c}
 \hline
          & \text{Toss}    &   \\
-\text{In binary} & 1\ 2\ 3\ 4 & \\#\text{H before T}\\
+\text{In binary} & 1\ 2\ 3\ 4 & \text{H before T}\\
 \hline              
   0000 & \text{H H H T} & 3\\
   0010 & \text{H H T H} & 2\\
@@ -1396,8 +1418,8 @@ $$\begin{array}{c c c}
 
 Since the coin is unbiased, each of these has the same probability of
 occurring. We can now count sequences to find the number of
-possibilities of a particular number of heads, $H$, before a tail in 4
-coin tosses and thus obtain the corresponding probabilities as:\
+possibilities of a particular number of heads, $\text{H}$, before a tail
+in 4 coin tosses and thus obtain the corresponding probabilities as:\
 $$\begin{array}{c r}
 \hline
 \text{Number of tosses before a heads} & \text{Probability}\\
@@ -1422,8 +1444,8 @@ of an urn full of marbles, each labelled with number.
 
 ### Details
 
-If the possible outcomes are $x_1, x_2...$ with probabilities
-$p_1, p_2...$ then the expected value is
+If the possible outcomes are $x_1, x_2, \dots$ with probabilities
+$p_1, p_2, \dots$ then the expected value is
 
 $$\mu=x_1 \cdot p_1+x_2 \cdot p_2 + \ldots .$$
 
@@ -1443,13 +1465,14 @@ $E[X]$.
 ### Examples
 
 ::: xmpl
-If we toss a fair coin 10 independent times, we expect on average
+If we toss a fair coin ten independent times, we expect on average
 $np=10\cdot\frac{1}{2}= 5$ heads.
 :::
 
 ::: xmpl
 Toss a fair die and pay $60$ if a six comes up and nothing otherwise.
-The expected outcome is $$\frac{5}{6}\cdot 0+\frac{1}{6}\cdot 60=  10.$$
+The expected outcome is
+$$\frac{5}{6} \cdot 0 + \frac{1}{6}\ cdot 60 =  10.$$
 :::
 
 ::: xmpl
@@ -1460,7 +1483,7 @@ bets is -2.50 dollars.
 
 Detailed calculation:
 
-$$15\cdot 0.3 - 10 \cdot 0.7 = - 2.5$$
+$$15 \cdot 0.3 - 10 \cdot 0.7 = - 2.5.$$
 :::
 
 ::: xmpl
@@ -1493,14 +1516,16 @@ most likely choose scenario 3 (let's say 9/10 times), but there's a
 small chance you might choose the 2nd strategy (let's say 1/10 times).\
 Answers:
 
-A1 - Let's call X our random variable, which we want to be the number of
+A1 - Let $X$ be a random variable which denotes to be the number of
 times we make it to class on-time. With the alarm set to 7:15 we expect
-to make it to class on-time:
-$$E[X]=30\times(1-\frac{1}{4})=\frac{45}{2}=22.5$$
+to make it to class on-time: A1 - Let's call X our random variable,
+which we want to be the number of times we make it to class on-time.
+With the alarm set to 7:15 we expect to make it to class on-time:
+$$E[X]=30\cdot (1-\frac{1}{4})=\frac{45}{2}=22.5$$
 
 You're grade would most likely be dropped.\
 A2 - First we need to see how many classes we go to before we reach the
-5-late-classes threshhold: $$E[X] = n \times (1 - \frac{1}{4}) = n - 5$$
+5-late-classes threshold: $$E[X] = n \cdot (1 - \frac{1}{4}) = n - 5$$
 
 $$E[X] = n ((1 - \frac{1}{4}) - 1) = - 5$$
 
@@ -1511,12 +1536,12 @@ $$E[X] = n = \frac{20}{1} = 20$$
 So, the night before our 21st class, you get worried and change
 alarm-clock strategies. If you set it at 7:15 for the rest of the course
 (10 classes), you will be on time:
-$$E[X] = 15 + 10 \times (1 - \frac{1}{8}) = \frac {95}{4} = 23.75$$
+$$E[X] = 15 + 10 \cdot (1 - \frac{1}{8}) = \frac {95}{4} = 23.75$$
 
 You're grade would most likely be dropped.\
 A3: If you instead start setting the alarm clock for 7:00 for the rest
 of the course, you will be on time:
-$$E[X] = 15 + 10 \times (1 - \frac{1}{100}) =\frac{217}{9} \approx 24.11$$
+$$E[X] = 15 + 10 \cdot (1 - \frac{1}{100}) =\frac{217}{9} \approx 24.11$$
 
 You're grade would most likely NOT be dropped.\
 Part B: **This seems to contain errors** In Part A, we calculated the
@@ -1524,13 +1549,13 @@ mean of several binomial distributions that described the expected
 number of days that you will arrive on-time to class. Each distribution
 corresponded to a different alarm-setting scenario. In this part, we are
 describing a different binomial distribution. It describes your expected
-grade. Therefore, the grade is the outcome n, weighted by the
+grade. Therefore, the grade is the outcome $n$, weighted by the
 probability of you choosing the particular alarm-clock setting
 procedure:
 
-$$1 - E[X] = 0 \times 6 + 0.9 \times 6 + 0.1 \times 7 = 6.1$$
+$$1 - E[X] = 0 \cdot 6 + 0.9 \cdot 6 + 0.1 \cdot 7 = 6.1$$
 
-$$1 - E[X] = 0 \times 6 + 0.1 \times 6 + 0.9 \times 7 = 6.9$$
+$$1 - E[X] = 0 \cdot 6 + 0.1 \cdot 6 + 0.9 \cdot 7 = 6.9$$
 
 Note that the probabilities of these three choices (0 + 0.9 + 0.1) must
 equal 1, since these are the only three choices defined.
@@ -1541,7 +1566,7 @@ equal 1, since these are the only three choices defined.
 ::: fbox
 The (population) variance, for a discrete distribution, is
 
-$$\sigma^2 = E\left[ \left ( X-\mu \right ) ^2 \right ] = (x_1 - \mu)^2 p_1 + (x_2 - \mu)^2 p_2 + ...$$
+$$\sigma^2 = E\left[ \left ( X-\mu \right ) ^2 \right ] = (x_1 - \mu)^2 p_1 + (x_2 - \mu)^2 p_2 + \dots$$
 
 where it is understood that the random variable $X$ has this
 distribution and $\mu$ is the expected value.\
@@ -1654,17 +1679,17 @@ corresponding vector with the outcome.
 
 ::: fbox
 In statistics, the function of interest is commonly called the response
-function. If we write Y=f(x), the outcome Y is usually called the
-response variable and x is the explanatory variable. Function values are
-plotted on vertical axis while x values are plotted on horizontal axis.
-This plots Y against x.
+function. If we write $y=f(x)$, the outcome $y$ is usually called the
+response variable and $x$ is the explanatory variable. Function values
+are plotted on vertical axis while $x$ values are plotted on horizontal
+axis. This plots $y$ against $x$.
 :::
 
 ### Examples
 
 ::: xmpl
-The following R commands can be used to generate a plot for function; Y=
-2+3x
+The following R commands can be used to generate a plot for function;
+$y= 2+3x$
 
     x<- seq(0:10)
     g <- function(x){
@@ -1704,7 +1729,7 @@ USA.
 ::: fbox
 The general polynomial:
 
-$p(x)=a_{0}+a_{1}x+a_{2}x^{2}+...+a_{n}x^{n}$
+$p(x)=a_{0}+a_{1}x+a_{2}x^{2}+\dots +a_{n}x^{n}$
 
 The simplest: $p(x)=a$
 :::
@@ -1718,7 +1743,7 @@ combinations of positive integer powers of the explanatory variable.
 
 The general form of a polynomial is:
 
-$p(x)=a_{0}+a_{1}x+a_{2}x^{2}+...+a_{n}x^{n}$
+$p(x)=a_{0}+a_{1}x+a_{2}x^{2}+\dots +a_{n}x^{n}$
 
 The simplest of these is the constant polynomial $p(x)=a$.
 
@@ -1747,8 +1772,8 @@ non-negative $p(x)\geq 0$ and $p(x)=0$ only when $x=0$.
 *Note 7*. Note that $p(-x) = p(x)$ since $(-x)^2= x^2$.
 :::
 
-If the coefficient at the highest power is negative, then the parabola
-is \"upside down\"(Fig. b).\
+If the leading coefficient is negative, then the parabola is concave
+(fig. b) but if it's positive the parabola is convex (fig. a).\
 This is sometimes used to describe a response function.
 
 ## The cubic
@@ -1762,7 +1787,7 @@ $p(x)=ax^3 + bx^2 + cx + d$
 7
 :::
 
-Figure: $y=x^3-20x^2-30x-4$
+Figure: $p(x)=x^3-20x^2-30x-4$
 :::
 
 ## The Quartic
@@ -1892,11 +1917,11 @@ USA.
 ::: fbox
 Several methods exist to enter data into R:
 
-1.  Enter directly: x\<-c(4,3,6,7,8)
+1.  Enter directly $\verb| x<-c(4,3,6,7,8) |$
 
-2.  Read in a single vector: x\<-scan(\"filename\")
+2.  Read in a single vector: $\verb| x<-scan("filename")|$
 
-3.  Use: x\<-read.table(\"file address\")
+3.  Use: $\verb| x<-read.table("file address")|$
 :::
 
 ### Details
@@ -1922,12 +1947,11 @@ complete file directory depending on where the table is stored.
 ::: xmpl
 Below are three examples using R code to enter data
 
-1.  x\<-c(4,3,6,7,8)
+1.  $\verb|x<-c(4,3,6,7,8) |$
 
-2.  x\<-scan(\"lecture 70.txt\")
+2.  $\verb|x<-scan("lecture 70.txt")|$
 
-3.  x\<-read.table(\"http://notendur.hi.is/TILDEgunnar/kennsla/alsm/data/set115.dat\",
-    header=T)
+3.  $\verb|x<-read.table("http://notendur.hi.is/TILDEgunnar/kennsla/alsm/data/set115.dat", header=T)|$
 :::
 
 ## Histograms
@@ -1936,7 +1960,7 @@ Below are three examples using R code to enter data
 A histogram is a graphical display of tabulated frequencies, shown as
 bars.
 
-In R use the command: hist()
+In R use the command: $\verb|hist(x)|$
 
 ::: picture
 9
@@ -1947,21 +1971,6 @@ In R use the command: hist()
 
 A histogram is a graphical display of tabulated frequencies, shown as
 bars.
-
-::: xmpl
-If we toss a fair die 100 times and record the number of sixes, then we
-can view that as the outcome of a random variable $X$, which is binomial
-with $n=100$ and $p=\frac{1}{6}$, i.e $X \sim Bin(n=100,p=\frac{1}{6})$\
-Now this can be done e.g. 1000 times to obtain numbers,
-$x_1,...,x_{1000}$. Within R this can be simulated using
-
-    x <- rbinom(1000,100,1/6)
-
-We would typically plot these using a histogram, e.g.\
-hist(x)\
-or\
-hist(x,nclass=50);l
-:::
 
 ## Bar Charts
 
@@ -1989,7 +1998,7 @@ The most familiar measure of central tendency is the arithmetic mean.
 An **arithmetic mean** is the sum of the values divided by the number
 values, typically expressed as:
 
-$$\bar{y} = \frac{\sum_{i=1}^{n} y_i}{n}$$
+$$\bar{y} = \frac{\Sigma_{i=1}^{n} y_i}{n}$$
 :::
 
 ::: defn
@@ -2052,12 +2061,12 @@ scatter plot both the explanatory and response data should be continuous
 variables.\
 The equation for the Pearson correlation coefficient is:
 
-$$r_{x,y} = \frac{\sum_{i=1}^{n}(x_i - \bar{x})(y_i - \bar{y})}{\sum_{i=1}^{n}(x_i - \bar{x})^2\sum_{i=1}^{n}(y_i - \bar{y})^2},$$
+$$r_{x,y} = \frac{\Sigma_{i=1}^{n}(x_i - \bar{x})(y_i - \bar{y})}{\Sigma_{i=1}^{n}(x_i - \bar{x})^2 \Sigma_{i=1}^{n}(y_i - \bar{y})^2},$$
 
 where $\bar{x}$ and $\bar{y}$ are the sample means of the x- and
 y-values.
 
-The correlation is always between -1 and 1.
+The correlation is always between $-1$ and $1$.
 
 ### Examples
 
@@ -2135,7 +2144,8 @@ the matrix can be indexed by its names rather than numbers.
 
 ::: xmpl
 Consider a matrix with 2 rows and 3 columns. Consider extracting first
-element (1,2), then all of line 2 and then columns 2-3 in an R session:
+element $(1,2)$, then all of line 2 and then columns 2-3 in an R
+session:
 
     mat<-matrix(1:6,ncol=3)
     mat
@@ -2155,8 +2165,8 @@ element (1,2), then all of line 2 and then columns 2-3 in an R session:
     [2,]    4    6
 
 Next, consider the same matrix, but give names to the rows and columns.
-The rows will get the names \"a\" and \"b\" and the columns will be
-named \"A\", \"B\" and \"C\".
+The rows will get the names $a$ and $b$ and the columns will be named
+$A$, $B$ and $C$.
 
 The entire R session could look like this:
 
@@ -2177,9 +2187,9 @@ The entire R session could look like this:
 ::: fbox
 The apply command\...
 
-apply(mat,2,sum) -- applies the sum function within each column
+$\verb|apply(mat,2,sum)|$ -- applies the sum function within each column
 
-apply(mat,1,mean) -- computes the mean within each row
+$\verb|apply(mat,1,mean)|$ -- computes the mean within each row
 :::
 
 ## The tapply command
@@ -2203,13 +2213,13 @@ A. Find the sum within each group
      f  m 
     18 20 
 
-B.Find the sample sizes
+B. Find the sample sizes
 
     tapply(z,i,length) 
     f m 
     3 4 
 
-C.Store outputs and use names
+C. Store outputs and use names
 
     n<-tapply(z,i,length) 
     n
@@ -2223,8 +2233,8 @@ C.Store outputs and use names
 ## Logical indexing
 
 ::: fbox
-A logical vector consists of $TRUE$ (1) or $FALSE$ (0) values. These can
-be used to index vectors or matrices.
+A logical vector consists of $\verb|TRUE|$ (1) or $\verb|FALSE|$ (0)
+values. These can be used to index vectors or matrices.
 :::
 
 ### Examples
@@ -2320,7 +2330,7 @@ An exponential function is a function with the form: $f(x)=b^x$
 
 For the exponential function $f(x)=b^x$, $x$ is a positive integer and
 $b$ is a fixed positive real number. The equation can be rewritten as:
-$$f(x)=b^x=b\cdot b \cdot b...b.$$
+$$f(x)=b^x=b\cdot b \cdot b \cdot \dots \cdot b.$$
 
 When the exponential function is written as $f(x)=e^x$ then, it has a
 growth rate at time $x$ equivalent to the value of $e^x$ for the
@@ -2339,7 +2349,7 @@ $$e^{a+b} = e^a e^b$$ for any real numbers $a$ and $b$.
 
 Consider two functions, $f$ and $g$, each defined for some set of real
 numbers. Where $x$ can be solved in function $f$ using $Y = f(x)$ when
-$g(Y)$ exists for all such resulting $Y$. If $Y = f(x)$ and $g(Y)$ exist
+$g(Y)$ exists for all such resulting $y$. If $y = f(x)$ and $g(y)$ exist
 then we can compute $g(f(x))$ for any $x$.
 
 If $f(x) = {x}^2$ and $g(y)= {e}^y$, then
@@ -2366,7 +2376,7 @@ Functions are typically stored in separate files.
 ### Examples
 
 ::: xmpl
-Save the following file (test.r):
+Save the following file ($\verb|test.r|$):
 
     x=4
     y=8
@@ -2383,7 +2393,7 @@ and the outcome of the equation is displayed in R
 
 ::: fbox
 To save a function in a separate file use a command of the form
-\"function.r\".
+$\verb|function.r|$.
 :::
 
 ### Examples
@@ -2440,8 +2450,8 @@ be one-to-one, i.e. for each $x$, $f(x)$ must be unique.
 13
 :::
 
-Figure: The function $f(x)=x^2$ does not have an inverse since f(x)=1
-has two possible solutions -1 and 1.
+Figure: The function $f(x)=x^2$ does not have an inverse since $f(x)=1$
+has two possible solutions $-1$ and $1$.
 :::
 
 ### Examples
@@ -2494,8 +2504,8 @@ $$x \cdot y = 10^a \cdot 10^b = 10^{a+b}$$ so that $$\log(xy) = a+b$$
 
 ::: xmpl
 $$\begin{aligned}
-log(100)&=& 2 \\
-log(1000)&=& 3\end{aligned}$$
+\log(100)&=& 2 \\
+\log(1000)&=& 3\end{aligned}$$
 :::
 
 ::: xmpl
@@ -2516,18 +2526,18 @@ so $$\log (2) \approx 0.3$$
 
 ::: fbox
 A logarithm with $e$ as a base is referred to as the natural logarithm
-and is denoted as $ln$ : $$y=ln(x)$$
+and is denoted as $\ln$ : $$y=\ln(x)$$
 
-if $$x=e^y=exp(y)$$
+if $$x=e^y=\exp(y)$$
 
-Note that $ln$ is the inverse of $exp$.
+Note that $\ln$ is the inverse of $\exp$.
 
 ::: picture
 14
 :::
 
-Figure: The curve depicts the fuction $y=\ln(x)$ and shows that $ln$ is
-the inverse of $exp$. Note that $\ln(1)=0$ and when $y=0$ then $e^0=1$.
+Figure: The curve depicts the fuction $y=\ln(x)$ and shows that $\ln$ is
+the inverse of $\exp$. Note that $\ln(1)=0$ and when $y=0$ then $e^0=1$.
 :::
 
 ## Properties of logarithm(s)
@@ -2551,11 +2561,12 @@ Next, note that
 $$\begin{aligned}
 \ln (x^2)&=& \ln (x \cdot x)\\
 &=& \ln x + \ln x\\
-&=& 2 \cdot ln x\end{aligned}$$
+&=& 2 \cdot \ln x\end{aligned}$$
 
-and similarly $\ln (x^n) = n \cdot \ln x$ for any integer n.
+and similarly $\ln (x^n) = n \cdot \ln x$ for any integer $n$.
 
-In general $\ln (x^c) = c \cdot \ln x$ for any real number c (for x\>0).
+In general $\ln (x^c) = c \cdot \ln x$ for any real number c (for
+$x>0$).
 
 Thus the multiplicative model (from above)
 
@@ -2590,15 +2601,15 @@ Solve the equation $$10e^{1/3x} + 3 = 24$$
 
 for $x$.
 
-First, get the 3 out of the way.
+First, get the $3$ out of the way.
 
 $$10e^{1/3x} = 21$$
 
-Then the 10.
+Then the $10$.
 
 $$e^{1/3x} = 2.1$$
 
-Next, we can take the natural log of 2.1. Since $ln$ is an inverse
+Next, we can take the natural log of 2.1. Since $\ln$ is an inverse
 function of $e$ this would result in
 
 $$\frac{1}{3}x = \ln(2.1)$$
@@ -2676,17 +2687,21 @@ at a point $x$ of discontinuity.
 ### Examples
 
 ::: xmpl
-If a coin is tossed 3 independent times and $X$ denotes the number of
-heads, then $X$ can only take on the values 0, 1, 2 and 3. The
-probability of landing exactly $x$ heads, $P(X=x)$, is
+If a coin is tossed three independent times and $X$ denotes the number
+of heads, then $X$ can only take on the values $0$, $1$, $2$ and $3$.
+The probability of landing exactly $x$ heads, $P(X=x)$, is
 $p(x) = \binom{n}{x} p^n (1-p)^{n-x}$. The probabilities are
 
-    x  | p(x) | F(x)
-    ----------------
-    0  | 1/8  | 1/8
-    1  | 3/8  | 4/8
-    2  | 3/8  | 7/8
-    3  | 1/8  | 1
+$$\begin{array}{c c c}
+\hline
+x & p(x) & F(x)\\
+\hline
+0 & \frac{1}{8} & \frac{1}{8}\\
+1 & \frac{3}{8} & \frac{4}{8}\\
+2 & \frac{3}{8} & \frac{7}{8}\\
+3 & \frac{1}{8} & 1\\
+\hline
+\end{array}$$
 
 The cumulative distribution function,
 $F(x)=P[X \leq x] = \sum_{t\leq x} p(t)$ has jumps and is therefore
@@ -2721,7 +2736,7 @@ Consider the function $f$, defined by $f(x)= 1/x$ when $x\neq 0$.
 Naturally, $1/x$ is not defined for $x=0$. This function increases
 towards $+\infty$ as $x$ goes to zero from the right but decreases to
 $-\infty$ as $x$ goes to zero from the left. Since the function does not
-have the same limit from the right and the left, it can not be made
+have the same limit from the right and the left, it cannot be made
 continuous at $x=0$ even if one tries to define $f(0)$ as some number.
 
 ## Continuity of polynomials
@@ -2745,9 +2760,9 @@ $$p(x)=a_0+a_1x+a_2x^2+\ldots +a_n x^n$$ is a continuous function.
 ## Simple Limits
 
 ::: fbox
-A \"limit\" is used to describe the value that a function or sequence
-\"approaches\" as the input or index approaches some value. Limits are
-used to define continuity, derivatives and integrals.
+A **limit** is used to describe the value that a function or sequence
+approaches as the input or index approaches some value. Limits are used
+to define continuity, derivatives and integrals.
 
 ::: picture
 19
@@ -2765,9 +2780,9 @@ as the input or index approaches some value.
 
 Limits are essential to calculus (and mathematical analysis in general)
 and are used to define continuity, derivatives and integrals.\
-Consider a function and a point ${x}_0$. If $f(x)$ gets steadily closer
-to some number $c$ as $x$ gets closer to a number $x_0$, then $c$ is
-called the limit of $f(x)$ as $x$ goes to $x_0$ and is written as:
+Consider a function $f(x)$ and a point ${x}_0$. If $f(x)$ gets steadily
+closer to some number $c$ as $x$ gets closer to a number $x_0$, then $c$
+is called the limit of $f(x)$ as $x$ goes to $x_0$ and is written as:
 $$c= \lim_{x\to x_0}f(x)$$
 
 If $c = f(x_0)$ then $f$ is **continuous** at $x_0$.
@@ -2782,9 +2797,9 @@ $x\rightarrow 4$, or
 
 $$\lim_{x\rightarrow 4} \frac{x^{2}-16}{x-4}.$$
 
-Notice that in principle we can not simply stick in the value $x=4$
-since we would then get $0/0$ which is not defined. However we can look
-at the numerator and try to factor it.
+Notice that in principle we cannot simply stick in the value $x=4$ since
+we would then get $0/0$ which is not defined. However we can look at the
+numerator and try to factor it.
 
 This gives us:
 
@@ -2799,9 +2814,9 @@ Consider the function
 $$g (x ) =  \frac{1}{x}$$
 
 where $x$ is a positive real number. As $x$ increases, $g(x)$ decreases,
-approaching 0 but never getting there since $\frac{1}{x}=0$ has no
-solution. One can therefore say, "The limit of $g(x)$, as $x$ approaches
-infinity, is 0," and write $$\lim_{x\to\infty} g(x)=0.$$
+approaching $0$ but never getting there since $\frac{1}{x}=0$ has no
+solution. One can therefore say: "The limit of $g(x)$, as $x$ approaches
+infinity, is $0$," and write $$\lim_{x\to\infty} g(x)=0.$$
 :::
 
 ## More on limits
@@ -2823,8 +2838,9 @@ Figure: The function $f(x)= \frac{1}{1+e^{-x}}$.
 The Beverton-Holt stock recruitment curve is given by:
 $$R=\frac{\alpha S}{1+\frac{S}{K}}$$
 
-where $\alpha, K >0$ are constants and S = biomass and R= recruitment.\
-The behavior of this curve as S increases $S\rightarrow\infty$ is
+where $\alpha, K >0$ are constants and $S$ is biomass and $R$ is
+recruitment.\
+The behavior of this curve as $S$ increases $S\rightarrow\infty$ is
 $$\lim_{S\to\infty}\frac{\alpha S}{1+\frac{S}{K}} =\alpha K .$$ This is
 seen by rewriting the formula as follows:
 $$\lim_{S\to\infty}\frac{\alpha S}{1+\frac{S}{K}} =
@@ -2852,16 +2868,16 @@ $e^{-x} \rightarrow \infty$.
 :::
 
 ::: xmpl
-Evaluate the limit of $$f(x) = \frac{\sqrt{x + 4} - 2}{x}$$
+Evaluate the limit of $f(x) = \frac{\sqrt{x + 4} - 2}{x}$ as $x \to 0$,
+i.e. solve
 
-as $$x \to 0$$
+$$\lim_{x \to 0} \frac{\sqrt{x + 4} - 2}{x}.$$
 
-$$\lim_{x \to 0} \frac{\sqrt{x + 4} - 2}{x}$$
-
-Since the square root is present we cannot just direct substitute the 0
-as $x$. This will give us $\frac{0}{0}$, which is an indeterminate form.
-We must perform some algebra first. The way to get rid of the radical is
-to multiply the numerator by the conjugate.
+Since there is an $x$ in the denominator we cannot just direct
+substitute the 0 as $x$ sunce that would give us $\frac{0}{0}$, which is
+an indeterminate form. We must do some algebra first. The square root
+makes this a little bit tricky. The way to get rid of the radical is to
+multiply the numerator by the conjugate.
 
 $$\frac{\sqrt{x + 4} - 2}{x} \cdot \frac{\sqrt{x + 4} + 2}{\sqrt{x + 4} + 2}$$
 
@@ -2880,12 +2896,12 @@ Therefore, $$\lim_{x \to 0} \frac{\sqrt{x + 4} - 2}{x} = \frac{1}{4}$$
 ## One-sided limits
 
 ::: fbox
-$f(x)$ may tend towards different numbers depending on whether
-$x \rightarrow x_{0}$:
+$f(x)$ may tend towards different numbers depending on whether $x$
+approaches $x_0$ from left or right, usually written:
 
-from the right ($x \rightarrow x_{0+}$)
+$x \rightarrow x_{0+}$ (from the right)
 
-or from the left ($x \rightarrow x_{0-}$).
+$x \rightarrow x_{0-}$ (from the left).
 
 ::: picture
 21
@@ -2898,7 +2914,13 @@ Sometimes a function is such that $f(x)$ tends to different numbers
 depending on whether $x \rightarrow x_0$ from the right
 ($x \rightarrow x_{0+}$) or from the left ($x \rightarrow x_{0-}$).\
 If $$\lim_{x \to x_{0+}} f(x)=f(x_0)$$ then we say that $f$ is
-continuous from the right at $x_0$.
+continuous from the right at $x_0$. Same thing goes for the limit from
+the left. In order for the limit to exist at the point (that is the
+overall limit, regardless og direction) then it must hold true that
+
+$$\lim_{x \to x_{0-}} = \lim_{x to x_{0+}}$$
+
+i.e., the limit is the same from both directions.
 
 **Copyright** 2021, Gunnar Stefansson (editor) with contributions from
 very many students
@@ -2941,7 +2963,7 @@ $(2^nn)_{n\geq1}$ is the sequence $2,8, 24, 64,\ldots$.
 ## Convergent sequences
 
 ::: fbox
-A sequence $a_n$ is said to **converge** to the number b if for every
+A sequence $a_n$ is said to **converge** to the number $b$ if for every
 $\varepsilon >0$ we can find an $N\in \mathbb{N}$ such that
 $|a_n-b| < \varepsilon$ for all $n \geq N$. We denote this with
 $\lim_{n\to\infty}a_n=b$ or $a_n\to b$, as $n\to\infty$.
@@ -2949,12 +2971,12 @@ $\lim_{n\to\infty}a_n=b$ or $a_n\to b$, as $n\to\infty$.
 
 ### Details
 
-A sequence $a_n$ is said to **converge** to the number b if for every
+A sequence $a_n$ is said to **converge** to the number $b$ if for every
 $\varepsilon >0$ we can find an $N\in \mathbb{N}$ such that
 $|a_n-b| < \varepsilon$ for all $n \geq N$. We denote this with
 $\lim_{n\to\infty}a_n=b$ or $a_n\to b$, as $n\to\infty$.
 
-If x is a number then,
+If $x$ is a number then,
 
 $(1 + \frac{x}{n})^n \rightarrow e^x$ as $n\rightarrow\infty$
 
@@ -2990,14 +3012,14 @@ we write $$S=\sum_{n=1}^{\infty}a_n.$$
 ### Examples
 
 ::: xmpl
-If $$a_k = x^k, k=0,1,.....$$
+If $$a_k = x^k, qquad k=0,1,\dots$$
 
 \
-then $$s_n=\sum_{k=0}^{n}x^k=x^0+x^1+......+x^n$$ Note also that
-$$xs_n=x(x^0+x^1+......+x^n)= x + x^2 + ..... + x^{n+1}$$ We have
-$$s_n = 1 + x + x^2 + .... + x^n$$
+then $$s_n=\sum_{k=0}^{n}x^k=x^0+x^1+\dots .+x^n$$ Note also that
+$$xs_n=x(x^0+x^1+\dots .+x^n)= x + x^2 + \dots  + x^{n+1}$$ We have
+$$s_n = 1 + x + x^2 + \dots  + x^n$$
 
-$$xs_n = x + x^2 + ..... +x^n + x^{n+1}$$
+$$xs_n = x + x^2 + \dots  +x^n + x^{n+1}$$
 
 $$s_n – xs_n = 1 - x^{n+1}$$ i.e. $$s_n(1-x) = 1-x^{n+1}$$ and we have
 $$s_n =\frac{1-x^{n+1}}{1-x}$$ if $x\neq1$. If $0< x<1$ then
@@ -3086,7 +3108,7 @@ corresponding to a unit change in the $x$ coordinate.
 Let's assume we have a more general function
 
 $y = f(x)$.\
-To find the slope of a line segment, consider 2 $x$-coordinates, $x_0$
+To find the slope of a line segment, consider two $x$-coordinates; $x_0$
 and $x_1$, and look at the slope between $(x_0, f(x_0))$ and
 $(x_1, f(x_1))$.
 
@@ -3214,14 +3236,14 @@ if this limit exists.
 ### Details
 
 ::: defn
-The derivative of the function f at the point x is defined as
+The derivative of the function $f$ at the point $x$ is defined as
 $$\lim_{h \to 0} \frac{f(x+h) -f(x)}{h}$$
 
 if this limit exists.
 :::
 
 When we write $y = f(x)$, we commonly use the notation $\frac{dy}{dx}$
-or $f'(x)$ for this limit.
+or $f'(x)$ to denote the derivative.
 
 ## The derivative of $f(x)=a+bx$
 
@@ -3311,11 +3333,11 @@ terms of the polynomial.
 
 If
 
-$p(x)=a_0+a_1x+...+a_n x^n$
+$p(x)=a_0+a_1x+\dots +a_n x^n$
 
 then
 
-$p'(x)=a_1+2a_2x+3a_3x^2+4a_4x^3+...+na_n x^{(n-1)}$
+$p'(x)=a_1+2a_2x+3a_3x^2+4a_4x^3+\dots +na_n x^{(n-1)}$
 
 ### Examples
 
@@ -3367,9 +3389,11 @@ For fixed $x$ consider:
 
 $$\begin{aligned}
     f(p) &=& \ln(p^{x} (1-p)^{n-x})\\
-         &=& \ln p^{x} + \ln(1-p)^{n-x}\\%ln of a product is the sum of ln
+         &=& \ln p^{x} + \ln(1-p)^{n-x}\\
          &=& x \ln p + (n-x) \ln (1-p)\\
     \end{aligned}$$
+
+Then the derivative is computed as follows:
 
 $$\begin{aligned}
   f'(p)&=& x \frac{1}{p} + \frac{n-x}{1-p}(-1)\\
@@ -3378,7 +3402,9 @@ $$\begin{aligned}
 :::
 
 ::: xmpl
-$f(b) = (y-bx)^2$ ($y,x$ fixed)\
+For fixed $x$ and $y$ consider $f(b) = (y-bx)^2$ ($y,x$)\
+Then the derivative is computed as follows:
+
 $$\begin{aligned}
     f'(b)&=& 2 (y-bx) (-x)\\
          &=& -2x (y-bx)\\
@@ -3401,28 +3427,23 @@ USA.
 
 ::: fbox
 If $f$ is a function, then the sign of its derivative, $f'$, indicates
-whether $f$ is increasing ($f'>0$), decreasing ($f'<0$), or zero. $f'$
-can be zero at points where $f$ has a maximum, minimum, or a saddle
-point.
+whether $f$ is increasing ($f'>0$), decreasing ($f'<0$), or zero. If the
+derivative thakes the value 0 at a certain point $x_0$ then the function
+has maximum, minimum, or a saddle point at $x_0$.
 :::
 
 ### Details
 
-If $f$ is a function, then the sign of its derivative, $f'$, indicates
+-If $f$ is a function, then the sign of its derivative, $f'$, indicates
 whether $f$ is increasing ($f'>0$), decreasing ($f'<0$), or zero. $f'$
 can be zero at points where $f$ has a maximum, minimum, or a saddle
 point.\
-If $f'(x)>0$ for $x< x_0$, $f'(x_0)=0$ and $f'(x)<0$ for $x>x_0$ then
-$f$ has a maximum at $x_0$
-
-If $f'(x)<0$ for $x< x_0$, $f'(x_0)=0$ and $f'(x)>0$ for $x>x_0$ then
-$f$ has a minimum at $x_0$
-
-If $f'(x)>0$ for $x< x_0$, $f'(x_0)=0$ and $f'(x)>0$ for $x< x_0$ then
-$f$ has a saddle point at $x_0$
-
-If $f'(x)<0$ for $x< x_0$, $f'(x_0)=0$ and $f'(x)<0$ for $x< x_0$ then
-$f$ has a saddle point at $x_0$
+-If $f'(x)>0$ for $x< x_0$, $f'(x_0)=0$ and $f'(x)<0$ for $x>x_0$ then
+$f$ has a maximum at $x_0$ -If $f'(x)<0$ for $x< x_0$, $f'(x_0)=0$ and
+$f'(x)>0$ for $x>x_0$ then $f$ has a minimum at $x_0$ -If $f'(x)>0$ for
+$x< x_0$, $f'(x_0)=0$ and $f'(x)>0$ for $x< x_0$ then $f$ has a saddle
+point at $x_0$ -If $f'(x)<0$ for $x< x_0$, $f'(x_0)=0$ and $f'(x)<0$ for
+$x< x_0$ then $f$ has a saddle point at $x_0$
 
 ### Examples
 
@@ -3436,22 +3457,21 @@ minima at $2$ and $4$.
 ## Describing extrema using $f''$
 
 ::: fbox
-$x_0$ with $f'(x_0)=0$ corresponds to a maximum if $f''(x_0)<0$
-
-$x_0$ with $f'(x_0)=0$ corresponds to a minimum if $f''(x_0)>0$
+\-$x_0$ with $f'(x_0)=0$ corresponds to a maximum if $f''(x_0)<0$ -$x_0$
+with $f'(x_0)=0$ corresponds to a minimum if $f''(x_0)>0$
 :::
 
 ### Details
 
-If $f'(x_0)=0$ corresponds to a maximum, then the derivative is
-decreasing and the second derivative can not be positive, (i.e.
+-If $f'(x_0)=0$ corresponds to a maximum, then the derivative is
+decreasing and the second derivative cannot be positive, (i.e.
 $f''(x_0)\leq 0$). In particular, if the second derivative is strictly
 negative, ($f''(x_0) <0$), then we are assured that the point is indeed
 a maximum, and not a saddle point.\
-If $f'(x_0)=0$ corresponds to a minimum, then the derivative is
-increasing and the second derivative can not be negative, (i.e.
+-If $f'(x_0)=0$ corresponds to a minimum, then the derivative is
+increasing and the second derivative cannot be negative, (i.e.
 $f''(x_0) \geq 0$).\
-If the second derivative is zero, then the point may be a saddle point,
+-If the second derivative is zero, then the point may be a saddle point,
 as happens with $f(x)=x^3$ at $x=0$.
 
 ## The likelihood function
@@ -3472,9 +3492,9 @@ $${p_{\theta}}(x_1),  \ldots {p_{\theta}}(x_n)$$
 If the experiment gives $x_1, x_2 \ldots, x_n$ we can write the
 probability as a function of the parameters:
 
-$$L_{\mathbf{x}}(\theta) = p_{\theta}(x_1),  \ldots p_{\theta}(x_n).$$
+$$L_{\mathbf{x}}(\theta) = p_{\theta}(x_1),  \ldots , p_{\theta}(x_n).$$
 
-This is the *l*ikelihood function.
+This is the **likelihood function**.
 :::
 
 ### Details
@@ -3493,19 +3513,19 @@ $$p(x) = P [X = x].$$
 If we take a sample of independent measurements, from $p$, then the
 joint probability of a given set of numbers is,
 
-$$p(x_1) \cdot p(x_2) \cdot p(x_3) \ldots p(x_n)$$
+$$p(x_1) \cdot p(x_2) \cdot p(x_3) \cdot \ldots \cdot p(x_n)$$
 
 Suppose each probability includes the same parameter $\theta$, then this
 is typically written,
 
-$${p_{\theta}}(x_1),  \ldots {p_{\theta}}(x_n)$$
+$${p_{\theta}}(x_1), \ldots , {p_{\theta}}(x_n)$$
 
 Now consider the set of outcomes $x_1, x_2 \ldots, x_n$ from the
 experiment. We can now take the probability of this outcome as a
 function of the parameters.
 
 ::: defn
-$L_{\mathbf{x}}(\theta) = p_{\theta}(x_1),  \ldots p_{\theta}(x_n)$
+$L_{\mathbf{x}}(\theta) = p_{\theta}(x_1),  \ldots , p_{\theta}(x_n)$
 
 This is the **likelihood function** and we often seek to maximize it to
 estimate the unknown parameters.
@@ -3514,8 +3534,8 @@ estimate the unknown parameters.
 ### Examples
 
 ::: xmpl
-Suppose we toss a biased coin $n$ independent times and obtain x heads,
-we know the probability of obtaining x heads is,
+Suppose we toss a biased coin $n$ independent times and obtain $x$
+heads, we know the probability of obtaining $x$ heads is,
 
 $$\binom{n}{x}p^x (1-p)^{n-x}$$
 
@@ -3540,8 +3560,8 @@ missing example -- want to give a numeric example and plot $L$
 ## Maximum likelihood estimation
 
 ::: fbox
-If L is a likelihood function for a p.m.f. $p_{\theta}$, then the value
-$\hat{\theta}$ which gives the maximum of L:
+If $L$ is a likelihood function for a p.m.f. $p_{\theta}$, then the
+value $\hat{\theta}$ which gives the maximum of $L$:
 $$L (\hat{\theta}) = \max_\theta ({L}_\theta)$$ is the maximum
 likelihood estimator (MLE) of $\theta$
 :::
@@ -3549,8 +3569,8 @@ likelihood estimator (MLE) of $\theta$
 ### Details
 
 ::: defn
-If L is a likelihood function for a p.m.f. $p_{\theta}$, then the value
-$\hat{\theta}$ which gives the maximum of L:
+If $L$ is a likelihood function for a p.m.f. $p_{\theta}$, then the
+value $\hat{\theta}$ which gives the maximum of $L$:
 $$L (\hat{\theta}) = \max_\theta ({L}_\theta)$$ is the **maximum
 likelihood estimator** of $\theta$
 :::
@@ -3567,12 +3587,12 @@ Maximizing this is equivalent to maximizing the logarithm of the
 likelihood, since logarithmic functions are increasing. The
 log-likelihood can be written as:
 
-$$\ln (L(p))= \ln \binom{n}{x} + x \ln (p) + (n-x) \ln (1-p).$$
+$$\ell(p) = \ln (L(p))= \ln \binom{n}{x} + x \ln (p) + (n-x) \ln (1-p).$$
 
 To find possible maxima , we need to differentiate this formula and set
 the derivative to zero
 
-$$0 = \frac{dl (p)}{dp} = 0 + \frac{x}{p}+\frac{n-x}{1-p}(-1)$$
+$$0 = \frac{d \ell }{dp} = 0 + \frac{x}{p}+\frac{n-x}{1-p}(-1)$$
 
 $$0 = p(1-p) \frac{(x)}{p} - p(1-p)  \frac{n-x}{1-p}$$
 
@@ -3590,7 +3610,7 @@ is the extreme and so we can write
 
 $$\hat{p} = \frac{x}{n}$$
 
-for the MLE
+for the MLE.
 :::
 
 ## Least squares estimation
@@ -3614,7 +3634,7 @@ minimizing $$\sum_{i=1}^{n}{(y_i - g_i (\theta))^2} .$$
 One may predict numbers, $x_i$, as a mean, $\mu$, plus error. Consider
 the simple model $x_i = \mu + \epsilon_i$, where $\mu$ is an unknown
 parameter (constant) and $\epsilon_i$ is the error in measurement when
-obtaining the $i$'th observations, $x_i$, $i=1,\ldots , n$.\
+obtaining the $i^{th}$ observations, $x_i$, $i=1,\ldots , n$.\
 A natural method to estimate the parameter is to minimize the squared
 deviations $$\min_{\mu} \sum_{i=1}^n \left (x - \mu \right )^2  .$$
 
@@ -3635,13 +3655,17 @@ $$\min_{\alpha,\beta} \sum \left ( y_i - ( \alpha + \beta x_i) \right ) ^2$$
 
 ::: xmpl
 As a general exercise in finding the extreme of a function, let's look
-at the function $f(\theta)=\sum_{i=1}^N(x_i\theta -3)^2$ where $x_i$ are
-some constants. We wish to find the $\theta$ that minimizes this sum. We
-simply differentiate $\theta$ to obtain
-$f'(\theta)=\sum_{i=1}^n2(x_i\theta -3)x_1=2\sum_{i=1}^n x^2_i\theta -2\sum_{i=1}^n3x_i$.
-Thus, $$\begin{aligned}
-f'(\theta)&=2\theta \sum_{i=1}^n x^2_i-2\sum_{i=1}^n3x_i=0\\
-&\Leftrightarrow \theta=\frac{\sum_{i=1}^n3x_i}{\sum_{i=1}^n x^2_i}.\end{aligned}$$
+at the function $f(\theta)=\Sigma_{i=1}^N(x_i\theta -3)^2$ where $x_i$
+are some constants. We wish to find the $\theta$ that minimizes this
+sum. We simply differentiate $\theta$ to obtain
+
+$$f'(\theta)=\Sigma_{i=1}^n2(x_i\theta -3)x_1=2\sum_{i=1}^n x^2_i\theta -2\Sigma_{i=1}^n3x_i.$$
+
+Thus,
+
+$$\begin{aligned}
+f'(\theta)&=2\theta \Sigma_{i=1}^n x^2_i-2\Sigma_{i=1}^n3x_i=0\\
+&\Leftrightarrow \theta=\frac{\Sigma_{i=1}^n3x_i}{\Sigma_{i=1}^n x^2_i}.\end{aligned}$$
 :::
 
 **Copyright** 2021, Gunnar Stefansson (editor) with contributions from
@@ -3658,8 +3682,8 @@ USA.
 ## Area under a curve
 
 ::: fbox
-The area under a curve between x=a and x=b (for a positive function) is
-called the integral of the function.
+The area under a curve between $x=a$ and $x=b$ (for a positive function)
+is called the integral of the function.
 
 ::: picture
 28
@@ -3671,8 +3695,8 @@ Figure: Example 1, 2 and 3
 ### Details
 
 ::: defn
-The area under a curve between x=a and x=b (for a positive function) is
-called the **integral of the function** and is denoted:
+The area under a curve between $x=a$ and $x=b$ (for a positive function)
+is called the **integral of the function** and is denoted:
 $\int_{a}^{b} f(x)dx$ when it exists.
 :::
 
@@ -3691,8 +3715,8 @@ always include the constant, e.g. $\int x dx=\frac{1}{2}x^2+C$.
 ### Examples
 
 ::: xmpl
-The antiderivative of $x$ to a power raises the power.
-$\int x^n dx=\frac{1}{n+1}x^{n+1} +C$.
+The antiderivative of $x$ to a power raises the power by one and devides
+it by the new power: $$\int x^n dx=\frac{1}{n+1}x^{n+1} +C.$$
 :::
 
 ::: xmpl
@@ -3773,7 +3797,8 @@ $X$.
 :::
 
 ::: defn
-The function $$F(x)= \int\limits^{x}_{-\infty} f(t)dt$$
+The functionThis distribution has the expected value
+$$F(x)= \int\limits^{x}_{-\infty} f(t)dt$$
 
 is the **cumulative distribution function (c.d.f.)**.
 :::
@@ -3801,43 +3826,43 @@ $$P[X\leq x] = \int\limits^{x}_{-\infty} f(t)dt =
 :::
 
 ::: xmpl
-Suppose $X \sim P(\lambda)$, where X may denote the number of events per
-unit time. The p.m.f. of X is described by
-$p(x)=P[X=x]=e^{-\lambda}\frac{\lambda^x}{x!}$ for $x=0,1,2,...$.
-Consider now the waiting time, T, between events, or simply until the
-first event. Consider the event $T>t$ for some number t\>0. If
+Suppose $X \sim P(\lambda)$, where $X$ may denote the number of events
+per unit time. The p.m.f. of $X$ is described by
+$p(x)=P[X=x]=e^{-\lambda}\frac{\lambda^x}{x!}$ for $x=0,1,2,\dots$. Let
+$T$ denote the waiting time between events, or simply until the first
+event. Consider the event $T>t$ for some number $t>0$. If
 $X\sim p(\lambda)$ denotes the number of events per unit time, then let
-$X_t$ denote the number of events during the time period for 0 through
-t. Then it is natural to assume
-
-$X_t \sim P(\lambda t)$ and it follows that $T>t$ if and only if $X_t=0$
-and we obtain $P[T>t]=P[X_t=0]=e^{-\lambda t}$. It follows that the
-c.d.f. of T is $F_T(t)=P[T\leq t]=1-P[T>t]=1-e^{-\lambda t}$ for $t>0$.\
-The p.d.f. of T is therefore
-$f_T(t)=F_T'(t)=\frac{d}{dt}F_T(t)=\frac{d}{dt}(1-e^{-\lambda t}=0-e^{- \lambda t}*(-\lambda)=\lambda e^{-\lambda t}$
-for $t \geq 0$ and $f_T(t)=0$ for $t=0$.\
+$X_t$ be the number of events during the time period for $0$ through
+$t$. Then it is natural to assume $X_t \sim P(\lambda t)$ and it follows
+that $T>t$ if and only if $X_t=0$ and we obtain
+$P[T>t]=P[X_t=0]=e^{-\lambda t}$. It follows that the c.d.f. of $T$ is
+$F_T(t)=P[T\leq t]=1-P[T>t]=1-e^{-\lambda t}$ for $t>0$.\
+The p.d.f. of $T$ is therefore
+$f_T(t)=F_T'(t)=\frac{d}{dt}F_T(t)=\frac{d}{dt}(1-e^{-\lambda t})=0-e^{- \lambda t} \cdot (-\lambda)=\lambda e^{-\lambda t}$
+for $t \geq 0$ and $f_T(t)=0$ for $t < 0$.\
 The resulting density
 
 $$f(t) =
 \begin{cases}
-  \lambda e^{-\lambda t} & \text{for}& t \geq0\\
-  0 & \text{for} & t<0
+  \lambda e^{-\lambda t} & \text{for } t \geq0\\
+  0 & \text{for } t<0
 \end{cases}.$$
 
 describes the exponential distribution.
 
 This distribution has the expected value
-$$E[T]=\int\limits^{\infty}_{-\infty} tf(t)dt=\int\limits^{\infty}_{0} t \lambda e^{-\lambda t}dt.$$
+$$E[T]=\int_{-\infty}^{\infty} tf(t)dt=\lambda \int_{0}^{\infty} t e^{-\lambda t}dt.$$
 
-**the stuff below is all messed up\...**
+Let's use integration by parts (see below), i.e.:
+$\int fg' = fg - \int f'g$ to solve that integral. Let $f=t$ and
+$g'=e^{-\lambda t}$. Then $f' = 1$ and
+$g=-\frac{e^{- \lambda t}}{\lambda}$. We obtain:
 
-We set $u=\lambda t$ and $du=\lambda dt$ to obtain
-$$\int ue^{-u}du= \frac{1}{\lambda}\int\limits^{\infty}_{0} ue^{-u}du=\frac{1}{\lambda}=
-\int\limits^{\infty}_{0} 1 \cdot e^{-u}du$$
-
-$$=\left [ -ue^{-u}\right ] _0^{\infty}$$
-
-$$=\left[\frac{1}{\lambda}(-e^{-u})\right]_{0}^{\infty} -0=\frac{1}{\lambda} .$$
+$$\begin{aligned}
+  &=\lambda \left( \left[ \frac{-te^{-\lambda t}}{\lambda}\right]_{0}^{\infty} - \int_0^\infty - \frac{-e^{-\lambda t}}{\lambda} dt \right)\\
+  &= \lambda \left( (0 - 0) - \left[ \frac{e^{-\lambda t}}{\lambda^2} \right]_0^\infty \right)\\
+  &= -\lambda \left(0 - \frac{1}{\lambda^2}\right)\\
+  &= \frac{1}{\lambda}\end{aligned}$$
 :::
 
 ## Probabilities in R: The normal distribution
@@ -3856,16 +3881,16 @@ $$p(t)=\frac{1}{\sqrt{2\pi}}e^{-\frac{t^2}{2}}$$
 
 The c.d.f. for the normal distribution is
 
-$$\Phi(x)=\int\limits_{-\infty}^x\frac{1}{\sqrt{2\pi}}e^{-\frac{t^2}{2}}dt$$
+$$\Phi(x)=\int_{-\infty}^x\frac{1}{\sqrt{2\pi}}e^{-\frac{t^2}{2}}dt$$
 
 ### Examples
 
 ::: xmpl
-dnorm() gives the value of the normal p.d.f.
+$\verb|dnorm()|$ gives the value of the normal p.d.f.
 :::
 
 ::: xmpl
-pnorm() gives the value of the normal c.d.f.
+$\verb|pnorm()|$ gives the value of the normal c.d.f.
 :::
 
 ## Some rules of integration
@@ -3965,7 +3990,7 @@ A function can then be set up with the file number as an argument:
       cat("The URL B", fname,"\n")
       dat<-read.table(fname,header=T)
       ttl<-paste("Data from file number", fnum)
-      plot(datÆle,datÆosl,main=ttl)
+      plot(dat$le,dat$osl,main=ttl)
       }
 
 Now call this with
@@ -3995,9 +4020,9 @@ source("input.r")\
 The goal of this practice is to end up with a set of files which are
 completely self-contained, so one can start with an empty R session and
 give only the commands like:\
-source ("input.r")\
-source ("functions.r")\
-source ("analysis.r")\
+- $\verb|source(“input.r”)|$\
+- $\verb|source(“functions.r”)|$\
+- $\verb|source(“analysis.r”)|$\
 Furthermore, this ensures repeatability.
 
 ### Examples
@@ -4017,7 +4042,7 @@ functions.r:
       cat("The URL is",fname,"\n")
       dat<-read.table(fname,header=T)
       ttl<-paste("My data set was",fnum)
-      plot(datÆle,datÆosl,main=ttl,xlab="Length(cm)",ylab="Live weight (g)")
+      plot(dat$le,dat$osl,main=ttl,xlab="Length(cm)",ylab="Live weight (g)")
     }
 
 output.r:
@@ -4033,11 +4058,11 @@ output.r:
 These files can be executed with source commands as below:
 
 ::: description
-source ("input.r")
+$\verb|source (“input.r”)|$
 
-source ("functions.r")
+$\verb|source (“functions.r”)|$
 
-source ("output.r")
+$\verb|source (“output.r”)|$
 :::
 :::
 
@@ -4159,15 +4184,16 @@ or a loop
 ## The if and ifelse commands
 
 ::: fbox
-The \"if\" statement is used to conditionally execute statements.\
-The \"ifelse\" statement conditionally replaces elements of a structure.
+The $\verb|if|$ statement is used to conditionally execute statements.\
+The $\verb|ifelse|$ statement conditionally replaces elements of a
+structure.
 :::
 
 ### Examples
 
 ::: xmpl
-If we want to compute $x^x$ for $x$-values in the range 0 through 5, we
-can use
+If we want to compute $x^x$ for $x$-values in the range $0$ through $5$,
+we can use
 
     xlist<-seq(0,5,0.01)
     y<-NULL
@@ -4202,7 +4228,8 @@ Code should be properly indented!
 
 ### Details
 
-fFunctions, for-loops, and if-statements should always be indented.
+$\verb|fFunctions|$, $\verb|for|$-loops, and $\verb|if|$-statements
+should always be indented.
 
 ## Comments
 
@@ -4318,10 +4345,10 @@ will become close to $\sigma$ as $n$ increases.
 ## Properties of the binomial and Poisson distributions
 
 ::: fbox
-The binomial distribution is really a sum of 0 and 1 values (counts of
-failures = 0 and successes =1). So, a simple, single binomial outcome
-will correspond to coming from a normal distribution if the count is
-large enough.
+The binomial distribution is really a sum of $0$ and $1$ values (counts
+of failures $= 0$ and successes $=1$). So, a simple, single binomial
+outcome will correspond to coming from a normal distribution if the
+count is large enough.
 :::
 
 ### Details
@@ -4361,16 +4388,16 @@ corresponding Poisson.
 ::: xmpl
 The mean of a binomial (n,p) variable is $\mu=n\cdot p$ and the variance
 is $\sigma^2=np(1-p)$.\
-The R command $dbinom(q,n,p)$ calculates the probability of $q$
+The R command $\verb|dbinom(q,n,p)|$ calculates the probability of $q$
 successes in $n$ trials assuming that the probability of a success is
 $p$ in each trial (binomial distribution), and the R command
-$pbinom(q,n,p)$ calculates the probability of obtaining $q$ or fewer
-successes in $n$ trials.
+$\verb|pbinom(q,n,p)|$ calculates the probability of obtaining $q$ or
+fewer successes in $n$ trials.
 
 The normal approximation of this distribution can be calculated with
-$pnorm(q,mu,sigma)$ which becomes $pnorm(q,np,sqrt(np(1-p))$. Three
-numerical examples (note that pbinom and pnorm give similar values for
-large n):
+$\verb|pnorm(q,mu,sigma)|$ which becomes
+$\verb|pnorm|(q,np,sqrt(np(1-p))|$. Three numerical examples (note that
+pbinom and pnorm give similar values for large n):
 
     pbinom(3,10,0.2)
     [1] 0.8791261
@@ -4439,7 +4466,7 @@ $$t = \frac{\overline x - \mu}{s / \sqrt{n}}$$
 but we want to know the distribution of those when $\mu$ is the true
 mean.\
 For instance, $n=5$ and $\mu = 1$, we can simulate (repeatedly)
-$x_1, \ldots , x_5$ and compute a t-value for each. The following R
+$x_1, \ldots , x_5$ and compute a $t$-value for each. The following R
 commands can be used for this:
 
     library(MASS)
@@ -4489,7 +4516,7 @@ $$F(x)=P[X \leq x]$$
 ::: xmpl
 If $X \sim Bin(n,p)$ has binomial distribution, i.e.
 $$P(X = x) = {n \choose x}p^x(1-p)^{n-x},$$ then cumulative
-probabilities can be computed with $pbinom$, e.g.
+probabilities can be computed with $\verb|pbinom|$, e.g.
 
     pbinom(5,10,0.5) 
 
@@ -4503,7 +4530,7 @@ $$P[X \leq 5]  = \sum_{x=0}^5 {10\choose x} \frac{1}{2}^x\frac{1}{2}^{10-x}.$$
 This becomes
 $$P[X \leq 5]  = {10\choose 0} \frac{1}{2}^0\frac{1}{2}^{10-0} +{10\choose 1} \frac{1}{2}^1\frac{1}{2}^{10-1}+{10\choose 1} \frac{1}{2}^2\frac{1}{2}^{10-2}+{10\choose 3} \frac{1}{2}^3\frac{1}{2}^{10-3}+{10\choose 4} \frac{1}{2}^4\frac{1}{2}^{10-4}+{10\choose 5} \frac{1}{2}^5\frac{1}{2}^{10-5}$$
 or
-$$P[X \leq 5]  = {10\choose 0} \frac{1}{2}^{10} +{10\choose 1} \frac{1}{2}^{10}+{10\choose 1} \frac{1}{2}^{10}+{10\choose 3} \frac{1}{2}^{10}+{10\choose 4} \frac{1}{2}^{10}+{10\choose 5} \frac{1}{2}^{10}=\frac{1}{2}^{10} \left(1+10+45+...\right).$$
+$$P[X \leq 5]  = {10\choose 0} \frac{1}{2}^{10} +{10\choose 1} \frac{1}{2}^{10}+{10\choose 1} \frac{1}{2}^{10}+{10\choose 3} \frac{1}{2}^{10}+{10\choose 4} \frac{1}{2}^{10}+{10\choose 5} \frac{1}{2}^{10}=\frac{1}{2}^{10} \left(1+10+45+\dots \right).$$
 
 Furthermore,
 
@@ -4516,7 +4543,7 @@ and
     [1] 0.0009765625
 
 It is sometimes of interest to compute $P[X=x]$ in this case, and this
-is given by the $dbinom$ function, e.g.
+is given by the $\verb|dbinom|$ function, e.g.
 
     dbinom(1,10,0.5)
     [1] 0.009765625
@@ -4547,7 +4574,7 @@ To obtain $P[a \leq X \leq b],$ we use $punif$ twice, e.g.
 To compute probabilities $X\sim N(\mu,\sigma^2)$ is usually transformed,
 since we know that $$Z:=\frac{X-\mu}{\sigma} \sim(0,1)$$ The
 probabilities can then be computed for either $X$ or $Z$ with the
-$pnorm$ function in R.
+$\verb|pnorm|$ function in R.
 :::
 
 ### Details
@@ -4555,8 +4582,8 @@ $pnorm$ function in R.
 Suppose $X$ has a normal distribution with mean $\mu$ and variance
 $$X\sim N(\mu,\sigma^2)$$ then to compute probabilities, $X$ is usually
 transformed, since we know that $$Z=\frac{X-\mu}{\sigma} \sim(0,1)$$ and
-the probabilities can be computed for either $X$ or $Z$ with the $pnorm$
-function.
+the probabilities can be computed for either $X$ or $Z$ with the
+$\verb|pnorm|$ function.
 
 ### Examples
 
@@ -4575,16 +4602,17 @@ If $Z \sim N(0,1)$ then we can e.g. obtain $P[Z\leq1.96]$ with
     pnorm(1.96)-pnorm(-1.96)
     [1] 0.9500042
 
-The last one gives the area between -1.96 and 1.96.
+The last one gives the area between $-1.96$ and $1.96$.
 :::
 
 ::: xmpl
 If $X \sim N(42,3^2)$ then we can compute probabilites either by
 transforming $$\begin{aligned}
-P[X\leq x] &= P[\frac{X-\mu}{\sigma} \leq \frac{x-\mu}{\sigma}]\\
-           &= P[Z \leq \frac{x-\mu}{\sigma}]\end{aligned}$$ and calling
-$pnorm$ with the computed value $z=\frac{x-\mu}{\sigma}$, or call
-$pnorm$ with $x$ and specify $\mu$ and $\sigma$.\
+P[X\leq x] &= P\left[\frac{X-\mu}{\sigma} \leq \frac{x-\mu}{\sigma}\right]\\
+           &= P\left[Z \leq \frac{x-\mu}{\sigma}\right]\end{aligned}$$
+and calling $\verb|pnorm|$ with the computed value
+$z=\frac{x-\mu}{\sigma}$, or call $\verb|pnorm|$ with $x$ and specify
+$\mu$ and $\sigma$.\
 \
 To compute $P[X\leq 48]$, either set $z=(48-42)/3=2$ and obtain
 
@@ -4629,7 +4657,7 @@ If $H_0$ is true, then
 
 $$z:= \frac{\overline{x}-\mu_0}{\sigma / \sqrt{n}}$$
 
-is an observation from an $n \sim n (0,1)$ distribution, i.e. an outcome
+is an observation from an $n \sim N (0,1)$ distribution, i.e. an outcome
 of
 
 $$Z= \frac{\overline{X}-\mu_0}{\sigma / \sqrt{n}}$$
@@ -4638,8 +4666,8 @@ where $Z \sim N(0,1)$ when $H_0$ is correct. It follows that e.g.
 $P[\vert Z \vert > 1.96] = 0.05$ and if we observe
 $\vert Z \vert > 1.96$ then we reject the null hypothesis.\
 Note that the value $z^\ast = 1.96$ is a quantile of the normal
-distribution and we can obtain other quantiles with the $pnorm$
-function, e.g. $pnorm(0.975)$ gives 1.96.
+distribution and we can obtain other quantiles with the $\verb|pnorm|$
+function, e.g. $\verb|pnorm|(0.975)|$ gives $1.96$.
 
 **Copyright** 2021, Gunnar Stefansson (editor) with contributions from
 very many students
@@ -4655,10 +4683,7 @@ USA.
 ## Joint probability distribution
 
 ::: fbox
-If
-
-$X_1,\ldots, X_n$ are discrete random variables with
-
+If $X_1,\ldots, X_n$ are discrete random variables with
 $P[X_1 = x_1, X_2 = x_2,\ldots, X_n = x_n] = p(x_1,\ldots, x_n)$, where
 $x_1, \ldots, x_n$ are numbers, then the function $p$ is the joint
 probability mass function (p.m.f.) for the random variables
@@ -4701,6 +4726,32 @@ $$P[X \in {A}] = \sum_{(x_1,\ldots,x_n)\in A} p(x_1,\ldots, x_n).$$
 
 ### Examples
 
+::: xmpl
+An urn contains blue and red marbles, which are either light or heavy.
+Let $X$ denote the color and $Y$ the weight of a marble, chosen at
+random\
+$$\begin{array}{c c c c}
+\hline\hline
+  X \setminus Y &   \text{L}    &   \text{H}    &   \text{Total} \\
+  B &   5   &   6   &   11\\
+  R &   7   &   2   &   9\\
+  TT    &   12  &   8   &   20\\
+\hline
+\end{array}$$
+
+We have $P[X="'b"', Y ="l"'] = \frac{5}{20}$.\
+The joint p.m.f. is:
+
+$$\begin{array}{c c c c}
+\hline\hline
+X \setminus Y   &   \text{L}    &   \text{H}    &   \text{Total} \\
+\text{B}      & \frac{5}{20}    & \frac{6}{20}  & \frac{11}{20}\\
+\text{R}      & \frac{7}{20}    & \frac{2}{20}  & \frac{9}{20}\\
+\text{Total}  & \frac{12}{20}   & \frac{8}{20}  &   1\\
+\hline
+\end{array}$$
+:::
+
 ## The random sample
 
 ::: fbox
@@ -4725,7 +4776,7 @@ In **random sampling**, each item or element of the population has an
 equal and independent chance of being selected.
 :::
 
-A set of random variables; $X_1 \ldots X_n$ is a random sample if they
+A set of random variables; $X_1, \ldots, X_n$ is a random sample if they
 are independent and identically distributed (i.i.d.).
 
 ::: defn
@@ -4737,9 +4788,9 @@ random variables, these are called a **random sample**.
 
 ::: xmpl
 If $X_1, \ldots, X_n  \sim Unf(0,1)$, i.i.d., i.e. $X_1$ and $X_n$ are
-independent and each have a uniform distribution between 0 and 1. Then
-they have a joint density which is the product of the densities of $X_1$
-and $X_n$.\
+independent and each have a uniform distribution between $0$ and $1$.
+Then they have a joint density which is the product of the densities of
+$X_1$ and $X_n$.\
 Given the data in the above figure and if $x_1 , x_2 \in \mathbb{R}$
 
 $$f(x_1, x_2) = f_1(x_1) f_2(x_2) =
@@ -4788,8 +4839,8 @@ $(X,Y) = \text{outcomes}$,
 
 $$P[X+Y =7] =\frac{6}{36}=\frac{1}{6}$$
 
-Because there are a total of 36 equally likely outcomes and 7 occurs six
-times this means that $P[X + Y = 7] =\frac{1}{6}$.
+Because there are a total of $36$ equally likely outcomes and $7$ occurs
+six times this means that $P[X + Y = 7] =\frac{1}{6}$.
 
 Also $$P[X+Y = 4] = \frac{3}{36} = \frac{1}{12}$$
 :::
@@ -4820,19 +4871,19 @@ If $X,Y \sim Unf(0,1)$, independent and $Z=X+Y$ then
 
 $$P[Z \leq z]= 
 \begin{cases}
-  0 & \text{for} & z \leq 0\\
-  \frac{z^2}{2} & \text{for} & 0< z <1\\
-  1 & \text{for}& z>2\\
-  1-\frac{(2-z)^2}{2} & \text{for} & 1< z <2
+  0 & \text{for } z \leq 0\\
+  \frac{z^2}{2} & \text{for } 0< z <1\\
+  1 & \text{for } z>2\\
+  1-\frac{(2-z)^2}{2} & \text{for } 1< z <2
 \end{cases}$$
 
 the density of $z$ becomes
 
 $$g(z)= 
 \begin{cases}
-  z & \text{for} & 0 < z \leq 1\\
-  2-z & \text{for} & 1 < z \leq 2\\
-  0 & \text{for} & \text{elsewhere}
+  z & \text{for } 0 < z \leq 1\\
+  2-z & \text{for } 1 < z \leq 2\\
+  0 & \text{for } \text{elsewhere}
 \end{cases}.$$
 :::
 
@@ -4859,9 +4910,9 @@ $$E[X+Y] = E[X]+E[Y]$$
 i.e. the expected value of the sum is just the sum of the expected
 values. The same applies to a finite sum, and more generally
 
-$$E[\sum_{i=1}^{n} a_i X_i] = \sum_{i=1}^{n} a_i E[X_i]$$ when
-$X_i,...,X_n$ are random variables and $a_1,...,a_n$ are numbers (if the
-expectations exist).
+$$E\left[\sum_{i=1}^{n} a_i X_i\right] = \sum_{i=1}^{n} a_i E[X_i]$$
+when $X_i,\dots ,X_n$ are random variables and $a_1,\dots ,a_n$ are
+numbers (if the expectations exist).
 
 If the random variables are independent, then the variance also add
 
@@ -4874,7 +4925,7 @@ $$Var\left[\sum_{i=1}^{n} a_i X_i\right] = \sum_{i=1}^{n} a_i^2 Var[X_i]$$
 ::: xmpl
 $X,Y \sim Unf(0,1)$, i.i.d. then
 
-$$E[X+Y]=E[X] + E[Y] = \int_0^1 x\cdot 1dx+\int_0^1 x\cdot 1dx = [\frac{1}{2}x^2]_0^1+[\frac{1}{2}x^2]_0^1=1.$$
+$$E[X+Y]=E[X] + E[Y] = \int_0^1 x\cdot 1dx+\int_0^1 x\cdot 1dx = \left[\frac{1}{2}x^2\right]_0^1+\left[\frac{1}{2}x^2\right]_0^1=1.$$
 :::
 
 ::: xmpl
@@ -4884,7 +4935,7 @@ Let $X,Y\sim N(0,1)$. Then $E[X^2+Y^2] = 1+1=2$.
 ## Means and variances of linear combinations of measurements
 
 ::: fbox
-If $x_1,....,x_n$ and $y_1,....,y_n$ are numbers, and we set
+If $x_1,\dots ,x_n$ and $y_1,\dots ,y_n$ are numbers, and we set
 $$z_i=x_i + y_i$$
 
 $$w_i=ax_i$$ where $a>0$, then
@@ -4958,7 +5009,7 @@ $$f(z_1,z_2)=\frac{1}{(\sqrt{2\pi})^2} e^{\frac{-z_1^2}{2}-\frac{z_2^2}{2}} .$$
 
 ### Details
 
-If $X\sim n (\mu_1,\sigma_1^2)$ and $Y\sim N(\mu_2, \sigma_2^2)$ are
+If $X\sim N (\mu_1,\sigma_1^2)$ and $Y\sim N(\mu_2, \sigma_2^2)$ are
 independent, then their densities are
 $$f_X (x)= \frac{1}{\sqrt{2\pi}\sigma_1} e^\frac{-(x-\mu_1)^2}{2\sigma_1^2}$$
 and
@@ -4967,7 +5018,7 @@ and the joint density becomes\
 $$\frac{1}{2\pi\sigma_1\sigma_2} e^{-\frac{(x-\mu_1)^2}{2\sigma_1^2}-\frac{(y-\mu_2)^2}{2\sigma_2^2}}$$
 
 Now, suppose $X_1,\ldots,X_n\sim N(\mu,\sigma^2)$ are i.i.d., then\
-$$f(\underline{x})=\frac{1}{(2\pi)^\frac{n}{2}\sigma^n}\; e^{-\displaystyle\sum^{n}_{i=1} \frac{(x_i-\mu)^2}{a\sigma^2}}$$
+$$f(\underline{x})=\frac{1}{(2\pi)^\frac{n}{2}\sigma^n} e^{-\displaystyle\sum^{n}_{i=1} \frac{(x_i-\mu)^2}{a\sigma^2}}$$
 
 \
 is the multivariate normal density in the case of i.i.d. variables.
@@ -5019,7 +5070,7 @@ $$\mathbf{X}= \left( \begin{array}{ccc}
   X_1 \\ 
   \vdots \\
   X_n
-  \end{array}\right).$$
+\end{array}\right).$$
 
 If we have the joint density of some multidimensional random variable
 $X=(X_1,\ldots,X_n)$ given in this manner, then we can find the
@@ -5130,9 +5181,9 @@ Sum of nine normal distributions, all with $\mu = 42$ and $\sigma^2=2^2$
 ## The chi-square distribution
 
 ::: fbox
-If $X \sim n$ (0,1),then $Y = X^2$ has a distribution which is called
-the chi-square distribution ($\chi^2$) on one degree of freedom. This
-can be written as:
+If $X \sim N(0,1)$,then $Y = X^2$ has a distribution which is called the
+chi-square distribution ($\chi^2$) on one degree of freedom. This can be
+written as:
 
 $$Y \sim \chi^2$$
 
@@ -5167,7 +5218,7 @@ $$Y_1 + Y_2 = \chi^2_{\nu_1+ \nu_2}$$
 ### Details
 
 ::: notes
-*Note 20*. Recall that if $$X_1, \ldots, X_n \sim n (\mu, \sigma^2)$$
+*Note 20*. Recall that if $$X_1, \ldots, X_n \sim N (\mu, \sigma^2)$$
 
 are i.i.d., then
 
@@ -5226,8 +5277,8 @@ of freedom denoted $T \sim t_{\nu}$.
 ::: defn
 If $U\sim N(0,1)$ and $W\sim\chi^{2}_{\nu}$ are independent, then the
 random variable $$T:=\frac{U}{\sqrt{\frac{w}{\nu}}}$$ has a distribution
-which we call the **$T$ distribution** on $\nu$ degrees of freedom,
-denoted $T \sim t_\nu$.
+which we call the $T$ distribution on $\nu$ degrees of freedom, denoted
+$T \sim t_\nu$.
 :::
 
 It turns out that if $X_1, \ldots ,X_n \sim N(\mu,\sigma ^2)$ and we set
@@ -5235,7 +5286,7 @@ $$\bar{X}=\frac{1}{n}\sum_{i=1}^n X_i$$ and $$S=
 \sqrt{\frac{1}{1-n}\sum_{i=1}^n (X_i-X)^2}$$ then
 $$\frac{\bar{X}-\mu}{S/\sqrt{n}} \sim t_{n-1}.$$
 
-This follows from $\bar{X}$ and $\sum_{i=1}^N(X_i-\bar{X})^2$ being
+This follows from $\bar{X}$ and $\Sigma_{i=1}^N(X_i-\bar{X})^2$ being
 independent and $\frac{\bar{X}-\mu}{\sigma/\sqrt{n}}\sim N(0,1)$,
 $\sum \frac{(X_i-\bar{X})^2}{\sigma^2}\sim \chi_{n-1}^2$.
 
@@ -5295,7 +5346,7 @@ $$=\Pi_{i=1}^n \frac{1}{\sqrt{2\pi}\sigma}e^{-\frac{(x_i-\mu)^2}{2\sigma^2}}$$
 $$=\frac{1}{(2\pi)^{n/2}\sigma^n}e^{-\frac{1}{2\sigma^2}\sum_{i=1}^N(x_i-\mu)^2}$$
 
 and if we assume $\sigma^2$ is known then the likelihood function is
-$$L(\mu)=\frac{1}{(2\pi)^{n/2}\sigma^n}e^{-\frac{1}{2\sigma^2}\sum_{i=1}^N(x_i-\mu)^2}$$
+$$L(\mu)=\frac{1}{(2\pi)^{n/2}\sigma^n}e^{-\frac{1}{2\sigma^2}\Sigma_{i=1}^N(x_i-\mu)^2}$$
 
 Maximizing this is done by maximizing the log, i.e. finding the $\mu$
 for which: $$\frac{d}{d\mu}\ln L(\mu)=0,$$ which again results in the
@@ -5350,8 +5401,8 @@ variables and lower case letters to denote outcome or data.
 
 ::: xmpl
 Let the mean of a population be zero and the $\sigma=4$. Then draw three
-samples from this population with size, n, either 4, 16 or 64. The
-sample mean $\bar{X}$ will have a distribution with mean zero and
+samples from this population with size, $n$, either $4$, $16$ or $64$.
+The sample mean $\bar{X}$ will have a distribution with mean zero and
 standard deviation of $\frac{\sigma}{\sqrt{n}}$ where $n= 4$, $16$ or
 $64$.
 :::
@@ -5363,11 +5414,11 @@ In OLS regression, note that the values of $a$ and $b$
 
 $$a = \overline{y} - b \overline{x}$$
 
-$$b = \frac{\sum_{i=1}^{n} (x_i - \overline{x}) (y_i - \overline{y})}{\sum_{i=1}^{n} (x_i - \overline{x})^2}$$
+$$b = \frac{\Sigma_{i=1}^{n} (x_i - \overline{x}) (y_i - \overline{y})}{\Sigma_{i=1}^{n} (x_i - \overline{x})^2}$$
 
 are outcomes of random variables e.g. $b$ is the outcome of
 
-$$\hat{\beta} = \frac{\sum_{i=1}^{n} (x_i - \overline{x}) (Y_i - \overline{Y})}{\sum_{i=1}^{n} (x_i - \overline{x})^2}$$
+$$\hat{\beta} = \frac{\Sigma_{i=1}^{n} (x_i - \overline{x}) (Y_i - \overline{Y})}{\Sigma_{i=1}^{n} (x_i - \overline{x})^2}$$
 
 the estimator which has some distribution.
 
@@ -5425,48 +5476,28 @@ probability of rejection when $H_1$ is true.
 ### Examples
 
 ::: xmpl
-Suppose we want to evaluate whether a coin is biased. We can plan an
-experiment for this. Suppose we toss the coin 5 times and count the
-number of heads. We can test the following hypothesis simply.\
-$H_0: p = \frac {1} {2}$ where $H_0$ is the null hypothesis
-
-$H_1 ; p > \frac {1} {2}$ where $H_1$ is an alternative hypothesis
-
-and $p$ is probability of having a head.\
-We reject $H_0$ if we get all heads. (Assuming the only interest is in a
-tendency towards larger probabilities). So the probability of rejecting
-the null hypothesis $H_0$ is:
-
-P\[reject $H_0$\]= P \[ all heads in 5 trials\] $\equiv p^5$
-
-If $H_0$ is true, then P \[reject $H_0$\] = $\frac {1} {2}$\
-Need to choose 5 trials to ensure
-$\frac {1} {2^5} = \frac {1} {32} < \frac {1} {32} < 0.05$\
-i.e. The probability of incorrectly rejecting $H_0$ is less than
-$\alpha = 0.05$
-:::
-
-::: xmpl
 Flip a coin to test
 
 $H_0: P = \frac {1} {2}$ vs $H_1: P \neq \frac {1} {2}$\
 Reject, if no heads or all heads are obtained in 6 trials, where the
 error rate is
 
-P \[reject $H_0$ when true\] = P \[all heads or all tails\]
+$$\begin{aligned}
+  P[ \text{Reject } H_0 \text{ when true}] &= P [\text{All heads or all tails}]\\
+  &=P[\text{All heads}] + P[\text{All tails}]\\
+  &= \frac {1} {2^6} + \frac {1} {2^6}\\
+  &= 2 \cdot \frac {1} {64}\\
+  &= \frac {1} {32}\\
+  &<  0.05\end{aligned}$$
 
-= P\[all heads\] + P \[all tails\]
-
-=
-$\frac {1} {2^6} + \frac {1} {2^6} = 2 \frac {1} {64} = \frac {1} {32} < 0.05$\
-\
 A variation of this test is called the sign test, which is used to test
 hypothesis of the form,
 
-$H_0$: true median = 0 using a count of the number of positive values.
+$H_0$: true median equals zero using a count of the number of positive
+values.
 :::
 
-## The one sided z test for normal mean
+## The one sided $z$-test for normal mean
 
 ::: fbox
 Consider testing
@@ -5477,13 +5508,13 @@ vs
 
 $$H_1: \mu > \mu_0$$
 
-Where data $x_1 \ldots x_n$ are collected as independent observations of
-$X_1 \ldots X_n \sim N(\mu, \sigma^2)$ and $\sigma^2$ is known. If $H_0$
-is true, then
+Where data $x_1, \ldots, x_n$ are collected as independent observations
+of $X_1, \ldots,X_n \sim N(\mu, \sigma^2)$ and $\sigma^2$ is known. If
+$H_0$ is true, then
 
-$$\bar {x} \sim n (\mu_0, \frac{\sigma^2}{n})$$ So,
+$$\bar {x} \sim N(\mu_0, \frac{\sigma^2}{n})$$ So,
 
-$$Z = \frac{\bar {x} - \mu_0}{\frac{\sigma} {\sqrt{n}}} \sim n (0,1)$$
+$$Z = \frac{\bar {x} - \mu_0}{\frac{\sigma} {\sqrt{n}}} \sim N(0,1)$$
 
 It follows that,
 
@@ -5493,7 +5524,7 @@ Where
 
 $$z^\ast = z_{1-\alpha}$$
 
-So if the data $x_1 \ldots x_n$ are such that,
+So if the data $x_1, \ldots,x_n$ are such that,
 
 $$z = \frac{\bar {x} - \mu_0}{\frac{\sigma} {\sqrt{n}}}  > z^\ast$$
 
@@ -5503,7 +5534,7 @@ Then $H_0$ is rejected.
 ### Examples
 
 ::: xmpl
-Consider the following data set:47, 42, 41, 45, 46.
+Consider the following data set: $47, 42, 41, 45, 46$.
 
 Suppose we want to test the following hypothesis
 
@@ -5513,9 +5544,8 @@ vs
 
 $$H_1 : \mu > 42$$
 
-$\sigma = 2$ is given
-
-The mean of the given data set can be calculated as
+where $\sigma = 2$ is given. The mean of the given data set can be
+calculated as
 
 $$\bar {x} = 44.2$$
 
@@ -5527,16 +5557,15 @@ $$\begin{aligned}
   &= \frac{2.2}{0.8944}\\
   &= 2.459\end{aligned}$$
 
-$$z^\ast = 1.645$$
+Here $\alpha = 0,05$ so we have that
 
-Here
+$$z^\ast = 1.645.$$
 
-$z> z^\ast$
-
-So $H_0$ is rejected with $\alpha = 0.05$
+We obtain that $2,459 > 1,645$, i.e. $z> z^\ast$ and so $H_0$ is
+rejected with $\alpha = 0.05$
 :::
 
-## The two-sided z test for a normal mean
+## The two-sided $z$-test for a normal mean
 
 ::: fbox
 $$z: =\frac{\overline{x}-\mu_0}{s\sqrt{n}} \sim N(0,1)$$
@@ -5546,16 +5575,16 @@ $$z: =\frac{\overline{x}-\mu_0}{s\sqrt{n}} \sim N(0,1)$$
 
 Consider testing $H_0: \mu=\mu_0$ versus $H_1: \mu \ne \mu_0$ based on
 observation from
-$\overline{X_1},..., \overline{X} \sim N(\mu, \sigma^2)$ i.i.d. where
+$\overline{X_1},\dots , \overline{X} \sim N(\mu, \sigma^2)$ i.i.d. where
 $\sigma^2$ is known. If $H_0$ is true, then
 $$Z: = \frac{\overline{x}-\mu_0}{\sigma \sqrt{n}} \sim N(0,1)$$
 
 and $$P[|z| > z^\ast] = \alpha$$
 
-with $$z^\ast = z_{1}$$
+with $$z^\ast = z_{1-\alpha}$$
 
 We reject $H_0$ if $|z| > z^\ast$. If $|z| > z^\ast$ is not true, then
-we \"Cannot reject the $H_0$\".
+we **cannot reject the $H_0$**.
 
 ### Examples
 
@@ -5574,10 +5603,10 @@ So, the $z$ value for a two-sided normal mean is
 $\left |-1.99 \right |$.
 :::
 
-## The one-sided $t$-test for a single normal mean
+## The one-sided t-test for a single normal mean
 
 ::: fbox
-Recall that if $X_1,...,X_n \sim N(\mu,\sigma^2)$ i.i.d. then
+Recall that if $X_1,\dots ,X_n \sim N(\mu,\sigma^2)$ i.i.d. then
 $$\frac{\overline{X}-\mu}{S/\sqrt{n}}\sim t_{n-1}$$
 :::
 
@@ -5590,13 +5619,13 @@ To test the hypothesis $H_0:\mu=\mu_{0}$ vs $H_1:\mu > \mu_{0}$ first
 note that if $H_0$ is true, then
 $$T= \frac{\overline{X}-\mu_{0}}{S/\sqrt{n}} \sim t_{n-1}$$
 
-so $$P[T>t*]=\alpha$$
+so $$P[T>t^{\ast}]=\alpha$$
 
-if $$t*=t_{n-1,1-\alpha}$$
+if $$t^{\ast}=t_{n-1,1-\alpha}$$
 
-Hence, we reject $H_0$ if the data $x_1,...,x_n$ results in a a value of
-$t:=\frac{\overline{x}-\mu_0}{S/\sqrt{n}}$ such that $t>t*$, otherwise
-$H_0$ can not be rejected.
+Hence, we reject $H_0$ if the data $x_1,\dots ,x_n$ results in a a value
+of $t:=\frac{\overline{x}-\mu_0}{S/\sqrt{n}}$ such that $t>t^{\ast}$,
+otherwise $H_0$ cannot be rejected.
 
 ### Examples
 
@@ -5607,8 +5636,8 @@ $H_1:\mu>\mu_0$. Here we have $n=6,\overline{x}=18.83, s=5.46, \mu_0=18$
 so we obtain $$t=\frac{\overline{x}-\mu_0}{s/\sqrt{n}}= 0.37$$
 
 so $H_0$ cannot be rejected.\
-In R, $t*$ is found using `qt(n-1,0.95)` but the entire hypothesis can
-be tested using
+In R, $t^{\ast}$ is found using `qt(n-1,0.95)` but the entire hypothesis
+can be tested using
 
     t.test(x,alternative="greater",mu=<18)
 :::
@@ -5617,19 +5646,18 @@ be tested using
 
 ::: fbox
 Suppose data are gathered independently from two normal populations
-resulting in\
-$x_1,....,x_n$ and $y_1,...y_m$
+resulting in $x_1,\dots ,x_n$ and $y_1,\dots y_m$
 :::
 
 ### Details
 
 We know that if\
-$$X_1, ...., X_n \sim N(\mu_1,\sigma)$$
+$$X_1, \dots , X_n \sim N(\mu_1,\sigma)$$
 
-$$Y_1, ...., Y_m \sim N(\mu_2,\sigma)$$
+$$Y_1, \dots , Y_m \sim N(\mu_2,\sigma)$$
 
 are all independent then
-$$\bar{X}-\bar{Y} \sim N(\mu_1-\mu_2,\frac{\sigma^2}{n}+\frac{\sigma^2}{m})$$
+$$\bar{X}-\bar{Y} \sim N(\mu_1-\mu_2,\frac{\sigma^2}{n}+\frac{\sigma^2}{m}).$$
 Further,
 $$\sum_{i=1}^{n} \frac{(X_i-\bar{X})^2}{\sigma^2} \sim X_{n-1}^{2}$$ and
 $$\sum_{j=1}^{m} \frac{(Y_j-\bar{Y})^2}{\sigma^2} \sim X_{m-1}^{2}$$ so
@@ -5650,7 +5678,7 @@ and $t^\ast=t_{n+m-2,1-\alpha}$
 ## Comparing means from large samples
 
 ::: fbox
-If $X_1,....X_n$ and $Y_1,.....Y_m$, are all independent (with finite
+If $X_1,\dots X_n$ and $Y_1,\dots Y_m$, are all independent (with finite
 variance) with expected values of $\mu_1$ and $\mu_2$ respectively, and
 variances of $\sigma_1^2$,and $\sigma_2^2$ respectively, then
 $$\frac{\overline{X}-\overline{Y}-(\mu_1-\mu_2)}{\sqrt{\frac{\sigma_1^2}{n}+\frac{\sigma_2^2}{m}}} \sim N(0,1)$$
@@ -5664,11 +5692,12 @@ Another theorem (Slutzky) stakes that replacing $\sigma_1^2$ and
 $\sigma_2^2$ with $S_1^2$ and $S_2^2$ will result in the same (limiting)
 distribution.\
 It follows that for large samples we can test
-$$H_0: \mu_1=\mu_2 \qquad vs. \qquad H_1:\mu_1 > \mu_2$$ by computing
+$$H_0: \mu_1=\mu_2 \qquad \text{vs} \qquad H_1:\mu_1 > \mu_2$$ by
+computing
 $$z=\frac{\overline{x}-\overline{y}}{\sqrt{\frac{s_1^2}{n}+\frac{s_2^2}{m}}}$$
 and reject $H_0$ if $z>z_{1-\alpha}$.
 
-## The $p$-value
+## The p-value
 
 ::: fbox
 The $p$-value of a test is an evaluation of the probability of obtaining
@@ -5700,8 +5729,8 @@ P &= P[|Z|>2.3]\\
 ### Details
 
 Two sample means are **statistically significantly different** if the
-null hypothesis, $\mu_1 = \mu_2$, can be **rejected**. In this case, one
-can make the following statements:
+null hypothesis $H_0:\mu_1 = \mu_2$, can be **rejected**. In this case,
+one can make the following statements:
 
 -   The population means are different.
 
@@ -5715,24 +5744,24 @@ But one does not say:
 
 -   The sample means are different.
 
--   The population means are different with probability 0.95.
+-   The population means are different with probability $0.95$.
 
-Similarly, if the hypothesis $H_0: \mu_1 = \mu_2$ can not be rejected,
-we can say:
+Similarly, if the hypothesis $H_0: \mu_1 = \mu_2$ cannot be rejected, we
+can say:
 
 -   There is no significant difference between the sample means.
 
--   We can not reject the equality of population means.
+-   We cannot reject the equality of population means.
 
--   We can not rule out\...
+-   We cannot rule out\...
 
-But we can not say:
+But we cannot say:
 
 -   The sample means are equal.
 
 -   The population means are equal.
 
--   The population means are equal with probability 0.95.
+-   The population means are equal with probability $0.95$.
 
 **Copyright** 2021, Gunnar Stefansson (editor) with contributions from
 very many students
@@ -5750,22 +5779,22 @@ USA.
 ::: fbox
 Suppose we have a method to test a null hypothesis against an
 alternative hypothesis. The test would be \"controlled\" at some level
-$\alpha$, i.e. $P[\text{reject } H_0] \leq \alpha$ whenever $H_0$ is
+$\alpha$, i.e. $P[\text{Reject } H_0] \leq \alpha$ whenever $H_0$ is
 true.\
 On the other hand, when $H_0$ is false one wants
-$P[\text{reject }  H_0]$ to be as high as possible.\
+$P[\text{Reject }  H_0]$ to be as high as possible.\
 If the parameter to be tested is $\theta$ and $\theta_0$ is a value
-within $H_0$ and $\theta_a$ is in $H_1$ then we want
-$P_{\theta_0}[\text{reject } H_0] \leq \alpha$ and
-$P_{\theta_a}[\text{reject } H_0]$ as large as possible.\
+within $H_0$ and $\theta_1$ is in $H_1$ then we want
+$P_{\theta_0}[\text{Reject } H_0] \leq \alpha$ and
+$P_{\theta_1}[\text{Reject } H_0]$ as large as possible.\
 For a general $\theta$ we write
-$$\beta(\theta) = P_{\theta} [\text{reject } H_0]$$ for the power of the
+$$\beta(\theta) = P_{\theta} [\text{Reject } H_0]$$ for the power of the
 test
 :::
 
 ### Details
 
-Do not use the phrase \"accept\".
+**Do not** use the phrase \"accept\".
 
 ## The power of tests for proportions
 
@@ -5779,18 +5808,21 @@ Do not use the phrase \"accept\".
 
 ::: xmpl
 Suppose 7 students are involved in an experiment which is comprised of 7
-trails and each trial consists of rolling a dice 9 times.\
+trails and each trial consists of rolling a die 9 times.\
 \
-**Experiment 1**: A student records a 0 if they toss an even number
-(2,4,6) (failure), and records a 1 if they toss an odd number (1,3,5)
-(success). After tossing the dice 9 times and recording a 0 or 1 the
-student tabulates the number of 1s. This process is repeated 6 more
-times.\
+**Experiment 1**: A student records a $0$ if they toss an even number
+($2,4,6$) (i.e. failure), and records a $1$ if they toss an odd number
+($1,3,5$) (i.e. success). After tossing the die 9 times and recording a
+$0$ or $1$ the student tabulates the number of $1$'s. This process is
+repeated six more times.\
 \
-Data and outcomes: x = number of successes in $n$ trials
-=$\Sigma_{i=1}^n$. Thus, x = number of odd numbers\
-\
-Question:Test whether $p=P[\text{odd number}]=\frac{1}{2}$ that is
+Data and outcomes:
+
+$x$ equals the number of successes in $n$ trials equal
+$\Sigma_{i=1}^n$.\
+Thus, $x$ equals number of odd numbers.
+
+Question:Test whether $p=P[\text{Odd number}]=\frac{1}{2}$ that is
 
 $H_0: p=\frac{1}{2}$ vs. $H_1: p\neq \frac{1}{2}$\
 \
@@ -5825,9 +5857,9 @@ $$z=\frac{x-\frac{n}{2}}{\sqrt{n\cdot\frac{1}{2}\cdot\frac{1}{2}}}=\frac{x-\frac
 
 ::: notes
 *Note 23*. Note that we reject if $\frac{2x-9}{3}>1.96$ i.e. if
-$2x>9+3\cdot1.96 \approx 9+6=15$\
-$x>7.5$ \[$for x=8$ or $x=9$\] or $2x<9-3 \cdot 1.96$, $x<1.5$ \[for
-$x=0$ or $x=1$\].
+$2x>9+3\cdot 1.96 \approx 9+6=15$\
+$x>7.5$ (for $x=8$ or $x=9$) or $2x<9-3 \cdot 1.96$, $x<1.5$ (for $x=0$
+or $x=1$).
 :::
 :::
 
@@ -5835,16 +5867,18 @@ $x=0$ or $x=1$\].
 Suppose 7 students are involved in an experiment which is comprised of 7
 trails and each trial consists of rolling a die 9 times.\
 \
-**Experiment 2**: The procedure is the same as in experiment 1, but now
-the student records 0 for a 1 or 2 (failure) and a 1 for a 3,4,5,or 6
-(success).\
+**Experiment 2**: The procedure is the same as in experiment $1$, but
+now the student records $0$ for a $1$ or $2$ (failure) and a $1$ for a
+$3$,$4$,$5$,or $6$ (success).\
 \
 Data and outcomes:
 
-$x$ = number of successes in $n$ trials $=\Sigma_{i=1}^n$ Thus, $x =$
-number of 1's\
+$x$ equals the number of successes in $n$ trials equal $\Sigma_{i=1}^n$
+Thus, $x$ equaks number of 1's\
 \
-Solution: Outcomes from 21 experiments
+Solution:
+
+Outcomes from 21 experiments
 
 $$\begin{matrix}
 5 & 4 & 3\\
@@ -5857,22 +5891,23 @@ $$\begin{matrix}
 \end{matrix}$$
 
 This time our test is $H_0:p=\frac{2}{3}$ vs $H_1:p=\frac{2}{3}$. Note
-that we reject $H_0$ if $\frac{6x-4n}{9}>1,96$ \[for x=9\] or if
-$\frac{6x-4n}{9}<-1,96$ \[for x=0,1,2,3\].\
+that we reject $H_0$ if $\frac{6x-4n}{9}>1,96$ (for $x=9$) or if
+$\frac{6x-4n}{9}<-1,96$ (for $x=0,1,2,3$).\
 We reject $H_0$ in 3 out of 21 trials.
 :::
 
 ::: xmpl
 Suppose 7 students are involved in an experiment which is comprised of 7
-trails and each trial consists of rolling a dice 9 times.\
+trails and each trial consists of rolling a die 9 times.\
 \
-**Experiment 3**: Same as experiment 1 except 0 is recorded for
-1,2,3,4,5 (failure) and a 1 is recorded for 6 (success).\
+**Experiment 3**: Same as experiment $1$ except $0$ is recorded for
+$1,2,3,4,5$ (failure) and a $1$ is recorded for $6$ (success).\
 \
 Data and outcomes:
 
-$x =$ number of successes in $n$ trials =$\Sigma_{i=1}^n$ Thus, $x =$
-number of 1's\
+$x$ equals number of successes in $n$ trials equal $\Sigma_{i=1}^n$
+
+Thus, $x$ equals number of $1$'s\
 \
 Solution: Outcomes from 21 experiments
 
@@ -5890,11 +5925,11 @@ With the same kind of calculations as above, we find that we reject the
 null hypothesis $H_0:p=\frac{1}{6}$ in 14 out of 21 trials.
 :::
 
-## The Power of the one sided z test for the mean
+## The Power of the one sided $z$-test for the mean
 
 ::: fbox
 The one sided $z$-test for the mean $(\mu)$ is based on a random sample
-where $X_1 \ldots X_n \sim N(\mu, \sigma^2)$ are independent and
+where $X_1, \ldots,X_n \sim N(\mu, \sigma^2)$ are independent and
 $\sigma^2$ is known.\
 The power of the test for an arbitrary $\mu$ can be computed as:
 
@@ -5903,8 +5938,8 @@ $$\beta(\mu) = 1 - \Phi \left ( \frac{\mu_0 - \mu }{\frac{\sigma} {\sqrt{n}}} + 
 
 ### Details
 
-The one sided z-test for the mean $(\mu)$ is based on a random sample
-where $X_1 \ldots X_n \sim N(\mu, \sigma^2)$ are independent and
+The one sided $z$-test for the mean $(\mu)$ is based on a random sample
+where $X_1, \ldots,X_n \sim N(\mu, \sigma^2)$ are independent and
 $\sigma^2$ is known. If the hypotheses are:
 
 $H_0 : \mu = \mu_0$ vs
@@ -5912,9 +5947,9 @@ $H_0 : \mu = \mu_0$ vs
 $H_1 : \mu > \mu_0$\
 Then we know that, if $H_0$ is true
 
-$$Z = \frac{\bar {X} - \mu_0}{\frac{\sigma} {\sqrt{n}}} \sim n (0,1)$$
+$$Z = \frac{\bar {X} - \mu_0}{\frac{\sigma} {\sqrt{n}}} \sim N (0,1)$$
 
-Given data $x_1, \ldots x_n$, the $z$-value is
+Given data $x_1, \ldots, x_n$, the $z$-value is
 
 $$z = \frac{\bar {x} - \mu_0}{\frac{\sigma} {\sqrt{n}}}$$
 
@@ -5926,19 +5961,16 @@ $$P_{\mu_0} [\text{Reject } H_0]= P_{\mu_0}[\frac{\bar {X} - \mu_0}{\frac{\sigma
 
 $$= P[z > z_{1- \alpha}] = {\alpha}$$
 
-since $Z \sim n (0,1)$ when $\mu_0$ is the true value.\
+since $Z \sim N(0,1)$ when $\mu_0$ is the true value.\
 \
 The power of the test for an arbitrary $\mu$ can be computed as follows.
 
-$$\beta(\mu) = P_{\mu} [\text{Reject } H_0]$$
-
-$$= P_{\mu}[\frac{\bar {X} - \mu_0}{\frac{\sigma} {\sqrt{n}}} > z_{1- \alpha}]$$
-
-$$= P_{\mu} [\bar {X}> \mu_0 + z_{1- \alpha}{\frac{\sigma} {\sqrt{n}}}]$$
-
-$$= P_{\mu} [\frac{\bar {X} - \mu}{\frac{\sigma} {\sqrt{n}}}> \frac{\mu_0 - \mu }{\frac{\sigma} {\sqrt{n}}}+ z_{1- \alpha}]$$
-
-$$= P[Z > \frac{\mu_0 - \mu}{\frac{\sigma} {\sqrt{n}}} + z_{1- \alpha}]$$
+$$\begin{aligned}
+  \beta(\mu) &= P_{\mu} [\text{Reject } H_0]\\
+  &= P_{\mu}\left[\frac{\bar {X} - \mu_0}{\frac{\sigma} {\sqrt{n}}} > z_{1- \alpha}\right]\\
+  &= P_{\mu} \left[\bar {X}> \mu_0 + z_{1- \alpha}{\frac{\sigma} {\sqrt{n}}}\right]\\
+  &= P_{\mu} \left[\frac{\bar {X} - \mu}{\frac{\sigma} {\sqrt{n}}}> \frac{\mu_0 - \mu }{\frac{\sigma} {\sqrt{n}}}+ z_{1- \alpha}\right]\\
+  &=  P\left[Z > \frac{\mu_0 - \mu}{\frac{\sigma} {\sqrt{n}}} + z_{1- \alpha}\right]\end{aligned}$$
 
 We obtain
 
@@ -5968,10 +6000,11 @@ Sticking the formula into R gives
     [1] 0.803765
 
 On the other hand, one can also use a simple simulation approach. First,
-decide how many samples are to be simulated (Nsim). Then, generate all
-of these samples, arrange them in a matrix and compute the mean of each
-sample. The $z$-value of each of these Nsim tests are then computed and
-a check is made whether it exceeds the critical point (1) or not (0).
+decide how many samples are to be simulated ($\verb|Nsim|$). Then,
+generate all of these samples, arrange them in a matrix and compute the
+mean of each sample. The $z$-value of each of these $\verb|Nsim|$ tests
+are then computed and a check is made whether it exceeds the critical
+point (1) or not (0).
 
     Nsim<-10000
     m<-matrix(rnorm(Nsim*n,mu,sigma),ncol=n)
@@ -5982,7 +6015,7 @@ a check is made whether it exceeds the critical point (1) or not (0).
     [1] 0.8081
 :::
 
-## Power and sample size for the one-sided z-test for a single normal mean
+## Power and sample size for the one-sided $z$-test for a single normal mean
 
 ::: fbox
 Suppose we want to test $H_0:\mu=\mu_0$ vs $H_1:\mu>\mu_0$. We will
@@ -5995,11 +6028,12 @@ is such that $z>z_{1-\alpha}$.
 ### Details
 
 Suppose we want to test $H_0:\mu=\mu_0$ vs $H_1:\mu>\mu_0$. So based on
-$X_1,...,X_n\sim N(\mu,\sigma ^2)$ i.i.d. with $\sigma^2$ known we will
-reject $H_0$ if the observed value
+$X_1,\dots ,X_n\sim N(\mu,\sigma ^2)$ i.i.d. with $\sigma^2$ known we
+will reject $H_0$ if the observed value
 $$z=\frac{\overline{x}-\mu_0}{\sigma/\sqrt{n}}$$
 
 is such that $z>z_{1-\alpha}$. The power is given by:
+
 $$\beta(\mu)=1-\Phi(\frac{\mu-\mu_0}{\sigma/\sqrt{n}}+z_{1-\alpha})$$
 
 and describes the probability of rejecting $H_0$ when $\mu$ is the
@@ -6009,7 +6043,8 @@ $\mu$. For this, we need to select the sample size so that
 $$\beta(\mu_1) \geq \beta_1$$
 
 i.e. find $n$ which satisfies
-$$1-\Phi(\frac{\mu_1-\mu_0}{\sigma/\sqrt{n}}+z_{1-\alpha})\geq \beta_1$$
+
+$$1-\Phi\left(\frac{\mu_1-\mu_0}{\sigma/\sqrt{n}}+z_{1-\alpha}\right)\geq \beta_1$$
 
 ### Examples
 
@@ -6042,18 +6077,18 @@ then
 $$\frac{Z}{\sqrt{\frac{U}{v}}}\sim t_v$$
 
 and it follows for a random sample
-$X_1 \ldots X_n \sim N(\mu, \sigma^2)$ independent; that
+$X_1, \ldots,X_n \sim N(\mu, \sigma^2)$ independent; that
 
 $$\frac{\bar {X} - \mu}{\frac{s} {\sqrt{n}}} = \frac{\frac{\bar {X} - \mu}{\frac{\sigma} {\sqrt{n}}}}{\sqrt{\frac{\sum ({X_i} -\bar {X})^2} { \frac {{\sigma}^2} {n-1}}}} \sim t_{n-1}$$
 :::
 
 ### Details
 
-On the other hand, if $W \sim n (\Delta,1)$ and $U \sim {\chi}^2_v$ are
+On the other hand, if $W \sim N (\Delta,1)$ and $U \sim {\chi}^2_v$ are
 independent, then $\frac{W}{\sqrt{\frac{U}{v}}}$ has a non central $T$
 distribution with $v$ degrees of freedom and non centrality parameter
 $\Delta$. This distribution arises, if
-$X_1 \ldots X_n \sim N(\mu, \sigma^2)$ independent and we want to
+$X_1, \ldots,X_n \sim N(\mu, \sigma^2)$ independent and we want to
 consider the distribution of:
 
 $$\frac{\bar {X} - \mu}{\frac{S} {\sqrt{n}}} = \frac{\frac{\bar {X} - \mu}{\frac{\sigma} {\sqrt{n}}} + \frac{\mu - \mu_0 }{\frac{\sigma} {\sqrt{n}}}} {\frac{S}{\sqrt{n}}} = \frac {Z + \frac{\mu - \mu_0 }{\frac{\sigma} {\sqrt{n}}}}{\sqrt{\frac{U}{v}}}$$
@@ -6063,16 +6098,16 @@ parameters
 
 $$\Delta = \frac{\mu - \mu_0 }{\frac{\sigma} {\sqrt{n}}}$$
 
-with $n-1$ df. Here $v = n-1 df$ since $Z \sim n (0,1)$ and
+with $n-1$ df. Here $v = n-1$ df since $Z \sim N(0,1)$ and
 $U \sim {\chi}^2_{n-1}$ in this equation
 
-## The power of $t$-test for a normal mean (warning: errors)
+## The power of t-test for a normal mean (warning: errors)
 
 ### Details
 
 **WARNING: This is all wrong and needs to be rewritten**
 
-Consider $X_1,\ldots,X_n \sim n (\mu, \sigma^2)$ i.i.d. where $\sigma^2$
+Consider $X_1,\ldots,X_n \sim N (\mu, \sigma^2)$ i.i.d. where $\sigma^2$
 is unknown and we want to test $H_0:\mu = \mu_0$ vs. $H_1: \mu > \mu_0$.
 We know that
 
@@ -6086,7 +6121,7 @@ is such that $$t>t^{\ast}=t_{n-1, 1-\alpha}.$$
 The power of this test is:
 
 $$\begin{aligned}
-B(\mu) = P_{\mu}[\text{reject } H_0] &= P_{\mu} \lbrack \frac{\overline{x} - \mu_0}{s/\sqrt{n}} > t^\ast \rbrack\\
+B(\mu) = P_{\mu}[\text{Reject } H_0] &= P_{\mu} \lbrack \frac{\overline{x} - \mu_0}{s/\sqrt{n}} > t^\ast \rbrack\\
 &=P_{\mu} \lbrack \overline{x} - \mu_0 > t^\ast\cdot s/\sqrt{n} \rbrack\\
 &=P_{\mu} \lbrack \frac{\overline{x} - \mu}{s/\sqrt{n}} > t^\ast+\frac{\mu_0-\mu}{s/\sqrt{n}} \rbrack.\end{aligned}$$
 
@@ -6096,7 +6131,7 @@ $t^{\ast}+\frac{\mu_0-\mu}{s/\sqrt{n}}$.
 **WARNING: This is all wrong and needs to be rewritten (the s in the
 above line is a random variable so this make no sense at all)**
 
-## Power and sample size for the one sided $t$-test for a mean
+## Power and sample size for the one sided t-test for a mean
 
 ::: fbox
 Suppose we want to calculate the power of a one sided $t$-test for a
@@ -6106,7 +6141,7 @@ single mean (one sample), this can easily be done in R with the
 
 ### Details
 
-$\triangle = \mu_1-\mu_2$\
+$\Delta = \mu_1-\mu_2$\
 $\delta = \frac{\mu_1-\mu_2}{\sigma/\sqrt{n}}$
 
 ### Examples
@@ -6118,13 +6153,13 @@ For a one sample test:\
 $H_0: \mu = \mu_0$ vs. $H_1: \mu > \mu_0$\
 For a two sample test:\
 $H_0: \mu_1 = \mu_2$ vs. $H_1: \mu_1 > \mu_2$\
-In R, the `power.t.test` command is useful to calculate how many samples
-one needs to obtain a certain power of a test, but also to calculate the
-power when we have a given number of samples.
+In R, the $\verb|power.t.test|$ command is useful to calculate how many
+samples one needs to obtain a certain power of a test, but also to
+calculate the power when we have a given number of samples.
 :::
 
 ::: xmpl
-How many samples do I need to get a power of .9?
+How many samples do I need to get a power of $0.9$?
 
     power.t.test(power = .95, delta=1.5,sd=2, type="one.sample", alternative = "one.sided")
 
@@ -6138,8 +6173,8 @@ How many samples do I need to get a power of .9?
         alternative = one.sided
         
 
-We would thus need a sample size of $n = 31.15 or \approx 32$ samples to
-obtain a power of 0.9 for our analysis.
+We would thus need a sample size of $n = 31.15 \approx 32$ samples to
+obtain a power of $0.9$ for our analysis.
 :::
 
 ::: xmpl
@@ -6176,7 +6211,7 @@ Balanced one-way analysis of variance power calculation
           sig.level = 0.05
               power = 0.9679022
 
-To calculate the sample size needed to obtain a power of 0.90 for a
+To calculate the sample size needed to obtain a power of $0.90$ for a
 test:
 
     power.anova.test(groups=4, between.var=1, within.var=3, power=.9) 
@@ -6191,7 +6226,7 @@ Balanced one-way analysis of variance power calculation
               power = 0.9
 :::
 
-## The power of the 2-sided $t$-test
+## The power of the 2-sided t-test
 
 ::: fbox
 A power analysis on a two-sided $t$-test can be done in R using the
@@ -6209,20 +6244,18 @@ of a test:
 
      power.t.test(n= ,delta= ,sd= ,sig.level= ,power= ,type=c("two.sample","one.sample","paired"),alternative=c("two.sided"))
 
-where:\
-n=sample size\
-d=effect size\
-sd=standard deviation\
-sig.level=significance level\
-power= normally 0.8, 0.9 or 0.95\
-type= two sample, one sample or paired (the type selected depends on the
-research)\
-alternative= either one sided or two sided
+Where:\
+- $\verb|n|$ is the sample size - $\verb|d|$ is the effect size -
+$\verb|s|$ is the standard deviation - $\verb|sig.level|$ is the
+significance level - $\verb|power|$ is normally $0.8$, $0.9$ or $0.95$ -
+$\verb|type|$ is two sample, one sample or paired (the type selected
+depends on the research) - $\verb|alternative|$ is either one sided or
+two sided
 
 ### Examples
 
 ::: xmpl
-How many samples do I need in my research to obtain a power of 0.8?
+How many samples do I need in my research to obtain a power of $0.8$?
 
     power.t.test(delta=1.5,sd=2,sig.level=0.05,power=0.8,type=c("two.sample"),alternative=c("two.sided"))
 
@@ -6235,11 +6268,11 @@ How many samples do I need in my research to obtain a power of 0.8?
               power = 0.8
         alternative = two.sided
 
-So, one needs 29 samples ($n=29$) to obtain a power level of 0.8 for
+So, one needs $29$ samples ($n=29$) to obtain a power level of $0.8$ for
 this analysis.
 :::
 
-## The power of the 2-sample one and two-sided $t$-tests
+## The power of the 2-sample one and two-sided t-tests
 
 ::: fbox
 The power of a two sample, one-sided $t$-test can be computed as
@@ -6259,23 +6292,23 @@ and $U$ is the SSE.
 
 ### Details
 
-*Two Sample, one-sided* ÆtÆ*-test*:
+*Two Sample, one-sided* $t$*-test*:
 
 Suppose data are gathered independently from two normal populations
 resulting in $$X_1, \ldots, X_n \sim N(\mu_1, \sigma^2)$$
 $$Y_1, \ldots, Y_m \sim N(\mu_2, \sigma^2)$$ where all data are
 independent then
 $$\overline{X}-\overline{Y} \sim N(\mu_1 - \mu_2, \frac{\sigma^2}{n}\ + \frac{\sigma^2}{m})$$
-The null hypothesis in question is $H_o: \mu_1 = \mu_2$ versus
-alternative $H_1: \mu_1 > \mu_2$. If $H_o$ is true then the observed
+The null hypothesis in question is $H_0: \mu_1 = \mu_2$ versus the
+alternative $H_1: \mu_1 > \mu_2$. If $H_0$ is true then the observed
 value
 $$t = \frac{\overline{x}-\overline{y}}{s\sqrt{\frac{1}{n}+\frac{1}{m}}}$$
 comes from a $T$ distribution with $n+m-2$ degrees of freedom and we
-reject $H_o$ if $\left|t \right|> t^\ast_{1-\alpha,n+m-2}$\
+reject $H_0$ if $\left|t \right|> t^\ast_{1-\alpha,n+m-2}$\
 The power of the test can be computed as follows:
 
 $$\begin{aligned}
-\beta_{(\mu_1\mu_2)}& = & P_{\mu_1\mu_2}\left[\text{reject } H_o \right]\\
+\beta_{(\mu_1\mu_2)}& = & P_{\mu_1\mu_2}\left[\text{Reject } H_0 \right]\\
 & = & P_{\mu_1\mu_2}\left[\frac{\overline{X}-\overline{Y}}{S\sqrt{\frac{1}{n}+\frac{1}{m}}} > t^\ast_{1-\alpha,n+m-2} \right]\\
 & = &  P_{\mu_1\mu_2}\left[\frac{\frac{\overline{X}-\overline{Y}-(\mu_1-\mu_2)}{\sigma\sqrt{\frac{1}{n}+\frac{1}{m}}}+ \frac{(\mu_1-\mu_2)}{\sigma\sqrt{\frac{1}{n}+\frac{1}{m}}}}{S/\sigma} > t^\ast_{1-\alpha,n+m-2}\right]\\
 & = &  P_{\mu_1\mu_2}\left[\frac{Z +\frac{(\mu_1-\mu_2)}{\sigma\sqrt{\frac{1}{n}+\frac{1}{m}}}}
@@ -6290,15 +6323,15 @@ degrees of freedom to give a $\chi^2$ distribution.
 This is the probability that a non-central $t$-variable exceeds
 $t^\ast$.
 
-*Two Sample, Two-sided* ÆtÆ*-test*:
+*Two Sample, Two-sided* $t$*-test*:
 
-In this case the null hypothesis is defined as $H_o: \mu_1 = \mu_2$
+In this case the null hypothesis is defined as $H_0: \mu_1 = \mu_2$
 versus alternative $H_1: \mu_1 \neq \mu_2$.
 
 The power of the test can be computed as follows:
 
 $$\begin{aligned}
-\beta_{(\mu_1\mu_2)}& = & P_{\mu_1\mu_2}\left[\text{reject } H_o \right]\\
+\beta_{(\mu_1\mu_2)}& = & P_{\mu_1\mu_2}\left[\text{Reject } H_0 \right]\\
 & = & P_{\mu_1\mu_2}\left[\left|\frac{\overline{X}-\overline{Y}}{S\sqrt{\frac{1}{n}+\frac{1}{m}}}\right| > t^\ast_{1-\alpha,n+m-2} \right]\\
 & = & P_{\mu_1\mu_2}\left[\frac{\overline{X}-\overline{Y}}{S\sqrt{\frac{1}{n}+\frac{1}{m}}} > t^\ast_{1-\alpha,n+m-2} \right] \\
 && +  P_{\mu_1\mu_2} \left[\frac{\overline{X}-\overline{Y}}{S\sqrt{\frac{1}{n}+\frac{1}{m}}} <-t^\ast_{1-\alpha,n+m-2} \right] \\
@@ -6315,10 +6348,10 @@ degrees of freedom to give a $\chi^2$ distribution.
 
 ::: notes
 *Note 24*. Note that the power of a test can be obtained using the
-$power.t.test$ function in R.
+$\verb|power.t.test|$ function in R.
 :::
 
-## Sample sizes for two-sample one and two-sided ÆtÆ-tests
+## Sample sizes for two-sample one and two-sided $t$-tests
 
 ::: fbox
 The sample size should always satisfy the desired power.
@@ -6326,7 +6359,7 @@ The sample size should always satisfy the desired power.
 
 ### Details
 
-Suppose we want to reject the $H_o$ with a pre-specified probability
+Suppose we want to reject the $H_0$ with a pre-specified probability
 $\beta_1$ when $\mu_1$ and $\mu_2$ are true values of $\mu$. For this,
 we need to select the sample size $n$ and $m$ so that
 $\beta_{(\mu_1\mu_2)} \geq \beta_1$ i.e. find $n$ and $m$ which
@@ -6377,8 +6410,8 @@ sizes are taken to be the same in each group, $J$ so the total number of
 measurements will be $n=2J$. We also need to decide at which levels of
 $\mu_1$ and $\mu_2$ the power is to be computed (but it is really only a
 function of the difference, $\mu_1-\mu_2$).\
-The following pieces of R code can be saved into a file, \"ancovapow.r\"
-and then command
+The following pieces of R code can be saved into a file,
+$\verb|ancovapow.r|$ and then command
 
     source("ancovapow.r")
 
@@ -6405,10 +6438,10 @@ separately.
     n<-2*J            # the total sample size
     Nsim<- 40000      # the number of simulations for power computations
 
-Rather than head straight for the ancova, start with a simpler case,
+Rather than head straight for the ANCOVA, start with a simpler case,
 namely ignoring the covariate ($x$) and merely doing a regular
 two-sample, two-tailed $t$-test. This should be reasonably similar to
-the ancova power computations anyway.
+the ANCOVA power computations anyway.
 
     #
     # Next do the power computations just for a regular two-sided, two-sample t-test
@@ -6437,14 +6470,14 @@ approach) by checking whether these give the same thing:
     cat("The exact power:\n")
     print(pow2)
 
-Finally, start setting up the code to do the ancova simulations. Note
-that for this we need to generate the x-values. In this example it is
-assumed that the x-values are not under the control of the experimenter
-but arrive randomly, in the range from 20 to 30 (could e.g. be the age
-of participants in an experiment).
+Finally, start setting up the code to do the ANCOVA simulations. Note
+that for this we need to generate the $x$-values. In this example it is
+assumed that the $x$-values are not under the control of the
+experimenter but arrive randomly, in the range from 20 to 30 (could e.g.
+be the age of participants in an experiment).
 
     #
-    # Finally compute the power in the ancova - note we already have simulated Y1, Y2-values but have not added the x-part yet
+    # Finally compute the power in the ANCOVA - note we already have simulated Y1, Y2-values but have not added the x-part yet
     #
     x1<-matrix(sample(x0,Nsim*J,replace=T),ncol=J) # simulate x-values for y1
     x2<-matrix(sample(x0,Nsim*J,replace=T),ncol=J) # simulate x-values for y2
@@ -6452,11 +6485,12 @@ of participants in an experiment).
     Y2<-Y2+slope*x2
     fulldat<-cbind(Y1,Y2,x1,x2) # a row now contains all y1, then all y2, then all x1, then all x2; Nsim rows
 
-Rather than try to write code to do an ancova, it is natural to use the
+Rather than try to write code to do an ANCOVA, it is natural to use the
 R function lm to do this. The "trick" below is to extract the $p$-value
-from the summary command. By defining a "wrapper" function which takes a
-single line as an argument, it will subsequently be possible to use the
-"apply" function to extract the P-values using a one-line R command.
+from the summary command. By defining a $\verb|wrapper|$ function which
+takes a single line as an argument, it will subsequently be possible to
+use the $\verb|apply|$ function to extract the $p$-values using a
+one-line R command.
 
     ancova.pval<-function(onerow){ # extract the ancova p-value for diff in means
       J<-length(onerow)/4
@@ -6470,7 +6504,7 @@ single line as an argument, it will subsequently be possible to use the
     }
 
 Everything has now been defined so it is possible to compute all the
-P-values in a single command line:
+$p$-values in a single command line:
 
     pvec<-apply(fulldat,1,ancova.pval)
     i2<-ifelse(pvec<alpha,1,0)              # for ea test, compute 1=reject, 0=do not reject
@@ -6517,7 +6551,7 @@ USA.
 
 ::: fbox
 Recall that the set of real numbers is $\mathbb{R}$ and that a vector ,
-$v \in \mathbb{R}^n$ is just an $n$-tuple of numbers.\
+$v \in \mathbb{R}^n$, is just an $n$-tuple of numbers.\
 Similarly, an $n \times m$ matrix is just a table of numbers, with $n$
 rows and $m$ columns and we can write
 
@@ -6585,8 +6619,8 @@ the same sizes) similarly.
 ## The tranpose of a matrix
 
 ::: fbox
-In R, matrices may be constructed using the \"matrix\" function and the
-transpose of $A$, $A^\prime$, may be obtained in R by using the `t`
+In R, matrices may be constructed using the $\verb|matrix|$ function and
+the transpose of $A$, $A^\prime$, may be obtained in R by using the `t`
 function:
 
 `A<-matrix(1:6, nrow=3)`
@@ -6633,7 +6667,7 @@ the second solution gives a $n \times 1$ matrix.
 ::: fbox
 Matrices $A$ and $B$ can be multiplied together if $A$ is an
 $n \times p$ matrix and $B$ is an $p\times m$ matrix. The general
-element $c_ij$ of $n\times m$; $C=AB$ is found by pairing the $i^{th}$
+element $c_{ij}$ of $n\times m$; $C=AB$ is found by pairing the $i^{th}$
 row of $C$ with the $j^{th}$ column of $B$, and computing the sum of
 products of the paired terms.
 
@@ -6740,7 +6774,7 @@ $$I=
   0 & \ldots & 0 & 1
 \end{array} \right]$$
 
-is the identity matrix.This is because if a matrix $A$ is $n\times n$
+is the identity matrix. This is because if a matrix $A$ is $n\times n$
 then $A I = A$ and $I A  = A$
 :::
 
@@ -6751,9 +6785,9 @@ If $A$ is an $n \times n$ matrix and $B$ is a matrix such that
 
 $$BA = AB = I$$
 
-Then $B$ is said to be the inverse of $A$, written
+then $B$ is said to be the inverse of $A$, written
 
-$$B = A ^{-1}$$
+$$B = A ^{-1}.$$
 
 Note that if $A$ is an $n \times n$ matrix for which an inverse exists,
 then the equation $Ax = b$ can be solved and the solution is
@@ -6792,7 +6826,7 @@ USA.
 ## The matrix as a linear operator
 
 ::: fbox
-Let $A$ be an $m\times  n$ matrix, the function
+Let $A$ be an $m\times  n$ matrix. The function
 
 $$T_A:\mathbb{R}^n\to\mathbb{R}^m, T_A(\underline{x}) = A\underline{x},$$
 is linear, that is
@@ -6949,10 +6983,10 @@ Pythagoras' theorem in $n$ dimensions.
 ## Linear combinations of i.i.d. random variables
 
 ::: fbox
-Suppose $X_1,....,X_n$ are i.i.d. random variables and have mean
-$\mu_1, ...., \mu_n$ and variance $\sigma^2$ then the expected value of
-$Y$ of the linear combination is $$Y=\sum a_i X_i$$ and if
-$a_1,....,a_n$ are real constants then the mean is:
+Suppose $X_1,\dots ,X_n$ are i.i.d. random variables and have mean
+$\mu_1, \dots , \mu_n$ and variance $\sigma^2$ then the expected value
+of $Y$ of the linear combination is $$Y=\sum a_i X_i$$ and if
+$a_1,\dots ,a_n$ are real constants then the mean is:
 
 $$\mu_Y = \sum a_i \mu_i$$
 
@@ -6994,9 +7028,10 @@ $\sigma^2$ and $a,b\in \mathbb{R}^n$. Writing $$Y= \left(
 ### Details
 
 The covarience between random variables $U$ and $W$ is defined by\
-$$Cov(U,W)= E[(U-\mu_u)(W-\mu_w)]$$ where $$\mu_u=E[U],\mu_w=E[W]$$ Now,
-let $U=a'Y=\sum Y_ia_i$ and $W=b'Y=\sum Y_ib_i$, where $Y_1,\ldots,Y_n$
-are i.i.d. with mean $\mu$ and variance $\sigma^2$, then we get
+$$Cov(U,W)= E[(U-\mu_u)(W-\mu_w)]$$ where $\mu_u=E[U]$ and $\mu_w=E[W]$.
+Now, let $U=a'Y=\sum Y_ia_i$ and $W=b'Y=\sum Y_ib_i$, where
+$Y_1,\ldots,Y_n$ are i.i.d. with mean $\mu$ and variance $\sigma^2$,
+then we get
 
 $$Cov(U,W)= E[(a'Y-\Sigma a_\mu)(b'Y-\Sigma b\mu)]$$
 
@@ -7051,16 +7086,52 @@ $$E[Y]=\left(
   \mu_1 \\
   \vdots \\
   \mu_n
-\end{array} \right)=\mu$$
+\end{array} \right)=\mu.$$
 
-If $Cov(Y_i, Y_j) = \sigma{ij}$ and $Var[Y_i]=\sigma_{ii} = \sigma_i^2$,
-then we define the matrix $$\boldsymbol{\Sigma} = (\sigma_{ij})$$
-containing the variances and covariances. We call this matrix the
-**covariance matrix** of $Y$, typically denoted
-$Var[Y] = \boldsymbol{\Sigma}$ or $CoVar[Y] = \boldsymbol{\Sigma}$.
+If $Cov(Y_i, Y_j) = \sigma_{ij}$ and
+$Var[Y_i]=\sigma_{ii} = \sigma_i^2$, then we define the matrix
+$$\boldsymbol{\Sigma} = (\sigma_{ij})$$ containing the variances and
+covariances. We call this matrix the **covariance matrix** of $Y$,
+typically denoted $Var[Y] = \boldsymbol{\Sigma}$ or
+$CoVar[Y] = \boldsymbol{\Sigma}$.
 :::
 
 ### Examples
+
+::: xmpl
+If $Y_i, \ldots , Y_n$ are i.i.d., $EY_i = \mu$, $VY_i = \sigma^2$,
+$a,b\in\mathbb{R}^n$ and $U=a'Y$, $W=b'Y$, and $$T=\begin{bmatrix}
+U \\
+W
+\end{bmatrix}$$
+
+then
+
+$$ET=
+\begin{bmatrix}
+\Sigma a_i  \mu \\
+\Sigma b_i  \mu
+\end{bmatrix}$$
+
+$$VT=
+\boldsymbol{\Sigma}
+= \sigma^2
+\begin{bmatrix}
+\Sigma a_i^2 & \Sigma a_i b_i \\
+\Sigma a_ib_i & \Sigma b_i^2
+\end{bmatrix}$$
+:::
+
+::: xmpl
+If $\underline{Y}$ is a random vector with mean $\boldsymbol{\mu}$ and
+variance-covariance matrix $\boldsymbol{\Sigma}$, then
+
+$$E[a'Y] = a'\mu$$
+
+and
+
+$$Var[a'Y] = a' \boldsymbol{\Sigma} a.
+\end{xmpl}$$
 
 ## Transforming random vectors
 
@@ -7115,12 +7186,12 @@ $$=
 \vdots & 0 & \ddots & \ddots & 0 \\
 0 & \ldots & \ldots & 0 & 1 \\ 
 \end{array} \right]
-= \sigma^2 I$$
+= \sigma^2 I.$$
 
 If $A$ is an $m \times n$ matrix, then\
 $$E[A\mathbf{Y}] = A \mathbf{\mu}$$
 
-and $$Var[A\mathbf{Y}] = A \boldsymbol{\Sigma} A'$$
+and $$Var[A\mathbf{Y}] = A \boldsymbol{\Sigma} A'.$$
 
 **Copyright** 2021, Gunnar Stefansson (editor) with contributions from
 very many students
@@ -7253,7 +7324,7 @@ then $\text{rank}(A)$ = 2. since $$1
       0 \\
       0 \\
     \end{array}
-   \right) = 0$$ (and hence the rank can not be more than 2) but $$k_1
+   \right) = 0$$ (and hence the rank cannot be more than 2) but $$k_1
   \left(
    \begin{array}{ccc}
      1 \\
@@ -7316,7 +7387,7 @@ sign if the number of interchanges in the permutation is even but
 negative otherwise.
 :::
 
-The determinant of $A$, $\det(A)$ or $\vert A \vert$ is the sum of all
+The determinant of $A$, $\det(A)$ or $\vert A \vert$, is the sum of all
 signed elementary products.
 
 ### Examples
@@ -7547,18 +7618,37 @@ $$\nabla f(x)=
 \begin{pmatrix} \frac{\partial f}{\partial x_1},&\dots &,\frac{\partial f}{\partial x_1}\end{pmatrix},$$
 
 where each partial derivative $\frac{\partial f}{\partial x_i}$ is
-computed by differentiating f with respect to that variable, regarding
+computed by differentiating $f$ with respect to that variable, regarding
 the others as fixed.
 :::
 
 ### Examples
 
 ::: xmpl
-$$f(\underline{x})= x^2+y^2+2xy;\ \frac{\partial f}{\partial x}=2x+2y,  \frac{\partial f}{\partial y}=2y+2x, \nabla f =\begin{pmatrix}2x+2y, & 2y+2x\end{pmatrix}$$
+Let
+
+$$f(\underline{x})= x^2+y^2+2xy.$$
+
+Then the partial derivatives of $f$ are
+
+$$\frac{\partial f}{\partial x}=2x+2y$$
+
+and
+
+$$\frac{\partial f}{\partial y}=2y+2x$$
+
+and the gradient of $f$ is therefore
+$$\nabla f =\begin{pmatrix}2x+2y, & 2y+2x\end{pmatrix}$$
 :::
 
 ::: xmpl
-$$f(\underline{x})=x_1-x_2; \nabla f= \begin{pmatrix}1, & -1\end{pmatrix}$$
+Let
+
+$$f(\underline{x})=x_1-x_2$$
+
+The gradient of $f$ is
+
+$$\nabla f= \begin{pmatrix}1, & -1\end{pmatrix}$$
 :::
 
 ## The Jacobian
@@ -7624,7 +7714,7 @@ $$J= \begin{bmatrix}
 If $f$ is a continuous function and $g$ is strictly increasing and
 differentiable then,
 
-$$\int_{g(a)}^{g(b)} f(x)dx =  \int_a^b f(g(t))g^\prime (t)dt$$
+$$\int_{g(a)}^{g(b)} f(x)dx =  \int_a^b f(g(t))g^\prime (t)dt.$$
 :::
 
 ### Details
@@ -7632,7 +7722,7 @@ $$\int_{g(a)}^{g(b)} f(x)dx =  \int_a^b f(g(t))g^\prime (t)dt$$
 If $f$ is a continuous function and $g$ is strictly increasing and
 differentiable then,
 
-$$\int_{g(a)}^{g(b)} f(x)dx =  \int_a^b f(g(t))g^\prime (t)dt$$
+$$\int_{g(a)}^{g(b)} f(x)dx =  \int_a^b f(g(t))g^\prime (t)dt.$$
 
 It follows that if $X$ is a continuous random variable with density $f$
 and $Y = h(X)$ is a function of $X$ that has the inverse $g=h^{-1}$, so
@@ -7713,7 +7803,7 @@ variables, then we have the following results:\
 The joint density of $X_1 \cdots X_n$ is the product of the individual
 (marginal) densities,
 
-$$f_X(\mathbf x)= f(x_1) f(x_2) \cdots f(x_n)$$
+$$f_X(\mathbf x)= f(x_1) f(x_2) \cdots f(x_n).$$
 
 The matrix of partial derivatives corresponds to
 $\frac{\partial g}{\partial y}$ where
@@ -7794,11 +7884,11 @@ $$=\frac{1}{(2 \pi)^\frac{n}{2}} e^{-\frac{1}{2} \underline{z}'\underline{z}}$$
 
 since
 
-$$\sum_{i=1}^n z_i^2 = \Vert \underline{z} \Vert ^2 = \underline{z} \cdot \underline{z} = \underline{z}'  \underline{z}$$
+$$\sum_{i=1}^n z_i^2 = \Vert \underline{z} \Vert ^2 = \underline{z} \cdot \underline{z} = \underline{z}'  \underline{z}.$$
 
 The joint p.d.f. of $\underline{Y}$ is therefore
 
-$$f_{\underline{Y}}(\underline{y}) = f_{\underline{Z}}(A^{-1}(\underline{y} - \underline{\mu})) \vert \det(A^{-1}) \vert$$
+$$f_{\underline{Y}}(\underline{y}) = f_{\underline{Z}}(A^{-1}(\underline{y} - \underline{\mu})) \vert \det(A^{-1}) \vert.$$
 
 $$=\frac{1}{(2 \pi)^{\frac{n}{2}}} e^{-\frac{1}{2}(A^{-1}(\underline{y}-\underline{\mu}))'(A^{-1}(\underline{y}-\underline{\mu}))}\frac{1}{\vert \det(A)\vert}$$
 
@@ -7812,13 +7902,13 @@ $$(A^{-1}(\underline{y}-\underline{\mu}))'(A^{-1}(\underline{y}-\underline{\mu})
 
 We can now write
 
-$$f_{\underline{Y}}(\underline{y}) = \frac{1}{(2 \pi)^\frac{n}{2} \vert \boldsymbol{\Sigma} \vert ^{\frac{1}{2}}} e^{-\frac{1}{2} (\underline{y}-\underline{\mu}) \boldsymbol{\Sigma}^{-1} (\underline{y}-\underline{\mu})}$$
+$$f_{\underline{Y}}(\underline{y}) = \frac{1}{(2 \pi)^\frac{n}{2} \vert \boldsymbol{\Sigma} \vert ^{\frac{1}{2}}} e^{-\frac{1}{2} (\underline{y}-\underline{\mu}) \boldsymbol{\Sigma}^{-1} (\underline{y}-\underline{\mu})}.$$
 
 This is the density of the multivariate normal distribution.
 
 Note that $$E[\underline{Y}] = \mu$$
 
-$$Var[\underline{Y}] = Var[A\underline{Z}] = AVar[\underline{Z}]A' = AIA' = \boldsymbol{\Sigma}$$
+$$Var[\underline{Y}] = Var[A\underline{Z}] = AVar[\underline{Z}]A' = AIA' = \boldsymbol{\Sigma}.$$
 
 Notation: $\underline{Y}\sim N(\underline{\mu}, \boldsymbol{\Sigma})$
 
@@ -7833,19 +7923,19 @@ is a special case of the multivariate version.
 ### Details
 
 Further, if $Z\sim N(0,1)$, then clearly $X=aZ+\mu \sim N(\mu,\sigma^2)$
-where $\sigma^2=a^2$
+where $\sigma^2=a^2$.
 
 ## Transforms to lower dimensions
 
 ::: fbox
-If $Y\sim n \left ( \boldsymbol{\mu},\boldsymbol{\Sigma} \right )$ is a
+If $Y\sim N \left ( \boldsymbol{\mu},\boldsymbol{\Sigma} \right )$ is a
 random vector of length $n$ and $A$ is an $m\times n$ matrix of rank
 $m\leq n$, then $AY \sim N(A\mu,A\Sigma A')$.
 :::
 
 ### Details
 
-If $Y\sim n \left ( \boldsymbol{\mu},\boldsymbol{\Sigma} \right )$ is a
+If $Y\sim N \left ( \boldsymbol{\mu},\boldsymbol{\Sigma} \right )$ is a
 random vector of length $n$ and $A$ is an $m\times n$ matrix of rank
 $m\leq n$, then $AY \sim N(A\mu,A\Sigma A')$.\
 To prove this, set up an $(n-m)\times n$ matrix, $B$, so that the
@@ -7863,7 +7953,7 @@ $p\leq n$, is: $$\hat{\beta} = (X'X)^{-1}X'Y$$ The random variable which
 describes the process giving the data and estimate is:
 $$b = (X'X)^{-1}X'Y$$
 
-It follows that $$\hat{\beta} \sim N(\beta,\sigma^{2}(X'X)^{-1})$$
+It follows that $$\hat{\beta} \sim N(\beta,\sigma^{2}(X'X)^{-1}).$$
 :::
 
 ### Details
@@ -7875,152 +7965,155 @@ variable which describes the process giving the data and estimate:
 $$b = (X'X)^{-1}X'Y$$ If $B = (X'X)^{-1}X'$, then we know that
 $$BY \sim N(B X \beta, B(\sigma^{2}I)B')$$ Note that
 $$BX\beta = (X'X)^{-1}X'X\beta=\beta$$ and
-$$B(\sigma^{2}I)B' = \sigma^{}(X'X)^{-1}X'[(X'X)^{-1}X']'$$
 
-$$= \sigma^{2}(X'X)^{-1}X'X(X'X)^{-1}$$
+$$\begin{aligned}
+  B(\sigma^{2}I)B' &= \sigma^{}(X'X)^{-1}X'[(X'X)^{-1}X']'\\
+  &= \sigma^{2}(X'X)^{-1}X'X(X'X)^{-1}\\
+  &=  \sigma^{2}(X'X)^{-1}.
+\end{\align*}
 
-$$= \sigma^{2}(X'X)^{-1}$$
+It follows that
+$$ \hat{\beta} \sim N(\beta,\sigma^{2}(X'X)^{-1}) $$
 
-It follows that $$\hat{\beta} \sim N(\beta,\sigma^{2}(X'X)^{-1})$$
+\begin{notes}
+The earlier results regarding the multivariate Gaussian distribution also show that the vector of parameter estimates will be Gaussian even if the original $Y$-variables are not independent.
+\end{notes}
 
-::: notes
-*Note 34*. The earlier results regarding the multivariate Gaussian
-distribution also show that the vector of parameter estimates will be
-Gaussian even if the original $Y$-variables are not independent.
-:::
+{\bf Copyright}
+2021, Gunnar Stefansson (editor) with contributions from very many students
 
-**Copyright** 2021, Gunnar Stefansson (editor) with contributions from
-very many students
-
-This work is licensed under the Creative Commons Attribution-ShareAlike
-License. To view a copy of this license, visit
+This work is licensed under the Creative Commons
+Attribution-ShareAlike License. To view a copy of this license, visit
 http://creativecommons.org/licenses/by-sa/1.0/ or send a letter to
 Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305,
 USA.
-
-# Independence, expectations and the moment generating function
-
-## Independent random variables
-
-::: fbox
+\clearpage
+%% Lecture https://tutor-web.net/math/math612.0/lecture510
+\section{Independence, expectations and the moment generating function}
+%% Slide https://tutor-web.net/math/math612.0/lecture510/slide10
+\subsection{Independent random variables}
+\begin{fbox}
+\begin{minipage}{0.97\textwidth}
 Recall that two events, $A$ and $B$, are independent if,
 
-$$P [A \cap B] = P[A] P[B]$$
+$$ P [A \cap B] = P[A] P[B]. $$
 
 Since the conditional probability of $A$ given $B$ is defined by:
 
-$$P [A|B] = \frac {P [A \cap B]} {P[B]}$$
+$$ P [A|B] = \frac {P [A \cap B]} {P[B]}.$$
 
 We see that $A$ and $B$ are independent if and only if
 
-$$P[A|B] = P[A](when  P [B] > 0 )$$
+$$ P[A|B] = P[A] \quad (\text{when }  P [B] > 0 ).$$
 
-Two continuous random variables, $X$ and $Y$, are similarly independent
-if,
+ 
 
-$$P [X \in A, Y \in B] = P [X \in A] P[Y \in B]$$
-:::
+Two continuous random variables, $X$ and $Y$, are similarly independent if,
 
-### Details
+$$ P [X \in A, Y \in B] = P [X \in A] P[Y \in B].$$
 
-Two continuous random variables, $X$ and $Y$, are similarly independent
-if,
+\end{minipage}
+\end{fbox}
+\subsubsection{Details}
+Two continuous random variables, $X$ and $Y$, are similarly independent if,
 
-$$P [X \in A, Y \in B] = P [X \in A] P[Y \in B]$$
+$$ P [X \in A, Y \in B] = P [X \in A] P[Y \in B] $$
 
-Now suppose $X$ has p.d.f. $f_X$ and Y has p.d.f. $f_Y$. Then,
+Now suppose $X$ has p.d.f. $f_X$  and $Y$ has p.d.f. $f_Y$. Then,
 
-$$P [X \in A] = \int_{A} f_X (x) dx$$
+$$ P [X \in A] = \int_{A} f_X (x) dx,$$
 
-$$P [Y \in B] = \int_{B} f_Y (y) dy$$
+$$ P [Y \in B] = \int_{B} f_Y (y) dy.$$
 
 So $X$ and $Y$ are independent if:
 
-$$P [X \in , Y \in B] = \int_{A} f_X (x) dx \int_{B} f_Y (y) dy$$
+$$ P [X \in , Y \in B] = \int_{A} f_X (x) dx \int_{B} f_Y (y) dy $$
 
-$$= \int_{A}f_X (x) (\int_{B} f_Y (y) dy) dx$$
+$$ = \int_{A}f_X (x) (\int_{B} f_Y (y) dy) dx.$$
 
-$$= \int_{A}\int_{B} f_X (x)f_Y (y) dydx$$
+$$ = \int_{A}\int_{B} f_X (x)f_Y (y) dydx.$$
 
 But, if $f$ is the joint density of $X$ and $Y$ then we know that
 
-$$P [X \in A, Y \in B]$$
+$$ P [X \in A, Y \in B] $$
 
-$$\int_{A}\int_{B} f (x,y) dydx$$
+$$ \int_{A}\int_{B} f (x,y) dydx.$$
 
-Hence $X$ and $Y$ are independent if and only if we can write the joint
-density in the form of,
+Hence $X$ and $Y$ are independent if and only if we can write the joint density in the form of,
 
-$$f(x ,y) = f_X (x)f_Y (y)$$
+$$ f(x ,y) = f_X (x)f_Y (y).$$
 
-## Independence and expected values
 
-::: fbox
-If $X$ and $Y$ are independent random variables then $E[XY]=E[X]E[Y]$.\
-Further, if $X$ and $Y$ are independent random variables then
-$E[g(X)h(Y)]=E[g(X)]E[h(Y)]$ is true if $g$ and $h$ are functions in
-which expectations exist.
-:::
+%% Slide https://tutor-web.net/math/math612.0/lecture510/slide20
+\subsection{Independence and expected values}
+\begin{fbox}
+\begin{minipage}{0.97\textwidth}
+If $X$ and $Y$ are independent random variables then $E[XY]=E[X]E[Y]$.\\
 
-### Details
-
-If $X$ and $Y$ are random variables with a joint distribution function
-$f(x,y)$, then it is true that for $h:\mathbb{R}^2\to\mathbb{R}$ we have
+Further, if $X$ and $Y$ are independent random variables then $E[g(X)h(Y)]=E[g(X)]E[h(Y)]$ is true if $g$ and $h$ are functions in which expectations exist.
+\end{minipage}
+\end{fbox}
+\subsubsection{Details}
+If $X$ and $Y$ are random variables with a joint distribution function $f(x,y)$, then it is true that for $h:\mathbb{R}^2\to\mathbb{R}$ we have 
 $$E[h(X,Y)]=\int\int h(x,y)f(x,y)dxdy$$
 
-for those $h$ such that the integral on the right exists.\
+for those $h$ such that the integral on the right exists. \\
+
 Suppose $X$ and $Y$ are independent continuous r.v., then
 
-$$f(x,y) = f_X (x) f_Y (y)$$
+$$ f(x,y) = f_X (x) f_Y (y)$$
 
-Thus, $$E[XY] = \int\int xy f (x,y) dxdy$$
+Thus, $$E[XY] = \int\int xy f (x,y) dxdy $$
 
-$$= \int\int xy f_X (x) f_Y (y) dxdy$$
+$$= \int\int xy f_X (x) f_Y (y) dxdy $$
 
-$$= \int xf_X (x) dx \int yf_Y (y) dy$$
+$$ = \int xf_X (x) dx \int yf_Y (y) dy $$
 
-$$= E [X] E [Y]$$
+$$ = E [X] E [Y]. $$
 
-::: notes
-*Note 35*. Note that if $X$ and $Y$ are independent then
-$E [h (X)g (Y)] = E [h(X)] E[g(Y)]$ is true whenever the functions $h$
-and $g$ have expected values.
-:::
+\begin{notes}
+Note that if $X$ and $Y$ are independent then $ E [h (X)g (Y)] = E [h(X)] E[g(Y)]$ is true whenever the functions $h$ and $g$ have expected values.
+\end{notes}
+\subsubsection{Examples}
+\begin{xmpl}
+Suppose $X,Y \in U (0,2)$ are  i.i.d then,
 
-### Examples
-
-::: xmpl
-Suppose $X,Y \in U (0,2)$ are i.i.d then,
-
-$$f_X (x) = 
+$$
+f_X (x) = 
 \begin{cases}
   \frac{1}{2} & \text{if } 0 \leq x \leq 2 \\
-  0 &\text{otherwise}
-\end{cases}.$$
+  0 & \text{otherwise}
+\end{cases}.
+$$
 
-and similarly for $f_Y$.\
-Next, note that, $$f(x,y) =  f_X (x) f_Y (y) = 
+and similarly for $f_Y$.\\
+
+Next, note that,
+$$
+f(x,y) =  f_X (x) f_Y (y) = 
 \begin{cases}
   \frac{1}{4} &\text{if } 0 \leq x,y \leq 2\\
-  0 &\text{otherwise}
-\end{cases}.$$
+  0 & \text{otherwise}
+\end{cases}.
+$$
 
-Also note that $f(x,y) \geq 0$ for all $(x,y) \in \mathbb{R}^2$ and
+Also note that $f(x,y) \geq 0$ for all $ (x,y) \in \mathbb{R}^2 $ and 
 
 $$\int\int  f(x,y)dxdy = \int_{0}^{2}\int_{0}^{2} \frac {1}{4} dxdy =  \frac {1}{4}.4 = 1$$
 
 It follows that,
-$$E [X Y] = \int_{-\infty}^{\infty}\int_{-\infty}^{\infty} xy f(x,y) dxdy$$
 
-$$= \int_{y=0}^{2}\int_{x=0}^{2} xy \frac {1}{4}dxdy$$
-
-$$= \int_{y=0}^{2} (\int_{x=0}^{2} xy \frac {1}{4} dx) dy$$
-
-$$= \int_{y=0}^{2} [\frac {1}{4}y \frac {1}{2}x^2]_{x=0}^ {2} dy$$
-
-$$= \int_{y=0}^{2} \frac {1}{4}y (\frac {1}{2} 2^2 - \frac {1}{2}.0) dy$$
-
-$$\int_{0}^{2} \frac {2}{4}y dy = \int_{0}^{2} \frac {1}{2}y dy = \frac {1}{2}\cdot \frac {1}{2} y^2 | _{0}^2 = \frac {1}{4}\cdot 2^2 = 1$$
+\begin{align*}
+  E [X Y] &= \int_{-\infty}^{\infty}\int_{-\infty}^{\infty} f(x,y) xy dxdy\\
+  &= \int_{y=0}^{2}\int_{x=0}^{2} \frac {1}{4}xy dxdy\\
+  &= \int_{y=0}^{2} \frac{1}{4}y \left(\int_{x=0}^{2} x dx\right) dy\\
+  &= \int_{y=0}^{2} \frac{1}{4}y  \left[\frac{1}{2}x^2\right]_{x=0}^{2} dy\\
+  &= \int_{y=0}^{2} \frac {1}{4}y \left(\frac {1}{2} \cdot 2^2 - \frac {1}{2}\cdot 0^2 \right) dy\\
+  &= \int_{0}^{2} \frac {2}{4}y dy\\
+  &= \int_{0}^{2} \frac {1}{2}y dy\\
+  &= \frac {1}{2}\cdot \frac {1}{2} y^2 | _{0}^2 \\
+  &= \frac {1}{4}\cdot 2^2\\
+  &= 1\end{aligned}$$
 
 But $$E [X] = E[Y] = \int_{y=0}^{2} x \frac {1}{2} dx = 1$$
 
@@ -8063,7 +8156,7 @@ $M(t)=E[e^{tX}]=E[1+X+\frac{(tX)^2}{2!}+\frac{(tX)^3}{3!}+\dots]$ since
 $e^a=1+a+\frac{a^2}{2!}+\frac{a^3}{3!}+\dots$. If the random variable
 $e^{|tX|}$ has a finite expected value then we can switch the sum and
 the expected valued to obtain:
-$$M(t)=E[\sum_{n=0}^{\infty}\frac{(tX)^n}{n!}]=\sum_{n=0}^{\infty}\frac{E[(tX)^n]}{n!}=\sum_{n=0}^{\infty}t^n\frac{E[X^n]}{n!}$$
+$$M(t)=E\left[\sum_{n=0}^{\infty}\frac{(tX)^n}{n!}\right]=\sum_{n=0}^{\infty}\frac{E[(tX)^n]}{n!}=\sum_{n=0}^{\infty}t^n\frac{E[X^n]}{n!}$$
 This implies that the $n^{th}$ derivative of $M(t)$ evaluated at $t=0$
 is exactly $E[X^n]$
 
@@ -8215,8 +8308,8 @@ integer, so the density becomes,
 
 $$f(x) = \frac {x^ {\frac{v}{2}- 1} e^\frac{-x}{2}} {\Gamma (\frac{v}{2}) Z^ \frac{v}{2}},  x > 0$$
 
-This is the density of a chi - squared random variable with $v$ degrees
-of freedom.\
+This is the density of a chi-squared random variable with $v$ degrees of
+freedom.\
 This is easy to see by starting with $Z \sim N(0,1)$ and defining
 $W = Z^2$ so that the c.d.f. is:
 
@@ -8249,8 +8342,8 @@ $$h[w] = \frac{w^ {\frac{-1}{2}-1} e \frac{-w}{2}} {2\Pi}, w > 0$$
 We see that we must have $h=f$ with $v = 1$. We have also shown
 $\Gamma (\frac {1}{2}) 2 ^\frac {1}{2} = \sqrt{2\pi}$, i.e
 $\Gamma (\frac {1}{2}) = \sqrt{\pi}$. Hence we have shown the $\chi^2$
-distribution on 1 df to be $G (\alpha = \frac {v}{2}, \beta = 2)$ when v
-= 1.
+distribution on 1 df to be $G (\alpha = \frac {v}{2}, \beta = 2)$ when
+$v = 1$.
 
 ## The sum of gamma variables
 
@@ -8349,39 +8442,20 @@ range is less than 0.05.\
 The $p$-value is represented as a percentage. Specifically, the
 $p$-value indicates the percentage of time, given that your null
 hypothesis is true, that you would find an outcome at least as extreme
-as the observed value. If your calculated $p$-value is 0.02 then 2
-
+as the observed value. If your calculated $p$-value is $0.02$ then 2% of
+the time you'd observe a mean at least as large as your observed.\
 In the overall model assessment the R-squared is the explained variance
 over the total variance. Generally, a higher $R^2$ is better but data
 with very little variance makes it easy to achieve a higher $R^2$, which
 is why the adjusted $R^2$ is presented.\
-Lastly, the F-statistic is given. Since the t-Statistic is not
-appropriate to compare two or more coefficients, the F-statistic must be
-applied. The basic methodology is that it compares a restricted model
+Lastly, the $F$-statistic is given. Since the $t$-Statistic is not
+appropriate to compare two or more coefficients, the $F$-statistic must
+be applied. The basic methodology is that it compares a restricted model
 where the coefficients have been set to a certain fixed level to a model
 which is unrestricted. The most common is the sum of squared residuals
-F-test.
+$F$-test.
 
 ## Multiple linear regression
-
-::: fbox
-Multiple linear regression attempts to model the relationship between
-two or more explanatory variables and a response variable by fitting a
-linear equation to observed data. Formally, the model for multiple
-linear regression, given $n$ observations, is
-
-$y_i = \beta_1 x_{i,1} + \beta_2 x_{i,2} + \ldots + \beta_p x_{i,p} + e_i$
-for $i = 1,2, \ldots , n$
-
-As always, we view the data, $y_i$ as observations of random variables,
-so another way to describe the same model is
-
-$Y_i = \beta_1 x_{i,1} + \beta_2 x_{i,2} + \ldots + \beta_p x_{i,p} + \epsilon_i$
-for $i = 1,2, \ldots , n$,
-
-and we note that the $x$-values are just numbers and are usually assumed
-to be without any measurement error.
-:::
 
 ## The one-way model
 
@@ -8423,8 +8497,8 @@ The simplest random effects model is the one-way layout, commonly
 written in the form $$y_{ij}=\mu + \alpha_i + \epsilon_{ij},$$ where
 $j =1,\ldots,J$ and $i =1,\ldots,I$.
 
-Normally one also assumes $\epsilon_{ij}\sim n (0,\sigma_A^2)$,
-$\alpha_i \sim n (0,\sigma_A^2)$, and that all these random variables
+Normally one also assumes $\epsilon_{ij}\sim N(0,\sigma_A^2)$,
+$\alpha_i \sim N (0,\sigma_A^2)$, and that all these random variables
 are independent.
 
 Note that we have stopped making a distinction in notation between
@@ -8454,7 +8528,7 @@ Cov(y_{ij},y_{i'j'}) &=Cov(\alpha_i+\epsilon_{ij}, \alpha_{i'}+ \epsilon_{i'j'})
                      &=E[\alpha_i\alpha_{i'}] + E[\epsilon{ij}\alpha_{i'}]+ E[\alpha_i\epsilon_{i'j'}] + E[\epsilon_{ij}\epsilon_{i'j'}]\end{aligned}$$
 
 ::: notes
-*Note 36*. Recall that $E[UW]=E[U]E[W]$ if $U,W$ are independent
+*Note 34*. Recall that $E[UW]=E[U]E[W]$ if $U,W$ are independent
 :::
 
 So,
@@ -8463,7 +8537,7 @@ $$E[\epsilon_{ij}\alpha_{i'}]=E[\alpha_i\epsilon_{i'j'}] = E\alpha_iE\epsilon_{i
 Further, $$E[\epsilon_{ij}\epsilon{i'j'}] =
   \begin{cases}
   \sigma^2 & \text{if } i=i', j=j'\\
-  0 &\text{otherwise} 
+  0 & \text{otherwise} 
 \end{cases}$$
 
 and
@@ -8486,11 +8560,10 @@ $$Cov(y_{ij},y_{i'j'}) =
 It follows that the correlation between measurements $y_{ij}$ and
 $y_{ij'}$ (within the same group) are
 
-$$\begin{align*}
+$$\begin{aligned}
 Cor(y_{ij},y_{ij'}) &= \frac{Cov(y_{ij},y_{ij'})}{\sqrt{Var[y_{ij}]Var[y_{ij'}]}}\\
                    &= \frac{\sigma_A^2}{\sqrt{(\sigma_A^2 + \sigma^2)^2}}\\
-                   &\Rightarrow Cor(y_{ij}, y_{ij'}) = \frac{\sigma_A^2}{\sigma_A^2 + \sigma^2}
-\end{align*}.$$
+                   &= \Rightarrow Cor(y_{ij}, y_{ij'}) = \frac{\sigma_A^2}{\sigma_A^2 + \sigma^2}\end{aligned}$$.
 
 This is the intra-class correlation.
 
@@ -8537,11 +8610,11 @@ contains the random effects.
 2.  $y_{ij} = \mu + \alpha_i + \beta_i x_{ij} + \epsilon_{ij}$ only
     fixed effects (ANCOVA)
 
-3.  $y_{ijk} = \mu + \alpha_i + b_j + \epsilon_{ijk}$ where Æ_iÆ are
-    fixed but Æb_jÆ are random.
+3.  $y_{ijk} = \mu + \alpha_i + b_j + \epsilon_{ijk}$ where $\alpha_i$
+    are fixed but $b_j$ are random.
 
-4.  $y_{ijk} = \mu  + \alpha_i + b_j x_{ij} + \epsilon_{ijk}$ where Æ_iÆ
-    are fixed but Æb_jÆ are random slopes.
+4.  $y_{ijk} = \mu  + \alpha_i + b_j x_{ij} + \epsilon_{ijk}$ where
+    $\alpha_i$ are fixed but $b_j$ are random slopes.
 :::
 
 ## Maximum likelihood estimation in lmm
@@ -8580,13 +8653,13 @@ $\boldsymbol{\epsilon} \sim N(\mathbf{0}, \sigma^2 I)$.
 
 Then $Ey = X\boldsymbol{\beta}$ and $$\begin{aligned}
 Vy& = & \boldsymbol{\Sigma}_y \\
-& = & Var[Zu+Var[\boldsymbol{\epsilon}] \\
+& = & Var[Zu+Var[\boldsymbol{\epsilon}]] \\
 & = & Z(\sigma^2_A I) Z' + \sigma^2 I\\
 & = & \sigma^2_A Z Z' + \sigma^2 I\end{aligned}$$ and hence
 $y \sim N(X\boldsymbol{\beta},\sigma^2_A Z Z' + \sigma^2 I )$.\
 Therefore the likelihood function for the unknown parameters
 $L(\boldsymbol{\beta},\sigma^2_A, \sigma^2)$ is
-$$= \frac{1}{(2\pi)^{n/2} \left| \boldsymbol{\Sigma}_y \right| ^{n/2}} e^{-1/2 (\mathbf{y}-X\boldsymbol{\beta})' \boldsymbol{\Sigma}^{-1}_y (y}-X\boldsymbol{\beta})$$
+$$= \frac{1}{(2\pi)^{n/2} \left| \boldsymbol{\Sigma}_y \right| ^{n/2}} e^{-1/2 (\mathbf{y}-X\boldsymbol{\beta})' \boldsymbol{\Sigma}^{-1}_y (y-X\boldsymbol{\beta})}$$
 
 where $\boldsymbol{\Sigma}_y =  \sigma^2_A Z Z' + \sigma^2 I$.
 Maximizing $L$ over $\boldsymbol{\beta},\sigma^2_A, \sigma^2$ gives the
