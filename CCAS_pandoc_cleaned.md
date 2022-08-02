@@ -9774,476 +9774,461 @@ $$Cov(U,W)=\sigma^2a\cdot b$$
 > 
 > and
 > 
-> $$Var[a'Y] = a' \boldsymbol{\Sigma} a.
-> \end{xmpl}$$
+> $$Var[a'Y] = a' \boldsymbol{\Sigma} a.$$
 > 
-> ## Transforming random vectors
+
+## Transforming random vectors
+
+> Suppose
 > 
-> > Suppose
-> > 
-> > $$\mathbf{Y}=
-> > \left(
-> > \begin{array}{c}
-> > Y_1\\
-> > \vdots \\
-> > Y_n
-> > \end{array} \right)$$
-> > 
-> > is a random vector with  $E[\mathbf{Y}] = \mu $
-> >  and
-> >  $Var[\mathbf{Y}] = \boldsymbol{\Sigma} $
-> >  where the variance-covariance
-> > matrix 
-> > 
-> > $$\boldsymbol{\Sigma} = \sigma^2 I$$
-> > 
+> $$\mathbf{Y}=
+> \left(
+> \begin{array}{c}
+> Y_1\\
+> \vdots \\
+> Y_n
+> \end{array} \right)$$
 > 
-> ### Details
+> is a random vector with  $E[\mathbf{Y}] = \mu $
+>  and
+>  $Var[\mathbf{Y}] = \boldsymbol{\Sigma} $
+>  where the variance-covariance
+> matrix 
 > 
-> Note that if  $Y_1, \ldots, Y_n $
->  are independent with common variance
->  $\sigma^2 $
->  then
+> $$\boldsymbol{\Sigma} = \sigma^2 I$$
 > 
-> $$\boldsymbol{\Sigma}=
-> \left[
-> \begin{array}{ccccc}
-> \sigma_{1}^{2} & \sigma_{12} & \sigma_{13} & \ldots & \sigma_{1n} \\
-> \sigma_{21} & \sigma_2^{2} & \sigma_{23} & \ldots & \sigma_{2n} \\
-> \sigma_{31} &\sigma_{32}  &\sigma_3^{2}  & \ldots & \sigma_{3n}\\
-> \vdots & \vdots & \vdots & \ddots & \vdots \\
-> \sigma_{n1} & \sigma_{n2} & \sigma_{n3} & \ldots & \sigma_n^{2}\\ 
-> \end{array} \right]$$
+
+### Details
+
+Note that if  $Y_1, \ldots, Y_n $
+ are independent with common variance
+ $\sigma^2 $
+ then
+
+$$\boldsymbol{\Sigma}=
+\left[
+\begin{array}{ccccc}
+\sigma_{1}^{2} & \sigma_{12} & \sigma_{13} & \ldots & \sigma_{1n} \\
+\sigma_{21} & \sigma_2^{2} & \sigma_{23} & \ldots & \sigma_{2n} \\
+\sigma_{31} &\sigma_{32}  &\sigma_3^{2}  & \ldots & \sigma_{3n}\\
+\vdots & \vdots & \vdots & \ddots & \vdots \\
+\sigma_{n1} & \sigma_{n2} & \sigma_{n3} & \ldots & \sigma_n^{2}\\ 
+\end{array} \right]$$
+
+
+
+$$=
+\left[
+\begin{array}{ccccc}
+\sigma_{1}^{2} & 0 & \ldots & \ldots & 0 \\
+ 0 & \sigma_2^{2} & \ddots & 0  & \vdots \\
+ \vdots & \ddots  &\sigma_3^{2}  & \ddots & \vdots \\
+\vdots & 0 & \ddots & \ddots & 0 \\
+0 & \ldots & \ldots & 0 & \sigma_n^{2}\\ 
+\end{array} \right]$$
+
+
+
+$$= 
+\sigma^2
+\left[
+\begin{array}{ccccc}
+1 & 0 & \ldots & \ldots & 0 \\
+ 0 & 1 & \ddots & 0  & \vdots \\
+ \vdots & \ddots  & 1  & \ddots & \vdots \\
+\vdots & 0 & \ddots & \ddots & 0 \\
+0 & \ldots & \ldots & 0 & 1 \\ 
+\end{array} \right]
+= \sigma^2 I.$$
+
+If  $A $
+ is an  $m \times n $
+ matrix, then
+
+$$E[A\mathbf{Y}] = A \mathbf{\mu}$$
+
+and 
+
+$$Var[A\mathbf{Y}] = A \boldsymbol{\Sigma} A'.$$
+
+**Copyright** 2021, Gunnar Stefansson (editor) with contributions from
+very many students
+
+This work is licensed under the Creative Commons Attribution-ShareAlike
+License. To view a copy of this license, visit
+http://creativecommons.org/licenses/by-sa/1.0/ or send a letter to
+Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305,
+USA.
+
+# Ranks and determinants
+
+## The rank of a matrix
+
+> The rank of an  $n \times p $
+>  matrix  $A $
+> , denoted by  $\text{rank}(A) $
+> , is
+> the largest number of columns of  $A $
+> , which are not linearly dependent
+> (i.e. the number of linearly independent columns).
+
+### Details
+
+Vectors  $a_1, a_2, \ldots, a_n $
+ are said to be linearly dependent if
+there exist constants  $k_1 , \ldots, k_n $
+ that are not all zero, such
+that 
+
+$$k_1 a_1 + k_2 a_2 + \ldots + k_n a_n = 0.$$
+
+Note that if such constants exist, then we can write one of the  $a $
+'s as
+a linear combination of the rest, e.g. if  $k_1 \neq 0 $
+ then
+
+$$a_1=\mathbf{c_1} =  -\frac{k_2}{k_1} a_2 - \ldots - \frac{k_2}{k_1} a_n$$
+
+It can be shown that the rank of  $A $
+, is the same as the rank of  $A' $
+
+i.e. the maximum number of linearly independent rows of  $A $
+.
+
+> **Note**:  
 > 
+> *Note 30*. Note that if  $\text{rank}(A) = p $
+> , then the columns are
+> linearly independent.
+
+### Examples
+
+> **Example**:  
 > 
+> If 
 > 
-> $$=
-> \left[
-> \begin{array}{ccccc}
-> \sigma_{1}^{2} & 0 & \ldots & \ldots & 0 \\
->  0 & \sigma_2^{2} & \ddots & 0  & \vdots \\
->  \vdots & \ddots  &\sigma_3^{2}  & \ddots & \vdots \\
-> \vdots & 0 & \ddots & \ddots & 0 \\
-> 0 & \ldots & \ldots & 0 & \sigma_n^{2}\\ 
-> \end{array} \right]$$
+> $$A= 
+>   \left[ 
+>    \begin{array}{cc}
+>      1 & 0 \\
+>      0 & 1 \\
+>    \end{array}
+>   \right]$$
 > 
+> then  $\text{rank}(A) $
+>  = 2, since
 > 
+> $$k_1
+>   \left(
+>    \begin{array}{cc}
+>      1 \\
+>      0 \\
+>    \end{array}
+>   \right) +  k_2
+>   \left(
+>    \begin{array}{cc}
+>      0 \\
+>      1 \\
+>    \end{array}
+>   \right) =  \left(
+>     \begin{array}{cc}
+>       0 \\
+>       0 \\
+>     \end{array}
+>    \right)$$
 > 
-> $$= 
-> \sigma^2
-> \left[
-> \begin{array}{ccccc}
-> 1 & 0 & \ldots & \ldots & 0 \\
->  0 & 1 & \ddots & 0  & \vdots \\
->  \vdots & \ddots  & 1  & \ddots & \vdots \\
-> \vdots & 0 & \ddots & \ddots & 0 \\
-> 0 & \ldots & \ldots & 0 & 1 \\ 
-> \end{array} \right]
-> = \sigma^2 I.$$
+> if and only if
 > 
-> If  $A $
->  is an  $m \times n $
->  matrix, then
+> $$\left( 
+>   \begin{array}{cc}
+>      k_1 \\
+>      k_2 \\
+>    \end{array}
+>   \right) =   \left(
+>     \begin{array}{cc}
+>       0 \\
+>       0 \\
+>     \end{array}
+>    \right)$$
 > 
-> $$E[A\mathbf{Y}] = A \mathbf{\mu}$$
+> so the columns are linearly independent.
+
+> **Example**:  
 > 
-> and 
+> If 
 > 
-> $$Var[A\mathbf{Y}] = A \boldsymbol{\Sigma} A'.$$
+> $$A = 
+>   \left[ 
+>    \begin{array}{ccc}
+>      1 & 0 & 1 \\
+>      0 & 1 & 1\\
+>      0 & 0 & 0 \\
+>    \end{array}
+>   \right]$$
 > 
-> **Copyright** 2021, Gunnar Stefansson (editor) with contributions from
-> very many students
+> then  $\text{rank}(A) $
+>  = 2.
+
+> **Example**:  
 > 
-> This work is licensed under the Creative Commons Attribution-ShareAlike
-> License. To view a copy of this license, visit
-> http://creativecommons.org/licenses/by-sa/1.0/ or send a letter to
-> Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305,
-> USA.
+> If 
 > 
-> # Ranks and determinants
+> $$A = 
+>   \left[ 
+>    \begin{array}{ccc}
+>      1 & 1 & 1 \\
+>      0 & 1 & 0 \\
+>      0 & 1 & 0 \\
+>    \end{array}
+>   \right]$$
 > 
-> ## The rank of a matrix
+> then  $\text{rank}(A) $
+>  = 2. since 
 > 
-> > The rank of an  $n \times p $
-> >  matrix  $A $
-> > , denoted by  $\text{rank}(A) $
-> > , is
-> > the largest number of columns of  $A $
-> > , which are not linearly dependent
-> > (i.e. the number of linearly independent columns).
+> $$1
+>   \left(
+>    \begin{array}{ccc}
+>      1 \\
+>      0 \\
+>      0 \\
+>    \end{array}
+>   \right) +  0
+>   \left(
+>    \begin{array}{ccc}
+>      0 \\
+>      1 \\
+>      1 \\
+>    \end{array}
+>   \right) + (-1)
+>   \left(
+>     \begin{array}{ccc}
+>       1 \\
+>       0 \\
+>       0 \\
+>     \end{array}
+>    \right) = 0$$
 > 
-> ### Details
+>  (and hence the rank cannot be more than 2) but 
 > 
-> Vectors  $a_1, a_2, \ldots, a_n $
->  are said to be linearly dependent if
-> there exist constants  $k_1 , \ldots, k_n $
->  that are not all zero, such
-> that 
+> $$k_1
+>   \left(
+>    \begin{array}{ccc}
+>      1 \\
+>      0 \\
+>      0 \\
+>    \end{array}
+>   \right) +  k_2
+>   \left(
+>    \begin{array}{ccc}
+>      0 \\
+>      1 \\
+>      1 \\
+>    \end{array}
+>   \right)$$
 > 
-> $$k_1 a_1 + k_2 a_2 + \ldots + k_n a_n = 0.$$
+> \
+> if and only if  $k_1=k_2=0 $
+>  (and hence the rank must be at least 2).
+
+## The determinant
+
+> Recall that for a  $2 \times 2 $
+>  matrix,
 > 
-> Note that if such constants exist, then we can write one of the  $a $
-> 's as
-> a linear combination of the rest, e.g. if  $k_1 \neq 0 $
->  then
+> $$A=
+> \begin{bmatrix}
+> a & b  \\
+> c & d 
+> \end{bmatrix}$$
 > 
-> $$a_1=\mathbf{c_1} =  -\frac{k_2}{k_1} a_2 - \ldots - \frac{k_2}{k_1} a_n$$
+> the inverse of  $A $
+>  is
 > 
-> It can be shown that the rank of  $A $
-> , is the same as the rank of  $A' $
+> $$A^{-1}=
+> \frac{1}{ad-bc}
+> \begin{bmatrix}
+> 2 & 3  \\
+> 3 & 1 
+> \end{bmatrix}$$
 > 
-> i.e. the maximum number of linearly independent rows of  $A $
+
+### Details
+
+> **Definition**:  
+> 
+> The number  $ad-bc $
+>  is called the **determinant** of the  $2 \times 2 $
+> 
+> matrix  $A $
 > .
+
+> **Definition**:  
 > 
-> > **Note**:  
-> > 
-> > *Note 30*. Note that if  $\text{rank}(A) = p $
-> > , then the columns are
-> > linearly independent.
+> Now suppose  $A $
+>  is an  $n \times n $
+>  matrix. An **elementary product**
+> from the matrix is a product of  $n $
+>  terms based on taking exactly one
+> term from each column of row  $x $
+> . Each such term can be written in the
+> form
+>  $a_{1j_1} \cdot a_{2j_2} \cdot a_{3j_3} \cdot \ldots \cdot a_{nj_n} $
 > 
-> ### Examples
+> where  $j_1, \ldots , j_n $
+>  is a permutation of the integers
+>  $1,2, \ldots , n $
+> . Each permutation  $\sigma $
+>  of the integers
+>  $1,2,\ldots,n $
+>  can be performed by repeatedly interchanging two numbers.
+
+> **Definition**:  
 > 
-> > **Example**:  
-> > 
-> > If 
-> > 
-> > $$A= 
-> >   \left[ 
-> >    \begin{array}{cc}
-> >      1 & 0 \\
-> >      0 & 1 \\
-> >    \end{array}
-> >   \right]$$
-> > 
-> > then  $\text{rank}(A) $
-> >  = 2, since
-> > 
-> > $$k_1
-> >   \left(
-> >    \begin{array}{cc}
-> >      1 \\
-> >      0 \\
-> >    \end{array}
-> >   \right) +  k_2
-> >   \left(
-> >    \begin{array}{cc}
-> >      0 \\
-> >      1 \\
-> >    \end{array}
-> >   \right) =  \left(
-> >     \begin{array}{cc}
-> >       0 \\
-> >       0 \\
-> >     \end{array}
-> >    \right)$$
-> > 
-> > if and only if
-> > 
-> > $$\left( 
-> >   \begin{array}{cc}
-> >      k_1 \\
-> >      k_2 \\
-> >    \end{array}
-> >   \right) =   \left(
-> >     \begin{array}{cc}
-> >       0 \\
-> >       0 \\
-> >     \end{array}
-> >    \right)$$
-> > 
-> > so the columns are linearly independent.
+> A **signed elementary product** is an elementary product with a positive
+> sign if the number of interchanges in the permutation is even but
+> negative otherwise.
+
+The determinant of  $A $
+,  $\det(A) $
+ or  $\vert A \vert $
+, is the sum of all
+signed elementary products.
+
+### Examples
+
+> **Example**:  
 > 
-> > **Example**:  
-> > 
-> > If 
-> > 
-> > $$A = 
-> >   \left[ 
-> >    \begin{array}{ccc}
-> >      1 & 0 & 1 \\
-> >      0 & 1 & 1\\
-> >      0 & 0 & 0 \\
-> >    \end{array}
-> >   \right]$$
-> > 
-> > then  $\text{rank}(A) $
-> >  = 2.
 > 
-> > **Example**:  
-> > 
-> > If 
-> > 
-> > $$A = 
-> >   \left[ 
-> >    \begin{array}{ccc}
-> >      1 & 1 & 1 \\
-> >      0 & 1 & 0 \\
-> >      0 & 1 & 0 \\
-> >    \end{array}
-> >   \right]$$
-> > 
-> > then  $\text{rank}(A) $
-> >  = 2. since 
-> > 
-> > $$1
-> >   \left(
-> >    \begin{array}{ccc}
-> >      1 \\
-> >      0 \\
-> >      0 \\
-> >    \end{array}
-> >   \right) +  0
-> >   \left(
-> >    \begin{array}{ccc}
-> >      0 \\
-> >      1 \\
-> >      1 \\
-> >    \end{array}
-> >   \right) + (-1)
-> >   \left(
-> >     \begin{array}{ccc}
-> >       1 \\
-> >       0 \\
-> >       0 \\
-> >     \end{array}
-> >    \right) = 0$$
-> > 
-> >  (and hence the rank cannot be more than 2) but 
-> > 
-> > $$k_1
-> >   \left(
-> >    \begin{array}{ccc}
-> >      1 \\
-> >      0 \\
-> >      0 \\
-> >    \end{array}
-> >   \right) +  k_2
-> >   \left(
-> >    \begin{array}{ccc}
-> >      0 \\
-> >      1 \\
-> >      1 \\
-> >    \end{array}
-> >   \right)$$
-> > 
-> > \
-> > if and only if  $k_1=k_2=0 $
-> >  (and hence the rank must be at least 2).
+> $$A=
+> \begin{bmatrix}
+> a_{11} & a_{12}  \\
+> a_{21} & a_{22} 
+> \end{bmatrix}$$
 > 
-> ## The determinant
+> then
 > 
-> > Recall that for a  $2 \times 2 $
-> >  matrix,
-> > 
-> > $$A=
-> > \begin{bmatrix}
-> > a & b  \\
-> > c & d 
-> > \end{bmatrix}$$
-> > 
-> > the inverse of  $A $
-> >  is
-> > 
-> > $$A^{-1}=
-> > \frac{1}{ad-bc}
-> > \begin{bmatrix}
-> > 2 & 3  \\
-> > 3 & 1 
-> > \end{bmatrix}$$
-> > 
+>  $\vert A \vert = a_{1\underline{1}} a_{2\underline{2}} - a_{1\underline{2}}a_{2\underline{1}} $
+> .
+
+> **Example**:  
 > 
-> ### Details
+> If 
 > 
-> > **Definition**:  
-> > 
-> > The number  $ad-bc $
-> >  is called the **determinant** of the  $2 \times 2 $
-> > 
-> > matrix  $A $
-> > .
+> $$A=
+> \begin{bmatrix}
+> a_{11} & a_{12} & a_{13}  \\
+> a_{21} & a_{22} & a_{23} \\
+> a_{31} & a_{32} & a_{33}
+> \end{bmatrix},$$
 > 
-> > **Definition**:  
-> > 
-> > Now suppose  $A $
-> >  is an  $n \times n $
-> >  matrix. An **elementary product**
-> > from the matrix is a product of  $n $
-> >  terms based on taking exactly one
-> > term from each column of row  $x $
-> > . Each such term can be written in the
-> > form
-> >  $a_{1j_1} \cdot a_{2j_2} \cdot a_{3j_3} \cdot \ldots \cdot a_{nj_n} $
-> > 
-> > where  $j_1, \ldots , j_n $
-> >  is a permutation of the integers
-> >  $1,2, \ldots , n $
-> > . Each permutation  $\sigma $
-> >  of the integers
-> >  $1,2,\ldots,n $
-> >  can be performed by repeatedly interchanging two numbers.
+> Then
 > 
-> > **Definition**:  
-> > 
-> > A **signed elementary product** is an elementary product with a positive
-> > sign if the number of interchanges in the permutation is even but
-> > negative otherwise.
+>  $\vert A \vert $
 > 
-> The determinant of  $A $
-> ,  $\det(A) $
->  or  $\vert A \vert $
-> , is the sum of all
-> signed elementary products.
 > 
-> ### Examples
+> =  $a_{11} a_{22} a_{33} $
+>  This is the identity permutation and has
+> positive sign
 > 
-> > **Example**:  
-> > 
-> > 
-> > $$A=
-> > \begin{bmatrix}
-> > a_{11} & a_{12}  \\
-> > a_{21} & a_{22} 
-> > \end{bmatrix}$$
-> > 
-> > then
-> > 
-> >  $\vert A \vert = a_{1\underline{1}} a_{2\underline{2}} - a_{1\underline{2}}a_{2\underline{1}} $
-> > .
+>  $-a_{11} a_{23} a_{32} $
+>  This is the permutation that only interchanges
+>  $2 $
+>  and  $3 $
 > 
-> > **Example**:  
-> > 
-> > If 
-> > 
-> > $$A=
-> > \begin{bmatrix}
-> > a_{11} & a_{12} & a_{13}  \\
-> > a_{21} & a_{22} & a_{23} \\
-> > a_{31} & a_{32} & a_{33}
-> > \end{bmatrix},$$
-> > 
-> > Then
-> > 
-> >  $\vert A \vert $
-> > 
-> > 
-> > =  $a_{11} a_{22} a_{33} $
-> >  This is the identity permutation and has
-> > positive sign
-> > 
-> >  $-a_{11} a_{23} a_{32} $
-> >  This is the permutation that only interchanges
-> >  $2 $
-> >  and  $3 $
-> > 
-> > 
-> >  $-a_{12} a_{21} a_{33} $
-> >  Only one interchange
-> > 
-> >  $+a_{12} a_{23} a_{31} $
-> >  Two interchanges
-> > 
-> >  $+a_{13} a_{21} a_{32} $
-> >  Two interchanges
-> > 
-> >  $-a_{13} a_{22} a_{31} $
-> >  Three interchanges
 > 
-> > **Example**:  
-> > 
-> > 
-> > $$A=
-> > \begin{bmatrix}
-> > 1 & 1  \\
-> > 1 & 0 
-> > \end{bmatrix}$$
-> > 
-> >  $\vert A \vert = -1 $
-> > 
+>  $-a_{12} a_{21} a_{33} $
+>  Only one interchange
 > 
-> > **Example**:  
-> > 
-> > 
-> > $$A=
-> > \begin{bmatrix}
-> > 1 & 0 & 0  \\
-> > 0 & 2 & 0  \\
-> > 0 & 0 & 3 
-> > \end{bmatrix}$$
-> > 
-> >  $\vert A \vert = 1 \cdot 2 \cdot 3 = 6 $
-> > 
+>  $+a_{12} a_{23} a_{31} $
+>  Two interchanges
 > 
-> > **Example**:  
-> > 
-> > 
-> > $$A=
-> > \begin{bmatrix}
-> > 1 & 0 & 0  \\
-> > 0 & 2 & 0  \\
-> > 0 & 3 & 0 
-> > \end{bmatrix}$$
-> > 
-> >  $\vert A \vert = 0 $
-> > 
+>  $+a_{13} a_{21} a_{32} $
+>  Two interchanges
 > 
-> > **Example**:  
-> > 
-> > 
-> > $$A=
-> > \begin{bmatrix}
-> > 1 & 0 & 0  \\
-> > 0 & 0 & 2  \\
-> > 0 & 3 & 0 
-> > \end{bmatrix}$$
-> > 
-> >  $\vert A \vert = -6 $
-> > 
+>  $-a_{13} a_{22} a_{31} $
+>  Three interchanges
+
+> **Example**:  
 > 
-> > **Example**:  
-> > 
-> > 
-> > $$A=
-> > \begin{bmatrix}
-> > 2 & 1  \\
-> > 2 & 1 
-> > \end{bmatrix}$$
-> > 
-> >  $\vert A \vert = 0 $
-> > 
 > 
-> > **Example**:  
-> > 
-> > 
-> > $$A=
-> > \begin{bmatrix}
-> > 1 & 0 & 1  \\
-> > 0 & 1 & 1  \\
-> > 1 & 1 & 2 
-> > \end{bmatrix}$$
-> > 
-> >  $\vert A \vert = 0 $
-> > 
+> $$A=
+> \begin{bmatrix}
+> 1 & 1  \\
+> 1 & 0 
+> \end{bmatrix}$$
 > 
-> ## Ranks, inverses and determinants
+>  $\vert A \vert = -1 $
 > 
-> > The following statements are true for an  $n\times n $
-> >  matrix  $A $
-> > :
-> > 
-> > -    $\text{rank} (A)= n $
-> > 
-> > 
-> > -    $\det(A)\neq 0 $
-> > 
-> > 
-> > -    $A $
-> >  has an inverse
+
+> **Example**:  
 > 
-> ### Details
 > 
-> Suppose  $A $
->  is an  $n\times n $
->  matrix. Then the following are truths:
+> $$A=
+> \begin{bmatrix}
+> 1 & 0 & 0  \\
+> 0 & 2 & 0  \\
+> 0 & 0 & 3 
+> \end{bmatrix}$$
+> 
+>  $\vert A \vert = 1 \cdot 2 \cdot 3 = 6 $
+> 
+
+> **Example**:  
+> 
+> 
+> $$A=
+> \begin{bmatrix}
+> 1 & 0 & 0  \\
+> 0 & 2 & 0  \\
+> 0 & 3 & 0 
+> \end{bmatrix}$$
+> 
+>  $\vert A \vert = 0 $
+> 
+
+> **Example**:  
+> 
+> 
+> $$A=
+> \begin{bmatrix}
+> 1 & 0 & 0  \\
+> 0 & 0 & 2  \\
+> 0 & 3 & 0 
+> \end{bmatrix}$$
+> 
+>  $\vert A \vert = -6 $
+> 
+
+> **Example**:  
+> 
+> 
+> $$A=
+> \begin{bmatrix}
+> 2 & 1  \\
+> 2 & 1 
+> \end{bmatrix}$$
+> 
+>  $\vert A \vert = 0 $
+> 
+
+> **Example**:  
+> 
+> 
+> $$A=
+> \begin{bmatrix}
+> 1 & 0 & 1  \\
+> 0 & 1 & 1  \\
+> 1 & 1 & 2 
+> \end{bmatrix}$$
+> 
+>  $\vert A \vert = 0 $
+> 
+
+## Ranks, inverses and determinants
+
+> The following statements are true for an  $n\times n $
+>  matrix  $A $
+> :
 > 
 > -    $\text{rank} (A)= n $
 > 
@@ -10253,217 +10238,210 @@ $$Cov(U,W)=\sigma^2a\cdot b$$
 > 
 > -    $A $
 >  has an inverse
+
+### Details
+
+Suppose  $A $
+ is an  $n\times n $
+ matrix. Then the following are truths:
+
+-    $\text{rank} (A)= n $
+
+
+-    $\det(A)\neq 0 $
+
+
+-    $A $
+ has an inverse
+
+**Copyright** 2021, Gunnar Stefansson (editor) with contributions from
+very many students
+
+This work is licensed under the Creative Commons Attribution-ShareAlike
+License. To view a copy of this license, visit
+http://creativecommons.org/licenses/by-sa/1.0/ or send a letter to
+Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305,
+USA.
+
+# Multivariate calculus
+
+## Vector functions of several variables
+
+> A vector-valued function of several variables is a function
 > 
-> **Copyright** 2021, Gunnar Stefansson (editor) with contributions from
-> very many students
+> $$f: \mathbb{R}^{m} \rightarrow \mathbb{R}^{n}$$
 > 
-> This work is licensed under the Creative Commons Attribution-ShareAlike
-> License. To view a copy of this license, visit
-> http://creativecommons.org/licenses/by-sa/1.0/ or send a letter to
-> Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305,
-> USA.
+>  i.e. a function of  $m $
 > 
-> # Multivariate calculus
+> dimensional vectors, which returns  $n $
+>  dimensional vectors.
+
+### Examples
+
+> **Example**:  
 > 
-> ## Vector functions of several variables
+> A real valued function of many variables:
+>  $f: \mathbb{R}^3\to\mathbb{R} $
+> ,  $f(x_1,x_2,x_3)=2x_1+3x_2+4x_3 $
+> .
 > 
-> > A vector-valued function of several variables is a function
+> > **Note**:  
 > > 
-> > $$f: \mathbb{R}^{m} \rightarrow \mathbb{R}^{n}$$
+> > *Note 31*. Note that  $f $
+> >  is linear and  $f(x)=Ax $
+> >  where
 > > 
-> >  i.e. a function of  $m $
+> > $$x=\begin{pmatrix} x_1\\
+> > x_2\\
+> > x_3\end{pmatrix}$$
 > > 
-> > dimensional vectors, which returns  $n $
-> >  dimensional vectors.
+> >  and 
+> > 
+> > $$A=\begin{bmatrix}2&3&4\end{bmatrix}.$$
+> > 
+
+> **Example**:  
 > 
-> ### Examples
+> Let 
 > 
-> > **Example**:  
-> > 
-> > A real valued function of many variables:
-> >  $f: \mathbb{R}^3\to\mathbb{R} $
-> > ,  $f(x_1,x_2,x_3)=2x_1+3x_2+4x_3 $
-> > .
-> > 
-> > > **Note**:  
-> > > 
-> > > *Note 31*. Note that  $f $
-> > >  is linear and  $f(x)=Ax $
-> > >  where
-> > > 
-> > > $$x=\begin{pmatrix} x_1\\
-> > > x_2\\
-> > > x_3\end{pmatrix}$$
-> > > 
-> > >  and 
-> > > 
-> > > $$A=\begin{bmatrix}2&3&4\end{bmatrix}.$$
-> > > 
+> $$f: \mathbb{R}^{2} \rightarrow \mathbb{R}^{2}$$
 > 
-> > **Example**:  
-> > 
-> > Let 
-> > 
-> > $$f: \mathbb{R}^{2} \rightarrow \mathbb{R}^{2}$$
-> > 
-> >  where:
-> > 
-> > $$f(x_1,x_2) = \left(
-> > \begin{array}{c}
-> > x_1+x_2 \\
-> > x_1-x_2
-> > \end{array} \right)$$
-> > 
-> > > **Note**:  
-> > > 
-> > > *Note 32*. Note that  $f(x)=Ax $
-> > > , where 
-> > > 
-> > > $$A=\begin{bmatrix}
-> > > 1&1\\
-> > > 1&-1
-> > > \end{bmatrix}.$$
-> > > 
+>  where:
 > 
-> > **Example**:  
-> > 
-> > Let 
-> > 
-> > $$f: \mathbb{R}^{3} \rightarrow \mathbb{R}^{4}$$
-> > 
-> >  be defined by
-> > 
-> > $$f(x)
-> > = \left(
-> > \begin{array}{c}
-> > x_1+x_2 \\
-> > x_1-x_3 \\
-> > y-z \\
-> > x_1+x_2+x_3
-> > \end{array} \right)$$
-> > 
-> > > **Note**:  
-> > > 
-> > > *Note 33*. Note that: 
-> > > 
-> > > $$f(x) = Ax$$
-> > > 
-> > >  where 
-> > > 
-> > > $$A =
-> > > \begin{bmatrix}
-> > > 1 & 1 & 0\\
-> > > 1 & 0 & -1\\
-> > > 0 & 1 & -1\\
-> > > 1 & 1 & 1
-> > > \end{bmatrix}$$
-> > > 
+> $$f(x_1,x_2) = \left(
+> \begin{array}{c}
+> x_1+x_2 \\
+> x_1-x_2
+> \end{array} \right)$$
 > 
-> > **Example**:  
+> > **Note**:  
 > > 
-> > These multi-dimensional functions do not have to be linear, for example
-> > the function  $f:\mathbb{R}^2\to\mathbb{R}^2 $
-> >  
+> > *Note 32*. Note that  $f(x)=Ax $
+> > , where 
 > > 
-> > $$f(x) = \left(
-> > \begin{array}{c}
-> > x_1x_2 \\
-> > x_1^{2}+x_2^{2}
-> > \end{array} \right),$$
+> > $$A=\begin{bmatrix}
+> > 1&1\\
+> > 1&-1
+> > \end{bmatrix}.$$
 > > 
-> >  is obviously not linear.
+
+> **Example**:  
 > 
-> ## The gradient
+> Let 
 > 
-> > Suppose the real valued function  $f:\mathbb{R}^m \rightarrow \mathbb{R} $
-> > 
-> > is differentiable in each coordinate. Then the gradient of  $f $
-> > , denoted
-> >  $\nabla f $
-> >  is given by
-> > 
-> > $$\nabla f(x)=\begin{pmatrix}\frac{\partial f}{\partial x_1},&\dots &,\frac{\partial f}{\partial x_1}\end{pmatrix}.$$
-> > 
+> $$f: \mathbb{R}^{3} \rightarrow \mathbb{R}^{4}$$
 > 
-> ### Details
+>  be defined by
 > 
-> > **Definition**:  
-> > 
-> > Suppose the real valued function  $f:\mathbb{R}^m \rightarrow \mathbb{R} $
-> > 
-> > is differentiable in each coordinate. Then the **gradient** of  $f $
-> > ,
-> > denoted  $\nabla f $
-> >  is given by
-> > 
-> > $$\nabla f(x)=
-> > \begin{pmatrix} \frac{\partial f}{\partial x_1},&\dots &,\frac{\partial f}{\partial x_1}\end{pmatrix},$$
-> > 
-> > where each partial derivative  $\frac{\partial f}{\partial x_i} $
-> >  is
-> > computed by differentiating  $f $
-> >  with respect to that variable, regarding
-> > the others as fixed.
+> $$f(x)
+> = \left(
+> \begin{array}{c}
+> x_1+x_2 \\
+> x_1-x_3 \\
+> y-z \\
+> x_1+x_2+x_3
+> \end{array} \right)$$
 > 
-> ### Examples
+> > **Note**:  
+> > 
+> > *Note 33*. Note that: 
+> > 
+> > $$f(x) = Ax$$
+> > 
+> >  where 
+> > 
+> > $$A =
+> > \begin{bmatrix}
+> > 1 & 1 & 0\\
+> > 1 & 0 & -1\\
+> > 0 & 1 & -1\\
+> > 1 & 1 & 1
+> > \end{bmatrix}$$
+> > 
+
+> **Example**:  
 > 
-> > **Example**:  
-> > 
-> > Let
-> > 
-> > $$f(\underline{x})= x^2+y^2+2xy.$$
-> > 
-> > Then the partial derivatives of  $f $
-> >  are
-> > 
-> > $$\frac{\partial f}{\partial x}=2x+2y$$
-> > 
-> > and
-> > 
-> > $$\frac{\partial f}{\partial y}=2y+2x$$
-> > 
-> > and the gradient of  $f $
-> >  is therefore
-> > 
-> > $$\nabla f =\begin{pmatrix}2x+2y, & 2y+2x\end{pmatrix}$$
-> > 
+> These multi-dimensional functions do not have to be linear, for example
+> the function  $f:\mathbb{R}^2\to\mathbb{R}^2 $
+>  
 > 
-> > **Example**:  
-> > 
-> > Let
-> > 
-> > $$f(\underline{x})=x_1-x_2$$
-> > 
-> > The gradient of  $f $
-> >  is
-> > 
-> > $$\nabla f= \begin{pmatrix}1, & -1\end{pmatrix}$$
-> > 
+> $$f(x) = \left(
+> \begin{array}{c}
+> x_1x_2 \\
+> x_1^{2}+x_2^{2}
+> \end{array} \right),$$
 > 
-> ## The Jacobian
+>  is obviously not linear.
+
+## The gradient
+
+> Suppose the real valued function  $f:\mathbb{R}^m \rightarrow \mathbb{R} $
 > 
-> > Now consider a function  $f:\mathbb{R}^m\to\mathbb{R}^n $
-> > . Write  $f_i $
-> >  for
-> > the  $i^{th} $
-> >  coordinate of  $f $
-> > , so we can write
-> >  $f(x)=(f_1(x),f_2(x),\ldots,f_n(x)) $
-> > , where  $x\in\mathbb{R}^m $
-> > . If each
-> > coordinate function  $f_i $
-> >  is differentiable in each variable we can form
-> > the *Jacobian matrix* of  $f $
-> > : 
-> > 
-> > $$\begin{pmatrix}\nabla f_1\\ 
-> >   \vdots\\ 
-> >   \nabla f_n
-> > \end{pmatrix}.$$
-> > 
+> is differentiable in each coordinate. Then the gradient of  $f $
+> , denoted
+>  $\nabla f $
+>  is given by
 > 
-> ### Details
+> $$\nabla f(x)=\begin{pmatrix}\frac{\partial f}{\partial x_1},&\dots &,\frac{\partial f}{\partial x_1}\end{pmatrix}.$$
 > 
+
+### Details
+
+> **Definition**:  
+> 
+> Suppose the real valued function  $f:\mathbb{R}^m \rightarrow \mathbb{R} $
+> 
+> is differentiable in each coordinate. Then the **gradient** of  $f $
+> ,
+> denoted  $\nabla f $
+>  is given by
+> 
+> $$\nabla f(x)=
+> \begin{pmatrix} \frac{\partial f}{\partial x_1},&\dots &,\frac{\partial f}{\partial x_1}\end{pmatrix},$$
+> 
+> where each partial derivative  $\frac{\partial f}{\partial x_i} $
+>  is
+> computed by differentiating  $f $
+>  with respect to that variable, regarding
+> the others as fixed.
+
+### Examples
+
+> **Example**:  
+> 
+> Let
+> 
+> $$f(\underline{x})= x^2+y^2+2xy.$$
+> 
+> Then the partial derivatives of  $f $
+>  are
+> 
+> $$\frac{\partial f}{\partial x}=2x+2y$$
+> 
+> and
+> 
+> $$\frac{\partial f}{\partial y}=2y+2x$$
+> 
+> and the gradient of  $f $
+>  is therefore
+> 
+> $$\nabla f =\begin{pmatrix}2x+2y, & 2y+2x\end{pmatrix}$$
+> 
+
+> **Example**:  
+> 
+> Let
+> 
+> $$f(\underline{x})=x_1-x_2$$
+> 
+> The gradient of  $f $
+>  is
+> 
+> $$\nabla f= \begin{pmatrix}1, & -1\end{pmatrix}$$
+> 
+
+## The Jacobian
+
 > Now consider a function  $f:\mathbb{R}^m\to\mathbb{R}^n $
 > . Write  $f_i $
 >  for
@@ -10483,56 +10461,68 @@ $$Cov(U,W)=\sigma^2a\cdot b$$
 >   \nabla f_n
 > \end{pmatrix}.$$
 > 
-> In this matrix, the element in the  $i^{th} $
->  row and  $j^{th} $
->  column is
->  $\frac{\partial f_i}{\partial x_j} $
-> .
+
+### Details
+
+Now consider a function  $f:\mathbb{R}^m\to\mathbb{R}^n $
+. Write  $f_i $
+ for
+the  $i^{th} $
+ coordinate of  $f $
+, so we can write
+ $f(x)=(f_1(x),f_2(x),\ldots,f_n(x)) $
+, where  $x\in\mathbb{R}^m $
+. If each
+coordinate function  $f_i $
+ is differentiable in each variable we can form
+the *Jacobian matrix* of  $f $
+: 
+
+$$\begin{pmatrix}\nabla f_1\\ 
+  \vdots\\ 
+  \nabla f_n
+\end{pmatrix}.$$
+
+In this matrix, the element in the  $i^{th} $
+ row and  $j^{th} $
+ column is
+ $\frac{\partial f_i}{\partial x_j} $
+.
+
+### Examples
+
+> **Example**:  
 > 
-> ### Examples
+> For the function
 > 
-> > **Example**:  
-> > 
-> > For the function
-> > 
-> > $$f(x,y)=\begin{pmatrix}
-> >   x^2 +y \\
-> >   x y  \\
-> >   x 
-> > \end{pmatrix}=
-> > \begin{pmatrix}
-> >   f_1(x,y) \\
-> >   f_2(x,y) \\
-> >   f_3(x,y) 
-> > \end{pmatrix},$$
-> > 
-> > the Jacobian matrix of  $f $
-> >  is the matrix
-> > 
-> > $$J= \begin{bmatrix}
-> >       \nabla f_1 \\
-> >       \nabla f_2 \\
-> >       \nabla f_3 
-> >       \end{bmatrix}=
-> > \begin{bmatrix}
-> >       2x & 2y \\
-> >       y & x \\
-> >       1 & 0 
-> >       \end{bmatrix}.$$
-> > 
+> $$f(x,y)=\begin{pmatrix}
+>   x^2 +y \\
+>   x y  \\
+>   x 
+> \end{pmatrix}=
+> \begin{pmatrix}
+>   f_1(x,y) \\
+>   f_2(x,y) \\
+>   f_3(x,y) 
+> \end{pmatrix},$$
 > 
-> ## Univariate integration by substitution
+> the Jacobian matrix of  $f $
+>  is the matrix
 > 
-> > If  $f $
-> >  is a continuous function and  $g $
-> >  is strictly increasing and
-> > differentiable then,
-> > 
-> > $$\int_{g(a)}^{g(b)} f(x)dx =  \int_a^b f(g(t))g^\prime (t)dt.$$
-> > 
+> $$J= \begin{bmatrix}
+>       \nabla f_1 \\
+>       \nabla f_2 \\
+>       \nabla f_3 
+>       \end{bmatrix}=
+> \begin{bmatrix}
+>       2x & 2y \\
+>       y & x \\
+>       1 & 0 
+>       \end{bmatrix}.$$
 > 
-> ### Details
-> 
+
+## Univariate integration by substitution
+
 > If  $f $
 >  is a continuous function and  $g $
 >  is strictly increasing and
@@ -10540,57 +10530,35 @@ $$Cov(U,W)=\sigma^2a\cdot b$$
 > 
 > $$\int_{g(a)}^{g(b)} f(x)dx =  \int_a^b f(g(t))g^\prime (t)dt.$$
 > 
-> It follows that if  $X $
->  is a continuous random variable with density  $f $
-> 
-> and  $Y = h(X) $
->  is a function of  $X $
->  that has the inverse  $g=h^{-1} $
-> , so
->  $X = g(Y) $
->  , then the density of  $Y $
->  is given by,
-> 
-> $$f_Y(y)   = f (g(y)) g^\prime (y)$$
-> 
-> This is a consequence of
-> 
-> $$P [Y \leq b] = P [g(Y) \leq g(b)] = P [X \leq g(b)] = \int_{- \infty} ^{g(b)}f(x)dx = \int_{- \infty} ^b f (g(y))g^\prime (y)dy.$$
-> 
-> ## Multivariate integration by substitution
-> 
-> > Suppose  $f $
-> >  is a continuous function
-> >  $f: \mathbb{R}^n \rightarrow \mathbb{R} $
-> >  and
-> >  $g: \mathbb{R}^n \rightarrow \mathbb{R}^n $
-> >  is a one-to-one function with
-> > continuous partial derivatives. Then if  $U \subseteq \mathbb{R}^n $
-> >  is a
-> > subset,
-> > 
-> > $$\int_{g(U)} f(\mathbf {x})d\mathbf {x}  = \int_{U}({g}(\mathbf {y}))|J|d\mathbf {y}$$
-> > 
-> > where  $J $
-> >  is the Jacobian matrix and  $|J| $
-> >  is the absolute value of it's
-> > determinant.
-> > 
-> > $$J=
-> > \left|\begin{bmatrix}
-> > \frac{\partial g_1}{\partial y_1} & \frac{\partial g_1}{\partial y_2} & \cdots &\frac{\partial g_1}{\partial y_n} \\
-> > \vdots & \vdots & \cdots & \vdots \\
-> > \frac{\partial g_n}{\partial y_1} & \frac{\partial g_n}{\partial y_2} & \cdots & \frac{\partial g_n}{\partial y_n} 
-> > \end{bmatrix}\right| = 
-> > \left|\begin{bmatrix}
-> > \nabla g_1 \\
-> >  \vdots \\
-> > \nabla g_n 
-> > \end{bmatrix}\right|$$
-> > 
-> 
-> ### Details
-> 
+
+### Details
+
+If  $f $
+ is a continuous function and  $g $
+ is strictly increasing and
+differentiable then,
+
+$$\int_{g(a)}^{g(b)} f(x)dx =  \int_a^b f(g(t))g^\prime (t)dt.$$
+
+It follows that if  $X $
+ is a continuous random variable with density  $f $
+
+and  $Y = h(X) $
+ is a function of  $X $
+ that has the inverse  $g=h^{-1} $
+, so
+ $X = g(Y) $
+ , then the density of  $Y $
+ is given by,
+
+$$f_Y(y)   = f (g(y)) g^\prime (y)$$
+
+This is a consequence of
+
+$$P [Y \leq b] = P [g(Y) \leq g(b)] = P [X \leq g(b)] = \int_{- \infty} ^{g(b)}f(x)dx = \int_{- \infty} ^b f (g(y))g^\prime (y)dy.$$
+
+## Multivariate integration by substitution
+
 > Suppose  $f $
 >  is a continuous function
 >  $f: \mathbb{R}^n \rightarrow \mathbb{R} $
@@ -10604,9 +10572,11 @@ $$Cov(U,W)=\sigma^2a\cdot b$$
 > $$\int_{g(U)} f(\mathbf {x})d\mathbf {x}  = \int_{U}({g}(\mathbf {y}))|J|d\mathbf {y}$$
 > 
 > where  $J $
->  is the Jacobian determinant and \|J\| is its absolute value.
+>  is the Jacobian matrix and  $|J| $
+>  is the absolute value of it's
+> determinant.
 > 
-> $$J= 
+> $$J=
 > \left|\begin{bmatrix}
 > \frac{\partial g_1}{\partial y_1} & \frac{\partial g_1}{\partial y_2} & \cdots &\frac{\partial g_1}{\partial y_n} \\
 > \vdots & \vdots & \cdots & \vdots \\
@@ -10618,231 +10588,249 @@ $$Cov(U,W)=\sigma^2a\cdot b$$
 > \nabla g_n 
 > \end{bmatrix}\right|$$
 > 
-> Similar calculations as in 28.4 give us that if  $X $
->  is a continuous
-> multivariate random variable,  $X = (X_1, \ldots, X_n)^\prime $
->  with
-> density  $f $
->  and  $\mathbf{Y}  = \mathbf{h} (\mathbf{X}) $
-> , where
->  $\mathbf{h} $
->  is one-to-one with inverse  $\mathbf g= \mathbf{h}^{-1} $
-> .
-> So,  $\mathbf{X} = g(\mathbf{Y}) $
-> , then the density of  $\mathbf{Y} $
->  is
-> given by;
+
+### Details
+
+Suppose  $f $
+ is a continuous function
+ $f: \mathbb{R}^n \rightarrow \mathbb{R} $
+ and
+ $g: \mathbb{R}^n \rightarrow \mathbb{R}^n $
+ is a one-to-one function with
+continuous partial derivatives. Then if  $U \subseteq \mathbb{R}^n $
+ is a
+subset,
+
+$$\int_{g(U)} f(\mathbf {x})d\mathbf {x}  = \int_{U}({g}(\mathbf {y}))|J|d\mathbf {y}$$
+
+where  $J $
+ is the Jacobian determinant and \|J\| is its absolute value.
+
+$$J= 
+\left|\begin{bmatrix}
+\frac{\partial g_1}{\partial y_1} & \frac{\partial g_1}{\partial y_2} & \cdots &\frac{\partial g_1}{\partial y_n} \\
+\vdots & \vdots & \cdots & \vdots \\
+\frac{\partial g_n}{\partial y_1} & \frac{\partial g_n}{\partial y_2} & \cdots & \frac{\partial g_n}{\partial y_n} 
+\end{bmatrix}\right| = 
+\left|\begin{bmatrix}
+\nabla g_1 \\
+ \vdots \\
+\nabla g_n 
+\end{bmatrix}\right|$$
+
+Similar calculations as in 28.4 give us that if  $X $
+ is a continuous
+multivariate random variable,  $X = (X_1, \ldots, X_n)^\prime $
+ with
+density  $f $
+ and  $\mathbf{Y}  = \mathbf{h} (\mathbf{X}) $
+, where
+ $\mathbf{h} $
+ is one-to-one with inverse  $\mathbf g= \mathbf{h}^{-1} $
+.
+So,  $\mathbf{X} = g(\mathbf{Y}) $
+, then the density of  $\mathbf{Y} $
+ is
+given by;
+
+$$f_Y(\mathbf y)   = f (g(\mathbf y)) |J|$$
+
+### Examples
+
+> **Example**:  
 > 
-> $$f_Y(\mathbf y)   = f (g(\mathbf y)) |J|$$
-> 
-> ### Examples
-> 
-> > **Example**:  
-> > 
-> > If  $\mathbf{Y} = A \mathbf X $
-> >  where  $A $
-> >  is an  $n \times n $
-> >  matrix with
-> >  $\det(A)\neq0 $
-> >  and  $X = (X_1, \ldots, X_n)^\prime $
-> >  are i.i.d. random
-> > variables, then we have the following results:\
-> > \
-> > The joint density of  $X_1 \cdots X_n $
-> >  is the product of the individual
-> > (marginal) densities,
-> > 
-> > $$f_X(\mathbf x)= f(x_1) f(x_2) \cdots f(x_n).$$
-> > 
-> > The matrix of partial derivatives corresponds to
-> >  $\frac{\partial g}{\partial y} $
-> >  where
-> >  $\mathbf X = \mathbf g(\mathbf{Y}) $
-> > , i.e. these are the derivatives of
-> > the transformation:  $\mathbf X = g (\mathbf{Y}) = A^{-1}\mathbf{Y} $
-> > , or
-> >  $\mathbf X = B \mathbf{Y} $
-> >  where  $B = A^{-1} $
-> > .\
-> > But if  $\mathbf X = B \mathbf{Y} $
-> > , then
-> > 
-> > $$X_i = b_{i1}y_1 + b_{i2}y_2 + \cdots b_{ij}y_j\cdots b_{in}y_n$$
-> > 
-> > So,  $\frac{\partial x_i}{\partial y_j} = b_{ij} $
-> >  and thus,
-> > 
-> > $$J =\left|\frac{\partial d\mathbf x}{\partial d\mathbf y}\right| = |B| = |A^{-1}| = \frac {1}{|A|}$$
-> > 
-> > The density of  $\mathbf{Y} $
-> >  is therefore;
-> > 
-> > $$f_Y(\mathbf{y})   =  f_X(g(\mathbf{y})) |J| = f_X(A^{-1}\mathbf{y}) |A^{-1}|$$
-> > 
-> 
-> **Copyright** 2021, Gunnar Stefansson (editor) with contributions from
-> very many students
-> 
-> This work is licensed under the Creative Commons Attribution-ShareAlike
-> License. To view a copy of this license, visit
-> http://creativecommons.org/licenses/by-sa/1.0/ or send a letter to
-> Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305,
-> USA.
-> 
-> # The multivariate normal distribution and related topics
-> 
-> ## Transformations of random variables
-> 
-> > Recall that if  $X $
-> >  is a vector of continuous random variables with a
-> > joint probability density function and if  $Y=h(X) $
-> >  such that  $h $
-> >  is a
-> > one-to-one function and continuously differentiable with inverse  $g $
-> >  so
-> >  $X= g(Y) $
-> > , then the density of  $Y $
-> >  is given by 
-> > 
-> > $$f_Y(y)=f(g(y))|J|$$
-> > 
-> 
-> ### Details
-> 
->  $J $
->  is the Jacobian determinant of  $g $
-> . In particular if  $Y=AX $
->  then
-> 
-> $$f_Y(y)=f(A^{-1}y)|det(A^{-1})|$$
-> 
-> if  $A $
->  has an inverse.
-> 
-> ## The multivariate normal distribution
-> 
-> ### Details
-> 
-> Consider i.i.d. random variables,  $Z_1, \ldots ,Z_n \sim N(0,1) $
-> ,
-> 
-> $$\underline{Z}=
-> \left( \begin{array}{ccc}
->  Z_1 \\
->  \vdots\\
->  Z_n
-> \end{array} \right)$$
-> 
->  and let
->  $\underline{Y}=A \underline{Z} + \underline{\mu} $
+> If  $\mathbf{Y} = A \mathbf X $
 >  where  $A $
->  is an
-> invertible  $n \times n $
->  matrix and  $\underline{\mu} \in \mathbb{R}^n $
->  is
-> a vector, so  $Z= A^{-1}(Y-\underline{\mu}) $
-> .
+>  is an  $n \times n $
+>  matrix with
+>  $\det(A)\neq0 $
+>  and  $X = (X_1, \ldots, X_n)^\prime $
+>  are i.i.d. random
+> variables, then we have the following results:\
+> \
+> The joint density of  $X_1 \cdots X_n $
+>  is the product of the individual
+> (marginal) densities,
 > 
-> Then the p.d.f. of  $Y $
->  is given by
+> $$f_X(\mathbf x)= f(x_1) f(x_2) \cdots f(x_n).$$
 > 
-> $$f_{\underline{Y}}(\underline{y})= f_{\underline{Z}}(A^{-1}(\underline{y}- \underline{\mu})) \vert \det(A^{-1}) \vert$$
+> The matrix of partial derivatives corresponds to
+>  $\frac{\partial g}{\partial y} $
+>  where
+>  $\mathbf X = \mathbf g(\mathbf{Y}) $
+> , i.e. these are the derivatives of
+> the transformation:  $\mathbf X = g (\mathbf{Y}) = A^{-1}\mathbf{Y} $
+> , or
+>  $\mathbf X = B \mathbf{Y} $
+>  where  $B = A^{-1} $
+> .\
+> But if  $\mathbf X = B \mathbf{Y} $
+> , then
 > 
-> But the joint p.d.f. of  $\underline{Z} $
->  is the product of the p.d.f.'s
-> of  $Z_1, \ldots , Z_n $
-> , so
->  $f_{\underline{Z}}(\underline{z})= f(z_1) \cdot f(z_2) \cdot \ldots \cdot f(z_n) $
+> $$X_i = b_{i1}y_1 + b_{i2}y_2 + \cdots b_{ij}y_j\cdots b_{in}y_n$$
 > 
-> where
+> So,  $\frac{\partial x_i}{\partial y_j} = b_{ij} $
+>  and thus,
 > 
-> $$f(z_i) = \frac{1}{\sqrt{2 \pi}} e^{-\frac{z^2}{2}}$$
+> $$J =\left|\frac{\partial d\mathbf x}{\partial d\mathbf y}\right| = |B| = |A^{-1}| = \frac {1}{|A|}$$
 > 
-> and hence
+> The density of  $\mathbf{Y} $
+>  is therefore;
 > 
-> $$f_{\underline{Z}}(\underline{z}) = \prod_{i=1}^n \frac{1}{\sqrt{2 \pi}} e^{\frac{-z^2}{2}}$$
+> $$f_Y(\mathbf{y})   =  f_X(g(\mathbf{y})) |J| = f_X(A^{-1}\mathbf{y}) |A^{-1}|$$
 > 
-> 
-> 
-> $$= \left(\frac{1}{\sqrt{2 \pi}}\right)^n e^{-\frac{1}{2} \Sigma_{i=1}^n z_i^2}$$
-> 
-> 
-> 
-> $$=\frac{1}{(2 \pi)^\frac{n}{2}} e^{-\frac{1}{2} \underline{z}'\underline{z}}$$
-> 
-> since
-> 
-> $$\sum_{i=1}^n z_i^2 = \Vert \underline{z} \Vert ^2 = \underline{z} \cdot \underline{z} = \underline{z}'  \underline{z}.$$
-> 
-> The joint p.d.f. of  $\underline{Y} $
->  is therefore
-> 
-> $$f_{\underline{Y}}(\underline{y}) = f_{\underline{Z}}(A^{-1}(\underline{y} - \underline{\mu})) \vert \det(A^{-1}) \vert.$$
-> 
-> 
-> 
-> $$=\frac{1}{(2 \pi)^{\frac{n}{2}}} e^{-\frac{1}{2}(A^{-1}(\underline{y}-\underline{\mu}))'(A^{-1}(\underline{y}-\underline{\mu}))}\frac{1}{\vert \det(A)\vert}$$
-> 
-> We can write  $\det(AA')=det(A)^2 $
+
+**Copyright** 2021, Gunnar Stefansson (editor) with contributions from
+very many students
+
+This work is licensed under the Creative Commons Attribution-ShareAlike
+License. To view a copy of this license, visit
+http://creativecommons.org/licenses/by-sa/1.0/ or send a letter to
+Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305,
+USA.
+
+# The multivariate normal distribution and related topics
+
+## Transformations of random variables
+
+> Recall that if  $X $
+>  is a vector of continuous random variables with a
+> joint probability density function and if  $Y=h(X) $
+>  such that  $h $
+>  is a
+> one-to-one function and continuously differentiable with inverse  $g $
 >  so
->  $\vert \det(A)\vert = \sqrt{det(AA')} $
->  and if we write  $\Sigma=AA' $
-> ,
-> then
+>  $X= g(Y) $
+> , then the density of  $Y $
+>  is given by 
 > 
-> $$\vert \det(A) \vert = \vert \boldsymbol{\Sigma} \vert ^\frac{1}{2}$$
+> $$f_Y(y)=f(g(y))|J|$$
 > 
-> Also, note that
+
+### Details
+
+ $J $
+ is the Jacobian determinant of  $g $
+. In particular if  $Y=AX $
+ then
+
+$$f_Y(y)=f(A^{-1}y)|det(A^{-1})|$$
+
+if  $A $
+ has an inverse.
+
+## The multivariate normal distribution
+
+### Details
+
+Consider i.i.d. random variables,  $Z_1, \ldots ,Z_n \sim N(0,1) $
+,
+
+$$\underline{Z}=
+\left( \begin{array}{ccc}
+ Z_1 \\
+ \vdots\\
+ Z_n
+\end{array} \right)$$
+
+ and let
+ $\underline{Y}=A \underline{Z} + \underline{\mu} $
+ where  $A $
+ is an
+invertible  $n \times n $
+ matrix and  $\underline{\mu} \in \mathbb{R}^n $
+ is
+a vector, so  $Z= A^{-1}(Y-\underline{\mu}) $
+.
+
+Then the p.d.f. of  $Y $
+ is given by
+
+$$f_{\underline{Y}}(\underline{y})= f_{\underline{Z}}(A^{-1}(\underline{y}- \underline{\mu})) \vert \det(A^{-1}) \vert$$
+
+But the joint p.d.f. of  $\underline{Z} $
+ is the product of the p.d.f.'s
+of  $Z_1, \ldots , Z_n $
+, so
+ $f_{\underline{Z}}(\underline{z})= f(z_1) \cdot f(z_2) \cdot \ldots \cdot f(z_n) $
+
+where
+
+$$f(z_i) = \frac{1}{\sqrt{2 \pi}} e^{-\frac{z^2}{2}}$$
+
+and hence
+
+$$f_{\underline{Z}}(\underline{z}) = \prod_{i=1}^n \frac{1}{\sqrt{2 \pi}} e^{\frac{-z^2}{2}}$$
+
+
+
+$$= \left(\frac{1}{\sqrt{2 \pi}}\right)^n e^{-\frac{1}{2} \Sigma_{i=1}^n z_i^2}$$
+
+
+
+$$=\frac{1}{(2 \pi)^\frac{n}{2}} e^{-\frac{1}{2} \underline{z}'\underline{z}}$$
+
+since
+
+$$\sum_{i=1}^n z_i^2 = \Vert \underline{z} \Vert ^2 = \underline{z} \cdot \underline{z} = \underline{z}'  \underline{z}.$$
+
+The joint p.d.f. of  $\underline{Y} $
+ is therefore
+
+$$f_{\underline{Y}}(\underline{y}) = f_{\underline{Z}}(A^{-1}(\underline{y} - \underline{\mu})) \vert \det(A^{-1}) \vert.$$
+
+
+
+$$=\frac{1}{(2 \pi)^{\frac{n}{2}}} e^{-\frac{1}{2}(A^{-1}(\underline{y}-\underline{\mu}))'(A^{-1}(\underline{y}-\underline{\mu}))}\frac{1}{\vert \det(A)\vert}$$
+
+We can write  $\det(AA')=det(A)^2 $
+ so
+ $\vert \det(A)\vert = \sqrt{det(AA')} $
+ and if we write  $\Sigma=AA' $
+,
+then
+
+$$\vert \det(A) \vert = \vert \boldsymbol{\Sigma} \vert ^\frac{1}{2}$$
+
+Also, note that
+
+$$(A^{-1}(\underline{y}-\underline{\mu}))'(A^{-1}(\underline{y}-\underline{\mu})) = (\underline{y} - \underline{\mu})'(A^{-1})' A^{-1}(\underline{y} - \underline{\mu}) = (\underline{y} - \underline{\mu})' \boldsymbol{\Sigma}^{-1}(\underline{y}-\underline{\mu})$$
+
+We can now write
+
+$$f_{\underline{Y}}(\underline{y}) = \frac{1}{(2 \pi)^\frac{n}{2} \vert \boldsymbol{\Sigma} \vert ^{\frac{1}{2}}} e^{-\frac{1}{2} (\underline{y}-\underline{\mu}) \boldsymbol{\Sigma}^{-1} (\underline{y}-\underline{\mu})}.$$
+
+This is the density of the multivariate normal distribution.
+
+Note that 
+
+$$E[\underline{Y}] = \mu$$
+
+
+
+$$Var[\underline{Y}] = Var[A\underline{Z}] = AVar[\underline{Z}]A' = AIA' = \boldsymbol{\Sigma}.$$
+
+Notation:  $\underline{Y}\sim N(\underline{\mu}, \boldsymbol{\Sigma}) $
+
+
+## Univariate normal transforms
+
+> The general univariate normal distribution with density
 > 
-> $$(A^{-1}(\underline{y}-\underline{\mu}))'(A^{-1}(\underline{y}-\underline{\mu})) = (\underline{y} - \underline{\mu})'(A^{-1})' A^{-1}(\underline{y} - \underline{\mu}) = (\underline{y} - \underline{\mu})' \boldsymbol{\Sigma}^{-1}(\underline{y}-\underline{\mu})$$
+> $$f_Y(y) = \frac{1}{\sqrt{2\pi}\sigma}e^{-\frac{(y-\mu)^2}{2\sigma^2}}$$
 > 
-> We can now write
-> 
-> $$f_{\underline{Y}}(\underline{y}) = \frac{1}{(2 \pi)^\frac{n}{2} \vert \boldsymbol{\Sigma} \vert ^{\frac{1}{2}}} e^{-\frac{1}{2} (\underline{y}-\underline{\mu}) \boldsymbol{\Sigma}^{-1} (\underline{y}-\underline{\mu})}.$$
-> 
-> This is the density of the multivariate normal distribution.
-> 
-> Note that 
-> 
-> $$E[\underline{Y}] = \mu$$
-> 
-> 
-> 
-> $$Var[\underline{Y}] = Var[A\underline{Z}] = AVar[\underline{Z}]A' = AIA' = \boldsymbol{\Sigma}.$$
-> 
-> Notation:  $\underline{Y}\sim N(\underline{\mu}, \boldsymbol{\Sigma}) $
-> 
-> 
-> ## Univariate normal transforms
-> 
-> > The general univariate normal distribution with density
-> > 
-> > $$f_Y(y) = \frac{1}{\sqrt{2\pi}\sigma}e^{-\frac{(y-\mu)^2}{2\sigma^2}}$$
-> > 
-> > is a special case of the multivariate version.
-> 
-> ### Details
-> 
-> Further, if  $Z\sim N(0,1) $
-> , then clearly  $X=aZ+\mu \sim N(\mu,\sigma^2) $
-> 
-> where  $\sigma^2=a^2 $
-> .
-> 
-> ## Transforms to lower dimensions
-> 
-> > If  $Y\sim N \left ( \boldsymbol{\mu},\boldsymbol{\Sigma} \right ) $
-> >  is a
-> > random vector of length  $n $
-> >  and  $A $
-> >  is an  $m\times n $
-> >  matrix of rank
-> >  $m\leq n $
-> > , then  $AY \sim N(A\mu,A\Sigma A') $
-> > .
-> 
-> ### Details
-> 
+> is a special case of the multivariate version.
+
+### Details
+
+Further, if  $Z\sim N(0,1) $
+, then clearly  $X=aZ+\mu \sim N(\mu,\sigma^2) $
+
+where  $\sigma^2=a^2 $
+.
+
+## Transforms to lower dimensions
+
 > If  $Y\sim N \left ( \boldsymbol{\mu},\boldsymbol{\Sigma} \right ) $
 >  is a
 > random vector of length  $n $
@@ -10851,361 +10839,302 @@ $$Cov(U,W)=\sigma^2a\cdot b$$
 >  matrix of rank
 >  $m\leq n $
 > , then  $AY \sim N(A\mu,A\Sigma A') $
-> .\
-> To prove this, set up an  $(n-m)\times n $
->  matrix,  $B $
-> , so that the
->  $n\times n $
->  matrix,  $C $
-> , formed from combining the rows of  $A $
->  and  $B $
-> 
-> is of full rank  $n $
-> . Then it is easy to derive the density of  $CY $
->  which
-> also factors nicely into a product, only one of which contains  $AY $
-> ,
-> which gives the density for  $AY $
 > .
-> 
-> ## The OLS estimator
-> 
-> > Suppose  $Y \sim N(X \beta,\sigma^2 I) $
-> > . The ordinary least squares
-> > estimator, when the  $n \times p $
-> >  matrix is of full rank,  $p $
-> > , where
-> >  $p\leq n $
-> > , is: 
-> > 
-> > $$\hat{\beta} = (X'X)^{-1}X'Y$$
-> > 
-> >  The random variable which
-> > describes the process giving the data and estimate is:
-> > 
-> > $$b = (X'X)^{-1}X'Y$$
-> > 
-> > It follows that 
-> > 
-> > $$\hat{\beta} \sim N(\beta,\sigma^{2}(X'X)^{-1}).$$
-> > 
-> 
-> ### Details
-> 
-> Suppose  $Y \sim N(X \beta,\sigma^2I) $
+
+### Details
+
+If  $Y\sim N \left ( \boldsymbol{\mu},\boldsymbol{\Sigma} \right ) $
+ is a
+random vector of length  $n $
+ and  $A $
+ is an  $m\times n $
+ matrix of rank
+ $m\leq n $
+, then  $AY \sim N(A\mu,A\Sigma A') $
+.\
+To prove this, set up an  $(n-m)\times n $
+ matrix,  $B $
+, so that the
+ $n\times n $
+ matrix,  $C $
+, formed from combining the rows of  $A $
+ and  $B $
+
+is of full rank  $n $
+. Then it is easy to derive the density of  $CY $
+ which
+also factors nicely into a product, only one of which contains  $AY $
+,
+which gives the density for  $AY $
+.
+
+## The OLS estimator
+
+> Suppose  $Y \sim N(X \beta,\sigma^2 I) $
 > . The ordinary least squares
 > estimator, when the  $n \times p $
 >  matrix is of full rank,  $p $
-> , is:
+> , where
+>  $p\leq n $
+> , is: 
 > 
-> $$\hat{\beta} = (X'X)^{-1}X'Y.$$
+> $$\hat{\beta} = (X'X)^{-1}X'Y$$
 > 
->  The equation below is the random
-> variable which describes the process giving the data and estimate:
+>  The random variable which
+> describes the process giving the data and estimate is:
 > 
 > $$b = (X'X)^{-1}X'Y$$
 > 
->  If  $B = (X'X)^{-1}X' $
-> , then we know that
+> It follows that 
 > 
-> $$BY \sim N(B X \beta, B(\sigma^{2}I)B')$$
+> $$\hat{\beta} \sim N(\beta,\sigma^{2}(X'X)^{-1}).$$
 > 
->  Note that
+
+### Details
+
+Suppose  $Y \sim N(X \beta,\sigma^2I) $
+. The ordinary least squares
+estimator, when the  $n \times p $
+ matrix is of full rank,  $p $
+, is:
+
+$$\hat{\beta} = (X'X)^{-1}X'Y.$$
+
+ The equation below is the random
+variable which describes the process giving the data and estimate:
+
+$$b = (X'X)^{-1}X'Y$$
+
+ If  $B = (X'X)^{-1}X' $
+, then we know that
+
+$$BY \sim N(B X \beta, B(\sigma^{2}I)B')$$
+
+ Note that
+
+$$BX\beta = (X'X)^{-1}X'X\beta=\beta$$
+
+ and
+
+$$\begin{aligned}
+  B(\sigma^{2}I)B' &= \sigma^{}(X'X)^{-1}X'[(X'X)^{-1}X']'\\
+  &= \sigma^{2}(X'X)^{-1}X'X(X'X)^{-1}\\
+  &=  \sigma^{2}(X'X)^{-1}.\end{aligned}$$
+
+It follows that 
+
+$$\hat{\beta} \sim N(\beta,\sigma^{2}(X'X)^{-1})$$
+
+> **Note**:  
 > 
-> $$BX\beta = (X'X)^{-1}X'X\beta=\beta$$
-> 
->  and
-> 
-> $$\begin{aligned}
->   B(\sigma^{2}I)B' &= \sigma^{}(X'X)^{-1}X'[(X'X)^{-1}X']'\\
->   &= \sigma^{2}(X'X)^{-1}X'X(X'X)^{-1}\\
->   &=  \sigma^{2}(X'X)^{-1}.
-> \end{\align*}
-> 
-> It follows that
-> $$
-> 
->  \hat{\beta} \sim N(\beta,\sigma^{2}(X'X)^{-1}) 
-> 
-> $$
-> 
-> \begin{notes}
-> The earlier results regarding the multivariate Gaussian distribution also show that the vector of parameter estimates will be Gaussian even if the original  $Y $
+> *Note 34*. The earlier results regarding the multivariate Gaussian
+> distribution also show that the vector of parameter estimates will be
+> Gaussian even if the original  $Y $
 > -variables are not independent.
-> \end{notes}
-> 
-> {\bf Copyright}
-> 2021, Gunnar Stefansson (editor) with contributions from very many students
-> 
-> This work is licensed under the Creative Commons
-> Attribution-ShareAlike License. To view a copy of this license, visit
-> http://creativecommons.org/licenses/by-sa/1.0/ or send a letter to
-> Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305,
-> USA.
-> \clearpage
-> %% Lecture https://tutor-web.net/math/math612.0/lecture510
-> \section{Independence, expectations and the moment generating function}
-> %% Slide https://tutor-web.net/math/math612.0/lecture510/slide10
-> \subsection{Independent random variables}
-> \begin{fbox}
-> \begin{minipage}{0.97\textwidth}
+
+**Copyright** 2021, Gunnar Stefansson (editor) with contributions from
+very many students
+
+This work is licensed under the Creative Commons Attribution-ShareAlike
+License. To view a copy of this license, visit
+http://creativecommons.org/licenses/by-sa/1.0/ or send a letter to
+Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305,
+USA.
+
+# Independence, expectations and the moment generating function
+
+## Independent random variables
+
 > Recall that two events,  $A $
 >  and  $B $
 > , are independent if,
 > 
-> $$
-> 
->  P [A \cap B] = P[A] P[B]. 
-> 
-> $$
+> $$P [A \cap B] = P[A] P[B].$$
 > 
 > Since the conditional probability of  $A $
 >  given  $B $
 >  is defined by:
 > 
-> $$
-> 
->  P [A|B] = \frac {P [A \cap B]} {P[B]}.
-> 
-> $$
+> $$P [A|B] = \frac {P [A \cap B]} {P[B]}.$$
 > 
 > We see that  $A $
 >  and  $B $
 >  are independent if and only if
 > 
-> $$
-> 
->  P[A|B] = P[A] \quad (\text{when }  P [B] > 0 ).
-> 
-> $$
-> 
->  
+> $$P[A|B] = P[A] \quad (\text{when }  P [B] > 0 ).$$
 > 
 > Two continuous random variables,  $X $
 >  and  $Y $
-> , are similarly independent if,
+> , are similarly independent
+> if,
 > 
-> $$
+> $$P [X \in A, Y \in B] = P [X \in A] P[Y \in B].$$
 > 
->  P [X \in A, Y \in B] = P [X \in A] P[Y \in B].
-> 
-> $$
-> 
-> \end{minipage}
-> \end{fbox}
-> \subsubsection{Details}
-> Two continuous random variables,  $X $
->  and  $Y $
-> , are similarly independent if,
-> 
-> $$
-> 
->  P [X \in A, Y \in B] = P [X \in A] P[Y \in B] 
-> 
-> $$
-> 
-> Now suppose  $X $
->  has p.d.f.  $f_X $
->   and  $Y $
->  has p.d.f.  $f_Y $
-> . Then,
-> 
-> $$
-> 
->  P [X \in A] = \int_{A} f_X (x) dx,
-> 
-> $$
-> 
-> $$
-> 
->  P [Y \in B] = \int_{B} f_Y (y) dy.
-> 
-> $$
-> 
-> So  $X $
->  and  $Y $
->  are independent if:
-> 
-> $$
-> 
->  P [X \in , Y \in B] = \int_{A} f_X (x) dx \int_{B} f_Y (y) dy 
-> 
-> $$
-> 
-> $$
-> 
->  = \int_{A}f_X (x) (\int_{B} f_Y (y) dy) dx.
-> 
-> $$
-> 
-> $$
-> 
->  = \int_{A}\int_{B} f_X (x)f_Y (y) dydx.
-> 
-> $$
-> 
-> But, if  $f $
->  is the joint density of  $X $
->  and  $Y $
->  then we know that
-> 
-> $$
-> 
->  P [X \in A, Y \in B] 
-> 
-> $$
-> 
-> $$
-> 
->  \int_{A}\int_{B} f (x,y) dydx.
-> 
-> $$
-> 
-> Hence  $X $
->  and  $Y $
->  are independent if and only if we can write the joint density in the form of,
-> 
-> $$
-> 
->  f(x ,y) = f_X (x)f_Y (y).
-> 
-> $$
-> 
-> 
-> %% Slide https://tutor-web.net/math/math612.0/lecture510/slide20
-> \subsection{Independence and expected values}
-> \begin{fbox}
-> \begin{minipage}{0.97\textwidth}
+
+### Details
+
+Two continuous random variables,  $X $
+ and  $Y $
+, are similarly independent
+if,
+
+$$P [X \in A, Y \in B] = P [X \in A] P[Y \in B]$$
+
+Now suppose  $X $
+ has p.d.f.  $f_X $
+ and  $Y $
+ has p.d.f.  $f_Y $
+. Then,
+
+$$P [X \in A] = \int_{A} f_X (x) dx,$$
+
+
+
+$$P [Y \in B] = \int_{B} f_Y (y) dy.$$
+
+So  $X $
+ and  $Y $
+ are independent if:
+
+$$P [X \in , Y \in B] = \int_{A} f_X (x) dx \int_{B} f_Y (y) dy$$
+
+
+
+$$= \int_{A}f_X (x) (\int_{B} f_Y (y) dy) dx.$$
+
+
+
+$$= \int_{A}\int_{B} f_X (x)f_Y (y) dydx.$$
+
+But, if  $f $
+ is the joint density of  $X $
+ and  $Y $
+ then we know that
+
+$$P [X \in A, Y \in B]$$
+
+
+
+$$\int_{A}\int_{B} f (x,y) dydx.$$
+
+Hence  $X $
+ and  $Y $
+ are independent if and only if we can write the joint
+density in the form of,
+
+$$f(x ,y) = f_X (x)f_Y (y).$$
+
+## Independence and expected values
+
 > If  $X $
 >  and  $Y $
 >  are independent random variables then  $E[XY]=E[X]E[Y] $
-> .\\
-> 
+> .\
 > Further, if  $X $
 >  and  $Y $
->  are independent random variables then  $E[g(X)h(Y)]=E[g(X)]E[h(Y)] $
+>  are independent random variables then
+>  $E[g(X)h(Y)]=E[g(X)]E[h(Y)] $
 >  is true if  $g $
 >  and  $h $
->  are functions in which expectations exist.
-> \end{minipage}
-> \end{fbox}
-> \subsubsection{Details}
-> If  $X $
+>  are functions in
+> which expectations exist.
+
+### Details
+
+If  $X $
+ and  $Y $
+ are random variables with a joint distribution function
+ $f(x,y) $
+, then it is true that for  $h:\mathbb{R}^2\to\mathbb{R} $
+ we have
+
+$$E[h(X,Y)]=\int\int h(x,y)f(x,y)dxdy$$
+
+for those  $h $
+ such that the integral on the right exists.\
+Suppose  $X $
+ and  $Y $
+ are independent continuous r.v., then
+
+$$f(x,y) = f_X (x) f_Y (y)$$
+
+Thus, 
+
+$$E[XY] = \int\int xy f (x,y) dxdy$$
+
+
+
+$$= \int\int xy f_X (x) f_Y (y) dxdy$$
+
+
+
+$$= \int xf_X (x) dx \int yf_Y (y) dy$$
+
+
+
+$$= E [X] E [Y].$$
+
+> **Note**:  
+> 
+> *Note 35*. Note that if  $X $
 >  and  $Y $
->  are random variables with a joint distribution function  $f(x,y) $
-> , then it is true that for  $h:\mathbb{R}^2\to\mathbb{R} $
->  we have 
-> $$
-> 
-> E[h(X,Y)]=\int\int h(x,y)f(x,y)dxdy
-> 
-> $$
-> 
-> for those  $h $
->  such that the integral on the right exists. \\
-> 
-> Suppose  $X $
->  and  $Y $
->  are independent continuous r.v., then
-> 
-> $$
-> 
->  f(x,y) = f_X (x) f_Y (y)
-> 
-> $$
-> 
-> Thus, $$
-> 
-> E[XY] = \int\int xy f (x,y) dxdy 
-> 
-> $$
-> 
-> $$
-> 
-> = \int\int xy f_X (x) f_Y (y) dxdy 
-> 
-> $$
-> 
-> $$
-> 
->  = \int xf_X (x) dx \int yf_Y (y) dy 
-> 
-> $$
-> 
-> $$
-> 
->  = E [X] E [Y]. 
-> 
-> $$
-> 
-> \begin{notes}
-> Note that if  $X $
->  and  $Y $
->  are independent then  $ E [h (X)g (Y)] = E [h(X)] E[g(Y)] $
+>  are independent then
+>  $E[h(X) g(Y)] = E [h(X)] E[g(Y)] $
 >  is true whenever the functions  $h $
->  and  $g $
+>  and
+>  $g $
 >  have expected values.
-> \end{notes}
-> \subsubsection{Examples}
-> \begin{xmpl}
+
+### Examples
+
+> **Example**:  
+> 
 > Suppose  $X,Y \in U (0,2) $
->  are  i.i.d then,
+>  are i.i.d then,
 > 
-> $$
-> 
-> f_X (x) = 
+> $$f_X (x) = 
 > \begin{cases}
 >   \frac{1}{2} & \text{if } 0 \leq x \leq 2 \\
 >   0 & \text{otherwise}
-> \end{cases}.
-> 
-> $$
+> \end{cases}.$$
 > 
 > and similarly for  $f_Y $
-> .\\
+> .
 > 
-> Next, note that,
-> $$
+> Next, note that, 
 > 
-> f(x,y) =  f_X (x) f_Y (y) = 
+> $$f(x,y) =  f_X (x) f_Y (y) = 
 > \begin{cases}
 >   \frac{1}{4} &\text{if } 0 \leq x,y \leq 2\\
 >   0 & \text{otherwise}
-> \end{cases}.
-> 
-> $$
+> \end{cases}.$$
 > 
 > Also note that  $f(x,y) \geq 0 $
->  for all  $ (x,y) \in \mathbb{R}^2  $
->  and 
+>  for all  $(x,y) \in \mathbb{R}^2 $
+>  and
 > 
-> $$
+> $$\int\int  f(x,y)dxdy = \int_{0}^{2}\int_{0}^{2} \frac {1}{4} dxdy =  \frac {1}{4}.4 = 1$$
 > 
-> \int\int  f(x,y)dxdy = \int_{0}^{2}\int_{0}^{2} \frac {1}{4} dxdy =  \frac {1}{4}.4 = 1
+> It follows that
 > 
-> $$
+> > E \[X Y\] &= \_-\^\_-\^ f(x,y) xy dxdy\
+> > &= \_y=0\^2\_x=0\^2 xy dxdy\
+> > &= \_y=0\^2 y (\_x=0\^2 x dx) dy\
+> > &= \_y=0\^2 y \_x=0\^2 dy\
+> > &= \_y=0\^2 y ( \^2 - \^2 ) dy\
+> > &= \_0\^2 y dy\
+> > &= \_0\^2 y dy\
+> > &= y\^2 \| \_0\^2\
+> > &= \^2\
+> > &= 1,
 > 
-> It follows that,
+> but
 > 
-> \begin{align*}
->   E [X Y] &= \int_{-\infty}^{\infty}\int_{-\infty}^{\infty} f(x,y) xy dxdy\\
->   &= \int_{y=0}^{2}\int_{x=0}^{2} \frac {1}{4}xy dxdy\\
->   &= \int_{y=0}^{2} \frac{1}{4}y \left(\int_{x=0}^{2} x dx\right) dy\\
->   &= \int_{y=0}^{2} \frac{1}{4}y  \left[\frac{1}{2}x^2\right]_{x=0}^{2} dy\\
->   &= \int_{y=0}^{2} \frac {1}{4}y \left(\frac {1}{2} \cdot 2^2 - \frac {1}{2}\cdot 0^2 \right) dy\\
->   &= \int_{0}^{2} \frac {2}{4}y dy\\
->   &= \int_{0}^{2} \frac {1}{2}y dy\\
->   &= \frac {1}{2}\cdot \frac {1}{2} y^2 | _{0}^2 \\
->   &= \frac {1}{4}\cdot 2^2\\
->   &= 1\end{aligned}$$
+> $$E [X] = E[Y] = \int_{y=0}^{2} x \frac {1}{2} dx = 1,$$
 > 
-> But 
+> so
 > 
-> $$E [X] = E[Y] = \int_{y=0}^{2} x \frac {1}{2} dx = 1$$
-> 
-> So 
-> 
-> $$E[XY] = E [X] E[Y]$$
+> $$E[XY] = E [X] E[Y].$$
 > 
 
 ## Independence and the covariance
@@ -11772,7 +11701,7 @@ Cov(y_{ij},y_{i'j'}) &=Cov(\alpha_i+\epsilon_{ij}, \alpha_{i'}+ \epsilon_{i'j'})
 
 > **Note**:  
 > 
-> *Note 34*. Recall that  $E[UW]=E[U]E[W] $
+> *Note 36*. Recall that  $E[UW]=E[U]E[W] $
 >  if  $U,W $
 >  are independent
 
