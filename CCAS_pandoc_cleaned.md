@@ -5457,8 +5457,7 @@ Typically a project has several such functions.
 >       cat("The URL B", fname,"\n")
 >       dat<-read.table(fname,header=T)
 >       ttl<-paste("Data from file number", fnum)
->       plot(dat $le,dat $
-> osl,main=ttl)
+>       plot(dat$le,dat$osl,main=ttl)
 >       }
 > 
 > Now call this with
@@ -5511,8 +5510,7 @@ Furthermore, this ensures repeatability.
 >       cat("The URL is",fname,"\n")
 >       dat<-read.table(fname,header=T)
 >       ttl<-paste("My data set was",fnum)
->       plot(dat $le,dat $
-> osl,main=ttl,xlab="Length(cm)",ylab="Live weight (g)")
+>       plot(dat$le,dat$osl,main=ttl,xlab="Length(cm)",ylab="Live weight (g)")
 >     }
 > 
 > output.r:
@@ -8617,8 +8615,7 @@ two sided
 
 ### Details
 
-*Two Sample, one-sided*  $t $
-*-test*:
+*Two Sample, one-sided* $t$*-test*:
 
 Suppose data are gathered independently from two normal populations
 resulting in 
@@ -8672,8 +8669,7 @@ This is the probability that a non-central  $t $
  $t^\ast $
 .
 
-*Two Sample, Two-sided*  $t $
-*-test*:
+*Two Sample, Two-sided* $t$*-test*:
 
 In this case the null hypothesis is defined as  $H_0: \mu_1 = \mu_2 $
 
@@ -8707,8 +8703,7 @@ degrees of freedom to give a  $\chi^2 $
 >  $\verb|power.t.test| $
 >  function in R.
 
-## Sample sizes for two-sample one and two-sided  $t $
--tests
+## Sample sizes for two-sample one and two-sided $t$-tests
 
 > The sample size should always satisfy the desired power.
 
@@ -11812,16 +11807,12 @@ contains the random effects.
 >     fixed effects (ANCOVA)
 > 
 > 3.   $y_{ijk} = \mu + \alpha_i + b_j + \epsilon_{ijk} $
->  where  $\alpha_i $
-> 
->     are fixed but  $b_j $
->  are random.
+>  where $\alpha_i$ are
+>     fixed but $b_j$ are random.
 > 
 > 4.   $y_{ijk} = \mu  + \alpha_i + b_j x_{ij} + \epsilon_{ijk} $
->  where
->      $\alpha_i $
->  are fixed but  $b_j $
->  are random slopes.
+>  where $\alpha_i$
+>     are fixed but $b_j$ are random slopes.
 
 ## Maximum likelihood estimation in lmm
 

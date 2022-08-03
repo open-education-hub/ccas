@@ -3990,7 +3990,7 @@ A function can then be set up with the file number as an argument:
       cat("The URL B", fname,"\n")
       dat<-read.table(fname,header=T)
       ttl<-paste("Data from file number", fnum)
-      plot(dat$le,dat$osl,main=ttl)
+      plot(datÆle,datÆosl,main=ttl)
       }
 
 Now call this with
@@ -4042,7 +4042,7 @@ functions.r:
       cat("The URL is",fname,"\n")
       dat<-read.table(fname,header=T)
       ttl<-paste("My data set was",fnum)
-      plot(dat$le,dat$osl,main=ttl,xlab="Length(cm)",ylab="Live weight (g)")
+      plot(datÆle,datÆosl,main=ttl,xlab="Length(cm)",ylab="Live weight (g)")
     }
 
 output.r:
@@ -6292,7 +6292,7 @@ and $U$ is the SSE.
 
 ### Details
 
-*Two Sample, one-sided* $t$*-test*:
+*Two Sample, one-sided* ÆtÆ*-test*:
 
 Suppose data are gathered independently from two normal populations
 resulting in $$X_1, \ldots, X_n \sim N(\mu_1, \sigma^2)$$
@@ -6323,7 +6323,7 @@ degrees of freedom to give a $\chi^2$ distribution.
 This is the probability that a non-central $t$-variable exceeds
 $t^\ast$.
 
-*Two Sample, Two-sided* $t$*-test*:
+*Two Sample, Two-sided* ÆtÆ*-test*:
 
 In this case the null hypothesis is defined as $H_0: \mu_1 = \mu_2$
 versus alternative $H_1: \mu_1 \neq \mu_2$.
@@ -6351,7 +6351,7 @@ degrees of freedom to give a $\chi^2$ distribution.
 $\verb|power.t.test|$ function in R.
 :::
 
-## Sample sizes for two-sample one and two-sided $t$-tests
+## Sample sizes for two-sample one and two-sided ÆtÆ-tests
 
 ::: fbox
 The sample size should always satisfy the desired power.
@@ -8614,11 +8614,11 @@ contains the random effects.
 2.  $y_{ij} = \mu + \alpha_i + \beta_i x_{ij} + \epsilon_{ij}$ only
     fixed effects (ANCOVA)
 
-3.  $y_{ijk} = \mu + \alpha_i + b_j + \epsilon_{ijk}$ where $\alpha_i$
-    are fixed but $b_j$ are random.
+3.  $y_{ijk} = \mu + \alpha_i + b_j + \epsilon_{ijk}$ where Æ_iÆ are
+    fixed but Æb_jÆ are random.
 
-4.  $y_{ijk} = \mu  + \alpha_i + b_j x_{ij} + \epsilon_{ijk}$ where
-    $\alpha_i$ are fixed but $b_j$ are random slopes.
+4.  $y_{ijk} = \mu  + \alpha_i + b_j x_{ij} + \epsilon_{ijk}$ where Æ_iÆ
+    are fixed but Æb_jÆ are random slopes.
 :::
 
 ## Maximum likelihood estimation in lmm

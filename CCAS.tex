@@ -4201,7 +4201,7 @@ A function can then be set up with the file number as an argument:
   cat("The URL B", fname,"\n")
   dat<-read.table(fname,header=T)
   ttl<-paste("Data from file number", fnum)
-  plot(dat$le,dat$osl,main=ttl)
+  plot(datÆle,datÆosl,main=ttl)
   }
 \end{lstlisting}
 
@@ -4256,7 +4256,7 @@ plotwtle<-function(fnum){
   cat("The URL is",fname,"\n")
   dat<-read.table(fname,header=T)
   ttl<-paste("My data set was",fnum)
-  plot(dat$le,dat$osl,main=ttl,xlab="Length(cm)",ylab="Live weight (g)")
+  plot(datÆle,datÆosl,main=ttl,xlab="Length(cm)",ylab="Live weight (g)")
 }
 \end{lstlisting}
 
@@ -6500,7 +6500,7 @@ $U$ is the SSE.
 \end{minipage}
 }
 \subsubsection{Details}
-\emph{Two Sample, one-sided} $t$\emph{-test}:
+\emph{Two Sample, one-sided} ÆtÆ\emph{-test}:
 
 Suppose data are gathered independently from two normal populations resulting in
  $$X_1, \ldots, X_n \sim N(\mu_1, \sigma^2)$$
@@ -6527,7 +6527,7 @@ $U$ is the SSE of the samples which is divided by the appropriate degrees of fre
 
 This is the probability that a non-central $t$-variable exceeds $t^\ast$.
 
-\emph{Two Sample, Two-sided} $t$\emph{-test}:
+\emph{Two Sample, Two-sided} ÆtÆ\emph{-test}:
 
 In this case the null hypothesis is defined as $H_0: \mu_1 = \mu_2$ versus alternative $H_1: \mu_1 \neq \mu_2$. 
 
@@ -6553,7 +6553,7 @@ Note that the power of a test can be obtained using the $\verb|power.t.test|$ fu
 \end{notes}
 
 %% Slide https://tutor-web.net/math/math612.0/lecture350/slide95
-\subsection{Sample sizes for two-sample one and two-sided $t$-tests}
+\subsection{Sample sizes for two-sample one and two-sided ÆtÆ-tests}
 \fbox{
 \begin{minipage}{0.97\textwidth}
 The sample size should always satisfy the desired power. 
@@ -8836,11 +8836,11 @@ In general, we write the mixed effects models in matrix form with $\underline{y}
 \item $y_i = \beta_1 + \beta_2 x_i + \epsilon_i$ (SLR)
 \item $y_{ij} = \mu + \alpha_i + \beta_i x_{ij} + \epsilon_{ij}$ only fixed effects (ANCOVA)
 \item $y_{ijk} = \mu + \alpha_i + b_j + \epsilon_{ijk}$
-where $\alpha_i$ are fixed
-but $b_j$ are random.
+where Æ\alpha_iÆ are fixed
+but Æb_jÆ are random.
 \item $y_{ijk} = \mu  + \alpha_i + b_j x_{ij} + \epsilon_{ijk}$
-where $\alpha_i$ are fixed
-but $b_j$ are random slopes.
+where Æ\alpha_iÆ are fixed
+but Æb_jÆ are random slopes.
 \end{enumerate}
 \end{xmpl}
 
