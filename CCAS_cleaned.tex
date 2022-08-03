@@ -17,7 +17,6 @@
 \oddsidemargin 15mm
 \textheight 237mm
 \textwidth 145mm
-\headsep .35in
 \fboxrule 0.2mm
 \fboxsep 6mm
 \makeatletter
@@ -38,7 +37,6 @@
 \oddsidemargin 15mm
 %\textheight 237mm
 %\textwidth 145mm
-\headsep .35in
 \fboxrule 0.2mm
 \fboxsep 6mm
 \documentclass[12pt,a4paper]{article}
@@ -2187,11 +2185,9 @@ Find the roots of the following polynomial
 
 $$3x^{4} + 14x^{2} + 15$$
 
-We can use the quadratic equation to solve for the roots of this polynomial if we substitute a variable for $$x^{2}$$
+We can use the quadratic equation to solve for the roots of this polynomial if we substitute a variable for $x^{2}$. Let's use the letter $a$:
 
-Let's use the letter $$a$$
-
-$$3a^{2} + 14a + 15$$
+$$3a^{2} + 14a + 15.$$
 
 We then plug the constants in to the quadratic equation.
 
@@ -2249,7 +2245,7 @@ Below are three examples using R code to enter data
 \begin{enumerate}
 	\item $\verb|x<-c(4,3,6,7,8) |$
 	\item $\verb|x<-scan("lecture 70.txt")|$
-	\item $\verb|x<-read.table("http://notendur.hi.is/TILDEgunnar/kennsla/alsm/data/set115.dat", header=T)|$
+	\item $\verb|x<-read.table("http&#58;&#47;&#47;notendur&period;hi&period;is/TILDEgunnar/kennsla/alsm/data/set115.dat", header=T)|$
 \end{enumerate}
 \end{xmpl}
 
@@ -6430,7 +6426,7 @@ $x>7.5$ (for $x=8$ or $x=9$) or $2x<9-3 \cdot 1.96$, $x<1.5$ (for $x=0$ or $x=1$
 Suppose 7 students are involved in an experiment which is comprised of 7 trails and each trial consists of rolling a die 9 times.\\
 \\
 
-\textbf{Experiment 2}: The procedure is the same as in experiment $1$, but now the student records $0$ for a $1$ or $2$ (failure) and a $1$ for a $3$,$4$,$5$,or $6$ (success). \\\\
+\textbf{Experiment 2}: The procedure is the same as in experiment $1$, but now the student records $0$ for a $1$ or $2$ (failure) and a $1$ for a $3$, $4$, $5$, or $6$ (success).
 
 Data and outcomes: 
 
@@ -9204,11 +9200,17 @@ $\epsilon_{ij} \sim N(0,\sigma^2)$
 The $\mu$ and $\alpha_i$ are the fixed effects and $\beta_j$ is the random effects.\\
 
 Recall that in the simple one-way layout with $y_{ij} = \mu + \alpha_i + \epsilon_{ij}$, we can write the model in matrix form
-$\underline{y} = X \underline{\beta} + \underline{\epsilon}$ where $\underline{\beta} = (\mu, \alpha_1, \ldots, \alpha_I)'$ and $X$ is appropriately chosen. \\
+$\underline{y} = X \underline{\beta} + \underline{\epsilon}$ where 
+$\underline{\beta} = (\mu, \alpha_1, \ldots, \alpha_I)'$ and 
+$X$ is appropriately chosen.
 
-The same applies to the simplest random effects model $y_{ij}= \mu + \beta_j+ \epsilon_{ij}$ where we can write $\underline{y} = \mu \cdot \underline{1}+ Z \underline{U} + \underline{\epsilon}$ where $\underline{1}=(1,1, \ldots , 1)'$, $\underline{U} = ( \beta_1 , \ldots , \beta_J )'$.\\
+The same applies to the simplest random effects model $y_{ij}= \mu + \beta_j+ \epsilon_{ij}$ where we can write $\underline{y} = \mu \cdot \underline{1}+ Z \underline{U} + \underline{\epsilon}$ 
+where $\underline{1}=(1,1, \ldots , 1)'$, 
+$\underline{U} = ( \beta_1 , \ldots , \beta_J )'$.
 
-In general, we write the mixed effects models in matrix form with $\underline{y} = X \underline{\beta} + Z \underline{U} + \underline {\epsilon}$, where $\underline{\beta}$ contains the fixed effects and $\underline{U}$ contains the random effects.
+In general, we write the mixed effects models in matrix form with $\underline{y} = X \underline{\beta} + Z \underline{U} + \underline {\epsilon}$, 
+where $\underline{\beta}$ contains the fixed effects and 
+$\underline{U}$ contains the random effects.
 \subsubsection{Examples}
 \begin{xmpl}
 \begin{enumerate}

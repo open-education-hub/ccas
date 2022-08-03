@@ -1,5 +1,3 @@
-.35in .35in
-
 **Copyright** This work is licensed under the Creative Commons
 Attribution-ShareAlike License. To view a copy of this license, visit
 http://creativecommons.org/licenses/by-sa/1.0/ or send a letter to
@@ -1876,11 +1874,10 @@ Find the roots of the following polynomial
 $$3x^{4} + 14x^{2} + 15$$
 
 We can use the quadratic equation to solve for the roots of this
-polynomial if we substitute a variable for $$x^{2}$$
+polynomial if we substitute a variable for $x^{2}$. Let's use the letter
+$a$:
 
-Let's use the letter $$a$$
-
-$$3a^{2} + 14a + 15$$
+$$3a^{2} + 14a + 15.$$
 
 We then plug the constants in to the quadratic equation.
 
@@ -1951,7 +1948,7 @@ Below are three examples using R code to enter data
 
 2.  $\verb|x<-scan("lecture 70.txt")|$
 
-3.  $\verb|x<-read.table("http://notendur.hi.is/TILDEgunnar/kennsla/alsm/data/set115.dat", header=T)|$
+3.  $\verb|x<-read.table("http&#58;&#47;&#47;notendur&period;hi&period;is/TILDEgunnar/kennsla/alsm/data/set115.dat", header=T)|$
 :::
 
 ## Histograms
@@ -5869,8 +5866,8 @@ trails and each trial consists of rolling a die 9 times.\
 \
 **Experiment 2**: The procedure is the same as in experiment $1$, but
 now the student records $0$ for a $1$ or $2$ (failure) and a $1$ for a
-$3$,$4$,$5$,or $6$ (success).\
-\
+$3$, $4$, $5$, or $6$ (success).
+
 Data and outcomes:
 
 $x$ equals the number of successes in $n$ trials equal $\Sigma_{i=1}^n$
@@ -8595,12 +8592,14 @@ Recall that in the simple one-way layout with
 $y_{ij} = \mu + \alpha_i + \epsilon_{ij}$, we can write the model in
 matrix form $\underline{y} = X \underline{\beta} + \underline{\epsilon}$
 where $\underline{\beta} = (\mu, \alpha_1, \ldots, \alpha_I)'$ and $X$
-is appropriately chosen.\
+is appropriately chosen.
+
 The same applies to the simplest random effects model
 $y_{ij}= \mu + \beta_j+ \epsilon_{ij}$ where we can write
 $\underline{y} = \mu \cdot \underline{1}+ Z \underline{U} + \underline{\epsilon}$
 where $\underline{1}=(1,1, \ldots , 1)'$,
-$\underline{U} = ( \beta_1 , \ldots , \beta_J )'$.\
+$\underline{U} = ( \beta_1 , \ldots , \beta_J )'$.
+
 In general, we write the mixed effects models in matrix form with
 $\underline{y} = X \underline{\beta} + Z \underline{U} + \underline {\epsilon}$,
 where $\underline{\beta}$ contains the fixed effects and $\underline{U}$
