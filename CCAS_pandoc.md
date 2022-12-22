@@ -3399,7 +3399,7 @@ $$\begin{aligned}
 :::
 
 ::: xmpl
-For fixed $x$ and $y$ consider $f(b) = (y-bx)^2$ ($y,x$)\
+For fixed $x$ and $y$ consider $f(b) = (y-bx)^2$\
 Then the derivative is computed as follows:
 
 $$\begin{aligned}
