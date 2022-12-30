@@ -1,0 +1,143 @@
+---
+stages:
+  - docusaurus
+
+build_dir: /build
+output_type: last
+output_dir: /output
+
+docusaurus:
+  plugin: docusaurus
+  options:
+    course_name: CCAS
+    sidebar: js
+    structure:
+      - Introduction:
+        - Intro:
+            name: README
+            location: content/landing-page
+      - Lecture:
+        - Numbers to Indices:
+          - Overview:
+              location: content/chapters/numbers-to-indices/lecture
+              name: content/overview
+          - Numbers, Arithmetic and Basic Algebra:
+              location: content/chapters/numbers-to-indices/lecture
+              name: content/numbers-arithmetic-basic-algebra
+          - Data Vectors:
+              location: content/chapters/numbers-to-indices/lecture
+              name: content/data-vectors
+          - More on Algebra:
+              location: content/chapters/numbers-to-indices/lecture
+              name: content/more-algebra
+          - Discrete Random Variables and the Binomial Distribution:
+              location: content/chapters/numbers-to-indices/lecture
+              name: content/discrete-random-vars-binomial-distribution
+          - Functions:
+              location: content/chapters/numbers-to-indices/lecture
+              name: content/functions
+          - Polynomials:
+              location: content/chapters/numbers-to-indices/lecture
+              name: content/polynomials
+          - Simple Data Analysis in R:
+              location: content/chapters/numbers-to-indices/lecture
+              name: content/simple-data-analysis-r
+          - Indices and the Apply Commands in R:
+              location: content/chapters/numbers-to-indices/lecture
+              name: content/indices-apply-commands-r
+        - Functions:
+          - Overview:
+              location: content/chapters/functions/lecture
+              name: content/overview
+          - Functions of Functions and the Exponential Function:
+              location: content/chapters/functions/lecture
+              name: content/functions-of-functions.exponential
+          - Inverse Functions and the Logarithm:
+              location: content/chapters/functions/lecture
+              name: content/inverse-functions-logarithm
+          - Continuity and Limits:
+              location: content/chapters/functions/lecture
+              name: content/continuity-limits
+          - Sequences and Series:
+              location: content/chapters/functions/lecture
+              name: content/sequences-series
+          - Slopes of Lines and Curves:
+              location: content/chapters/functions/lecture
+              name: content/slopes-lines-curves
+          - Derivatives:
+              location: content/chapters/functions/lecture
+              name: content/derivatives
+          - Applications of Differentiation:
+              location: content/chapters/functions/lecture
+              name: content/applications-differentiation
+          - Integrals and Probability Density Functions:
+              location: content/chapters/functions/lecture
+              name: content/integrals-prob-density-funcs
+          - Principles of Programming:
+              location: content/chapters/functions/lecture
+              name: content/programming-principles
+          - The Central Limit Theorem and Related Topics:
+              location: content/chapters/functions/lecture
+              name: content/central-limit-theorem
+          - Miscellanea:
+              location: content/chapters/functions/lecture
+              name: content/miscellanea
+        - Multivariate to Power:
+          - Overview:
+              location: content/chapters/multivariate-to-power/lecture
+              name: content/overview
+          - Multivariate Probability Distributions:
+              location: content/chapters/multivariate-to-power/lecture
+              name: content/multivariate-prob-distributions
+          - Some Distributions Related to the Normal:
+              location: content/chapters/multivariate-to-power/lecture
+              name: content/distributions-normal
+          - Estimation, Estimates and Estimators:
+              location: content/chapters/multivariate-to-power/lecture
+              name: content/estimation
+          - Test of Hypothesis, P Values and Related Concepts:
+              location: content/chapters/multivariate-to-power/lecture
+              name: content/test-hypothesis-p-values
+          - Power and Sample Sizes:
+              location: content/chapters/multivariate-to-power/lecture
+              name: content/power-sample-sizes
+        - Vectors to Some Regression Topics:
+          - Overview:
+              location: content/chapters/vectors-matrix-ops/lecture
+              name: content/overview
+          - Vectors and Matrix Operations:
+              location: content/chapters/vectors-matrix-ops/lecture
+              name: content/vectors-matrix-operations
+          - Some notes on Matrices and Linear Operators:
+              location: content/chapters/vectors-matrix-ops/lecture
+              name: content/matrices-linear-operators
+          - Ranks and Determinants:
+              location: content/chapters/vectors-matrix-ops/lecture
+              name: content/ranks-determinants
+          - Multivariate Calculus:
+              location: content/chapters/vectors-matrix-ops/lecture
+              name: content/multivariate-calculus
+          - The multivariate Normal Distribution and Related Topics:
+              location: content/chapters/vectors-matrix-ops/lecture
+              name: content/multivariate-normal-distribution
+          - Independence, Expectations and the Moment Generating Function:
+              location: content/chapters/vectors-matrix-ops/lecture
+              name: content/independence
+          - The Gamma Distribution:
+              location: content/chapters/vectors-matrix-ops/lecture
+              name: content/gamma-distribution
+          - Notes and Examples, The linear model:
+              location: content/chapters/vectors-matrix-ops/lecture
+              name: content/examples-linear-model
+          - Some Regression Topics:
+              location: content/chapters/vectors-matrix-ops/lecture
+              name: content/regression-topics
+    config_meta:
+      title: Computing and Calculus for Applied Statistics
+      url: http://localhost/
+      baseUrl: /ccas/
+      onBrokenLinks: warn
+      onBrokenMarkdownLinks: warn
+    config_socials:
+      Main site: https://tutor-web.net/tw-info/open-course-computing-and-calculus-for-applies-statistics
+    copyright_string: CCAS Team
