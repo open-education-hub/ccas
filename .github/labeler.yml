@@ -1,0 +1,33 @@
+topic/functions:
+  - content/chapters/functions/**/*
+
+topic/multivar-power:
+  - content/chapters/multivariate-to-power/**/*
+
+topic/numbers-indices:
+  - content/chapters/numbers-to-indices/**/*
+
+topic/vectors-matrix:
+  - content/chapters/vectors-matrix-ops/**/*
+
+area/quiz:
+  - '**/quiz/*'
+
+area/content:
+  - '*.md'
+  - '**/media/**/*'
+  - '**/*.mdpp'
+
+area/code:
+  - '**/lab/support/**/*'
+  - '**/lab/solution/**/*'
+  - '**/lecture/demo/**/*'
+
+area/infra:
+  - 'util/**/*'
+  - '.github/**/*'
+  - 'Dockerfile'
+  - 'config.yaml'
+
+area/assignment:
+  - content/assignments/**/*
