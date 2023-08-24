@@ -14,7 +14,7 @@ They are to be used by teachers, trainers, students and hobbyists who want to le
 ## Using the Content
 
 Content is located in the `content/` folder.
-It currently consists of 5 chapters:
+It currently consists of 4 chapters:
 
 * [Numbers to Indices](content/chapters/numbers-to-indices/)
 * [Functions](content/chapters/functions/)
