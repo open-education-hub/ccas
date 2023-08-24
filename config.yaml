@@ -13,125 +13,48 @@ docusaurus:
     sidebar: js
     structure:
       - Introduction:
-          - Intro:
-            name: README
-            location: content/landing-page
-      - Lecture:
-          - Numbers to Indices:
-            - Overview:
-              location: content/chapters/numbers-to-indices/lecture
-              name: content/overview
-            - Numbers, Arithmetic and Basic Algebra:
-              location: content/chapters/numbers-to-indices/lecture
-              name: content/numbers-arithmetic-basic-algebra
-            - Data Vectors:
-              location: content/chapters/numbers-to-indices/lecture
-              name: content/data-vectors
-            - More on Algebra:
-              location: content/chapters/numbers-to-indices/lecture
-              name: content/more-algebra
-            - Discrete Random Variables and the Binomial Distribution:
-              location: content/chapters/numbers-to-indices/lecture
-              name: content/discrete-random-vars-binomial-distribution
-          - Functions:
-              location: content/chapters/numbers-to-indices/lecture
-              name: content/functions
-          - Polynomials:
-              location: content/chapters/numbers-to-indices/lecture
-              name: content/polynomials
-          - Simple Data Analysis in R:
-              location: content/chapters/numbers-to-indices/lecture
-              name: content/simple-data-analysis-r
-          - Indices and the Apply Commands in R:
-              location: content/chapters/numbers-to-indices/lecture
-              name: content/indices-apply-commands-r
-          - Functions:
-            - Overview:
-              location: content/chapters/functions/lecture
-              name: content/overview
-            - Functions of Functions and the Exponential Function:
-              location: content/chapters/functions/lecture
-              name: content/functions-of-functions.exponential
-            - Inverse Functions and the Logarithm:
-              location: content/chapters/functions/lecture
-              name: content/inverse-functions-logarithm
-            - Continuity and Limits:
-              location: content/chapters/functions/lecture
-              name: content/continuity-limits
-            - Sequences and Series:
-              location: content/chapters/functions/lecture
-              name: content/sequences-series
-            - Slopes of Lines and Curves:
-              location: content/chapters/functions/lecture
-              name: content/slopes-lines-curves
-            - Derivatives:
-              location: content/chapters/functions/lecture
-              name: content/derivatives
-            - Applications of Differentiation:
-              location: content/chapters/functions/lecture
-              name: content/applications-differentiation
-            - Integrals and Probability Density Functions:
-              location: content/chapters/functions/lecture
-              name: content/integrals-prob-density-funcs
-            - Principles of Programming:
-              location: content/chapters/functions/lecture
-              name: content/programming-principles
-            - The Central Limit Theorem and Related Topics:
-              location: content/chapters/functions/lecture
-              name: content/central-limit-theorem
-            - Miscellanea:
-              location: content/chapters/functions/lecture
-              name: content/miscellanea
-          - Multivariate to Power:
-            - Overview:
-              location: content/chapters/multivariate-to-power/lecture
-              name: content/overview
-            - Multivariate Probability Distributions:
-              location: content/chapters/multivariate-to-power/lecture
-              name: content/multivariate-prob-distributions
-            - Some Distributions Related to the Normal:
-              location: content/chapters/multivariate-to-power/lecture
-              name: content/distributions-normal
-            - Estimation, Estimates and Estimators:
-              location: content/chapters/multivariate-to-power/lecture
-              name: content/estimation
-            - Test of Hypothesis, P Values and Related Concepts:
-              location: content/chapters/multivariate-to-power/lecture
-              name: content/test-hypothesis-p-values
-            - Power and Sample Sizes:
-              location: content/chapters/multivariate-to-power/lecture
-              name: content/power-sample-sizes
-          - Vectors to Some Regression Topics:
-            - Overview:
-              location: content/chapters/vectors-matrix-ops/lecture
-              name: content/overview
-            - Vectors and Matrix Operations:
-              location: content/chapters/vectors-matrix-ops/lecture
-              name: content/vectors-matrix-operations
-            - Some notes on Matrices and Linear Operators:
-              location: content/chapters/vectors-matrix-ops/lecture
-              name: content/matrices-linear-operators
-            - Ranks and Determinants:
-              location: content/chapters/vectors-matrix-ops/lecture
-              name: content/ranks-determinants
-            - Multivariate Calculus:
-              location: content/chapters/vectors-matrix-ops/lecture
-              name: content/multivariate-calculus
-            - The multivariate Normal Distribution and Related Topics:
-              location: content/chapters/vectors-matrix-ops/lecture
-              name: content/multivariate-normal-distribution
-            - Independence, Expectations and the Moment Generating Function:
-              location: content/chapters/vectors-matrix-ops/lecture
-              name: content/independence
-            - The Gamma Distribution:
-              location: content/chapters/vectors-matrix-ops/lecture
-              name: content/gamma-distribution
-            - Notes and Examples, The linear model:
-              location: content/chapters/vectors-matrix-ops/lecture
-              name: content/examples-linear-model
-            - Some Regression Topics:
-              location: content/chapters/vectors-matrix-ops/lecture
-              name: content/regression-topics
+          - Intro: landing-page/README.md
+      - Numbers to Indices:
+          - Overview: chapters/numbers-to-indices/overview/reading/README.md
+          - Numbers, Arithmetic and Basic Algebra: chapters/numbers-to-indices/numbers-arithmetic-basic-algebra/reading/README.md
+          - Data Vectors: chapters/numbers-to-indices/data-vectors/reading/README.md
+          - More on Algebra: chapters/numbers-to-indices/more-algebra/reading/README.md
+          - Discrete Random Variables and the Binomial Distribution: chapters/numbers-to-indices/discrete-random-vars-binomial-distribution/reading/README.md
+          - Functions: chapters/numbers-to-indices/functions/reading/README.md
+          - Polynomials: chapters/numbers-to-indices/polynomials/reading/README.md
+          - Simple Data Analysis in R: chapters/numbers-to-indices/simple-data-analysis-r/reading/README.md
+          - Indices and the Apply Commands in R: chapters/numbers-to-indices/indices-apply-commands-r/reading/README.md
+      - Functions:
+          - Overview: chapters/functions/overview/reading/README.md
+          - Functions of Functions and the Exponential Function: chapters/functions/functions-of-functions.exponential/reading/README.md
+          - Inverse Functions and the Logarithm: chapters/functions/inverse-functions-logarithm/reading/README.md
+          - Continuity and Limits: chapters/functions/continuity-limits/reading/README.md
+          - Sequences and Series: chapters/functions/sequences-series/reading/README.md
+          - Slopes of Lines and Curves: chapters/functions/slopes-lines-curves/reading/README.md
+          - Derivatives: chapters/functions/derivatives/reading/README.md
+          - Applications of Differentiation: chapters/functions/applications-differentiation/reading/README.md
+          - Integrals and Probability Density Functions: chapters/functions/integrals-prob-density-funcs/reading/README.md
+          - Principles of Programming: chapters/functions/programming-principles/reading/README.md
+          - The Central Limit Theorem and Related Topics: chapters/functions/central-limit-theorem/reading/README.md
+          - Miscellanea: chapters/functions/miscellanea/reading/README.md
+      - Multivariate to Power:
+          - Overview: chapters/multivariate-to-power/overview/reading/README.md
+          - Multivariate Probability Distributions: chapters/multivariate-to-power/multivariate-prob-distributions/reading/README.md
+          - Some Distributions Related to the Normal: chapters/multivariate-to-power/distributions-normal/reading/README.md
+          - Estimation, Estimates and Estimators: chapters/multivariate-to-power/estimation/reading/README.md
+          - Test of Hypothesis, P Values and Related Concepts: chapters/multivariate-to-power/test-hypothesis-p-values/reading/README.md
+          - Power and Sample Sizes: chapters/multivariate-to-power/power-sample-sizes/reading/README.md
+      - Vectors to Some Regression Topics:
+          - Overview: chapters/vectors-matrix-ops/overview/reading/README.md
+          - Vectors and Matrix Operations: chapters/vectors-matrix-ops/vectors-matrix-operations/reading/README.md
+          - Some notes on Matrices and Linear Operators: chapters/vectors-matrix-ops/matrices-linear-operators/reading/README.md
+          - Ranks and Determinants: chapters/vectors-matrix-ops/ranks-determinants/reading/README.md
+          - Multivariate Calculus: chapters/vectors-matrix-ops/multivariate-calculus/reading/README.md
+          - The multivariate Normal Distribution and Related Topics: chapters/vectors-matrix-ops/multivariate-normal-distribution/reading/README.md
+          - Independence, Expectations and the Moment Generating Function: chapters/vectors-matrix-ops/independence/reading/README.md
+          - The Gamma Distribution: chapters/vectors-matrix-ops/gamma-distribution/reading/README.md
+          - Notes and Examples, The linear model: chapters/vectors-matrix-ops/examples-linear-model/reading/README.md
+          - Some Regression Topics: chapters/vectors-matrix-ops/regression-topics/reading/README.md
     config_meta:
       title: Computing and Calculus for Applied Statistics
       url: http://localhost/

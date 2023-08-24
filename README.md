@@ -16,10 +16,10 @@ They are to be used by teachers, trainers, students and hobbyists who want to le
 Content is located in the `content/` folder.
 It currently consists of 4 chapters:
 
-* [Numbers to Indices](content/chapters/numbers-to-indices/)
-* [Functions](content/chapters/functions/)
-* [Multivariate to Power](content/chapters/multivariate-to-power/)
-* [Vectors to Some Regression Topics](content/chapters/vectors-matrix-ops/)
+* [Numbers to Indices](chapters/numbers-to-indices/)
+* [Functions](chapters/functions/)
+* [Multivariate to Power](chapters/multivariate-to-power/)
+* [Vectors to Some Regression Topics](chapters/vectors-matrix-ops/)
 
 Each chapter has its own directory.
 Each directory features a `lectures/` subdirectory where lecture content is stored.
