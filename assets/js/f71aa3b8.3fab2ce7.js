@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkccas=self.webpackChunkccas||[]).push([[7189],{1597:e=>{e.exports=JSON.parse('{"title":"Numbers to Indices","slug":"/Numbers to Indices/","permalink":"/ccas/Numbers to Indices/","navigation":{"previous":{"title":"Intro","permalink":"/ccas/"},"next":{"title":"Numbers to Indices In R","permalink":"/ccas/Numbers to Indices/Overview/"}}}')}}]);
