@@ -1,1 +1,0 @@
-# Power and Sample Sizes
