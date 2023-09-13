@@ -1,1 +1,0 @@
-# Ranks and Determinants
