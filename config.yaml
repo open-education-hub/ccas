@@ -10,50 +10,198 @@ docusaurus:
   plugin: docusaurus
   options:
     course_name: CCAS
+    math: true
     sidebar: js
     structure:
       - Introduction: landing-page/README.md
       - Numbers to Indices:
-          - Overview/: chapters/numbers-to-indices/overview/reading/
-          - Numbers, Arithmetic and Basic Algebra/: chapters/numbers-to-indices/numbers-arithmetic-basic-algebra/reading/
-          - Data Vectors/: chapters/numbers-to-indices/data-vectors/reading/
-          - More on Algebra/: chapters/numbers-to-indices/more-algebra/reading/
-          - Discrete Random Variables and the Binomial Distribution/: chapters/numbers-to-indices/discrete-random-vars-binomial-distribution/reading/
-          - Functions/: chapters/numbers-to-indices/functions/reading/
-          - Polynomials/: chapters/numbers-to-indices/polynomials/reading/
-          - Simple Data Analysis in R/: chapters/numbers-to-indices/simple-data-analysis-r/reading/
-          - Indices and the Apply Commands in R/: chapters/numbers-to-indices/indices-apply-commands-r/reading/
+          - Overview:
+              path: chapters/numbers-to-indices/overview
+              subsections:
+                - Reading: reading/read.md
+          - Numbers, Arithmetic and Basic Algebra:
+              path: chapters/numbers-to-indices/numbers-arithmetic-basic-algebra
+              extra:
+                - media/
+              subsections:
+                - Reading: reading/read.md
+          - Data Vectors:
+              path: chapters/numbers-to-indices/data-vectors
+              extra:
+                - media/
+              subsections:
+                - Reading: reading/read.md
+          - More on Algebra:
+              path: chapters/numbers-to-indices/more-algebra
+              subsections:
+                - Reading: reading/read.md
+          - Discrete Random Variables and the Binomial Distribution:
+              path: chapters/numbers-to-indices/discrete-random-vars-binomial-distribution
+              subsections:
+                - Reading: reading/read.md
+          - Functions:
+              path: chapters/numbers-to-indices/functions
+              extra:
+                - media/
+              subsections:
+                - Reading: reading/read.md
+          - Polynomials:
+              path: chapters/numbers-to-indices/polynomials
+              extra:
+                - media/
+              subsections:
+                - Reading: reading/read.md
+          - Simple Data Analysis in R:
+              path: chapters/numbers-to-indices/simple-data-analysis-r
+              extra:
+                - media/
+              subsections:
+                - Reading: reading/read.md
+          - Indices and the apply Commands in R:
+              path: chapters/numbers-to-indices/indices-apply-commands-r
+              subsections:
+                - Reading: reading/read.md
       - Functions:
-          - Overview/: chapters/functions/overview/reading/
-          - Functions of Functions and the Exponential Function/: chapters/functions/functions-of-functions.exponential/reading/
-          - Inverse Functions and the Logarithm/: chapters/functions/inverse-functions-logarithm/reading/
-          - Continuity and Limits/: chapters/functions/continuity-limits/reading/
-          - Sequences and Series/: chapters/functions/sequences-series/reading/
-          - Slopes of Lines and Curves/: chapters/functions/slopes-lines-curves/reading/
-          - Derivatives/: chapters/functions/derivatives/reading/
-          - Applications of Differentiation/: chapters/functions/applications-differentiation/reading/
-          - Integrals and Probability Density Functions/: chapters/functions/integrals-prob-density-funcs/reading/
-          - Principles of Programming/: chapters/functions/programming-principles/reading/
-          - The Central Limit Theorem and Related Topics/: chapters/functions/central-limit-theorem/reading/
-          - Miscellanea/: chapters/functions/miscellanea/reading/
+          - Overview:
+              path: chapters/functions/overview
+              subsections:
+                - Reading: reading/read.md
+          - Functions of Functions and the Exponential Function:
+              path: chapters/functions/functions-of-functions.exponential
+              extra:
+                - media/
+              subsections:
+                - Reading: reading/read.md
+          - Inverse Functions and the Logarithm:
+              path: chapters/functions/inverse-functions-logarithm
+              extra:
+                - media/
+              subsections:
+                - Reading: reading/read.md
+          - Continuity and Limits:
+              path: chapters/functions/continuity-limits
+              extra:
+                - media/
+              subsections:
+                - Reading: reading/read.md
+          - Sequences and Series:
+              path: chapters/functions/sequences-series
+              subsections:
+                - Reading: reading/read.md
+          - Slopes of Lines and Curves:
+              path: chapters/functions/slopes-lines-curves
+              extra:
+                - media/
+              subsections:
+                - Reading: reading/read.md
+          - Derivatives:
+              path: chapters/functions/derivatives
+              extra:
+                - media/
+              subsections:
+                - Reading: reading/read.md
+          - Applications of Differentiation:
+              path: chapters/functions/applications-differentiation
+              subsections:
+                - Reading: reading/read.md
+          - Integrals and Probability Density Functions:
+              path: chapters/functions/integrals-prob-density-funcs
+              extra:
+                - media/
+              subsections:
+                - Reading: reading/read.md
+          - Principles of Programming:
+              path: chapters/functions/programming-principles
+              subsections:
+                - Reading: reading/read.md
+          - The Central Limit Theorem and Related Topics:
+              path: chapters/functions/central-limit-theorem
+              extra:
+                - media/
+              subsections:
+                - Reading: reading/read.md
+          - Miscellanea:
+              path: chapters/functions/miscellanea
+              subsections:
+                - Reading: reading/read.md
       - Multivariate to Power:
-          - Overview/: chapters/multivariate-to-power/overview/reading/
-          - Multivariate Probability Distributions/: chapters/multivariate-to-power/multivariate-prob-distributions/reading/
-          - Some Distributions Related to the Normal/: chapters/multivariate-to-power/distributions-normal/reading/
-          - Estimation, Estimates and Estimators/: chapters/multivariate-to-power/estimation/reading/
-          - Test of Hypothesis, P Values and Related Concepts/: chapters/multivariate-to-power/test-hypothesis-p-values/reading/
-          - Power and Sample Sizes/: chapters/multivariate-to-power/power-sample-sizes/reading/
+          - Overview:
+              path: chapters/multivariate-to-power/overview
+              subsections:
+                - Reading: reading/read.md
+          - Multivariate Probability Distributions:
+              path: chapters/multivariate-to-power/multivariate-prob-distributions
+              extra:
+                - media/
+              subsections:
+                - Reading: reading/read.md
+          - Some Distributions Related to Normal:
+              path: chapters/multivariate-to-power/distributions-normal
+              extra:
+                - media/
+              subsections:
+                - Reading: reading/read.md
+          - Estimation, Estimates and Estimators:
+              path: chapters/multivariate-to-power/estimation
+              extra:
+                - media/
+              subsections:
+                - Reading: reading/read.md
+          - Test of Hypothesis, P Values and Related Concepts:
+              path: chapters/multivariate-to-power/test-hypothesis-p-values
+              subsections:
+                - Reading: reading/read.md
+          - Power and Sample Sizes:
+              path: chapters/multivariate-to-power/power-sample-sizes
+              extra:
+                - media/
+              subsections:
+                - Reading: reading/read.md
       - Vectors to Some Regression Topics:
-          - Overview/: chapters/vectors-matrix-ops/overview/reading/
-          - Vectors and Matrix Operations/: chapters/vectors-matrix-ops/vectors-matrix-operations/reading/
-          - Some notes on Matrices and Linear Operators/: chapters/vectors-matrix-ops/matrices-linear-operators/reading/
-          - Ranks and Determinants/: chapters/vectors-matrix-ops/ranks-determinants/reading/
-          - Multivariate Calculus/: chapters/vectors-matrix-ops/multivariate-calculus/reading/
-          - The multivariate Normal Distribution and Related Topics/: chapters/vectors-matrix-ops/multivariate-normal-distribution/reading/
-          - Independence, Expectations and the Moment Generating Function/: chapters/vectors-matrix-ops/independence/reading/
-          - The Gamma Distribution/: chapters/vectors-matrix-ops/gamma-distribution/reading/
-          - Notes and Examples, The linear model/: chapters/vectors-matrix-ops/examples-linear-model/reading/
-          - Some Regression Topics/: chapters/vectors-matrix-ops/regression-topics/reading/
+          - Overview:
+              path: chapters/vectors-matrix-ops/overview
+              subsections:
+                - Reading: reading/read.md
+          - Vector and Matrix Operations:
+              path: chapters/vectors-matrix-ops/vectors-matrix-operations
+              extra:
+                - media/
+              subsections:
+                - Reading: reading/read.md
+          - Some Notes on Matrices and Linear Operators:
+              path: chapters/vectors-matrix-ops/matrices-linear-operators
+              subsections:
+                - Reading: reading/read.md
+          - Ranks and Determinants:
+              path: chapters/vectors-matrix-ops/ranks-determinants
+              subsections:
+                - Reading: reading/read.md
+          - Multivariate Calculus:
+              path: chapters/vectors-matrix-ops/multivariate-calculus
+              subsections:
+                - Reading: reading/read.md
+          - The Multivariate Normal Distribution and Related Topics:
+              path: chapters/vectors-matrix-ops/multivariate-normal-distribution
+              subsections:
+                - Reading: reading/read.md
+          - Independence, Expectations and the Moment-Generating Function:
+              path: chapters/vectors-matrix-ops/independence
+              subsections:
+                - Reading: reading/read.md
+          - The Gamma Distribution:
+              path: chapters/vectors-matrix-ops/gamma-distribution
+              subsections:
+                - Reading: reading/read.md
+          - Notes and Examples, The Linear Model:
+              path: chapters/vectors-matrix-ops/examples-linear-model
+              extra:
+                - media/
+              subsections:
+                - Reading: reading/read.md
+          - Some Regression Topics:
+              path: chapters/vectors-matrix-ops/regression-topics
+              subsections:
+                - Reading: reading/read.md
     config_meta:
       title: Computing and Calculus for Applied Statistics
       url: http://localhost/
