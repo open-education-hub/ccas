@@ -13,7 +13,7 @@ docusaurus:
     math: true
     sidebar: js
     structure:
-      - Introduction: landing-page/README.md
+      - Introduction: chapters/landing-page/README.md
       - Numbers to Indices:
           - Overview:
               path: chapters/numbers-to-indices/overview
