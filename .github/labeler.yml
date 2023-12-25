@@ -1,33 +1,39 @@
 topic/functions:
-  - content/chapters/functions/**/*
+  - chapters/functions/**/*
 
 topic/multivar-power:
-  - content/chapters/multivariate-to-power/**/*
+  - chapters/multivariate-to-power/**/*
 
 topic/numbers-indices:
-  - content/chapters/numbers-to-indices/**/*
+  - chapters/numbers-to-indices/**/*
 
 topic/vectors-matrix:
-  - content/chapters/vectors-matrix-ops/**/*
+  - chapters/vectors-matrix-ops/**/*
 
-area/quiz:
-  - '**/quiz/*'
+area/reading:
+  - '**/reading/*'
+  - '**/reading/**/*'
 
-area/content:
-  - '*.md'
+area/media:
+  - '**/media/*'
   - '**/media/**/*'
-  - '**/*.mdpp'
 
-area/code:
-  - '**/lab/support/**/*'
-  - '**/lab/solution/**/*'
-  - '**/lecture/demo/**/*'
+area/slides:
+  - '**/slides/*'
+  - '**/slides/**/*'
+
+area/guides:
+  - '**/guides/*'
+  - '**/guides/**/*'
+
+area/drills:
+  - '**/drills/*'
+  - '**/drills/**/*'
+
+area/projects:
+  - '**/projects/*'
+  - '**/projects/**/*'
 
 area/infra:
-  - 'util/**/*'
+  - 'scripts/**/*'
   - '.github/**/*'
-  - 'Dockerfile'
-  - 'config.yaml'
-
-area/assignment:
-  - content/assignments/**/*
