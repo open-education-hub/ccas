@@ -1,6 +1,6 @@
-# Contributing to the CCAS OER
+# Contributing to the `CCAS` OER
 
-These are recommendations when contributing to the contents of the Computing and Calculus for Advanced Statistics (CCAS) OER repository.
+These are recommendations when contributing to the contents of the Computing and Calculus for Advanced Statistics (`CCAS`) OER repository.
 They consider contributions to both actual content (mostly Markdown) and support code made via Git.
 
 ## First Steps
