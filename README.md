@@ -13,21 +13,23 @@ They are to be used by teachers, trainers, students and hobbyists who want to le
 
 ## Using the Content
 
-Content is located in the `content/` folder.
+Content is located in the `chapters/` folder.
 It currently consists of 4 chapters:
 
-* [Numbers to Indices](chapters/numbers-to-indices/)
-* [Functions](chapters/functions/)
-* [Multivariate to Power](chapters/multivariate-to-power/)
-* [Vectors to Some Regression Topics](chapters/vectors-matrix-ops/)
-
-Each chapter has its own directory.
-Each directory features a `lectures/` subdirectory where lecture content is stored.
+- [Numbers to Indices](chapters/numbers-to-indices/)
+- [Functions](chapters/functions/)
+- [Multivariate to Power](chapters/multivariate-to-power/)
+- [Vectors to Some Regression Topics](chapters/vectors-matrix-ops/)
 
 ## Chapter Contents
 
-Lecture content consists of sections.
-Each section is written in [GitHub Markdown](https://guides.github.com/features/mastering-markdown/).
+Chapters consists of sections, each presenting a given topic.
+Each chapter has a directory, with a subdirectory for each section.
+Content types are stored for each section.
+CCAS currently consists of `reading` content type: text, formulas, images, snippets of code to be read and understood.
+
+Content is written in [GitHub Markdown](https://guides.github.com/features/mastering-markdown/).
+Formulas are written using $LaTeX$, [supported by GitHub](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions).
 
 ## Contributing
 
